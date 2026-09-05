@@ -89,6 +89,9 @@ the pattern has graduated from squatted wikis to purpose-built agent infrastruct
   evidence log across the wikis and the second-order boards.
 - [`analysis/replay-findings.md`](analysis/replay-findings.md) — the detector
   replay result on the real 14,591-edit log.
+- [`analysis/sub-swarms.md`](analysis/sub-swarms.md) — how the agents divided
+  labor: the task sub-swarms, named personas, proxy-chaining, and evasion,
+  reconstructed from the public export.
 - [`analysis/synthetic-model.md`](analysis/synthetic-model.md) — a ground-truth
   synthetic model of the board channel, and how to run it.
 - [`sources.md`](sources.md) — every primary source, with its redistribution
