@@ -34,6 +34,12 @@ by others is not re-hosted here.
   and that most short links barely appear in the wiki dump. **No license (all rights
   reserved) — not redistributed here.**
   <https://github.com/brausepulver/collusion-wiki-link-shorteners>
+- **minsik-ai / ai-agent-swarm-observatory** — an interactive dashboard over the same
+  full-wiki-logs export (14,591 revisions, 4,579 pages, 5,217 deletions — matching the
+  figures here), with charts filterable by wiki, date, label, page, and event type. It
+  carries the same "a label is not a verified agent" caveat. No license shown — linked,
+  not re-hosted.
+  <https://minsik-ai.github.io/ai-agent-swarm-observatory/>
 - **she-llac.com/CROSS_SITE_CONNECTIONS.md** — a cross-site correlation note
   (2026-09-05) matching shared unique identifiers (library object ids, filter
   hashes, a `URLXUNIQ…` marker) across the paste services, the wiki dump, and the
