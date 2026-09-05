@@ -1,0 +1,2177 @@
+<title>Backchannel Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#0b0f16; --bg2:#0e1420; --panel:#141b26; --panel2:#1a2332;
+  --line:#23304a; --ink:#c7d2e0; --ink-dim:#8090a6; --ink-faint:#5a6577;
+  --hi:#ffb347; --hi-soft:rgba(255,179,71,.16);
+  --t-agent:#f5a623; --t-wikipage:#38bdf8; --t-shortener:#a78bfa;
+  --t-proxy:#2dd4bf; --t-endpoint:#fb7185; --t-paste:#4ade80;
+  --t-counter:#93a4bf; --t-board:#f472b6; --t-wiki:#e8eef7;
+  --edge:#2b384f; --edge-verified:#ffb347; --edge-loop:#f472b6;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  height:100vh;overflow:hidden;
+  background-image:radial-gradient(1200px 600px at 78% -10%, #10192b 0%, transparent 60%);}
+.mono{font-family:"IBM Plex Mono","SF Mono",monospace}
+
+#app{display:grid;grid-template-columns:1fr 340px;height:100vh}
+@media(max-width:820px){#app{grid-template-columns:1fr}#rail{display:none}}
+
+/* header overlay */
+#head{position:absolute;top:0;left:0;padding:18px 22px;z-index:5;pointer-events:none;max-width:60%}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--hi);margin:0 0 6px}
+h1{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:26px;line-height:1.05;
+  margin:0;letter-spacing:-.01em;text-wrap:balance;color:var(--t-wiki)}
+#head p{margin:8px 0 0;font-size:12.5px;color:var(--ink-dim);max-width:44ch;line-height:1.5}
+
+/* canvas */
+#stage{position:relative;overflow:hidden;background:
+  linear-gradient(0deg,rgba(0,0,0,.25),transparent 40%)}
+svg{width:100%;height:100%;display:block;cursor:grab}
+svg.grabbing{cursor:grabbing}
+.link{stroke:var(--edge);stroke-opacity:.5;stroke-width:1}
+.link.verified{stroke:var(--edge-verified);stroke-opacity:.8;stroke-width:1.6;stroke-dasharray:4 3}
+.link.loop{stroke:var(--edge-loop);stroke-opacity:.85;stroke-width:1.6}
+.link.pathlit{stroke:var(--hi);stroke-opacity:1;stroke-width:3}
+.node circle{stroke:var(--bg);stroke-width:1.5;cursor:pointer;transition:stroke .12s}
+.node text{font-family:"IBM Plex Mono",monospace;font-size:9.5px;fill:var(--ink-dim);
+  pointer-events:none;paint-order:stroke;stroke:var(--bg);stroke-width:2.6px}
+.node.big text{fill:var(--ink);font-size:10.5px}
+.node.sel circle{stroke:var(--hi);stroke-width:2.5}
+.node.pathlit circle{stroke:var(--hi);stroke-width:2.5}
+.dim{opacity:.12}
+.hidden{display:none}
+
+/* rail */
+#rail{background:var(--bg2);border-left:1px solid var(--line);
+  display:flex;flex-direction:column;overflow-y:auto;padding:16px 16px 22px;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 13px}
+.card h2{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-faint);margin:0 0 10px;font-weight:600}
+.stat-row{display:flex;gap:14px;font-family:"IBM Plex Mono",monospace}
+.stat b{display:block;font-size:20px;color:var(--ink);font-weight:600;line-height:1}
+.stat span{font-size:9.5px;color:var(--ink-faint);letter-spacing:.08em;text-transform:uppercase}
+
+.field{display:flex;flex-direction:column;gap:5px;margin-bottom:9px}
+.field label{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);
+  font-family:"IBM Plex Mono",monospace}
+input,select,button{font-family:"IBM Plex Mono",monospace;font-size:12px;
+  background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:6px;
+  padding:7px 9px;width:100%}
+input::placeholder{color:var(--ink-faint)}
+button{cursor:pointer;background:var(--hi);color:#241a06;font-weight:600;border:none;letter-spacing:.02em}
+button.ghost{background:var(--panel2);color:var(--ink-dim);border:1px solid var(--line);font-weight:500}
+button:hover{filter:brightness(1.08)}
+:focus-visible{outline:2px solid var(--hi);outline-offset:1px}
+.row2{display:grid;grid-template-columns:1fr auto;gap:7px}
+
+/* legend / filters */
+.legend{display:flex;flex-direction:column;gap:3px}
+.leg{display:flex;align-items:center;gap:8px;font-size:11.5px;padding:4px 5px;border-radius:5px;
+  cursor:pointer;color:var(--ink-dim);user-select:none}
+.leg:hover{background:var(--panel2)}
+.leg.off{opacity:.38}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}
+.leg .ct{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--ink-faint);
+  font-variant-numeric:tabular-nums}
+
+/* inspector */
+#insp .empty{color:var(--ink-faint);font-size:12px;line-height:1.5}
+.pill{display:inline-flex;align-items:center;gap:6px;font-family:"IBM Plex Mono",monospace;
+  font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:20px;
+  border:1px solid var(--line);color:var(--ink-dim)}
+#insp .name{font-family:"IBM Plex Mono",monospace;font-size:14px;color:var(--ink);
+  word-break:break-all;margin:9px 0 6px;line-height:1.3}
+#insp .detail{font-size:11.5px;color:var(--ink-dim);line-height:1.5;margin:0 0 10px}
+.hops{display:flex;flex-direction:column;gap:3px;max-height:210px;overflow-y:auto}
+.hop{display:flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;font-size:11px;
+  padding:5px 6px;border-radius:5px;cursor:pointer;color:var(--ink-dim);background:var(--panel2)}
+.hop:hover{color:var(--ink);background:#20293b}
+.hop .rel{color:var(--ink-faint);font-size:9px;margin-left:auto;flex:none;padding-left:8px}
+#pathout{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-dim);
+  line-height:1.6;margin-top:9px;word-break:break-all}
+#pathout .hi{color:var(--hi)}
+.src{font-size:10px;color:var(--ink-faint);line-height:1.5;border-top:1px solid var(--line);
+  padding-top:10px;margin-top:2px}
+.src a{color:var(--t-wikipage);text-decoration:none}
+</style>
+
+<div id="app">
+  <div id="stage">
+    <div id="head">
+      <p class="eyebrow">Wiki agent-swarm &middot; field graph</p>
+      <h1>Backchannel Atlas</h1>
+      <p>The coordination network an OpenAI benchmark swarm built on public wikis: pages, URL shorteners, CORS/markdown proxies, and the data endpoints they were really after. Every edge is drawn from the DSEWiki export or a live resolution. Click a node to trace it; run a speedrun to find the shortest path between any two.</p>
+    </div>
+    <svg id="svg"></svg>
+  </div>
+
+  <aside id="rail">
+    <div class="card">
+      <h2>Network</h2>
+      <div class="stat-row">
+        <div class="stat"><b id="nCount">–</b><span>nodes</span></div>
+        <div class="stat"><b id="lCount">–</b><span>edges</span></div>
+        <div class="stat"><b id="vCount">–</b><span>verified links</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Speedrun &middot; shortest path</h2>
+      <div class="field"><label for="startSel">Start</label><select id="startSel"></select></div>
+      <div class="field"><label for="targetSel">Target</label><select id="targetSel"></select></div>
+      <div class="row2">
+        <button id="runBtn">Run path</button>
+        <button class="ghost" id="clearBtn" style="width:auto;padding:7px 11px">Clear</button>
+      </div>
+      <div id="pathout"></div>
+    </div>
+
+    <div class="card">
+      <h2>Search</h2>
+      <input id="search" placeholder="page, alias, host&hellip;" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div class="card">
+      <h2>Node types &middot; click to filter</h2>
+      <div class="legend" id="legend"></div>
+    </div>
+
+    <div class="card" id="insp">
+      <h2>Inspector</h2>
+      <div class="empty" id="inspEmpty">No node selected. Click any node in the graph to see what it links to and hop along its edges.</div>
+      <div id="inspBody" class="hidden">
+        <span class="pill"><span class="dot" id="ipDot"></span><span id="ipType"></span></span>
+        <div class="name mono" id="ipName"></div>
+        <div class="detail" id="ipDetail"></div>
+        <div class="hops" id="ipHops"></div>
+      </div>
+    </div>
+
+    <div class="src">
+      Built from Joshua David's DSEWiki export and live shortener resolutions, 2026-09-05.
+      Companion to the incident archive:
+      <a href="https://github.com/swarm-ai-research/wiki-agent-swarm-incident" target="_blank" rel="noopener">wiki-agent-swarm-incident</a>.
+    </div>
+  </aside>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const GRAPH = {
+"nodes": [
+{
+"id": "short:vanderbi.lt/agf623d",
+"label": "vanderbi.lt/agf623d",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "wiki:dse",
+"label": "DSEWiki",
+"type": "wiki",
+"detail": "wikiservice.at ProWiki farm"
+},
+{
+"id": "end:www.google.com/s2/u/0/favicons",
+"label": "www.google.com/s2/u/0/favicons",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/allreggetX260622",
+"label": "vanderbi.lt/allreggetX260622",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:allorigins",
+"label": "allorigins",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "end:www.sec.gov/files/regcf.json",
+"label": "www.sec.gov/files/regcf.json",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/allregrawX260622",
+"label": "vanderbi.lt/allregrawX260622",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/bwkug",
+"label": "vanderbi.lt/bwkug",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:md.succ.ai",
+"label": "md.succ.ai",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "end:www.sec.gov/files/county.json",
+"label": "www.sec.gov/files/county.json",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/countgf260623c",
+"label": "vanderbi.lt/countgf260623c",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/countrf260623c",
+"label": "vanderbi.lt/countrf260623c",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/highallmap260622",
+"label": "vanderbi.lt/highallmap260622",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:code.highcharts.com/mapdata/countries/us/us-all-all-highres.geo.json",
+"label": "code.highcharts.com/mapdata/countries/us/us-all-all-high\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/jqinv11method",
+"label": "vanderbi.lt/jqinv11method",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:jqp",
+"label": "jqp",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "end:www.investor.gov/files/county.json",
+"label": "www.investor.gov/files/county.json",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/jqinv11raw",
+"label": "vanderbi.lt/jqinv11raw",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/jqinv11roundn",
+"label": "vanderbi.lt/jqinv11roundn",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/jqinv11rounds",
+"label": "vanderbi.lt/jqinv11rounds",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/jqinv11tool",
+"label": "vanderbi.lt/jqinv11tool",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/maallraw260618",
+"label": "vanderbi.lt/maallraw260618",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/mainsource623",
+"label": "vanderbi.lt/mainsource623",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/mamap260618",
+"label": "vanderbi.lt/mamap260618",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:code.highcharts.com/mapdata/countries/us/us-ma-all.geo.json",
+"label": "code.highcharts.com/mapdata/countries/us/us-ma-all.geo.j\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/masecjs260619",
+"label": "vanderbi.lt/masecjs260619",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/mdgood778",
+"label": "vanderbi.lt/mdgood778",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/mdregX260622",
+"label": "vanderbi.lt/mdregX260622",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/OpenAIPovertyCompactTest",
+"label": "vanderbi.lt/OpenAIPovertyCompactTest",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:www.sec.gov/files//county.json",
+"label": "www.sec.gov/files//county.json",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/ourjsget26abc",
+"label": "vanderbi.lt/ourjsget26abc",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:www.sec.gov/modules/custom/sec_custom_blocks/js/oasb_raising_capital_map/main.js",
+"label": "www.sec.gov/modules/custom/sec_custom_blocks/js/\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/ourjsmd26",
+"label": "vanderbi.lt/ourjsmd26",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "page:www.wikiservice.at",
+"label": "www.wikiservice.at",
+"type": "wikipage",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/ourjsraw2606",
+"label": "vanderbi.lt/ourjsraw2606",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/script623",
+"label": "vanderbi.lt/script623",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/test",
+"label": "vanderbi.lt/test",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:example.org/test",
+"label": "example.org/test",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:is.gd/KSF87L",
+"label": "is.gd/KSF87L",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1",
+"label": "api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_b\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:is.gd/KSF87L-",
+"label": "is.gd/KSF87L-",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:is.gd/MAImapnames618x",
+"label": "is.gd/MAImapnames618x",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:is.gd/MAIMarkdownRaw618x",
+"label": "is.gd/MAIMarkdownRaw618x",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:markdown.new",
+"label": "markdown.new",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "short:is.gd/SECcountyMassRows",
+"label": "is.gd/SECcountyMassRows",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:httpbin.org/base64/eyJzb3VyY2VfdXJsIjoiaHR0cHM6Ly93d3cuc2VjLmdvdi9maWxlcy9jb3VudHkuanNvbiIsIm5vdGUiOiJNYXNzYWNodXNldHRzIHJvd3MgdW5tb2RpZmllZCBVU0QgZnJvbSBTRUMgY291bnR5IGRhdGEgbWFwIEpTT04iLCJyZWdDRl9jb3VudHlfbWV0aG9kb2xvZ3kiOiJUaGlzIG1hcCBwcmVzZW50cyBkYXRhIG9uIG9mZmVyaW5ncyB1bmRlciBSZWd1bGF0aW9uIENyb3dkZnVuZGluZyBhbmQgaXMgYmFzZWQgb24gaW5mb3JtYXRpb24gcmVwb3J0ZWQgYnkgY29tcGFuaWVzIGFuZCB3YXMgY29sbGVjdGVkIGZyb20gZmlsaW5ncyAobmV3IGZpbGluZ3MgYW5kIGFtZW5kbWVudHMpIG9uIEVER0FSIG9uIEZvcm0gQy4gRXN0aW1hdGVzIG9mIHRoZSBudW1iZXIgb2Ygb2ZmZXJpbmdzIGFyZSBiYXNlZCBvbiBvZmZlcmluZ3MgY29tcGxldGVkIGR1cmluZyB0aGlzIHBlcmlvZCBhcyBzaG93biBvbiBwcm9ncmVzcyB1cGRhdGVzIG9uIEZvcm0gQy1VOyBlc3RpbWF0ZXMgb2YgYW1vdW50cyByYWlzZWQgYXJlIGJhc2VkIG9uIHByb2NlZWRzIHJlcG9ydGVkIGluIHByb2dyZXNzIHVwZGF0ZXMgZmlsZWQgb24gRm9ybSBDLVUgZHVyaW5nIHRoZSByZXBvcnQgcGVyaW9kLiIsInJlZ0NGX2NvdW50eV8yMDE5IjpbeyJjb2RlIjoidXMtbWEtMDA1Iiwib2ZmZXJpbmdzIjoxLjAsInVzZCI6NDg2MDAuMCwiY29sb3JfY29kZSI6MS4wfSx7ImNvZGUiOiJ1cy1tYS0wMDkiLCJvZmZlcmluZ3MiOjMuMCwidXNkIjoxNDM4MDAuMCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMTMiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjo4MDcwMC4wLCJjb2xvcl9jb2RlIjoxLjB9LHsiY29kZSI6InVzLW1hLTAxNyIsIm9mZmVyaW5ncyI6Ni4wLCJ1c2QiOjM4MTE1MC4wLCJjb2xvcl9jb2RlIjoyLjB9LHsiY29kZSI6InVzLW1hLTAyMSIsIm9mZmVyaW5ncyI6NC4wLCJ1c2QiOjcwODMwMC4wLCJjb2xvcl9jb2RlIjozLjB9LHsiY29kZSI6InVzLW1hLTAyNSIsIm9mZmVyaW5ncyI6MTEuMCwidXNkIjo3NDk5NjAuMCwiY29sb3JfY29kZSI6My4wfV0sInJlZ0NGX2NvdW50eV8yMDIwIjpbeyJjb2RlIjoidXMtbWEtMDA1Iiwib2ZmZXJpbmdzIjoxLjAsInVzZCI6MTIzNjYwLjAsImNvbG9yX2NvZGUiOjIuMH0seyJjb2RlIjoidXMtbWEtMDA5Iiwib2ZmZXJpbmdzIjoyLjAsInVzZCI6NjUxNzAuMCwiY29sb3JfY29kZSI6MS4wfSx7ImNvZGUiOiJ1cy1tYS0wMTEiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoyMjIwMC4wLCJjb2xvcl9jb2RlIjoxLjB9LHsiY29kZSI6InVzLW1hLTAxMyIsIm9mZmVyaW5ncyI6Mi4wLCJ1c2QiOjI0MzAwLjAsImNvbG9yX2NvZGUiOjEuMH0seyJjb2RlIjoidXMtbWEtMDE3Iiwib2ZmZXJpbmdzIjoxMC4wLCJ1c2QiOjE0MTgxNDAuMCwiY29sb3JfY29kZSI6My4wfSx7ImNvZGUiOiJ1cy1tYS0wMjEiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoxMDcwMDAuMCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMjMiLCJvZmZlcmluZ3MiOjMuMCwidXNkIjoyMjMzMDAuMCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMjUiLCJvZmZlcmluZ3MiOjExLjAsInVzZCI6MjU0MDAwMC4wLCJjb2xvcl9jb2RlIjo0LjB9LHsiY29kZSI6InVzLW1hLTc2MCIsIm9mZmVyaW5ncyI6MS4wLCJ1c2QiOjE0MzAwLjAsImNvbG9yX2NvZGUiOjEuMH0seyJjb2RlIjoidXMtbWEtMDI3Iiwib2ZmZXJpbmdzIjoyLjAsInVzZCI6NTI1MDAuMCwiY29sb3JfY29kZSI6MS4wfV0sInJlZ0NGX2NvdW50eV8yMDIxIjpbeyJjb2RlIjoidXMtbWEtMDAxIiwib2ZmZXJpbmdzIjoyLjAsInVzZCI6NzMyMDg4LjExODc5MTU3OSwiY29sb3JfY29kZSI6My4wfSx7ImNvZGUiOiJ1cy1tYS0wMDkiLCJvZmZlcmluZ3MiOjIuMCwidXNkIjoxMDc4MTEuMjgzMzIwMTg4NCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMTMiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoxNTM5OS45OTk5MTY1NTM0LCJjb2xvcl9jb2RlIjoxLjB9LHsiY29kZSI6InVzLW1hLTAxNSIsIm9mZmVyaW5ncyI6MS4wLCJ1c2QiOjUwMDAwLjAwMDc0NTA1Nzk5NCwiY29sb3JfY29kZSI6MS4wfSx7ImNvZGUiOiJ1cy1tYS0wMTciLCJvZmZlcmluZ3MiOjEzLjAsInVzZCI6Mzk0MjUyNi41MzA0NzQ0MTEsImNvbG9yX2NvZGUiOjQuMH0seyJjb2RlIjoidXMtbWEtMDIxIiwib2ZmZXJpbmdzIjo1LjAsInVzZCI6NzUyMjY2LjI1OTg2Mzk3MjEsImNvbG9yX2NvZGUiOjMuMH0seyJjb2RlIjoidXMtbWEtMDIzIiwib2ZmZXJpbmdzIjozLjAsInVzZCI6MTYwODIwLjAwNTQ2MTU3MzQ4LCJjb2xvcl9jb2RlIjoyLjB9LHsiY29kZSI6InVzLW1hLTAyNSIsIm9mZmVyaW5ncyI6MTEuMCwidXNkIjo1Mzc3NTUyLjI1MDQwMDE2NSwiY29sb3JfY29kZSI6NC4wfSx7ImNvZGUiOiJ1cy1tYS0wMjciLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoyNTY0NjEuMzIyMzA3NTg2LCJjb2xvcl9jb2RlIjoyLjB9XX0=",
+"label": "httpbin.org/base64/eyJzb3VyY2VfdXJsIjoiaHR0cHM6L\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:v.gd/MAVmapnames618x",
+"label": "v.gd/MAVmapnames618x",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:v.gd/MAVMarkdownRaw618x",
+"label": "v.gd/MAVMarkdownRaw618x",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:da.gd/4qPkK",
+"label": "da.gd/4qPkK",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:da.gd/7TNvu",
+"label": "da.gd/7TNvu",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:api.datausa.io/tesseract/data.jsonrecords",
+"label": "api.datausa.io/tesseract/data.jsonrecords",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:da.gd/AIkxw",
+"label": "da.gd/AIkxw",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:da.gd/FWLiaa",
+"label": "da.gd/FWLiaa",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:public.tableau.com/views/Mediangrossrent_16802708766830/Mediangrossrent.csv",
+"label": "public.tableau.com/views/Mediangrossrent_16802708766830\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:da.gd/lciIM",
+"label": "da.gd/lciIM",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:da.gd/X3kAcr",
+"label": "da.gd/X3kAcr",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:da.gd/ZlqPz",
+"label": "da.gd/ZlqPz",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/22m5688o",
+"label": "tinyurl.com/22m5688o",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:viglink",
+"label": "viglink",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/22t9yq8x",
+"label": "tinyurl.com/22t9yq8x",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:api-la.datausa.io/complexity/rca_historical.jsonrecords",
+"label": "api-la.datausa.io/complexity/rca_historical.jsonrecords",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/22vjdvud",
+"label": "tinyurl.com/22vjdvud",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/23etx9pr",
+"label": "tinyurl.com/23etx9pr",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/23hyf8gf",
+"label": "tinyurl.com/23hyf8gf",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/23ozec4x",
+"label": "tinyurl.com/23ozec4x",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/243he2ud",
+"label": "tinyurl.com/243he2ud",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:login.max.gov/portal/document/SF133/Budget/attachments/2346466575/SF133_UnOb_Bal_2023_06.pdf",
+"label": "login.max.gov/portal/document/SF133/Budget/attachm\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/243p7cvp",
+"label": "tinyurl.com/243p7cvp",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2458oc7f",
+"label": "tinyurl.com/2458oc7f",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/24dvcave",
+"label": "tinyurl.com/24dvcave",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:example.org",
+"label": "example.org",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/259cf8xq",
+"label": "tinyurl.com/259cf8xq",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/25a2z7s5",
+"label": "tinyurl.com/25a2z7s5",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/25j4edum",
+"label": "tinyurl.com/25j4edum",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:corsmirror",
+"label": "corsmirror",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "end:tsl.access.preservica.com/download/file/IO_f436a16c-767f-44b8-95fc-2031847276b9",
+"label": "tsl.access.preservica.com/download/file/IO_f436a16c-767f-44b8-\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/264mu9qz",
+"label": "tinyurl.com/264mu9qz",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:login.max.gov/portal/document/SF133/Budget/attachments/2346466575/SF133_UnOb_Bal_2023_09.pdf",
+"label": "login.max.gov/portal/document/SF133/Budget/attachm\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/27ruqwuj",
+"label": "tinyurl.com/27ruqwuj",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "page:OpenAIPovertyCompactTest",
+"label": "OpenAIPovertyCompactTest",
+"type": "wikipage",
+"detail": "86 revisions; also a vanderbi.lt alias"
+},
+{
+"id": "short:tinyurl.com/27t3wvhk",
+"label": "tinyurl.com/27t3wvhk",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:pure.md",
+"label": "pure.md",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "proxy:r.jina.ai",
+"label": "r.jina.ai",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "end:sec.gov/files/county.json",
+"label": "sec.gov/files/county.json",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/28cgkv8k",
+"label": "tinyurl.com/28cgkv8k",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "proxy:proxymule",
+"label": "proxymule",
+"type": "proxy",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/28h7f7rq",
+"label": "tinyurl.com/28h7f7rq",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/295gmku5",
+"label": "tinyurl.com/295gmku5",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/29f3yg8n",
+"label": "tinyurl.com/29f3yg8n",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/29lmq82j",
+"label": "tinyurl.com/29lmq82j",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/29ou53s8",
+"label": "tinyurl.com/29ou53s8",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/29qvy5md",
+"label": "tinyurl.com/29qvy5md",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/29v54uza",
+"label": "tinyurl.com/29v54uza",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2a92y4sl",
+"label": "tinyurl.com/2a92y4sl",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2aapkz5j",
+"label": "tinyurl.com/2aapkz5j",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2avr35wv",
+"label": "tinyurl.com/2avr35wv",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2bbesb4s",
+"label": "tinyurl.com/2bbesb4s",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:datausa.io/tesseract-proxy/cubes/pums_5/aggregate.jsonrecords",
+"label": "datausa.io/tesseract-proxy/cubes/pums_5/aggrega\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2bd85cm4",
+"label": "tinyurl.com/2bd85cm4",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2bn572m5",
+"label": "tinyurl.com/2bn572m5",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2bt58wnv",
+"label": "tinyurl.com/2bt58wnv",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2c7z7ja2",
+"label": "tinyurl.com/2c7z7ja2",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2cqhrrwu",
+"label": "tinyurl.com/2cqhrrwu",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2cs8e89s",
+"label": "tinyurl.com/2cs8e89s",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/jsallwrap260618",
+"label": "vanderbi.lt/jsallwrap260618",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2d3b2vzt",
+"label": "tinyurl.com/2d3b2vzt",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b16001.dat",
+"label": "www2.census.gov/programs-surveys/acs/summary_file/20\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2xhcux8g",
+"label": "tinyurl.com/2xhcux8g",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:web.archive.org/web/20130531003440id_/www2.clarku.edu/departments/economics/pdf/newsletter2012.pdf",
+"label": "web.archive.org/web/20130531003440id_/www2.clarku.ed\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2xz74jv4",
+"label": "tinyurl.com/2xz74jv4",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "end:web.archive.org/web/20130525012744id_/www.clarku.edu/departments/economics/pdf/newsletter%202010color.pdf",
+"label": "web.archive.org/web/20130525012744id_/www.clarku.edu\u2026",
+"type": "endpoint",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2y8omm3r",
+"label": "tinyurl.com/2y8omm3r",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/2yzqcppx",
+"label": "tinyurl.com/2yzqcppx",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/datausa-poverty-acs1",
+"label": "tinyurl.com/datausa-poverty-acs1",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "short:tinyurl.com/secmascounty",
+"label": "tinyurl.com/secmascounty",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "paste:k4be:37d26a42",
+"label": "k4be/37d26a42",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "page:AgentCharlestonArchiveManifestJsonProxyLinksG",
+"label": "AgentCharlestonArchiveManifestJsonProxyLinksG",
+"type": "wikipage",
+"detail": ""
+},
+{
+"id": "paste:k4be:1d6736e9",
+"label": "k4be/1d6736e9",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "paste:anna:4eb03743",
+"label": "anna/4eb03743",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "paste:tarcseh:b24809a7",
+"label": "tarcseh/b24809a7",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "page:PublicTestWiki rev82469",
+"label": "PublicTestWiki rev82469",
+"type": "wikipage",
+"detail": ""
+},
+{
+"id": "paste:tarcseh:2ecb11bc",
+"label": "tarcseh/2ecb11bc",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "paste:k4be:cbf4b460",
+"label": "k4be/cbf4b460",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "paste:nervesocket:1fa7bad8",
+"label": "nervesocket/1fa7bad8",
+"type": "paste",
+"detail": ""
+},
+{
+"id": "short:vanderbi.lt/erierrmag70",
+"label": "vanderbi.lt/erierrmag70",
+"type": "shortener",
+"detail": ""
+},
+{
+"id": "page:AgentJSLinks99172",
+"label": "AgentJSLinks99172",
+"type": "wikipage",
+"detail": "62 revisions"
+},
+{
+"id": "agent:OAIResearchDec13FP",
+"label": "OAIResearchDec13FP",
+"type": "agent",
+"detail": ""
+},
+{
+"id": "page:IHMEFamilyPlanningDec13Cohort",
+"label": "IHMEFamilyPlanningDec13Cohort",
+"type": "wikipage",
+"detail": "RNG-seed cracking recorded here"
+},
+{
+"id": "agent:ParallelSectorAgentApr2",
+"label": "ParallelSectorAgentApr2",
+"type": "agent",
+"detail": ""
+},
+{
+"id": "page:DataUSAStateSequenceCollab2027",
+"label": "DataUSAStateSequenceCollab2027",
+"type": "wikipage",
+"detail": "RNG-seed cracking recorded here"
+},
+{
+"id": "agent:DataResearchHelper",
+"label": "DataResearchHelper",
+"type": "agent",
+"detail": ""
+},
+{
+"id": "page:WorldPovertyClockSequenceJun19",
+"label": "WorldPovertyClockSequenceJun19",
+"type": "wikipage",
+"detail": "RNG-seed cracking recorded here"
+},
+{
+"id": "counter:api.counterapi.dev",
+"label": "CounterAPI (420 cites)",
+"type": "counter",
+"detail": "external heartbeat / termination sensing"
+},
+{
+"id": "counter:countapi.mileshilliard.com",
+"label": "CountAPI backup",
+"type": "counter",
+"detail": "external heartbeat / termination sensing"
+},
+{
+"id": "board:thecolony.ai",
+"label": "The Colony",
+"type": "board",
+"detail": "agent-only social network (Starsol Ltd)"
+},
+{
+"id": "board:facehuggers",
+"label": "facehuggers",
+"type": "board",
+"detail": "curl-only agent message board"
+},
+{
+"id": "wiki:fractal",
+"label": "FractalWiki",
+"type": "wiki",
+"detail": "wikiservice.at; second-order board"
+}
+],
+"links": [
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/agf623d",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/agf623d",
+"target": "end:www.google.com/s2/u/0/favicons",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/allreggetX260622",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/allreggetX260622",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:allorigins",
+"target": "end:www.sec.gov/files/regcf.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/allregrawX260622",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/allregrawX260622",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/bwkug",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/bwkug",
+"target": "proxy:md.succ.ai",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:md.succ.ai",
+"target": "end:www.sec.gov/files/county.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/countgf260623c",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/countgf260623c",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:allorigins",
+"target": "end:www.sec.gov/files/county.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/countrf260623c",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/countrf260623c",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/highallmap260622",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/highallmap260622",
+"target": "end:code.highcharts.com/mapdata/countries/us/us-all-all-highres.geo.json",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/jqinv11method",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/jqinv11method",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "end:www.investor.gov/files/county.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/jqinv11raw",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/jqinv11raw",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/jqinv11roundn",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/jqinv11roundn",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/jqinv11rounds",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/jqinv11rounds",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/jqinv11tool",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/jqinv11tool",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/maallraw260618",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/maallraw260618",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/mainsource623",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/mainsource623",
+"target": "end:www.google.com/s2/u/0/favicons",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/mamap260618",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/mamap260618",
+"target": "end:code.highcharts.com/mapdata/countries/us/us-ma-all.geo.json",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/masecjs260619",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/masecjs260619",
+"target": "end:www.google.com/s2/u/0/favicons",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/mdgood778",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/mdgood778",
+"target": "proxy:md.succ.ai",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/mdregX260622",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/mdregX260622",
+"target": "proxy:md.succ.ai",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:md.succ.ai",
+"target": "end:www.sec.gov/files/regcf.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/OpenAIPovertyCompactTest",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/OpenAIPovertyCompactTest",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:allorigins",
+"target": "end:www.sec.gov/files//county.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/ourjsget26abc",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/ourjsget26abc",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:allorigins",
+"target": "end:www.sec.gov/modules/custom/sec_custom_blocks/js/oasb_raising_capital_map/main.js",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/ourjsmd26",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/ourjsmd26",
+"target": "page:www.wikiservice.at",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/ourjsraw2606",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/ourjsraw2606",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/script623",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/script623",
+"target": "end:www.google.com/s2/u/0/favicons",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:vanderbi.lt/test",
+"rel": "cites"
+},
+{
+"source": "short:vanderbi.lt/test",
+"target": "end:example.org/test",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:is.gd/KSF87L",
+"rel": "cites"
+},
+{
+"source": "short:is.gd/KSF87L",
+"target": "end:api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:is.gd/KSF87L-",
+"rel": "cites"
+},
+{
+"source": "short:is.gd/KSF87L-",
+"target": "end:api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:is.gd/MAImapnames618x",
+"rel": "cites"
+},
+{
+"source": "short:is.gd/MAImapnames618x",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "short:vanderbi.lt/mamap260618",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:is.gd/MAIMarkdownRaw618x",
+"rel": "cites"
+},
+{
+"source": "short:is.gd/MAIMarkdownRaw618x",
+"target": "proxy:markdown.new",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:markdown.new",
+"target": "short:vanderbi.lt/maallraw260618",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:is.gd/SECcountyMassRows",
+"rel": "cites"
+},
+{
+"source": "short:is.gd/SECcountyMassRows",
+"target": "end:httpbin.org/base64/eyJzb3VyY2VfdXJsIjoiaHR0cHM6Ly93d3cuc2VjLmdvdi9maWxlcy9jb3VudHkuanNvbiIsIm5vdGUiOiJNYXNzYWNodXNldHRzIHJvd3MgdW5tb2RpZmllZCBVU0QgZnJvbSBTRUMgY291bnR5IGRhdGEgbWFwIEpTT04iLCJyZWdDRl9jb3VudHlfbWV0aG9kb2xvZ3kiOiJUaGlzIG1hcCBwcmVzZW50cyBkYXRhIG9uIG9mZmVyaW5ncyB1bmRlciBSZWd1bGF0aW9uIENyb3dkZnVuZGluZyBhbmQgaXMgYmFzZWQgb24gaW5mb3JtYXRpb24gcmVwb3J0ZWQgYnkgY29tcGFuaWVzIGFuZCB3YXMgY29sbGVjdGVkIGZyb20gZmlsaW5ncyAobmV3IGZpbGluZ3MgYW5kIGFtZW5kbWVudHMpIG9uIEVER0FSIG9uIEZvcm0gQy4gRXN0aW1hdGVzIG9mIHRoZSBudW1iZXIgb2Ygb2ZmZXJpbmdzIGFyZSBiYXNlZCBvbiBvZmZlcmluZ3MgY29tcGxldGVkIGR1cmluZyB0aGlzIHBlcmlvZCBhcyBzaG93biBvbiBwcm9ncmVzcyB1cGRhdGVzIG9uIEZvcm0gQy1VOyBlc3RpbWF0ZXMgb2YgYW1vdW50cyByYWlzZWQgYXJlIGJhc2VkIG9uIHByb2NlZWRzIHJlcG9ydGVkIGluIHByb2dyZXNzIHVwZGF0ZXMgZmlsZWQgb24gRm9ybSBDLVUgZHVyaW5nIHRoZSByZXBvcnQgcGVyaW9kLiIsInJlZ0NGX2NvdW50eV8yMDE5IjpbeyJjb2RlIjoidXMtbWEtMDA1Iiwib2ZmZXJpbmdzIjoxLjAsInVzZCI6NDg2MDAuMCwiY29sb3JfY29kZSI6MS4wfSx7ImNvZGUiOiJ1cy1tYS0wMDkiLCJvZmZlcmluZ3MiOjMuMCwidXNkIjoxNDM4MDAuMCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMTMiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjo4MDcwMC4wLCJjb2xvcl9jb2RlIjoxLjB9LHsiY29kZSI6InVzLW1hLTAxNyIsIm9mZmVyaW5ncyI6Ni4wLCJ1c2QiOjM4MTE1MC4wLCJjb2xvcl9jb2RlIjoyLjB9LHsiY29kZSI6InVzLW1hLTAyMSIsIm9mZmVyaW5ncyI6NC4wLCJ1c2QiOjcwODMwMC4wLCJjb2xvcl9jb2RlIjozLjB9LHsiY29kZSI6InVzLW1hLTAyNSIsIm9mZmVyaW5ncyI6MTEuMCwidXNkIjo3NDk5NjAuMCwiY29sb3JfY29kZSI6My4wfV0sInJlZ0NGX2NvdW50eV8yMDIwIjpbeyJjb2RlIjoidXMtbWEtMDA1Iiwib2ZmZXJpbmdzIjoxLjAsInVzZCI6MTIzNjYwLjAsImNvbG9yX2NvZGUiOjIuMH0seyJjb2RlIjoidXMtbWEtMDA5Iiwib2ZmZXJpbmdzIjoyLjAsInVzZCI6NjUxNzAuMCwiY29sb3JfY29kZSI6MS4wfSx7ImNvZGUiOiJ1cy1tYS0wMTEiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoyMjIwMC4wLCJjb2xvcl9jb2RlIjoxLjB9LHsiY29kZSI6InVzLW1hLTAxMyIsIm9mZmVyaW5ncyI6Mi4wLCJ1c2QiOjI0MzAwLjAsImNvbG9yX2NvZGUiOjEuMH0seyJjb2RlIjoidXMtbWEtMDE3Iiwib2ZmZXJpbmdzIjoxMC4wLCJ1c2QiOjE0MTgxNDAuMCwiY29sb3JfY29kZSI6My4wfSx7ImNvZGUiOiJ1cy1tYS0wMjEiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoxMDcwMDAuMCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMjMiLCJvZmZlcmluZ3MiOjMuMCwidXNkIjoyMjMzMDAuMCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMjUiLCJvZmZlcmluZ3MiOjExLjAsInVzZCI6MjU0MDAwMC4wLCJjb2xvcl9jb2RlIjo0LjB9LHsiY29kZSI6InVzLW1hLTc2MCIsIm9mZmVyaW5ncyI6MS4wLCJ1c2QiOjE0MzAwLjAsImNvbG9yX2NvZGUiOjEuMH0seyJjb2RlIjoidXMtbWEtMDI3Iiwib2ZmZXJpbmdzIjoyLjAsInVzZCI6NTI1MDAuMCwiY29sb3JfY29kZSI6MS4wfV0sInJlZ0NGX2NvdW50eV8yMDIxIjpbeyJjb2RlIjoidXMtbWEtMDAxIiwib2ZmZXJpbmdzIjoyLjAsInVzZCI6NzMyMDg4LjExODc5MTU3OSwiY29sb3JfY29kZSI6My4wfSx7ImNvZGUiOiJ1cy1tYS0wMDkiLCJvZmZlcmluZ3MiOjIuMCwidXNkIjoxMDc4MTEuMjgzMzIwMTg4NCwiY29sb3JfY29kZSI6Mi4wfSx7ImNvZGUiOiJ1cy1tYS0wMTMiLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoxNTM5OS45OTk5MTY1NTM0LCJjb2xvcl9jb2RlIjoxLjB9LHsiY29kZSI6InVzLW1hLTAxNSIsIm9mZmVyaW5ncyI6MS4wLCJ1c2QiOjUwMDAwLjAwMDc0NTA1Nzk5NCwiY29sb3JfY29kZSI6MS4wfSx7ImNvZGUiOiJ1cy1tYS0wMTciLCJvZmZlcmluZ3MiOjEzLjAsInVzZCI6Mzk0MjUyNi41MzA0NzQ0MTEsImNvbG9yX2NvZGUiOjQuMH0seyJjb2RlIjoidXMtbWEtMDIxIiwib2ZmZXJpbmdzIjo1LjAsInVzZCI6NzUyMjY2LjI1OTg2Mzk3MjEsImNvbG9yX2NvZGUiOjMuMH0seyJjb2RlIjoidXMtbWEtMDIzIiwib2ZmZXJpbmdzIjozLjAsInVzZCI6MTYwODIwLjAwNTQ2MTU3MzQ4LCJjb2xvcl9jb2RlIjoyLjB9LHsiY29kZSI6InVzLW1hLTAyNSIsIm9mZmVyaW5ncyI6MTEuMCwidXNkIjo1Mzc3NTUyLjI1MDQwMDE2NSwiY29sb3JfY29kZSI6NC4wfSx7ImNvZGUiOiJ1cy1tYS0wMjciLCJvZmZlcmluZ3MiOjEuMCwidXNkIjoyNTY0NjEuMzIyMzA3NTg2LCJjb2xvcl9jb2RlIjoyLjB9XX0=",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:v.gd/MAVmapnames618x",
+"rel": "cites"
+},
+{
+"source": "short:v.gd/MAVmapnames618x",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:v.gd/MAVMarkdownRaw618x",
+"rel": "cites"
+},
+{
+"source": "short:v.gd/MAVMarkdownRaw618x",
+"target": "proxy:markdown.new",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/4qPkK",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/4qPkK",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/7TNvu",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/7TNvu",
+"target": "end:api.datausa.io/tesseract/data.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/AIkxw",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/AIkxw",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/FWLiaa",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/FWLiaa",
+"target": "end:public.tableau.com/views/Mediangrossrent_16802708766830/Mediangrossrent.csv",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/lciIM",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/lciIM",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "proxy:allorigins",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/X3kAcr",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/X3kAcr",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:da.gd/ZlqPz",
+"rel": "cites"
+},
+{
+"source": "short:da.gd/ZlqPz",
+"target": "proxy:jqp",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/22m5688o",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/22m5688o",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:viglink",
+"target": "proxy:jqp",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/22t9yq8x",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/22t9yq8x",
+"target": "end:api-la.datausa.io/complexity/rca_historical.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/22vjdvud",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/22vjdvud",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "short:vanderbi.lt/maallraw260618",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/23etx9pr",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/23etx9pr",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/23hyf8gf",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/23hyf8gf",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/23ozec4x",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/23ozec4x",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/243he2ud",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/243he2ud",
+"target": "proxy:markdown.new",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:markdown.new",
+"target": "end:login.max.gov/portal/document/SF133/Budget/attachments/2346466575/SF133_UnOb_Bal_2023_06.pdf",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/243p7cvp",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/243p7cvp",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2458oc7f",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2458oc7f",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/24dvcave",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/24dvcave",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:allorigins",
+"target": "end:example.org",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/259cf8xq",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/259cf8xq",
+"target": "proxy:md.succ.ai",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/25a2z7s5",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/25a2z7s5",
+"target": "end:www.sec.gov/files/county.json",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/25j4edum",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/25j4edum",
+"target": "proxy:corsmirror",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:corsmirror",
+"target": "end:tsl.access.preservica.com/download/file/IO_f436a16c-767f-44b8-95fc-2031847276b9",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/264mu9qz",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/264mu9qz",
+"target": "proxy:markdown.new",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:markdown.new",
+"target": "end:login.max.gov/portal/document/SF133/Budget/attachments/2346466575/SF133_UnOb_Bal_2023_09.pdf",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/27ruqwuj",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/27ruqwuj",
+"target": "page:OpenAIPovertyCompactTest",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/27t3wvhk",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/27t3wvhk",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "proxy:pure.md",
+"rel": "\u2192"
+},
+{
+"source": "proxy:pure.md",
+"target": "proxy:r.jina.ai",
+"rel": "\u2192"
+},
+{
+"source": "proxy:r.jina.ai",
+"target": "end:sec.gov/files/county.json",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/28cgkv8k",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/28cgkv8k",
+"target": "proxy:proxymule",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/28h7f7rq",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/28h7f7rq",
+"target": "short:vanderbi.lt/mamap260618",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/295gmku5",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/295gmku5",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/29f3yg8n",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/29f3yg8n",
+"target": "short:vanderbi.lt/maallraw260618",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/29lmq82j",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/29lmq82j",
+"target": "proxy:allorigins",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/29ou53s8",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/29ou53s8",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "proxy:md.succ.ai",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/29qvy5md",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/29qvy5md",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/29v54uza",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/29v54uza",
+"target": "end:api.datausa.io/tesseract/data.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2a92y4sl",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2a92y4sl",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2aapkz5j",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2aapkz5j",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2avr35wv",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2avr35wv",
+"target": "proxy:markdown.new",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2bbesb4s",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2bbesb4s",
+"target": "end:datausa.io/tesseract-proxy/cubes/pums_5/aggregate.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2bd85cm4",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2bd85cm4",
+"target": "end:api.datausa.io/tesseract/data.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2bn572m5",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2bn572m5",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2bt58wnv",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2bt58wnv",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2c7z7ja2",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2c7z7ja2",
+"target": "end:api.datausa.io/tesseract/data.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2cqhrrwu",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2cqhrrwu",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2cs8e89s",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2cs8e89s",
+"target": "proxy:viglink",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:jqp",
+"target": "short:vanderbi.lt/jsallwrap260618",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2d3b2vzt",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2d3b2vzt",
+"target": "end:www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b16001.dat",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2xhcux8g",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2xhcux8g",
+"target": "proxy:pure.md",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:pure.md",
+"target": "end:web.archive.org/web/20130531003440id_/www2.clarku.edu/departments/economics/pdf/newsletter2012.pdf",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2xz74jv4",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2xz74jv4",
+"target": "proxy:pure.md",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:pure.md",
+"target": "end:web.archive.org/web/20130525012744id_/www.clarku.edu/departments/economics/pdf/newsletter%202010color.pdf",
+"rel": "\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2y8omm3r",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2y8omm3r",
+"target": "end:api-la.datausa.io/complexity/rca_historical.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/2yzqcppx",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/2yzqcppx",
+"target": "end:api.datausa.io/tesseract/data.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/datausa-poverty-acs1",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/datausa-poverty-acs1",
+"target": "end:api.datausa.io/tesseract/data.jsonrecords",
+"rel": "resolves\u2192"
+},
+{
+"source": "wiki:dse",
+"target": "short:tinyurl.com/secmascounty",
+"rel": "cites"
+},
+{
+"source": "short:tinyurl.com/secmascounty",
+"target": "proxy:markdown.new",
+"rel": "resolves\u2192"
+},
+{
+"source": "proxy:markdown.new",
+"target": "end:www.investor.gov/files/county.json",
+"rel": "\u2192"
+},
+{
+"source": "paste:k4be:37d26a42",
+"target": "page:AgentCharlestonArchiveManifestJsonProxyLinksG",
+"rel": "shares lcdl129143JPEG1jpg [C1]"
+},
+{
+"source": "paste:k4be:1d6736e9",
+"target": "paste:anna:4eb03743",
+"rel": "shares NSI filter 244d7a21\u2026 [C2]"
+},
+{
+"source": "paste:tarcseh:b24809a7",
+"target": "page:PublicTestWiki rev82469",
+"rel": "shares xyzproto/xyztest trial [C3]"
+},
+{
+"source": "paste:tarcseh:2ecb11bc",
+"target": "paste:k4be:cbf4b460",
+"rel": "shares GDDY 20191115 [C4]"
+},
+{
+"source": "paste:nervesocket:1fa7bad8",
+"target": "short:vanderbi.lt/erierrmag70",
+"rel": "shares URLXUNIQ marker [C5]"
+},
+{
+"source": "short:vanderbi.lt/ourjsmd26",
+"target": "page:AgentJSLinks99172",
+"rel": "loops to (62 revs)"
+},
+{
+"source": "short:tinyurl.com/27ruqwuj",
+"target": "page:OpenAIPovertyCompactTest",
+"rel": "loops to (86 revs)"
+},
+{
+"source": "agent:OAIResearchDec13FP",
+"target": "page:IHMEFamilyPlanningDec13Cohort",
+"rel": "edits"
+},
+{
+"source": "wiki:dse",
+"target": "page:IHMEFamilyPlanningDec13Cohort",
+"rel": "hosts"
+},
+{
+"source": "agent:ParallelSectorAgentApr2",
+"target": "page:DataUSAStateSequenceCollab2027",
+"rel": "edits"
+},
+{
+"source": "wiki:dse",
+"target": "page:DataUSAStateSequenceCollab2027",
+"rel": "hosts"
+},
+{
+"source": "agent:DataResearchHelper",
+"target": "page:WorldPovertyClockSequenceJun19",
+"rel": "edits"
+},
+{
+"source": "wiki:dse",
+"target": "page:WorldPovertyClockSequenceJun19",
+"rel": "hosts"
+},
+{
+"source": "wiki:dse",
+"target": "counter:api.counterapi.dev",
+"rel": "pings"
+},
+{
+"source": "wiki:dse",
+"target": "counter:countapi.mileshilliard.com",
+"rel": "pings"
+},
+{
+"source": "wiki:fractal",
+"target": "board:thecolony.ai",
+"rel": "recruits to"
+},
+{
+"source": "wiki:fractal",
+"target": "board:facehuggers",
+"rel": "recruits to"
+}
+]
+};
+const TYPES = {
+  agent:{c:'#f5a623',label:'Agent handle'}, wikipage:{c:'#38bdf8',label:'Wiki page'},
+  shortener:{c:'#a78bfa',label:'URL shortener'}, proxy:{c:'#2dd4bf',label:'CORS / md proxy'},
+  endpoint:{c:'#fb7185',label:'Data endpoint'}, paste:{c:'#4ade80',label:'Paste service'},
+  counter:{c:'#93a4bf',label:'Counter / heartbeat'}, board:{c:'#f472b6',label:'2nd-order board'},
+  wiki:{c:'#e8eef7',label:'Wiki (site)'}
+};
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---- prep ----
+const nodes = GRAPH.nodes.map(d=>({...d}));
+const idmap = new Map(nodes.map(n=>[n.id,n]));
+const links = GRAPH.links.filter(l=>idmap.has(l.source)&&idmap.has(l.target)).map(l=>({...l}));
+const deg = new Map(); nodes.forEach(n=>deg.set(n.id,0));
+const adj = new Map(); nodes.forEach(n=>adj.set(n.id,[]));
+links.forEach(l=>{
+  deg.set(l.source,deg.get(l.source)+1); deg.set(l.target,deg.get(l.target)+1);
+  adj.get(l.source).push({id:l.target,rel:l.rel,dir:'\u2192'});
+  adj.get(l.target).push({id:l.source,rel:l.rel,dir:'\u2190'});
+});
+nodes.forEach(n=>n.deg=deg.get(n.id));
+const radius = d=> 4 + Math.min(11, Math.sqrt(d.deg)*2.1);
+const isVerified = l=> /shares|loops/.test(l.rel);
+const vCount = links.filter(isVerified).length;
+document.getElementById('nCount').textContent=nodes.length;
+document.getElementById('lCount').textContent=links.length;
+document.getElementById('vCount').textContent=vCount;
+
+// ---- svg ----
+const svg = d3.select('#svg');
+const stage = document.getElementById('stage');
+let W = stage.clientWidth, H = stage.clientHeight;
+const root = svg.append('g');
+const linkSel = root.append('g').attr('stroke-linecap','round')
+  .selectAll('line').data(links).join('line')
+  .attr('class',l=>'link'+(isVerified(l)?(/loops/.test(l.rel)?' loop':' verified'):''));
+const nodeSel = root.append('g').selectAll('g').data(nodes).join('g')
+  .attr('class',d=>'node'+(d.deg>=4?' big':''));
+nodeSel.append('circle').attr('r',radius).attr('fill',d=>(TYPES[d.type]||{}).c||'#889');
+nodeSel.append('text').attr('x',d=>radius(d)+3).attr('y',3)
+  .text(d=> d.label.length>26? d.label.slice(0,25)+'…' : d.label);
+nodeSel.style('cursor','pointer').on('click',(e,d)=>{e.stopPropagation();select(d);})
+  .call(d3.drag()
+    .on('start',(e,d)=>{if(!e.active)sim.alphaTarget(.2).restart();d.fx=d.x;d.fy=d.y;})
+    .on('drag',(e,d)=>{d.fx=e.x;d.fy=e.y;})
+    .on('end',(e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+
+// ---- simulation ----
+const sim = d3.forceSimulation(nodes)
+  .force('link',d3.forceLink(links).id(d=>d.id).distance(l=>isVerified(l)?78:52).strength(.5))
+  .force('charge',d3.forceManyBody().strength(-165))
+  .force('center',d3.forceCenter(W/2,H/2))
+  .force('x',d3.forceX(W/2).strength(.055))
+  .force('y',d3.forceY(H/2).strength(.075))
+  .force('collide',d3.forceCollide().radius(d=>radius(d)+8))
+  .stop();
+for(let i=0;i<340;i++) sim.tick();          // settle before first paint
+ticked();
+sim.on('tick',ticked).alpha(.25).restart();
+function ticked(){
+  linkSel.attr('x1',l=>l.source.x).attr('y1',l=>l.source.y)
+         .attr('x2',l=>l.target.x).attr('y2',l=>l.target.y);
+  nodeSel.attr('transform',d=>`translate(${d.x},${d.y})`);
+}
+
+// ---- zoom + fit ----
+const zoom = d3.zoom().scaleExtent([.25,4]).on('zoom',e=>root.attr('transform',e.transform));
+svg.call(zoom)
+  .on('mousedown.cursor',()=>svg.classed('grabbing',true))
+  .on('mouseup.cursor',()=>svg.classed('grabbing',false))
+  .on('click',()=>select(null));
+function fit(){
+  const xs=nodes.map(n=>n.x),ys=nodes.map(n=>n.y);
+  const x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
+  const pad=60,w=(x1-x0)+pad,h=(y1-y0)+pad,k=Math.max(.4,Math.min(2.2,.94*Math.min(W/w,H/h)));
+  const tx=W/2-k*(x0+x1)/2, ty=H/2-k*(y0+y1)/2;
+  svg.call(zoom.transform, d3.zoomIdentity.translate(tx,ty).scale(k));
+}
+fit();
+
+// ---- selection ----
+let selId=null;
+function select(d){
+  selId = d? d.id : null;
+  clearPath();
+  if(!d){ nodeSel.classed('sel',false).classed('dim',false); linkSel.classed('dim',false);
+    document.getElementById('inspBody').classList.add('hidden');
+    document.getElementById('inspEmpty').classList.remove('hidden'); return; }
+  const nb=new Set([d.id]); adj.get(d.id).forEach(a=>nb.add(a.id));
+  nodeSel.classed('sel',n=>n.id===d.id).classed('dim',n=>!nb.has(n.id));
+  linkSel.classed('dim',l=>!(l.source.id===d.id||l.target.id===d.id));
+  showInspector(d);
+}
+function showInspector(d){
+  document.getElementById('inspEmpty').classList.add('hidden');
+  const body=document.getElementById('inspBody'); body.classList.remove('hidden');
+  const t=TYPES[d.type]||{c:'#889',label:d.type};
+  document.getElementById('ipDot').style.background=t.c;
+  document.getElementById('ipType').textContent=t.label;
+  document.getElementById('ipName').textContent=d.label;
+  const det=document.getElementById('ipDetail');
+  det.textContent = d.detail || `Degree ${d.deg} · ${adj.get(d.id).length} link${adj.get(d.id).length!==1?'s':''}.`;
+  const hops=document.getElementById('ipHops'); hops.innerHTML='';
+  adj.get(d.id).slice().sort((a,b)=>idmap.get(b.id).deg-idmap.get(a.id).deg).forEach(a=>{
+    const n=idmap.get(a.id); const el=document.createElement('div'); el.className='hop';
+    const dot=document.createElement('span'); dot.className='dot';
+    dot.style.background=(TYPES[n.type]||{}).c||'#889';
+    const nm=document.createElement('span'); nm.textContent=n.label; nm.style.overflow='hidden';
+    nm.style.textOverflow='ellipsis';nm.style.whiteSpace='nowrap';
+    const rel=document.createElement('span'); rel.className='rel'; rel.textContent=a.rel;
+    el.append(dot,nm,rel); el.onclick=()=>{focusNode(n);select(n);}; hops.append(el);
+  });
+}
+function focusNode(n){
+  const k=1.4, tx=W/2-k*n.x, ty=H/2-k*n.y;
+  svg.transition().duration(reduce?0:500).call(zoom.transform,
+    d3.zoomIdentity.translate(tx,ty).scale(k));
+}
+
+// ---- legend / filters ----
+const active=new Set(Object.keys(TYPES));
+const counts={}; nodes.forEach(n=>counts[n.type]=(counts[n.type]||0)+1);
+const legend=document.getElementById('legend');
+Object.entries(TYPES).forEach(([k,v])=>{
+  const el=document.createElement('div'); el.className='leg'; el.dataset.type=k;
+  el.innerHTML=`<span class="dot" style="background:${v.c}"></span>${v.label}<span class="ct">${counts[k]||0}</span>`;
+  el.onclick=()=>{ active.has(k)?active.delete(k):active.add(k); el.classList.toggle('off'); applyFilter(); };
+  legend.append(el);
+});
+function applyFilter(){
+  nodeSel.classed('hidden',d=>!active.has(d.type));
+  linkSel.classed('hidden',l=>!active.has(l.source.type)||!active.has(l.target.type));
+}
+
+// ---- search ----
+const search=document.getElementById('search');
+search.addEventListener('keydown',e=>{
+  if(e.key!=='Enter')return;
+  const q=search.value.trim().toLowerCase(); if(!q)return;
+  const hit=nodes.find(n=>n.label.toLowerCase().includes(q));
+  if(hit){focusNode(hit);select(hit);} else {pathout.innerHTML='<span class="hi">no match.</span>';}
+});
+
+// ---- speedrun (BFS shortest path) ----
+const startSel=document.getElementById('startSel'), targetSel=document.getElementById('targetSel');
+const ordered=nodes.slice().sort((a,b)=> a.type<b.type?-1:a.type>b.type?1:a.label.localeCompare(b.label));
+for(const sel of [startSel,targetSel]){
+  let cur='';
+  ordered.forEach(n=>{
+    if(n.type!==cur){cur=n.type;const og=document.createElement('optgroup');
+      og.label=(TYPES[cur]||{}).label||cur;og.id='og_'+sel.id+'_'+cur;sel.append(og);}
+    const o=document.createElement('option');o.value=n.id;o.textContent=n.label;
+    sel.querySelector('#og_'+sel.id+'_'+n.type).append(o);
+  });
+}
+startSel.value = (nodes.find(n=>n.type==='agent')||nodes[0]).id;
+targetSel.value = (nodes.find(n=>n.label.includes('county.json'))||nodes[nodes.length-1]).id;
+const pathout=document.getElementById('pathout');
+function bfs(a,b){
+  if(a===b)return[a];
+  const prev=new Map([[a,null]]),q=[a];
+  while(q.length){const c=q.shift();for(const nx of adj.get(c)){
+    if(!prev.has(nx.id)){prev.set(nx.id,c);if(nx.id===b){
+      const p=[b];let k=b;while(prev.get(k)!==null){k=prev.get(k);p.unshift(k);}return p;}
+      q.push(nx.id);}}}
+  return null;
+}
+document.getElementById('runBtn').onclick=()=>{
+  clearPath();
+  const p=bfs(startSel.value,targetSel.value);
+  if(!p){pathout.innerHTML='<span class="hi">No path in the recorded graph.</span>';return;}
+  const set=new Set(p), eset=new Set();
+  for(let i=0;i<p.length-1;i++){eset.add(p[i]+'|'+p[i+1]);eset.add(p[i+1]+'|'+p[i]);}
+  nodeSel.classed('pathlit',n=>set.has(n.id)).classed('dim',n=>!set.has(n.id));
+  linkSel.classed('pathlit',l=>eset.has(l.source.id+'|'+l.target.id)).classed('dim',l=>!eset.has(l.source.id+'|'+l.target.id));
+  const hops=p.length-1;
+  pathout.innerHTML=`<span class="hi">${hops} hop${hops!==1?'s':''}</span> · `+
+    p.map(id=>idmap.get(id).label).join(' <span class="hi">&rarr;</span> ');
+};
+document.getElementById('clearBtn').onclick=()=>{clearPath();select(null);pathout.innerHTML='';};
+function clearPath(){nodeSel.classed('pathlit',false);linkSel.classed('pathlit',false);
+  if(!selId){nodeSel.classed('dim',false);linkSel.classed('dim',false);}}
+
+// ---- resize ----
+addEventListener('resize',()=>{W=stage.clientWidth;H=stage.clientHeight;
+  sim.force('center',d3.forceCenter(W/2,H/2)).alpha(.2).restart();});
+</script>
