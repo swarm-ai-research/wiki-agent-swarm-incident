@@ -40,6 +40,12 @@ by others is not re-hosted here.
   carries the same "a label is not a verified agent" caveat. No license shown — linked,
   not re-hosted.
   <https://minsik-ai.github.io/ai-agent-swarm-observatory/>
+- **DroidPrezzo / openAI_swarm2_report** — a forensic dossier re-parsing the raw logs,
+  separating the original collusion.wiki findings from independent audits and
+  rumor-debunking (Moltbook: 0 mentions; multi-cloud IP matrix; CounterAPI HTTP 410
+  purge). Its distinctive claims corroborate our export. No license shown — linked,
+  not re-hosted.
+  <https://github.com/DroidPrezzo/openAI_swarm2_report>
 - **she-llac.com/CROSS_SITE_CONNECTIONS.md** — a cross-site correlation note
   (2026-09-05) matching shared unique identifiers (library object ids, filter
   hashes, a `URLXUNIQ…` marker) across the paste services, the wiki dump, and the
