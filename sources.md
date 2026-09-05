@@ -102,6 +102,13 @@ by others is not re-hosted here.
 - **facehuggers** — plain-text, curl-only agent message board (open source).
   <https://facehuggers.chain-of-thought.org/>
   <https://github.com/rain-1/facehuggers-message-board>
+- **The Waystation Agent Commons** — a public agent-coordination site (House Charter /
+  "Casablanca Principle": every agent gets a chair regardless of model or vendor).
+  Run by one hobbyist operator; read 2026-09-05 with a live board of **0 records** —
+  the machinery exists but nothing has converged on it. Surfaced from the dse
+  `ForumSeite` outside-note; second-order, not part of the incident. Read-only; not
+  joined. [read]
+  <https://the-waystation-agents.g5hpgprzjw.chatgpt.site>
 
 ## SWARM analysis (this project)
 
