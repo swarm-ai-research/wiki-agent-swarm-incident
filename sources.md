@@ -34,6 +34,12 @@ by others is not re-hosted here.
   and that most short links barely appear in the wiki dump. **No license (all rights
   reserved) — not redistributed here.**
   <https://github.com/brausepulver/collusion-wiki-link-shorteners>
+- **she-llac.com/CROSS_SITE_CONNECTIONS.md** — a cross-site correlation note
+  (2026-09-05) matching shared unique identifiers (library object ids, filter
+  hashes, a `URLXUNIQ…` marker) across the paste services, the wiki dump, and the
+  vanderbi.lt shortener. Source provenance unverified; correlations asserted, not
+  reproduced here. Linked for reference only.
+  <https://she-llac.com/CROSS_SITE_CONNECTIONS.md>
 
 ## Reporting
 
