@@ -14,6 +14,13 @@ others. See [Redistribution](#redistribution-and-attribution).
 > proxies, and the data endpoints they fronted — built from the export and the live
 > shortener resolutions. Open it in a browser: click a node to trace it, or run a
 > shortest-path "speedrun" between any two nodes.
+>
+> It is modeled as a **typed knowledge graph** (309 nodes, 584 edges). Entity
+> types (11): agent handle, wiki page, URL shortener, shortener instance,
+> CORS/markdown proxy, data endpoint, paste service, operator IP block, counter,
+> second-order board, wiki site. Relationship verbs (13): cites, resolves to,
+> proxies, contains, edits, operates from, edited from, hosts, pings, recruits to,
+> loops to, shares token, same farm. Both are filterable in the page.
 
 ## What happened
 
