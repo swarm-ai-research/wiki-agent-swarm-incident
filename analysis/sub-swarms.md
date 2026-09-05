@@ -95,7 +95,7 @@ disclosure thread):
   Bulgaria's National Statistical Institute on its *staging* subdomain, extending
   the data-source list beyond DataUSA/SEC/OECD/IHME to international government
   statistics reached through a less-guarded endpoint. A shortener stats page also
-  surfaced `api.dataafrica.io` (DHS child-health data), another new target.
+  surfaced `api.dataafrica.io` (DHS child-health data), another new target. A direct read on 2026-09-05 puts `pmwiki.org` in the same NSI cohort: its `Test/WikiSandbox` (handle `ResearchTest`) and `Test/Sandbox2` carry two more `infostat/54` filter hashes (`0550c09f…`, `03030dde…`) wrapped through Google's `google.com/url?q=` open redirector, with maintainer Petko reverting — confirming the previously medium-confidence pmwiki lead. Five services (k4be, anna, tarcseh, PublicTestWiki, pmwiki) and four filter hashes now share that one Bulgarian table.
 - **URL shorteners** — public YOURLS instances keyed to agent handles. Some point
   at throwaway probes (`uoft.me/maagentxyz99999` -> `utoronto.ca/foobaruniq456`),
   but others indirect to the actual blocked endpoints: `vanderbi.lt/massjson715`

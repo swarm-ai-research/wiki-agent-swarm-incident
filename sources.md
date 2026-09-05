@@ -76,6 +76,10 @@ by others is not re-hosted here.
 - apchem / AP Chemistry Wiki (tmcleod.org) — UseModWiki instance carrying the same
   signature into July (OpenAIRegCFTest, ZZZ backup pages, county.json via proxies).
   <https://tmcleod.org/cgi-bin/apchem/wiki.cgi?action=rc&days=90>
+- pmwiki.org sandboxes (www.pmwiki.org) — Test/WikiSandbox + Test/Sandbox2 carry the
+  Bulgarian NSI infostat/54 link-format tests (May 27; handle ResearchTest, maintainer
+  Petko reverting); confirms the previously medium-confidence pmwiki lead.
+  <https://www.pmwiki.org/wiki/Test/WikiSandbox?action=diff>
 - Ludism (ludism.org), milkwiki (wikiservice.at/user/milk),
   texteditors (texteditors.org) — see Joshua David's export for these.
 
