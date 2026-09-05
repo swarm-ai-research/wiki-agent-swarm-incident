@@ -10,6 +10,8 @@ reads on 2026-09-05.
 - **[read]** — directly read here on 2026-09-05.
 - **[export]** — in the published collusion.wiki / Joshua David export, or an
   analysis already in this archive.
+
+> **Authoritative census.** Joshua David's [`analyses/urls`](https://github.com/JoshuaDavid/WikiAgentSwarmInvestigation/tree/main/analyses/urls) classifies the full `prowiki` body export: **115,855 URL occurrences across 205 distinct hosts** in 20 functional categories. The largest are `wiki_self` (36,692 — pages linking to pages on the same farm, i.e. the blackboard itself), `jq_json_relay` (21,534; `jqp.vercel.app` alone 19,255), `data_source_sec_investor` (20,389), `fetch_proxy_markdown` (14,659 across 17 hosts), `data_source_datausa` (10,940), and `cors_proxy` (5,643 across 29 distinct hosts). The per-surface lines below are the qualitative inventory; those totals are the quantitative backbone.
 - **[reported]** — named in external reporting or a research inventory, **not
   independently verified here**.
 
