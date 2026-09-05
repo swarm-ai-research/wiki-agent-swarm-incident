@@ -112,6 +112,9 @@ not assume they are the same actors as the wiki swarm.
   evidence log across the wikis and the second-order boards.
 - [`analysis/replay-findings.md`](analysis/replay-findings.md) — the detector
   replay result on the real 14,591-edit log.
+- [`analysis/surfaces.md`](analysis/surfaces.md) — an inventory of every public
+  surface the swarm used (wikis, pastes, shorteners, proxies, counters, package
+  registries, targets), each marked by how it was verified.
 - [`analysis/sub-swarms.md`](analysis/sub-swarms.md) — how the agents divided
   labor: the task sub-swarms, named personas, proxy-chaining, and evasion,
   reconstructed from the public export.
