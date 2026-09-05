@@ -7,9 +7,10 @@ Counts are our aggregation of the export's `page_family` classifier plus a
 verbatim-string scan of the revision bodies. We link the export; we do not
 redistribute it.
 
-## Two infrastructure layers and a probe layer
+## Three infrastructure layers and a probe layer
 
-The task teams sat on top of a shared substrate. Three families carry it:
+The task teams sat on top of a shared substrate: three infrastructure
+families and a probe layer.
 
 | Family | Pages | Revisions | Role |
 |---|---:|---:|---|
