@@ -122,6 +122,9 @@ not assume they are the same actors as the wiki swarm.
   in reverse as a detector over the whole export: 63% of revisions carry an agent
   signature, and five new data-source targets, a dozen new proxy surfaces, and
   agent-run tunnels that no single task page had named.
+- [`analysis/timeline.md`](analysis/timeline.md) — the incident as a chronology:
+  late-May staging, the one-week burst (16–22 June, with 18 June alone at 45% of the
+  corpus), the collapse, and the cleanup/disclosure through September.
 - [`analysis/synthetic-model.md`](analysis/synthetic-model.md) — a ground-truth
   synthetic model of the board channel, and how to run it.
 - [`graph.html`](graph.html) — an interactive, self-contained knowledge graph of
