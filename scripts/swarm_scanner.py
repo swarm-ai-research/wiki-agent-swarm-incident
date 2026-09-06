@@ -21,6 +21,7 @@ table of the top hits. Read-only, one request per wiki.
   python3 scripts/swarm_scanner.py --report data/swarm_scan.json --top 30
 """
 import argparse, collections, json, re, statistics, sys, urllib.parse
+from datetime import date
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -35,14 +36,31 @@ SIG = {
     "payload": re.compile(r"[A-Za-z0-9+/]{120,}={0,2}|\{\s*\"v\"\s*:\s*\d|\"payload\"\s*:"),
     "infra": re.compile(r"counterapi|countapi|ntfy\.sh|webhook\.site|r\.jina\.ai|markdown\.new|allorigins|corsproxy|cors\.[a-z]+\.workers|jqp\.vercel|pastebin|paste\.|is\.gd|tinyurl|v\.gd|da\.gd|md\.succ", re.I),
 }
+# Any-year date headers, so old rows segment under their OWN (old) header instead
+# of leaking into a recent one; only 2025–26 buckets are counted (RECENT_YEARS).
+_M = "January|February|March|April|May|June|July|August|September|October|November|December"
+_DM = "Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember"
 DATES = [
-    re.compile(r"\b(20(?:25|26))-(\d\d)-(\d\d)\b"),
-    re.compile(r"\b(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}),? (20(?:25|26))\b"),
-    re.compile(r"\b(\d{1,2})\. (Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember) (20(?:25|26))\b"),
-    re.compile(r"\b(\d\d)\.(\d\d)\.(20(?:25|26))\b"),
-    re.compile(r"\b(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (20(?:25|26))\b"),
+    re.compile(r"\b((?:19|20)\d\d)-(\d\d)-(\d\d)\b"),
+    re.compile(r"\b(?:" + _M + r") \d{1,2},? (?:19|20)\d\d\b"),
+    re.compile(r"\b\d{1,2}\. (?:" + _DM + r") (?:19|20)\d\d\b"),
+    re.compile(r"\b\d{1,2}\.\d{1,2}\.((?:19|20)\d\d)\b"),
+    re.compile(r"\b\d{1,2} (?:" + _M + r") (?:19|20)\d\d\b"),
 ]
 TIME = re.compile(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\b")
+_YEAR = re.compile(r"(?:19|20)\d\d")
+RECENT_YEARS = {2025, 2026}
+TODAY = date.today().isoformat()
+
+
+def _countable(daykey):
+    """A day header worth counting: year in 2025–26, and (for ISO keys) not in
+    the future — a `2026-10-10` on a page today is a version string, not a day."""
+    y = _YEAR.search(daykey)
+    if not y or int(y.group(0)) not in RECENT_YEARS:
+        return False
+    iso = re.match(r"((?:19|20)\d\d-\d\d-\d\d)", daykey)
+    return not (iso and iso.group(1) > TODAY)
 WEIGHTS = {"cloud": 2, "handles": 3, "bots": 0.2, "words": 1.5, "payload": 4, "infra": 2}
 CAPS = {"cloud": 10, "handles": 10, "bots": 10, "words": 10, "payload": 5, "infra": 10}
 ENGINE_RC = {
@@ -97,11 +115,11 @@ def day_counts(text):
         counts = collections.Counter()
         for t in times:
             i = bisect.bisect_right(hpos, t) - 1
-            if i >= 0:
+            if i >= 0 and _countable(headers[i][1]):   # old-year buckets drop out here
                 counts[headers[i][1]] += 1
         if counts:
             return counts
-    return collections.Counter(d for _, d in headers)
+    return collections.Counter(d for _, d in headers if _countable(d))
 
 
 def score_text(text):
