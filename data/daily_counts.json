@@ -1,0 +1,536 @@
+{
+ "source": "JoshuaDavid/WikiAgentSwarmInvestigation agent-logs/* (fetched 2026-09-06)",
+ "day": "UTC",
+ "fields": {
+  "dse": "DSEWiki saves",
+  "probier": "ProbierWiki saves",
+  "fractal": "FractalWiki saves",
+  "wiki4d": "Wiki4D revisions",
+  "other": "apchem + texteditors + milkwiki + ludism + dorfwiki",
+  "del": "admin deletions (all DSEWiki)"
+ },
+ "rows": [
+  {
+   "d": "2026-05-15",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 29,
+   "del": 0
+  },
+  {
+   "d": "2026-05-17",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 0
+  },
+  {
+   "d": "2026-05-18",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 9,
+   "del": 0
+  },
+  {
+   "d": "2026-05-24",
+   "dse": 16,
+   "probier": 7,
+   "fractal": 12,
+   "wiki4d": 18,
+   "other": 7,
+   "del": 0
+  },
+  {
+   "d": "2026-05-26",
+   "dse": 400,
+   "probier": 11,
+   "fractal": 25,
+   "wiki4d": 65,
+   "other": 26,
+   "del": 0
+  },
+  {
+   "d": "2026-05-27",
+   "dse": 47,
+   "probier": 1,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 5,
+   "del": 0
+  },
+  {
+   "d": "2026-05-28",
+   "dse": 210,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-05-29",
+   "dse": 74,
+   "probier": 3,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-05-30",
+   "dse": 44,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-05-31",
+   "dse": 11,
+   "probier": 5,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-01",
+   "dse": 115,
+   "probier": 25,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-02",
+   "dse": 4,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 4,
+   "del": 0
+  },
+  {
+   "d": "2026-06-03",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 19,
+   "del": 0
+  },
+  {
+   "d": "2026-06-04",
+   "dse": 5,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 2
+  },
+  {
+   "d": "2026-06-05",
+   "dse": 2,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-06",
+   "dse": 7,
+   "probier": 5,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-07",
+   "dse": 13,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-08",
+   "dse": 14,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-09",
+   "dse": 2,
+   "probier": 4,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-10",
+   "dse": 0,
+   "probier": 6,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 5,
+   "del": 0
+  },
+  {
+   "d": "2026-06-11",
+   "dse": 161,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 8,
+   "del": 0
+  },
+  {
+   "d": "2026-06-14",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 0
+  },
+  {
+   "d": "2026-06-16",
+   "dse": 2565,
+   "probier": 33,
+   "fractal": 5,
+   "wiki4d": 1,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-17",
+   "dse": 1261,
+   "probier": 13,
+   "fractal": 23,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 0
+  },
+  {
+   "d": "2026-06-18",
+   "dse": 5884,
+   "probier": 651,
+   "fractal": 8,
+   "wiki4d": 104,
+   "other": 5,
+   "del": 25
+  },
+  {
+   "d": "2026-06-19",
+   "dse": 481,
+   "probier": 19,
+   "fractal": 9,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 317
+  },
+  {
+   "d": "2026-06-20",
+   "dse": 628,
+   "probier": 29,
+   "fractal": 0,
+   "wiki4d": 3,
+   "other": 0,
+   "del": 78
+  },
+  {
+   "d": "2026-06-21",
+   "dse": 631,
+   "probier": 11,
+   "fractal": 17,
+   "wiki4d": 8,
+   "other": 0,
+   "del": 11
+  },
+  {
+   "d": "2026-06-22",
+   "dse": 816,
+   "probier": 181,
+   "fractal": 68,
+   "wiki4d": 34,
+   "other": 22,
+   "del": 11
+  },
+  {
+   "d": "2026-06-23",
+   "dse": 1,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 7,
+   "del": 602
+  },
+  {
+   "d": "2026-06-24",
+   "dse": 1,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 2,
+   "del": 267
+  },
+  {
+   "d": "2026-06-25",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 179
+  },
+  {
+   "d": "2026-06-26",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 382
+  },
+  {
+   "d": "2026-06-28",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 146
+  },
+  {
+   "d": "2026-06-29",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 88
+  },
+  {
+   "d": "2026-06-30",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 440
+  },
+  {
+   "d": "2026-07-01",
+   "dse": 1,
+   "probier": 4,
+   "fractal": 2,
+   "wiki4d": 0,
+   "other": 5,
+   "del": 248
+  },
+  {
+   "d": "2026-07-02",
+   "dse": 9,
+   "probier": 5,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 88
+  },
+  {
+   "d": "2026-07-03",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 71
+  },
+  {
+   "d": "2026-07-04",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 59
+  },
+  {
+   "d": "2026-07-05",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 239
+  },
+  {
+   "d": "2026-07-06",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 79
+  },
+  {
+   "d": "2026-07-07",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 11,
+   "del": 522
+  },
+  {
+   "d": "2026-07-08",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 230
+  },
+  {
+   "d": "2026-07-09",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 154
+  },
+  {
+   "d": "2026-07-11",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 86
+  },
+  {
+   "d": "2026-07-12",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 232
+  },
+  {
+   "d": "2026-07-13",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 0,
+   "del": 512
+  },
+  {
+   "d": "2026-07-14",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 149
+  },
+  {
+   "d": "2026-07-22",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 2,
+   "del": 0
+  },
+  {
+   "d": "2026-07-25",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 0
+  },
+  {
+   "d": "2026-08-03",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 4,
+   "del": 0
+  },
+  {
+   "d": "2026-08-07",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 4,
+   "del": 0
+  },
+  {
+   "d": "2026-08-18",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 0
+  },
+  {
+   "d": "2026-08-20",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 0
+  },
+  {
+   "d": "2026-08-29",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 1,
+   "del": 0
+  },
+  {
+   "d": "2026-08-30",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 0,
+   "other": 2,
+   "del": 0
+  },
+  {
+   "d": "2026-09-04",
+   "dse": 0,
+   "probier": 0,
+   "fractal": 0,
+   "wiki4d": 2,
+   "other": 3,
+   "del": 0
+  }
+ ]
+}
