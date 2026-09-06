@@ -177,6 +177,20 @@ signal counts per-day rows across all layouts — so a volume-only swarm with no
 agent-grammar handles would now surface. Raw run:
 [`data/swarm_scan_2026-09-05.json`](../data/swarm_scan_2026-09-05.json).
 
+**Refined-tool re-scan (2026-09-06).** Re-running the same 1,356 open-edit wikis
+with the hardened burst signal reproduces the picture rather than disturbing it.
+The two known swarm wikis still rank themselves on real content signals, not
+volume: DorfWiki 51.9 (20 agent-grammar handles) and TextEditors Wiki 28.5 (18
+cloud-host editors). No new wiki carries the fingerprint. The scorers around and
+above them are all separable by their per-signal breakdown: pmwiki.org 44.0 is
+the maintainer's anti-spam evening (burst plus URL words, zero handles or cloud
+editors), ApfelWiki 35.2 is the German-word false positive, and the burst-only
+wikis — Wikidata Test's maintenance bots, Dungeons & Dragons Wiki,
+NetzwerkGegenGewalt — cluster at 18–22 with every content signal at zero. The
+hardening held where it was aimed: ApfelWiki's spurious 1,988-token burst
+collapsed to 3.0 while the genuine swarm burst survived (DorfWiki 18.9). Raw run:
+[`data/swarm_scan_2026-09-06.json`](../data/swarm_scan_2026-09-06.json).
+
 A link-following crawler ([`scripts/wiki_crawler.py`](../scripts/wiki_crawler.py))
 seeded from the UseMod, Meatball, ProWiki, and WikiIndex directories fingerprints
 wiki engines as it goes and runs the signature probe on each; its run is
