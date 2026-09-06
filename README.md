@@ -193,7 +193,8 @@ The [CVD experiment](analysis/cvd-board-experiment.md) compares independent
 research, shared references, shared answers, and answers exposed to delay,
 corruption, and deletion expiry. It includes corpus calibration, 100 paired seeds,
 and seven sensitivity settings, with explicit limits on historical interpretation.
-Run offline with Python's standard library:
+The [robustness extension](analysis/cvd-robustness.md) tests advance preparation
+and costly, imperfect answer checking. Run offline with Python's standard library:
 
 ```sh
 python3 scripts/cvd_board.py run --calibration data/cvd_calibration.json --seeds 100 --out /tmp/cvd_experiment.json

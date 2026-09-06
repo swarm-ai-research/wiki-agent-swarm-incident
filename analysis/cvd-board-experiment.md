@@ -110,7 +110,13 @@ python3 scripts/cvd_board.py calibrate --export /path/to/export --out /tmp/cvd_c
 
 # No export or network access needed for the simulation.
 python3 scripts/cvd_board.py run --calibration data/cvd_calibration.json --seeds 100 --out /tmp/cvd_experiment.json
-cmp data/cvd_experiment.json /tmp/cvd_experiment.json
+# Compare per-seed results; source hashes/settings metadata changed in the extension.
+python3 - <<'PYCODE'
+import json
+a = json.load(open('data/cvd_experiment.json'))
+b = json.load(open('/tmp/cvd_experiment.json'))
+assert [(c['case'], c['seeds']) for c in a['cases']] == [(c['case'], c['seeds']) for c in b['cases']]
+PYCODE
 python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
@@ -122,3 +128,11 @@ causality, expiry, corruption propagation, reference effort, and round isolation
 Beads: `distributional-agi-safety-c2hb` (calibration),
 `distributional-agi-safety-2hrm` (simulation), and
 `distributional-agi-safety-kqbx` (sensitivity study).
+
+## Preparation and verification extension
+
+The [robustness study](cvd-robustness.md) adds pre-round private preparation and a
+hypothetical answer checker. It preserves the original per-seed outcomes when those
+features are disabled. The original JSON records source version `c88c8fa`; the
+current source hash differs, so reproduction compares outcomes rather than the
+entire historical file.

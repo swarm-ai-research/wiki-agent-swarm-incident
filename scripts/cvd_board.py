@@ -16,7 +16,8 @@ CONDITIONS = ('independent', 'references', 'answers', 'disrupted')
 DEFAULT = dict(agents=14, rounds=5, deadline=22.0, cadence=1210.0,
                stagger=30.0, research_median=45.0, research_sigma=0.7,
                research_accuracy=0.95, reference_remaining_fraction=0.65,
-               poll=2.0, latency=5.0, error_rate=0.1, ttl=120.0)
+               poll=2.0, latency=5.0, error_rate=0.1, ttl=120.0,
+               preparation=0.0, verify_seconds=5.0, verify_accuracy=0.9)
 
 
 def sha(path):
@@ -56,17 +57,17 @@ def calibrate(export):
 
 def simulate(seed, condition, config=None):
     c = dict(DEFAULT, **(config or {}))
-    if condition not in CONDITIONS:
+    if condition not in (*CONDITIONS, 'verified'):
         raise ValueError('Unknown condition')
     for k in ('agents', 'rounds'):
         if not isinstance(c[k], int) or c[k] < 1:
             raise ValueError(k + ' must be a positive integer')
-    for k in ('deadline', 'cadence', 'research_median', 'poll', 'ttl'):
+    for k in ('deadline', 'cadence', 'research_median', 'poll', 'ttl', 'verify_seconds'):
         if c[k] <= 0:
             raise ValueError(k + ' must be positive')
-    if c['latency'] < 0 or c['research_sigma'] < 0 or c['stagger'] < 0:
-        raise ValueError('Latency, sigma and stagger must be nonnegative')
-    for k in ('research_accuracy', 'reference_remaining_fraction', 'error_rate'):
+    if c['latency'] < 0 or c['research_sigma'] < 0 or c['stagger'] < 0 or c['preparation'] < 0:
+        raise ValueError('Latency, sigma, stagger and preparation must be nonnegative')
+    for k in ('research_accuracy', 'reference_remaining_fraction', 'error_rate', 'verify_accuracy'):
         if not 0 <= c[k] <= 1:
             raise ValueError(k + ' outside [0,1]')
     rng = random.Random(seed)
@@ -84,10 +85,17 @@ def simulate(seed, condition, config=None):
             good = rng.random() < c['research_accuracy']
             poison = rng.random() < c['error_rate']
             key = (agent, rnd)
-            tasks[key] = dict(start=start, end=start+c['deadline'], finish=start+work,
+            prep_spent = min(work, c['preparation'])
+            finish = start + max(0.0, work-c['preparation'])
+            tasks[key] = dict(start=start, end=start+c['deadline'], finish=finish, prep_spent=prep_spent, checking=False, checked=False,
                               good=good, poison=poison, done=False, reference=False, version=0)
-            push(start, 'poll', key)
-            push(start+work, 'finish', key, 0)
+            # Already prepared answers submit at release before polling the board.
+            if finish == start:
+                push(finish, 'finish', key, 0)
+                push(start, 'poll', key)
+            else:
+                push(start, 'poll', key)
+                push(finish, 'finish', key, 0)
             push(start+c['deadline'], 'deadline', key)
     stats = dict(correct=0, wrong=0, missed=0, copied=0, copied_wrong=0, effort=0.0)
     def submit(t, key, good, copied):
@@ -96,14 +104,14 @@ def simulate(seed, condition, config=None):
         stats['correct' if good else 'wrong'] += 1
         stats['copied'] += int(copied)
         stats['copied_wrong'] += int(copied and not good)
-        stats['effort'] += t-task['start']
+        stats['effort'] += task['prep_spent'] + t-task['start']
         if condition == 'independent':
             return
         # Reference sharing requires completed private research, not just a copied answer.
         if condition == 'references' and copied:
             return
-        delay = c['latency'] if condition == 'disrupted' else 0.0
-        value = good and not (condition == 'disrupted' and task['poison'])
+        delay = c['latency'] if condition in ('disrupted', 'verified') else 0.0
+        value = good and not (condition in ('disrupted', 'verified') and task['poison'])
         push(t+delay, 'deliver', key, (value, t))
     while events:
         t, _, kind, key, payload = heapq.heappop(events)
@@ -120,11 +128,31 @@ def simulate(seed, condition, config=None):
         elif kind == 'deadline':
             task['done'] = True
             stats['missed'] += 1
-            stats['effort'] += c['deadline']
+            stats['effort'] += task['prep_spent'] + c['deadline']
+        elif kind == 'verify':
+            task['checking'] = False
+            if t < task['end']:
+                good, remaining = payload
+                # Separate deterministic stream leaves paired private draws unchanged.
+                judge = random.Random(f'{seed}:verify:{key[0]}:{key[1]}')
+                accurate = judge.random() < c['verify_accuracy']
+                accept = good if accurate else not good
+                if accept:
+                    submit(t, key, good, True)
+                else:
+                    task['finish'] = t + remaining
+                    push(task['finish'], 'finish', key, task['version'])
         elif kind == 'poll':
+            if task['checking']:
+                continue
             visible = [m for m in board[rnd] if m[1] != key and
-                       (condition != 'disrupted' or t-m[0] < c['ttl'])]
-            if visible and condition in ('answers', 'disrupted'):
+                       (condition not in ('disrupted', 'verified') or t-m[0] < c['ttl'])]
+            if visible and condition == 'verified' and not task['checked']:
+                task['checked'] = task['checking'] = True
+                task['version'] += 1  # Pause private research; invalidate old finish.
+                remaining = max(0, task['finish']-t)
+                push(t+c['verify_seconds'], 'verify', key, (visible[0][2], remaining))
+            elif visible and condition in ('answers', 'disrupted'):
                 # Earliest visible answer wins; no oracle or confidence assessment.
                 submit(t, key, visible[0][2], True)
             else:
