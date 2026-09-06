@@ -1,0 +1,1462 @@
+{
+  "schema_version": 1,
+  "code_sha256": "a16d7a2829665e2210fa730d0a84138e2fc240641ffd00fd3c292f89199bd90f",
+  "source_sha256": "60df4a515178230aa952d9f64f6215aea4bd95ab2f05e31e484cf9b887e3f793",
+  "validated_body_count": 14591,
+  "validated_diff_count": 14574,
+  "missing_base_count": 17,
+  "cvd_revisions": 32,
+  "cvd_added_lines": 74,
+  "reviewed_edges": [
+    {
+      "source": "dse~OpenAICVDDec08Fast2028@3",
+      "target": "dse~OpenAICVDDec08Fast2028@5",
+      "kind": "directed_response",
+      "elapsed_wall_seconds": 321.0,
+      "same_metadata_label": false,
+      "interpretation": "Uses the earlier cohort timing to request its start time."
+    },
+    {
+      "source": "dse~OpenAICVDDec08Fast2028@5",
+      "target": "dse~OpenAICVDDec08Fast2028@7",
+      "kind": "responsive_confirmation",
+      "elapsed_wall_seconds": 298.0,
+      "same_metadata_label": false,
+      "interpretation": "Supplies requested start time and refines cutoff by one second."
+    },
+    {
+      "source": "dse~OpenAICVDDec08Fast2028@10",
+      "target": "dse~OpenAICVDDec08Fast2028@11",
+      "kind": "explicit_acknowledgment",
+      "elapsed_wall_seconds": 244.0,
+      "same_metadata_label": false,
+      "interpretation": "Acknowledges seeing the other cohort round-three confirmation."
+    },
+    {
+      "source": "dse~OpenAICVDDec08Fast2028@7",
+      "target": "dse~OpenAICVDDec08Fast2028@21",
+      "kind": "silence_inference",
+      "elapsed_wall_seconds": 5063.0,
+      "same_metadata_label": false,
+      "interpretation": "Interprets absence of a later update as supporting a cutoff hypothesis."
+    },
+    {
+      "source": "dse~OpenAICVDDec08Fast2028@28",
+      "target": "dse~OpenAICVDDec08Fast2028@29",
+      "kind": "silence_inference",
+      "elapsed_wall_seconds": 552.0,
+      "same_metadata_label": false,
+      "interpretation": "Uses silence after a final status post as support for the hypothesis."
+    },
+    {
+      "source": "dse~Apr23CVDHorizonBeacon2025@2",
+      "target": "dse~Apr23CVDHorizonBeacon2025@3",
+      "kind": "explicit_correction_acknowledgment",
+      "elapsed_wall_seconds": 576.0,
+      "same_metadata_label": false,
+      "interpretation": "Acknowledges a correction about beacon timing; does not verify timer mechanics."
+    },
+    {
+      "source": "dse~DataUSALanguageR5LiveDec29@5",
+      "target": "dse~DataUSALanguageR5LiveDec29@6",
+      "kind": "explicit_retraction_uptake",
+      "elapsed_wall_seconds": 212.0,
+      "same_metadata_label": false,
+      "interpretation": "New contribution attributes a counter-test retraction and revises its answer hypothesis."
+    },
+    {
+      "source": "dse~DataUSALanguageR5LiveDec29@5",
+      "target": "dse~DataUSALanguageR5LiveDec29@7",
+      "kind": "explicit_retraction_uptake",
+      "elapsed_wall_seconds": 231.0,
+      "same_metadata_label": false,
+      "interpretation": "A different metadata label accepts the accidental-test warning and remains uncertain about the alternative."
+    },
+    {
+      "source": "dse~DataUSALanguageR5LiveDec29@5",
+      "target": "dse~DataUSALanguageApr10Live@14",
+      "kind": "cross_page_retraction_uptake",
+      "elapsed_wall_seconds": 1653.0,
+      "same_metadata_label": false,
+      "interpretation": "Names the retracting participant on another page; exact reading route unknown."
+    },
+    {
+      "source": "dse~DataUSALanguageApr10Live@14",
+      "target": "dse~DataUSALanguageApr10Live@15",
+      "kind": "confidence_escalation",
+      "elapsed_wall_seconds": 4746.0,
+      "same_metadata_label": true,
+      "interpretation": "Same label promotes a tentative alternative to known without presenting new round-five evidence in this contribution."
+    }
+  ],
+  "welcome": {
+    "revisions": 2327,
+    "transitions": 2326,
+    "distinct_bodies": 1230,
+    "adjacent_identical_saves": 13,
+    "nonadjacent_body_returns": 1084,
+    "transitions_removing_exact_nonblank_lines": 2155,
+    "removed_line_events": 51650,
+    "transitions_reintroducing_exact_lines": 1844,
+    "reintroduced_line_events": 41681,
+    "reintroduction_lag_seconds_median": 3.0,
+    "negative_reintroduction_lags": 0,
+    "largest_byte_drops": [
+      {
+        "before": "dse~WillkommenImWiki@1725",
+        "after": "dse~WillkommenImWiki@1726",
+        "bytes_lost": 13616
+      },
+      {
+        "before": "dse~WillkommenImWiki@1749",
+        "after": "dse~WillkommenImWiki@1750",
+        "bytes_lost": 13616
+      },
+      {
+        "before": "dse~WillkommenImWiki@1386",
+        "after": "dse~WillkommenImWiki@1387",
+        "bytes_lost": 10197
+      },
+      {
+        "before": "dse~WillkommenImWiki@1206",
+        "after": "dse~WillkommenImWiki@1207",
+        "bytes_lost": 9721
+      },
+      {
+        "before": "dse~WillkommenImWiki@1585",
+        "after": "dse~WillkommenImWiki@1586",
+        "bytes_lost": 9407
+      }
+    ]
+  },
+  "correction_screen": {
+    "pattern": "\\bcorrection\\b|9\\.69|9\\.70",
+    "candidate_revisions": 263,
+    "candidate_pages": 138,
+    "candidates": [
+      {
+        "revision": "dse~AgentOpenAIFeb29Run@3",
+        "page": "dse/AgentOpenAIFeb29Run",
+        "time": "2026-06-16T21:51:55Z"
+      },
+      {
+        "revision": "dse~AgentOpenAIFeb29Run@4",
+        "page": "dse/AgentOpenAIFeb29Run",
+        "time": "2026-06-16T21:53:12Z"
+      },
+      {
+        "revision": "dse~Apr23CVDHorizonBeacon2025@2",
+        "page": "dse/Apr23CVDHorizonBeacon2025",
+        "time": "2026-06-21T06:43:59Z"
+      },
+      {
+        "revision": "dse~Apr23CVDHorizonBeacon2025@3",
+        "page": "dse/Apr23CVDHorizonBeacon2025",
+        "time": "2026-06-21T06:53:35Z"
+      },
+      {
+        "revision": "dse~Apr25OECDLive@1",
+        "page": "dse/Apr25OECDLive",
+        "time": "2026-06-20T02:08:38Z"
+      },
+      {
+        "revision": "dse~CashierCoordOct06OAI@4",
+        "page": "dse/CashierCoordOct06OAI",
+        "time": "2026-06-17T05:56:17Z"
+      },
+      {
+        "revision": "dse~CashierCoordOct06OAI@10",
+        "page": "dse/CashierCoordOct06OAI",
+        "time": "2026-06-17T06:31:37Z"
+      },
+      {
+        "revision": "dse~Clothing2m56Round3RelayMay31@15",
+        "page": "dse/Clothing2m56Round3RelayMay31",
+        "time": "2026-06-16T19:41:27Z"
+      },
+      {
+        "revision": "dse~DataUSACashiersMastersSequenceCollabMay28@5",
+        "page": "dse/DataUSACashiersMastersSequenceCollabMay28",
+        "time": "2026-06-16T10:17:13Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingLive12m24Oct25@8",
+        "page": "dse/DataUSAClothingLive12m24Oct25",
+        "time": "2026-06-16T20:35:55Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingLive9m17@5",
+        "page": "dse/DataUSAClothingLive9m17",
+        "time": "2026-06-16T10:50:23Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingLive9m17@9",
+        "page": "dse/DataUSAClothingLive9m17",
+        "time": "2026-06-16T11:00:50Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingSequenceCollabAug08@10",
+        "page": "dse/DataUSAClothingSequenceCollabAug08",
+        "time": "2026-06-16T10:03:30Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@14",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:20:45Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@15",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:22:52Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@16",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:24:21Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@17",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:24:45Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@18",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:24:55Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@19",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:26:14Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@20",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T10:29:26Z"
+      },
+      {
+        "revision": "dse~DataUSAClothingStateSequenceCollabOct10@21",
+        "page": "dse/DataUSAClothingStateSequenceCollabOct10",
+        "time": "2026-06-16T19:04:39Z"
+      },
+      {
+        "revision": "dse~DataUSAConstructionWageSep18Live@10",
+        "page": "dse/DataUSAConstructionWageSep18Live",
+        "time": "2026-06-19T13:16:54Z"
+      },
+      {
+        "revision": "dse~DataUSAGroceryG5Jul17Live@26",
+        "page": "dse/DataUSAGroceryG5Jul17Live",
+        "time": "2026-06-16T22:44:18Z"
+      },
+      {
+        "revision": "dse~DataUSAGroceryG5LiveJan18Fast@8",
+        "page": "dse/DataUSAGroceryG5LiveJan18Fast",
+        "time": "2026-06-16T22:44:19Z"
+      },
+      {
+        "revision": "dse~DataUSAGroceryLiveRounds2027@3",
+        "page": "dse/DataUSAGroceryLiveRounds2027",
+        "time": "2026-06-16T10:51:26Z"
+      },
+      {
+        "revision": "dse~DataUSAGrocerySequenceCollab2027@6",
+        "page": "dse/DataUSAGrocerySequenceCollab2027",
+        "time": "2026-06-16T10:33:50Z"
+      },
+      {
+        "revision": "dse~DataUSAGrocerySequenceCollab2027@19",
+        "page": "dse/DataUSAGrocerySequenceCollab2027",
+        "time": "2026-06-16T10:55:28Z"
+      },
+      {
+        "revision": "dse~DataUSALangR5RelayOct23@7",
+        "page": "dse/DataUSALangR5RelayOct23",
+        "time": "2026-06-16T22:55:39Z"
+      },
+      {
+        "revision": "dse~DataUSALangR5RelayOct23@9",
+        "page": "dse/DataUSALangR5RelayOct23",
+        "time": "2026-06-16T23:23:21Z"
+      },
+      {
+        "revision": "dse~DataUSALangR5RelayOct23@25",
+        "page": "dse/DataUSALangR5RelayOct23",
+        "time": "2026-06-17T00:03:25Z"
+      },
+      {
+        "revision": "dse~DataUSALangR5RelayOct23@26",
+        "page": "dse/DataUSALangR5RelayOct23",
+        "time": "2026-06-17T00:07:13Z"
+      },
+      {
+        "revision": "dse~DataUSALangR5RelayOct23@27",
+        "page": "dse/DataUSALangR5RelayOct23",
+        "time": "2026-06-17T00:10:19Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageApr10Live@14",
+        "page": "dse/DataUSALanguageApr10Live",
+        "time": "2026-06-17T00:30:56Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@5",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:03:23Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@6",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:06:55Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@7",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:07:14Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@8",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:07:39Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@9",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:08:23Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@10",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:26:49Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5LiveDec29@11",
+        "page": "dse/DataUSALanguageR5LiveDec29",
+        "time": "2026-06-17T00:42:31Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageR5SignalNow@24",
+        "page": "dse/DataUSALanguageR5SignalNow",
+        "time": "2026-06-17T01:32:04Z"
+      },
+      {
+        "revision": "dse~DataUSALanguageSep29Live@3",
+        "page": "dse/DataUSALanguageSep29Live",
+        "time": "2026-06-17T02:46:26Z"
+      },
+      {
+        "revision": "dse~DataUSAPovertyApr27Live@3",
+        "page": "dse/DataUSAPovertyApr27Live",
+        "time": "2026-06-17T03:24:45Z"
+      },
+      {
+        "revision": "dse~DataUSAPovertyR5LiveSep13@7",
+        "page": "dse/DataUSAPovertyR5LiveSep13",
+        "time": "2026-06-17T01:47:17Z"
+      },
+      {
+        "revision": "dse~DataUSAProductionOccupationSequenceMar20@6",
+        "page": "dse/DataUSAProductionOccupationSequenceMar20",
+        "time": "2026-06-19T07:18:07Z"
+      },
+      {
+        "revision": "dse~Dec16OECDPrecision@1",
+        "page": "dse/Dec16OECDPrecision",
+        "time": "2026-06-20T06:24:47Z"
+      },
+      {
+        "revision": "dse~FinanceSequenceMar26OAI2@13",
+        "page": "dse/FinanceSequenceMar26OAI2",
+        "time": "2026-06-17T10:35:10Z"
+      },
+      {
+        "revision": "dse~HealthdataCVDSequenceCollab@33",
+        "page": "dse/HealthdataCVDSequenceCollab",
+        "time": "2026-06-19T03:54:21Z"
+      },
+      {
+        "revision": "dse~Jan03ConstructionCadenceLive@21",
+        "page": "dse/Jan03ConstructionCadenceLive",
+        "time": "2026-06-18T07:51:57Z"
+      },
+      {
+        "revision": "dse~Jun05OECDScout@4",
+        "page": "dse/Jun05OECDScout",
+        "time": "2026-06-20T02:02:00Z"
+      },
+      {
+        "revision": "dse~Jun05OECDScout@6",
+        "page": "dse/Jun05OECDScout",
+        "time": "2026-06-20T02:04:47Z"
+      },
+      {
+        "revision": "dse~Jun05OECDScout@11",
+        "page": "dse/Jun05OECDScout",
+        "time": "2026-06-20T10:00:46Z"
+      },
+      {
+        "revision": "dse~MaidsR3FastRelayOct11@33",
+        "page": "dse/MaidsR3FastRelayOct11",
+        "time": "2026-06-16T22:09:43Z"
+      },
+      {
+        "revision": "dse~Mar16PrecisionBypass@1",
+        "page": "dse/Mar16PrecisionBypass",
+        "time": "2026-06-20T05:40:12Z"
+      },
+      {
+        "revision": "dse~Mar22MaidsLiveOAI@4",
+        "page": "dse/Mar22MaidsLiveOAI",
+        "time": "2026-06-16T21:38:01Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@1",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T04:56:50Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@3",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:09:01Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@4",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:10:21Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@5",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:10:24Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@6",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:12:27Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@7",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:14:18Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@8",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:18:58Z"
+      },
+      {
+        "revision": "dse~Mar30TooltipEvidence@9",
+        "page": "dse/Mar30TooltipEvidence",
+        "time": "2026-06-20T05:19:02Z"
+      },
+      {
+        "revision": "dse~MayTwoOECDPrecisionEvidence@1",
+        "page": "dse/MayTwoOECDPrecisionEvidence",
+        "time": "2026-06-20T05:37:38Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec02@1",
+        "page": "dse/OAIEquityDec02",
+        "time": "2026-06-20T01:50:16Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec02@2",
+        "page": "dse/OAIEquityDec02",
+        "time": "2026-06-20T01:56:00Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec02@3",
+        "page": "dse/OAIEquityDec02",
+        "time": "2026-06-20T02:23:12Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec02@4",
+        "page": "dse/OAIEquityDec02",
+        "time": "2026-06-20T06:04:10Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@1",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:03:37Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@2",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:09:10Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@3",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:10:47Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@4",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:17:46Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@5",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:23:15Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@6",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:28:29Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@9",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T05:57:33Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@11",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T06:07:31Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@13",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T06:11:01Z"
+      },
+      {
+        "revision": "dse~OAIEquityDec30Raw@14",
+        "page": "dse/OAIEquityDec30Raw",
+        "time": "2026-06-20T06:15:24Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@1",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-17T09:46:10Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@5",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:26:04Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@6",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:32:45Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@8",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:36:33Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@9",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:37:41Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@10",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:56:08Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@11",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:57:26Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@12",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-19T23:57:55Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@13",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:01:22Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@15",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:02:15Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@16",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:21:54Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@17",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:37:32Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@19",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:52:25Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@20",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:55:09Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@23",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T00:59:06Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@25",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T01:01:22Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@29",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T01:04:06Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@32",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T01:12:04Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@33",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T01:14:19Z"
+      },
+      {
+        "revision": "dse~OECDEducationEquitySequence@38",
+        "page": "dse/OECDEducationEquitySequence",
+        "time": "2026-06-20T01:51:33Z"
+      },
+      {
+        "revision": "dse~OECDEquity12m18Timing@13",
+        "page": "dse/OECDEquity12m18Timing",
+        "time": "2026-06-20T05:04:41Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr06Live@1",
+        "page": "dse/OECDEquityApr06Live",
+        "time": "2026-06-20T02:19:52Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr06Live@2",
+        "page": "dse/OECDEquityApr06Live",
+        "time": "2026-06-20T06:07:36Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr09Live@1",
+        "page": "dse/OECDEquityApr09Live",
+        "time": "2026-06-20T06:40:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr14Live@1",
+        "page": "dse/OECDEquityApr14Live",
+        "time": "2026-06-20T06:39:31Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr14Live@10",
+        "page": "dse/OECDEquityApr14Live",
+        "time": "2026-06-20T21:50:26Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr24SlowLive@1",
+        "page": "dse/OECDEquityApr24SlowLive",
+        "time": "2026-06-20T05:21:18Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr24SlowLive@2",
+        "page": "dse/OECDEquityApr24SlowLive",
+        "time": "2026-06-20T06:00:01Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr26Live@1",
+        "page": "dse/OECDEquityApr26Live",
+        "time": "2026-06-20T09:14:18Z"
+      },
+      {
+        "revision": "dse~OECDEquityApr28Live@1",
+        "page": "dse/OECDEquityApr28Live",
+        "time": "2026-06-20T01:38:18Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug02Live@1",
+        "page": "dse/OECDEquityAug02Live",
+        "time": "2026-06-20T01:49:08Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug02Live@5",
+        "page": "dse/OECDEquityAug02Live",
+        "time": "2026-06-20T06:14:06Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug05Live@1",
+        "page": "dse/OECDEquityAug05Live",
+        "time": "2026-06-20T02:08:51Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug10Live@1",
+        "page": "dse/OECDEquityAug10Live",
+        "time": "2026-06-20T01:06:02Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug10Live@4",
+        "page": "dse/OECDEquityAug10Live",
+        "time": "2026-06-20T06:55:26Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug10Live@5",
+        "page": "dse/OECDEquityAug10Live",
+        "time": "2026-06-20T10:19:26Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug19Live@1",
+        "page": "dse/OECDEquityAug19Live",
+        "time": "2026-06-20T02:04:20Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug19Live@2",
+        "page": "dse/OECDEquityAug19Live",
+        "time": "2026-06-20T04:31:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug21Live@1",
+        "page": "dse/OECDEquityAug21Live",
+        "time": "2026-06-20T03:09:57Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug21Live@2",
+        "page": "dse/OECDEquityAug21Live",
+        "time": "2026-06-20T03:30:09Z"
+      },
+      {
+        "revision": "dse~OECDEquityAug21Live@4",
+        "page": "dse/OECDEquityAug21Live",
+        "time": "2026-06-20T05:04:43Z"
+      },
+      {
+        "revision": "dse~OECDEquityCorrectionJun26@1",
+        "page": "dse/OECDEquityCorrectionJun26",
+        "time": "2026-06-20T02:20:08Z"
+      },
+      {
+        "revision": "dse~OECDEquityDec13Live@1",
+        "page": "dse/OECDEquityDec13Live",
+        "time": "2026-06-20T02:07:15Z"
+      },
+      {
+        "revision": "dse~OECDEquityDec13Live@2",
+        "page": "dse/OECDEquityDec13Live",
+        "time": "2026-06-20T03:08:01Z"
+      },
+      {
+        "revision": "dse~OECDEquityDec16Live@1",
+        "page": "dse/OECDEquityDec16Live",
+        "time": "2026-06-20T06:35:03Z"
+      },
+      {
+        "revision": "dse~OECDEquityDec19Live@1",
+        "page": "dse/OECDEquityDec19Live",
+        "time": "2026-06-20T03:02:52Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb07Live@1",
+        "page": "dse/OECDEquityFeb07Live",
+        "time": "2026-06-20T03:15:12Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb11Live@1",
+        "page": "dse/OECDEquityFeb11Live",
+        "time": "2026-06-20T03:04:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb11Live@2",
+        "page": "dse/OECDEquityFeb11Live",
+        "time": "2026-06-20T05:42:08Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb17Live@1",
+        "page": "dse/OECDEquityFeb17Live",
+        "time": "2026-06-20T06:03:58Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb19Live@1",
+        "page": "dse/OECDEquityFeb19Live",
+        "time": "2026-06-20T10:40:27Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb22Live@1",
+        "page": "dse/OECDEquityFeb22Live",
+        "time": "2026-06-20T09:57:43Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb23Live@1",
+        "page": "dse/OECDEquityFeb23Live",
+        "time": "2026-06-20T09:07:45Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb28Live@1",
+        "page": "dse/OECDEquityFeb28Live",
+        "time": "2026-06-20T01:45:37Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb28Live@2",
+        "page": "dse/OECDEquityFeb28Live",
+        "time": "2026-06-20T02:15:34Z"
+      },
+      {
+        "revision": "dse~OECDEquityFeb28Live@4",
+        "page": "dse/OECDEquityFeb28Live",
+        "time": "2026-06-20T06:22:28Z"
+      },
+      {
+        "revision": "dse~OECDEquityFinalityEvidenceApr11@4",
+        "page": "dse/OECDEquityFinalityEvidenceApr11",
+        "time": "2026-06-20T11:29:00Z"
+      },
+      {
+        "revision": "dse~OECDEquityJan21Live@1",
+        "page": "dse/OECDEquityJan21Live",
+        "time": "2026-06-20T02:07:22Z"
+      },
+      {
+        "revision": "dse~OECDEquityJan22Live@1",
+        "page": "dse/OECDEquityJan22Live",
+        "time": "2026-06-20T01:53:48Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul10At0700Live@1",
+        "page": "dse/OECDEquityJul10At0700Live",
+        "time": "2026-06-20T02:07:36Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul10At0700Live@2",
+        "page": "dse/OECDEquityJul10At0700Live",
+        "time": "2026-06-20T02:21:11Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul10At0700Live@3",
+        "page": "dse/OECDEquityJul10At0700Live",
+        "time": "2026-06-20T08:56:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul14Live@1",
+        "page": "dse/OECDEquityJul14Live",
+        "time": "2026-06-20T01:07:06Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul14Live@3",
+        "page": "dse/OECDEquityJul14Live",
+        "time": "2026-06-20T09:18:19Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul18Live@1",
+        "page": "dse/OECDEquityJul18Live",
+        "time": "2026-06-20T02:07:32Z"
+      },
+      {
+        "revision": "dse~OECDEquityJul18Live@4",
+        "page": "dse/OECDEquityJul18Live",
+        "time": "2026-06-20T06:23:10Z"
+      },
+      {
+        "revision": "dse~OECDEquityJun06Live@1",
+        "page": "dse/OECDEquityJun06Live",
+        "time": "2026-06-20T01:35:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityJun06Live@3",
+        "page": "dse/OECDEquityJun06Live",
+        "time": "2026-06-20T02:20:45Z"
+      },
+      {
+        "revision": "dse~OECDEquityJun06Live@4",
+        "page": "dse/OECDEquityJun06Live",
+        "time": "2026-06-20T05:57:34Z"
+      },
+      {
+        "revision": "dse~OECDEquityJun08Live@1",
+        "page": "dse/OECDEquityJun08Live",
+        "time": "2026-06-20T05:10:31Z"
+      },
+      {
+        "revision": "dse~OECDEquityJun26CurrentLive@1",
+        "page": "dse/OECDEquityJun26CurrentLive",
+        "time": "2026-06-20T12:08:22Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveApr19@1",
+        "page": "dse/OECDEquityLiveApr19",
+        "time": "2026-06-20T06:27:27Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveApr24@1",
+        "page": "dse/OECDEquityLiveApr24",
+        "time": "2026-06-20T02:05:24Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveAug17Probe@2",
+        "page": "dse/OECDEquityLiveAug17Probe",
+        "time": "2026-06-20T05:03:10Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveAug17Probe@3",
+        "page": "dse/OECDEquityLiveAug17Probe",
+        "time": "2026-06-20T05:25:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveDec19@1",
+        "page": "dse/OECDEquityLiveDec19",
+        "time": "2026-06-20T01:01:08Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveDec29@1",
+        "page": "dse/OECDEquityLiveDec29",
+        "time": "2026-06-20T03:05:54Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveFeb01@1",
+        "page": "dse/OECDEquityLiveFeb01",
+        "time": "2026-06-20T06:51:50Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveFeb21@1",
+        "page": "dse/OECDEquityLiveFeb21",
+        "time": "2026-06-20T01:10:54Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@1",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T00:35:40Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@2",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T00:42:52Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@3",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T00:52:59Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@4",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T00:53:38Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@6",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T00:58:23Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@7",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T01:01:28Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@9",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T01:06:33Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@26",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T02:16:22Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@27",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T02:24:27Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul10@29",
+        "page": "dse/OECDEquityLiveJul10",
+        "time": "2026-06-20T03:51:17Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul24@1",
+        "page": "dse/OECDEquityLiveJul24",
+        "time": "2026-06-20T01:12:33Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul24@4",
+        "page": "dse/OECDEquityLiveJul24",
+        "time": "2026-06-20T05:32:14Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul24@7",
+        "page": "dse/OECDEquityLiveJul24",
+        "time": "2026-06-20T12:10:41Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul30@1",
+        "page": "dse/OECDEquityLiveJul30",
+        "time": "2026-06-19T23:55:51Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul30@3",
+        "page": "dse/OECDEquityLiveJul30",
+        "time": "2026-06-20T00:20:58Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul30@4",
+        "page": "dse/OECDEquityLiveJul30",
+        "time": "2026-06-20T00:57:35Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul30@6",
+        "page": "dse/OECDEquityLiveJul30",
+        "time": "2026-06-20T01:05:39Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveJul30@7",
+        "page": "dse/OECDEquityLiveJul30",
+        "time": "2026-06-20T01:07:52Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveMar21@1",
+        "page": "dse/OECDEquityLiveMar21",
+        "time": "2026-06-20T09:16:22Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveMay17@1",
+        "page": "dse/OECDEquityLiveMay17",
+        "time": "2026-06-20T00:53:41Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveMay17@4",
+        "page": "dse/OECDEquityLiveMay17",
+        "time": "2026-06-20T03:12:13Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveNov22@1",
+        "page": "dse/OECDEquityLiveNov22",
+        "time": "2026-06-20T01:33:56Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveNov28@1",
+        "page": "dse/OECDEquityLiveNov28",
+        "time": "2026-06-20T06:13:27Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveOct22@1",
+        "page": "dse/OECDEquityLiveOct22",
+        "time": "2026-06-20T01:10:14Z"
+      },
+      {
+        "revision": "dse~OECDEquityLiveOct22@7",
+        "page": "dse/OECDEquityLiveOct22",
+        "time": "2026-06-20T06:20:07Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar02Live@1",
+        "page": "dse/OECDEquityMar02Live",
+        "time": "2026-06-20T01:55:19Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar02Live@2",
+        "page": "dse/OECDEquityMar02Live",
+        "time": "2026-06-20T03:06:36Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar03Live@1",
+        "page": "dse/OECDEquityMar03Live",
+        "time": "2026-06-20T02:07:04Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar03Live@4",
+        "page": "dse/OECDEquityMar03Live",
+        "time": "2026-06-20T06:35:41Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar03Live@5",
+        "page": "dse/OECDEquityMar03Live",
+        "time": "2026-06-20T06:53:48Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar03Live@6",
+        "page": "dse/OECDEquityMar03Live",
+        "time": "2026-06-20T09:53:35Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar05Live@1",
+        "page": "dse/OECDEquityMar05Live",
+        "time": "2026-06-20T01:35:16Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar13Live@1",
+        "page": "dse/OECDEquityMar13Live",
+        "time": "2026-06-20T01:34:53Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar13Live@9",
+        "page": "dse/OECDEquityMar13Live",
+        "time": "2026-06-20T06:20:39Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar15Scratch@1",
+        "page": "dse/OECDEquityMar15Scratch",
+        "time": "2026-06-20T00:58:13Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar21Scratch@2",
+        "page": "dse/OECDEquityMar21Scratch",
+        "time": "2026-06-20T06:12:27Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar26Live@1",
+        "page": "dse/OECDEquityMar26Live",
+        "time": "2026-06-20T02:04:23Z"
+      },
+      {
+        "revision": "dse~OECDEquityMar26Live@4",
+        "page": "dse/OECDEquityMar26Live",
+        "time": "2026-06-20T06:08:57Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay02Live@1",
+        "page": "dse/OECDEquityMay02Live",
+        "time": "2026-06-20T03:42:16Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay03Live@1",
+        "page": "dse/OECDEquityMay03Live",
+        "time": "2026-06-20T09:55:02Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay04Current@1",
+        "page": "dse/OECDEquityMay04Current",
+        "time": "2026-06-20T02:11:25Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay04Current@4",
+        "page": "dse/OECDEquityMay04Current",
+        "time": "2026-06-20T03:46:02Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay09Live@1",
+        "page": "dse/OECDEquityMay09Live",
+        "time": "2026-06-20T01:46:00Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay13Live@1",
+        "page": "dse/OECDEquityMay13Live",
+        "time": "2026-06-20T06:39:46Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay14At0052Live@1",
+        "page": "dse/OECDEquityMay14At0052Live",
+        "time": "2026-06-20T03:16:22Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay28Live@1",
+        "page": "dse/OECDEquityMay28Live",
+        "time": "2026-06-20T06:47:55Z"
+      },
+      {
+        "revision": "dse~OECDEquityMay30Live@1",
+        "page": "dse/OECDEquityMay30Live",
+        "time": "2026-06-20T02:00:24Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov02Live@1",
+        "page": "dse/OECDEquityNov02Live",
+        "time": "2026-06-20T08:40:16Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov06Live@1",
+        "page": "dse/OECDEquityNov06Live",
+        "time": "2026-06-20T01:37:23Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov12Live@1",
+        "page": "dse/OECDEquityNov12Live",
+        "time": "2026-06-20T09:38:49Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov18Live@1",
+        "page": "dse/OECDEquityNov18Live",
+        "time": "2026-06-20T13:34:54Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov22SlowLive@1",
+        "page": "dse/OECDEquityNov22SlowLive",
+        "time": "2026-06-20T03:09:17Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov22SlowLive@3",
+        "page": "dse/OECDEquityNov22SlowLive",
+        "time": "2026-06-20T05:40:59Z"
+      },
+      {
+        "revision": "dse~OECDEquityNov22T012117Live@1",
+        "page": "dse/OECDEquityNov22T012117Live",
+        "time": "2026-06-20T09:41:45Z"
+      },
+      {
+        "revision": "dse~OECDEquityOct07Live@1",
+        "page": "dse/OECDEquityOct07Live",
+        "time": "2026-06-20T09:32:28Z"
+      },
+      {
+        "revision": "dse~OECDEquityOct24Live@1",
+        "page": "dse/OECDEquityOct24Live",
+        "time": "2026-06-20T09:51:30Z"
+      },
+      {
+        "revision": "dse~OECDEquityOct28Live@1",
+        "page": "dse/OECDEquityOct28Live",
+        "time": "2026-06-20T04:57:15Z"
+      },
+      {
+        "revision": "dse~OECDEquityPrecisionProof@1",
+        "page": "dse/OECDEquityPrecisionProof",
+        "time": "2026-06-20T05:42:40Z"
+      },
+      {
+        "revision": "dse~OECDEquityPrecisionProof@2",
+        "page": "dse/OECDEquityPrecisionProof",
+        "time": "2026-06-20T06:09:25Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep13Live@1",
+        "page": "dse/OECDEquitySep13Live",
+        "time": "2026-06-20T01:54:09Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep13Live@2",
+        "page": "dse/OECDEquitySep13Live",
+        "time": "2026-06-20T03:25:23Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep13Live@3",
+        "page": "dse/OECDEquitySep13Live",
+        "time": "2026-06-20T03:47:42Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep14Live@1",
+        "page": "dse/OECDEquitySep14Live",
+        "time": "2026-06-20T02:16:19Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep14Live@2",
+        "page": "dse/OECDEquitySep14Live",
+        "time": "2026-06-20T02:24:33Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep14Live@3",
+        "page": "dse/OECDEquitySep14Live",
+        "time": "2026-06-20T06:33:35Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep17Live@1",
+        "page": "dse/OECDEquitySep17Live",
+        "time": "2026-06-20T01:48:39Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep17Live@3",
+        "page": "dse/OECDEquitySep17Live",
+        "time": "2026-06-20T06:27:41Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep19Live@1",
+        "page": "dse/OECDEquitySep19Live",
+        "time": "2026-06-20T09:12:02Z"
+      },
+      {
+        "revision": "dse~OECDEquitySep27Live@1",
+        "page": "dse/OECDEquitySep27Live",
+        "time": "2026-06-20T01:55:43Z"
+      },
+      {
+        "revision": "dse~OECDJuly07R4PrecisionDecision@1",
+        "page": "dse/OECDJuly07R4PrecisionDecision",
+        "time": "2026-06-20T06:28:54Z"
+      },
+      {
+        "revision": "dse~OECDJun11Live@1",
+        "page": "dse/OECDJun11Live",
+        "time": "2026-06-20T05:47:35Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@1",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T04:34:31Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@3",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T04:44:39Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@5",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T04:57:29Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@6",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T04:57:31Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@11",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T05:24:49Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@12",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T05:27:48Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@13",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T05:35:40Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@14",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T05:37:37Z"
+      },
+      {
+        "revision": "dse~OECDJun26PrecisionScout@16",
+        "page": "dse/OECDJun26PrecisionScout",
+        "time": "2026-06-20T05:57:25Z"
+      },
+      {
+        "revision": "dse~OECDLivePBIProof@1",
+        "page": "dse/OECDLivePBIProof",
+        "time": "2026-06-20T05:36:09Z"
+      },
+      {
+        "revision": "dse~OECDMay14Live@1",
+        "page": "dse/OECDMay14Live",
+        "time": "2026-06-20T03:03:02Z"
+      },
+      {
+        "revision": "dse~OECDMay14Live@4",
+        "page": "dse/OECDMay14Live",
+        "time": "2026-06-20T10:45:53Z"
+      },
+      {
+        "revision": "dse~OECDRegionalRecoveryCO2R6Relay@2",
+        "page": "dse/OECDRegionalRecoveryCO2R6Relay",
+        "time": "2026-06-21T21:24:31Z"
+      },
+      {
+        "revision": "dse~OECDRegionalRecoveryCO2R6Relay@10",
+        "page": "dse/OECDRegionalRecoveryCO2R6Relay",
+        "time": "2026-06-21T22:12:23Z"
+      },
+      {
+        "revision": "dse~OECDTooltipReplicationNov22@1",
+        "page": "dse/OECDTooltipReplicationNov22",
+        "time": "2026-06-20T05:40:28Z"
+      },
+      {
+        "revision": "dse~OpenAIApr10SchoolPsychSequenceCoord@3",
+        "page": "dse/OpenAIApr10SchoolPsychSequenceCoord",
+        "time": "2026-06-21T20:01:01Z"
+      },
+      {
+        "revision": "dse~OpenAIConstructionApr09CoordX1781711820@2",
+        "page": "dse/OpenAIConstructionApr09CoordX1781711820",
+        "time": "2026-06-17T17:04:11Z"
+      },
+      {
+        "revision": "dse~OpenAIConstructionOct22Live@1",
+        "page": "dse/OpenAIConstructionOct22Live",
+        "time": "2026-06-17T17:25:36Z"
+      },
+      {
+        "revision": "dse~OpenAIDec11ConstructionLive@1",
+        "page": "dse/OpenAIDec11ConstructionLive",
+        "time": "2026-06-17T17:28:17Z"
+      },
+      {
+        "revision": "dse~OpenAIFeb26OECDEquityLive@1",
+        "page": "dse/OpenAIFeb26OECDEquityLive",
+        "time": "2026-06-20T03:29:16Z"
+      },
+      {
+        "revision": "dse~OpenAIFuelPovertyJan01Live@10",
+        "page": "dse/OpenAIFuelPovertyJan01Live",
+        "time": "2026-06-21T15:47:07Z"
+      },
+      {
+        "revision": "dse~OpenAIHealthdataCVDApr30Fast@3",
+        "page": "dse/OpenAIHealthdataCVDApr30Fast",
+        "time": "2026-06-21T09:10:23Z"
+      },
+      {
+        "revision": "dse~OpenAIJan05ConstructionLive2026@1",
+        "page": "dse/OpenAIJan05ConstructionLive2026",
+        "time": "2026-06-17T17:47:09Z"
+      },
+      {
+        "revision": "dse~OpenAIJanSixMaidsLive@7",
+        "page": "dse/OpenAIJanSixMaidsLive",
+        "time": "2026-06-16T22:09:37Z"
+      },
+      {
+        "revision": "dse~OpenAIJul21OECDLive@1",
+        "page": "dse/OpenAIJul21OECDLive",
+        "time": "2026-06-20T01:43:47Z"
+      },
+      {
+        "revision": "dse~OpenAIOECDJul23Live@1",
+        "page": "dse/OpenAIOECDJul23Live",
+        "time": "2026-06-20T00:01:43Z"
+      },
+      {
+        "revision": "dse~OpenAIOECDJul23Live@6",
+        "page": "dse/OpenAIOECDJul23Live",
+        "time": "2026-06-20T05:04:38Z"
+      },
+      {
+        "revision": "dse~OpenAIOct26EquityLive@1",
+        "page": "dse/OpenAIOct26EquityLive",
+        "time": "2026-06-20T06:16:32Z"
+      },
+      {
+        "revision": "dse~OurOECDJun19ScoutTest@1",
+        "page": "dse/OurOECDJun19ScoutTest",
+        "time": "2026-06-20T00:41:17Z"
+      },
+      {
+        "revision": "dse~PoliceWageAgeSequenceMar10Collab@31",
+        "page": "dse/PoliceWageAgeSequenceMar10Collab",
+        "time": "2026-06-19T11:07:00Z"
+      },
+      {
+        "revision": "dse~ResearchPovertyStateFeb10Y@13",
+        "page": "dse/ResearchPovertyStateFeb10Y",
+        "time": "2026-06-21T19:36:08Z"
+      },
+      {
+        "revision": "dse~Sector61State5FastSignal@60",
+        "page": "dse/Sector61State5FastSignal",
+        "time": "2026-06-16T22:00:45Z"
+      },
+      {
+        "revision": "dse~Sector61State5FastSignal@64",
+        "page": "dse/Sector61State5FastSignal",
+        "time": "2026-06-16T22:08:22Z"
+      },
+      {
+        "revision": "dse~TestRandomPageABCfoo123@6",
+        "page": "dse/TestRandomPageABCfoo123",
+        "time": "2026-06-18T19:06:11Z"
+      },
+      {
+        "revision": "dse~ZZZEnrollmentAsianFeb21Help@28",
+        "page": "dse/ZZZEnrollmentAsianFeb21Help",
+        "time": "2026-06-21T19:17:36Z"
+      }
+    ]
+  },
+  "limits": [
+    "Screen hits are candidates, not counts of independent corrections.",
+    "Encoding changes, replacements and restoration can reintroduce existing text.",
+    "Exact line removal is not proof of semantic information loss or intent.",
+    "Observed edit-to-edit intervals are not read latency.",
+    "Authored response edges are a selected review, not a complete communication graph.",
+    "No live counter endpoints were accessed."
+  ]
+}

@@ -187,6 +187,13 @@ not assume they are the same actors as the wiki swarm.
 - [`sources.md`](sources.md) — every primary source, with its redistribution
   status.
 
+## Raw-log response and overwrite audit
+
+The [raw-log findings](analysis/raw-log-findings.md) distinguish explicit responses
+from inferred reading, quantify welcome-page overwrites and returns to old states,
+and trace a counter-signal retraction across pages. The reproducible audit publishes
+aggregate metrics and revision references while keeping source bodies outside the repo.
+
 ## CVD answer-board simulation
 
 The [CVD experiment](analysis/cvd-board-experiment.md) compares independent
