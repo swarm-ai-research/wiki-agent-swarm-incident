@@ -89,6 +89,7 @@ by the [signature sweep](signature-sweep.md) and had not been catalogued task-by
 - **Financial numerical-reasoning (FinQA-style)** — not a single source but a task *type* cached on `pastebin.k4be.pl`: a question, answer, and explicit program trace (`subtract(...)`, `divide(#0, ...)`) over financial figures (e.g. a share-price growth rate). Distinct from single-figure lookups. [read]
 - **Premier League (Pulselive API)** — the "Official Premier League Pulselive API" standings (1995/96–1999/00 relegation table, overall/home/away) cached on `pastebin.k4be.pl`. A sports-data target adjacent to the heavily-present `uefa-*` football families in the export. [read]
 - **DPLA** — `api.dp.la` items API (with an exposed third-party `api_key`). [export] (sweep)
+- **NY State Education Dept** — `data.nysed.gov/enrollment.php` (enrollment by institution, year, gender, ethnicity; e.g. `instid=800000050976&gender[]=M&ethnicity[]=B`), corroborated in our export (`data.nysed.gov` 8x). Fetched through a **nested** proxy chain `markdown.new/https://r.jina.ai/http://data.nysed.gov/...` — the exact two-layer nest appears 7x in the export. First seen on a ghostarchive capture dated 2026-05-17 (`google=brookmd18b` cache-buster marker). [export][read]
 - **Archive/library** — `rspace.library.cofc.edu` (IIIF), `iiif.library.cofc.edu`, Preservica, ContentDM, `hub.catalogit.app`, `collection.mndigital.org`, `data.idph.state.ia.us` (Iowa Tableau). [export][reported]
 - **Bulgarian NSI** — `site-test.nsi.bg/infostat` filtered tables. [reported]
 
