@@ -59,8 +59,12 @@ several candidates.
 
 ## How to extend this
 
-The direct-probe loop is one shell function: fetch `RecentChanges` with
-`days=200&all=1`, grep for the signature set, and read anything that hits. The two
+The probe loop is now [`scripts/wiki_lookup.py`](../scripts/wiki_lookup.py):
+`probe` fetches every candidate in [`data/wiki_candidates.json`](../data/wiki_candidates.json)
+and reports signature hits with context (`--url` to try a new wiki, `-e` for a
+custom regex, `--json` for a machine-readable run); `grep` runs a regex over the
+title, label, summary, or body of every revision in the public export. Add a
+candidate or a signature by editing the JSON, not the code. The two
 gaps worth closing are the Oddmuse family (needs a browser session past the bot
 check) and any other UseModWiki instance, which Google no longer indexes well —
 `usemod.org/SitesUsingUseMod` is an empty page.
