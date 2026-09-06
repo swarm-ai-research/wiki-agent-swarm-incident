@@ -19,7 +19,7 @@ The parser counts displayed table rows, not redirect clicks, and counts a row on
 - **35 rows with a `zzmass`/`masscounty`/`wpc`/`rwhealth`/`secraw`-style keyword** (a deliberately broad literal keyword family, not an attribution detector).
 - A rough **451 row occurrences from selected Azure-associated first-octet ranges**; this is only a coarse network heuristic, not an IP-ownership or actor claim.
 
-The counts differ from Sophia's reported **479 links / 451 IPs** (and from the earlier 444-June figure). Differences are expected from table growth, snapshot timing, and counting rules; this pass is the current read-only table snapshot, not a correction of the historical report.
+The counts differ from a Discord report of **479 links / 451 IPs** (and from the earlier 444-June figure). Differences are expected from table growth, snapshot timing, and counting rules; this pass is the current read-only table snapshot, not a correction of the historical report.
 
 ### Most frequent displayed target hosts
 
@@ -41,5 +41,5 @@ These are literal hosts in displayed original-URL text. They are not evidence th
 ## Disposition
 
 - **[read]** Unauthenticated YOURLS admin exposure, pagination, visible rows, timestamps, creator-IP strings, click columns, target text, InfinityPaste landing, and Probyte view page.
-- **[reported]** Discord/glove.she-llac.com provenance, Sophia/cis_female attribution, swarm-datastore interpretation, and historical 479/451 counts. The read-only listing corroborates the named-keyword/target/IP pattern but does not establish ownership or the historical exact totals.
+- **[reported]** Discord/glove.she-llac.com provenance, individual Discord attribution, swarm-datastore interpretation, and historical 479/451 counts. The read-only listing corroborates the named-keyword/target/IP pattern but does not establish ownership or the historical exact totals.
 - Do not follow arbitrary rmn.re short links: redirects can mutate click counts. Do not follow CounterAPI or other GET-writable paths.
