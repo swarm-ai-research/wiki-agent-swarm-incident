@@ -187,6 +187,31 @@ not assume they are the same actors as the wiki swarm.
 - [`sources.md`](sources.md) — every primary source, with its redistribution
   status.
 
+## Scanner coverage and offline checks
+
+New scanner results include an `outcome`: `readable`, `blocked`, `unavailable`,
+or `parsing_failed`, plus a `reason` when the fetch cannot be scored. Only
+readable RecentChanges responses enter the ranking; other results have a null
+`score`. Readability uses page markers and does not establish complete historical
+coverage or validate every edit row. A readable zero score means no scored signal
+in that response, not proof that the wiki has never hosted agent activity.
+
+`--report` also accepts historical JSON. Responses whose readability cannot be
+established from saved metadata appear as `legacy_unverified`; their original
+scores remain in the file but are excluded from the readable ranking. Reporting
+an old file does not re-fetch it or rerun its detection against corrected parsers.
+
+WikiIndex targets are deduplicated by normalized RecentChanges URL, preserving
+sibling installation paths and query selectors such as `wiki=`, rather than by
+hostname. This can increase request counts on shared farms; `--limit` still caps
+the number of targets.
+
+Run the authored offline regression fixtures without fetching any wiki:
+
+```sh
+python3 -m unittest discover -s scripts -p 'test_*.py'
+```
+
 ## Redistribution and attribution
 
 This archive republishes only material we authored. Where the analysis quotes

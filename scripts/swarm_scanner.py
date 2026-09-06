@@ -48,19 +48,31 @@ DATES = [
     re.compile(r"\b\d{1,2} (?:" + _M + r") (?:19|20)\d\d\b"),
 ]
 TIME = re.compile(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\b")
-_YEAR = re.compile(r"(?:19|20)\d\d")
 RECENT_YEARS = {2025, 2026}
-TODAY = date.today().isoformat()
+MONTHS = {name: i for names in (_M, _DM)
+          for i, name in enumerate(names.split("|"), 1)}
+
+
+def _parse_day(daykey):
+    """Normalize all supported headers, rejecting impossible calendar dates."""
+    parts = daykey.replace(",", "").replace(".", " ").split()
+    try:
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", daykey):
+            return date.fromisoformat(daykey)
+        if parts[0] in MONTHS:
+            month, day, year = MONTHS[parts[0]], int(parts[1]), int(parts[2])
+        else:
+            day, year = int(parts[0]), int(parts[2])
+            month = MONTHS[parts[1]] if parts[1] in MONTHS else int(parts[1])
+        return date(year, month, day)
+    except (ValueError, IndexError):
+        return None
 
 
 def _countable(daykey):
-    """A day header worth counting: year in 2025–26, and (for ISO keys) not in
-    the future — a `2026-10-10` on a page today is a version string, not a day."""
-    y = _YEAR.search(daykey)
-    if not y or int(y.group(0)) not in RECENT_YEARS:
-        return False
-    iso = re.match(r"((?:19|20)\d\d-\d\d-\d\d)", daykey)
-    return not (iso and iso.group(1) > TODAY)
+    """Only valid, non-future dates in the incident's 2025–26 window count."""
+    day = _parse_day(daykey)
+    return day is not None and day.year in RECENT_YEARS and day <= date.today()
 WEIGHTS = {"cloud": 2, "handles": 3, "bots": 0.2, "words": 1.5, "payload": 4, "infra": 2}
 CAPS = {"cloud": 10, "handles": 10, "bots": 10, "words": 10, "payload": 5, "infra": 10}
 ENGINE_RC = {
@@ -85,17 +97,56 @@ def engine_key(e):
 
 def rc_from(engine, url):
     p = urllib.parse.urlsplit(url)
+    original_query = urllib.parse.parse_qsl(p.query, keep_blank_values=True)
+
+    def endpoint(path, query):
+        # Keep installation selectors such as wiki=foo; replace page/action
+        # selectors and scan-window controls with the RC request's values.
+        controls = {"title", "id", "n", "do", "action", "days", "limit", "all"}
+        kept = [(k, v) for k, v in original_query if k not in controls]
+        kept.extend(urllib.parse.parse_qsl(query.replace(";", "&"), keep_blank_values=True))
+        return urllib.parse.urlunsplit((p.scheme, p.netloc, path,
+                                       urllib.parse.urlencode(kept), ""))
+
     if engine == "mediawiki":
         # Statistics URL is usually .../index.php?title=Special:Statistics or /wiki/Special:Statistics
-        if "title=" in p.query:
-            return f"{p.scheme}://{p.netloc}{p.path}?title=Special:RecentChanges&days=30&limit=500"
+        if any(k == "title" for k, _ in original_query) or p.path.endswith(".php"):
+            return endpoint(p.path, "title=Special:RecentChanges&days=30&limit=500")
         path = re.sub(r"/Special:.*$", "", p.path)
-        return f"{p.scheme}://{p.netloc}{path}{ENGINE_RC['mediawiki']}"
+        return endpoint(path.rstrip("/") + "/Special:RecentChanges", "days=30&limit=500")
     m = re.match(r"(.*?\.(?:pl|cgi|php|py))(?:[/?].*)?$", p.path)
+    suffix = ENGINE_RC.get(engine, "?action=rc" if m else "/RecentChanges")
+    rc_path, _, query = suffix.partition("?")
     if m:
-        return f"{p.scheme}://{p.netloc}{m.group(1)}{ENGINE_RC.get(engine, '?action=rc')}"
+        return endpoint(m.group(1) + rc_path, query)
     path = re.sub(r"/[^/]*$", "", p.path)
-    return f"{p.scheme}://{p.netloc}{path}{ENGINE_RC.get(engine, '/RecentChanges')}"
+    return endpoint(path + rc_path, query)
+
+
+def installation_key(url):
+    """Compare equivalent RC URLs without merging sibling installations."""
+    p = urllib.parse.urlsplit(url)
+    host = p.netloc.lower()
+    default_port = ":443" if p.scheme.lower() == "https" else ":80"
+    if host.endswith(default_port):
+        host = host[:-len(default_port)]
+    return (p.scheme.lower(), host, p.path or "/",
+            tuple(sorted(urllib.parse.parse_qsl(p.query, keep_blank_values=True))))
+
+
+def build_targets(entries, skip, statuses):
+    targets, seen = [], set()
+    for entry in entries:
+        if ((entry.get("engine") or "").lower() in skip
+                or entry.get("status", "") not in statuses or not entry.get("urls")):
+            continue
+        engine = engine_key(entry.get("engine"))
+        url = rc_from(engine, entry["urls"][0])
+        key = installation_key(url)
+        if key not in seen:
+            seen.add(key)
+            targets.append({"name": entry["name"], "engine": engine, "url": url})
+    return targets
 
 
 def day_counts(text):
@@ -105,7 +156,9 @@ def day_counts(text):
     each row carries its own date (inline, as some Oddmuse skins do). MediaWiki
     and UseMod print the date once as a day header and put a time on each row, so
     token-counting saw ~1 per day and the burst signal went blind. Here every
-    HH:MM row is bucketed under its preceding day header, so burst works for all.
+    HH:MM row is bucketed under its preceding day header. Supported dates share
+    ISO day keys; invalid, future, and out-of-window headers separate rows but
+    do not contribute counts.
     """
     import bisect
     headers = sorted((m.start(), m.group(0)) for rx in DATES for m in rx.finditer(text))
@@ -116,10 +169,11 @@ def day_counts(text):
         for t in times:
             i = bisect.bisect_right(hpos, t) - 1
             if i >= 0 and _countable(headers[i][1]):   # old-year buckets drop out here
-                counts[headers[i][1]] += 1
+                counts[_parse_day(headers[i][1]).isoformat()] += 1
         if counts:
             return counts
-    return collections.Counter(d for _, d in headers if _countable(d))
+    return collections.Counter(_parse_day(d).isoformat()
+                               for _, d in headers if _countable(d))
 
 
 def score_text(text):
@@ -141,15 +195,39 @@ def scan_one(t):
     name, engine, url = t["name"], t["engine"], t["url"]
     code, body = W.fetch(url, 20)
     r = {"name": name, "engine": engine, "url": url, "http": code, "bytes": len(body)}
-    if code != 200 or len(body) < 300:
-        r.update(score=0, signals={}, evidence=[])
-        return r
     body = re.sub(r"<(script|style)\b.*?</\1>", " ", body, flags=re.S | re.I)
     text = W.strip(body)
-    r["blocked"] = W.blocked_reason(code, text, url)
-    r["bot_check"] = r["blocked"] in ("http402", "botcheck")
-    r.update(score_text(text))
+    reason = W.blocked_reason(code, text, url)
+    if code in (401, 402, 403, 429) or reason in ("botcheck", "tarpit"):
+        outcome = "blocked"
+    elif code != 200:
+        outcome = "unavailable"
+    elif not W.RC_MARKERS.search(body) and not W.RC_MARKERS.search(text):
+        outcome, reason = "parsing_failed", "no-rc-structure"
+    else:
+        outcome, reason = "readable", None
+    r.update(outcome=outcome, reason=reason,
+             blocked=reason if outcome == "blocked" else None,
+             bot_check=reason in ("http402", "botcheck"),
+             score=None, signals={}, evidence=[])
+    if outcome == "readable":
+        r.update(score_text(text))
     return r
+
+
+def coverage_outcome(result):
+    """Legacy exports cannot prove that a successful response was an RC page."""
+    if result.get("outcome"):
+        return result["outcome"]
+    if result.get("http") in (401, 402, 403, 429) or result.get("bot_check"):
+        return "blocked"
+    if result.get("http") != 200:
+        return "unavailable"
+    if result.get("blocked") == "no-rc-structure":
+        return "parsing_failed"
+    if result.get("blocked"):
+        return "blocked"
+    return "legacy_unverified"
 
 
 def main():
@@ -173,17 +251,7 @@ def main():
     else:
         skip = {s.strip().lower() for s in a.skip_engines.split(",") if s.strip()}
         st = {s.strip() for s in a.statuses.split(",")}
-        seen = set()
-        for e in json.loads(Path(a.input).read_text()):
-            if (e.get("engine") or "").lower() in skip or e.get("status", "") not in st or not e.get("urls"):
-                continue
-            eng = engine_key(e.get("engine"))
-            url = rc_from(eng, e["urls"][0])
-            host = urllib.parse.urlsplit(url).netloc
-            if host in seen:
-                continue
-            seen.add(host)
-            targets.append({"name": e["name"], "engine": eng, "url": url})
+        targets = build_targets(json.loads(Path(a.input).read_text()), skip, st)
     if a.limit:
         targets = targets[: a.limit]
     print(f"scanning {len(targets)} wikis", file=sys.stderr)
@@ -194,16 +262,20 @@ def main():
             if i % 100 == 0:
                 print(f"  {i}/{len(targets)}", file=sys.stderr)
                 Path(a.out).write_text(json.dumps(results, indent=0))
-    results.sort(key=lambda r: -r.get("score", 0))
+    results.sort(key=lambda r: -(r.get("score") or 0))
     Path(a.out).write_text(json.dumps(results, indent=0))
     report(results, a.top)
 
 
 def report(results, top):
-    live = [r for r in results if r.get("http") == 200 and r.get("bytes", 0) > 300]
-    blocked = [r for r in live if r.get("blocked")]
-    print(f"{len(results)} scanned, {len(live)} live, {len(blocked)} blocked/tarpit "
-          f"({', '.join(sorted({r['blocked'] for r in blocked})) or 'none'}) — a blocked page is not a clean read")
+    coverage = collections.Counter(coverage_outcome(r) for r in results)
+    live = [r for r in results if coverage_outcome(r) == "readable"]
+    print(f"{len(results)} scanned: " + ", ".join(
+        f"{coverage[k]} {k}" for k in
+        ("readable", "blocked", "unavailable", "parsing_failed", "legacy_unverified")))
+    print("Scores rank readable pages only; unreadable or unverified coverage is not a negative finding.")
+    if coverage["legacy_unverified"]:
+        print("Legacy scores remain in the JSON; RC coverage was not verified by that export.")
     print(f"{'score':>5} {'name':30s} {'engine':9s} {'burst':>5} {'days':>4}  signals")
     for r in sorted(live, key=lambda r: -r.get("score", 0))[:top]:
         print(f"{r['score']:5.1f} {r['name'][:30]:30s} {r['engine']:9s} {r.get('burst',0):5.1f} {r.get('days_2526',0):4d}  {r.get('signals')}")
