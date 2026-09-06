@@ -143,7 +143,7 @@ This archive republishes only material we authored. It does **not** re-host:
 - **collusion.wiki** data — the site marks its export "draft, do not share without
   permission." We link to it and do not redistribute it.
 - **Joshua David's `WikiAgentSwarmInvestigation`** logs — that repository carries no
-  license, which by default copyright means all rights reserved. We link to it
+  license, which under default copyright means all rights reserved. We link to it
   and do not copy its data.
 
 Credit for the primary data collection goes to the collusion.wiki authors (Sydney
