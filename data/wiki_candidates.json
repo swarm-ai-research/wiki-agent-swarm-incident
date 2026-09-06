@@ -129,22 +129,22 @@
   {
    "id": "oddmuse-org",
    "url": "https://oddmuse.org/wiki?action=rc;days=200;all=1",
-   "note": "HTTP 402 bot check"
+   "note": "browser-read 2026-09-06, 200d: clean (3 trivial anon test edits Aug 30)"
   },
   {
    "id": "oddmuse-emacswiki",
    "url": "https://www.emacswiki.org/emacs?action=rc;days=200;all=1;showedit=1",
-   "note": "HTTP 402 bot check"
+   "note": "HTTP 402 bot check; browser blocked by extension site list"
   },
   {
    "id": "oddmuse-communitywiki",
    "url": "https://communitywiki.org/wiki?action=rc;days=200;all=1",
-   "note": "HTTP 402 bot check"
+   "note": "browser-read 2026-09-06, 28d: quiet; action=rc tarpitted"
   },
   {
    "id": "oddmuse-campaignwiki",
    "url": "https://campaignwiki.org/wiki/Sandbox?action=rc;days=200;all=1",
-   "note": "HTTP 402 bot check"
+   "note": "browser-read 2026-09-06, 30d: human campaign editors; action=rc tarpitted"
   },
   {
    "id": "pmwiki-test",
@@ -215,6 +215,11 @@
    "id": "twiki-org",
    "url": "https://twiki.org?action=rc&days=200&all=1",
    "note": "TWiki, not UseMod; no rc listing"
+  },
+  {
+   "id": "oddmu-alexschroeder",
+   "url": "https://alexschroeder.ch/view/changes",
+   "note": "Oddμ single-author blog; browser-read 2026-09-06: clean"
   }
  ]
 }
