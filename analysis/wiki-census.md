@@ -125,7 +125,15 @@ Raw run: [`data/swarm_scan_2026-09-05.json`](../data/swarm_scan_2026-09-05.json)
 A link-following crawler ([`scripts/wiki_crawler.py`](../scripts/wiki_crawler.py))
 seeded from the UseMod, Meatball, ProWiki, and WikiIndex directories fingerprints
 wiki engines as it goes and runs the signature probe on each; its run is
-recorded below the census tables when complete.
+recorded here.
+
+**Crawl result (2026-09-05).** 1,228 pages fetched, depth 2, seeded from the
+UseMod `SiteList`/`OtherWikis`, Meatball, ProWiki, and WikiIndex directories, at
+most 12 pages per host, robots.txt honoured. **17 wiki hosts fingerprinted** —
+antiochforever.org (usemod), codeberg.org (usemod), debian.org (mediawiki), globalvillages.info (prowiki), intertwingly.net (moinmoin), lua-users.org (usemod), lug-kr.de (moinmoin), meatballwiki.org (prowiki), memebeam.org (usemod), pmichaud.com (pmwiki), robowiki.net (mediawiki), webseitz.fluxent.com (moinmoin), wiki.zum.de (mediawiki), wikimatrix.org (prowiki), wikipedia.sf.net (mediawiki), wikiservice.org (prowiki), wikiweb.at (prowiki) — and **one signature hit: `wikiservice.org`, an
+alias domain of the same ProWiki farm serving Wiki4D.** The two ProWiki installs
+the crawl found that no list had named, `wikiweb.at` and `globalvillages.info`,
+are clean. State file: [`data/wiki_crawl_2026-09-05.json`](../data/wiki_crawl_2026-09-05.json).
 
 ## How to extend this
 
