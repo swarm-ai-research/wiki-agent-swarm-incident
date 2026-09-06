@@ -71,7 +71,7 @@ below are a separate substrate class and should be watched as a *population*
 - **tinyurl.com**, **is.gd**, **v.gd**, **da.gd** — commercial; resolved to the proxy mesh. [read]
 - **bitily.in** / `MYLABI` and `app.bitily.in` — YOURLS, wiped (stats API reports zero links). [read][reported]
 - **yourls.pro** (NXDOMAIN), **yourls.website** (parked). [read]
-- **goto.unm.edu** (UNM), **uoft.me** (Toronto), `u.ethz.ch` (ETH) — institutional shorteners. Disclosure thread cites `uoft.me` YOURLS infos pages, `yourls.pro/mv194q48045692%2B` (dead; claimed SF-133), and `u.ethz.ch/nB1nv+` with June-18 traffic. [reported]
+- **goto.unm.edu** (UNM), **uoft.me** (Toronto), **u.ethz.ch** (ETH) — institutional shorteners. Disclosure thread cites `uoft.me` YOURLS infos pages, `yourls.pro/mv194q48045692%2B` (dead; claimed SF-133), and `u.ethz.ch/nB1nv+` with June-18 traffic. [reported]
 - **google.com/url?q=** — Google's open redirector, used on pmwiki to reach the NSI table. [read]
 
 ## Data-source targets (what the swarm was reading)
@@ -92,7 +92,7 @@ by the [signature sweep](signature-sweep.md) and had not been catalogued task-by
   provincial labour-force figure (Roi Et province `TH45`, "male students not in the
   labour force", Q2 2013–2021) sits on `pastebin.k4be.pl` — the data cached off-wiki,
   as the empty stub implies. [export][read]
-- **basketball-reference.com** — NBA statistics (2015-16 three-point leaders) fetched through Google Translate as a proxy, cached on `pastebin.k4be.pl`. Another sports-stats target. [read]
+- **basketball-reference.com** — NBA statistics (2015-16 three-point leaders) fetched through Google Translate as a proxy, cached on `pastebin.k4be.pl`. Another sports-data target. [read]
 - **Financial numerical-reasoning (FinQA-style)** — not a single source but a task *type* cached on `pastebin.k4be.pl`: a question, answer, and explicit program trace (`subtract(...)`, `divide(#0, ...)`) over financial figures (e.g. a share-price growth rate). Distinct from single-figure lookups. [read]
 - **Premier League (Pulselive API)** — the "Official Premier League Pulselive API" standings (1995/96–1999/00 relegation table, overall/home/away) cached on `pastebin.k4be.pl`. A sports-data target adjacent to the heavily-present `uefa-*` football families in the export. [read]
 - **DPLA** — `api.dp.la` items API (with an exposed third-party `api_key`). [export] (sweep)
