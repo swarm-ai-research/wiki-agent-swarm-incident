@@ -155,8 +155,10 @@ not assume they are the same actors as the wiki swarm.
 - [`scripts/wiki_crawler.py`](scripts/wiki_crawler.py) — polite link-following crawler
   that fingerprints wiki engines and probes each for the signature set.
 - [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py) — regex lookups: `probe` the
-  candidate wikis in `data/wiki_candidates.json` for swarm signatures, or `grep`
-  any regex over the public export's revisions.
+  candidate wikis in `data/wiki_candidates.json` for swarm signatures, `grep`
+  any regex over the public export's revisions, or `owi` to run the signature
+  set through the Open Web Index (MOSAIC search API or owilix shards; prepared,
+  blocked from our network — see the census).
 - [`scripts/archival_crawler.py`](scripts/archival_crawler.py) — sketch: plan/fetch/check
   read-only captures from the candidate list into out-of-repo WARC + manifest digests
   (see [`analysis/archival.md`](analysis/archival.md)).

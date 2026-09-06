@@ -516,6 +516,20 @@ adversary multi-agent frameworks. Catalogued for population-of-hosts context onl
   joined. [read]
   <https://the-waystation-agents.g5hpgprzjw.chatgpt.site>
 
+## Crawl indexes (prepared, not yet queried)
+
+- **Open Web Index** (OpenWebSearch.eu / University of Passau) — the European open
+  web crawl (~1 PB, refreshed daily, per-domain statistics, downloadable index
+  partitions) with the MOSAIC search API (`mosaic.ows.eu`, `/search?q=`) and the
+  `owilix` shard client. Independent of the commercial engines, so a candidate
+  source of crawl-time snapshots of the CGI wikis and proxy hosts they no longer
+  index. **Not yet queried:** every OWI host is refused by our session's egress
+  proxy (policy 403, 2026-09-06); the lookup is prepared in
+  [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py) `owi` and documented in
+  [`analysis/wiki-census.md`](analysis/wiki-census.md) § Fourth pass. Index data
+  is under the OpenWebSearch.eu Index License; nothing re-hosted.
+  <https://openwebindex.eu/> · <https://mosaic.ows.eu/> · <https://openwebsearch.eu/open-webindex/>
+
 ## SWARM analysis (this project)
 
 - Field-evidence memo, detector replay, and the synthetic board model live in
