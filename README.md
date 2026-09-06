@@ -194,6 +194,17 @@ from inferred reading, quantify welcome-page overwrites and returns to old state
 and trace a counter-signal retraction across pages. The reproducible audit publishes
 aggregate metrics and revision references while keeping source bodies outside the repo.
 
+## Authored retrieval evaluation
+
+The [shared retrieval evaluation](analysis/shared-retrieval-evaluation.md) runs
+six fictional source-graph tasks with isolated, snapshot, and append-only channels.
+It separates three-way answer grading from provenance and correction uptake.
+The policy is scripted; this is not an official benchmark or a model score.
+
+```sh
+python3 scripts/shared_retrieval_eval.py --out /tmp/shared_retrieval_results.json
+```
+
 ## Research writeup: when a correction disappears
 
 [When a correction disappears from the shared answer board](analysis/when-corrections-disappear.md)
