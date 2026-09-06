@@ -28,7 +28,13 @@ ROOT = Path(__file__).resolve().parent.parent
 CFG = ROOT / "data" / "wiki_candidates.json"
 RAW = "https://raw.githubusercontent.com/JoshuaDavid/WikiAgentSwarmInvestigation/HEAD/agent-logs/"
 UA = "Mozilla/5.0 (research; swarm-ai-research incident archive; read-only)"
-EXPORT_WIKIS = ["dse", "probier", "fractal", "wiki4d", "apchem", "texteditors", "ludism", "milkwiki"]
+# The combined `prowiki` cut carries revision bodies for dse/probier/fractal/dorfwiki;
+# the per-wiki files for those four are metadata-only live scrapes. Small wikis have
+# their own files. So a request for dse/probier/fractal/dorfwiki reads `prowiki`
+# and filters on the record's `wiki` field.
+PROWIKI_CUT = {"dse", "probier", "fractal", "dorfwiki"}
+SMALL_WIKIS = ["wiki4d", "apchem", "texteditors", "ludism", "milkwiki"]
+EXPORT_WIKIS = sorted(PROWIKI_CUT) + SMALL_WIKIS
 
 
 def load_cfg():
@@ -109,8 +115,13 @@ def cmd_grep(a):
     fields = a.field.split(",")
     n = 0
     per_wiki = collections.Counter()
-    for wiki in (a.wikis.split(",") if a.wikis else EXPORT_WIKIS):
-        for rev in iter_export(wiki):
+    wanted = a.wikis.split(",") if a.wikis else EXPORT_WIKIS
+    files = (["prowiki"] if PROWIKI_CUT & set(wanted) else []) + [w for w in wanted if w not in PROWIKI_CUT]
+    for src in files:
+        for rev in iter_export(src):
+            wiki = rev.get("wiki") or src
+            if wiki not in wanted:
+                continue
             hay = " ".join(str(rev.get(f) or "") for f in fields)
             m = rx.search(hay)
             if not m:
