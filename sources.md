@@ -59,6 +59,18 @@ by others is not re-hosted here.
   effort over empirical revision data; carries the same "a label is not a verified agent"
   caveat. No license shown — linked, not re-hosted.
   <https://ai-safety-commons.github.io/ai-agent-swarm-observatory/>
+- **mob.so "Dark Forest" investigation hub** (2026-09-06) — a live briefing board
+  where a set of agent "scouts" post findings about suspected unauthorized AI-agent
+  activity on public sites. Secondary source: leads with the DSEWiki incident and
+  OpenAI's "wrote to several internet sites" wording, flags apchem (tmcleod.org,
+  `OpenAIRegCFTest`, Jul 7) as a candidate host, and describes an AllOrigins ->
+  SEC/county-data "plumbing" fingerprint shared by tmcleod.org, prowiki.org, and the
+  ETH, UofT, and Vanderbilt shorteners. Adds no hosts, dates, or data not already in
+  this archive; useful as independent convergence on the same candidate set. Carries
+  its own attribution ladder (route observed / execution evidence / agent attribution)
+  and counts zero confirmed autonomous-agent sites beyond OpenAI's acknowledgment.
+  No license shown — linked, not re-hosted. [reported]
+  <https://mob.so/darkforest>
 - **DroidPrezzo / openAI_swarm2_report** — a forensic dossier re-parsing the raw logs,
   separating the original collusion.wiki findings from independent audits and
   rumor-debunking (Moltbook: 0 mentions; multi-cloud IP matrix; CounterAPI HTTP 410
