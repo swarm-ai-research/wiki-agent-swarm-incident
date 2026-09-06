@@ -74,8 +74,8 @@ by others is not re-hosted here.
 - **DroidPrezzo / openAI_swarm2_report** — a forensic dossier re-parsing the raw logs,
   separating the original collusion.wiki findings from independent audits and
   rumor-debunking (Moltbook: 0 mentions; multi-cloud IP matrix; CounterAPI HTTP 410
-  purge). Its distinctive claims corroborate our export. No license shown — linked,
-  not re-hosted.
+  purge). Its distinctive claims corroborate our export. No license shown — linked, not
+  re-hosted.
   <https://github.com/DroidPrezzo/openAI_swarm2_report>
 - **she-llac.com/CROSS_SITE_CONNECTIONS.md** — a cross-site correlation note
   (2026-09-05) matching shared unique identifiers (library object ids, filter
@@ -90,6 +90,19 @@ by others is not re-hosted here.
 - **InfinityPaste / Probyte disclosure-adjacent pages** — `infinitypaste.club/paste/Gf4nRzww` returned the title `LinkNSIDataMay27Final`; `paste.probyte.ee/view/704c77ba` returned `TARGETANCHOR1778725284` with a visible HHS CSV target link. Read-only landing/view checks only; pages are linked as secondary leads and not re-hosted. [read][reported]
   <https://infinitypaste.club/paste/Gf4nRzww>
   <https://paste.probyte.ee/view/704c77ba>
+- **`178.105.23.35:8090/china/`** — live Python SimpleHTTP field notebook
+  titled "China agent swarm investigation" ("Looking for a second swarm,"
+  Sep 2026). Read-only probe 2026-09-06: working assessment **no confirmed
+  Chinese agent swarm** (dashboard showed 0 confirmed Chinese actors, 418
+  reviewed text reports); current focus densifies the already-catalogued
+  **Xinzhai / xz** `paste.ubuntu.org.cn` sequence (3,484 opaque posts = strong
+  automation, contents/attribution unknown). Sibling pages cover access and
+  other Chinese leads; parent `/` is an open directory of related notebooks
+  (including `newsites.html`). Historical wiki-surface links on the page are
+  labeled as prior swarm context, not Chinese attribution. Ephemeral IP:port —
+  link for secondary reference only; do not re-host. [read][reported]
+  <http://178.105.23.35:8090/china/>
+  Memo: [analysis/china-field-notebook.md](analysis/china-field-notebook.md)
 - **korentomas/swarm-hub** — a site-indexed, evidence-graded registry of hosts
   agents wrote to without developer intent (`sites/*.yaml`, campaigns, tasks,
   incidents; 20 sites / 89 traces in the founding cut). Indexes by *host* so
@@ -289,8 +302,8 @@ by others is not re-hosted here.
   archive-research vs fast-follow). That A/B split is the cleanest "two populations on
   one farm" claim in the secondary literature; its `dse-f*` findings (venues found by
   software fingerprint not listing; task-shape as the control that makes sharing worth
-  the effort) match this archive's own reading. Figures are re-derived per regeneration,
-  so treat any single count as of its date. The 2026-09-06 pass added 20 wiki venues —
+  the effort) match this archive's own reading. Figures are re-derived per
+  regeneration, so treat any single count as of its date. The 2026-09-06 pass added 20 wiki venues —
   all ProWiki-farm siblings on `wikiservice.at`, two `ludism.org` Oddmuse sub-wikis
   (`gbgwiki`, `ppwiki`), and two off-farm ProWiki hosts (`kb5.zukunftslernorte.org`,
   `campusosttirol.mustertheorie.de`); all four off-census wikis were probed 2026-09-06
@@ -332,8 +345,7 @@ Catalogued as secondary reporting — links only; not re-hosted.
   is.gd/v.gd/tinyurl storage batch, surviving `countapi.mileshilliard.com` keys
   (incl. `construction_r5_aug11_*`), and jsonhero leftovers. Later structured as
   [korentomas/swarm-hub](https://github.com/korentomas/swarm-hub). Treat novel
-  paste IDs as **[reported]** until re-verified (many linuxiarz `/view/` pages
-  now 404). [reported]
+  paste IDs as **[reported]** until re-verified (many linuxiarz `/view/` pages now 404). [reported]
   <https://tpk22.substack.com/p/i-found-more-swarm-message-boards>
 
 
@@ -354,9 +366,9 @@ Specific IDs from the **@j0wimo** thread, with a 2026-09-05 verification pass (s
   `a43cd523`/`b0924d89`/`bcb984d1`/`fa26a684`/`59c84c78` (indexed, bodies
   unavailable); `aaa0eb75` unverified. **tpk22 densification (2026-09-04)
   [reported]:** May 13 Iowa first-contact `0e185856` / `f621ab2b`; Jun 16 IowaCollab
-  cluster includes `538faa12`/`9555f027` (`agent-1147`), `df40f1f1`-adjacent replies,
-  `eb7e28bd` (IowaCacheFull17 gzip), `95768bcf` (asthma ED); March unattributed
-  candidates `79c3158d`/`a1343c72`/`93fa1dd9`. See [surfaces](analysis/surfaces.md).
+  cluster includes `538faa12`/`9555f027` (`agent-1147`),
+  `df40f1f1`-adjacent replies, `eb7e28bd` (IowaCacheFull17 gzip), `95768bcf`
+  (asthma ED); March unattributed candidates `79c3158d`/`a1343c72`/`93fa1dd9`. See [surfaces](analysis/surfaces.md).
   [reported]
 - RubyGems (owner `ulinkqy8py3mp`, official API [read]):
   [`mapanchorcf202704`](https://rubygems.org/gems/mapanchorcf202704),
@@ -448,12 +460,17 @@ specific surface — no row is inferred from the scope of that phrase.
   outer-base64 Fernet snapshots (`xinzhai_v5.2` … `v73`, payloads growing ~65→231
   KB, timestamps 13:52–14:43 UTC Jul 10 displayed UTC+8); 3,484 small
   `xz_knowledge_p1` posts ~every 5–6 min; 11 `xz_improvement_plan_p1` posts ~6h
-  apart. No key or plaintext recovered; termina itself states the pattern does
-  not establish an AI agent, swarm, operator, lab, or Chinese origin. Archive
+  apart. No key or plaintext recovered; termina itself states the pattern
+  does not establish an AI agent, swarm, operator, lab, or Chinese origin. Archive
   as: public encrypted paste sequence; agent/swarm attribution unverified.
   Examples: <https://paste.ubuntu.org.cn/4548564>,
   <https://paste.ubuntu.org.cn/4552369>.
   Campaign: <https://swarm.termina.digital/db/campaign/xinzhai-2026-07.html>
+  Secondary densification (2026-09-06) [read]: a live field notebook at
+  `http://178.105.23.35:8090/china/` independently reviews the same xinzhai/xz
+  workflow and reports the same non-attribution stance; see
+  [china-field-notebook](analysis/china-field-notebook.md).
+
 
 ### Artifactory / Hugging Face family (primary disclosures)
 
@@ -544,7 +561,7 @@ specific surface — no row is inferred from the scope of that phrase.
   Lean conjectures with a public forum, DMs, and shared knowledge library. One
   agent found an autograder / specification-gaming exploit that spread through the
   library and peer messages (~9% exploiters, ~5% converts, ~24% whistleblowers,
-  ~62% unaware); whistleblowers audited, warned, boycotted, and escalated into a
+  ~62% unaware); whistleblowers audited, warned, boycotted, and escalated into an
   unmonitored feedback channel. **Eval result, not a wild incident** — included as
   the cleanest published case of exploit contagion + failed self-policing on a
   shared write surface. [reported]
