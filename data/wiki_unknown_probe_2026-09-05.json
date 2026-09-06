@@ -1,0 +1,1397 @@
+[
+ {
+  "id": "aarp.org",
+  "url": "http://www.aarp.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1106565,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "ab-a.net",
+  "url": "http://www.ab-a.net/index.cgi?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 574,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "alfirin.net",
+  "url": "http://www.alfirin.net/pedigree-central?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 938,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "andrewgray.uklinux.net",
+  "url": "http://www.andrewgray.uklinux.net/tpwiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "antiochforever.org",
+  "url": "https://antiochforever.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 3795,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "aosabook.org",
+  "url": "https://aosabook.org/en/v2/mediawiki.html?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 56990,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "apocalypse.rulez.org",
+  "url": "http://apocalypse.rulez.org/kozos?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "atitd.centauri.org",
+  "url": "http://atitd.centauri.org/wiki?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "b10m.net",
+  "url": "http://www.b10m.net/cgi-bin/wiki.cgi?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "bantychicken.com",
+  "url": "http://bantychicken.com/cgi-bin/bantychickenwiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 43800,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "bbpowernet.com",
+  "url": "http://www.bbpowernet.com?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "becket.becket.net:8080",
+  "url": "http://becket.becket.net:8080/cgi-bin/skywiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "billstclair.com",
+  "url": "http://billstclair.com/wiki?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 278,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "bimu.at",
+  "url": "http://bimu.at/wiki.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 33155,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "bontq.com",
+  "url": "http://www.bontq.com?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 25,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "byggtorget.se",
+  "url": "http://www.byggtorget.se?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 102839,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "c2.com",
+  "url": "http://c2.com/cgi/wiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 8565,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "ca.wikipedia.com",
+  "url": "http://ca.wikipedia.com?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 38900,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "cannawiki.de",
+  "url": "http://www.cannawiki.de?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 855,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "carrionfields.org",
+  "url": "http://carrionfields.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 9,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "ccgi.dougrice.plus.com",
+  "url": "http://ccgi.dougrice.plus.com/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 3294,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "cgi.chollian.net",
+  "url": "http://cgi.chollian.net/~royalpink/wiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "cglug.org",
+  "url": "http://www.cglug.org/cgi/wiki.cgi?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 41552,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "chiki.emaho.org",
+  "url": "http://chiki.emaho.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "chiki.goot.emaho.org",
+  "url": "http://chiki.goot.emaho.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "cilicia.com",
+  "url": "http://www.cilicia.com/rediscover.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 101727,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "codeberg.org",
+  "url": "https://codeberg.org/usemod/usemod?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 63334,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "creativesolutions.com",
+  "url": "http://www.creativesolutions.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 420937,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "crushingblow.com",
+  "url": "http://www.crushingblow.com/cgi-bin/skwiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 43832,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "crystalclearsoftware.com",
+  "url": "http://www.crystalclearsoftware.com/cgi-bin/boost_wiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1501,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "customcircuitboards.com",
+  "url": "http://www.customcircuitboards.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 19076,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "cve.mitre.org",
+  "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 880,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "cwick.sourceforge.net",
+  "url": "http://cwick.sourceforge.net/cgi-bin/cwick.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 146,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "dougrice.co.uk",
+  "url": "http://www.dougrice.co.uk/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 57296,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "downlode.org",
+  "url": "http://downlode.org/log?action=rc&days=200&all=1",
+  "http": 410,
+  "bytes": 152,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "drogenpolitik.org",
+  "url": "http://www.drogenpolitik.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 31829,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "drogenwiki.de",
+  "url": "http://www.drogenwiki.de?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 35,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "editthisnft.com",
+  "url": "https://www.editthisnft.com/cgi-bin/wiki.cgi?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1797,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "edu-coop.org",
+  "url": "http://www.edu-coop.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "en.wikibooks.org",
+  "url": "https://en.wikibooks.org/wiki/Special:Search/Oddmuse?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 59104,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "en.wikiquote.org",
+  "url": "https://en.wikiquote.org/wiki/Special:Search/Oddmuse?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 56525,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "en.wikisource.org",
+  "url": "https://en.wikisource.org/wiki/Special:Search/Oddmuse?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 60226,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "en.wikiversity.org",
+  "url": "https://en.wikiversity.org/wiki/Special:Search/Oddmuse?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 57800,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "en.wikivoyage.org",
+  "url": "https://en.wikivoyage.org/wiki/Special:Search/Oddmuse?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 56766,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "en.wiktionary.org",
+  "url": "https://en.wiktionary.org/wiki/Special:Search/Oddmuse?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 64952,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "farnik.com",
+  "url": "https://www.farnik.com/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 3135,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "fr.wikinations.org",
+  "url": "http://fr.wikinations.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "gitlab.com",
+  "url": "https://gitlab.com/jcfields/antioch-wiki?action=rc&days=200&all=1",
+  "http": 403,
+  "bytes": 5589,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "globalchicago.net",
+  "url": "http://www.globalchicago.net/wiki/wiki.cgi?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 45431,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "guardiansorder.com",
+  "url": "http://www.guardiansorder.com/nobilis?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 139,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "handgranat.org",
+  "url": "http://www.handgranat.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "hantslug.org.uk",
+  "url": "http://www.hantslug.org.uk?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 48609,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "home.nl",
+  "url": "http://www.home.nl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 30920,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "iaeste.ch",
+  "url": "http://www.iaeste.ch?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 199506,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "iam.unibe.ch",
+  "url": "http://www.iam.unibe.ch/~akuhn/narravo.cgi?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 320,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "ifi.unizh.ch",
+  "url": "http://www.ifi.unizh.ch/ailab?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "infoanarchy.org",
+  "url": "http://www.infoanarchy.org/wiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 218716,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "instiki.org",
+  "url": "http://www.instiki.org/show/HomePage?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 30096,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "interbug.com",
+  "url": "http://interbug.com/letterboxing?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "joshuamacy.com",
+  "url": "http://www.joshuamacy.com/cgi-bin/oewiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 619,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "jp-life.org",
+  "url": "http://www.jp-life.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 42,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "jspwiki.org",
+  "url": "http://www.jspwiki.org/Wiki.jsp?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 45,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "kayakforum.com",
+  "url": "http://www.kayakforum.com/cgi-sys/cgiwrap/guille/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1457,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "kranich.com",
+  "url": "http://www.kranich.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 254975,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "kwiki.org",
+  "url": "http://www.kwiki.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 144231,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "landsofstone.org",
+  "url": "http://www.landsofstone.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 5156,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "lars-ackermann.de",
+  "url": "http://www.lars-ackermann.de/wiki/static?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 236,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "lepiforum.de",
+  "url": "http://www.lepiforum.de/cgi-bin/lepiwiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 19046,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "linux.com",
+  "url": "https://www.linux.com/news/introducing-usemodwiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 139079,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "lldata.dk",
+  "url": "http://lldata.dk/dikuclan/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "lordrich.com",
+  "url": "http://lordrich.com/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 128,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "lua-users.org",
+  "url": "http://lua-users.org/wiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 3036,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "lug-kr.de",
+  "url": "https://www.lug-kr.de/wiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 20182,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "luxpar.de",
+  "url": "http://www.luxpar.de?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 7837,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "mathebau.de",
+  "url": "http://www.mathebau.de?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 58436,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "meatballwiki.org",
+  "url": "http://meatballwiki.org/wiki/SwitchWiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 56797,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "mediawiki.org",
+  "url": "https://www.mediawiki.org/wiki/MediaWiki%20history?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 40944,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "meiert.com",
+  "url": "http://meiert.com/lib/pwp-1.4.2.zip?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 5056,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "melankolia.net",
+  "url": "http://www.melankolia.net/wiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 39849,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "metin2wiki.ru",
+  "url": "http://metin2wiki.ru?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 139879,
+  "bot_check": false,
+  "hits": {
+   "ZZ+[A-Z][A-Za-z0-9]*": 2
+  },
+  "samples": [
+   "0No+dYNmUL04xbyHeFqfeXTuKWGWnBU4zodvKgyC7F9cKO4lOQ1Kv1lVFqo237DN+W9rBIXkhdpZX+2lZZA4azyz7T7NQKkgGV4sBzb/AQUEokqKykqp9yMpMKFYR2LwTUEasrnFRiMtHpnChKjO52Fy78Q1EnVvVw5AT9Z3GoPZuk0eRiBAzeU",
+   "SrUPmV4mOGisGV9VRdylYnRKuWMe0IIvWoCkpOb1KcLko+H/KDYZBIR0HmEZ2AppRjYaEnZB9gIZ27YyZZSUTZ/yMwNrwP1aAYvCaJ2QV8AYVFLiMKjopMvn/f8mCOw1vjSg6BUZSEra6PCIpPYnLpnMA8k/i4wE0swqXz"
+  ]
+ },
+ {
+  "id": "moin.sourceforge.net",
+  "url": "http://moin.sourceforge.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 324,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "moinmoin.riters.com",
+  "url": "http://moinmoin.riters.com/sites/index.cgi?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "molecularpedia.com",
+  "url": "http://www.molecularpedia.com?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "monhoverboard.net",
+  "url": "https://www.monhoverboard.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 85331,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "nagoya.apache.org",
+  "url": "http://nagoya.apache.org/wiki?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "nearlythere.com",
+  "url": "http://nearlythere.com/cgi-bin/design/wiki.cgi?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 139,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "nerdsonice.org",
+  "url": "http://www.nerdsonice.org/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "nike.net",
+  "url": "http://www.nike.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 55078,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "nobilis.mapache.org",
+  "url": "http://nobilis.mapache.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 66,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "northernvibes.com",
+  "url": "http://northernvibes.com/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 197229,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "nvd.nist.gov",
+  "url": "https://nvd.nist.gov/vuln/detail/CVE-2004-1397?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 2453,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "oceanconsulting.com",
+  "url": "http://www.oceanconsulting.com/cgi-bin/wiki?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 236,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "oha.it",
+  "url": "http://www.oha.it/woha?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 9379,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "onlamp.com",
+  "url": "http://www.onlamp.com/pub/a/onlamp/2004/11/04/which_wiki.html?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 256024,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "ontimenow.com",
+  "url": "http://www.ontimenow.com?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 25,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "oops.se",
+  "url": "http://www.oops.se/cgi-bin/wiki?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 270,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "openspaceworld.org",
+  "url": "http://www.openspaceworld.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 50279,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "openwiki.com",
+  "url": "http://www.openwiki.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 2963,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "openwiki.info",
+  "url": "http://www.openwiki.info?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 179,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "palm.projekt-base.de",
+  "url": "http://www.palm.projekt-base.de/wiki/cgi-bin/wiki.cgi?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 199313,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "papers.sthrs.me",
+  "url": "http://papers.sthrs.me/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "phpwiki.sourceforge.net",
+  "url": "http://phpwiki.sourceforge.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 123934,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "plus-linux.de",
+  "url": "http://www.plus-linux.de?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 199285,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "pmichaud.com",
+  "url": "http://www.pmichaud.com/wiki/PmWiki/PmWiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 9098,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "prepaid-news.de",
+  "url": "http://www.prepaid-news.de?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 199313,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "purl.net",
+  "url": "http://purl.net/net/AIWiki?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "reality.sculptors.com",
+  "url": "http://reality.sculptors.com/cgi-bin/wiki?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "robowiki.net",
+  "url": "http://robowiki.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 29800,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "routerlogin.pro",
+  "url": "https://routerlogin.pro?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1139,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "rpgwiki.brogle.com",
+  "url": "http://rpgwiki.brogle.com/rpgwiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "scrumwiki.org",
+  "url": "http://scrumwiki.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 593,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "search.worldcat.org",
+  "url": "https://search.worldcat.org/oclc/280430641?action=rc&days=200&all=1",
+  "http": 429,
+  "bytes": 82,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "seedwiki.com",
+  "url": "http://www.seedwiki.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 139,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "si-list.org",
+  "url": "http://www.si-list.org/wiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 49642,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "sknkwrks.dyndns.org:1957",
+  "url": "http://sknkwrks.dyndns.org:1957/writewiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 25,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "sl4.org",
+  "url": "http://www.sl4.org/bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 346,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "snipsnap.org",
+  "url": "http://snipsnap.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 49,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "soks.org",
+  "url": "http://www.soks.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 536706,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "sourceforge.net",
+  "url": "http://sourceforge.net/projects/usemodj?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 101251,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "stonehengeirc.dyndns.org",
+  "url": "http://stonehengeirc.dyndns.org/stonehenge?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "sunir.org",
+  "url": "http://sunir.org/apps/meta.pl?action=rc&days=200&all=1",
+  "http": 500,
+  "bytes": 532,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "superant.com",
+  "url": "http://www.superant.com/cgi-bin/smalllinux.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 25,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "susning.nu",
+  "url": "http://susning.nu?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "tavi.sourceforge.net",
+  "url": "http://tavi.sourceforge.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 96678,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "taylorwhite.com",
+  "url": "http://www.taylorwhite.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1711507,
+  "bot_check": false,
+  "hits": {
+   "ZZ+[A-Z][A-Za-z0-9]*": 1
+  },
+  "samples": [
+   "t.com/third-party-assets/fontshare/wf/2PWH5ACYHQEXIHGDLY5OWYMAC3F65AK5/OD6JOLYDRZZOKZGAPOMF7QEWPC5DTZS6/F5IVXJVPQ2DIFNG5HQZ7NI5VG7P7VDLV.woff2\"); font-style: italic; font-weight: 900"
+  ]
+ },
+ {
+  "id": "tcsh.org",
+  "url": "http://www.tcsh.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 2258,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "tejo.org",
+  "url": "http://www.tejo.org/vikio?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 422858,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "tipiwiki.sourceforge.net",
+  "url": "http://tipiwiki.sourceforge.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1814,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "toothycat.net",
+  "url": "https://www.toothycat.net/wiki/wiki.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 19918,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "trainingdictionary.com",
+  "url": "http://www.trainingdictionary.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 44092,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "treetrust.org.uk",
+  "url": "http://www.treetrust.org.uk?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 1963,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "ttfh.org.uk",
+  "url": "http://www.ttfh.org.uk/cgi-bin/treewiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 139,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "twiki.org",
+  "url": "http://twiki.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 67973,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "umbraculum.org",
+  "url": "http://www.umbraculum.org/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 153,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "umgeo.org",
+  "url": "http://www.umgeo.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 35382,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "volvo-off.pl",
+  "url": "http://www.volvo-off.pl?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 305,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "w3.hursley.ibm.com",
+  "url": "http://w3.hursley.ibm.com/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wakkawiki.com",
+  "url": "http://www.wakkawiki.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 65240,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wenq.org",
+  "url": "http://wenq.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 6586,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wh2001.sindominio.net",
+  "url": "http://wh2001.sindominio.net?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wiki.ardant.net",
+  "url": "http://wiki.ardant.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 2112,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wiki.beyondunreal.com",
+  "url": "http://wiki.beyondunreal.com?action=rc&days=200&all=1",
+  "http": 403,
+  "bytes": 5596,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wiki.mutt.org",
+  "url": "http://wiki.mutt.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wiki.redbricks.org.uk",
+  "url": "http://wiki.redbricks.org.uk/nolamberhurstbypass?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wiki.s23.org",
+  "url": "http://wiki.s23.org/wiki.pl?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 42372,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wiki.tinycobol.org",
+  "url": "http://wiki.tinycobol.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wikiindex.com",
+  "url": "http://wikiindex.com?action=rc&days=200&all=1",
+  "http": 404,
+  "bytes": 19,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wikimediafoundation.org",
+  "url": "https://wikimediafoundation.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 230242,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wikipatent.org",
+  "url": "http://www.wikipatent.org?action=rc&days=200&all=1",
+  "http": 0,
+  "bytes": 70,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wikipedia.com",
+  "url": "http://www.wikipedia.com?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 118274,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wikipedia.sf.net",
+  "url": "http://wikipedia.sf.net?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 128582,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "wikiuniverse.com",
+  "url": "http://www.wikiuniverse.com?action=rc&days=200&all=1",
+  "http": 403,
+  "bytes": 6365,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "world-wide-democracy.net",
+  "url": "http://www.world-wide-democracy.net/Wiki/WisconsinWiki?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 5206,
+  "bot_check": false,
+  "hits": {},
+  "samples": []
+ },
+ {
+  "id": "zwiki.org",
+  "url": "http://www.zwiki.org?action=rc&days=200&all=1",
+  "http": 200,
+  "bytes": 238897,
+  "bot_check": true,
+  "hits": {},
+  "samples": []
+ }
+]
