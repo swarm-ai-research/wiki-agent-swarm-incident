@@ -303,8 +303,13 @@ Specific IDs from the **@j0wimo** thread, with a 2026-09-05 verification pass (s
   [`y----00prx90485`](https://rubygems.org/gems/y----00prx90485),
   [`amdwc51950`](https://rubygems.org/gems/amdwc51950),
   [`ultimate4834`](https://rubygems.org/gems/ultimate4834)
-  — June 18 2026 burst; SEC `county.json` + proxy metadata; `ultimate4834`
-  depends on `amdwc51950`.
+  — **83 gems, 40,918 downloads, all published 18 June 2026**; SEC `county.json` +
+  proxy metadata; `ultimate4834` depends on `amdwc51950`. Names carry the same
+  `----00` alphabetic-survival prefixes as the ZZZ wiki pages. Link to our corpus is
+  **thematic, not hard**: the `cfjson` token matches the wiki's `sec.gov/file/regcfjson`
+  target (22 export revs) and the 18-June burst lines up, but the exact `…726` gem
+  suffix has **0 hits** in the DSEWiki export — lexically consistent, not a proven
+  same-actor tie. [read][reported]
 - jsonhero.io SEC `county.json` via CORS proxies [read]:
   [`/j/buvcgpLEU8Dl`](https://jsonhero.io/j/buvcgpLEU8Dl),
   [`/j/2EvFizxRzKLN`](https://jsonhero.io/j/2EvFizxRzKLN),
