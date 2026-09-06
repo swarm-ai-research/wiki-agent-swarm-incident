@@ -40,7 +40,9 @@ DATES = [
     re.compile(r"\b(January|February|March|April|May|June|July|August|September|October|November|December) (\d{1,2}),? (20(?:25|26))\b"),
     re.compile(r"\b(\d{1,2})\. (Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember) (20(?:25|26))\b"),
     re.compile(r"\b(\d\d)\.(\d\d)\.(20(?:25|26))\b"),
+    re.compile(r"\b(\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) (20(?:25|26))\b"),
 ]
+TIME = re.compile(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\b")
 WEIGHTS = {"cloud": 2, "handles": 3, "bots": 0.2, "words": 1.5, "payload": 4, "infra": 2}
 CAPS = {"cloud": 10, "handles": 10, "bots": 10, "words": 10, "payload": 5, "infra": 10}
 ENGINE_RC = {
@@ -79,11 +81,27 @@ def rc_from(engine, url):
 
 
 def day_counts(text):
-    days = collections.Counter()
-    for rx in DATES:
-        for m in rx.finditer(text):
-            days[m.group(0)] += 1
-    return days
+    """Per-day edit-row counts, robust to both RecentChanges layouts.
+
+    Older versions counted date-token occurrences, which equals rows only when
+    each row carries its own date (inline, as some Oddmuse skins do). MediaWiki
+    and UseMod print the date once as a day header and put a time on each row, so
+    token-counting saw ~1 per day and the burst signal went blind. Here every
+    HH:MM row is bucketed under its preceding day header, so burst works for all.
+    """
+    import bisect
+    headers = sorted((m.start(), m.group(0)) for rx in DATES for m in rx.finditer(text))
+    times = [m.start() for m in TIME.finditer(text)]
+    if headers and len(times) > len(headers):
+        hpos = [h[0] for h in headers]
+        counts = collections.Counter()
+        for t in times:
+            i = bisect.bisect_right(hpos, t) - 1
+            if i >= 0:
+                counts[headers[i][1]] += 1
+        if counts:
+            return counts
+    return collections.Counter(d for _, d in headers)
 
 
 def score_text(text):
@@ -110,7 +128,8 @@ def scan_one(t):
         return r
     body = re.sub(r"<(script|style)\b.*?</\1>", " ", body, flags=re.S | re.I)
     text = W.strip(body)
-    r["bot_check"] = bool(re.search(r"Are you Human|bot check|verify you are human", text, re.I)) or code == 402
+    r["blocked"] = W.blocked_reason(code, text, url)
+    r["bot_check"] = r["blocked"] in ("http402", "botcheck")
     r.update(score_text(text))
     return r
 
@@ -164,7 +183,9 @@ def main():
 
 def report(results, top):
     live = [r for r in results if r.get("http") == 200 and r.get("bytes", 0) > 300]
-    print(f"{len(results)} scanned, {len(live)} live, {sum(1 for r in live if r.get('bot_check'))} bot checks")
+    blocked = [r for r in live if r.get("blocked")]
+    print(f"{len(results)} scanned, {len(live)} live, {len(blocked)} blocked/tarpit "
+          f"({', '.join(sorted({r['blocked'] for r in blocked})) or 'none'}) — a blocked page is not a clean read")
     print(f"{'score':>5} {'name':30s} {'engine':9s} {'burst':>5} {'days':>4}  signals")
     for r in sorted(live, key=lambda r: -r.get("score", 0))[:top]:
         print(f"{r['score']:5.1f} {r['name'][:30]:30s} {r['engine']:9s} {r.get('burst',0):5.1f} {r.get('days_2526',0):4d}  {r.get('signals')}")

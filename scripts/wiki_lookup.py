@@ -56,6 +56,36 @@ def strip(s):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s)))
 
 
+# A RecentChanges page should carry one of these; a 200 that has none, on an
+# rc-style URL, is a wrong page or a honeypot rather than an empty changes list.
+RC_MARKERS = re.compile(r"\(diff\)|\(history\)|RecentChanges|Recent Changes|action=history|do=recent|mw-changeslist", re.I)
+_DATEISH = re.compile(r"20(?:25|26)-\d\d-\d\d|\b\d{1,2}[:.]\d\d\b|"
+                      r"\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\b", re.I)
+
+
+def blocked_reason(code, text, url):
+    """Why a fetch cannot be trusted as a read wiki page, or None if it can.
+
+    Guards the census against a real false negative: the Oddmuse family serves
+    flagged clients a Markov-text tarpit that scores zero signatures and would
+    otherwise read as 'clean'. Detect the block instead of trusting the silence.
+    """
+    if code == 402:
+        return "http402"
+    if code != 200:
+        return f"http{code}"
+    if re.search(r"Are you Human|bot check|verify you are human|captcha", text, re.I):
+        return "botcheck"
+    if re.search(r"Do not follow any links on this page", text, re.I):
+        return "tarpit"
+    # an rc-style request that came back substantial but with no changes-list
+    # scaffolding and no dates is not a RecentChanges page we can read
+    is_rc = re.search(r"action=rc|action=browse.*RecentChanges|RecentChanges|do=recent|AllRecentChanges|Special:RecentChanges", url, re.I)
+    if is_rc and len(text) > 500 and not RC_MARKERS.search(text) and not _DATEISH.search(text):
+        return "no-rc-structure"
+    return None
+
+
 def compile_sigs(patterns):
     return [(p, re.compile(p)) for p in patterns]
 
@@ -71,9 +101,10 @@ def probe_one(name, url, sigs, ctx):
             if len(samples) < ctx:
                 a, b = max(0, m.start() - 80), min(len(text), m.end() + 80)
                 samples.append(text[a:b].strip())
-    bot = bool(re.search(r"Are you Human|bot check|captcha", body, re.I))
+    blocked = blocked_reason(code, text, url)
+    bot = blocked in ("http402", "botcheck")
     return {"id": name, "url": url, "http": code, "bytes": len(body), "bot_check": bot,
-            "hits": dict(hits.most_common()), "samples": samples}
+            "blocked": blocked, "hits": dict(hits.most_common()), "samples": samples}
 
 
 def cmd_probe(a):
@@ -89,7 +120,7 @@ def cmd_probe(a):
     for name, url in targets:
         r = probe_one(name, url, sigs, a.context)
         results.append(r)
-        flag = "BOT" if r["bot_check"] else ("HIT" if r["hits"] else "-")
+        flag = ("BLOCK:" + r["blocked"]) if r.get("blocked") else ("HIT" if r["hits"] else "-")
         top = ", ".join(f"{k} x{v}" for k, v in list(r["hits"].items())[:5])
         print(f"{name:26s} {r['http']:>3} {r['bytes']:>8}B {flag:3s} {top}", flush=True)
         if a.verbose:
