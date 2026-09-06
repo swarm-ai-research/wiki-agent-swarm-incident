@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="360" viewBox="0 0 560 360">
+<rect width="560" height="360" fill="#0f1419"/>
+<g font-family="sans-serif">
+<text x="280.0" y="28" text-anchor="middle" font-size="15" fill="#e7ecf1">ProWiki farm export cut — revisions by wiki</text>
+<text x="280.0" y="48" text-anchor="middle" font-size="12" fill="#b0bac4">(total 14,591; tiny slices in legend)</text>
+<path d="M200 190 L200.00 80.00 A110 110 0 1 1 146.15 94.08 Z" fill="#5b9fd4"/><path d="M200 190 L146.15 94.08 A110 110 0 0 1 191.72 80.31 Z" fill="#7dcea0"/><path d="M200 190 L191.72 80.31 A110 110 0 0 1 199.72 80.00 Z" fill="#e8a87c"/><circle cx="199.9" cy="76.0" r="4" fill="#6b7c8d"/>
+<rect x="360" y="120" width="14" height="14" fill="#5b9fd4"/><text x="382" y="132" font-size="13" fill="#e7ecf1">dse — 13,403 (91.86%)</text><rect x="360" y="148" width="14" height="14" fill="#7dcea0"/><text x="382" y="160" font-size="13" fill="#e7ecf1">probier — 1,013 (6.94%)</text><rect x="360" y="176" width="14" height="14" fill="#e8a87c"/><text x="382" y="188" font-size="13" fill="#e7ecf1">fractal — 169 (1.16%)</text><rect x="360" y="204" width="14" height="14" fill="#6b7c8d"/><text x="382" y="216" font-size="13" fill="#e7ecf1">dorfwiki — 6 (0.04%)</text>
+</g>
+</svg>
