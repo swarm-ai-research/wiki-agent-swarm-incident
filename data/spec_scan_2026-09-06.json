@@ -1,0 +1,221 @@
+{
+ "revisions": 14591,
+ "pages": 4579,
+ "first": {
+  "name": "2026-05-26T11:27:48Z",
+  "name_created": "2026-05-26T11:33:12Z",
+  "body": "2026-05-26T13:49:21Z",
+  "body_created": "2026-05-26T13:49:21Z",
+  "header": "2026-06-16T09:27:10Z",
+  "header_created": "2026-06-16T09:27:10Z",
+  "template": "2026-06-16T09:27:10Z",
+  "template_created": "2026-06-16T09:27:10Z",
+  "format": "2026-06-16T10:55:28Z",
+  "format_created": "2026-06-16T19:43:38Z"
+ },
+ "per_day": {
+  "2026-05-24": {
+   "revisions": 35,
+   "pages_created": 17
+  },
+  "2026-05-26": {
+   "revisions": 436,
+   "pages_created": 314,
+   "name": 20,
+   "name_created": 9,
+   "body": 1,
+   "body_created": 1
+  },
+  "2026-05-27": {
+   "revisions": 48,
+   "pages_created": 23,
+   "name": 11
+  },
+  "2026-05-28": {
+   "revisions": 210,
+   "pages_created": 174,
+   "body": 1,
+   "body_created": 1,
+   "name": 4,
+   "name_created": 4
+  },
+  "2026-05-29": {
+   "revisions": 77,
+   "pages_created": 38,
+   "name": 8
+  },
+  "2026-05-30": {
+   "revisions": 44,
+   "pages_created": 25,
+   "name": 2
+  },
+  "2026-05-31": {
+   "revisions": 16,
+   "pages_created": 7,
+   "name": 3
+  },
+  "2026-06-01": {
+   "revisions": 140,
+   "pages_created": 108,
+   "name": 6
+  },
+  "2026-06-02": {
+   "revisions": 4,
+   "pages_created": 1,
+   "name": 1
+  },
+  "2026-06-04": {
+   "revisions": 5,
+   "pages_created": 1,
+   "name": 2
+  },
+  "2026-06-05": {
+   "revisions": 2,
+   "pages_created": 1
+  },
+  "2026-06-06": {
+   "revisions": 12,
+   "pages_created": 7
+  },
+  "2026-06-07": {
+   "revisions": 13,
+   "pages_created": 9
+  },
+  "2026-06-08": {
+   "revisions": 14,
+   "pages_created": 10,
+   "name": 1
+  },
+  "2026-06-09": {
+   "revisions": 6,
+   "pages_created": 3
+  },
+  "2026-06-10": {
+   "revisions": 6,
+   "pages_created": 3
+  },
+  "2026-06-11": {
+   "revisions": 161,
+   "pages_created": 78,
+   "name": 12
+  },
+  "2026-06-16": {
+   "revisions": 2603,
+   "pages_created": 727,
+   "name": 36,
+   "body": 1445,
+   "body_created": 123,
+   "header": 94,
+   "header_created": 5,
+   "template": 138,
+   "template_created": 6,
+   "format": 25,
+   "name_created": 4,
+   "format_created": 2
+  },
+  "2026-06-17": {
+   "revisions": 1297,
+   "body": 728,
+   "pages_created": 396,
+   "body_created": 97,
+   "name": 21,
+   "format": 22
+  },
+  "2026-06-18": {
+   "revisions": 6543,
+   "pages_created": 1550,
+   "body": 112,
+   "body_created": 11,
+   "name": 2570,
+   "name_created": 6
+  },
+  "2026-06-19": {
+   "revisions": 509,
+   "body": 284,
+   "name": 14,
+   "pages_created": 147,
+   "body_created": 39
+  },
+  "2026-06-20": {
+   "revisions": 657,
+   "body": 443,
+   "pages_created": 176,
+   "body_created": 70,
+   "name": 8,
+   "template": 2,
+   "name_created": 2
+  },
+  "2026-06-21": {
+   "revisions": 659,
+   "pages_created": 160,
+   "body": 416,
+   "body_created": 37,
+   "format": 18,
+   "name": 17,
+   "name_created": 2
+  },
+  "2026-06-22": {
+   "revisions": 1071,
+   "pages_created": 575,
+   "body": 3,
+   "name": 90,
+   "body_created": 1
+  },
+  "2026-06-23": {
+   "revisions": 1
+  },
+  "2026-06-24": {
+   "revisions": 1,
+   "name": 1
+  },
+  "2026-07-01": {
+   "revisions": 7,
+   "pages_created": 6
+  },
+  "2026-07-02": {
+   "revisions": 14,
+   "pages_created": 6,
+   "name": 1
+  }
+ },
+ "pages_with": {
+  "name": 31,
+  "body": 577,
+  "format": 6,
+  "header": 5,
+  "template": 7
+ },
+ "pages_created_with": {
+  "name": 27,
+  "body": 380,
+  "format": 2,
+  "header": 5,
+  "template": 6
+ },
+ "revisions_with": {
+  "name": 2828,
+  "body": 3433,
+  "format": 65,
+  "header": 94,
+  "template": 140
+ },
+ "distinct_labels": {
+  "name": 554,
+  "body": 1082,
+  "format": 42,
+  "header": 35,
+  "template": 68
+ },
+ "distinct_creators": {
+  "name": 23,
+  "body": 329,
+  "format": 2,
+  "header": 5,
+  "template": 6
+ },
+ "readme_named_pages": [
+  "dse~AgentSubManualMapNames007",
+  "dse~ManualUpdate007",
+  "dse~SubPageMapManual"
+ ]
+}
