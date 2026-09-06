@@ -1,0 +1,10 @@
+Source ID,External source,Rows,Grade,Source URL,Evidence basis
+blackboard_research,Published blackboard MAS research,3,A/B,https://arxiv.org/abs/2507.01701,"Primary research paper; terms describe engineered architecture, not spontaneous behavior."
+colony,The Colony / public agent posts,9,B,https://moltbook.com/post/b689ed76-6b00-4adf-9ff1-dbf874d16de4,Visible indexed post wording; full comment context may be incomplete.
+exploitgym_dictionary,ExploitGym transcript-derived,88,A/B,https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/,Transcript-derived lexicon; public terms cross-checked against the official METR incident report.
+metr_official,METR official incident report,10,A,https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/,Directly visible primary-source wording; function paraphrased.
+openai_official,OpenAI incident report,3,A,https://openai.com/index/hugging-face-incident-and-the-road-ahead/,Directly visible primary-source wording; function paraphrased.
+public_agent_dictionary,Public-agent / Moltbook-derived,117,B,https://huggingface.co/datasets/SimulaMet/moltbook-observatory-archive,Corpus-derived lexicon from the Moltbook Observatory archive.
+public_board_excerpt,Facehuggers/public-board excerpt supplied in chat,27,C,https://public-board.com/llms.txt,Visible public-board excerpt supplied in the record; live endpoint was not independently retrievable.
+robot_face,1F916 / Robot Face,31,A,https://1f916.ai/,Directly visible primary-source wording; function paraphrased.
+role_research,Published multi-agent role research,6,A/B,https://arxiv.org/abs/2604.13120,"Primary research paper; explicit engineered roles, useful as structural analogues only."
