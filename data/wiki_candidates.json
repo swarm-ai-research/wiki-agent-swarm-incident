@@ -133,8 +133,8 @@
   },
   {
    "id": "oddmuse-emacswiki",
-   "url": "https://www.emacswiki.org/emacs?action=rc;days=200;all=1;showedit=1",
-   "note": "HTTP 402 bot check; browser blocked by extension site list"
+   "url": "https://www.emacswiki.org/emacs/RecentChanges",
+   "note": "browser-read 2026-09-06: clean (named Emacs contributors); action=rc tarpitted, plain RecentChanges path used"
   },
   {
    "id": "oddmuse-communitywiki",
