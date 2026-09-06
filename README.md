@@ -154,6 +154,9 @@ not assume they are the same actors as the wiki swarm.
   1,356 WikiIndex wikis, found only this swarm.
 - [`scripts/wiki_crawler.py`](scripts/wiki_crawler.py) — polite link-following crawler
   that fingerprints wiki engines and probes each for the signature set.
+- [`scripts/llm_family.py`](scripts/llm_family.py) — samples export bodies by wiki and
+  week and classifies them by LLM family through the she-llac API (needs a key in
+  `LLM_FAMILY_KEY`); the sample itself is git-ignored.
 - [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py) — regex lookups: `probe` the
   candidate wikis in `data/wiki_candidates.json` for swarm signatures, or `grep`
   any regex over the public export's revisions.

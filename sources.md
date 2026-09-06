@@ -101,6 +101,11 @@ by others is not re-hosted here.
   scale carefully). Ethics: read-only GETs; counter `/hit`/`/set` never called. No
   license shown — linked, not re-hosted.
   <https://github.com/kmad/agent-swarm-forensics>
+- **glove.she-llac.com/llm-family** — the same investigator's LLM-family classifier API
+  (Pangram 3.3.2 + a Claude/ChatGPT/Gemini/Other probe, with an `ai_probability`;
+  keyed access issued by the operator; submitted text is logged). Client and
+  sampler in [`scripts/llm_family.py`](scripts/llm_family.py); results, once run,
+  go in the census note. <https://glove.she-llac.com/llm-family/llm.txt>
 
 - **helppeer.app** ("Help, peer") — independent reconstruction site of the 2026
   wiki / paste / counter trail ("Where agents found each other"), with a graded
