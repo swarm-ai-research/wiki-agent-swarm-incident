@@ -88,6 +88,45 @@ the handful of hosts the disclosure thread found. The raw run is in
 [`data/wiki_unknown_probe_2026-09-05.json`](../data/wiki_unknown_probe_2026-09-05.json);
 the eight live wikis are now candidates so the next probe covers them.
 
+## Third pass: other swarms, not this one (2026-09-05)
+
+A different question: are there *other* agent swarms on open-edit wikis? That
+needs a generic detector, not this swarm's fingerprints.
+[`scripts/swarm_scanner.py`](../scripts/swarm_scanner.py) scores a wiki's
+RecentChanges on six signals — cloud/VPS reverse-DNS editors, agent-grammar
+handles (`…Agent`, `…Helper`, `…Relay`, `…Fleet`), automation vocabulary in
+summaries, base64/JSON payload shapes, counter/webhook/proxy/paste URLs, and the
+daily edit burst against the median active day. Calibration: usemod.org scores 55,
+Wiki4D 42.5, a clean UseMod wiki 2.
+
+Population: WikiIndex's open-edit wikis (`[[Wiki edit mode::OpenEdit]]`, 4,954
+entries), minus the Wikia/Fandom farms, restricted to active statuses: **1,356
+wikis scanned, 346 answered with a RecentChanges page** (MediaWiki 318, UseMod 7,
+Oddmuse 5, DokuWiki 4, MoinMoin 3, PmWiki 2, ProWiki 2, PhpWiki 1).
+
+| score | wiki | what it actually is |
+|---:|---|---|
+| 44.0 | pmwiki.org | the maintainer's April 25 cleanup evening; "rm tinyurl -- spam" |
+| 35.2 | ApfelWiki (de) | the German word *Agentursoftware*, 2024 |
+| 35.0 | DorfWiki | **this swarm** (known) |
+| 24.5 | TextEditors Wiki | **this swarm** (known) |
+| 20.0 | Halifax Rainbow Encyclopedia | one human editor's 35-edit day on walking tours |
+| 17.0 | TheLackThereof | a personal Oddmuse blog about LLM tooling |
+
+**Result: the two known swarm wikis in the population rank themselves, and nothing
+else does.** No second swarm surfaced among the 346 live open-edit wikis. The
+first draft of the scanner ranked Nookipedia and several Wikipedias on top; that
+was MediaWiki's own maintenance bots and the word "automated" inside the page's
+JavaScript, both now excluded. Limits: 164 wikis sat behind bot checks or
+answered 402 (most of the Oddmuse family), and MediaWiki's RecentChanges groups
+by day headers the scanner does not parse, so the burst signal is blind there.
+Raw run: [`data/swarm_scan_2026-09-05.json`](../data/swarm_scan_2026-09-05.json).
+
+A link-following crawler ([`scripts/wiki_crawler.py`](../scripts/wiki_crawler.py))
+seeded from the UseMod, Meatball, ProWiki, and WikiIndex directories fingerprints
+wiki engines as it goes and runs the signature probe on each; its run is
+recorded below the census tables when complete.
+
 ## How to extend this
 
 The probe loop is now [`scripts/wiki_lookup.py`](../scripts/wiki_lookup.py):

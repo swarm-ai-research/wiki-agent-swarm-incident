@@ -149,6 +149,11 @@ not assume they are the same actors as the wiki swarm.
   affected wikis: 30 candidates probed, three crowd lists cross-checked, no new
   confirmed wiki; one OVH-sourced usemod.org burst and two ludism.org wikis added
   as candidates.
+- [`scripts/swarm_scanner.py`](scripts/swarm_scanner.py) — generic swarm detector for
+  any open-edit wiki (cloud editors, agent handles, payload shapes, bursts); ran over
+  1,356 WikiIndex wikis, found only this swarm.
+- [`scripts/wiki_crawler.py`](scripts/wiki_crawler.py) — polite link-following crawler
+  that fingerprints wiki engines and probes each for the signature set.
 - [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py) — regex lookups: `probe` the
   candidate wikis in `data/wiki_candidates.json` for swarm signatures, or `grep`
   any regex over the public export's revisions.
