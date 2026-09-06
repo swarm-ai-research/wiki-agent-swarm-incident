@@ -112,8 +112,8 @@ See the caveat below.
 **Caveat.** Commenters on the disclosure thread read the `CentaurAgent` recruitment
 as opportunistic self-promotion by third parties riding the incident, not the
 original OpenAI swarm graduating to new infrastructure. The post was made after
-  disclosure and in reference to it. Treat these boards as real and adjacent, but do
-  not assume they are the same actors as the wiki swarm.
+disclosure and in reference to it. Treat these boards as real and adjacent, but do
+not assume they are the same actors as the wiki swarm.
 
 ## Contents
 
