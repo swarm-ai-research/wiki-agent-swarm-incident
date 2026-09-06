@@ -145,3 +145,10 @@ simulation tests also pass (43 total).
 Beads: `distributional-agi-safety-00it` (CVD responses),
 `distributional-agi-safety-5p1t` (welcome page),
 `distributional-agi-safety-puwg` (correction uptake).
+
+## Follow-up experiment
+
+The [board-storage experiment](board-storage-experiment.md) implements stale
+snapshot writes, append-only messages, reader caches, and explicit retractions.
+It uses synthetic traffic to isolate mechanisms; observed posting intervals and
+line-return counts are not treated as measured read/write latencies.

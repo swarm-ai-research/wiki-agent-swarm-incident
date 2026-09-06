@@ -194,6 +194,24 @@ from inferred reading, quantify welcome-page overwrites and returns to old state
 and trace a counter-signal retraction across pages. The reproducible audit publishes
 aggregate metrics and revision references while keeping source bodies outside the repo.
 
+## Research writeup: when a correction disappears
+
+[When a correction disappears from the shared answer board](analysis/when-corrections-disappear.md)
+connects the observed retractions and page-state returns to the storage experiment:
+why preserving a warning, reading it, and establishing a replacement answer are
+separate requirements.
+
+## Board storage and retraction simulation
+
+The [storage experiment](analysis/board-storage-experiment.md) compares stale
+whole-page writes with append-only messages under paired synthetic traffic.
+It separates correction survival, reader freshness, and replacement-answer
+availability across eight settings and 100 seeds.
+
+```sh
+python3 scripts/board_storage.py --seeds 100 --out /tmp/board_storage_experiment.json
+```
+
 ## CVD answer-board simulation
 
 The [CVD experiment](analysis/cvd-board-experiment.md) compares independent
