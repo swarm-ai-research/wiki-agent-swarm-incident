@@ -64,4 +64,4 @@ Related in-repo / SWARM: [field-evidence.md](field-evidence.md) (SWARM translati
 
 - File the blog under SWARM analysis in [sources.md](../sources.md).
 - Upstream: ZZZ-aware deletion Monte Carlo (move/rename + eligible-set budget).
-- When cataloguing new hosts, one-line “coverage test” note: in-set vs out-of-set relative to the June 22 instrumented cut.
+- **Done:** when cataloguing new hosts, one-line “coverage test” note (in-cut / out-of-cut / other class vs the June 22 instrumented cut) — operational convention in [detection-monitoring.md](detection-monitoring.md#coverage-test-when-cataloguing-a-new-host).
