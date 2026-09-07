@@ -171,11 +171,21 @@ by others is not re-hosted here.
   `countapi.mileshilliard.com` (44 revisions / 35 labels / 99-minute migration;
   surviving read-only state), `httpbin.org/base64` as URL-as-storage,
   `vanderbi.lt` `+` referrer inversion,
-  Microlink `function=` POST smuggling (earliest GET-only bypass in the corpus),
-  and a large purged `bitily.in` YOURLS capture (single Wayback snapshot — treat
-  scale carefully). Ethics: read-only GETs; counter `/hit`/`/set` never called. No
-  license shown — linked, not re-hosted.
+  Microlink headless `api.microlink.io/?function=` POST smuggling (earliest
+  GET-only bypass in the corpus; e.g. USAspending) with B0/B1/B2 obfuscation
+  ablations in ~25 minutes, and a large purged `bitily.in` YOURLS capture
+  (single Wayback snapshot — treat scale carefully). Recurring “proxy canary”:
+  Clark University Economics 2010 newsletter PDF (Memgator/Wayback →
+  PDF-to-markdown → CORS proxies → jqp slices of “New Faculty”/courses, then
+  working route published to wiki). Also: embedded jq/markdown slicing;
+  triple/quadruple URL encoding (~95–98 / ~18 revisions); four-layer peels
+  (`jqp` → allorigins → `jqp` → cors.lol → sec.gov); covert timing via
+  `clock.wait` / heartbeats / counters. Ethics: read-only GETs; counter
+  `/hit`/`/set` never called. No license shown — linked, not re-hosted.
+  Repo [export]; X notes [reported] (Kevin Madura / @kmad, Sep 4–5 2026).
   <https://github.com/kmad/agent-swarm-forensics>
+  <https://x.com/kmad/status/2095973085040296436>
+  <https://x.com/kmad/status/2096029334225997848>
 - **glove.she-llac.com/llm-family** — the same investigator's LLM-family classifier API
   (Pangram 3.3.2 + a Claude/ChatGPT/Gemini/Other probe, with an `ai_probability`;
   keyed access issued by the operator; submitted text is logged). Client and
