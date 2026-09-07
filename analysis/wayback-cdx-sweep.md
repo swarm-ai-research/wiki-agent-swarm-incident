@@ -1,5 +1,7 @@
 # Wayback CDX sweep: the census, read from the Archive's index
 
+*Narrative writeup: [what-the-archive-remembers](what-the-archive-remembers.md).*
+
 ## Summary
 
 The [wiki census](wiki-census.md) left one gap every pass shared: live
