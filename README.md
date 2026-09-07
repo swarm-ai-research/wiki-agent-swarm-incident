@@ -212,7 +212,9 @@ not assume they are the same actors as the wiki swarm.
   added node and edge carries a `src`. Inputs, hashes and counts for the last run are
   in [`data/atlas_augment_2026-09-07.json`](data/atlas_augment_2026-09-07.json); the
   termina tables it read are pinned in [`data/termina/`](data/termina/) (CC0).
-  `actor_link.jsonl` is not imported: its handle rows are ludism.org spam accounts.
+  `actor_link.jsonl` is not imported: its handle rows are ludism.org spam accounts,
+  its human rows are masked, and the termina manifest marks all 133 of its rows
+  `unsourced`; revisit only if a later termina release ships sourced actor links.
 - [`charts/`](charts/) — static charts from published aggregates (timeline volume,
   signature classes, wiki split, task sub-swarms, substrate layers).
 - [`timeline.html`](timeline.html) — daily saved edits by wiki and admin deletions,
