@@ -7,11 +7,14 @@ GitHub, and writes data/daily_counts.json. Saves and deletions for the ProWiki f
 five smaller wikis come from their own revisions.jsonl. Only days on or after
 2026-05-01 are kept, matching the export's write_date cut.
 
-    python3 scripts/daily_counts.py            # writes data/daily_counts.json
+    python3 scripts/daily_counts.py              # fetch export, write data/daily_counts.json
+    python3 scripts/daily_counts.py --embed-held # copy held JSON rows into timeline.html (offline)
 """
-import collections, json, sys, urllib.request
+import collections, json, re, sys, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
 
 RAW = "https://raw.githubusercontent.com/JoshuaDavid/WikiAgentSwarmInvestigation/HEAD/agent-logs/"
 GROUP = {"dse": "dse", "probier": "probier", "fractal": "fractal", "wiki4d": "wiki4d"}
@@ -50,7 +53,7 @@ def main():
                 saves[d][GROUP.get(w, "other")] += 1
     days = sorted(set(saves) | set(dels))
     rows = [{"d": d, **{k: saves[d][k] for k in ("dse", "probier", "fractal", "wiki4d", "other")}, "del": dels[d]} for d in days]
-    out = Path(__file__).resolve().parent.parent / "data" / "daily_counts.json"
+    out = ROOT / "data" / "daily_counts.json"
     out.write_text(json.dumps({
         "source": "JoshuaDavid/WikiAgentSwarmInvestigation agent-logs/* (fetched " + datetime.now(timezone.utc).date().isoformat() + ")",
         "day": "UTC",
@@ -59,7 +62,32 @@ def main():
                    "del": "admin deletions (all DSEWiki)"},
         "rows": rows}, indent=1))
     print(f"{len(rows)} days, {sum(sum(saves[d].values()) for d in days)} saves, {sum(dels.values())} deletions -> {out}", file=sys.stderr)
+    embed_held()
+
+
+def extract_embedded_rows(html):
+    m = re.search(r"const EMBEDDED_ROWS=(\[.*?\]);", html, flags=re.S)
+    if not m:
+        raise ValueError("timeline.html has no const EMBEDDED_ROWS=[...] assignment")
+    return json.loads(m.group(1))
+
+
+def embed_held():
+    """Refresh the timeline.html fallback array from data/daily_counts.json. Offline."""
+    data = json.loads((ROOT / "data" / "daily_counts.json").read_text())
+    rows = data["rows"]
+    path = ROOT / "timeline.html"
+    html = path.read_text()
+    new = "const EMBEDDED_ROWS=" + json.dumps(rows, separators=(",", ":")) + ";"
+    updated, n = re.subn(r"const EMBEDDED_ROWS=\[.*?\];", new, html, count=1, flags=re.S)
+    if n != 1:
+        raise SystemExit("failed to embed EMBEDDED_ROWS into timeline.html")
+    path.write_text(updated)
+    print(f"embedded {len(rows)} held days into {path}", file=sys.stderr)
 
 
 if __name__ == "__main__":
-    main()
+    if "--embed-held" in sys.argv:
+        embed_held()
+    else:
+        main()
