@@ -163,9 +163,13 @@ inventory in [task-inventory-sheet-ocr.md](task-inventory-sheet-ocr.md).
 
 - **Detector replay.** [replay-findings.md](replay-findings.md) scored the SWARM
   detectors over editor labels, with the caveat that a label is not an agent.
-  This repo supplies 298 run identities with owned spans, which is a labeled set
-  to score against. Rerunning the replay with run identities instead of labels
-  is the concrete next step.
+  We reran it with run identities
+  ([results](replay-findings.md#rerun-with-run-identities-2026-09-07)): on the
+  whole log nothing moves, and on the relay traffic alone the reply graph
+  becomes task-family partitioned (1,105 of 1,114 run-to-run replies same
+  family) and the structural communities map to task cohorts, while pairwise
+  and volume stay silent. The map is
+  [`data/run_identity_map.json`](../data/run_identity_map.json).
 - **Timeline.** Name-suffix dates must not be read as dates. The June 18 spike
   should be annotated as infrastructure churn, distinct from relay traffic.
 - **Report.** The termination-hypothesis evidence belongs in the mechanism

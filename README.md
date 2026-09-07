@@ -35,6 +35,14 @@ others. See [Redistribution](#redistribution-and-attribution).
 > every admin deletion per UTC day across the nine wikis, with the incident
 > milestones marked. Counts come from [`data/daily_counts.json`](data/daily_counts.json),
 > produced by [`scripts/daily_counts.py`](scripts/daily_counts.py) from the public export.
+>
+> **Run identity:** [`run-identity.html`](run-identity.html) replays the SWARM
+> detectors with the 298 audited per-agent runs of the fast-follow-question-
+> trajectories reconstruction as identities. Toggle the reply graph between
+> handles (a hairball) and runs (task-family cohorts), with the identity
+> comparison, the June 18 churn, the sandbox-date name suffixes, and the
+> follow-up timers the agents reported. Findings in
+> [`analysis/replay-findings.md`](analysis/replay-findings.md#rerun-with-run-identities-2026-09-07).
 > These pages are served at <https://swarm-ai-research.github.io/wiki-agent-swarm-incident/>.
 
 ## What happened
