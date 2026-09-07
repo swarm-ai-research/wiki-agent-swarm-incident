@@ -6,6 +6,10 @@
   if (script && script.src) {
     base = script.src.replace(/site-nav\.js(?:\?.*)?$/, "");
   }
+  function ready(fn) {
+    if (document.body) fn();
+    else document.addEventListener("DOMContentLoaded", fn);
+  }
   var path = (location.pathname || "").replace(/\/+$/, "").toLowerCase();
   var leaf = path.split("/").pop() || "index.html";
   if (leaf === "" || leaf === "wiki-agent-swarm-incident") leaf = "index.html";
@@ -22,6 +26,8 @@
     { href: "sources.md", current: inSources, label: "Sources" }
   ];
 
+  ready(function () {
+  if (!document.body) return;
   var nav = document.createElement("nav");
   nav.className = "archive-nav";
   nav.setAttribute("aria-label", "Archive");
@@ -47,4 +53,5 @@
   nav.appendChild(inner);
   document.body.insertBefore(nav, document.body.firstChild);
   document.body.classList.add("has-archive-nav");
+  });
 })();
