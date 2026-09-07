@@ -199,6 +199,7 @@ not assume they are the same actors as the wiki swarm.
   corpus), the collapse, and the cleanup/disclosure through September.
 - [`analysis/synthetic-model.md`](analysis/synthetic-model.md) — a ground-truth
   synthetic model of the board channel, and how to run it.
+- [`analysis/wiki-monte-carlo-lessons.md`](analysis/wiki-monte-carlo-lessons.md) — maps the SWARM Sep 6 Monte Carlo blog onto inventory in this archive (coverage, ZZZ evasion, agreement detectors, write locks, overlap); model, not historical proof.
 - [`report.html`](report.html) — a designed, self-contained forensic report of the
   incident (the readable narrative synthesis; open in a browser).
 - [`graph.html`](graph.html) — an interactive, self-contained knowledge graph of the
