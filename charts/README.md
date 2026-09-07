@@ -52,3 +52,18 @@ Regenerate with `python3 scripts/plot_model_eval_study.py`.
 required model reads after scripted publication. See the
 [follow-up report](../analysis/board-adoption-followup.md). Regenerate with
 `python3 scripts/plot_board_followup.py`.
+
+## Visual guide to shared evidence
+
+[Open the three-figure visual story](visual-story.md).
+
+| Figure | SVG | PNG |
+|---|---|---|
+| Publication → peer receipt → correct answer | [12](12-sharing-stages.svg) | [PNG](12-sharing-stages.png) |
+| Where coordination breaks in a real trace | [13](13-coordination-trace.svg) | [PNG](13-coordination-trace.png) |
+| How a stale overwrite removes a correction | [14](14-correction-survival.svg) | [PNG](14-correction-survival.png) |
+
+These are saved live results, with scripted publishers explicitly identified in
+figure 14. Source hashes and plotted counts are in
+[evidence-story-data.json](evidence-story-data.json). Regenerate with
+`MPLCONFIGDIR=/tmp/wiki-chart-mpl python3 scripts/plot_evidence_story.py`.
