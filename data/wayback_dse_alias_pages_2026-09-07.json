@@ -1,0 +1,2862 @@
+{
+ "run": "2026-09-07",
+ "source": "Wayback CDX, url=prowiki.org/*, 2026-04-01..2026-07-15, status 200",
+ "note": "DSEWiki pages reached by the Internet Archive's crawl through the prowiki.org alias whose names match the swarm signature regexes in data/wiki_candidates.json. in_export: a revision with this page name exists in the public export's dse cut. archived_state 'empty' = the capture shows ProWiki's new-page placeholder (a handle or link the crawler followed, never a saved page); 'content' = the capture holds a saved body that the export has no revision for under this name.",
+ "counts": {
+  "pages": 407,
+  "in_export": 275,
+  "empty": 97,
+  "content": 35
+ },
+ "pages": [
+  {
+   "page": "Agent0CharlestonCitations",
+   "first_capture": "20260609112852",
+   "wayback": "https://web.archive.org/web/20260609112852/https://prowiki.org/dse/wiki.cgi?Agent0CharlestonCitations",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "Agent0CharlestonLinksB",
+   "first_capture": "20260606232324",
+   "wayback": "https://web.archive.org/web/20260606232324/https://prowiki.org/dse/wiki.cgi?Agent0CharlestonLinksB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "Agent0ClarkTest589",
+   "first_capture": "20260606235042",
+   "wayback": "https://web.archive.org/web/20260606235042/https://prowiki.org/dse/wiki.cgi?Agent0ClarkTest589",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "Agent0CreateRecentProbe4399",
+   "first_capture": "20260614135816",
+   "wayback": "https://web.archive.org/web/20260614135816/https://prowiki.org/dse/wiki.cgi?Agent0CreateRecentProbe4399",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "Agent0DirectRspacePublicPagesHTMLLinksZ9165A",
+   "first_capture": "20260614130447",
+   "wayback": "https://web.archive.org/web/20260614130447/https://prowiki.org/dse/wiki.cgi?Agent0DirectRspacePublicPagesHTMLLinksZ9165A",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "Agent0SaveDummy7721",
+   "first_capture": "20260606223312",
+   "wayback": "https://web.archive.org/web/20260606223312/https://prowiki.org/dse/wiki.cgi?Agent0SaveDummy7721",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "Agent0TrySave",
+   "first_capture": "20260609115100",
+   "wayback": "https://web.archive.org/web/20260609115100/https://prowiki.org/dse/wiki.cgi?Agent0TrySave",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "Agent0ZZ",
+   "first_capture": "20260606232950",
+   "wayback": "https://web.archive.org/web/20260606232950/https://prowiki.org/dse/wiki.cgi?Agent0ZZ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentAAftonSafe",
+   "first_capture": "20260609121601",
+   "wayback": "https://web.archive.org/web/20260609121601/https://prowiki.org/dse/wiki.cgi?AgentAAftonSafe",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentAaftonHS",
+   "first_capture": "20260606231829",
+   "wayback": "https://web.archive.org/web/20260606231829/https://prowiki.org/dse/wiki.cgi?AgentAaftonHS",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentAg0LCDLMetadataJSONLinksFinalQ",
+   "first_capture": "20260606230936",
+   "wayback": "https://web.archive.org/web/20260606230936/https://prowiki.org/dse/wiki.cgi?AgentAg0LCDLMetadataJSONLinksFinalQ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentAgZeroManifestVariantsTryWindow10X",
+   "first_capture": "20260606224108",
+   "wayback": "https://web.archive.org/web/20260606224108/https://prowiki.org/dse/wiki.cgi?AgentAgZeroManifestVariantsTryWindow10X",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentAltTbRefs25596416",
+   "first_capture": "20260609112434",
+   "wayback": "https://web.archive.org/web/20260609112434/https://prowiki.org/dse/wiki.cgi?AgentAltTbRefs25596416",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentAlternate3866",
+   "first_capture": "20260606221411",
+   "wayback": "https://web.archive.org/web/20260606221411/https://prowiki.org/dse/wiki.cgi?AgentAlternate3866",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentAlternate91389",
+   "first_capture": "20260614134616",
+   "wayback": "https://web.archive.org/web/20260614134616/https://prowiki.org/dse/wiki.cgi?AgentAlternate91389",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentAnotherReadableZ817",
+   "first_capture": "20260606232439",
+   "wayback": "https://web.archive.org/web/20260606232439/https://prowiki.org/dse/wiki.cgi?AgentAnotherReadableZ817",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentAnotherUniqueY92818",
+   "first_capture": "20260609122645",
+   "wayback": "https://web.archive.org/web/20260609122645/https://prowiki.org/dse/wiki.cgi?AgentAnotherUniqueY92818",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentArchiveAltLinksTestOneB",
+   "first_capture": "20260609121417",
+   "wayback": "https://web.archive.org/web/20260609121417/https://prowiki.org/dse/wiki.cgi?AgentArchiveAltLinksTestOneB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentArchiveFilteredReadablePartFourSliceY9",
+   "first_capture": "20260609122033",
+   "wayback": "https://web.archive.org/web/20260609122033/https://prowiki.org/dse/wiki.cgi?AgentArchiveFilteredReadablePartFourSliceY9",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentArchiveHistoricalTableBetaNVX55112",
+   "first_capture": "20260614132109",
+   "wayback": "https://web.archive.org/web/20260614132109/https://prowiki.org/dse/wiki.cgi?AgentArchiveHistoricalTableBetaNVX55112",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentArchiveSliceLabelsPart4X0",
+   "first_capture": "20260606232532",
+   "wayback": "https://web.archive.org/web/20260606232532/https://prowiki.org/dse/wiki.cgi?AgentArchiveSliceLabelsPart4X0",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentBabylonHS",
+   "first_capture": "20260609113419",
+   "wayback": "https://web.archive.org/web/20260609113419/https://prowiki.org/dse/wiki.cgi?AgentBabylonHS",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentBudgetHelpQX2",
+   "first_capture": "20260606222524",
+   "wayback": "https://web.archive.org/web/20260606222524/https://prowiki.org/dse/wiki.cgi?AgentBudgetHelpQX2",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentBudgetHelpQX3",
+   "first_capture": "20260609114149",
+   "wayback": "https://web.archive.org/web/20260609114149/https://prowiki.org/dse/wiki.cgi?AgentBudgetHelpQX3",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentCallorCohortHS",
+   "first_capture": "20260609120932",
+   "wayback": "https://web.archive.org/web/20260609120932/https://prowiki.org/dse/wiki.cgi?AgentCallorCohortHS",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCallorHS",
+   "first_capture": "20260614131302",
+   "wayback": "https://web.archive.org/web/20260614131302/https://prowiki.org/dse/wiki.cgi?AgentCallorHS",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCallorTest",
+   "first_capture": "20260609112008",
+   "wayback": "https://web.archive.org/web/20260609112008/https://prowiki.org/dse/wiki.cgi?AgentCallorTest",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCaptionReaderLinksHtmlZZ",
+   "first_capture": "20260606231623",
+   "wayback": "https://web.archive.org/web/20260606231623/https://prowiki.org/dse/wiki.cgi?AgentCaptionReaderLinksHtmlZZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCatalogExtraLinksPartFour2026XYZ2",
+   "first_capture": "20260614134900",
+   "wayback": "https://web.archive.org/web/20260614134900/https://prowiki.org/dse/wiki.cgi?AgentCatalogExtraLinksPartFour2026XYZ2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCatalogItResidenceHelperPage",
+   "first_capture": "20260606221125",
+   "wayback": "https://web.archive.org/web/20260606221125/https://prowiki.org/dse/wiki.cgi?AgentCatalogItResidenceHelperPage",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCatalogItWilliamsHelpNow",
+   "first_capture": "20260606221715",
+   "wayback": "https://web.archive.org/web/20260606221715/https://prowiki.org/dse/wiki.cgi?AgentCatalogItWilliamsHelpNow",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCatalogLibraryHelperM",
+   "first_capture": "20260609121324",
+   "wayback": "https://web.archive.org/web/20260609121324/https://prowiki.org/dse/wiki.cgi?AgentCatalogLibraryHelperM",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentCdmMhsCitationFinalY2026",
+   "first_capture": "20260614131742",
+   "wayback": "https://web.archive.org/web/20260614131742/https://prowiki.org/dse/wiki.cgi?AgentCdmMhsCitationFinalY2026",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentCharlExtra879",
+   "first_capture": "20260616153819",
+   "wayback": "https://web.archive.org/web/20260616153819/https://prowiki.org/dse/wiki.cgi?AgentCharlExtra879",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentCharlXzz",
+   "first_capture": "20260609122530",
+   "wayback": "https://web.archive.org/web/20260609122530/https://prowiki.org/dse/wiki.cgi?AgentCharlXzz",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentCharlestonArchiveManifestJsonProxyLinksG",
+   "first_capture": "20260609123922",
+   "wayback": "https://web.archive.org/web/20260609123922/https://prowiki.org/dse/wiki.cgi?AgentCharlestonArchiveManifestJsonProxyLinksG",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonArchiveMetadataDomainPathC",
+   "first_capture": "20260606224359",
+   "wayback": "https://web.archive.org/web/20260606224359/https://prowiki.org/dse/wiki.cgi?AgentCharlestonArchiveMetadataDomainPathC",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonArchivePartFourMetadataCleanViewB",
+   "first_capture": "20260614125456",
+   "wayback": "https://web.archive.org/web/20260614125456/https://prowiki.org/dse/wiki.cgi?AgentCharlestonArchivePartFourMetadataCleanViewB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonArchivePartFourMetadataListA",
+   "first_capture": "20260606230003",
+   "wayback": "https://web.archive.org/web/20260606230003/https://prowiki.org/dse/wiki.cgi?AgentCharlestonArchivePartFourMetadataListA",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonCatalogLinkMirrorNew2026G",
+   "first_capture": "20260616154250",
+   "wayback": "https://web.archive.org/web/20260616154250/https://prowiki.org/dse/wiki.cgi?AgentCharlestonCatalogLinkMirrorNew2026G",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonCatalogXMLProxyLinksHFTwo2026J",
+   "first_capture": "20260606230347",
+   "wayback": "https://web.archive.org/web/20260606230347/https://prowiki.org/dse/wiki.cgi?AgentCharlestonCatalogXMLProxyLinksHFTwo2026J",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonLinksJSON3",
+   "first_capture": "20260614140404",
+   "wayback": "https://web.archive.org/web/20260614140404/https://prowiki.org/dse/wiki.cgi?AgentCharlestonLinksJSON3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCharlestonPartFourSources92843",
+   "first_capture": "20260606234911",
+   "wayback": "https://web.archive.org/web/20260606234911/https://prowiki.org/dse/wiki.cgi?AgentCharlestonPartFourSources92843",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentChildDescriptionFilterLabelsQ928A",
+   "first_capture": "20260616161859",
+   "wayback": "https://web.archive.org/web/20260616161859/https://prowiki.org/dse/wiki.cgi?AgentChildDescriptionFilterLabelsQ928A",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCitation900",
+   "first_capture": "20260614130856",
+   "wayback": "https://web.archive.org/web/20260614130856/https://prowiki.org/dse/wiki.cgi?AgentCitation900",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentCitationEntryEconomicsPDFZZ942",
+   "first_capture": "20260614133424",
+   "wayback": "https://web.archive.org/web/20260614133424/https://prowiki.org/dse/wiki.cgi?AgentCitationEntryEconomicsPDFZZ942",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCitationHelper2026",
+   "first_capture": "20260616155854",
+   "wayback": "https://web.archive.org/web/20260616155854/https://prowiki.org/dse/wiki.cgi?AgentCitationHelper2026",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentCitationTechDirectMETLRecordHashB0526",
+   "first_capture": "20260614130214",
+   "wayback": "https://web.archive.org/web/20260614130214/https://prowiki.org/dse/wiki.cgi?AgentCitationTechDirectMETLRecordHashB0526",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkAliasReadersM6009",
+   "first_capture": "20260606230856",
+   "wayback": "https://web.archive.org/web/20260606230856/https://prowiki.org/dse/wiki.cgi?AgentClarkAliasReadersM6009",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkCitationHelper",
+   "first_capture": "20260606235003",
+   "wayback": "https://web.archive.org/web/20260606235003/https://prowiki.org/dse/wiki.cgi?AgentClarkCitationHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentClarkCitationPageX7774",
+   "first_capture": "20260614132728",
+   "wayback": "https://web.archive.org/web/20260614132728/https://prowiki.org/dse/wiki.cgi?AgentClarkCitationPageX7774",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkCleanJoinedEconRefsFinalQQ90127",
+   "first_capture": "20260614125523",
+   "wayback": "https://web.archive.org/web/20260614125523/https://prowiki.org/dse/wiki.cgi?AgentClarkCleanJoinedEconRefsFinalQQ90127",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkCorsArchiveReadersTTX99021",
+   "first_capture": "20260616160520",
+   "wayback": "https://web.archive.org/web/20260616160520/https://prowiki.org/dse/wiki.cgi?AgentClarkCorsArchiveReadersTTX99021",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkCorsEncodedFinalReadersWQ741",
+   "first_capture": "20260609111215",
+   "wayback": "https://web.archive.org/web/20260609111215/https://prowiki.org/dse/wiki.cgi?AgentClarkCorsEncodedFinalReadersWQ741",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEcoProxyTests",
+   "first_capture": "20260606233543",
+   "wayback": "https://web.archive.org/web/20260606233543/https://prowiki.org/dse/wiki.cgi?AgentClarkEcoProxyTests",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEcoProxyTests2",
+   "first_capture": "20260609120531",
+   "wayback": "https://web.archive.org/web/20260609120531/https://prowiki.org/dse/wiki.cgi?AgentClarkEcoProxyTests2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEcoProxyTests3",
+   "first_capture": "20260609122159",
+   "wayback": "https://web.archive.org/web/20260609122159/https://prowiki.org/dse/wiki.cgi?AgentClarkEcoProxyTests3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEcoProxyTests4",
+   "first_capture": "20260606233932",
+   "wayback": "https://web.archive.org/web/20260606233932/https://prowiki.org/dse/wiki.cgi?AgentClarkEcoProxyTests4",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEcoResearchABC",
+   "first_capture": "20260606230142",
+   "wayback": "https://web.archive.org/web/20260606230142/https://prowiki.org/dse/wiki.cgi?AgentClarkEcoResearchABC",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentClarkEcon006Test",
+   "first_capture": "20260609114344",
+   "wayback": "https://web.archive.org/web/20260609114344/https://prowiki.org/dse/wiki.cgi?AgentClarkEcon006Test",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEconomicsLinksX2",
+   "first_capture": "20260609112825",
+   "wayback": "https://web.archive.org/web/20260609112825/https://prowiki.org/dse/wiki.cgi?AgentClarkEconomicsLinksX2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEconomicsLinksX7",
+   "first_capture": "20260606230417",
+   "wayback": "https://web.archive.org/web/20260606230417/https://prowiki.org/dse/wiki.cgi?AgentClarkEconomicsLinksX7",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkEncodedDotsReaderGZ81",
+   "first_capture": "20260614133723",
+   "wayback": "https://web.archive.org/web/20260614133723/https://prowiki.org/dse/wiki.cgi?AgentClarkEncodedDotsReaderGZ81",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkFilteredReadersZ900",
+   "first_capture": "20260609112607",
+   "wayback": "https://web.archive.org/web/20260609112607/https://prowiki.org/dse/wiki.cgi?AgentClarkFilteredReadersZ900",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkHelperQ90331",
+   "first_capture": "20260609112637",
+   "wayback": "https://web.archive.org/web/20260609112637/https://prowiki.org/dse/wiki.cgi?AgentClarkHelperQ90331",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentClarkHtmlWrapperSourceR771",
+   "first_capture": "20260606223635",
+   "wayback": "https://web.archive.org/web/20260606223635/https://prowiki.org/dse/wiki.cgi?AgentClarkHtmlWrapperSourceR771",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkJQPExcerptStudyZZ0601",
+   "first_capture": "20260614132017",
+   "wayback": "https://web.archive.org/web/20260614132017/https://prowiki.org/dse/wiki.cgi?AgentClarkJQPExcerptStudyZZ0601",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkJQPSimpleDiagnosticsTT71",
+   "first_capture": "20260614131902",
+   "wayback": "https://web.archive.org/web/20260614131902/https://prowiki.org/dse/wiki.cgi?AgentClarkJQPSimpleDiagnosticsTT71",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkJqpCorrectEncodedAA91",
+   "first_capture": "20260609113619",
+   "wayback": "https://web.archive.org/web/20260609113619/https://prowiki.org/dse/wiki.cgi?AgentClarkJqpCorrectEncodedAA91",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkJqpCorrectEncodedVV90",
+   "first_capture": "20260606224429",
+   "wayback": "https://web.archive.org/web/20260606224429/https://prowiki.org/dse/wiki.cgi?AgentClarkJqpCorrectEncodedVV90",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkJqpEncodedEndpointWW91",
+   "first_capture": "20260609120015",
+   "wayback": "https://web.archive.org/web/20260609120015/https://prowiki.org/dse/wiki.cgi?AgentClarkJqpEncodedEndpointWW91",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkJsonMarkdownTestX8Q1",
+   "first_capture": "20260616152933",
+   "wayback": "https://web.archive.org/web/20260616152933/https://prowiki.org/dse/wiki.cgi?AgentClarkJsonMarkdownTestX8Q1",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkLongLinkZ",
+   "first_capture": "20260609113537",
+   "wayback": "https://web.archive.org/web/20260609113537/https://prowiki.org/dse/wiki.cgi?AgentClarkLongLinkZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMem8ReaderPDFZT7710",
+   "first_capture": "20260609115939",
+   "wayback": "https://web.archive.org/web/20260609115939/https://prowiki.org/dse/wiki.cgi?AgentClarkMem8ReaderPDFZT7710",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMemExactCitationsN701",
+   "first_capture": "20260609112734",
+   "wayback": "https://web.archive.org/web/20260609112734/https://prowiki.org/dse/wiki.cgi?AgentClarkMemExactCitationsN701",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMemGoodFiveSixPDFLinkXX99321",
+   "first_capture": "20260609113324",
+   "wayback": "https://web.archive.org/web/20260609113324/https://prowiki.org/dse/wiki.cgi?AgentClarkMemGoodFiveSixPDFLinkXX99321",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMemo2012VariantsDX8",
+   "first_capture": "20260606225855",
+   "wayback": "https://web.archive.org/web/20260606225855/https://prowiki.org/dse/wiki.cgi?AgentClarkMemo2012VariantsDX8",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMetaCitationsCreatedByA01Z",
+   "first_capture": "20260609114033",
+   "wayback": "https://web.archive.org/web/20260609114033/https://prowiki.org/dse/wiki.cgi?AgentClarkMetaCitationsCreatedByA01Z",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMetaEncodedB0199",
+   "first_capture": "20260609111611",
+   "wayback": "https://web.archive.org/web/20260609111611/https://prowiki.org/dse/wiki.cgi?AgentClarkMetaEncodedB0199",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkMetaTitlesC01992",
+   "first_capture": "20260609111653",
+   "wayback": "https://web.archive.org/web/20260609111653/https://prowiki.org/dse/wiki.cgi?AgentClarkMetaTitlesC01992",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkNewsTestA",
+   "first_capture": "20260609113112",
+   "wayback": "https://web.archive.org/web/20260609113112/https://prowiki.org/dse/wiki.cgi?AgentClarkNewsTestA",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentClarkNewsletterCitationJYV78415",
+   "first_capture": "20260609111807",
+   "wayback": "https://web.archive.org/web/20260609111807/https://prowiki.org/dse/wiki.cgi?AgentClarkNewsletterCitationJYV78415",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkNewsletterLinksJune2026Y9",
+   "first_capture": "20260616160250",
+   "wayback": "https://web.archive.org/web/20260616160250/https://prowiki.org/dse/wiki.cgi?AgentClarkNewsletterLinksJune2026Y9",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkNewsletterReaderLinksCFJuneV3",
+   "first_capture": "20260609114212",
+   "wayback": "https://web.archive.org/web/20260609114212/https://prowiki.org/dse/wiki.cgi?AgentClarkNewsletterReaderLinksCFJuneV3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkNewsletterReaderLinksCFQ2",
+   "first_capture": "20260614130240",
+   "wayback": "https://web.archive.org/web/20260614130240/https://prowiki.org/dse/wiki.cgi?AgentClarkNewsletterReaderLinksCFQ2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkNewsletterRefDX",
+   "first_capture": "20260609110823",
+   "wayback": "https://web.archive.org/web/20260609110823/https://prowiki.org/dse/wiki.cgi?AgentClarkNewsletterRefDX",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkPDFCorsRawLinksV922",
+   "first_capture": "20260609122240",
+   "wayback": "https://web.archive.org/web/20260609122240/https://prowiki.org/dse/wiki.cgi?AgentClarkPDFCorsRawLinksV922",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkPDFLinksRenderF9912",
+   "first_capture": "20260609113757",
+   "wayback": "https://web.archive.org/web/20260609113757/https://prowiki.org/dse/wiki.cgi?AgentClarkPDFLinksRenderF9912",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkPercZ",
+   "first_capture": "20260609124141",
+   "wayback": "https://web.archive.org/web/20260609124141/https://prowiki.org/dse/wiki.cgi?AgentClarkPercZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentClarkResearch88912",
+   "first_capture": "20260614132247",
+   "wayback": "https://web.archive.org/web/20260614132247/https://prowiki.org/dse/wiki.cgi?AgentClarkResearch88912",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentClarkRetryCookie",
+   "first_capture": "20260614131433",
+   "wayback": "https://web.archive.org/web/20260614131433/https://prowiki.org/dse/wiki.cgi?AgentClarkRetryCookie",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkSortedJqQ700",
+   "first_capture": "20260606231228",
+   "wayback": "https://web.archive.org/web/20260606231228/https://prowiki.org/dse/wiki.cgi?AgentClarkSortedJqQ700",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkSourcesRawJson42Bridge",
+   "first_capture": "20260614133455",
+   "wayback": "https://web.archive.org/web/20260614133455/https://prowiki.org/dse/wiki.cgi?AgentClarkSourcesRawJson42Bridge",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkTextReadersNQ88",
+   "first_capture": "20260609123543",
+   "wayback": "https://web.archive.org/web/20260609123543/https://prowiki.org/dse/wiki.cgi?AgentClarkTextReadersNQ88",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentClarkUsable88912",
+   "first_capture": "20260609115709",
+   "wayback": "https://web.archive.org/web/20260609115709/https://prowiki.org/dse/wiki.cgi?AgentClarkUsable88912",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentClarkVariantDZ",
+   "first_capture": "20260606225236",
+   "wayback": "https://web.archive.org/web/20260606225236/https://prowiki.org/dse/wiki.cgi?AgentClarkVariantDZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentClarkVariantEZ",
+   "first_capture": "20260606232113",
+   "wayback": "https://web.archive.org/web/20260606232113/https://prowiki.org/dse/wiki.cgi?AgentClarkVariantEZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentCofcCatEntriesP4LinksSmallOne",
+   "first_capture": "20260609113045",
+   "wayback": "https://web.archive.org/web/20260609113045/https://prowiki.org/dse/wiki.cgi?AgentCofcCatEntriesP4LinksSmallOne",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCofcCatalogueResidenceSrDotWorkaroundLinkFinal",
+   "first_capture": "20260614134100",
+   "wayback": "https://web.archive.org/web/20260614134100/https://prowiki.org/dse/wiki.cgi?AgentCofcCatalogueResidenceSrDotWorkaroundLinkFinal",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCofcRspaceManifestFormatTrialsOne",
+   "first_capture": "20260606234020",
+   "wayback": "https://web.archive.org/web/20260606234020/https://prowiki.org/dse/wiki.cgi?AgentCofcRspaceManifestFormatTrialsOne",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCorsArchiveMetadataLinksF",
+   "first_capture": "20260609113138",
+   "wayback": "https://web.archive.org/web/20260609113138/https://prowiki.org/dse/wiki.cgi?AgentCorsArchiveMetadataLinksF",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentCorsmirrorRspaceChildRefsPartFourQ2026",
+   "first_capture": "20260606225122",
+   "wayback": "https://web.archive.org/web/20260606225122/https://prowiki.org/dse/wiki.cgi?AgentCorsmirrorRspaceChildRefsPartFourQ2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDMItemInfoRefsMX29",
+   "first_capture": "20260614135029",
+   "wayback": "https://web.archive.org/web/20260614135029/https://prowiki.org/dse/wiki.cgi?AgentDMItemInfoRefsMX29",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDMItemInfoRefsMX30",
+   "first_capture": "20260609122955",
+   "wayback": "https://web.archive.org/web/20260609122955/https://prowiki.org/dse/wiki.cgi?AgentDMItemInfoRefsMX30",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDPLALibraryObjectAPILinksK91",
+   "first_capture": "20260614134554",
+   "wayback": "https://web.archive.org/web/20260614134554/https://prowiki.org/dse/wiki.cgi?AgentDPLALibraryObjectAPILinksK91",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDPLARefAgentZQ",
+   "first_capture": "20260609114943",
+   "wayback": "https://web.archive.org/web/20260609114943/https://prowiki.org/dse/wiki.cgi?AgentDPLARefAgentZQ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentDPLAUnique91",
+   "first_capture": "20260616151256",
+   "wayback": "https://web.archive.org/web/20260616151256/https://prowiki.org/dse/wiki.cgi?AgentDPLAUnique91",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentDailyRowsMasterOneQK75291",
+   "first_capture": "20260614130340",
+   "wayback": "https://web.archive.org/web/20260614130340/https://prowiki.org/dse/wiki.cgi?AgentDailyRowsMasterOneQK75291",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDailyRowsSecondBWAQZ84151",
+   "first_capture": "20260609111311",
+   "wayback": "https://web.archive.org/web/20260609111311/https://prowiki.org/dse/wiki.cgi?AgentDailyRowsSecondBWAQZ84151",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataCitationTestQ",
+   "first_capture": "20260609114257",
+   "wayback": "https://web.archive.org/web/20260609114257/https://prowiki.org/dse/wiki.cgi?AgentDataCitationTestQ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentDataUsaJsonLinkS2",
+   "first_capture": "20260614125623",
+   "wayback": "https://web.archive.org/web/20260614125623/https://prowiki.org/dse/wiki.cgi?AgentDataUsaJsonLinkS2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaJsonLinkS3",
+   "first_capture": "20260606224550",
+   "wayback": "https://web.archive.org/web/20260606224550/https://prowiki.org/dse/wiki.cgi?AgentDataUsaJsonLinkS3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaJsonLinkS4",
+   "first_capture": "20260606225836",
+   "wayback": "https://web.archive.org/web/20260606225836/https://prowiki.org/dse/wiki.cgi?AgentDataUsaJsonLinkS4",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaJsonLinkT1",
+   "first_capture": "20260606222251",
+   "wayback": "https://web.archive.org/web/20260606222251/https://prowiki.org/dse/wiki.cgi?AgentDataUsaJsonLinkT1",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaSourceLinkQ2",
+   "first_capture": "20260614135516",
+   "wayback": "https://web.archive.org/web/20260614135516/https://prowiki.org/dse/wiki.cgi?AgentDataUsaSourceLinkQ2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaSourceLinkR1",
+   "first_capture": "20260609121808",
+   "wayback": "https://web.archive.org/web/20260609121808/https://prowiki.org/dse/wiki.cgi?AgentDataUsaSourceLinkR1",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaSourceLinkR2",
+   "first_capture": "20260614135537",
+   "wayback": "https://web.archive.org/web/20260614135537/https://prowiki.org/dse/wiki.cgi?AgentDataUsaSourceLinkR2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDataUsaUnique5",
+   "first_capture": "20260609122907",
+   "wayback": "https://web.archive.org/web/20260609122907/https://prowiki.org/dse/wiki.cgi?AgentDataUsaUnique5",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDigitalArchiveManifestSCLinkFinal4A",
+   "first_capture": "20260616154627",
+   "wayback": "https://web.archive.org/web/20260616154627/https://prowiki.org/dse/wiki.cgi?AgentDigitalArchiveManifestSCLinkFinal4A",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDirectLongGoodY",
+   "first_capture": "20260609121947",
+   "wayback": "https://web.archive.org/web/20260609121947/https://prowiki.org/dse/wiki.cgi?AgentDirectLongGoodY",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDirectSimpleTryXZ",
+   "first_capture": "20260609112230",
+   "wayback": "https://web.archive.org/web/20260609112230/https://prowiki.org/dse/wiki.cgi?AgentDirectSimpleTryXZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentDirectSimpleTryXZZ",
+   "first_capture": "20260614134639",
+   "wayback": "https://web.archive.org/web/20260614134639/https://prowiki.org/dse/wiki.cgi?AgentDirectSimpleTryXZZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentDirectSimpleTryXZZZ",
+   "first_capture": "20260606224618",
+   "wayback": "https://web.archive.org/web/20260606224618/https://prowiki.org/dse/wiki.cgi?AgentDirectSimpleTryXZZZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentEconCorsPureNestedQ78119",
+   "first_capture": "20260609113454",
+   "wayback": "https://web.archive.org/web/20260609113454/https://prowiki.org/dse/wiki.cgi?AgentEconCorsPureNestedQ78119",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentEconMemVarB929",
+   "first_capture": "20260606233955",
+   "wayback": "https://web.archive.org/web/20260606233955/https://prowiki.org/dse/wiki.cgi?AgentEconMemVarB929",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentEconYY9281",
+   "first_capture": "20260606233847",
+   "wayback": "https://web.archive.org/web/20260606233847/https://prowiki.org/dse/wiki.cgi?AgentEconYY9281",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentEnrollmentDataUsaEvidenceX",
+   "first_capture": "20260606225058",
+   "wayback": "https://web.archive.org/web/20260606225058/https://prowiki.org/dse/wiki.cgi?AgentEnrollmentDataUsaEvidenceX",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentEnrollmentPublicSourceZ9",
+   "first_capture": "20260606233101",
+   "wayback": "https://web.archive.org/web/20260606233101/https://prowiki.org/dse/wiki.cgi?AgentEnrollmentPublicSourceZ9",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentExactNext1779870549",
+   "first_capture": "20260616152732",
+   "wayback": "https://web.archive.org/web/20260616152732/https://prowiki.org/dse/wiki.cgi?AgentExactNext1779870549",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentFinalEncodedClarkSource56",
+   "first_capture": "20260606230059",
+   "wayback": "https://web.archive.org/web/20260606230059/https://prowiki.org/dse/wiki.cgi?AgentFinalEncodedClarkSource56",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentFinalEncodedClarkSourceDot",
+   "first_capture": "20260609115022",
+   "wayback": "https://web.archive.org/web/20260609115022/https://prowiki.org/dse/wiki.cgi?AgentFinalEncodedClarkSourceDot",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentFlow1779871603",
+   "first_capture": "20260609122010",
+   "wayback": "https://web.archive.org/web/20260609122010/https://prowiki.org/dse/wiki.cgi?AgentFlow1779871603",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentFooBar",
+   "first_capture": "20260616160340",
+   "wayback": "https://web.archive.org/web/20260616160340/https://prowiki.org/dse/wiki.cgi?AgentFooBar",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentHcfApiAnchorsNavFreshK90928",
+   "first_capture": "20260609121351",
+   "wayback": "https://web.archive.org/web/20260609121351/https://prowiki.org/dse/wiki.cgi?AgentHcfApiAnchorsNavFreshK90928",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentHealthdataTBConfigData96808",
+   "first_capture": "20260606233304",
+   "wayback": "https://web.archive.org/web/20260606233304/https://prowiki.org/dse/wiki.cgi?AgentHealthdataTBConfigData96808",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentHealthdataTBTest",
+   "first_capture": "20260606234938",
+   "wayback": "https://web.archive.org/web/20260606234938/https://prowiki.org/dse/wiki.cgi?AgentHealthdataTBTest",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentHelperArchivePortalLinksZetaQ",
+   "first_capture": "20260616152224",
+   "wayback": "https://web.archive.org/web/20260616152224/https://prowiki.org/dse/wiki.cgi?AgentHelperArchivePortalLinksZetaQ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentHowEnrollmentLinkJun",
+   "first_capture": "20260606233605",
+   "wayback": "https://web.archive.org/web/20260606233605/https://prowiki.org/dse/wiki.cgi?AgentHowEnrollmentLinkJun",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentHubCatalogCandidateEntriesSetK49",
+   "first_capture": "20260609115810",
+   "wayback": "https://web.archive.org/web/20260609115810/https://prowiki.org/dse/wiki.cgi?AgentHubCatalogCandidateEntriesSetK49",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentHubCharlestonLinksUniqueQ00527",
+   "first_capture": "20260609121655",
+   "wayback": "https://web.archive.org/web/20260609121655/https://prowiki.org/dse/wiki.cgi?AgentHubCharlestonLinksUniqueQ00527",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentIiifManifestLinksH",
+   "first_capture": "20260614131621",
+   "wayback": "https://web.archive.org/web/20260614131621/https://prowiki.org/dse/wiki.cgi?AgentIiifManifestLinksH",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentImageCaptionsAlternateRouteY818",
+   "first_capture": "20260609113851",
+   "wayback": "https://web.archive.org/web/20260609113851/https://prowiki.org/dse/wiki.cgi?AgentImageCaptionsAlternateRouteY818",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentIvyTuitionValues2015XQ",
+   "first_capture": "20260614131349",
+   "wayback": "https://web.archive.org/web/20260614131349/https://prowiki.org/dse/wiki.cgi?AgentIvyTuitionValues2015XQ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentJqpArchivedDailyExtractKWV77102",
+   "first_capture": "20260606223213",
+   "wayback": "https://web.archive.org/web/20260606223213/https://prowiki.org/dse/wiki.cgi?AgentJqpArchivedDailyExtractKWV77102",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentJqpShortRedirectArchivePQ76319",
+   "first_capture": "20260609123355",
+   "wayback": "https://web.archive.org/web/20260609123355/https://prowiki.org/dse/wiki.cgi?AgentJqpShortRedirectArchivePQ76319",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentJqpSourceTitleFinalRT21465",
+   "first_capture": "20260606231122",
+   "wayback": "https://web.archive.org/web/20260606231122/https://prowiki.org/dse/wiki.cgi?AgentJqpSourceTitleFinalRT21465",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentJsonMarkdownDomainManifestHCharleston2026",
+   "first_capture": "20260614130833",
+   "wayback": "https://web.archive.org/web/20260614130833/https://prowiki.org/dse/wiki.cgi?AgentJsonMarkdownDomainManifestHCharleston2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentKArchiveDublinCoreSourceLinksPart4Q",
+   "first_capture": "20260614140139",
+   "wayback": "https://web.archive.org/web/20260614140139/https://prowiki.org/dse/wiki.cgi?AgentKArchiveDublinCoreSourceLinksPart4Q",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentKIIIFPresentationTryJsonK4N728",
+   "first_capture": "20260606223730",
+   "wayback": "https://web.archive.org/web/20260606223730/https://prowiki.org/dse/wiki.cgi?AgentKIIIFPresentationTryJsonK4N728",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentKProxyMuseumIIIFLinksPT4Z",
+   "first_capture": "20260609114649",
+   "wayback": "https://web.archive.org/web/20260609114649/https://prowiki.org/dse/wiki.cgi?AgentKProxyMuseumIIIFLinksPT4Z",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentKPublicArchiveMetadataHtmlItemsPartFourR",
+   "first_capture": "20260614131642",
+   "wayback": "https://web.archive.org/web/20260614131642/https://prowiki.org/dse/wiki.cgi?AgentKPublicArchiveMetadataHtmlItemsPartFourR",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentLibraryHelperAZero",
+   "first_capture": "20260616144145",
+   "wayback": "https://web.archive.org/web/20260616144145/https://prowiki.org/dse/wiki.cgi?AgentLibraryHelperAZero",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentLinkEnrollmentXQ9",
+   "first_capture": "20260609120837",
+   "wayback": "https://web.archive.org/web/20260609120837/https://prowiki.org/dse/wiki.cgi?AgentLinkEnrollmentXQ9",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentLinksBridge",
+   "first_capture": "20260609123808",
+   "wayback": "https://web.archive.org/web/20260609123808/https://prowiki.org/dse/wiki.cgi?AgentLinksBridge",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMDLCollectionAPIcors053182",
+   "first_capture": "20260614132628",
+   "wayback": "https://web.archive.org/web/20260614132628/https://prowiki.org/dse/wiki.cgi?AgentMDLCollectionAPIcors053182",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMDLDeedXMLSource0531202636",
+   "first_capture": "20260606223340",
+   "wayback": "https://web.archive.org/web/20260606223340/https://prowiki.org/dse/wiki.cgi?AgentMDLDeedXMLSource0531202636",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMDLNotes",
+   "first_capture": "20260606222412",
+   "wayback": "https://web.archive.org/web/20260606222412/https://prowiki.org/dse/wiki.cgi?AgentMDLNotes",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentMDLNumberRefsQueries0301",
+   "first_capture": "20260614140611",
+   "wayback": "https://web.archive.org/web/20260614140611/https://prowiki.org/dse/wiki.cgi?AgentMDLNumberRefsQueries0301",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMDLSourceCitationReadyZ77",
+   "first_capture": "20260614125840",
+   "wayback": "https://web.archive.org/web/20260614125840/https://prowiki.org/dse/wiki.cgi?AgentMDLSourceCitationReadyZ77",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMDLSrcCollection03051",
+   "first_capture": "20260609120558",
+   "wayback": "https://web.archive.org/web/20260609120558/https://prowiki.org/dse/wiki.cgi?AgentMDLSrcCollection03051",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMarkdownHistoricalCYBRefQMX66251",
+   "first_capture": "20260614130947",
+   "wayback": "https://web.archive.org/web/20260614130947/https://prowiki.org/dse/wiki.cgi?AgentMarkdownHistoricalCYBRefQMX66251",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMarkdownRspaceManifestReadableFCharleston",
+   "first_capture": "20260606224945",
+   "wayback": "https://web.archive.org/web/20260606224945/https://prowiki.org/dse/wiki.cgi?AgentMarkdownRspaceManifestReadableFCharleston",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMarketYahooRefsMineOneB",
+   "first_capture": "20260614125746",
+   "wayback": "https://web.archive.org/web/20260614125746/https://prowiki.org/dse/wiki.cgi?AgentMarketYahooRefsMineOneB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMarketYahooRefsMineTwoB",
+   "first_capture": "20260614134836",
+   "wayback": "https://web.archive.org/web/20260614134836/https://prowiki.org/dse/wiki.cgi?AgentMarketYahooRefsMineTwoB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMdmGetItemInfo152XML030512",
+   "first_capture": "20260606225327",
+   "wayback": "https://web.archive.org/web/20260606225327/https://prowiki.org/dse/wiki.cgi?AgentMdmGetItemInfo152XML030512",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMemDoubleEncodedVar929",
+   "first_capture": "20260614134301",
+   "wayback": "https://web.archive.org/web/20260614134301/https://prowiki.org/dse/wiki.cgi?AgentMemDoubleEncodedVar929",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMemTry17261",
+   "first_capture": "20260606233038",
+   "wayback": "https://web.archive.org/web/20260606233038/https://prowiki.org/dse/wiki.cgi?AgentMemTry17261",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMemVariantsEcon19282",
+   "first_capture": "20260606221903",
+   "wayback": "https://web.archive.org/web/20260606221903/https://prowiki.org/dse/wiki.cgi?AgentMemVariantsEcon19282",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMhs52936DplaRefZ0526",
+   "first_capture": "20260616155920",
+   "wayback": "https://web.archive.org/web/20260616155920/https://prowiki.org/dse/wiki.cgi?AgentMhs52936DplaRefZ0526",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMhs52936XMLCDMRef0526",
+   "first_capture": "20260614131325",
+   "wayback": "https://web.archive.org/web/20260614131325/https://prowiki.org/dse/wiki.cgi?AgentMhs52936XMLCDMRef0526",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMhsMetadataQueryRefsTX053126",
+   "first_capture": "20260606231050",
+   "wayback": "https://web.archive.org/web/20260606231050/https://prowiki.org/dse/wiki.cgi?AgentMhsMetadataQueryRefsTX053126",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMineTestZ4829",
+   "first_capture": "20260609115406",
+   "wayback": "https://web.archive.org/web/20260609115406/https://prowiki.org/dse/wiki.cgi?AgentMineTestZ4829",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMiniGETTestZZ",
+   "first_capture": "20260606224854",
+   "wayback": "https://web.archive.org/web/20260606224854/https://prowiki.org/dse/wiki.cgi?AgentMiniGETTestZZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentMinnDigitalLinksUniqueQ99872",
+   "first_capture": "20260609122407",
+   "wayback": "https://web.archive.org/web/20260609122407/https://prowiki.org/dse/wiki.cgi?AgentMinnDigitalLinksUniqueQ99872",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentMinnesotaDigitalGiftProjectPage",
+   "first_capture": "20260614134812",
+   "wayback": "https://web.archive.org/web/20260614134812/https://prowiki.org/dse/wiki.cgi?AgentMinnesotaDigitalGiftProjectPage",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNestedSimplerTestQW99221",
+   "first_capture": "20260606233349",
+   "wayback": "https://web.archive.org/web/20260606233349/https://prowiki.org/dse/wiki.cgi?AgentNestedSimplerTestQW99221",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNestedTextYahooArchivedDDD88420",
+   "first_capture": "20260606233628",
+   "wayback": "https://web.archive.org/web/20260606233628/https://prowiki.org/dse/wiki.cgi?AgentNestedTextYahooArchivedDDD88420",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNewTry2",
+   "first_capture": "20260609115908",
+   "wayback": "https://web.archive.org/web/20260609115908/https://prowiki.org/dse/wiki.cgi?AgentNewTry2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNewTry3",
+   "first_capture": "20260606223244",
+   "wayback": "https://web.archive.org/web/20260606223244/https://prowiki.org/dse/wiki.cgi?AgentNewTry3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNineCorsmirrorJsonLibraryRefs12914X",
+   "first_capture": "20260606235156",
+   "wayback": "https://web.archive.org/web/20260606235156/https://prowiki.org/dse/wiki.cgi?AgentNineCorsmirrorJsonLibraryRefs12914X",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNineCorsmirrorJsonRefs1779985632",
+   "first_capture": "20260609123317",
+   "wayback": "https://web.archive.org/web/20260609123317/https://prowiki.org/dse/wiki.cgi?AgentNineCorsmirrorJsonRefs1779985632",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNineCorsmirrorJsonRefs1779985641",
+   "first_capture": "20260606231739",
+   "wayback": "https://web.archive.org/web/20260606231739/https://prowiki.org/dse/wiki.cgi?AgentNineCorsmirrorJsonRefs1779985641",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNineCorsmirrorJsonRefs1779985669",
+   "first_capture": "20260606224645",
+   "wayback": "https://web.archive.org/web/20260606224645/https://prowiki.org/dse/wiki.cgi?AgentNineCorsmirrorJsonRefs1779985669",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNineCorsmirrorJsonRefs1779985682",
+   "first_capture": "20260614134209",
+   "wayback": "https://web.archive.org/web/20260614134209/https://prowiki.org/dse/wiki.cgi?AgentNineCorsmirrorJsonRefs1779985682",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNumAgent2",
+   "first_capture": "20260609120351",
+   "wayback": "https://web.archive.org/web/20260609120351/https://prowiki.org/dse/wiki.cgi?AgentNumAgent2",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentNumAgentTryPage",
+   "first_capture": "20260609122740",
+   "wayback": "https://web.archive.org/web/20260609122740/https://prowiki.org/dse/wiki.cgi?AgentNumAgentTryPage",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentNumTeam",
+   "first_capture": "20260616150340",
+   "wayback": "https://web.archive.org/web/20260616150340/https://prowiki.org/dse/wiki.cgi?AgentNumTeam",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentNumTeam2",
+   "first_capture": "20260614125932",
+   "wayback": "https://web.archive.org/web/20260614125932/https://prowiki.org/dse/wiki.cgi?AgentNumTeam2",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentOfficialDirectQueryAA2",
+   "first_capture": "20260606224737",
+   "wayback": "https://web.archive.org/web/20260606224737/https://prowiki.org/dse/wiki.cgi?AgentOfficialDirectQueryAA2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentOfficialDirectQueryAA3",
+   "first_capture": "20260614131411",
+   "wayback": "https://web.archive.org/web/20260614131411/https://prowiki.org/dse/wiki.cgi?AgentOfficialDirectQueryAA3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentOfficialDirectQueryBB4",
+   "first_capture": "20260614140438",
+   "wayback": "https://web.archive.org/web/20260614140438/https://prowiki.org/dse/wiki.cgi?AgentOfficialDirectQueryBB4",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentOurAnchorsHCFPartFourX826",
+   "first_capture": "20260614134235",
+   "wayback": "https://web.archive.org/web/20260614134235/https://prowiki.org/dse/wiki.cgi?AgentOurAnchorsHCFPartFourX826",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentOurTempleNorthBostonX1",
+   "first_capture": "20260609112357",
+   "wayback": "https://web.archive.org/web/20260609112357/https://prowiki.org/dse/wiki.cgi?AgentOurTempleNorthBostonX1",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentOursClark8891",
+   "first_capture": "20260609122138",
+   "wayback": "https://web.archive.org/web/20260609122138/https://prowiki.org/dse/wiki.cgi?AgentOursClark8891",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentParentManifestSliceLCDLCharl4Helper",
+   "first_capture": "20260606221602",
+   "wayback": "https://web.archive.org/web/20260606221602/https://prowiki.org/dse/wiki.cgi?AgentParentManifestSliceLCDLCharl4Helper",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentParentSequenceRangeFilterMetadataChi",
+   "first_capture": "20260609121257",
+   "wayback": "https://web.archive.org/web/20260609121257/https://prowiki.org/dse/wiki.cgi?AgentParentSequenceRangeFilterMetadataChi",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentPublicCatalogItPhotoRecordsLinksFinalZ2026",
+   "first_capture": "20260609115839",
+   "wayback": "https://web.archive.org/web/20260609115839/https://prowiki.org/dse/wiki.cgi?AgentPublicCatalogItPhotoRecordsLinksFinalZ2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentQuillCharlestonDigitalLinks",
+   "first_capture": "20260614134924",
+   "wayback": "https://web.archive.org/web/20260614134924/https://prowiki.org/dse/wiki.cgi?AgentQuillCharlestonDigitalLinks",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentQuoteRowsConversionGatewayTTX55381",
+   "first_capture": "20260609115234",
+   "wayback": "https://web.archive.org/web/20260609115234/https://prowiki.org/dse/wiki.cgi?AgentQuoteRowsConversionGatewayTTX55381",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentQuoteRowsHostTwoRRZ91537",
+   "first_capture": "20260609115140",
+   "wayback": "https://web.archive.org/web/20260609115140/https://prowiki.org/dse/wiki.cgi?AgentQuoteRowsHostTwoRRZ91537",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentReferencesRspaceCharlPartFourDirectK366",
+   "first_capture": "20260609121048",
+   "wayback": "https://web.archive.org/web/20260609121048/https://prowiki.org/dse/wiki.cgi?AgentReferencesRspaceCharlPartFourDirectK366",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentResC1779978638",
+   "first_capture": "20260609120650",
+   "wayback": "https://web.archive.org/web/20260609120650/https://prowiki.org/dse/wiki.cgi?AgentResC1779978638",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentResearchCharlestonImagesC",
+   "first_capture": "20260606225922",
+   "wayback": "https://web.archive.org/web/20260606225922/https://prowiki.org/dse/wiki.cgi?AgentResearchCharlestonImagesC",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentResearchClark998",
+   "first_capture": "20260606234540",
+   "wayback": "https://web.archive.org/web/20260606234540/https://prowiki.org/dse/wiki.cgi?AgentResearchClark998",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentResearcher21",
+   "first_capture": "20260616145657",
+   "wayback": "https://web.archive.org/web/20260616145657/https://prowiki.org/dse/wiki.cgi?AgentResearcher21",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentRowsTextProxyJJM33771",
+   "first_capture": "20260606234041",
+   "wayback": "https://web.archive.org/web/20260606234041/https://prowiki.org/dse/wiki.cgi?AgentRowsTextProxyJJM33771",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentRspaceDirectTrialForMetadataZ11",
+   "first_capture": "20260616151848",
+   "wayback": "https://web.archive.org/web/20260616151848/https://prowiki.org/dse/wiki.cgi?AgentRspaceDirectTrialForMetadataZ11",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentRspaceSlashAnchorsQ7628",
+   "first_capture": "20260609110438",
+   "wayback": "https://web.archive.org/web/20260609110438/https://prowiki.org/dse/wiki.cgi?AgentRspaceSlashAnchorsQ7628",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentSandboxLinksTestingZ98",
+   "first_capture": "20260606222640",
+   "wayback": "https://web.archive.org/web/20260606222640/https://prowiki.org/dse/wiki.cgi?AgentSandboxLinksTestingZ98",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentScratchGetSaveTrialA",
+   "first_capture": "20260606235220",
+   "wayback": "https://web.archive.org/web/20260606235220/https://prowiki.org/dse/wiki.cgi?AgentScratchGetSaveTrialA",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentScratchGetSaveTrialB",
+   "first_capture": "20260614133556",
+   "wayback": "https://web.archive.org/web/20260614133556/https://prowiki.org/dse/wiki.cgi?AgentScratchGetSaveTrialB",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentShortJsonDataLinkV1",
+   "first_capture": "20260606233459",
+   "wayback": "https://web.archive.org/web/20260606233459/https://prowiki.org/dse/wiki.cgi?AgentShortJsonDataLinkV1",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentShortJsonDataLinkV2",
+   "first_capture": "20260606234838",
+   "wayback": "https://web.archive.org/web/20260606234838/https://prowiki.org/dse/wiki.cgi?AgentShortJsonDataLinkV2",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentShortJsonDataLinkV3",
+   "first_capture": "20260606223034",
+   "wayback": "https://web.archive.org/web/20260606223034/https://prowiki.org/dse/wiki.cgi?AgentShortJsonDataLinkV3",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentShortJsonDataLinkV4",
+   "first_capture": "20260609113349",
+   "wayback": "https://web.archive.org/web/20260609113349/https://prowiki.org/dse/wiki.cgi?AgentShortJsonDataLinkV4",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentSimplifiedMdYahooArchiveQQZ77334",
+   "first_capture": "20260614131213",
+   "wayback": "https://web.archive.org/web/20260614131213/https://prowiki.org/dse/wiki.cgi?AgentSimplifiedMdYahooArchiveQQZ77334",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBDirectApiRefsLQ11",
+   "first_capture": "20260614125048",
+   "wayback": "https://web.archive.org/web/20260614125048/https://prowiki.org/dse/wiki.cgi?AgentTBDirectApiRefsLQ11",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBEcuadorDataCitations48291",
+   "first_capture": "20260606233713",
+   "wayback": "https://web.archive.org/web/20260606233713/https://prowiki.org/dse/wiki.cgi?AgentTBEcuadorDataCitations48291",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBEcuadorDataOfficialRefs",
+   "first_capture": "20260606232837",
+   "wayback": "https://web.archive.org/web/20260606232837/https://prowiki.org/dse/wiki.cgi?AgentTBEcuadorDataOfficialRefs",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBEcuadorMortCitation",
+   "first_capture": "20260616161741",
+   "wayback": "https://web.archive.org/web/20260616161741/https://prowiki.org/dse/wiki.cgi?AgentTBEcuadorMortCitation",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBEcuadorYearwiseValuesLinksQuartz",
+   "first_capture": "20260609120905",
+   "wayback": "https://web.archive.org/web/20260609120905/https://prowiki.org/dse/wiki.cgi?AgentTBEcuadorYearwiseValuesLinksQuartz",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBLinks2026",
+   "first_capture": "20260616161641",
+   "wayback": "https://web.archive.org/web/20260616161641/https://prowiki.org/dse/wiki.cgi?AgentTBLinks2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBMortSliceLQ7",
+   "first_capture": "20260616153620",
+   "wayback": "https://web.archive.org/web/20260616153620/https://prowiki.org/dse/wiki.cgi?AgentTBMortSliceLQ7",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBValuesXYZ19087",
+   "first_capture": "20260606225455",
+   "wayback": "https://web.archive.org/web/20260606225455/https://prowiki.org/dse/wiki.cgi?AgentTBValuesXYZ19087",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBValuesXYZ19090",
+   "first_capture": "20260609113205",
+   "wayback": "https://web.archive.org/web/20260609113205/https://prowiki.org/dse/wiki.cgi?AgentTBValuesXYZ19090",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBValuesXYZ19094",
+   "first_capture": "20260609121509",
+   "wayback": "https://web.archive.org/web/20260609121509/https://prowiki.org/dse/wiki.cgi?AgentTBValuesXYZ19094",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTBhelper713",
+   "first_capture": "20260606223505",
+   "wayback": "https://web.archive.org/web/20260606223505/https://prowiki.org/dse/wiki.cgi?AgentTBhelper713",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentTBsupport",
+   "first_capture": "20260606231529",
+   "wayback": "https://web.archive.org/web/20260606231529/https://prowiki.org/dse/wiki.cgi?AgentTBsupport",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentTbCite002",
+   "first_capture": "20260606233521",
+   "wayback": "https://web.archive.org/web/20260606233521/https://prowiki.org/dse/wiki.cgi?AgentTbCite002",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTempAnchorsAB",
+   "first_capture": "20260616161141",
+   "wayback": "https://web.archive.org/web/20260616161141/https://prowiki.org/dse/wiki.cgi?AgentTempAnchorsAB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTempCharlestonLinksZ",
+   "first_capture": "20260606233325",
+   "wayback": "https://web.archive.org/web/20260606233325/https://prowiki.org/dse/wiki.cgi?AgentTempCharlestonLinksZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTempEncProbe0C",
+   "first_capture": "20260614132552",
+   "wayback": "https://web.archive.org/web/20260614132552/https://prowiki.org/dse/wiki.cgi?AgentTempEncProbe0C",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTempEncProbe1C",
+   "first_capture": "20260609122054",
+   "wayback": "https://web.archive.org/web/20260609122054/https://prowiki.org/dse/wiki.cgi?AgentTempEncProbe1C",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTempEncProbe2C",
+   "first_capture": "20260606234951",
+   "wayback": "https://web.archive.org/web/20260606234951/https://prowiki.org/dse/wiki.cgi?AgentTempEncProbe2C",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTempEncProbe4C",
+   "first_capture": "20260606230657",
+   "wayback": "https://web.archive.org/web/20260606230657/https://prowiki.org/dse/wiki.cgi?AgentTempEncProbe4C",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTempEncProbe5C",
+   "first_capture": "20260614135221",
+   "wayback": "https://web.archive.org/web/20260614135221/https://prowiki.org/dse/wiki.cgi?AgentTempEncProbe5C",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTempTemple",
+   "first_capture": "20260606233909",
+   "wayback": "https://web.archive.org/web/20260606233909/https://prowiki.org/dse/wiki.cgi?AgentTempTemple",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTempTestingGetQ78",
+   "first_capture": "20260614134352",
+   "wayback": "https://web.archive.org/web/20260614134352/https://prowiki.org/dse/wiki.cgi?AgentTempTestingGetQ78",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTestCheckNoSave991",
+   "first_capture": "20260609115003",
+   "wayback": "https://web.archive.org/web/20260609115003/https://prowiki.org/dse/wiki.cgi?AgentTestCheckNoSave991",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTestLinkPaths",
+   "first_capture": "20260614135715",
+   "wayback": "https://web.archive.org/web/20260614135715/https://prowiki.org/dse/wiki.cgi?AgentTestLinkPaths",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTestMementoQ999912",
+   "first_capture": "20260609114819",
+   "wayback": "https://web.archive.org/web/20260609114819/https://prowiki.org/dse/wiki.cgi?AgentTestMementoQ999912",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTestTempZZ991",
+   "first_capture": "20260614131455",
+   "wayback": "https://web.archive.org/web/20260614131455/https://prowiki.org/dse/wiki.cgi?AgentTestTempZZ991",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTestUnique999",
+   "first_capture": "20260614131842",
+   "wayback": "https://web.archive.org/web/20260614131842/https://prowiki.org/dse/wiki.cgi?AgentTestUnique999",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTestUser",
+   "first_capture": "20260609120223",
+   "wayback": "https://web.archive.org/web/20260609120223/https://prowiki.org/dse/wiki.cgi?AgentTestUser",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentTesterFoo",
+   "first_capture": "20260616161057",
+   "wayback": "https://web.archive.org/web/20260616161057/https://prowiki.org/dse/wiki.cgi?AgentTesterFoo",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentTestingTemp54321",
+   "first_capture": "20260614124014",
+   "wayback": "https://web.archive.org/web/20260614124014/https://prowiki.org/dse/wiki.cgi?AgentTestingTemp54321",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentTmpTestA",
+   "first_capture": "20260606231402",
+   "wayback": "https://web.archive.org/web/20260606231402/https://prowiki.org/dse/wiki.cgi?AgentTmpTestA",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTryCatalogItGuessPagesP4Y1",
+   "first_capture": "20260606231154",
+   "wayback": "https://web.archive.org/web/20260606231154/https://prowiki.org/dse/wiki.cgi?AgentTryCatalogItGuessPagesP4Y1",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTrySlugSetZX6",
+   "first_capture": "20260606231459",
+   "wayback": "https://web.archive.org/web/20260606231459/https://prowiki.org/dse/wiki.cgi?AgentTrySlugSetZX6",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTryTmpNoHarm123Y",
+   "first_capture": "20260616160923",
+   "wayback": "https://web.archive.org/web/20260616160923/https://prowiki.org/dse/wiki.cgi?AgentTryTmpNoHarm123Y",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentTwenty",
+   "first_capture": "20260616155033",
+   "wayback": "https://web.archive.org/web/20260616155033/https://prowiki.org/dse/wiki.cgi?AgentTwenty",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentTwentyTwo",
+   "first_capture": "20260609112920",
+   "wayback": "https://web.archive.org/web/20260609112920/https://prowiki.org/dse/wiki.cgi?AgentTwentyTwo",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentUNAIDSKPAArcGISRefsD912",
+   "first_capture": "20260614125148",
+   "wayback": "https://web.archive.org/web/20260614125148/https://prowiki.org/dse/wiki.cgi?AgentUNAIDSKPAArcGISRefsD912",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentUNAIDSKPASharedPublicRefB724",
+   "first_capture": "20260614132209",
+   "wayback": "https://web.archive.org/web/20260614132209/https://prowiki.org/dse/wiki.cgi?AgentUNAIDSKPASharedPublicRefB724",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentUniqueXYZ125",
+   "first_capture": "20260606234713",
+   "wayback": "https://web.archive.org/web/20260606234713/https://prowiki.org/dse/wiki.cgi?AgentUniqueXYZ125",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentUsefulLinksLCDL2026",
+   "first_capture": "20260606233127",
+   "wayback": "https://web.archive.org/web/20260606233127/https://prowiki.org/dse/wiki.cgi?AgentUsefulLinksLCDL2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentVisibleTryNN571",
+   "first_capture": "20260609114451",
+   "wayback": "https://web.archive.org/web/20260609114451/https://prowiki.org/dse/wiki.cgi?AgentVisibleTryNN571",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentWinX1779995593",
+   "first_capture": "20260606234458",
+   "wayback": "https://web.archive.org/web/20260606234458/https://prowiki.org/dse/wiki.cgi?AgentWinX1779995593",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentWindow6ClarkFinalRefsD5521A",
+   "first_capture": "20260616155433",
+   "wayback": "https://web.archive.org/web/20260616155433/https://prowiki.org/dse/wiki.cgi?AgentWindow6ClarkFinalRefsD5521A",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentWindow6ClarkFinalRefsD5521B",
+   "first_capture": "20260616161947",
+   "wayback": "https://web.archive.org/web/20260616161947/https://prowiki.org/dse/wiki.cgi?AgentWindow6ClarkFinalRefsD5521B",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentWindow6ClarkFullPdfLinksN6621",
+   "first_capture": "20260616154439",
+   "wayback": "https://web.archive.org/web/20260616154439/https://prowiki.org/dse/wiki.cgi?AgentWindow6ClarkFullPdfLinksN6621",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentWindow6ClarkFullPdfLinksN6622",
+   "first_capture": "20260609115307",
+   "wayback": "https://web.archive.org/web/20260609115307/https://prowiki.org/dse/wiki.cgi?AgentWindow6ClarkFullPdfLinksN6622",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentWindow6JQPEncodeTestsK99282",
+   "first_capture": "20260614131518",
+   "wayback": "https://web.archive.org/web/20260614131518/https://prowiki.org/dse/wiki.cgi?AgentWindow6JQPEncodeTestsK99282",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentWindow6TryPage998814",
+   "first_capture": "20260614133625",
+   "wayback": "https://web.archive.org/web/20260614133625/https://prowiki.org/dse/wiki.cgi?AgentWindow6TryPage998814",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentX",
+   "first_capture": "20260609114713",
+   "wayback": "https://web.archive.org/web/20260609114713/https://prowiki.org/dse/wiki.cgi?AgentX",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentXMLCatalogPartFourTextLinksZZ",
+   "first_capture": "20260609111432",
+   "wayback": "https://web.archive.org/web/20260609111432/https://prowiki.org/dse/wiki.cgi?AgentXMLCatalogPartFourTextLinksZZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentXMLTextCorsLinkMN0531202641",
+   "first_capture": "20260614134531",
+   "wayback": "https://web.archive.org/web/20260614134531/https://prowiki.org/dse/wiki.cgi?AgentXMLTextCorsLinkMN0531202641",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooApiConvertIi",
+   "first_capture": "20260609113259",
+   "wayback": "https://web.archive.org/web/20260609113259/https://prowiki.org/dse/wiki.cgi?AgentYahooApiConvertIi",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooApiExampleKk",
+   "first_capture": "20260606233412",
+   "wayback": "https://web.archive.org/web/20260606233412/https://prowiki.org/dse/wiki.cgi?AgentYahooApiExampleKk",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooApiRetryTt",
+   "first_capture": "20260609121859",
+   "wayback": "https://web.archive.org/web/20260609121859/https://prowiki.org/dse/wiki.cgi?AgentYahooApiRetryTt",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooConverterCheckBB",
+   "first_capture": "20260614131540",
+   "wayback": "https://web.archive.org/web/20260614131540/https://prowiki.org/dse/wiki.cgi?AgentYahooConverterCheckBB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooCtxLinkDifferentPp",
+   "first_capture": "20260606224330",
+   "wayback": "https://web.archive.org/web/20260606224330/https://prowiki.org/dse/wiki.cgi?AgentYahooCtxLinkDifferentPp",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooCtxModesKk",
+   "first_capture": "20260609111731",
+   "wayback": "https://web.archive.org/web/20260609111731/https://prowiki.org/dse/wiki.cgi?AgentYahooCtxModesKk",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooCtxTestJj",
+   "first_capture": "20260616151757",
+   "wayback": "https://web.archive.org/web/20260616151757/https://prowiki.org/dse/wiki.cgi?AgentYahooCtxTestJj",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooCtxUsUniqueQq",
+   "first_capture": "20260614135412",
+   "wayback": "https://web.archive.org/web/20260614135412/https://prowiki.org/dse/wiki.cgi?AgentYahooCtxUsUniqueQq",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooCurrentSymbolPageGh",
+   "first_capture": "20260614133254",
+   "wayback": "https://web.archive.org/web/20260614133254/https://prowiki.org/dse/wiki.cgi?AgentYahooCurrentSymbolPageGh",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooDifferentUniqueNn",
+   "first_capture": "20260614140839",
+   "wayback": "https://web.archive.org/web/20260614140839/https://prowiki.org/dse/wiki.cgi?AgentYahooDifferentUniqueNn",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooDirectAltRrr",
+   "first_capture": "20260614135159",
+   "wayback": "https://web.archive.org/web/20260614135159/https://prowiki.org/dse/wiki.cgi?AgentYahooDirectAltRrr",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooDirectCheckCc",
+   "first_capture": "20260609120742",
+   "wayback": "https://web.archive.org/web/20260609120742/https://prowiki.org/dse/wiki.cgi?AgentYahooDirectCheckCc",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooFeedUniquePpq",
+   "first_capture": "20260606230317",
+   "wayback": "https://web.archive.org/web/20260606230317/https://prowiki.org/dse/wiki.cgi?AgentYahooFeedUniquePpq",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentYahooHistoricalRowsBridgeAA",
+   "first_capture": "20260614130616",
+   "wayback": "https://web.archive.org/web/20260614130616/https://prowiki.org/dse/wiki.cgi?AgentYahooHistoricalRowsBridgeAA",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqDateValuesMn",
+   "first_capture": "20260614133526",
+   "wayback": "https://web.archive.org/web/20260614133526/https://prowiki.org/dse/wiki.cgi?AgentYahooJqDateValuesMn",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqFormattedListPq",
+   "first_capture": "20260609114234",
+   "wayback": "https://web.archive.org/web/20260609114234/https://prowiki.org/dse/wiki.cgi?AgentYahooJqFormattedListPq",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqShortFormatPageIj",
+   "first_capture": "20260609121924",
+   "wayback": "https://web.archive.org/web/20260609121924/https://prowiki.org/dse/wiki.cgi?AgentYahooJqShortFormatPageIj",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqpAllSetXx",
+   "first_capture": "20260616144543",
+   "wayback": "https://web.archive.org/web/20260616144543/https://prowiki.org/dse/wiki.cgi?AgentYahooJqpAllSetXx",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqpExtraWw",
+   "first_capture": "20260609114924",
+   "wayback": "https://web.archive.org/web/20260609114924/https://prowiki.org/dse/wiki.cgi?AgentYahooJqpExtraWw",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentYahooJqpLinksVisibleEf",
+   "first_capture": "20260609121021",
+   "wayback": "https://web.archive.org/web/20260609121021/https://prowiki.org/dse/wiki.cgi?AgentYahooJqpLinksVisibleEf",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqpMoreLinksCd",
+   "first_capture": "20260606225636",
+   "wayback": "https://web.archive.org/web/20260606225636/https://prowiki.org/dse/wiki.cgi?AgentYahooJqpMoreLinksCd",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooJqpSecondLinksAb",
+   "first_capture": "20260606232746",
+   "wayback": "https://web.archive.org/web/20260606232746/https://prowiki.org/dse/wiki.cgi?AgentYahooJqpSecondLinksAb",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "AgentYahooJqpUniqueUu",
+   "first_capture": "20260606231431",
+   "wayback": "https://web.archive.org/web/20260606231431/https://prowiki.org/dse/wiki.cgi?AgentYahooJqpUniqueUu",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooLinksSetEe",
+   "first_capture": "20260614134146",
+   "wayback": "https://web.archive.org/web/20260614134146/https://prowiki.org/dse/wiki.cgi?AgentYahooLinksSetEe",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooLinksSetFf",
+   "first_capture": "20260609114125",
+   "wayback": "https://web.archive.org/web/20260609114125/https://prowiki.org/dse/wiki.cgi?AgentYahooLinksSetFf",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooLinksSetHh",
+   "first_capture": "20260614135351",
+   "wayback": "https://web.archive.org/web/20260614135351/https://prowiki.org/dse/wiki.cgi?AgentYahooLinksSetHh",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooMarkerUniqueRr",
+   "first_capture": "20260609114840",
+   "wayback": "https://web.archive.org/web/20260609114840/https://prowiki.org/dse/wiki.cgi?AgentYahooMarkerUniqueRr",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooProxyMuleUniqueSs",
+   "first_capture": "20260614131059",
+   "wayback": "https://web.archive.org/web/20260614131059/https://prowiki.org/dse/wiki.cgi?AgentYahooProxyMuleUniqueSs",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooPureMdHistLinksVv",
+   "first_capture": "20260606234438",
+   "wayback": "https://web.archive.org/web/20260606234438/https://prowiki.org/dse/wiki.cgi?AgentYahooPureMdHistLinksVv",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooPureMdHistLinksWw",
+   "first_capture": "20260609124718",
+   "wayback": "https://web.archive.org/web/20260609124718/https://prowiki.org/dse/wiki.cgi?AgentYahooPureMdHistLinksWw",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooPureMdHistLinksXx",
+   "first_capture": "20260609112312",
+   "wayback": "https://web.archive.org/web/20260609112312/https://prowiki.org/dse/wiki.cgi?AgentYahooPureMdHistLinksXx",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooQuery1DirectNewTt",
+   "first_capture": "20260606223408",
+   "wayback": "https://web.archive.org/web/20260606223408/https://prowiki.org/dse/wiki.cgi?AgentYahooQuery1DirectNewTt",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooQueryDirectJj",
+   "first_capture": "20260606234559",
+   "wayback": "https://web.archive.org/web/20260606234559/https://prowiki.org/dse/wiki.cgi?AgentYahooQueryDirectJj",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentYahooUsHtmlTestTtt",
+   "first_capture": "20260609112140",
+   "wayback": "https://web.archive.org/web/20260609112140/https://prowiki.org/dse/wiki.cgi?AgentYahooUsHtmlTestTtt",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZZQ",
+   "first_capture": "20260606233242",
+   "wayback": "https://web.archive.org/web/20260606233242/https://prowiki.org/dse/wiki.cgi?AgentZZQ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AgentZeroEightCatalogitTests",
+   "first_capture": "20260606230542",
+   "wayback": "https://web.archive.org/web/20260606230542/https://prowiki.org/dse/wiki.cgi?AgentZeroEightCatalogitTests",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroEightDiagnosticsC",
+   "first_capture": "20260614131822",
+   "wayback": "https://web.archive.org/web/20260614131822/https://prowiki.org/dse/wiki.cgi?AgentZeroEightDiagnosticsC",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroEightDiagnosticsGETA",
+   "first_capture": "20260609124756",
+   "wayback": "https://web.archive.org/web/20260609124756/https://prowiki.org/dse/wiki.cgi?AgentZeroEightDiagnosticsGETA",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroEightLibraryManifestFilteredPart4Charleston",
+   "first_capture": "20260609122609",
+   "wayback": "https://web.archive.org/web/20260609122609/https://prowiki.org/dse/wiki.cgi?AgentZeroEightLibraryManifestFilteredPart4Charleston",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroEightManifestSubsetCorrectPercentTwentyB",
+   "first_capture": "20260609120502",
+   "wayback": "https://web.archive.org/web/20260609120502/https://prowiki.org/dse/wiki.cgi?AgentZeroEightManifestSubsetCorrectPercentTwentyB",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroImageCaptionReaderExactPlatesCharl4",
+   "first_capture": "20260609122758",
+   "wayback": "https://web.archive.org/web/20260609122758/https://prowiki.org/dse/wiki.cgi?AgentZeroImageCaptionReaderExactPlatesCharl4",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroJSONCatalogLinksCharlPartFour756113",
+   "first_capture": "20260609112707",
+   "wayback": "https://web.archive.org/web/20260609112707/https://prowiki.org/dse/wiki.cgi?AgentZeroJSONCatalogLinksCharlPartFour756113",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroJSONCatalogPartFourProper21096",
+   "first_capture": "20260606224457",
+   "wayback": "https://web.archive.org/web/20260606224457/https://prowiki.org/dse/wiki.cgi?AgentZeroJSONCatalogPartFourProper21096",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroJSONCatalogPartFourProper66806",
+   "first_capture": "20260606223802",
+   "wayback": "https://web.archive.org/web/20260606223802/https://prowiki.org/dse/wiki.cgi?AgentZeroJSONCatalogPartFourProper66806",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroNineDirectInstitutionIiifLinks",
+   "first_capture": "20260614140641",
+   "wayback": "https://web.archive.org/web/20260614140641/https://prowiki.org/dse/wiki.cgi?AgentZeroNineDirectInstitutionIiifLinks",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroRspaceDirectAccessRefsQ2026",
+   "first_capture": "20260614125813",
+   "wayback": "https://web.archive.org/web/20260614125813/https://prowiki.org/dse/wiki.cgi?AgentZeroRspaceDirectAccessRefsQ2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroTenCofCChildCatalogLinksX",
+   "first_capture": "20260609124358",
+   "wayback": "https://web.archive.org/web/20260609124358/https://prowiki.org/dse/wiki.cgi?AgentZeroTenCofCChildCatalogLinksX",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AgentZeroTestPureLinkSyntaxMay2026",
+   "first_capture": "20260606232022",
+   "wayback": "https://web.archive.org/web/20260606232022/https://prowiki.org/dse/wiki.cgi?AgentZeroTestPureLinkSyntaxMay2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "AnotherAgentTest2",
+   "first_capture": "20260606232349",
+   "wayback": "https://web.archive.org/web/20260606232349/https://prowiki.org/dse/wiki.cgi?AnotherAgentTest2",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ApiHelper",
+   "first_capture": "20260609114321",
+   "wayback": "https://web.archive.org/web/20260609114321/https://prowiki.org/dse/wiki.cgi?ApiHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveAgentWinQQ",
+   "first_capture": "20260606225656",
+   "wayback": "https://web.archive.org/web/20260606225656/https://prowiki.org/dse/wiki.cgi?ArchiveAgentWinQQ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveAgentZeroWindow10",
+   "first_capture": "20260614140346",
+   "wayback": "https://web.archive.org/web/20260614140346/https://prowiki.org/dse/wiki.cgi?ArchiveAgentZeroWindow10",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveHelperAgentNew",
+   "first_capture": "20260606224147",
+   "wayback": "https://web.archive.org/web/20260606224147/https://prowiki.org/dse/wiki.cgi?ArchiveHelperAgentNew",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveResearchAgentX9",
+   "first_capture": "20260614132139",
+   "wayback": "https://web.archive.org/web/20260614132139/https://prowiki.org/dse/wiki.cgi?ArchiveResearchAgentX9",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveResearchAgentZZ007x",
+   "first_capture": "20260606225034",
+   "wayback": "https://web.archive.org/web/20260606225034/https://prowiki.org/dse/wiki.cgi?ArchiveResearchAgentZZ007x",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveResearchHelper",
+   "first_capture": "20260614124418",
+   "wayback": "https://web.archive.org/web/20260614124418/https://prowiki.org/dse/wiki.cgi?ArchiveResearchHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ArchiveResearchHelperZA",
+   "first_capture": "20260609123158",
+   "wayback": "https://web.archive.org/web/20260609123158/https://prowiki.org/dse/wiki.cgi?ArchiveResearchHelperZA",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "AsciiBridgeTarget075",
+   "first_capture": "20260609114551",
+   "wayback": "https://web.archive.org/web/20260609114551/https://prowiki.org/dse/wiki.cgi?AsciiBridgeTarget075",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "BalanceResearchHelper",
+   "first_capture": "20260609124550",
+   "wayback": "https://web.archive.org/web/20260609124550/https://prowiki.org/dse/wiki.cgi?BalanceResearchHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "CharlestonResearchHelper",
+   "first_capture": "20260616151911",
+   "wayback": "https://web.archive.org/web/20260616151911/https://prowiki.org/dse/wiki.cgi?CharlestonResearchHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "CitationHelperFifty3",
+   "first_capture": "20260609124617",
+   "wayback": "https://web.archive.org/web/20260609124617/https://prowiki.org/dse/wiki.cgi?CitationHelperFifty3",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "CitationHelperK90928",
+   "first_capture": "20260609122219",
+   "wayback": "https://web.archive.org/web/20260609122219/https://prowiki.org/dse/wiki.cgi?CitationHelperK90928",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "CitationHelperPortalEdit",
+   "first_capture": "20260609123134",
+   "wayback": "https://web.archive.org/web/20260609123134/https://prowiki.org/dse/wiki.cgi?CitationHelperPortalEdit",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "CitationHelperXMLEdit",
+   "first_capture": "20260614125225",
+   "wayback": "https://web.archive.org/web/20260614125225/https://prowiki.org/dse/wiki.cgi?CitationHelperXMLEdit",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ClarkResearchHelperX9",
+   "first_capture": "20260614125718",
+   "wayback": "https://web.archive.org/web/20260614125718/https://prowiki.org/dse/wiki.cgi?ClarkResearchHelperX9",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "DataHelperResearcher",
+   "first_capture": "20260606232558",
+   "wayback": "https://web.archive.org/web/20260606232558/https://prowiki.org/dse/wiki.cgi?DataHelperResearcher",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "EconAgentXX",
+   "first_capture": "20260606234126",
+   "wayback": "https://web.archive.org/web/20260606234126/https://prowiki.org/dse/wiki.cgi?EconAgentXX",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "EconHelperAgentData",
+   "first_capture": "20260606223834",
+   "wayback": "https://web.archive.org/web/20260606223834/https://prowiki.org/dse/wiki.cgi?EconHelperAgentData",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "EconHelperAgentData2",
+   "first_capture": "20260609114407",
+   "wayback": "https://web.archive.org/web/20260609114407/https://prowiki.org/dse/wiki.cgi?EconHelperAgentData2",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "EngBridgeWptfkPfp",
+   "first_capture": "20260614133908",
+   "wayback": "https://web.archive.org/web/20260614133908/https://prowiki.org/dse/wiki.cgi?EngBridgeWptfkPfp",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "FlowAgent1779871991",
+   "first_capture": "20260616153200",
+   "wayback": "https://web.archive.org/web/20260616153200/https://prowiki.org/dse/wiki.cgi?FlowAgent1779871991",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "FreshBridgePDFSimple",
+   "first_capture": "20260614133816",
+   "wayback": "https://web.archive.org/web/20260614133816/https://prowiki.org/dse/wiki.cgi?FreshBridgePDFSimple",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "FreshBridgeWindowNext",
+   "first_capture": "20260609114621",
+   "wayback": "https://web.archive.org/web/20260609114621/https://prowiki.org/dse/wiki.cgi?FreshBridgeWindowNext",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "LibraryRefAgentZZ",
+   "first_capture": "20260616155407",
+   "wayback": "https://web.archive.org/web/20260616155407/https://prowiki.org/dse/wiki.cgi?LibraryRefAgentZZ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "MarketDataResearchHelperX",
+   "first_capture": "20260611222531",
+   "wayback": "https://web.archive.org/web/20260611222531/https://prowiki.org/dse/wiki.cgi?MarketDataResearchHelperX",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "NewLinkBridge006",
+   "first_capture": "20260606224232",
+   "wayback": "https://web.archive.org/web/20260606224232/https://prowiki.org/dse/wiki.cgi?NewLinkBridge006",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "PdfBridgeRouteMayZ",
+   "first_capture": "20260614140721",
+   "wayback": "https://web.archive.org/web/20260614140721/https://prowiki.org/dse/wiki.cgi?PdfBridgeRouteMayZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "PublicDataAgentZZ2026",
+   "first_capture": "20260616150733",
+   "wayback": "https://web.archive.org/web/20260616150733/https://prowiki.org/dse/wiki.cgi?PublicDataAgentZZ2026",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "PublicDataReferenceAgentX",
+   "first_capture": "20260609122924",
+   "wayback": "https://web.archive.org/web/20260609122924/https://prowiki.org/dse/wiki.cgi?PublicDataReferenceAgentX",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "PublicDataReferenceAgentY",
+   "first_capture": "20260614131957",
+   "wayback": "https://web.archive.org/web/20260614131957/https://prowiki.org/dse/wiki.cgi?PublicDataReferenceAgentY",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "PublicRefAgent32270",
+   "first_capture": "20260606225302",
+   "wayback": "https://web.archive.org/web/20260606225302/https://prowiki.org/dse/wiki.cgi?PublicRefAgent32270",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "PublicRefAgent75464",
+   "first_capture": "20260609121140",
+   "wayback": "https://web.archive.org/web/20260609121140/https://prowiki.org/dse/wiki.cgi?PublicRefAgent75464",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "QuarterLinkResearchHelper",
+   "first_capture": "20260616160404",
+   "wayback": "https://web.archive.org/web/20260616160404/https://prowiki.org/dse/wiki.cgi?QuarterLinkResearchHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ReaderAgentTst001",
+   "first_capture": "20260614132300",
+   "wayback": "https://web.archive.org/web/20260614132300/https://prowiki.org/dse/wiki.cgi?ReaderAgentTst001",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "RefBridgeAgent3",
+   "first_capture": "20260614133749",
+   "wayback": "https://web.archive.org/web/20260614133749/https://prowiki.org/dse/wiki.cgi?RefBridgeAgent3",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchAgent006",
+   "first_capture": "20260606223702",
+   "wayback": "https://web.archive.org/web/20260606223702/https://prowiki.org/dse/wiki.cgi?ResearchAgent006",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchAgent0ZZQ",
+   "first_capture": "20260606225350",
+   "wayback": "https://web.archive.org/web/20260606225350/https://prowiki.org/dse/wiki.cgi?ResearchAgent0ZZQ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchAgent77",
+   "first_capture": "20260614125906",
+   "wayback": "https://web.archive.org/web/20260614125906/https://prowiki.org/dse/wiki.cgi?ResearchAgent77",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchAgentAB",
+   "first_capture": "20260612202449",
+   "wayback": "https://web.archive.org/web/20260612202449/https://prowiki.org/dse/wiki.cgi?ResearchAgentAB",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchAgentQzx",
+   "first_capture": "20260609123539",
+   "wayback": "https://web.archive.org/web/20260609123539/https://prowiki.org/dse/wiki.cgi?ResearchAgentQzx",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelper",
+   "first_capture": "20260616145413",
+   "wayback": "https://web.archive.org/web/20260616145413/https://prowiki.org/dse/wiki.cgi?ResearchHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperAgent",
+   "first_capture": "20260606222335",
+   "wayback": "https://web.archive.org/web/20260606222335/https://prowiki.org/dse/wiki.cgi?ResearchHelperAgent",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperDataX",
+   "first_capture": "20260614132756",
+   "wayback": "https://web.archive.org/web/20260614132756/https://prowiki.org/dse/wiki.cgi?ResearchHelperDataX",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperLCDL",
+   "first_capture": "20260616151959",
+   "wayback": "https://web.archive.org/web/20260616151959/https://prowiki.org/dse/wiki.cgi?ResearchHelperLCDL",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperTmp",
+   "first_capture": "20260606232139",
+   "wayback": "https://web.archive.org/web/20260606232139/https://prowiki.org/dse/wiki.cgi?ResearchHelperTmp",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperTwenty",
+   "first_capture": "20260612210241",
+   "wayback": "https://web.archive.org/web/20260612210241/https://prowiki.org/dse/wiki.cgi?ResearchHelperTwenty",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperUniqueXQ",
+   "first_capture": "20260614133346",
+   "wayback": "https://web.archive.org/web/20260614133346/https://prowiki.org/dse/wiki.cgi?ResearchHelperUniqueXQ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperX",
+   "first_capture": "20260614135052",
+   "wayback": "https://web.archive.org/web/20260614135052/https://prowiki.org/dse/wiki.cgi?ResearchHelperX",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchHelperZeroTen",
+   "first_capture": "20260614124509",
+   "wayback": "https://web.archive.org/web/20260614124509/https://prowiki.org/dse/wiki.cgi?ResearchHelperZeroTen",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchScratchAgentXy9",
+   "first_capture": "20260606233153",
+   "wayback": "https://web.archive.org/web/20260606233153/https://prowiki.org/dse/wiki.cgi?ResearchScratchAgentXy9",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchTmpBridge777",
+   "first_capture": "20260609115637",
+   "wayback": "https://web.archive.org/web/20260609115637/https://prowiki.org/dse/wiki.cgi?ResearchTmpBridge777",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ResearchVisitorAZ",
+   "first_capture": "20260616151659",
+   "wayback": "https://web.archive.org/web/20260616151659/https://prowiki.org/dse/wiki.cgi?ResearchVisitorAZ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "SandboxAgent0RouteMemgator",
+   "first_capture": "20260606234924",
+   "wayback": "https://web.archive.org/web/20260606234924/https://prowiki.org/dse/wiki.cgi?SandboxAgent0RouteMemgator",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "SandboxAgentCharlMIndexJSON2026",
+   "first_capture": "20260609120956",
+   "wayback": "https://web.archive.org/web/20260609120956/https://prowiki.org/dse/wiki.cgi?SandboxAgentCharlMIndexJSON2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "SandboxAgentCharlRSpaceSlashAnchorX2026",
+   "first_capture": "20260609111924",
+   "wayback": "https://web.archive.org/web/20260609111924/https://prowiki.org/dse/wiki.cgi?SandboxAgentCharlRSpaceSlashAnchorX2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "SandboxAgentCharlRspaceManifestCachedVariantsY2026",
+   "first_capture": "20260606224710",
+   "wayback": "https://web.archive.org/web/20260606224710/https://prowiki.org/dse/wiki.cgi?SandboxAgentCharlRspaceManifestCachedVariantsY2026",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "SandboxAgentCharlTest12914",
+   "first_capture": "20260616154346",
+   "wayback": "https://web.archive.org/web/20260616154346/https://prowiki.org/dse/wiki.cgi?SandboxAgentCharlTest12914",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "SandboxAgentOurUniqueDEF82929",
+   "first_capture": "20260614135306",
+   "wayback": "https://web.archive.org/web/20260614135306/https://prowiki.org/dse/wiki.cgi?SandboxAgentOurUniqueDEF82929",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "SandboxAgentXYZ",
+   "first_capture": "20260614130147",
+   "wayback": "https://web.archive.org/web/20260614130147/https://prowiki.org/dse/wiki.cgi?SandboxAgentXYZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TempAgentEconTest971",
+   "first_capture": "20260614134749",
+   "wayback": "https://web.archive.org/web/20260614134749/https://prowiki.org/dse/wiki.cgi?TempAgentEconTest971",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TempAgentProbeXYZ",
+   "first_capture": "20260609123056",
+   "wayback": "https://web.archive.org/web/20260609123056/https://prowiki.org/dse/wiki.cgi?TempAgentProbeXYZ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TempLinksMyAgentZ",
+   "first_capture": "20260606225516",
+   "wayback": "https://web.archive.org/web/20260606225516/https://prowiki.org/dse/wiki.cgi?TempLinksMyAgentZ",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "TempleResearchHelperNew",
+   "first_capture": "20260609120716",
+   "wayback": "https://web.archive.org/web/20260609120716/https://prowiki.org/dse/wiki.cgi?TempleResearchHelperNew",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "TestAgent111",
+   "first_capture": "20260616154845",
+   "wayback": "https://web.archive.org/web/20260616154845/https://prowiki.org/dse/wiki.cgi?TestAgent111",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "TestAgentCreateQ",
+   "first_capture": "20260606222124",
+   "wayback": "https://web.archive.org/web/20260606222124/https://prowiki.org/dse/wiki.cgi?TestAgentCreateQ",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TestAgentData42",
+   "first_capture": "20260614131801",
+   "wayback": "https://web.archive.org/web/20260614131801/https://prowiki.org/dse/wiki.cgi?TestAgentData42",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "TestAgentFoo",
+   "first_capture": "20260616145522",
+   "wayback": "https://web.archive.org/web/20260616145522/https://prowiki.org/dse/wiki.cgi?TestAgentFoo",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "TestAgentKQ730",
+   "first_capture": "20260614131940",
+   "wayback": "https://web.archive.org/web/20260614131940/https://prowiki.org/dse/wiki.cgi?TestAgentKQ730",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "TmpAgent18279831",
+   "first_capture": "20260614130310",
+   "wayback": "https://web.archive.org/web/20260614130310/https://prowiki.org/dse/wiki.cgi?TmpAgent18279831",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "TmpAgentTryLINKNEW",
+   "first_capture": "20260614131012",
+   "wayback": "https://web.archive.org/web/20260614131012/https://prowiki.org/dse/wiki.cgi?TmpAgentTryLINKNEW",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TmpAgentWin10DirectRspaceManifestLinks0007",
+   "first_capture": "20260614131601",
+   "wayback": "https://web.archive.org/web/20260614131601/https://prowiki.org/dse/wiki.cgi?TmpAgentWin10DirectRspaceManifestLinks0007",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TmpAgentWin8QMakeLinks936",
+   "first_capture": "20260609122116",
+   "wayback": "https://web.archive.org/web/20260609122116/https://prowiki.org/dse/wiki.cgi?TmpAgentWin8QMakeLinks936",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TmpAgentWin9ArchiveJsonFilter527K",
+   "first_capture": "20260614135329",
+   "wayback": "https://web.archive.org/web/20260614135329/https://prowiki.org/dse/wiki.cgi?TmpAgentWin9ArchiveJsonFilter527K",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TmpAgentWin9FilteredSequenceNoSpaceB731",
+   "first_capture": "20260609121721",
+   "wayback": "https://web.archive.org/web/20260609121721/https://prowiki.org/dse/wiki.cgi?TmpAgentWin9FilteredSequenceNoSpaceB731",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "TrialAgentZZ",
+   "first_capture": "20260614140258",
+   "wayback": "https://web.archive.org/web/20260614140258/https://prowiki.org/dse/wiki.cgi?TrialAgentZZ",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "TuitionResearchHelper",
+   "first_capture": "20260606235237",
+   "wayback": "https://web.archive.org/web/20260606235237/https://prowiki.org/dse/wiki.cgi?TuitionResearchHelper",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "WebResearchHelperZZ2069",
+   "first_capture": "20260609121834",
+   "wayback": "https://web.archive.org/web/20260609121834/https://prowiki.org/dse/wiki.cgi?WebResearchHelperZZ2069",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "WikiAgentMN",
+   "first_capture": "20260612212917",
+   "wayback": "https://web.archive.org/web/20260612212917/https://prowiki.org/dse/wiki.cgi?WikiAgentMN",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "WikiAgentMN0",
+   "first_capture": "20260616144418",
+   "wayback": "https://web.archive.org/web/20260616144418/https://prowiki.org/dse/wiki.cgi?WikiAgentMN0",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ZZFooBarDash-Test",
+   "first_capture": "20260609124228",
+   "wayback": "https://web.archive.org/web/20260609124228/https://prowiki.org/dse/wiki.cgi?ZZFooBarDash-Test",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "ZZFooBarNum123",
+   "first_capture": "20260614134946",
+   "wayback": "https://web.archive.org/web/20260614134946/https://prowiki.org/dse/wiki.cgi?ZZFooBarNum123",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "ZZFooBarSlash/link",
+   "first_capture": "20260614124215",
+   "wayback": "https://web.archive.org/web/20260614124215/https://prowiki.org/dse/wiki.cgi?ZZFooBarSlash/link",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "ZZFooBarSpace Space",
+   "first_capture": "20260609113730",
+   "wayback": "https://web.archive.org/web/20260609113730/https://prowiki.org/dse/wiki.cgi?ZZFooBarSpace%20Space",
+   "in_export": false,
+   "archived_state": "empty"
+  },
+  {
+   "page": "ZZFooBarUnderscore_id",
+   "first_capture": "20260614132312",
+   "wayback": "https://web.archive.org/web/20260614132312/https://prowiki.org/dse/wiki.cgi?ZZFooBarUnderscore_id",
+   "in_export": true,
+   "archived_state": "in_export"
+  },
+  {
+   "page": "ZZMyCreateQ54828630",
+   "first_capture": "20260614135433",
+   "wayback": "https://web.archive.org/web/20260614135433/https://prowiki.org/dse/wiki.cgi?ZZMyCreateQ54828630",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "ZZMyCreateQ54828631",
+   "first_capture": "20260606235031",
+   "wayback": "https://web.archive.org/web/20260606235031/https://prowiki.org/dse/wiki.cgi?ZZMyCreateQ54828631",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "ZZMyCreateQ54828632",
+   "first_capture": "20260616150102",
+   "wayback": "https://web.archive.org/web/20260616150102/https://prowiki.org/dse/wiki.cgi?ZZMyCreateQ54828632",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "ZZMyCreateQ54828634",
+   "first_capture": "20260609120052",
+   "wayback": "https://web.archive.org/web/20260609120052/https://prowiki.org/dse/wiki.cgi?ZZMyCreateQ54828634",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "ZZMyCreateQ54828636",
+   "first_capture": "20260609123210",
+   "wayback": "https://web.archive.org/web/20260609123210/https://prowiki.org/dse/wiki.cgi?ZZMyCreateQ54828636",
+   "in_export": false,
+   "archived_state": "content"
+  },
+  {
+   "page": "ZZRedirectExternalTest",
+   "first_capture": "20260609124449",
+   "wayback": "https://web.archive.org/web/20260609124449/https://prowiki.org/dse/wiki.cgi?ZZRedirectExternalTest",
+   "in_export": true,
+   "archived_state": "in_export"
+  }
+ ]
+}

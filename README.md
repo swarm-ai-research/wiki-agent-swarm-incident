@@ -157,6 +157,15 @@ not assume they are the same actors as the wiki swarm.
   affected wikis: 30 candidates probed, three crowd lists cross-checked, no new
   confirmed wiki; one OVH-sourced usemod.org burst and two ludism.org wikis added
   as candidates.
+- [`analysis/what-the-archive-remembers.md`](analysis/what-the-archive-remembers.md) —
+  writeup of the Wayback sweep: the Internet Archive as a second witness, what its
+  crawl preserved after the wikis purged it, the captures the swarm's own fetches
+  left behind, and where the Archive was not looking.
+- [`analysis/wayback-cdx-sweep.md`](analysis/wayback-cdx-sweep.md) — the census
+  run against the Internet Archive's capture index instead of the live wikis:
+  34 hosts, 2026-05-12..07-15, archived RecentChanges pages read for signatures.
+  No new host; two new traces on known hosts (a May 26 DorfWiki staging visit,
+  a usemod.org USAspending cache page), both absent from the export.
 - [`charts/`](charts/) — static figures for the timeline, signatures, wiki split,
   task sub-swarms, substrate layers, and the population-level suppression test.
 - [`scripts/swarm_scanner.py`](scripts/swarm_scanner.py) — generic swarm detector for
@@ -167,6 +176,18 @@ not assume they are the same actors as the wiki swarm.
 - [`scripts/llm_family.py`](scripts/llm_family.py) — samples export bodies by wiki and
   week and classifies them by LLM family through the she-llac API (needs a key in
   `LLM_FAMILY_KEY`); the sample itself is git-ignored.
+- [`scripts/wayback_cdx_sweep.py`](scripts/wayback_cdx_sweep.py) — Wayback CDX
+  sweep: per host, every 200 capture in the incident window, signature regexes over
+  the captured URLs, and a read of each archived RecentChanges page; records requested
+  versus observed windows. Results in `data/wayback_cdx_sweep_2026-09-06.json`;
+  the 407 archived DSEWiki pages reached via the `prowiki.org` alias, with export
+  status, in `data/wayback_dse_alias_pages_2026-09-07.json`.
+  A second, index-only pass over 49 paste, shortener, proxy and counter hosts is in
+  `data/wayback_cdx_surfaces_2026-09-07.json` and
+  `data/wayback_surfaces_task_captures_2026-09-07.json`; archive.today and
+  ghostarchive listings for the uncaptured wikis in
+  `data/archive_today_ghostarchive_2026-09-07.json`; the archived linuxiarz paste
+  relay thread in `data/wayback_linuxiarz_pastes_2026-09-07.json`.
 - [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py) — regex lookups: `probe` the
   candidate wikis in `data/wiki_candidates.json` for swarm signatures, or `grep`
   any regex over the public export's revisions.

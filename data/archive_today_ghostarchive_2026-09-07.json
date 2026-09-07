@@ -1,0 +1,212 @@
+{
+ "run": "2026-09-07T12:47:04Z",
+ "window": "2026-05-12..2026-07-15",
+ "note": "Read-only listing reads for the twelve hosts the Wayback CDX sweep found no RecentChanges capture for (plus ludism.org). archive.today: first listing page only, parsed from thumbnail markup; ghostarchive: site search by https URL. The one in-window archive.today snapshot (texteditors.org ViFamily, 2026-06-20) was read and carries no swarm signature.",
+ "results": [
+  {
+   "host": "emacswiki.org",
+   "archive_today": {
+    "listing": "https://archive.ph/emacswiki.org",
+    "snapshots_listed": 20,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://emacswiki.org",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "oddmuse.org",
+   "archive_today": {
+    "listing": "https://archive.ph/oddmuse.org",
+    "snapshots_listed": 7,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://oddmuse.org",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "communitywiki.org",
+   "archive_today": {
+    "listing": "https://archive.ph/communitywiki.org",
+    "snapshots_listed": 28,
+    "in_window": [
+     {
+      "date": "1 Jul 2026 00:04",
+      "snapshot": "https://archive.ph/dok4T",
+      "url": "https://communitywiki.org/odd/CoolHeadz/"
+     },
+     {
+      "date": "1 Jul 2026 00:04",
+      "snapshot": "https://archive.ph/dok4T",
+      "url": "https://communitywiki.org/odd/CoolHeadz/KennCattell"
+     }
+    ]
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://communitywiki.org",
+    "archives": 2,
+    "dates": [
+     "Thu, 13 Mar 2025",
+     "Thu, 20 Jul 2023"
+    ],
+    "in_window": []
+   }
+  },
+  {
+   "host": "alexschroeder.ch",
+   "archive_today": {
+    "listing": "https://archive.ph/alexschroeder.ch",
+    "snapshots_listed": 22,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://alexschroeder.ch",
+    "archives": 2,
+    "dates": [
+     "Mon, 25 Aug 2025",
+     "Sat, 05 Jul 2025"
+    ],
+    "in_window": []
+   }
+  },
+  {
+   "host": "toothycat.net",
+   "archive_today": {
+    "listing": "https://archive.ph/toothycat.net",
+    "snapshots_listed": 10,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://toothycat.net",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "moinmo.in",
+   "archive_today": {
+    "listing": "https://archive.ph/moinmo.in",
+    "snapshots_listed": 28,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://moinmo.in",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "meatballwiki.org",
+   "archive_today": {
+    "listing": "https://archive.ph/meatballwiki.org",
+    "snapshots_listed": 45,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://meatballwiki.org",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "globalvillages.info",
+   "archive_today": {
+    "listing": "https://archive.ph/globalvillages.info",
+    "snapshots_listed": 0,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://globalvillages.info",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "twiki.org",
+   "archive_today": {
+    "listing": "https://archive.ph/twiki.org",
+    "snapshots_listed": 22,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://twiki.org",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "wikiweb.at",
+   "archive_today": {
+    "listing": "https://archive.ph/wikiweb.at",
+    "snapshots_listed": 3,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://wikiweb.at",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "texteditors.org",
+   "archive_today": {
+    "listing": "https://archive.ph/texteditors.org",
+    "snapshots_listed": 23,
+    "in_window": [
+     {
+      "date": "20 Jun 2026 21:58",
+      "snapshot": "https://archive.ph/nPNa3",
+      "url": "texteditors.org/cgi-bin/wiki.pl?ViFamily"
+     }
+    ]
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://texteditors.org",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "crystalclearsoftware.com",
+   "archive_today": {
+    "listing": "https://archive.ph/crystalclearsoftware.com",
+    "snapshots_listed": 1,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://crystalclearsoftware.com",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  },
+  {
+   "host": "ludism.org",
+   "archive_today": {
+    "listing": "https://archive.ph/ludism.org",
+    "snapshots_listed": 21,
+    "in_window": []
+   },
+   "ghostarchive": {
+    "search": "https://ghostarchive.org/search?term=https://ludism.org",
+    "archives": 0,
+    "dates": [],
+    "in_window": []
+   }
+  }
+ ]
+}

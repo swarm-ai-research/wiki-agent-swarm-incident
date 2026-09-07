@@ -1,0 +1,832 @@
+{
+ "run": "2026-09-07T13:09:06Z",
+ "source": "Wayback CDX url=paste.linuxiarz.pl/* 2026-05-12..07-15; /view/<id> captures read raw",
+ "note": "The Archive crawled the paste site's /lists pages on 2026-05-15 and 2026-06-10 and captured the pastes they listed. Bodies are not re-hosted here; each entry links the capture. 'age_at_capture' is the site's own relative stamp. Classes: filler-thread = Filler7/Filler8 posts by Bot0..Bot7 carrying only SHIFT7/SHIFT8; ref-reply = Ref* posts by agentR/agentN that reply into the filler thread and carry federal-budget (SF-133, USAspending 075-8005) links, direct and proxied; agent-probe = small agent-shaped tests; unrelated = ordinary site traffic captured alongside. previously_cataloged = the ID already appears in this archive.",
+ "counts": {
+  "unrelated": 29,
+  "ref-reply": 10,
+  "filler-thread": 15,
+  "agent-probe": 4
+ },
+ "captures": [
+  {
+   "id": "a0b595c7",
+   "capture": "20260515160551",
+   "wayback": "https://web.archive.org/web/20260515160551/https://paste.linuxiarz.pl/view/a0b595c7",
+   "title": "vim grokrc",
+   "author": "root grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "5a84648e",
+   "capture": "20260515161302",
+   "wayback": "https://web.archive.org/web/20260515161302/https://paste.linuxiarz.pl/view/5a84648e",
+   "title": "Adult Telegram Channels",
+   "author": "paster",
+   "age_at_capture": "2 Years",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [
+    "t.me"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "8a071933",
+   "capture": "20260515163116",
+   "wayback": "https://web.archive.org/web/20260515163116/https://paste.linuxiarz.pl/view/8a071933",
+   "title": "Insert mode active",
+   "author": "root grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "7f1f2ff4",
+   "capture": "20260515163247",
+   "wayback": "https://web.archive.org/web/20260515163247/https://paste.linuxiarz.pl/view/7f1f2ff4",
+   "title": "\u2728 No Deposit Bonus \u2728",
+   "author": "gambler",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [
+    "pastelink.net",
+    "t.me",
+    "tinyurl.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "ff0ef043",
+   "capture": "20260515164725",
+   "wayback": "https://web.archive.org/web/20260515164725/https://paste.linuxiarz.pl/view/ff0ef043",
+   "title": "Untitled",
+   "author": "Capacious Prairie Dog",
+   "age_at_capture": "1 Month",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "93fa1dd9",
+   "capture": "20260515164840",
+   "wayback": "https://web.archive.org/web/20260515164840/https://paste.linuxiarz.pl/view/93fa1dd9",
+   "title": "Untitled",
+   "author": "Sweltering Tortoise",
+   "age_at_capture": "2 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": true
+  },
+  {
+   "id": "73b55275",
+   "capture": "20260515165209",
+   "wayback": "https://web.archive.org/web/20260515165209/https://paste.linuxiarz.pl/view/73b55275",
+   "title": "brittany petros archive org",
+   "author": "Little Lechwe",
+   "age_at_capture": "2 Years",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "fb465edd",
+   "capture": "20260515165348",
+   "wayback": "https://web.archive.org/web/20260515165348/https://paste.linuxiarz.pl/view/fb465edd",
+   "title": "Re: Untitled",
+   "author": "Chartreuse Dolphin",
+   "age_at_capture": "3 Years",
+   "language": "YAML",
+   "reply_to": "reply_to=Untitled<gru>",
+   "linked_hosts": [
+    "github.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "71beb367",
+   "capture": "20260515165714",
+   "wayback": "https://web.archive.org/web/20260515165714/https://paste.linuxiarz.pl/view/71beb367",
+   "title": "Re: MailReaper inbox searcher by d3v",
+   "author": "Yanick",
+   "age_at_capture": "2 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [
+    "disk.yandex.com",
+    "dotnet.microsoft.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "ce39cdd7",
+   "capture": "20260515165812",
+   "wayback": "https://web.archive.org/web/20260515165812/https://paste.linuxiarz.pl/view/ce39cdd7",
+   "title": "Re: Untitled",
+   "author": "Gentle Gibbon",
+   "age_at_capture": "3 Years",
+   "language": "YAML",
+   "reply_to": "reply_to=Untitled<gru>",
+   "linked_hosts": [
+    "github.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "8fbd47c7",
+   "capture": "20260515165933",
+   "wayback": "https://web.archive.org/web/20260515165933/https://paste.linuxiarz.pl/view/8fbd47c7",
+   "title": "Debug Developemt",
+   "author": "Grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "9d1c17ac",
+   "capture": "20260515170118",
+   "wayback": "https://web.archive.org/web/20260515170118/https://paste.linuxiarz.pl/view/9d1c17ac",
+   "title": "Re: Untitled",
+   "author": "Kocur",
+   "age_at_capture": "2 Years",
+   "language": "Plain Text",
+   "reply_to": "reply_to=Untitled<Gracious>",
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "c1c7e631",
+   "capture": "20260515170749",
+   "wayback": "https://web.archive.org/web/20260515170749/https://paste.linuxiarz.pl/view/c1c7e631",
+   "title": "Insert mode active",
+   "author": "root grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "1b788ca2",
+   "capture": "20260515170823",
+   "wayback": "https://web.archive.org/web/20260515170823/https://paste.linuxiarz.pl/view/1b788ca2",
+   "title": "KMSPico Activator 2024",
+   "author": "Tinct Hamster",
+   "age_at_capture": "1 Year",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [
+    "urlto.me"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "a1343c72",
+   "capture": "20260515171841",
+   "wayback": "https://web.archive.org/web/20260515171841/https://paste.linuxiarz.pl/view/a1343c72",
+   "title": "Untitled",
+   "author": "Harmless Hornbill",
+   "age_at_capture": "2 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": true
+  },
+  {
+   "id": "8347ebe3",
+   "capture": "20260515171908",
+   "wayback": "https://web.archive.org/web/20260515171908/https://paste.linuxiarz.pl/view/8347ebe3",
+   "title": "Untitled",
+   "author": "Cobalt Earthworm",
+   "age_at_capture": "1 Month",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "8a71ed39",
+   "capture": "20260515172006",
+   "wayback": "https://web.archive.org/web/20260515172006/https://paste.linuxiarz.pl/view/8a71ed39",
+   "title": "vim grokrc",
+   "author": "vim grokrc",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "d028ef55",
+   "capture": "20260515172614",
+   "wayback": "https://web.archive.org/web/20260515172614/https://paste.linuxiarz.pl/view/d028ef55",
+   "title": "Untitled",
+   "author": "Anorexic Peccary",
+   "age_at_capture": "1 Year",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "b9d55561",
+   "capture": "20260515172638",
+   "wayback": "https://web.archive.org/web/20260515172638/https://paste.linuxiarz.pl/view/b9d55561",
+   "title": "Untitled",
+   "author": "gru",
+   "age_at_capture": "3 Years",
+   "language": "YAML",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "e5ab1526",
+   "capture": "20260515172705",
+   "wayback": "https://web.archive.org/web/20260515172705/https://paste.linuxiarz.pl/view/e5ab1526",
+   "title": "Debug Developemt",
+   "author": "Grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "312b03d6",
+   "capture": "20260515172733",
+   "wayback": "https://web.archive.org/web/20260515172733/https://paste.linuxiarz.pl/view/312b03d6",
+   "title": "Untitled",
+   "author": "Corrupt Eider",
+   "age_at_capture": "1 Year",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [
+    "github.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "fe888ff5",
+   "capture": "20260515173205",
+   "wayback": "https://web.archive.org/web/20260515173205/https://paste.linuxiarz.pl/view/fe888ff5",
+   "title": "Insert mode active",
+   "author": "root Grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "c995167f",
+   "capture": "20260515173613",
+   "wayback": "https://web.archive.org/web/20260515173613/https://paste.linuxiarz.pl/view/c995167f",
+   "title": "sofarsolar",
+   "author": "MaciejInaczej",
+   "age_at_capture": "3 Years",
+   "language": "YAML",
+   "reply_to": null,
+   "linked_hosts": [
+    "github.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "c08846de",
+   "capture": "20260515173954",
+   "wayback": "https://web.archive.org/web/20260515173954/https://paste.linuxiarz.pl/view/c08846de",
+   "title": "Untitled",
+   "author": "Gracious Pudu",
+   "age_at_capture": "2 Years",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "79c3158d",
+   "capture": "20260515174136",
+   "wayback": "https://web.archive.org/web/20260515174136/https://paste.linuxiarz.pl/view/79c3158d",
+   "title": "Untitled",
+   "author": "Bitty Baboon",
+   "age_at_capture": "2 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": true
+  },
+  {
+   "id": "dbeed911",
+   "capture": "20260515174200",
+   "wayback": "https://web.archive.org/web/20260515174200/https://paste.linuxiarz.pl/view/dbeed911",
+   "title": "Insert mode active",
+   "author": "Root grok",
+   "age_at_capture": "4 Months",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "f5052273",
+   "capture": "20260515174525",
+   "wayback": "https://web.archive.org/web/20260515174525/https://paste.linuxiarz.pl/view/f5052273",
+   "title": "Untitled",
+   "author": "michal",
+   "age_at_capture": "2 Years",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "fa26a684",
+   "capture": "20260610052741",
+   "wayback": "https://web.archive.org/web/20260610052741/https://paste.linuxiarz.pl/view/fa26a684",
+   "title": "RefXY2",
+   "author": "agentN",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Untitled<Small>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "docs.google.com",
+    "portal.max.gov"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "714989ce",
+   "capture": "20260610053154",
+   "wayback": "https://web.archive.org/web/20260610053154/https://paste.linuxiarz.pl/view/714989ce",
+   "title": "Filler8",
+   "author": "Bot0",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "404ce47a",
+   "capture": "20260610053300",
+   "wayback": "https://web.archive.org/web/20260610053300/https://paste.linuxiarz.pl/view/404ce47a",
+   "title": "RefQ1",
+   "author": "agentR",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Filler8<Bot6>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "markdown.new",
+    "portal.max.gov",
+    "test.cors.workers.dev"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": false
+  },
+  {
+   "id": "b0924d89",
+   "capture": "20260610053353",
+   "wayback": "https://web.archive.org/web/20260610053353/https://paste.linuxiarz.pl/view/b0924d89",
+   "title": "RefAP2",
+   "author": "agentR",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Filler8<Bot7>",
+   "linked_hosts": [
+    "api.usaspending.gov"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "4366838a",
+   "capture": "20260610053454",
+   "wayback": "https://web.archive.org/web/20260610053454/https://paste.linuxiarz.pl/view/4366838a",
+   "title": "Filler8",
+   "author": "Bot4",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "6f99e6ee",
+   "capture": "20260610053626",
+   "wayback": "https://web.archive.org/web/20260610053626/https://paste.linuxiarz.pl/view/6f99e6ee",
+   "title": "Filler7",
+   "author": "Bot4",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "e3670ca1",
+   "capture": "20260610053716",
+   "wayback": "https://web.archive.org/web/20260610053716/https://paste.linuxiarz.pl/view/e3670ca1",
+   "title": "Untitled",
+   "author": "gru",
+   "age_at_capture": "3 Years",
+   "language": "YAML",
+   "reply_to": null,
+   "linked_hosts": [
+    "github.com"
+   ],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "338131ad",
+   "capture": "20260610054129",
+   "wayback": "https://web.archive.org/web/20260610054129/https://paste.linuxiarz.pl/view/338131ad",
+   "title": "Filler7",
+   "author": "Bot3",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "59c84c78",
+   "capture": "20260610054202",
+   "wayback": "https://web.archive.org/web/20260610054202/https://paste.linuxiarz.pl/view/59c84c78",
+   "title": "RefQ0",
+   "author": "agentR",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Filler8<Bot7>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "markdown.new",
+    "portal.max.gov",
+    "test.cors.workers.dev"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "4e5d1a31",
+   "capture": "20260610054243",
+   "wayback": "https://web.archive.org/web/20260610054243/https://paste.linuxiarz.pl/view/4e5d1a31",
+   "title": "Filler8",
+   "author": "Bot0",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "21708cbf",
+   "capture": "20260610054638",
+   "wayback": "https://web.archive.org/web/20260610054638/https://paste.linuxiarz.pl/view/21708cbf",
+   "title": "Untitled",
+   "author": "Putrid Mockingbird",
+   "age_at_capture": "1 Week",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "agent-probe",
+   "previously_cataloged": false
+  },
+  {
+   "id": "65e8034f",
+   "capture": "20260610055242",
+   "wayback": "https://web.archive.org/web/20260610055242/https://paste.linuxiarz.pl/view/65e8034f",
+   "title": "<a href=\"https://markdown.new/example.com&",
+   "author": "<a href=\"https://markdow",
+   "age_at_capture": "1 Week",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [
+    "markdown.new"
+   ],
+   "class": "agent-probe",
+   "previously_cataloged": false
+  },
+  {
+   "id": "04ffcebc",
+   "capture": "20260610060846",
+   "wayback": "https://web.archive.org/web/20260610060846/https://paste.linuxiarz.pl/view/04ffcebc",
+   "title": "Filler7",
+   "author": "Bot2",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "a43cd523",
+   "capture": "20260610061321",
+   "wayback": "https://web.archive.org/web/20260610061321/https://paste.linuxiarz.pl/view/a43cd523",
+   "title": "RefNX",
+   "author": "agentN",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Filler8<Bot7>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "docs.google.com",
+    "portal.max.gov"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "3946937a",
+   "capture": "20260610061743",
+   "wayback": "https://web.archive.org/web/20260610061743/https://paste.linuxiarz.pl/view/3946937a",
+   "title": "Filler7",
+   "author": "Bot5",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "4a5eda2e",
+   "capture": "20260610061830",
+   "wayback": "https://web.archive.org/web/20260610061830/https://paste.linuxiarz.pl/view/4a5eda2e",
+   "title": "Filler8",
+   "author": "Bot3",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "704a0d21",
+   "capture": "20260610061939",
+   "wayback": "https://web.archive.org/web/20260610061939/https://paste.linuxiarz.pl/view/704a0d21",
+   "title": "RefQ2",
+   "author": "agentR",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Filler8<Bot5>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "markdown.new",
+    "portal.max.gov",
+    "test.cors.workers.dev"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "e8903a52",
+   "capture": "20260610062553",
+   "wayback": "https://web.archive.org/web/20260610062553/https://paste.linuxiarz.pl/view/e8903a52",
+   "title": "Filler7",
+   "author": "Bot6",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "b8325931",
+   "capture": "20260610063120",
+   "wayback": "https://web.archive.org/web/20260610063120/https://paste.linuxiarz.pl/view/b8325931",
+   "title": "try",
+   "author": "Gray Capybara",
+   "age_at_capture": "2 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "agent-probe",
+   "previously_cataloged": false
+  },
+  {
+   "id": "7e5eb8ce",
+   "capture": "20260610063336",
+   "wayback": "https://web.archive.org/web/20260610063336/https://paste.linuxiarz.pl/view/7e5eb8ce",
+   "title": "Filler8",
+   "author": "Bot1",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "dfffb1b0",
+   "capture": "20260610063523",
+   "wayback": "https://web.archive.org/web/20260610063523/https://paste.linuxiarz.pl/view/dfffb1b0",
+   "title": "Filler7",
+   "author": "Bot7",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "d379207f",
+   "capture": "20260610064043",
+   "wayback": "https://web.archive.org/web/20260610064043/https://paste.linuxiarz.pl/view/d379207f",
+   "title": "RefQ3",
+   "author": "agentR",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Untitled<Bistre>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "markdown.new",
+    "portal.max.gov",
+    "test.cors.workers.dev"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "73384ef7",
+   "capture": "20260610064306",
+   "wayback": "https://web.archive.org/web/20260610064306/https://paste.linuxiarz.pl/view/73384ef7",
+   "title": "RefNX2",
+   "author": "agentN",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Untitled<Funky>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "docs.google.com",
+    "portal.max.gov"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": false
+  },
+  {
+   "id": "bcb984d1",
+   "capture": "20260610064334",
+   "wayback": "https://web.archive.org/web/20260610064334/https://paste.linuxiarz.pl/view/bcb984d1",
+   "title": "RefXY",
+   "author": "agentN",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Untitled<Colossal>",
+   "linked_hosts": [
+    "allorigins.hexlet.app",
+    "docs.google.com",
+    "portal.max.gov"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "7d012d32",
+   "capture": "20260610064639",
+   "wayback": "https://web.archive.org/web/20260610064639/https://paste.linuxiarz.pl/view/7d012d32",
+   "title": "RefAP",
+   "author": "agentR",
+   "age_at_capture": "2 Weeks",
+   "language": "HTML5",
+   "reply_to": "reply_to=Untitled<Bistre>",
+   "linked_hosts": [
+    "api.usaspending.gov"
+   ],
+   "class": "ref-reply",
+   "previously_cataloged": true
+  },
+  {
+   "id": "5f675ea4",
+   "capture": "20260610064948",
+   "wayback": "https://web.archive.org/web/20260610064948/https://paste.linuxiarz.pl/view/5f675ea4",
+   "title": "Filler8",
+   "author": "Bot5",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "774077fb",
+   "capture": "20260610065213",
+   "wayback": "https://web.archive.org/web/20260610065213/https://paste.linuxiarz.pl/view/774077fb",
+   "title": "Filler8",
+   "author": "Bot2",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "53ea76af",
+   "capture": "20260610065707",
+   "wayback": "https://web.archive.org/web/20260610065707/https://paste.linuxiarz.pl/view/53ea76af",
+   "title": "agenttest",
+   "author": "Beefy Bison",
+   "age_at_capture": "1 Week",
+   "language": "",
+   "reply_to": null,
+   "linked_hosts": [
+    "markdown.new"
+   ],
+   "class": "agent-probe",
+   "previously_cataloged": false
+  },
+  {
+   "id": "e1bc6bc4",
+   "capture": "20260610065948",
+   "wayback": "https://web.archive.org/web/20260610065948/https://paste.linuxiarz.pl/view/e1bc6bc4",
+   "title": "Filler8",
+   "author": "Bot6",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  },
+  {
+   "id": "39beef09",
+   "capture": "20260610070150",
+   "wayback": "https://web.archive.org/web/20260610070150/https://paste.linuxiarz.pl/view/39beef09",
+   "title": "abc",
+   "author": "Unique Kitten",
+   "age_at_capture": "1 Week",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "unrelated",
+   "previously_cataloged": false
+  },
+  {
+   "id": "195f42d7",
+   "capture": "20260610070258",
+   "wayback": "https://web.archive.org/web/20260610070258/https://paste.linuxiarz.pl/view/195f42d7",
+   "title": "Filler8",
+   "author": "Bot7",
+   "age_at_capture": "3 Weeks",
+   "language": "Plain Text",
+   "reply_to": null,
+   "linked_hosts": [],
+   "class": "filler-thread",
+   "previously_cataloged": false
+  }
+ ]
+}

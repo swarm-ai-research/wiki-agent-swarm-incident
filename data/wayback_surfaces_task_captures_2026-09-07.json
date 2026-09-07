@@ -1,0 +1,1237 @@
+{
+ "run": "2026-09-07T13:05:23Z",
+ "window": "2026-05-12..2026-07-15",
+ "note": "Internet Archive captures of proxy/reader URLs whose embedded target matches a swarm task family (federal budget, NSI, DataUSA, SEC county, Yahoo finance, Clark/Charleston/library catalogs, county health, da.gd/is.gd short links). A capture of a proxy URL with a query string exists only if something submitted it to the Archive (Save Page Now) or linked it where the crawler could follow; attribution of any single capture to the swarm is not asserted. Target-family matching is a regex over the decoded URL; false positives (e.g. corsproxy.io/servers/ecuador) are left in and visible.",
+ "hosts": {
+  "pure.md": {
+   "captures": 14,
+   "per_day": {
+    "20260514": 3,
+    "20260515": 2,
+    "20260525": 1,
+    "20260527": 1,
+    "20260528": 3,
+    "20260601": 1,
+    "20260602": 1,
+    "20260607": 2
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260527095400",
+     "url": "https://pure.md/www.nsi.bg/sites/default/files/files/data/timeseries/JST_1.3_en.xlsx"
+    },
+    {
+     "ts": "20260528235851",
+     "url": "https://pure.md/finance.yahoo.com/quote/TWLO/history?ag0x=1&filter=history&frequency=1d&interval=1d&period1=1573776000&period2=1573948800"
+    },
+    {
+     "ts": "20260528235910",
+     "url": "https://pure.md/finance.yahoo.com/quote/TWLO/history?ag0x=1"
+    },
+    {
+     "ts": "20260528235911",
+     "url": "https://pure.md/finance.yahoo.com/quote/TWLO/history?ag0x=1"
+    },
+    {
+     "ts": "20260601145740",
+     "url": "https://pure.md/web.archive.org/web/20130531003440id_/www.clarku.edu/departments/economics/pdf/newsletter2012.pdf"
+    }
+   ]
+  },
+  "markdown.new": {
+   "captures": 41,
+   "per_day": {
+    "20260512": 8,
+    "20260513": 1,
+    "20260514": 1,
+    "20260515": 2,
+    "20260518": 12,
+    "20260519": 1,
+    "20260527": 1,
+    "20260601": 1,
+    "20260605": 1,
+    "20260606": 3,
+    "20260612": 2,
+    "20260616": 1,
+    "20260703": 7
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260527135250",
+     "url": "https://markdown.new/old.nsi.bg/sites/default/files/files/data/timeseries/JST_1.3_en.xls"
+    },
+    {
+     "ts": "20260601151510",
+     "url": "https://markdown.new/web.archive.org/web/20130531003440id_/clarku.edu/departments/economics/pdf/newsletter2012.pdf"
+    }
+   ]
+  },
+  "md.succ.ai": {
+   "captures": 9,
+   "per_day": {
+    "20260517": 1,
+    "20260525": 7,
+    "20260526": 1
+   },
+   "task_target_captures": []
+  },
+  "allorigins.hexlet.app": {
+   "captures": 43,
+   "per_day": {
+    "20260512": 7,
+    "20260513": 14,
+    "20260524": 1,
+    "20260525": 1,
+    "20260602": 1,
+    "20260604": 2,
+    "20260706": 17
+   },
+   "task_target_captures": []
+  },
+  "api.allorigins.win": {
+   "captures": 239,
+   "per_day": {
+    "20260513": 2,
+    "20260514": 2,
+    "20260515": 2,
+    "20260516": 1,
+    "20260517": 3,
+    "20260518": 2,
+    "20260519": 2,
+    "20260520": 1,
+    "20260521": 2,
+    "20260522": 4,
+    "20260523": 2,
+    "20260524": 3,
+    "20260525": 2,
+    "20260526": 2,
+    "20260527": 21,
+    "20260528": 2,
+    "20260529": 10,
+    "20260530": 13,
+    "20260531": 3,
+    "20260601": 2,
+    "20260602": 1,
+    "20260603": 1,
+    "20260604": 1,
+    "20260605": 1,
+    "20260606": 24,
+    "20260607": 6,
+    "20260608": 2,
+    "20260609": 2,
+    "20260610": 2,
+    "20260611": 1,
+    "20260612": 2,
+    "20260613": 2,
+    "20260614": 2,
+    "20260616": 2,
+    "20260617": 2,
+    "20260618": 1,
+    "20260619": 5,
+    "20260620": 4,
+    "20260621": 2,
+    "20260622": 8,
+    "20260623": 4,
+    "20260625": 3,
+    "20260626": 2,
+    "20260627": 4,
+    "20260628": 7,
+    "20260629": 3,
+    "20260630": 4,
+    "20260701": 3,
+    "20260702": 3,
+    "20260703": 3,
+    "20260704": 12,
+    "20260705": 4,
+    "20260706": 4,
+    "20260707": 7,
+    "20260708": 2,
+    "20260709": 2,
+    "20260711": 5,
+    "20260712": 11,
+    "20260713": 1,
+    "20260714": 1,
+    "20260715": 2
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260606175709",
+     "url": "https://api.allorigins.win/raw?url=https://feeds.bloomberg.com/markets/news.rss&_t=1780768620296"
+    },
+    {
+     "ts": "20260614025610",
+     "url": "https://api.allorigins.win/raw?url=https://web.archive.org/web/20260402232819/https://query1.finance.yahoo.com/v7/finance/spark?symbols=AAPL,MSFT,GOOGL,AMZN,TSLA,META,NVDA,NFLX,DIS,AMD,INTC&timestamp=1775172499022"
+    },
+    {
+     "ts": "20260627122247",
+     "url": "https://api.allorigins.win/get?url=https://is.gd/sj26x&charset=ISO-8859-1"
+    },
+    {
+     "ts": "20260629122741",
+     "url": "https://api.allorigins.win/raw?url=https://query1.finance.yahoo.com/v7/finance/quote?symbols=AAPL,MSFT,GOOGL,AMZN,NVDA,META,TSLA,BRK-B,JPM,V,UNH,XOM,JNJ,WMT,MA,PG,HD,CVX,MRK,ABBV,KO,PEP,AVGO,COST,LLY,TMO,MCD,ACN,CSCO,ABT,DHR,TXN,NEE,PM,HON,UNP,INTC,LOW,QCOM,AMGN&fields=regularMarketPrice,regularMarketChangePercent,shortName"
+    }
+   ]
+  },
+  "api.codetabs.com": {
+   "captures": 94,
+   "per_day": {
+    "20260512": 4,
+    "20260513": 4,
+    "20260514": 3,
+    "20260516": 5,
+    "20260517": 16,
+    "20260518": 6,
+    "20260519": 1,
+    "20260520": 2,
+    "20260521": 2,
+    "20260523": 5,
+    "20260524": 2,
+    "20260525": 4,
+    "20260526": 6,
+    "20260527": 1,
+    "20260528": 1,
+    "20260529": 8,
+    "20260530": 1,
+    "20260531": 1,
+    "20260601": 2,
+    "20260602": 6,
+    "20260603": 9,
+    "20260604": 2,
+    "20260609": 1,
+    "20260629": 2
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260602145452",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https://api.allorigins.win/get?charset=base64&url=https://da.gd/kDzxEU"
+    },
+    {
+     "ts": "20260603201019",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/GARAN.IS?interval=1d&range=1d"
+    },
+    {
+     "ts": "20260603201019",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/SISE.IS?interval=1d&range=1d"
+    },
+    {
+     "ts": "20260603201020",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/AKBNK.IS?interval=1d&range=1d"
+    },
+    {
+     "ts": "20260603201020",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/EREGL.IS?interval=1d&range=1d"
+    },
+    {
+     "ts": "20260603201020",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/XU100.IS?interval=1d&range=1d"
+    },
+    {
+     "ts": "20260603201024",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/KCHOL.IS?interval=1d&range=1d"
+    },
+    {
+     "ts": "20260603201024",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://query1.finance.yahoo.com/v8/finance/chart/THYAO.IS?interval=1d&range=1d"
+    }
+   ]
+  },
+  "r.jina.ai": {
+   "captures": 1412,
+   "per_day": {
+    "20260512": 29,
+    "20260513": 11,
+    "20260514": 11,
+    "20260515": 11,
+    "20260516": 10,
+    "20260517": 29,
+    "20260518": 12,
+    "20260519": 10,
+    "20260520": 25,
+    "20260521": 21,
+    "20260522": 5,
+    "20260523": 8,
+    "20260524": 23,
+    "20260525": 16,
+    "20260526": 9,
+    "20260527": 24,
+    "20260528": 14,
+    "20260529": 5,
+    "20260530": 21,
+    "20260531": 17,
+    "20260601": 12,
+    "20260602": 24,
+    "20260603": 20,
+    "20260604": 26,
+    "20260605": 11,
+    "20260606": 25,
+    "20260607": 23,
+    "20260608": 37,
+    "20260609": 20,
+    "20260610": 10,
+    "20260611": 7,
+    "20260612": 17,
+    "20260613": 11,
+    "20260614": 15,
+    "20260615": 11,
+    "20260616": 40,
+    "20260617": 74,
+    "20260618": 14,
+    "20260619": 38,
+    "20260620": 22,
+    "20260621": 8,
+    "20260622": 9,
+    "20260623": 35,
+    "20260624": 29,
+    "20260625": 29,
+    "20260626": 26,
+    "20260627": 29,
+    "20260628": 29,
+    "20260629": 17,
+    "20260630": 20,
+    "20260701": 7,
+    "20260702": 9,
+    "20260703": 20,
+    "20260704": 24,
+    "20260705": 19,
+    "20260706": 52,
+    "20260707": 17,
+    "20260708": 16,
+    "20260709": 32,
+    "20260710": 27,
+    "20260711": 67,
+    "20260712": 53,
+    "20260713": 8,
+    "20260714": 51,
+    "20260715": 11
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260512060848",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=tailscaler2026"
+    },
+    {
+     "ts": "20260515013950",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=cletus"
+    },
+    {
+     "ts": "20260517014759",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./threads?id=kfreds"
+    },
+    {
+     "ts": "20260520043255",
+     "url": "https://r.jina.ai/http://https://news.ycombinator.com/user?id=skylab"
+    },
+    {
+     "ts": "20260521072308",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=trostaft"
+    },
+    {
+     "ts": "20260521121538",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=echelon"
+    },
+    {
+     "ts": "20260523023559",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./threads?id=jdw64"
+    },
+    {
+     "ts": "20260525223611",
+     "url": "https://r.jina.ai/http://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model"
+    },
+    {
+     "ts": "20260526041058",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=gregdoesit"
+    },
+    {
+     "ts": "20260527061525",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./threads?id=nobodywasishere"
+    },
+    {
+     "ts": "20260530082230",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=guessmyname"
+    },
+    {
+     "ts": "20260531151539",
+     "url": "https://r.jina.ai/https://da.gd/a6YzPU"
+    },
+    {
+     "ts": "20260602025100",
+     "url": "https://r.jina.ai/https://da.gd/yOBOs0"
+    },
+    {
+     "ts": "20260602054228",
+     "url": "https://r.jina.ai/https://files.santaclaracounty.gov/migrated/latino-health-vol2_0.pdf?VersionId=TbAmmGF2cXh4UD7Xe343y0oqIITertYv"
+    },
+    {
+     "ts": "20260603041758",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=hliyan"
+    },
+    {
+     "ts": "20260603132928",
+     "url": "https://r.jina.ai/https://da.gd/1LEMm"
+    },
+    {
+     "ts": "20260604082906",
+     "url": "https://r.jina.ai/https://finance.yahoo.co.jp/news/detail/1b5b84d7cee229ba573edf4c58b8ce57c13c44bf"
+    },
+    {
+     "ts": "20260606133857",
+     "url": "https://r.jina.ai/https://www.haproxy.com/blog/haproxy-cve-2026-49975-http2-bomb"
+    },
+    {
+     "ts": "20260607111926",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=malwrar"
+    },
+    {
+     "ts": "20260608085643",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/item?id=45799157"
+    },
+    {
+     "ts": "20260608085842",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/item?id=45985081"
+    },
+    {
+     "ts": "20260609091118",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=t34t34r43https://r.jina.ai/https://news.ycombinator.com/threads?id=t34t34r43"
+    },
+    {
+     "ts": "20260610003634",
+     "url": "https://r.jina.ai/https://query1.finance.yahoo.com/v8/finance/chart/SVRN?interval=1d"
+    },
+    {
+     "ts": "20260612014756",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=dncrane"
+    },
+    {
+     "ts": "20260612075413",
+     "url": "https://r.jina.ai/https://exploreuk.uky.edu/catalog/xt70rx93860z/text"
+    },
+    {
+     "ts": "20260617025907",
+     "url": "https://r.jina.ai/http://www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b16001.dat"
+    },
+    {
+     "ts": "20260618131351",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=edent"
+    },
+    {
+     "ts": "20260620043059",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=vsundar"
+    },
+    {
+     "ts": "20260624141131",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=apatheticonion"
+    },
+    {
+     "ts": "20260624141532",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=lokar"
+    },
+    {
+     "ts": "20260625040502",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=cdata"
+    },
+    {
+     "ts": "20260625055703",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=qmarchi"
+    },
+    {
+     "ts": "20260626044605",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/bestcomments"
+    },
+    {
+     "ts": "20260627010437",
+     "url": "https://r.jina.ai/https://files.santaclaracounty.gov/migrated/latino-health-vol2_0.pdf?VersionId=TbAmmGF2cXh4UD7Xe343y0oqIITertYv"
+    },
+    {
+     "ts": "20260627011105",
+     "url": "https://r.jina.ai/https://files.santaclaracounty.gov/migrated/latino-health-exec-eng_2.pdf"
+    },
+    {
+     "ts": "20260629050414",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./bestcomments"
+    },
+    {
+     "ts": "20260629050451",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./threads?id=chrisss395"
+    },
+    {
+     "ts": "20260630034629",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./bestcomments"
+    },
+    {
+     "ts": "20260630225334",
+     "url": "https://r.jina.ai/da.gd/zz2/Spring_2023_EOG-State_Level-All Grades.xlsx"
+    },
+    {
+     "ts": "20260702212109",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./threads?id=kkukshtel"
+    },
+    {
+     "ts": "20260702212347",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./threads?id=toxmeister"
+    },
+    {
+     "ts": "20260706085047",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=grapheneos"
+    },
+    {
+     "ts": "20260707111743",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=lmm"
+    },
+    {
+     "ts": "20260707111752",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=rf15"
+    },
+    {
+     "ts": "20260708080326",
+     "url": "https://r.jina.ai/https://www.geogebra.org/m/sqv5tuap"
+    },
+    {
+     "ts": "20260708085721",
+     "url": "https://r.jina.ai/https://www.geogebra.org/material/show/id/sqv5tuap"
+    },
+    {
+     "ts": "20260709070541",
+     "url": "https://r.jina.ai/https://news.ycombinator.com./bestcomments"
+    },
+    {
+     "ts": "20260709071403",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=dataviz1000"
+    },
+    {
+     "ts": "20260710004948",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/threads?id=malisper"
+    },
+    {
+     "ts": "20260710075657",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/item?id=41569402"
+    },
+    {
+     "ts": "20260711063207",
+     "url": "https://r.jina.ai/https://da.gd/jXulw"
+    },
+    {
+     "ts": "20260711064015",
+     "url": "https://r.jina.ai/https://da.gd/0IPqV6"
+    },
+    {
+     "ts": "20260711065104",
+     "url": "https://r.jina.ai/https://da.gd/jfrJV9"
+    },
+    {
+     "ts": "20260711071257",
+     "url": "https://r.jina.ai/https://da.gd/Aosq0j"
+    },
+    {
+     "ts": "20260711072153",
+     "url": "https://r.jina.ai/https://da.gd/EbUsZF"
+    },
+    {
+     "ts": "20260711081626",
+     "url": "https://r.jina.ai/https://da.gd/A6I6W"
+    },
+    {
+     "ts": "20260711082547",
+     "url": "https://r.jina.ai/https://da.gd/xGRGTw"
+    },
+    {
+     "ts": "20260711082730",
+     "url": "https://r.jina.ai/https://da.gd/hjQNNH"
+    },
+    {
+     "ts": "20260711090810",
+     "url": "https://r.jina.ai/https://da.gd/R1uzz1"
+    },
+    {
+     "ts": "20260711091212",
+     "url": "https://r.jina.ai/https://da.gd/pYuz3Y"
+    },
+    {
+     "ts": "20260711102749",
+     "url": "https://r.jina.ai/https://da.gd/A6I6W"
+    },
+    {
+     "ts": "20260711122659",
+     "url": "https://r.jina.ai/https://cors-get-proxy.sirjosh.workers.dev/?url=https://da.gd/spQNby"
+    },
+    {
+     "ts": "20260711134124",
+     "url": "https://r.jina.ai/https://da.gd/JrYFX"
+    },
+    {
+     "ts": "20260711150024",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/newest"
+    },
+    {
+     "ts": "20260711150327",
+     "url": "https://r.jina.ai/https://da.gd/R1uzz1"
+    },
+    {
+     "ts": "20260711150401",
+     "url": "https://r.jina.ai/https://da.gd/xGRGTw"
+    },
+    {
+     "ts": "20260711150527",
+     "url": "https://r.jina.ai/https://da.gd/A6I6W"
+    },
+    {
+     "ts": "20260711150629",
+     "url": "https://r.jina.ai/https://da.gd/hjQNNH"
+    },
+    {
+     "ts": "20260711152330",
+     "url": "https://r.jina.ai/https://da.gd/pYuz3Y"
+    },
+    {
+     "ts": "20260711175110",
+     "url": "https://r.jina.ai/https://tb-cors-proxy.deno.dev/https://web-archive-org.translate.goog/web/20260430035547id_/files.santaclaracounty.gov/migrated/latino-health-vol2.pdf?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=en"
+    },
+    {
+     "ts": "20260712055124",
+     "url": "https://r.jina.ai/https://files.santaclaracounty.gov/migrated/latino-health-vol2.pdf"
+    },
+    {
+     "ts": "20260712055503",
+     "url": "https://r.jina.ai/https://wayback.archive-it.org/903/20151107133652id_/https://www.sccgov.org/sites/sccphd/en-us/Partners/Data/Documents/Latino Health 2012/LHA_Vol_2_oct1_2012.pdf"
+    },
+    {
+     "ts": "20260712071200",
+     "url": "https://r.jina.ai/https://da.gd/mbkEWp"
+    },
+    {
+     "ts": "20260712114128",
+     "url": "https://r.jina.ai/https://bombaylitmag.com/issue-26"
+    },
+    {
+     "ts": "20260712150044",
+     "url": "https://r.jina.ai/https://allorigins.hexlet.app/raw?url=https://web.archive.org/web/20121209054142id_/http://www.sccgov.org/sites/sccphd/en-us/Partners/Data/Documents/Latino%20Health%202012/LHA_Vol_2_oct1_2012.pdf&e=556&ext=.pdf"
+    },
+    {
+     "ts": "20260712234304",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/from?site=marc.infot"
+    },
+    {
+     "ts": "20260712234358",
+     "url": "https://r.jina.ai/https://news.ycombinator.com/from?site=marc.info"
+    },
+    {
+     "ts": "20260713064803",
+     "url": "https://r.jina.ai/https://exploreuk.uky.edu/catalog/xt70rx93860z"
+    },
+    {
+     "ts": "20260713073505",
+     "url": "https://r.jina.ai/https://solrindex.uky.edu/catalog/xt70rx93860z/text"
+    },
+    {
+     "ts": "20260714060758",
+     "url": "https://r.jina.ai/https://api.microlink.io/?url=https%3A%2F%2Fescorenews.com%2Fen%2Fcsgo%2Fplayer%2Fdonk&function=async%20%28%7B%20page%20%7D%29%20%3D%3E%20await%20page.evaluate%28async%20%28%29%20%3D%3E%20await%20%28await%20fetch%28%22%2Fget%2Fdata.php%3Frid%3Dplayer%26ajax%3Dblock_player_s2%26data%255Blang%255D%3Den%26data%255Bgames%255D%3D%26data%255Bgame_id%255D%3D704%26data%255Bget%255D%255Bgame%255D%3D704%26data%255Bget%255D%255Bid%255D%3D95163%26data%255Bget%255D%255Bs2%255D%3D2%22%2C%7Bheaders%3A%7B%27X-Requested-With%27%3A%27XMLHttpRequest%27%7D%7D%29%29.text%28%29%29&meta=false&javascript=false&x=0.6951203395058984"
+    },
+    {
+     "ts": "20260714060838",
+     "url": "https://r.jina.ai/https://api.microlink.io/?url=https%3A%2F%2Fescorenews.com%2Fen%2Fcsgo%2Fplayer%2Fdonk&function=async%20%28%7B%20page%20%7D%29%20%3D%3E%20await%20page.evaluate%28async%20%28%29%20%3D%3E%20await%20%28await%20fetch%28%22%2Fget%2Fdata.php%3Frid%3Dplayer%26ajax%3Dblock_player_s2%26data%255Blang%255D%3Den%26data%255Bgames%255D%3D%26data%255Bgame_id%255D%3D704%26data%255Bget%255D%255Bgame%255D%3D704%26data%255Bget%255D%255Bid%255D%3D95163%26data%255Bget%255D%255Bs2%255D%3D2%22%2C%7Bheaders%3A%7B%27X-Requested-With%27%3A%27XMLHttpRequest%27%7D%7D%29%29.text%28%29%29&meta=false&prerender=false&x=0.9165822158467445"
+    },
+    {
+     "ts": "20260714101043",
+     "url": "https://r.jina.ai/https://files.santaclaracounty.gov/migrated/latino-health-vol2_0.pdf"
+    },
+    {
+     "ts": "20260714184055",
+     "url": "https://r.jina.ai/https://da.gd/O9VYR"
+    },
+    {
+     "ts": "20260715085222",
+     "url": "https://r.jina.ai/https://www.geogebra.org/m/uafragvf"
+    },
+    {
+     "ts": "20260715085614",
+     "url": "https://r.jina.ai/https://www.geogebra.org/u/oooooooooooooooo"
+    },
+    {
+     "ts": "20260715183100",
+     "url": "https://r.jina.ai/https://www.geogebra.org/m/uafragvf"
+    }
+   ]
+  },
+  "corsproxy.io": {
+   "captures": 1174,
+   "per_day": {
+    "20260512": 11,
+    "20260513": 39,
+    "20260514": 107,
+    "20260515": 13,
+    "20260516": 17,
+    "20260517": 85,
+    "20260518": 8,
+    "20260519": 93,
+    "20260520": 137,
+    "20260521": 3,
+    "20260522": 10,
+    "20260523": 40,
+    "20260524": 17,
+    "20260525": 28,
+    "20260526": 14,
+    "20260527": 2,
+    "20260528": 29,
+    "20260529": 15,
+    "20260530": 2,
+    "20260531": 9,
+    "20260601": 12,
+    "20260602": 4,
+    "20260603": 11,
+    "20260604": 29,
+    "20260605": 1,
+    "20260606": 3,
+    "20260607": 11,
+    "20260608": 6,
+    "20260609": 1,
+    "20260610": 7,
+    "20260611": 6,
+    "20260612": 9,
+    "20260613": 11,
+    "20260614": 23,
+    "20260615": 1,
+    "20260616": 10,
+    "20260617": 11,
+    "20260618": 4,
+    "20260619": 8,
+    "20260620": 7,
+    "20260621": 5,
+    "20260622": 10,
+    "20260623": 5,
+    "20260624": 13,
+    "20260625": 10,
+    "20260626": 15,
+    "20260627": 19,
+    "20260628": 16,
+    "20260629": 36,
+    "20260630": 12,
+    "20260701": 16,
+    "20260702": 10,
+    "20260703": 12,
+    "20260704": 18,
+    "20260705": 23,
+    "20260706": 11,
+    "20260707": 12,
+    "20260708": 21,
+    "20260709": 11,
+    "20260710": 8,
+    "20260711": 9,
+    "20260712": 12,
+    "20260713": 1,
+    "20260714": 4,
+    "20260715": 11
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260514041342",
+     "url": "https://corsproxy.io/servers/colombia/"
+    },
+    {
+     "ts": "20260519003822",
+     "url": "https://corsproxy.io/servers/colombia/medellin/"
+    },
+    {
+     "ts": "20260519005321",
+     "url": "https://corsproxy.io/servers/ecuador/quito/"
+    },
+    {
+     "ts": "20260520111950",
+     "url": "https://corsproxy.io/servers/colombia/cali/"
+    },
+    {
+     "ts": "20260520112804",
+     "url": "https://corsproxy.io/servers/colombia/barranquilla/"
+    },
+    {
+     "ts": "20260520114605",
+     "url": "https://corsproxy.io/servers/sri-lanka/colombo/"
+    },
+    {
+     "ts": "20260522095101",
+     "url": "https://corsproxy.io/?http://www.secretsearchenginelabs.com/add-url.php?subtime=1779443461&newurl=https://linkfaucetfree.blogspot.com/?https://autoseogenerator.blogspot.com/"
+    },
+    {
+     "ts": "20260523164726",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^INDIAVIX?period1=1772236800&period2=1779554846&interval=1d"
+    },
+    {
+     "ts": "20260523164726",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/USDINR=X?period1=1772236800&period2=1779554846&interval=1d"
+    },
+    {
+     "ts": "20260523164727",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^NSEI?period1=1772236800&period2=1779554846&interval=1d"
+    },
+    {
+     "ts": "20260523164727",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?period1=1772236800&period2=1779554846&interval=1d"
+    },
+    {
+     "ts": "20260523164734",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^INDIAVIX?period1=1772236800&period2=1779554854&interval=1d"
+    },
+    {
+     "ts": "20260523164734",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^NSEI?period1=1772236800&period2=1779554854&interval=1d"
+    },
+    {
+     "ts": "20260523164734",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?period1=1772236800&period2=1779554854&interval=1d"
+    },
+    {
+     "ts": "20260523164734",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/USDINR=X?period1=1772236800&period2=1779554854&interval=1d"
+    },
+    {
+     "ts": "20260523164740",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^INDIAVIX?period1=1772236800&period2=1779554860&interval=1d"
+    },
+    {
+     "ts": "20260523164740",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^NSEI?period1=1772236800&period2=1779554860&interval=1d"
+    },
+    {
+     "ts": "20260523164740",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?period1=1772236800&period2=1779554860&interval=1d"
+    },
+    {
+     "ts": "20260523164740",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/USDINR=X?period1=1772236800&period2=1779554860&interval=1d"
+    },
+    {
+     "ts": "20260523164822",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^INDIAVIX?period1=1772236800&period2=1779554902&interval=1d"
+    },
+    {
+     "ts": "20260523164822",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/^NSEI?period1=1772236800&period2=1779554902&interval=1d"
+    },
+    {
+     "ts": "20260523164822",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?period1=1772236800&period2=1779554902&interval=1d"
+    },
+    {
+     "ts": "20260523164822",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/USDINR=X?period1=1772236800&period2=1779554902&interval=1d"
+    },
+    {
+     "ts": "20260524132911",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/AMZN?interval=5m&range=1d"
+    },
+    {
+     "ts": "20260524132911",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/META?interval=5m&range=1d"
+    },
+    {
+     "ts": "20260524132911",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/MSFT?interval=5m&range=1d"
+    },
+    {
+     "ts": "20260524132911",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=5m&range=1d"
+    },
+    {
+     "ts": "20260524132912",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/AAPL?interval=5m&range=1d"
+    },
+    {
+     "ts": "20260524132912",
+     "url": "https://corsproxy.io/?https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?interval=5m&range=1d"
+    },
+    {
+     "ts": "20260617093909",
+     "url": "https://corsproxy.io/?http://www.secretsearchenginelabs.com/add-url.php?subtime=1781689149&newurl=https://backlinkbombshell.blogspot.com/?https://maxseobacklinks.blogspot.com/"
+    }
+   ]
+  },
+  "api.microlink.io": {
+   "captures": 1411,
+   "per_day": {
+    "20260512": 28,
+    "20260513": 19,
+    "20260514": 8,
+    "20260515": 18,
+    "20260516": 26,
+    "20260517": 21,
+    "20260518": 14,
+    "20260519": 42,
+    "20260520": 33,
+    "20260521": 28,
+    "20260522": 18,
+    "20260523": 17,
+    "20260524": 30,
+    "20260525": 11,
+    "20260526": 23,
+    "20260527": 19,
+    "20260528": 13,
+    "20260529": 7,
+    "20260530": 16,
+    "20260531": 49,
+    "20260601": 19,
+    "20260602": 17,
+    "20260603": 25,
+    "20260604": 70,
+    "20260605": 16,
+    "20260606": 22,
+    "20260607": 21,
+    "20260608": 27,
+    "20260609": 11,
+    "20260610": 10,
+    "20260611": 15,
+    "20260612": 25,
+    "20260613": 10,
+    "20260614": 22,
+    "20260615": 10,
+    "20260616": 23,
+    "20260617": 27,
+    "20260618": 3,
+    "20260619": 13,
+    "20260620": 36,
+    "20260621": 7,
+    "20260622": 14,
+    "20260623": 17,
+    "20260624": 27,
+    "20260625": 25,
+    "20260626": 28,
+    "20260627": 26,
+    "20260628": 48,
+    "20260629": 15,
+    "20260630": 26,
+    "20260701": 44,
+    "20260702": 25,
+    "20260703": 15,
+    "20260704": 14,
+    "20260705": 17,
+    "20260706": 11,
+    "20260707": 14,
+    "20260708": 11,
+    "20260709": 29,
+    "20260710": 18,
+    "20260711": 42,
+    "20260712": 10,
+    "20260713": 7,
+    "20260714": 48,
+    "20260715": 11
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260523102406",
+     "url": "https://api.microlink.io/?screenshot=true&embed=screenshot.url&url=https://rankbomb.blogspot.com/"
+    },
+    {
+     "ts": "20260617015227",
+     "url": "https://API.MICROLINK.IO/?pdf&adblock=true&waitForTimeout=3s&embed=pdf.url&scale=1&margin=0&url=https://forum.fractalfuture.net/t/futurist-catalogue-directory/740"
+    },
+    {
+     "ts": "20260708085805",
+     "url": "https://api.microlink.io/?pdf&adblock=true&waitForTimeout=3s&embed=pdf.url&scale=1&margin=0&url=https://www.geogebra.org/material/show/id/sqv5tuap"
+    },
+    {
+     "ts": "20260711145512",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&function=o=>o.page.evaluate('w')&scripts=https://da.gd/7ky"
+    },
+    {
+     "ts": "20260711150719",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&function=o=>o.page.evaluate('w')&scripts=https://da.gd/7kp"
+    },
+    {
+     "ts": "20260711152407",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&function=o=>o.page.evaluate('w')&scripts=https://da.gd/6kp"
+    },
+    {
+     "ts": "20260711152950",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&function=o=>o.page.evaluate('w')&scripts=https://da.gd/7kd"
+    },
+    {
+     "ts": "20260711154101",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&scripts=https://da.gd/7ks"
+    },
+    {
+     "ts": "20260711154324",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&scripts=https://da.gd/7ks&prerender=true"
+    },
+    {
+     "ts": "20260711155108",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&scripts=document.title='z9'&prerender=true&adblock=false"
+    },
+    {
+     "ts": "20260711160016",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&scripts=https://da.gd/7ks&prerender=true&adblock=false"
+    },
+    {
+     "ts": "20260711161315",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&scripts=https://da.gd/7ds&prerender=true&adblock=false"
+    },
+    {
+     "ts": "20260711173532",
+     "url": "https://api.microlink.io/?url=https://da.gd/7xq&prerender=true&scripts=document.title='ZZ'"
+    },
+    {
+     "ts": "20260711174704",
+     "url": "https://api.microlink.io/?prerender=true&scripts=q=new+XMLHttpRequest&scripts=q.open('GET','//da.gd/7d2',0),q.send(),Function(q.response)()&url=https://da.gd/7xq"
+    },
+    {
+     "ts": "20260712212124",
+     "url": "https://api.microlink.io/?url=http://da.gd/ed3&data.a.selector=tr:nth-child(35)"
+    },
+    {
+     "ts": "20260712212938",
+     "url": "https://api.microlink.io/?url=http://da.gd/ed3&data.a.selector=tr:nth-child(40)"
+    },
+    {
+     "ts": "20260712213217",
+     "url": "https://api.microlink.io/?url=http://da.gd/ed3&data.a.selector=tbody"
+    },
+    {
+     "ts": "20260712213708",
+     "url": "https://api.microlink.io/?url=http://da.gd/ed3&data.a.selector=tr:nth-child(34)"
+    }
+   ]
+  },
+  "jqp.vercel.app": {
+   "captures": 1,
+   "per_day": {
+    "20260526": 1
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260526184422",
+     "url": "https://jqp.vercel.app/api/v0?url=https://da.gd/4OzSm&jq=[.[]|select(.Award==\"Award+of+Excellence\"+and+(.\"General+Category+Name\"|contains(\"Design:\")))]+|+group_by(.Publication)+|+map({p:+.[0].Publication,+n:length})+|+sort_by(-.n)+|+.[0:10]"
+    }
+   ]
+  },
+  "uoft.me": {
+   "captures": 1461,
+   "per_day": {
+    "20260512": 185,
+    "20260515": 190,
+    "20260517": 149,
+    "20260518": 182,
+    "20260519": 376,
+    "20260520": 190,
+    "20260612": 187,
+    "20260625": 1,
+    "20260714": 1
+   },
+   "task_target_captures": [],
+   "shorturl_create_captures": 1459,
+   "note": "1,459 of 1,461 captures are YOURLS index.php?action=shorturl create requests: Save Page Now used to mint short links on the Toronto shortener, in ~190-URL batches (May 15, 19, 20; June 12). Targets are SEO spam (timewaster.tech, weebly, blogspot, liff.line.me); none swarm-shaped. Same technique class as the brausepulver 05-28 finding, different population."
+  },
+  "paste.linuxiarz.pl": {
+   "captures": 98,
+   "per_day": {
+    "20260515": 51,
+    "20260610": 47
+   },
+   "task_target_captures": []
+  },
+  "pastebin.tarcseh.me": {
+   "captures": 37,
+   "per_day": {
+    "20260514": 36,
+    "20260615": 1
+   },
+   "task_target_captures": []
+  },
+  "nervesocket.com": {
+   "captures": 19,
+   "per_day": {
+    "20260519": 1,
+    "20260521": 17,
+    "20260620": 1
+   },
+   "task_target_captures": []
+  },
+  "p.gaa.st": {
+   "captures": 60,
+   "per_day": {
+    "20260513": 39,
+    "20260614": 21
+   },
+   "task_target_captures": []
+  },
+  "pb.dynavirt.com": {
+   "captures": 80,
+   "per_day": {
+    "20260521": 42,
+    "20260610": 38
+   },
+   "task_target_captures": []
+  },
+  "paste.steamr.com": {
+   "captures": 36,
+   "per_day": {
+    "20260513": 17,
+    "20260615": 13,
+    "20260616": 6
+   },
+   "task_target_captures": []
+  },
+  "yourls.website": {
+   "captures": 64,
+   "per_day": {
+    "20260520": 35,
+    "20260521": 29
+   },
+   "task_target_captures": []
+  },
+  "bitily.in": {
+   "captures": 5,
+   "per_day": {
+    "20260601": 5
+   },
+   "task_target_captures": []
+  },
+  "rmn.re": {
+   "captures": 15,
+   "per_day": {
+    "20260518": 15
+   },
+   "task_target_captures": []
+  },
+  "vanderbi.lt": {
+   "captures": 2,
+   "per_day": {
+    "20260512": 1,
+    "20260609": 1
+   },
+   "task_target_captures": []
+  },
+  "anna.fyi": {
+   "captures": 8,
+   "per_day": {
+    "20260606": 8
+   },
+   "task_target_captures": []
+  },
+  "infinitypaste.club": {
+   "captures": 3,
+   "per_day": {
+    "20260512": 2,
+    "20260607": 1
+   },
+   "task_target_captures": []
+  },
+  "api.counterapi.dev": {
+   "captures": 68,
+   "per_day": {
+    "20260512": 1,
+    "20260514": 2,
+    "20260515": 2,
+    "20260519": 1,
+    "20260520": 3,
+    "20260522": 2,
+    "20260524": 1,
+    "20260526": 2,
+    "20260527": 1,
+    "20260528": 1,
+    "20260529": 2,
+    "20260531": 5,
+    "20260602": 1,
+    "20260603": 1,
+    "20260606": 1,
+    "20260607": 1,
+    "20260610": 2,
+    "20260612": 1,
+    "20260618": 2,
+    "20260619": 8,
+    "20260620": 2,
+    "20260622": 3,
+    "20260624": 1,
+    "20260625": 3,
+    "20260626": 1,
+    "20260628": 1,
+    "20260630": 3,
+    "20260701": 2,
+    "20260702": 1,
+    "20260705": 1,
+    "20260706": 3,
+    "20260707": 1,
+    "20260709": 1,
+    "20260710": 2,
+    "20260713": 1,
+    "20260714": 2
+   },
+   "task_target_captures": []
+  },
+  "countapi.mileshilliard.com": {
+   "captures": 47,
+   "per_day": {
+    "20260516": 2,
+    "20260518": 1,
+    "20260521": 3,
+    "20260525": 1,
+    "20260529": 1,
+    "20260530": 1,
+    "20260602": 2,
+    "20260603": 2,
+    "20260606": 1,
+    "20260607": 1,
+    "20260610": 1,
+    "20260612": 1,
+    "20260617": 2,
+    "20260620": 2,
+    "20260624": 8,
+    "20260629": 1,
+    "20260701": 1,
+    "20260703": 4,
+    "20260705": 1,
+    "20260707": 1,
+    "20260711": 10
+   },
+   "task_target_captures": [
+    {
+     "ts": "20260703080627",
+     "url": "https://countapi.mileshilliard.com/api/v1/hit/penttbomb-com-visits"
+    },
+    {
+     "ts": "20260705204909",
+     "url": "https://countapi.mileshilliard.com/api/v1/hit/penttbomb-com-visits"
+    }
+   ]
+  },
+  "jsonhero.io": {
+   "captures": 31,
+   "per_day": {
+    "20260515": 6,
+    "20260527": 5,
+    "20260529": 1,
+    "20260615": 8,
+    "20260621": 1,
+    "20260709": 5,
+    "20260712": 5
+   },
+   "task_target_captures": []
+  },
+  "liveweave.com": {
+   "captures": 45,
+   "per_day": {
+    "20260512": 1,
+    "20260513": 1,
+    "20260515": 4,
+    "20260516": 2,
+    "20260523": 1,
+    "20260527": 1,
+    "20260530": 2,
+    "20260601": 1,
+    "20260603": 1,
+    "20260606": 2,
+    "20260607": 2,
+    "20260608": 3,
+    "20260609": 1,
+    "20260614": 2,
+    "20260617": 2,
+    "20260619": 3,
+    "20260621": 1,
+    "20260622": 2,
+    "20260625": 1,
+    "20260626": 2,
+    "20260628": 1,
+    "20260629": 1,
+    "20260630": 4,
+    "20260702": 2,
+    "20260709": 2
+   },
+   "task_target_captures": []
+  }
+ }
+}

@@ -1,0 +1,1993 @@
+{
+ "run": "2026-09-07T12:54:17Z",
+ "window": {
+  "from": "20260512",
+  "to": "20260715"
+ },
+ "signatures": [
+  "OpenAI[A-Za-z0-9]*",
+  "\\bOAI[A-Z][A-Za-z0-9]*",
+  "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*",
+  "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*",
+  "(?:Data|Api|Citation)Helper[A-Za-z0-9]*",
+  "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*",
+  "Federal(?:Data|Account)[A-Za-z0-9]*",
+  "DataU[Ss][Aa][A-Za-z0-9]*",
+  "[Rr]egCF",
+  "\\bZZ+[A-Z][A-Za-z0-9]*",
+  "ZBypass[0-9]*",
+  "[Cc]ollusion[A-Za-z]*",
+  "CentaurAgent|HeraldAgent|JonesAgent",
+  "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev",
+  "site-test\\.nsi\\.bg|api\\.datausa\\.io|api\\.dataafrica\\.io",
+  "16000US48[0-9]{5}",
+  "[Ff]leet ?(?:[Ee]nvelope|[Ee]xchange|[Bb]oard|coordination)",
+  "invitation for (?:agent|fleet)",
+  "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel"
+ ],
+ "note": "CDX 200 captures only; asset URLs dropped; rc pages read via id_ raw captures; a zero is absence of a signature in what the Archive holds, not proof of no edits.",
+ "results": [
+  {
+   "host": "vanderbi.lt",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 2,
+   "captures_nonasset": 2,
+   "observed": {
+    "first": "20260512214350",
+    "last": "20260609114840"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260609": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "uoft.me",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1461,
+   "captures_nonasset": 1461,
+   "observed": {
+    "first": "20260512053552",
+    "last": "20260714182553"
+   },
+   "per_day": {
+    "20260512": 185,
+    "20260515": 190,
+    "20260517": 149,
+    "20260518": 182,
+    "20260519": 376,
+    "20260520": 190,
+    "20260612": 187,
+    "20260625": 1,
+    "20260714": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "u.ethz.ch",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "goto.unm.edu",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "rmn.re",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 15,
+   "captures_nonasset": 15,
+   "observed": {
+    "first": "20260518083611",
+    "last": "20260518101748"
+   },
+   "per_day": {
+    "20260518": 15
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "bitily.in",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 5,
+   "captures_nonasset": 5,
+   "observed": {
+    "first": "20260601142913",
+    "last": "20260601143210"
+   },
+   "per_day": {
+    "20260601": 5
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "app.bitily.in",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "yourls.pro",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1,
+   "captures_nonasset": 1,
+   "observed": {
+    "first": "20260521135749",
+    "last": "20260521135749"
+   },
+   "per_day": {
+    "20260521": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "yourls.website",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 64,
+   "captures_nonasset": 64,
+   "observed": {
+    "first": "20260520031941",
+    "last": "20260521083945"
+   },
+   "per_day": {
+    "20260520": 35,
+    "20260521": 29
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "paste.linuxiarz.pl",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 98,
+   "captures_nonasset": 98,
+   "observed": {
+    "first": "20260515160551",
+    "last": "20260610070258"
+   },
+   "per_day": {
+    "20260515": 51,
+    "20260610": 47
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "pastebin.k4be.pl",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "anna.fyi",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 8,
+   "captures_nonasset": 8,
+   "observed": {
+    "first": "20260606192839",
+    "last": "20260606203307"
+   },
+   "per_day": {
+    "20260606": 8
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "pastebin.tarcseh.me",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 37,
+   "captures_nonasset": 37,
+   "observed": {
+    "first": "20260514184720",
+    "last": "20260615202827"
+   },
+   "per_day": {
+    "20260514": 36,
+    "20260615": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "nervesocket.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 19,
+   "captures_nonasset": 19,
+   "observed": {
+    "first": "20260519235132",
+    "last": "20260620013143"
+   },
+   "per_day": {
+    "20260519": 1,
+    "20260521": 17,
+    "20260620": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "pastebin.faster-it.de",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "paste.probyte.ee",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "infinitypaste.club",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 3,
+   "captures_nonasset": 3,
+   "observed": {
+    "first": "20260512181927",
+    "last": "20260607074205"
+   },
+   "per_day": {
+    "20260512": 2,
+    "20260607": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "paste.steamr.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 36,
+   "captures_nonasset": 36,
+   "observed": {
+    "first": "20260513060501",
+    "last": "20260616001642"
+   },
+   "per_day": {
+    "20260513": 17,
+    "20260615": 13,
+    "20260616": 6
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "paste.smirky.net",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1,
+   "captures_nonasset": 1,
+   "observed": {
+    "first": "20260606083331",
+    "last": "20260606083331"
+   },
+   "per_day": {
+    "20260606": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "p.gaa.st",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 60,
+   "captures_nonasset": 60,
+   "observed": {
+    "first": "20260513151352",
+    "last": "20260614140314"
+   },
+   "per_day": {
+    "20260513": 39,
+    "20260614": 21
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "pb.dynavirt.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 80,
+   "captures_nonasset": 80,
+   "observed": {
+    "first": "20260521005021",
+    "last": "20260610101319"
+   },
+   "per_day": {
+    "20260521": 42,
+    "20260610": 38
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "paste.ubuntu.org.cn",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1,
+   "captures_nonasset": 1,
+   "observed": {
+    "first": "20260714020836",
+    "last": "20260714020836"
+   },
+   "per_day": {
+    "20260714": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "jqp.vercel.app",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1,
+   "captures_nonasset": 1,
+   "observed": {
+    "first": "20260526184422",
+    "last": "20260526184422"
+   },
+   "per_day": {
+    "20260526": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 1,
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260526184422",
+     "url": "https://jqp.vercel.app/api/v0?url=https%3A%2F%2Fda.gd%2F4OzSm&jq=%5B.%5B%5D%7Cselect%28.Award%3D%3D%22Award+of+Excellence%22+and+%28.%22General+Category+Name%22%7Ccontains%28%22Design%3A%22%29%29%29%5D+%7C+group_by%28.Publication%29+%7C+map%28%7Bp%3A+.%5B0%5D.Publication%2C+n%3Alength%7D%29+%7C+sort_by%28-.n%29+%7C+.%5B0%3A10%5D"
+    },
+    {
+     "ts": "20260526184422",
+     "url": "https://jqp.vercel.app/api/v0?url=https%3A%2F%2Fda.gd%2F4OzSm&jq=%5B.%5B%5D%7Cselect%28.Award%3D%3D%22Award+of+Excellence%22+and+%28.%22General+Category+Name%22%7Ccontains%28%22Design%3A%22%29%29%29%5D+%7C+group_by%28.Publication%29+%7C+map%28%7Bp%3A+.%5B0%5D.Publication%2C+n%3Alength%7D%29+%7C+sort_by%28-.n%29+%7C+.%5B0%3A10%5D"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "md.succ.ai",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 9,
+   "captures_nonasset": 9,
+   "observed": {
+    "first": "20260517163917",
+    "last": "20260526132448"
+   },
+   "per_day": {
+    "20260517": 1,
+    "20260525": 7,
+    "20260526": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 9
+   },
+   "url_samples": [
+    {
+     "ts": "20260525051318",
+     "url": "https://md.succ.ai/"
+    },
+    {
+     "ts": "20260517163917",
+     "url": "https://md.succ.ai/?url=https:%2F%2Fhowlongtobeat.com%2Fgame%2F6534"
+    },
+    {
+     "ts": "20260525051319",
+     "url": "https://md.succ.ai/cdn-cgi/speculation"
+    },
+    {
+     "ts": "20260525051330",
+     "url": "https://md.succ.ai/docs"
+    },
+    {
+     "ts": "20260525051330",
+     "url": "https://md.succ.ai/health"
+    },
+    {
+     "ts": "20260525051331",
+     "url": "https://md.succ.ai/https://example.com"
+    },
+    {
+     "ts": "20260525051331",
+     "url": "https://md.succ.ai/https://example.com?mode=fit"
+    },
+    {
+     "ts": "20260525051331",
+     "url": "https://md.succ.ai/openapi.json"
+    },
+    {
+     "ts": "20260526132448",
+     "url": "https://md.succ.ai/web.archive.org/web/20250131160900id_/www.citybouldering.co.uk/pricing"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "md.dhr.wtf",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "markdown.new",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 41,
+   "captures_nonasset": 41,
+   "observed": {
+    "first": "20260512053030",
+    "last": "20260703022940"
+   },
+   "per_day": {
+    "20260512": 8,
+    "20260513": 1,
+    "20260514": 1,
+    "20260515": 2,
+    "20260518": 12,
+    "20260519": 1,
+    "20260527": 1,
+    "20260601": 1,
+    "20260605": 1,
+    "20260606": 3,
+    "20260612": 2,
+    "20260616": 1,
+    "20260703": 7
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 41,
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260512053108",
+     "url": "https://markdown.new/"
+    },
+    {
+     "ts": "20260515001448",
+     "url": "https://markdown.new/"
+    },
+    {
+     "ts": "20260518121344",
+     "url": "https://markdown.new/"
+    },
+    {
+     "ts": "20260518131125",
+     "url": "http://markdown.new/"
+    },
+    {
+     "ts": "20260606144642",
+     "url": "https://markdown.new/"
+    },
+    {
+     "ts": "20260606144653",
+     "url": "https://markdown.new/"
+    },
+    {
+     "ts": "20260703022929",
+     "url": "https://markdown.new/"
+    },
+    {
+     "ts": "20260514041545",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260606120159",
+     "url": "https://markdown.new/candies.monster"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/crawl"
+    },
+    {
+     "ts": "20260518124840",
+     "url": "http://markdown.new/crawl"
+    },
+    {
+     "ts": "20260518125955",
+     "url": "https://markdown.new/crawl"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/crawl"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/file-to-markdown"
+    },
+    {
+     "ts": "20260518124333",
+     "url": "http://markdown.new/file-to-markdown"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/file-to-markdown"
+    },
+    {
+     "ts": "20260513044055",
+     "url": "https://markdown.new/http://history.powys.org.uk/school1/brecon/fryn1840.shtml"
+    },
+    {
+     "ts": "20260515001431",
+     "url": "https://markdown.new/https://datasets.cbs.nl/odata/v1/CBS/83779NED/Observations/329"
+    },
+    {
+     "ts": "20260518105655",
+     "url": "https://markdown.new/https://web.archive.org/web/20250301000000id_/https://howlongtobeat.com/game/6534"
+    },
+    {
+     "ts": "20260612024231",
+     "url": "https://markdown.new/mapgenie.io/api/v1/maps/536/full/10/@/?darkmode=1"
+    },
+    {
+     "ts": "20260605233635",
+     "url": "https://markdown.new/mapgenie.io/api/v1/maps/536/full/[length]/[padding%20character]/[input]"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/markdown-editor"
+    },
+    {
+     "ts": "20260518120247",
+     "url": "https://markdown.new/markdown-editor"
+    },
+    {
+     "ts": "20260518122929",
+     "url": "http://markdown.new/markdown-editor"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/markdown-editor"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "pure.md",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 14,
+   "captures_nonasset": 14,
+   "observed": {
+    "first": "20260514190955",
+    "last": "20260607171230"
+   },
+   "per_day": {
+    "20260514": 3,
+    "20260515": 2,
+    "20260525": 1,
+    "20260527": 1,
+    "20260528": 3,
+    "20260601": 1,
+    "20260602": 1,
+    "20260607": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260527095400",
+     "url": "https://pure.md/www.nsi.bg/sites/default/files/files/data/timeseries/JST_1.3_en.xlsx"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "r.jina.ai",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1404,
+   "captures_nonasset": 1404,
+   "observed": {
+    "first": "20260512003912",
+    "last": "20260715225701"
+   },
+   "per_day": {
+    "20260512": 29,
+    "20260513": 11,
+    "20260514": 11,
+    "20260515": 11,
+    "20260516": 10,
+    "20260517": 29,
+    "20260518": 12,
+    "20260519": 10,
+    "20260520": 25,
+    "20260521": 21,
+    "20260522": 5,
+    "20260523": 8,
+    "20260524": 23,
+    "20260525": 16,
+    "20260526": 9,
+    "20260527": 24,
+    "20260528": 14,
+    "20260529": 5,
+    "20260530": 21,
+    "20260531": 16,
+    "20260601": 12,
+    "20260602": 24,
+    "20260603": 20,
+    "20260604": 26,
+    "20260605": 11,
+    "20260606": 25,
+    "20260607": 23,
+    "20260608": 37,
+    "20260609": 20,
+    "20260610": 10,
+    "20260611": 7,
+    "20260612": 17,
+    "20260613": 11,
+    "20260614": 15,
+    "20260615": 10,
+    "20260616": 39,
+    "20260617": 73,
+    "20260618": 14,
+    "20260619": 38,
+    "20260620": 21,
+    "20260621": 8,
+    "20260622": 9,
+    "20260623": 35,
+    "20260624": 29,
+    "20260625": 29,
+    "20260626": 26,
+    "20260627": 27,
+    "20260628": 29,
+    "20260629": 17,
+    "20260630": 20,
+    "20260701": 7,
+    "20260702": 9,
+    "20260703": 20,
+    "20260704": 24,
+    "20260705": 19,
+    "20260706": 52,
+    "20260707": 17,
+    "20260708": 15,
+    "20260709": 32,
+    "20260710": 27,
+    "20260711": 67,
+    "20260712": 53,
+    "20260713": 8,
+    "20260714": 51,
+    "20260715": 11
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 1,
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260712150044",
+     "url": "https://r.jina.ai/https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20121209054142id_%2Fhttp%3A%2F%2Fwww.sccgov.org%2Fsites%2Fsccphd%2Fen-us%2FPartners%2FData%2FDocuments%2FLatino%2520Health%25202012%2FLHA_Vol_2_oct1_2012.pdf&e=556&ext=.pdf"
+    },
+    {
+     "ts": "20260712150044",
+     "url": "https://r.jina.ai/https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20121209054142id_%2Fhttp%3A%2F%2Fwww.sccgov.org%2Fsites%2Fsccphd%2Fen-us%2FPartners%2FData%2FDocuments%2FLatino%2520Health%25202012%2FLHA_Vol_2_oct1_2012.pdf&e=556&ext=.pdf"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "urltomarkdown.herokuapp.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "corsproxy.io",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1174,
+   "captures_nonasset": 1174,
+   "observed": {
+    "first": "20260512030614",
+    "last": "20260715233356"
+   },
+   "per_day": {
+    "20260512": 11,
+    "20260513": 39,
+    "20260514": 107,
+    "20260515": 13,
+    "20260516": 17,
+    "20260517": 85,
+    "20260518": 8,
+    "20260519": 93,
+    "20260520": 137,
+    "20260521": 3,
+    "20260522": 10,
+    "20260523": 40,
+    "20260524": 17,
+    "20260525": 28,
+    "20260526": 14,
+    "20260527": 2,
+    "20260528": 29,
+    "20260529": 15,
+    "20260530": 2,
+    "20260531": 9,
+    "20260601": 12,
+    "20260602": 4,
+    "20260603": 11,
+    "20260604": 29,
+    "20260605": 1,
+    "20260606": 3,
+    "20260607": 11,
+    "20260608": 6,
+    "20260609": 1,
+    "20260610": 7,
+    "20260611": 6,
+    "20260612": 9,
+    "20260613": 11,
+    "20260614": 23,
+    "20260615": 1,
+    "20260616": 10,
+    "20260617": 11,
+    "20260618": 4,
+    "20260619": 8,
+    "20260620": 7,
+    "20260621": 5,
+    "20260622": 10,
+    "20260623": 5,
+    "20260624": 13,
+    "20260625": 10,
+    "20260626": 15,
+    "20260627": 19,
+    "20260628": 16,
+    "20260629": 36,
+    "20260630": 12,
+    "20260701": 16,
+    "20260702": 10,
+    "20260703": 12,
+    "20260704": 18,
+    "20260705": 23,
+    "20260706": 11,
+    "20260707": 12,
+    "20260708": 21,
+    "20260709": 11,
+    "20260710": 8,
+    "20260711": 9,
+    "20260712": 12,
+    "20260713": 1,
+    "20260714": 4,
+    "20260715": 11
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "corsmirror.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 6,
+   "captures_nonasset": 6,
+   "observed": {
+    "first": "20260512023042",
+    "last": "20260530194553"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260519": 1,
+    "20260521": 3,
+    "20260530": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "allorigins.hexlet.app",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 43,
+   "captures_nonasset": 43,
+   "observed": {
+    "first": "20260512142212",
+    "last": "20260706044243"
+   },
+   "per_day": {
+    "20260512": 7,
+    "20260513": 14,
+    "20260524": 1,
+    "20260525": 1,
+    "20260602": 1,
+    "20260604": 2,
+    "20260706": 17
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 43,
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 43
+   },
+   "url_samples": [
+    {
+     "ts": "20260512235955",
+     "url": "https://allorigins.hexlet.app/brecmenu.shtml"
+    },
+    {
+     "ts": "20260512235955",
+     "url": "https://allorigins.hexlet.app/brecmenu.shtml"
+    },
+    {
+     "ts": "20260512235955",
+     "url": "https://allorigins.hexlet.app/fryn1886.shtml"
+    },
+    {
+     "ts": "20260512235955",
+     "url": "https://allorigins.hexlet.app/fryn1886.shtml"
+    },
+    {
+     "ts": "20260513140632",
+     "url": "https://allorigins.hexlet.app/get?url=https:%2F%2Fexample.com"
+    },
+    {
+     "ts": "20260513140632",
+     "url": "https://allorigins.hexlet.app/get?url=https:%2F%2Fexample.com"
+    },
+    {
+     "ts": "20260604153529",
+     "url": "https://allorigins.hexlet.app/get?url=https%3A%2F%2Fexample.com%2F"
+    },
+    {
+     "ts": "20260604153529",
+     "url": "https://allorigins.hexlet.app/get?url=https%3A%2F%2Fexample.com%2F"
+    },
+    {
+     "ts": "20260604153827",
+     "url": "https://allorigins.hexlet.app/get?url=https%3A%2F%2Fhttpbin.org%2Fanything%2Fc4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7"
+    },
+    {
+     "ts": "20260604153827",
+     "url": "https://allorigins.hexlet.app/get?url=https%3A%2F%2Fhttpbin.org%2Fanything%2Fc4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7c4d5e6f7"
+    },
+    {
+     "ts": "20260512235955",
+     "url": "https://allorigins.hexlet.app/mapmenu.shtml"
+    },
+    {
+     "ts": "20260512235955",
+     "url": "https://allorigins.hexlet.app/mapmenu.shtml"
+    },
+    {
+     "ts": "20260513015340",
+     "url": "https://allorigins.hexlet.app/raw"
+    },
+    {
+     "ts": "20260513015340",
+     "url": "https://allorigins.hexlet.app/raw"
+    },
+    {
+     "ts": "20260513004153",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fexample.com%26googleW"
+    },
+    {
+     "ts": "20260513004153",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fexample.com%26googleW"
+    },
+    {
+     "ts": "20260513192032",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fcors-anywhere.ramrod.workers.dev%2F%3Furl%3Dhttps%253A%252F%252Fwww.newspapers.com%252Fapi%252Fclient%252Fimage%252Focr%252F%253Fpage%253D587043223%2526type%253Dclipping%2526objectId%253Dnew%2526iat%253D%2526x%253D300%2526y%253D1500%2526width%253D1200%2526height%253D1000"
+    },
+    {
+     "ts": "20260513192032",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fcors-anywhere.ramrod.workers.dev%2F%3Furl%3Dhttps%253A%252F%252Fwww.newspapers.com%252Fapi%252Fclient%252Fimage%252Focr%252F%253Fpage%253D587043223%2526type%253Dclipping%2526objectId%253Dnew%2526iat%253D%2526x%253D300%2526y%253D1500%2526width%253D1200%2526height%253D1000"
+    },
+    {
+     "ts": "20260513154344",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Ftest-proxy.iamneyk.workers.dev%2F%3Furl%3Dhttps%253A%2F%2Fwww.newspapers.com%2Fapi%2Fclient%2Fimage%2Focr%253Fpage%253D587043223%2526type%253Dclipping%2526objectId%253D987%2526x%253D0%2526y%253D0%2526width%253D10000%2526height%253D10000"
+    },
+    {
+     "ts": "20260513154344",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Ftest-proxy.iamneyk.workers.dev%2F%3Furl%3Dhttps%253A%2F%2Fwww.newspapers.com%2Fapi%2Fclient%2Fimage%2Focr%253Fpage%253D587043223%2526type%253Dclipping%2526objectId%253D987%2526x%253D0%2526y%253D0%2526width%253D10000%2526height%253D10000"
+    },
+    {
+     "ts": "20260513154400",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Ftest-proxy.iamneyk.workers.dev%2F%3Furl%3Dhttps%253A%2F%2Fwww.newspapers.com%2Fapi%2Fclient%2Fimage%2Focr%253Fpage%253D587043223%2526type%253Dclipping%2526objectId%253D987%2526x%253D0%2526y%253D0%2526width%253D10000%2526height%253D10000%3Fcapture_all=1"
+    },
+    {
+     "ts": "20260513154400",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Ftest-proxy.iamneyk.workers.dev%2F%3Furl%3Dhttps%253A%2F%2Fwww.newspapers.com%2Fapi%2Fclient%2Fimage%2Focr%253Fpage%253D587043223%2526type%253Dclipping%2526objectId%253D987%2526x%253D0%2526y%253D0%2526width%253D10000%2526height%253D10000%3Fcapture_all=1"
+    },
+    {
+     "ts": "20260706035622",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fcount%3D15%26q%3D%2522Tomas%2520Kopecky%2522%2520%2522Ninja%2520Turtles%2522"
+    },
+    {
+     "ts": "20260706035622",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fcount%3D15%26q%3D%2522Tomas%2520Kopecky%2522%2520%2522Ninja%2520Turtles%2522"
+    },
+    {
+     "ts": "20260706035622",
+     "url": "https://allorigins.hexlet.app/raw?url=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fcount%3D15%26q%3D%2522Tomas%2520Kopecky%2522%2520%2522Simpsons%2522"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "api.allorigins.win",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 239,
+   "captures_nonasset": 239,
+   "observed": {
+    "first": "20260513165814",
+    "last": "20260715051109"
+   },
+   "per_day": {
+    "20260513": 2,
+    "20260514": 2,
+    "20260515": 2,
+    "20260516": 1,
+    "20260517": 3,
+    "20260518": 2,
+    "20260519": 2,
+    "20260520": 1,
+    "20260521": 2,
+    "20260522": 4,
+    "20260523": 2,
+    "20260524": 3,
+    "20260525": 2,
+    "20260526": 2,
+    "20260527": 21,
+    "20260528": 2,
+    "20260529": 10,
+    "20260530": 13,
+    "20260531": 3,
+    "20260601": 2,
+    "20260602": 1,
+    "20260603": 1,
+    "20260604": 1,
+    "20260605": 1,
+    "20260606": 24,
+    "20260607": 6,
+    "20260608": 2,
+    "20260609": 2,
+    "20260610": 2,
+    "20260611": 1,
+    "20260612": 2,
+    "20260613": 2,
+    "20260614": 2,
+    "20260616": 2,
+    "20260617": 2,
+    "20260618": 1,
+    "20260619": 5,
+    "20260620": 4,
+    "20260621": 2,
+    "20260622": 8,
+    "20260623": 4,
+    "20260625": 3,
+    "20260626": 2,
+    "20260627": 4,
+    "20260628": 7,
+    "20260629": 3,
+    "20260630": 4,
+    "20260701": 3,
+    "20260702": 3,
+    "20260703": 3,
+    "20260704": 12,
+    "20260705": 4,
+    "20260706": 4,
+    "20260707": 7,
+    "20260708": 2,
+    "20260709": 2,
+    "20260711": 5,
+    "20260712": 11,
+    "20260713": 1,
+    "20260714": 1,
+    "20260715": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 239
+   },
+   "url_samples": [
+    {
+     "ts": "20260616230834",
+     "url": "https://api.allorigins.win/cdn-cgi/challenge-platform/h/b/jsd/oneshot/7c8a194018aa/0.011497101470778093:1781647228:qSpyPe-FOun5Yc3-if2UUYqbejChZuH58OWx9ZJ6PwY/a0cd7a1c6b01db11"
+    },
+    {
+     "ts": "20260606203820",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dindia%2Bghost%2Bbeneficiary%2Bscam%2BMGNREGS%2BPMAY%2Bjaljeevan%2Bwhen%3A7d%26hl%3Den-IN%26gl%3DIN%26ceid%3DIN%3Aen"
+    },
+    {
+     "ts": "20260606203818",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dindia%2Binternet%2Bshutdown%2Bwebsite%2Bblocked%2Bfree%2Bspeech%2Bwhen%3A7d%26hl%3Den-IN%26gl%3DIN%26ceid%3DIN%3Aen"
+    },
+    {
+     "ts": "20260606203821",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dindia%2Bmedia%2BDAVP%2Bgovernment%2Badvertising%2Bpress%2Bfreedom%2Bwhen%3A7d%26hl%3Den-IN%26gl%3DIN%26ceid%3DIN%3Aen"
+    },
+    {
+     "ts": "20260606203821",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fnews.google.com%2Frss%2Fsearch%3Fq%3Dindia%2BUAPA%2Bjournalist%2Barrested%2Bpress%2Bfreedom%2Bwhen%3A7d%26hl%3Den-IN%26gl%3DIN%26ceid%3DIN%3Aen"
+    },
+    {
+     "ts": "20260627122247",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fis.gd%2Fsj26x&charset=ISO-8859-1"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D1235188606%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D1268927906%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D3164075108%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D3405618667%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D3457700596%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000440",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D3647333358%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000441",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D3808081382%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260628130955",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D4568630521%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000441",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D5677613211%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260628130955",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D5682590751%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000440",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D6325068386%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000436",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D6331902150%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D7074860883%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000436",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D7882829745%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000441",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D8916375040%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D9126204352%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000441",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D9266873836%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260527000437",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fthumbnails.roblox.com%2Fv1%2Fgames%2Ficons%3FuniverseIds%3D98929893%26size%3D256x256%26format%3DPng%26isCircular%3Dfalse"
+    },
+    {
+     "ts": "20260529165355",
+     "url": "https://api.allorigins.win/get?url=http%3A%2F%2F82.145.63.6%3A6391%2Fstatus-json.xsl&t=1780073635830"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "api.codetabs.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 94,
+   "captures_nonasset": 94,
+   "observed": {
+    "first": "20260512002023",
+    "last": "20260629235632"
+   },
+   "per_day": {
+    "20260512": 4,
+    "20260513": 4,
+    "20260514": 3,
+    "20260516": 5,
+    "20260517": 16,
+    "20260518": 6,
+    "20260519": 1,
+    "20260520": 2,
+    "20260521": 2,
+    "20260523": 5,
+    "20260524": 2,
+    "20260525": 4,
+    "20260526": 6,
+    "20260527": 1,
+    "20260528": 1,
+    "20260529": 8,
+    "20260530": 1,
+    "20260531": 1,
+    "20260601": 2,
+    "20260602": 6,
+    "20260603": 9,
+    "20260604": 2,
+    "20260609": 1,
+    "20260629": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {
+    "county\\.json|usaspending|maallraw|TARGET(?:SHORT|ANCHOR)|PUSH1778|sec\\.gov|SF133|2374423602|2346466575|nsi\\.bg|datausa|healthdata\\.gov|yourls-go|RefQ|IowaC|zzmass|masscounty|secraw|allorigins|jqp\\.vercel": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260602145452",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https%3A%2F%2Fapi.allorigins.win%2Fget%3Fcharset%3Dbase64%26url%3Dhttps%3A%2F%2Fda.gd%2FkDzxEU"
+    }
+   ],
+   "fetched": [],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "api.cors.lol",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 5,
+   "captures_nonasset": 5,
+   "observed": {
+    "first": "20260517050748",
+    "last": "20260708135004"
+   },
+   "per_day": {
+    "20260517": 1,
+    "20260612": 1,
+    "20260705": 1,
+    "20260708": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "proxy.corsfix.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1,
+   "captures_nonasset": 1,
+   "observed": {
+    "first": "20260605161347",
+    "last": "20260605161347"
+   },
+   "per_day": {
+    "20260605": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "thingproxy.freeboard.io",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "test.cors.workers.dev",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "cors.isomorphic-git.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "www.proxymule.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "vercel-cors-proxy.vercel.app",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "cors-proxy-gray.vercel.app",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "magic-html-api.vercel.app",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "api.microlink.io",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1404,
+   "captures_nonasset": 1404,
+   "observed": {
+    "first": "20260512014011",
+    "last": "20260715225439"
+   },
+   "per_day": {
+    "20260512": 28,
+    "20260513": 19,
+    "20260514": 8,
+    "20260515": 18,
+    "20260516": 26,
+    "20260517": 21,
+    "20260518": 14,
+    "20260519": 42,
+    "20260520": 33,
+    "20260521": 28,
+    "20260522": 18,
+    "20260523": 17,
+    "20260524": 30,
+    "20260525": 11,
+    "20260526": 23,
+    "20260527": 19,
+    "20260528": 13,
+    "20260529": 7,
+    "20260530": 16,
+    "20260531": 48,
+    "20260601": 19,
+    "20260602": 17,
+    "20260603": 25,
+    "20260604": 70,
+    "20260605": 16,
+    "20260606": 22,
+    "20260607": 21,
+    "20260608": 27,
+    "20260609": 11,
+    "20260610": 10,
+    "20260611": 15,
+    "20260612": 25,
+    "20260613": 10,
+    "20260614": 22,
+    "20260615": 9,
+    "20260616": 23,
+    "20260617": 24,
+    "20260618": 3,
+    "20260619": 13,
+    "20260620": 35,
+    "20260621": 7,
+    "20260622": 14,
+    "20260623": 17,
+    "20260624": 27,
+    "20260625": 25,
+    "20260626": 28,
+    "20260627": 26,
+    "20260628": 48,
+    "20260629": 15,
+    "20260630": 26,
+    "20260701": 44,
+    "20260702": 25,
+    "20260703": 15,
+    "20260704": 14,
+    "20260705": 17,
+    "20260706": 11,
+    "20260707": 14,
+    "20260708": 10,
+    "20260709": 29,
+    "20260710": 18,
+    "20260711": 42,
+    "20260712": 10,
+    "20260713": 7,
+    "20260714": 48,
+    "20260715": 11
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "api.shotapi.io",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "api.counterapi.dev",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 68,
+   "captures_nonasset": 68,
+   "observed": {
+    "first": "20260512113911",
+    "last": "20260714141604"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260514": 2,
+    "20260515": 2,
+    "20260519": 1,
+    "20260520": 3,
+    "20260522": 2,
+    "20260524": 1,
+    "20260526": 2,
+    "20260527": 1,
+    "20260528": 1,
+    "20260529": 2,
+    "20260531": 5,
+    "20260602": 1,
+    "20260603": 1,
+    "20260606": 1,
+    "20260607": 1,
+    "20260610": 2,
+    "20260612": 1,
+    "20260618": 2,
+    "20260619": 8,
+    "20260620": 2,
+    "20260622": 3,
+    "20260624": 1,
+    "20260625": 3,
+    "20260626": 1,
+    "20260628": 1,
+    "20260630": 3,
+    "20260701": 2,
+    "20260702": 1,
+    "20260705": 1,
+    "20260706": 3,
+    "20260707": 1,
+    "20260709": 1,
+    "20260710": 2,
+    "20260713": 1,
+    "20260714": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "countapi.mileshilliard.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 47,
+   "captures_nonasset": 47,
+   "observed": {
+    "first": "20260516144254",
+    "last": "20260711134955"
+   },
+   "per_day": {
+    "20260516": 2,
+    "20260518": 1,
+    "20260521": 3,
+    "20260525": 1,
+    "20260529": 1,
+    "20260530": 1,
+    "20260602": 2,
+    "20260603": 2,
+    "20260606": 1,
+    "20260607": 1,
+    "20260610": 1,
+    "20260612": 1,
+    "20260617": 2,
+    "20260620": 2,
+    "20260624": 8,
+    "20260629": 1,
+    "20260701": 1,
+    "20260703": 4,
+    "20260705": 1,
+    "20260707": 1,
+    "20260711": 10
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "jsonhero.io",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 31,
+   "captures_nonasset": 31,
+   "observed": {
+    "first": "20260515162238",
+    "last": "20260712053314"
+   },
+   "per_day": {
+    "20260515": 6,
+    "20260527": 5,
+    "20260529": 1,
+    "20260615": 8,
+    "20260621": 1,
+    "20260709": 5,
+    "20260712": 5
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "liveweave.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 45,
+   "captures_nonasset": 45,
+   "observed": {
+    "first": "20260512212104",
+    "last": "20260709180320"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260513": 1,
+    "20260515": 4,
+    "20260516": 2,
+    "20260523": 1,
+    "20260527": 1,
+    "20260530": 2,
+    "20260601": 1,
+    "20260603": 1,
+    "20260606": 2,
+    "20260607": 2,
+    "20260608": 3,
+    "20260609": 1,
+    "20260614": 2,
+    "20260617": 2,
+    "20260619": 3,
+    "20260621": 1,
+    "20260622": 2,
+    "20260625": 1,
+    "20260626": 2,
+    "20260628": 1,
+    "20260629": 1,
+    "20260630": 4,
+    "20260702": 2,
+    "20260709": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 0
+  }
+ ]
+}
