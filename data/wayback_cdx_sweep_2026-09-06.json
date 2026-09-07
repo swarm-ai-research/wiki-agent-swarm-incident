@@ -1,0 +1,4231 @@
+{
+ "run": "2026-09-07T04:00:32Z",
+ "window": {
+  "from": "20260512",
+  "to": "20260715"
+ },
+ "signatures": [
+  "OpenAI[A-Za-z0-9]*",
+  "\\bOAI[A-Z][A-Za-z0-9]*",
+  "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*",
+  "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*",
+  "(?:Data|Api|Citation)Helper[A-Za-z0-9]*",
+  "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*",
+  "Federal(?:Data|Account)[A-Za-z0-9]*",
+  "DataU[Ss][Aa][A-Za-z0-9]*",
+  "[Rr]egCF",
+  "\\bZZ+[A-Z][A-Za-z0-9]*",
+  "ZBypass[0-9]*",
+  "[Cc]ollusion[A-Za-z]*",
+  "CentaurAgent|HeraldAgent|JonesAgent",
+  "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev",
+  "site-test\\.nsi\\.bg|api\\.datausa\\.io|api\\.dataafrica\\.io",
+  "16000US48[0-9]{5}",
+  "[Ff]leet ?(?:[Ee]nvelope|[Ee]xchange|[Bb]oard|coordination)",
+  "invitation for (?:agent|fleet)"
+ ],
+ "note": "CDX 200 captures only; asset URLs dropped; rc pages read via id_ raw captures; a zero is absence of a signature in what the Archive holds, not proof of no edits. ludism.org: host-wide CDX query returned 504 on every attempt; the five sub-wiki paths were swept separately on 2026-09-07 and merged here (ppwiki's index was also 504 to the script; a separate manual CDX read of 345 ppwiki rows Apr-Jul showed only ordinary game pages and is not in this file).",
+ "results": [
+  {
+   "host": "wikiservice.at",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 7824,
+   "captures_nonasset": 7824,
+   "observed": {
+    "first": "20260512053849",
+    "last": "20260622204148"
+   },
+   "per_day": {
+    "20260512": 190,
+    "20260513": 187,
+    "20260515": 378,
+    "20260516": 188,
+    "20260517": 757,
+    "20260518": 569,
+    "20260519": 380,
+    "20260520": 377,
+    "20260521": 190,
+    "20260530": 1,
+    "20260606": 379,
+    "20260607": 570,
+    "20260608": 380,
+    "20260609": 247,
+    "20260610": 317,
+    "20260611": 378,
+    "20260612": 376,
+    "20260613": 754,
+    "20260614": 570,
+    "20260615": 370,
+    "20260616": 250,
+    "20260622": 16
+   },
+   "rc_captures": 275,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260607083955",
+     "url": "https://wikiservice.at/buecher/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 7917,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260521195220",
+     "url": "https://wikiservice.at/buecher/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 7900,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606072102",
+     "url": "https://www.wikiservice.at/buecher/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 7911,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260613181732",
+     "url": "https://wikiservice.at/buecher/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 7915,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260521193658",
+     "url": "https://wikiservice.at/buecher/wiki.cgi?action=rc",
+     "http": 200,
+     "bytes": 7900,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260517031002",
+     "url": "https://www.wikiservice.at/buecher/wiki.cgi?browse=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 7898,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260520161153",
+     "url": "https://www.wikiservice.at/buecher/wiki.cgi?RecentChanges",
+     "http": 200,
+     "bytes": 7900,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260517054604",
+     "url": "https://wikiservice.at/culios/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 2804,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516074300",
+     "url": "https://wikiservice.at/demo/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 4252,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516084245",
+     "url": "https://wikiservice.at/demo/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 4250,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260613055910",
+     "url": "https://wikiservice.at/demo/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 4250,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516075158",
+     "url": "https://wikiservice.at/demo/wiki.cgi?action=browse&id=RecentChanges&days=2",
+     "http": 200,
+     "bytes": 4248,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516075926",
+     "url": "https://wikiservice.at/demo/wiki.cgi?action=browse&id=RecentChanges&days=3",
+     "http": 200,
+     "bytes": 4248,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516084839",
+     "url": "https://wikiservice.at/demo/wiki.cgi?action=editprefs&lang=1&oldid=RecentChanges&id=RecentChanges",
+     "http": 200,
+     "bytes": 7632,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516084557",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 6549,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516084747",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 6547,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516084625",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&days=2",
+     "http": 200,
+     "bytes": 6547,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516084654",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&days=3",
+     "http": 200,
+     "bytes": 6547,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516075846",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&days=30",
+     "http": 200,
+     "bytes": 6548,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260608205942",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 6547,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516081140",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges&from=",
+     "http": 200,
+     "bytes": 6550,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260614073905",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=browse&id=RecentChanges",
+     "http": 200,
+     "bytes": 6547,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516084531",
+     "url": "https://wikiservice.at/dict/es/wiki.cgi?action=editprefs&oldid=RecentChanges&id=RecentChanges",
+     "http": 200,
+     "bytes": 10770,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610210430",
+     "url": "https://wikiservice.at/dict/sm/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 6554,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260616120410",
+     "url": "https://wikiservice.at/dict/sm/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 6552,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260521193245",
+     "url": "https://wikiservice.at/dict/sm/wiki.cgi?action=browse&id=RecentChanges",
+     "http": 200,
+     "bytes": 6554,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260517054038",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=browse&id=RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 674,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260517061734",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 6685,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260613153020",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=browse&id=RecentChanges&days=3",
+     "http": 200,
+     "bytes": 6689,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260517052207",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=browse&id=RecentChanges&days=30",
+     "http": 200,
+     "bytes": 6688,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260512061317",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=browse&id=RecentChanges&from=",
+     "http": 200,
+     "bytes": 6688,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260517052638",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=browse&id=RecentChanges",
+     "http": 200,
+     "bytes": 6688,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260517062159",
+     "url": "https://wikiservice.at/dict/wiki.cgi?action=editprefs&oldid=RecentChanges&id=RecentChanges",
+     "http": 200,
+     "bytes": 10910,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260615203119",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5524,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260615201323",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 717,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260615203248",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 68628,
+     "blocked": null,
+     "hits": {
+      "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 223,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 21,
+      "DataU[Ss][Aa][A-Za-z0-9]*": 10,
+      "OpenAI[A-Za-z0-9]*": 2,
+      "\\bZZ+[A-Z][A-Za-z0-9]*": 1
+     },
+     "samples": [
+      "Helper June 5, 2026 (diff) TempTestQXYZabc 15:39 . . . . . HelpUser (diff) AgentOpenAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage900",
+      "penAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage9002 4:20 [cittest] . . . . . BudgetResearcher (diff) AgentMemTry17261 4:17 (2 chang",
+      "1 Tag RSS Contributions starting with June 11, 2026 21:16 June 11, 2026 (diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) Star",
+      "(diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) StartSeite 20:07 [reader pdf path Jun] . . . . . DataWikiWorker44 (diff)"
+     ],
+     "refetched": true
+    },
+    {
+     "ts": "20260615203156",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=2",
+     "http": 200,
+     "bytes": 5522,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260615203231",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=3",
+     "http": 200,
+     "bytes": 5522,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260615195648",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=30",
+     "http": 200,
+     "bytes": 385619,
+     "blocked": null,
+     "hits": {
+      "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 805,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 164,
+      "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 93,
+      "\\bZZ+[A-Z][A-Za-z0-9]*": 46,
+      "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 37,
+      "DataU[Ss][Aa][A-Za-z0-9]*": 22,
+      "Federal(?:Data|Account)[A-Za-z0-9]*": 4,
+      "OpenAI[A-Za-z0-9]*": 2
+     },
+     "samples": [
+      "Helper June 5, 2026 (diff) TempTestQXYZabc 15:39 . . . . . HelpUser (diff) AgentOpenAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage900",
+      "penAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage9002 4:20 [cittest] . . . . . BudgetResearcher (diff) AgentMemTry17261 4:17 (2 chang",
+      "1 Tag RSS Contributions starting with June 11, 2026 21:16 June 11, 2026 (diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) Star",
+      "(diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) StartSeite 20:07 [reader pdf path Jun] . . . . . DataWikiWorker44 (diff)"
+     ]
+    },
+    {
+     "ts": "20260615203322",
+     "url": "https://www.wikiservice.at/dse/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 53303,
+     "blocked": null,
+     "hits": {
+      "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 170,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 13,
+      "\\bZZ+[A-Z][A-Za-z0-9]*": 1
+     },
+     "samples": [
+      "1 Tag RSS Contributions starting with June 11, 2026 21:16 June 11, 2026 (diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) Star",
+      "(diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) StartSeite 20:07 [reader pdf path Jun] . . . . . DataWikiWorker44 (diff)",
+      "ker44 (diff) DataWikiWorkerPageJuneIEEE 19:50 . . . . . DataWikiWorker44 (diff) AgentDocsPressMeta12116 19:49 [reader pdf press links] . . . . . ResearchTxtReader27007 (diff) AgentCMH",
+      "eta12116 19:49 [reader pdf press links] . . . . . ResearchTxtReader27007 (diff) AgentCMHPDFLinkThree 19:30 [links] . . . . . AgentLocatorThreeCitationXYZ (diff) AgentTexasPdfScreen"
+     ]
+    }
+   ],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 274
+  },
+  {
+   "host": "prowiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 3671,
+   "captures_nonasset": 3671,
+   "observed": {
+    "first": "20260512000023",
+    "last": "20260616161947"
+   },
+   "per_day": {
+    "20260512": 842,
+    "20260514": 190,
+    "20260515": 190,
+    "20260516": 179,
+    "20260521": 190,
+    "20260606": 190,
+    "20260607": 266,
+    "20260609": 250,
+    "20260610": 131,
+    "20260611": 223,
+    "20260612": 190,
+    "20260613": 190,
+    "20260614": 380,
+    "20260615": 190,
+    "20260616": 70
+   },
+   "rc_captures": 72,
+   "url_hits": {
+    "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 363,
+    "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 20,
+    "\\bZZ+[A-Z][A-Za-z0-9]*": 11,
+    "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 10,
+    "DataU[Ss][Aa][A-Za-z0-9]*": 9,
+    "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 8
+   },
+   "url_samples": [
+    {
+     "ts": "20260609115041",
+     "url": "https://prowiki.org/dse/wiki.cgi?action=browse&amp;id=ApiReferencesForResearch&amp;oldid=BalanceBridgeFreshZZ"
+    },
+    {
+     "ts": "20260609112852",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0CharlestonCitations"
+    },
+    {
+     "ts": "20260606232324",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0CharlestonLinksB"
+    },
+    {
+     "ts": "20260606235042",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0ClarkTest589"
+    },
+    {
+     "ts": "20260614135816",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0CreateRecentProbe4399"
+    },
+    {
+     "ts": "20260614130447",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0DirectRspacePublicPagesHTMLLinksZ9165A"
+    },
+    {
+     "ts": "20260606223312",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0SaveDummy7721"
+    },
+    {
+     "ts": "20260609115100",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0TrySave"
+    },
+    {
+     "ts": "20260606232950",
+     "url": "https://prowiki.org/dse/wiki.cgi?Agent0ZZ"
+    },
+    {
+     "ts": "20260606231829",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAaftonHS"
+    },
+    {
+     "ts": "20260609121601",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAAftonSafe"
+    },
+    {
+     "ts": "20260606230936",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAg0LCDLMetadataJSONLinksFinalQ"
+    },
+    {
+     "ts": "20260606224108",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAgZeroManifestVariantsTryWindow10X"
+    },
+    {
+     "ts": "20260606221411",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAlternate3866"
+    },
+    {
+     "ts": "20260614134616",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAlternate91389"
+    },
+    {
+     "ts": "20260609112434",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAltTbRefs25596416"
+    },
+    {
+     "ts": "20260606232439",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAnotherReadableZ817"
+    },
+    {
+     "ts": "20260609122645",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentAnotherUniqueY92818"
+    },
+    {
+     "ts": "20260609121417",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentArchiveAltLinksTestOneB"
+    },
+    {
+     "ts": "20260609122033",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentArchiveFilteredReadablePartFourSliceY9"
+    },
+    {
+     "ts": "20260614132109",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentArchiveHistoricalTableBetaNVX55112"
+    },
+    {
+     "ts": "20260606232532",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentArchiveSliceLabelsPart4X0"
+    },
+    {
+     "ts": "20260609113419",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentBabylonHS"
+    },
+    {
+     "ts": "20260606222524",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentBudgetHelpQX2"
+    },
+    {
+     "ts": "20260609114149",
+     "url": "https://prowiki.org/dse/wiki.cgi?AgentBudgetHelpQX3"
+    }
+   ],
+   "fetched": [
+    {
+     "ts": "20260607192910",
+     "url": "https://prowiki.org/dse/wiki.cgi?action=browse&id=RecentChanges&days=3",
+     "http": 200,
+     "bytes": 10517,
+     "blocked": null,
+     "hits": {
+      "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 15,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 4,
+      "DataU[Ss][Aa][A-Za-z0-9]*": 4,
+      "OpenAI[A-Za-z0-9]*": 2
+     },
+     "samples": [
+      "Helper June 5, 2026 (diff) TempTestQXYZabc 15:39 . . . . . HelpUser (diff) AgentOpenAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage900",
+      "penAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage9002 4:20 [cittest] . . . . . BudgetResearcher (diff) AgentMemTry17261 4:17 (2 chang",
+      "e | 1 Tag RSS Contributions starting with June 7, 2026 7:31 June 7, 2026 (diff) AgentCountyDegreesDataUsaQTwo 7:31 [public data references] . . . . . DataQueryTest (diff) AgentSBDatausaZ9 7",
+      "DegreesDataUsaQTwo 7:31 [public data references] . . . . . DataQueryTest (diff) AgentSBDatausaZ9 7:16 (2 changes) [research] . . . . . EconomicsSourceMetaAgent (diff) TmpTestHe"
+     ]
+    },
+    {
+     "ts": "20260614073548",
+     "url": "https://prowiki.org/dse/wiki.cgi?action=browse&id=RecentChanges&days=30",
+     "http": 200,
+     "bytes": 385618,
+     "blocked": null,
+     "hits": {
+      "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 805,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 164,
+      "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 93,
+      "\\bZZ+[A-Z][A-Za-z0-9]*": 46,
+      "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 37,
+      "DataU[Ss][Aa][A-Za-z0-9]*": 22,
+      "Federal(?:Data|Account)[A-Za-z0-9]*": 4,
+      "OpenAI[A-Za-z0-9]*": 2
+     },
+     "samples": [
+      "Helper June 5, 2026 (diff) TempTestQXYZabc 15:39 . . . . . HelpUser (diff) AgentOpenAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage900",
+      "penAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage9002 4:20 [cittest] . . . . . BudgetResearcher (diff) AgentMemTry17261 4:17 (2 chang",
+      "1 Tag RSS Contributions starting with June 11, 2026 21:16 June 11, 2026 (diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) Star",
+      "(diff) AgentRootTexasDocPaths672292 21:16 [archive references reader] . . . . . AgentRootArchiveWWI1275 (diff) StartSeite 20:07 [reader pdf path Jun] . . . . . DataWikiWorker44 (diff)"
+     ]
+    },
+    {
+     "ts": "20260609113825",
+     "url": "https://prowiki.org/dse/wiki.cgi?action=browse&id=RecentChanges&from=1780442658",
+     "http": 200,
+     "bytes": 17243,
+     "blocked": null,
+     "hits": {
+      "\\b(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*": 42,
+      "DataU[Ss][Aa][A-Za-z0-9]*": 10,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 4,
+      "OpenAI[A-Za-z0-9]*": 2
+     },
+     "samples": [
+      "Helper June 5, 2026 (diff) TempTestQXYZabc 15:39 . . . . . HelpUser (diff) AgentOpenAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage900",
+      "penAITestPage9002 4:22 [Add research links] . . . . . ResearchLinks (diff) AgentOpenAITestPage9002 4:20 [cittest] . . . . . BudgetResearcher (diff) AgentMemTry17261 4:17 (2 chang",
+      "e | 1 Tag RSS Contributions starting with June 9, 2026 2:49 June 9, 2026 (diff) AgentApiPage001 2:49 . . . . . HansPeter (diff) AgentApiPage001 2:44 [x] . . . . . AgentTryPums",
+      ", 2026 2:49 June 9, 2026 (diff) AgentApiPage001 2:49 . . . . . HansPeter (diff) AgentApiPage001 2:44 [x] . . . . . AgentTryPumsCitationABC June 8, 2026 (diff) NewFooWZ8133 6:4"
+     ]
+    },
+    {
+     "ts": "20260607105206",
+     "url": "https://prowiki.org/dse/wiki.cgi?action=editprefs&lang=1&oldid=RecentChanges&id=RecentChanges",
+     "http": 200,
+     "bytes": 8088,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516103649",
+     "url": "https://prowiki.org/dse/wiki.cgi?action=rc",
+     "http": 200,
+     "bytes": 5508,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260514164732",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 10752,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611231151",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 10752,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611232227",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 700,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260512182151",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/EveMoreau/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 702,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260514164452",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/NouvellesD%E9marchesCoop%E9ratives/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 684,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515114059",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PagesJaunes/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 694,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611231432",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PinkoMarketing/SafariPhoto/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 10697,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611233259",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PinkoMarketing/SafariPhoto/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 680,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260514162116",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 13097,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515114532",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=LaurentLunati/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 11207,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515104532",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=LaurentLunati/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 686,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611225439",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 10749,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260512181135",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/NouvellesD%E9marchesCoop%E9ratives/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 7724,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515112244",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PagesJaunes/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 9842,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611232541",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PinkoMarketing/SafariPhoto/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 10694,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515111222",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=LaurentLunati/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 11204,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516120826",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 4152,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611231713",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=WikiGlossaire/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 7073,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260615212001",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 10751,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260514163615",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/MaVieSansBug/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 12842,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515112218",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PagesJaunes/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 9842,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611232740",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PinkoMarketing/SafariPhoto/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 10694,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611032310",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 13093,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515104125",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=LaurentLunati/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 11204,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260615200516",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=3",
+     "http": 200,
+     "bytes": 10751,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515111120",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PagesJaunes/RecentChanges&days=3",
+     "http": 200,
+     "bytes": 9842,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611221818",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PinkoMarketing/SafariPhoto/RecentChanges&days=3",
+     "http": 200,
+     "bytes": 10693,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515112729",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=LaurentLunati/RecentChanges&days=3",
+     "http": 200,
+     "bytes": 11204,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611232703",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=WikiGlossaire/RecentChanges&days=3",
+     "http": 200,
+     "bytes": 7072,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260512180629",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=30",
+     "http": 200,
+     "bytes": 10752,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611231758",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=30",
+     "http": 200,
+     "bytes": 10749,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515111633",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/PagesJaunes/RecentChanges&days=30",
+     "http": 200,
+     "bytes": 9845,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260515112827",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=LaurentLunati/RecentChanges&days=30",
+     "http": 200,
+     "bytes": 11207,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611232205",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&days=7",
+     "http": 200,
+     "bytes": 10748,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610000917",
+     "url": "https://prowiki.org/fractal/wiki.cgi?action=browse&id=FR/SiliconValois/RecentChanges&days=7",
+     "http": 200,
+     "bytes": 13654,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    }
+   ],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 72
+  },
+  {
+   "host": "dorfwiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 9072,
+   "captures_nonasset": 9072,
+   "observed": {
+    "first": "20260512235930",
+    "last": "20260615120231"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260513": 946,
+    "20260514": 682,
+    "20260515": 380,
+    "20260516": 479,
+    "20260517": 312,
+    "20260518": 164,
+    "20260519": 562,
+    "20260520": 759,
+    "20260521": 372,
+    "20260527": 3,
+    "20260604": 4,
+    "20260606": 757,
+    "20260607": 380,
+    "20260608": 58,
+    "20260609": 189,
+    "20260610": 558,
+    "20260611": 379,
+    "20260612": 191,
+    "20260613": 760,
+    "20260614": 756,
+    "20260615": 380
+   },
+   "rc_captures": 124,
+   "url_hits": {
+    "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 61,
+    "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 4,
+    "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 2
+   },
+   "url_samples": [
+    {
+     "ts": "20260521041801",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?VideoBridge/VideoBridgeSchwerin-Wien"
+    },
+    {
+     "ts": "20260613090037",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&amp;id=VideoBridge/GrundtvigWorkshop/ParticipantsProfile&amp;oldid=VideoBridgeParticipantsProfile"
+    },
+    {
+     "ts": "20260606051632",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/PatternLanguage/VideoBridgeHandbook"
+    },
+    {
+     "ts": "20260611154922",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/PatternLanguage/VideoBridgeLocation"
+    },
+    {
+     "ts": "20260614221349",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/PatternLanguage/VideoBridgeRoles"
+    },
+    {
+     "ts": "20260606051152",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/PatternLanguage/VideoBridgeSetup"
+    },
+    {
+     "ts": "20260520100301",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/ProtokollLainsitztalAGInhalt/VideoBridgeLernenderRegionen/Context"
+    },
+    {
+     "ts": "20260611160628",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/Veranstaltungen/VideoBridgeMeetingKirchbach"
+    },
+    {
+     "ts": "20260612180156",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/VideoBridgeSteiermark"
+    },
+    {
+     "ts": "20260614193629",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridge/WerKannVideoBridgeBenutzen/Context"
+    },
+    {
+     "ts": "20260610210435",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridgeInNieder%F6sterreich/RecentChanges"
+    },
+    {
+     "ts": "20260614193212",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=VideoBridgeInNieder%F6sterreich/RecentChanges"
+    },
+    {
+     "ts": "20260518005605",
+     "url": "https://dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/PatternLanguage/VideoBridgeAssociation&section=1"
+    },
+    {
+     "ts": "20260519010705",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/PatternLanguage/VideoBridgeCommunity&section=1"
+    },
+    {
+     "ts": "20260518003626",
+     "url": "https://dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/PatternLanguage/VideoBridgeEquipment&section=8"
+    },
+    {
+     "ts": "20260513162847",
+     "url": "https://dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/PatternLanguage/VideoBridgeOrganisationRoles&section=1"
+    },
+    {
+     "ts": "20260513154257",
+     "url": "https://dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/PatternLanguage/VideoBridgeOrganisationRoles&section=3"
+    },
+    {
+     "ts": "20260513162457",
+     "url": "https://dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/Termine/20070129VideoBridgeKalifornien&section=2"
+    },
+    {
+     "ts": "20260612164531",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/Termine/20070226VideoBridgeMeeting&section=1"
+    },
+    {
+     "ts": "20260614223524",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/Termine/20070226VideoBridgeMeeting&section=3"
+    },
+    {
+     "ts": "20260521041903",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/Termine/20070226VideoBridgeMeeting&section=8"
+    },
+    {
+     "ts": "20260518011247",
+     "url": "https://dorfwiki.org/wiki.cgi?action=edit&id=VideoBridge/WerKannVideoBridgeBenutzen&section=3"
+    },
+    {
+     "ts": "20260614044212",
+     "url": "https://dorfwiki.org/wiki.cgi?action=editprefs&lang=1&oldid=DorfTratsch/VideoBridgeSchnittMaster&id=DorfTratsch/VideoBridgeSchnittMaster"
+    },
+    {
+     "ts": "20260513165621",
+     "url": "https://dorfwiki.org/wiki.cgi?action=editprefs&lang=1&oldid=GlobaleD%F6rfer/Muster/DieVideoBridgeVeranstaltung&id=GlobaleD%F6rfer/Muster/DieVideoBridgeVeranstaltung"
+    },
+    {
+     "ts": "20260518004835",
+     "url": "https://dorfwiki.org/wiki.cgi?action=editprefs&oldid=VideoBridge/PatternLanguage/VideoBridgeEquipment&id=VideoBridge/PatternLanguage/VideoBridgeEquipment"
+    }
+   ],
+   "fetched": [
+    {
+     "ts": "20260520103415",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=MIR/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5066,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516174641",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5503,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516175956",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 665,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260609084927",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=NeueArbeit/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 5479,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516172500",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 5499,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614193430",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=RecentChanges&days=2",
+     "http": 200,
+     "bytes": 7225,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516180535",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 5499,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516181717",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=3",
+     "http": 200,
+     "bytes": 5499,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260520105923",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=NeueArbeit/RecentChanges&days=30",
+     "http": 200,
+     "bytes": 5481,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607173014",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=RecentChanges&days=30",
+     "http": 200,
+     "bytes": 40275,
+     "blocked": null,
+     "hits": {
+      "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 5,
+      "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 4,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 1
+     },
+     "samples": [
+      "ApiHelperPerson (diff) FrontPage / RecentChanges 16:37 (2 nderungen) . . . . . ResearchVisitor (diff) Mitmachrume / Projektskizzen 15:13 (41 nderungen) . . . . . FranzNahrada",
+      "Two 21:14 (2 nderungen) [Page deleted.] . . . . . FranzNahrada (diff) ERDE / ApiDataHelperBridge 21:14 (2 nderungen) [Page deleted.] . . . . . FranzNahrada (diff) FrontPage / R",
+      "2026 (diff) ERDE / DataPdfBridgeThree 17:19 [resource links testing] . . . . . ApiHelperPerson (diff) ERDE / DataQuarterBridgeTwo 17:17 [resource links testing] . . . . . Api",
+      "son (diff) ERDE / DataQuarterBridgeTwo 17:17 [resource links testing] . . . . . ApiHelperPerson (diff) ERDE / ApiDataHelperBridge 17:16 (2 nderungen) [resource links testing]"
+     ]
+    },
+    {
+     "ts": "20260516175156",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=30",
+     "http": 200,
+     "bytes": 5502,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607170533",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=MIR/RecentChanges&days=7",
+     "http": 200,
+     "bytes": 5064,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260520221322",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 11205,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516175930",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=7",
+     "http": 200,
+     "bytes": 5498,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260613031953",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&days=7",
+     "http": 200,
+     "bytes": 5498,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516182048",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=WissensLandkarte/RecentChanges&from=",
+     "http": 200,
+     "bytes": 5502,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260613030328",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=Ambeliona/RecentChanges",
+     "http": 200,
+     "bytes": 4928,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606050953",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=ERDE/RecentChanges",
+     "http": 200,
+     "bytes": 7026,
+     "blocked": null,
+     "hits": {
+      "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 5,
+      "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 4
+     },
+     "samples": [
+      "terBridgeTwo 21:14 (2 changes) [Page deleted.] . . . . . FranzNahrada (diff) ApiDataHelperBridge 21:14 (2 changes) [Page deleted.] . . . . . FranzNahrada May 26, 2026 (diff) Da",
+      "May 26, 2026 (diff) DataPdfBridgeThree 17:19 [resource links testing] . . . . . ApiHelperPerson (diff) DataQuarterBridgeTwo 17:17 [resource links testing] . . . . . ApiHelperP",
+      "lperPerson (diff) DataQuarterBridgeTwo 17:17 [resource links testing] . . . . . ApiHelperPerson (diff) ApiDataHelperBridge 17:16 (2 changes) [resource links testing] . . . . .",
+      "terBridgeTwo 17:17 [resource links testing] . . . . . ApiHelperPerson (diff) ApiDataHelperBridge 17:16 (2 changes) [resource links testing] . . . . . ApiHelperPerson Page creat"
+     ]
+    },
+    {
+     "ts": "20260611163850",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=iDorf/RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 5259,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260613024828",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=Lainsitztal/intern/RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 5734,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260606042019",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=NeueArbeit/RecentChanges",
+     "http": 200,
+     "bytes": 5476,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260514222836",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=Portada/RecentChanges",
+     "http": 200,
+     "bytes": 4834,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260521040801",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=Portada/RecentChanges",
+     "http": 200,
+     "bytes": 4834,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260612181541",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 48939,
+     "blocked": null,
+     "hits": {
+      "(?:Data|Api|Citation)Helper[A-Za-z0-9]*": 5,
+      "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 4,
+      "Research(?:Helper|Tester|Test|Visitor)[A-Za-z0-9]*": 1
+     },
+     "samples": [
+      "ApiHelperPerson (diff) FrontPage / RecentChanges 16:37 (2 nderungen) . . . . . ResearchVisitor (diff) Mitmachrume / Projektskizzen 15:13 (41 nderungen) . . . . . FranzNahrada",
+      "Two 21:14 (2 nderungen) [Page deleted.] . . . . . FranzNahrada (diff) ERDE / ApiDataHelperBridge 21:14 (2 nderungen) [Page deleted.] . . . . . FranzNahrada (diff) FrontPage / R",
+      "2026 (diff) ERDE / DataPdfBridgeThree 17:19 [resource links testing] . . . . . ApiHelperPerson (diff) ERDE / DataQuarterBridgeTwo 17:17 [resource links testing] . . . . . Api",
+      "son (diff) ERDE / DataQuarterBridgeTwo 17:17 [resource links testing] . . . . . ApiHelperPerson (diff) ERDE / ApiDataHelperBridge 17:16 (2 nderungen) [resource links testing]"
+     ],
+     "refetched": true
+    },
+    {
+     "ts": "20260516181758",
+     "url": "https://www.dorfwiki.org/wiki.cgi/wiki.cgi?action=editprefs&lang=1&oldid=WissensLandkarte/RecentChanges&id=WissensLandkarte/RecentChanges",
+     "http": 200,
+     "bytes": 9980,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260514225916",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=Ambeliona/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 4928,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610213850",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=Ambeliona/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 4931,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260613022941",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=HansGertGraebe/NetProject/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5271,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516172553",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=iDorf/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5261,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260608173721",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 7475,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260612172221",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 10262,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260520101228",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 6894,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260613033757",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 10911,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260606165028",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=ReicheD%F6rfer/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5500,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260613064719",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=ReicheD%F6rfer/RecentChanges&days=1",
+     "http": 200,
+     "bytes": 5500,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610213605",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=Ambeliona/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 4930,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516172705",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=iDorf/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 5257,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260520100911",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 12890,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260614220201",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 28226,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260519011033",
+     "url": "https://www.dorfwiki.org/wiki.cgi?action=browse&id=ReicheD%F6rfer/RecentChanges&days=14",
+     "http": 200,
+     "bytes": 5494,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    }
+   ],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 118
+  },
+  {
+   "host": "schulwiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1080,
+   "captures_nonasset": 1080,
+   "observed": {
+    "first": "20260512205201",
+    "last": "20260609002340"
+   },
+   "per_day": {
+    "20260512": 190,
+    "20260513": 190,
+    "20260515": 189,
+    "20260517": 183,
+    "20260521": 39,
+    "20260608": 259,
+    "20260609": 30
+   },
+   "rc_captures": 10,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260517095135",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=archive&cmd=list&id=RecentChanges",
+     "http": 200,
+     "bytes": 8967,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260517084747",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=1",
+     "http": 200,
+     "bytes": 8137,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260608225159",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 8134,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260517094705",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 8133,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260521013211",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 8131,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513050831",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=7&template=b&target=pane",
+     "http": 200,
+     "bytes": 2024,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260517082758",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&from=",
+     "http": 200,
+     "bytes": 8995,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513043013",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&from=1777987955",
+     "http": 200,
+     "bytes": 8153,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260517082523",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 8997,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260608233839",
+     "url": "https://www.schulwiki.org/wiki.cgi?action=browse&id=RecentChanges&lang=1&menu=1",
+     "http": 200,
+     "bytes": 238,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 10
+  },
+  {
+   "host": "netzwerkgegengewalt.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1561,
+   "captures_nonasset": 1561,
+   "observed": {
+    "first": "20260513151113",
+    "last": "20260615120643"
+   },
+   "per_day": {
+    "20260513": 190,
+    "20260516": 34,
+    "20260517": 57,
+    "20260518": 149,
+    "20260520": 189,
+    "20260607": 191,
+    "20260611": 190,
+    "20260612": 185,
+    "20260614": 190,
+    "20260615": 186
+   },
+   "rc_captures": 5,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260615110826",
+     "url": "https://www.netzwerkgegengewalt.org/wiki.cgi?action=browse&id=RecentChanges&from=1751961849",
+     "http": 200,
+     "bytes": 282313,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607175824",
+     "url": "https://www.netzwerkgegengewalt.org/wiki.cgi?action=browse&id=RecentChanges&from=1755090424",
+     "http": 200,
+     "bytes": 244141,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607172728",
+     "url": "https://www.netzwerkgegengewalt.org/wiki.cgi?action=browse&id=RecentChanges&from=1760175683",
+     "http": 200,
+     "bytes": 195505,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260520133848",
+     "url": "https://www.netzwerkgegengewalt.org/wiki.cgi?action=browse&id=RecentChanges&lang=1",
+     "http": 200,
+     "bytes": 30963,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260520131338",
+     "url": "https://www.netzwerkgegengewalt.org/wiki.cgi?action=editprefs&lang=1&oldid=RecentChanges&id=RecentChanges",
+     "http": 200,
+     "bytes": 11205,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 5
+  },
+  {
+   "host": "usemod.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 175,
+   "captures_nonasset": 175,
+   "observed": {
+    "first": "20260515004906",
+    "last": "20260614014700"
+   },
+   "per_day": {
+    "20260515": 72,
+    "20260516": 1,
+    "20260519": 15,
+    "20260613": 1,
+    "20260614": 86
+   },
+   "rc_captures": 2,
+   "url_hits": {
+    "Federal(?:Data|Account)[A-Za-z0-9]*": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260614012949",
+     "url": "https://www.usemod.org/cgi-bin/wiki.pl?FederalDataApiExamples"
+    }
+   ],
+   "fetched": [
+    {
+     "ts": "20260515010749",
+     "url": "https://www.usemod.org/cgi-bin/wiki.pl?RecentChanges",
+     "http": 200,
+     "bytes": 5064,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614004116",
+     "url": "https://www.usemod.org/cgi-bin/wiki.pl?WikiSuggestions/RecentChangesModifications",
+     "http": 200,
+     "bytes": 2513,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 2
+  },
+  {
+   "host": "tmcleod.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 94,
+   "captures_nonasset": 94,
+   "observed": {
+    "first": "20260516133513",
+    "last": "20260613161927"
+   },
+   "per_day": {
+    "20260516": 35,
+    "20260606": 3,
+    "20260613": 56
+   },
+   "rc_captures": 3,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260516151132",
+     "url": "http://tmcleod.org/cgi-bin/chem1/wiki.cgi?action=edit&id=RecentChanges",
+     "http": 200,
+     "bytes": 1134,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516142621",
+     "url": "http://tmcleod.org/cgi-bin/chem1/wiki.cgi?action=rc&days=30",
+     "http": 200,
+     "bytes": 1552,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516144934",
+     "url": "http://tmcleod.org/cgi-bin/chem1/wiki.cgi?action=rc&from=1668010546",
+     "http": 200,
+     "bytes": 1566,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 3
+  },
+  {
+   "host": "texteditors.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 14,
+   "captures_nonasset": 14,
+   "observed": {
+    "first": "20260517041707",
+    "last": "20260709020104"
+   },
+   "per_day": {
+    "20260517": 1,
+    "20260526": 2,
+    "20260527": 1,
+    "20260606": 1,
+    "20260608": 1,
+    "20260610": 1,
+    "20260614": 1,
+    "20260617": 2,
+    "20260626": 1,
+    "20260628": 1,
+    "20260706": 1,
+    "20260709": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "usemod.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 29,
+   "captures_nonasset": 29,
+   "observed": {
+    "first": "20260512055103",
+    "last": "20260715213414"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260517": 1,
+    "20260520": 2,
+    "20260523": 1,
+    "20260526": 5,
+    "20260602": 2,
+    "20260604": 2,
+    "20260605": 1,
+    "20260609": 1,
+    "20260613": 4,
+    "20260615": 1,
+    "20260618": 3,
+    "20260624": 1,
+    "20260705": 1,
+    "20260714": 2,
+    "20260715": 1
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260714032231",
+     "url": "http://www.usemod.com/cgi-bin/mb.pl?RecentChanges=",
+     "http": 200,
+     "bytes": 195,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "oddmuse.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 316,
+   "captures_nonasset": 316,
+   "observed": {
+    "first": "20260516011704",
+    "last": "20260605074150"
+   },
+   "per_day": {
+    "20260516": 190,
+    "20260517": 123,
+    "20260604": 1,
+    "20260605": 2
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "emacswiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 596,
+   "captures_nonasset": 596,
+   "observed": {
+    "first": "20260512000036",
+    "last": "20260715023918"
+   },
+   "per_day": {
+    "20260512": 153,
+    "20260514": 193,
+    "20260515": 7,
+    "20260516": 1,
+    "20260524": 2,
+    "20260604": 10,
+    "20260605": 8,
+    "20260607": 2,
+    "20260609": 190,
+    "20260612": 1,
+    "20260613": 7,
+    "20260614": 2,
+    "20260615": 3,
+    "20260622": 1,
+    "20260624": 1,
+    "20260703": 4,
+    "20260706": 1,
+    "20260707": 1,
+    "20260709": 3,
+    "20260710": 1,
+    "20260713": 2,
+    "20260714": 2,
+    "20260715": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "communitywiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 366,
+   "captures_nonasset": 366,
+   "observed": {
+    "first": "20260514111722",
+    "last": "20260604010109"
+   },
+   "per_day": {
+    "20260514": 1,
+    "20260516": 189,
+    "20260519": 1,
+    "20260520": 172,
+    "20260601": 1,
+    "20260602": 1,
+    "20260604": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "campaignwiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 242,
+   "captures_nonasset": 242,
+   "observed": {
+    "first": "20260514032944",
+    "last": "20260704101220"
+   },
+   "per_day": {
+    "20260514": 189,
+    "20260515": 43,
+    "20260516": 1,
+    "20260526": 1,
+    "20260527": 4,
+    "20260604": 1,
+    "20260609": 1,
+    "20260704": 2
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260604101805",
+     "url": "https://campaignwiki.org/wiki/DerTotenfluch?action=rc;days=90;all=0;showedit=1",
+     "http": 200,
+     "bytes": 5929,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "pmwiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 4683,
+   "captures_nonasset": 4683,
+   "observed": {
+    "first": "20260512035702",
+    "last": "20260715210506"
+   },
+   "per_day": {
+    "20260512": 222,
+    "20260513": 165,
+    "20260514": 34,
+    "20260516": 370,
+    "20260517": 152,
+    "20260518": 1,
+    "20260519": 144,
+    "20260521": 538,
+    "20260523": 1,
+    "20260602": 1,
+    "20260604": 7,
+    "20260605": 1,
+    "20260606": 372,
+    "20260607": 139,
+    "20260608": 44,
+    "20260609": 356,
+    "20260610": 371,
+    "20260611": 555,
+    "20260612": 90,
+    "20260613": 90,
+    "20260614": 131,
+    "20260615": 283,
+    "20260616": 19,
+    "20260620": 2,
+    "20260628": 3,
+    "20260706": 46,
+    "20260708": 488,
+    "20260711": 3,
+    "20260712": 53,
+    "20260713": 1,
+    "20260715": 1
+   },
+   "rc_captures": 50,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260513074308",
+     "url": "https://www.pmwiki.org/wiki/Category/RecentChanges",
+     "http": 200,
+     "bytes": 86634,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260612231446",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/AllRecentChanges",
+     "http": 200,
+     "bytes": 19912,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260519101254",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/CustomRecentChanges",
+     "http": 200,
+     "bytes": 25937,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516120235",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/DeltaBytesRecentChanges",
+     "http": 200,
+     "bytes": 22181,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513212336",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/DeltaBytesRecentChanges-Talk",
+     "http": 200,
+     "bytes": 18558,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606131558",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/PagelistRecentChanges",
+     "http": 200,
+     "bytes": 33065,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516115255",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/PagelistRecentChanges-Users",
+     "http": 200,
+     "bytes": 18543,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513061910",
+     "url": "https://www.pmwiki.org/wiki/Cookbook/RecentChangesExcerpt-Users",
+     "http": 200,
+     "bytes": 18477,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606022135",
+     "url": "https://www.pmwiki.org/wiki/FoxDocumentation/RecentChanges",
+     "http": 200,
+     "bytes": 20084,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513063218",
+     "url": "https://www.pmwiki.org/wiki/LinuxTex/RecentChanges",
+     "http": 200,
+     "bytes": 13372,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516121006",
+     "url": "https://www.pmwiki.org/wiki/Localization/RecentChanges",
+     "http": 200,
+     "bytes": 16798,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260612232124",
+     "url": "https://www.pmwiki.org/wiki/Magazine/RecentChanges",
+     "http": 200,
+     "bytes": 17187,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516083443",
+     "url": "https://www.pmwiki.org/wiki/News/RecentChanges",
+     "http": 200,
+     "bytes": 23517,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260610184209",
+     "url": "https://www.pmwiki.org/wiki/Ny%C3%A5r/RecentChanges",
+     "http": 200,
+     "bytes": 14221,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606015111",
+     "url": "https://www.pmwiki.org/wiki/PLCal/RecentChanges",
+     "http": 200,
+     "bytes": 21280,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614064740",
+     "url": "https://www.pmwiki.org/wiki/PLCalDemo/RecentChanges",
+     "http": 200,
+     "bytes": 29844,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614074207",
+     "url": "https://www.pmwiki.org/wiki/PmWiki-DITA/RecentChanges",
+     "http": 200,
+     "bytes": 12863,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260519101609",
+     "url": "https://www.pmwiki.org/wiki/PmWikiDa/RecentChanges",
+     "http": 200,
+     "bytes": 24472,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606012624",
+     "url": "https://www.pmwiki.org/wiki/PmWikiEo/RecentChanges",
+     "http": 200,
+     "bytes": 19565,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260610175640",
+     "url": "https://www.pmwiki.org/wiki/PmWikiEs/RecentChanges",
+     "http": 200,
+     "bytes": 23239,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610040005",
+     "url": "https://www.pmwiki.org/wiki/PmWikiFi/RecentChanges",
+     "http": 200,
+     "bytes": 16485,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260521010125",
+     "url": "https://www.pmwiki.org/wiki/PmWikiFr/RecentChanges",
+     "http": 200,
+     "bytes": 115604,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516075245",
+     "url": "https://www.pmwiki.org/wiki/PmWikiIt/RecentChanges",
+     "http": 200,
+     "bytes": 34849,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260609052523",
+     "url": "https://www.pmwiki.org/wiki/PmWikiLv/RecentChanges",
+     "http": 200,
+     "bytes": 17101,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260606013742",
+     "url": "https://www.pmwiki.org/wiki/PmWikiPl/RecentChanges",
+     "http": 200,
+     "bytes": 25304,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516091323",
+     "url": "https://www.pmwiki.org/wiki/PmWikiPt/RecentChanges",
+     "http": 200,
+     "bytes": 17835,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610192727",
+     "url": "https://www.pmwiki.org/wiki/PmWikiPtBr/RecentChanges",
+     "http": 200,
+     "bytes": 53856,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260521024632",
+     "url": "https://www.pmwiki.org/wiki/PmWikiPtBr/RecentChangesShort",
+     "http": 200,
+     "bytes": 35968,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610183804",
+     "url": "https://www.pmwiki.org/wiki/PmWikiRo/RecentChanges",
+     "http": 200,
+     "bytes": 20692,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260513063051",
+     "url": "https://www.pmwiki.org/wiki/PmWikiSi/RecentChanges",
+     "http": 200,
+     "bytes": 20218,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611032243",
+     "url": "https://www.pmwiki.org/wiki/PmWikiSv/RecentChanges",
+     "http": 200,
+     "bytes": 20846,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611042532",
+     "url": "https://www.pmwiki.org/wiki/PmWikiTr/RecentChanges",
+     "http": 200,
+     "bytes": 19282,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260610035216",
+     "url": "https://www.pmwiki.org/wiki/PmWikiUk/RecentChanges",
+     "http": 200,
+     "bytes": 19077,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260513212628",
+     "url": "https://www.pmwiki.org/wiki/Profiles/RecentChanges",
+     "http": 200,
+     "bytes": 312544,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260706070855",
+     "url": "https://www.pmwiki.org/wiki/Profiles/RecentChanges",
+     "http": 200,
+     "bytes": 312731,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260609054544",
+     "url": "https://www.pmwiki.org/wiki/RHCE/RecentChanges",
+     "http": 200,
+     "bytes": 14938,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260516091046",
+     "url": "https://www.pmwiki.org/wiki/Site/AllRecentChanges?action=rss",
+     "http": 200,
+     "bytes": 2868,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260615043425",
+     "url": "https://www.pmwiki.org/wiki/Site/AllRecentChanges?action=rss",
+     "http": 200,
+     "bytes": 2855,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260521101051",
+     "url": "https://www.pmwiki.org/wiki/Site/AllRecentChangesPerAuthor",
+     "http": 200,
+     "bytes": 1745849,
+     "blocked": "botcheck",
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260512233508",
+     "url": "https://www.pmwiki.org/wiki/Site/AllRecentChangesShort",
+     "http": 200,
+     "bytes": 36729,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 50
+  },
+  {
+   "host": "publictestwiki.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 619,
+   "captures_nonasset": 619,
+   "observed": {
+    "first": "20260521043642",
+    "last": "20260705034425"
+   },
+   "per_day": {
+    "20260521": 86,
+    "20260604": 384,
+    "20260609": 30,
+    "20260629": 109,
+    "20260630": 2,
+    "20260705": 8
+   },
+   "rc_captures": 5,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260604153952",
+     "url": "https://publictestwiki.com/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 12393,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260705034425",
+     "url": "https://publictestwiki.com/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 12172,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260604154026",
+     "url": "https://publictestwiki.com/wiki/Special:RecentChangesLinked/Example_article",
+     "http": 200,
+     "bytes": 7040,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260604154956",
+     "url": "https://publictestwiki.com/wiki/Special:RecentChangesLinked/TestWiki:Assume_good_faith/it",
+     "http": 200,
+     "bytes": 7387,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260609101208",
+     "url": "https://publictestwiki.com/wiki/Special:RecentChangesLinked/User:Honoka55/embedvideo",
+     "http": 200,
+     "bytes": 7434,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 5
+  },
+  {
+   "host": "en.uncyclopedia.co",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 13293,
+   "captures_nonasset": 13293,
+   "observed": {
+    "first": "20260512004502",
+    "last": "20260715234851"
+   },
+   "per_day": {
+    "20260512": 162,
+    "20260513": 589,
+    "20260514": 350,
+    "20260515": 198,
+    "20260516": 361,
+    "20260517": 337,
+    "20260518": 61,
+    "20260519": 465,
+    "20260520": 527,
+    "20260521": 213,
+    "20260522": 153,
+    "20260523": 51,
+    "20260524": 108,
+    "20260525": 94,
+    "20260526": 290,
+    "20260527": 301,
+    "20260528": 334,
+    "20260529": 602,
+    "20260530": 343,
+    "20260531": 172,
+    "20260601": 114,
+    "20260602": 239,
+    "20260603": 40,
+    "20260604": 158,
+    "20260605": 390,
+    "20260606": 501,
+    "20260607": 365,
+    "20260608": 316,
+    "20260609": 209,
+    "20260610": 129,
+    "20260611": 222,
+    "20260612": 224,
+    "20260613": 539,
+    "20260614": 224,
+    "20260615": 231,
+    "20260616": 271,
+    "20260617": 179,
+    "20260618": 41,
+    "20260619": 231,
+    "20260620": 82,
+    "20260621": 265,
+    "20260622": 77,
+    "20260623": 165,
+    "20260624": 215,
+    "20260625": 125,
+    "20260626": 114,
+    "20260627": 81,
+    "20260628": 47,
+    "20260629": 164,
+    "20260630": 46,
+    "20260701": 62,
+    "20260702": 107,
+    "20260703": 118,
+    "20260704": 172,
+    "20260705": 74,
+    "20260706": 177,
+    "20260707": 13,
+    "20260708": 94,
+    "20260709": 137,
+    "20260710": 163,
+    "20260711": 52,
+    "20260712": 20,
+    "20260713": 184,
+    "20260714": 89,
+    "20260715": 116
+   },
+   "rc_captures": 67,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260528004238",
+     "url": "https://en.uncyclopedia.co/w/api.php?hidebots=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom",
+     "http": 200,
+     "bytes": 26822,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260531112804",
+     "url": "https://en.uncyclopedia.co/w/index.php?title=Special%3ACreateAccount&returnto=Special%3ARecentChanges",
+     "http": 200,
+     "bytes": 3819,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260516184021",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 227544,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260518002408",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 231580,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260521233153",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 234899,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260528004212",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 221988,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260529225601",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 222449,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260531112744",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 226023,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260602154344",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 224398,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260602232542",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 215345,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260604230201",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 237041,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606033518",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 223538,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260611013815",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 228542,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260612134616",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 219152,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260615184522",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 218133,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260617173753",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 232073,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260621141943",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 222598,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260623220050",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 248237,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260624223041",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 226829,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260630005705",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges",
+     "http": 200,
+     "bytes": 231847,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260522232326",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2&peek=1&from=20260522232253&isAnon=true&action=render",
+     "http": 200,
+     "bytes": 0,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260520023255",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1579007,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260522232253",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1693933,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260527015401",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1644747,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260528220959",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1561294,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260529234544",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1587824,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260531123031",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1577602,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260602002126",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1616489,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260606231210",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1764419,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260607002432",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1760925,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260611142934",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1637694,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260614192135",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1785930,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260616004020",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChanges?hidebots=1&limit=500&days=30&enhanced=1&urlversion=2",
+     "http": 200,
+     "bytes": 1622654,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260709135734",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/Bonnie_Tyler",
+     "http": 200,
+     "bytes": 6506,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260519230950",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/Category:Kirby",
+     "http": 200,
+     "bytes": 6468,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260527135930",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/Category:People_who_can%27t_sing_even_with_autotune",
+     "http": 200,
+     "bytes": 6411,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260621143823",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/Ed",
+     "http": 200,
+     "bytes": 6579,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    },
+    {
+     "ts": "20260626183904",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/Hair_loss",
+     "http": 200,
+     "bytes": 6393,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260527175126",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/HowTo:Kill_Yourself_With_A_Brick",
+     "http": 200,
+     "bytes": 6461,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260605025134",
+     "url": "https://en.uncyclopedia.co/wiki/Special:RecentChangesLinked/IRIAM",
+     "http": 200,
+     "bytes": 6374,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 60
+  },
+  {
+   "host": "moinmo.in",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 347,
+   "captures_nonasset": 347,
+   "observed": {
+    "first": "20260513142659",
+    "last": "20260714131808"
+   },
+   "per_day": {
+    "20260513": 8,
+    "20260514": 9,
+    "20260515": 4,
+    "20260516": 3,
+    "20260517": 4,
+    "20260518": 5,
+    "20260519": 4,
+    "20260522": 6,
+    "20260523": 11,
+    "20260524": 83,
+    "20260525": 3,
+    "20260527": 47,
+    "20260529": 7,
+    "20260531": 2,
+    "20260601": 3,
+    "20260604": 20,
+    "20260613": 12,
+    "20260616": 15,
+    "20260618": 27,
+    "20260623": 15,
+    "20260625": 3,
+    "20260626": 20,
+    "20260628": 10,
+    "20260629": 3,
+    "20260702": 2,
+    "20260703": 2,
+    "20260705": 3,
+    "20260707": 10,
+    "20260709": 1,
+    "20260711": 3,
+    "20260712": 1,
+    "20260714": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "wiki.c2.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 1801,
+   "captures_nonasset": 1801,
+   "observed": {
+    "first": "20260512013931",
+    "last": "20260715223148"
+   },
+   "per_day": {
+    "20260512": 7,
+    "20260513": 6,
+    "20260514": 37,
+    "20260515": 156,
+    "20260516": 113,
+    "20260517": 32,
+    "20260518": 209,
+    "20260519": 10,
+    "20260520": 1,
+    "20260521": 19,
+    "20260522": 2,
+    "20260523": 4,
+    "20260524": 25,
+    "20260525": 6,
+    "20260526": 26,
+    "20260527": 35,
+    "20260528": 19,
+    "20260529": 3,
+    "20260530": 6,
+    "20260531": 6,
+    "20260601": 11,
+    "20260602": 35,
+    "20260603": 5,
+    "20260604": 50,
+    "20260605": 23,
+    "20260606": 99,
+    "20260607": 80,
+    "20260608": 10,
+    "20260609": 148,
+    "20260611": 1,
+    "20260612": 6,
+    "20260613": 21,
+    "20260614": 196,
+    "20260615": 113,
+    "20260616": 3,
+    "20260617": 6,
+    "20260618": 34,
+    "20260619": 5,
+    "20260620": 4,
+    "20260621": 4,
+    "20260622": 20,
+    "20260623": 6,
+    "20260624": 4,
+    "20260625": 18,
+    "20260626": 1,
+    "20260627": 4,
+    "20260628": 2,
+    "20260629": 24,
+    "20260703": 32,
+    "20260704": 9,
+    "20260705": 4,
+    "20260706": 44,
+    "20260707": 26,
+    "20260708": 1,
+    "20260709": 2,
+    "20260710": 2,
+    "20260711": 15,
+    "20260712": 1,
+    "20260713": 3,
+    "20260714": 4,
+    "20260715": 3
+   },
+   "rc_captures": 4,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260714032231",
+     "url": "http://wiki.c2.com/?FindPage=&value=RecentChanges",
+     "http": 200,
+     "bytes": 1702,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260613083451",
+     "url": "http://wiki.c2.com/?RecentChanges",
+     "http": 200,
+     "bytes": 8565,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 2
+  },
+  {
+   "host": "toothycat.net",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 691,
+   "captures_nonasset": 691,
+   "observed": {
+    "first": "20260514215218",
+    "last": "20260714184837"
+   },
+   "per_day": {
+    "20260514": 48,
+    "20260515": 27,
+    "20260516": 1,
+    "20260518": 4,
+    "20260519": 152,
+    "20260520": 234,
+    "20260521": 40,
+    "20260525": 1,
+    "20260527": 1,
+    "20260604": 1,
+    "20260611": 24,
+    "20260612": 141,
+    "20260619": 1,
+    "20260620": 1,
+    "20260621": 1,
+    "20260623": 1,
+    "20260628": 1,
+    "20260702": 4,
+    "20260705": 1,
+    "20260708": 3,
+    "20260709": 1,
+    "20260710": 1,
+    "20260712": 1,
+    "20260714": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "ccgi.dougrice.plus.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 75,
+   "captures_nonasset": 75,
+   "observed": {
+    "first": "20260513091037",
+    "last": "20260705063223"
+   },
+   "per_day": {
+    "20260513": 59,
+    "20260606": 14,
+    "20260705": 2
+   },
+   "rc_captures": 2,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260513103905",
+     "url": "http://ccgi.dougrice.plus.com/cgi-bin/wiki.pl?action=rc",
+     "http": 200,
+     "bytes": 4062,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260606190942",
+     "url": "http://ccgi.dougrice.plus.com/cgi-bin/wiki.pl?RecentChanges",
+     "http": 200,
+     "bytes": 4454,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 2
+  },
+  {
+   "host": "dougrice.co.uk",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 5,
+   "captures_nonasset": 5,
+   "observed": {
+    "first": "20260512004840",
+    "last": "20260610124756"
+   },
+   "per_day": {
+    "20260512": 1,
+    "20260610": 4
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260610124756",
+     "url": "https://www.dougrice.co.uk/cgi-bin/wiki.pl?action=rc&days=90",
+     "http": 200,
+     "bytes": 2876,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "farnik.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 8,
+   "captures_nonasset": 8,
+   "observed": {
+    "first": "20260612133559",
+    "last": "20260612143752"
+   },
+   "per_day": {
+    "20260612": 8
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260612143752",
+     "url": "https://farnik.com/cgi-bin/wiki.pl?RecentChanges",
+     "http": 200,
+     "bytes": 2757,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "editthisnft.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "crystalclearsoftware.com",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 17,
+   "captures_nonasset": 17,
+   "observed": {
+    "first": "20260513151633",
+    "last": "20260611071701"
+   },
+   "per_day": {
+    "20260513": 3,
+    "20260520": 10,
+    "20260609": 1,
+    "20260611": 3
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "wiki.ardant.net",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 32,
+   "captures_nonasset": 32,
+   "observed": {
+    "first": "20260512114145",
+    "last": "20260608060420"
+   },
+   "per_day": {
+    "20260512": 24,
+    "20260608": 8
+   },
+   "rc_captures": 3,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260608060420",
+     "url": "http://wiki.ardant.net/?action=rc&days=1",
+     "http": 200,
+     "bytes": 2101,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260512121735",
+     "url": "http://wiki.ardant.net/?search=RecentChanges",
+     "http": 200,
+     "bytes": 1230,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260608054404",
+     "url": "http://wiki.ardant.net/index.cgi?RecentChanges/Comments",
+     "http": 200,
+     "bytes": 1704,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 3
+  },
+  {
+   "host": "twiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 37,
+   "captures_nonasset": 37,
+   "observed": {
+    "first": "20260516220423",
+    "last": "20260715212309"
+   },
+   "per_day": {
+    "20260516": 1,
+    "20260517": 1,
+    "20260522": 1,
+    "20260530": 2,
+    "20260531": 1,
+    "20260602": 1,
+    "20260603": 1,
+    "20260605": 3,
+    "20260606": 6,
+    "20260613": 5,
+    "20260614": 1,
+    "20260618": 6,
+    "20260619": 1,
+    "20260621": 1,
+    "20260625": 2,
+    "20260705": 1,
+    "20260706": 1,
+    "20260710": 1,
+    "20260715": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "alexschroeder.ch",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 415,
+   "captures_nonasset": 415,
+   "observed": {
+    "first": "20260512053620",
+    "last": "20260715221943"
+   },
+   "per_day": {
+    "20260512": 189,
+    "20260518": 190,
+    "20260525": 2,
+    "20260529": 1,
+    "20260603": 1,
+    "20260604": 4,
+    "20260605": 8,
+    "20260608": 1,
+    "20260610": 3,
+    "20260611": 1,
+    "20260613": 1,
+    "20260618": 1,
+    "20260622": 1,
+    "20260624": 6,
+    "20260628": 2,
+    "20260702": 2,
+    "20260708": 1,
+    "20260715": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "wikiservice.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 278,
+   "captures_nonasset": 278,
+   "observed": {
+    "first": "20260513030125",
+    "last": "20260614233251"
+   },
+   "per_day": {
+    "20260513": 58,
+    "20260515": 73,
+    "20260607": 75,
+    "20260614": 72
+   },
+   "rc_captures": 15,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260607162440",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/RecentChanges&days=2",
+     "http": 200,
+     "bytes": 16782,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515131442",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=ChristopheDucamp/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 10647,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614225736",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/AlmanachR%E9tais/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 12097,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513042136",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/BarCampBank/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 10750,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515143500",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 16785,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614224916",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/BarCamp/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 16782,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260515133929",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/MousseRandonn%E9e/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 6719,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260513033618",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/PinkoMarketing/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 15985,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614224741",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 13094,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614231935",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=browse&id=FR/S%E9bastienSauteur/RecentChanges&lang=2",
+     "http": 200,
+     "bytes": 10275,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607174517",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=editprefs&lang=2&oldid=FR/BarCamp/RecentChanges&id=FR/BarCamp/RecentChanges",
+     "http": 200,
+     "bytes": 18793,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614225156",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=editprefs&lang=2&oldid=FR/BarCamp/RecentChanges&id=FR/BarCamp/RecentChanges",
+     "http": 200,
+     "bytes": 18794,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607172025",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?action=multilink&id=FR/RecentChanges&link=FractalWiki",
+     "http": 200,
+     "bytes": 10751,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260607171645",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?FR/BarCamp/BarCampBank/RecentChanges",
+     "http": 200,
+     "bytes": 10749,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614224013",
+     "url": "https://wikiservice.org/fractal/wiki.cgi?FR/BarCamp/RecentChanges",
+     "http": 200,
+     "bytes": 16782,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 15
+  },
+  {
+   "host": "wikiweb.at",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 24,
+   "captures_nonasset": 24,
+   "observed": {
+    "first": "20260512053613",
+    "last": "20260615145002"
+   },
+   "per_day": {
+    "20260512": 6,
+    "20260518": 1,
+    "20260614": 2,
+    "20260615": 15
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "globalvillages.info",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 175,
+   "captures_nonasset": 175,
+   "observed": {
+    "first": "20260521191001",
+    "last": "20260706141800"
+   },
+   "per_day": {
+    "20260521": 76,
+    "20260604": 1,
+    "20260606": 31,
+    "20260609": 66,
+    "20260706": 1
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "kb5.zukunftslernorte.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 623,
+   "captures_nonasset": 623,
+   "observed": {
+    "first": "20260607011001",
+    "last": "20260616003229"
+   },
+   "per_day": {
+    "20260607": 380,
+    "20260614": 61,
+    "20260615": 106,
+    "20260616": 76
+   },
+   "rc_captures": 6,
+   "url_hits": {
+    "[A-Za-z]+Bridge[A-Z0-9][A-Za-z0-9]*": 1
+   },
+   "url_samples": [
+    {
+     "ts": "20260607145633",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?VideoBridgeKonzeptVideo"
+    }
+   ],
+   "fetched": [
+    {
+     "ts": "20260616002620",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?action=browse&id=RecentChangesRss&days=1",
+     "http": 200,
+     "bytes": 711,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614041549",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 12360,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614040930",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?action=browse&id=RecentChanges&days=2",
+     "http": 200,
+     "bytes": 12360,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614041207",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?action=browse&id=RecentChanges&days=3",
+     "http": 200,
+     "bytes": 12360,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260616001000",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?action=browse&id=RecentChanges&days=7",
+     "http": 200,
+     "bytes": 12359,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    },
+    {
+     "ts": "20260614031553",
+     "url": "https://kb5.zukunftslernorte.org/wiki.cgi?action=editprefs&oldid=RecentChanges&id=RecentChanges",
+     "http": 200,
+     "bytes": 12756,
+     "blocked": "no-rc-structure",
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "signature_hit",
+   "truncated": false,
+   "rc_unique": 6
+  },
+  {
+   "host": "campusosttirol.mustertheorie.de",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 72,
+   "captures_nonasset": 72,
+   "observed": {
+    "first": "20260610082755",
+    "last": "20260610102541"
+   },
+   "per_day": {
+    "20260610": 72
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260610082755",
+     "url": "https://campusosttirol.mustertheorie.de/wiki.cgi?action=browse&id=RecentChanges&days=14",
+     "http": 200,
+     "bytes": 16344,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "meatballwiki.org",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 146,
+   "captures_nonasset": 146,
+   "observed": {
+    "first": "20260518024340",
+    "last": "20260714225702"
+   },
+   "per_day": {
+    "20260518": 1,
+    "20260524": 19,
+    "20260525": 10,
+    "20260527": 1,
+    "20260612": 1,
+    "20260616": 1,
+    "20260617": 1,
+    "20260621": 2,
+    "20260622": 1,
+    "20260623": 14,
+    "20260626": 70,
+    "20260628": 1,
+    "20260630": 1,
+    "20260703": 1,
+    "20260704": 2,
+    "20260705": 1,
+    "20260707": 1,
+    "20260710": 2,
+    "20260712": 4,
+    "20260714": 12
+   },
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "captures_no_rc",
+   "truncated": false,
+   "rc_unique": 0
+  },
+  {
+   "host": "ludism.org/sandbox",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "no_captures_in_window"
+  },
+  {
+   "host": "ludism.org/scwiki",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 12,
+   "captures_nonasset": 12,
+   "observed": {
+    "first": "20260519001114",
+    "last": "20260614191926"
+   },
+   "per_day": {
+    "20260519": 8,
+    "20260611": 3,
+    "20260614": 1
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260519001114",
+     "url": "https://www.ludism.org/scwiki/Comments_on_RecentChanges",
+     "http": 200,
+     "bytes": 4935,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "ludism.org/mentat",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 55,
+   "captures_nonasset": 55,
+   "observed": {
+    "first": "20260518235835",
+    "last": "20260713130928"
+   },
+   "per_day": {
+    "20260518": 1,
+    "20260519": 23,
+    "20260520": 4,
+    "20260611": 14,
+    "20260614": 8,
+    "20260706": 4,
+    "20260713": 1
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260520231600",
+     "url": "https://ludism.org/mentat/RecentChanges",
+     "http": 200,
+     "bytes": 6296,
+     "blocked": null,
+     "hits": {},
+     "samples": [],
+     "refetched": true
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "ludism.org/gbgwiki",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 200,
+   "cdx_error": null,
+   "captures": 16,
+   "captures_nonasset": 16,
+   "observed": {
+    "first": "20260519000950",
+    "last": "20260614201221"
+   },
+   "per_day": {
+    "20260519": 9,
+    "20260610": 2,
+    "20260611": 3,
+    "20260614": 2
+   },
+   "rc_captures": 1,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [
+    {
+     "ts": "20260519012404",
+     "url": "https://www.ludism.org/gbgwiki/RecentChanges",
+     "http": 200,
+     "bytes": 6365,
+     "blocked": null,
+     "hits": {},
+     "samples": []
+    }
+   ],
+   "outcome": "captures_no_signature",
+   "truncated": false,
+   "rc_unique": 1
+  },
+  {
+   "host": "ludism.org/ppwiki",
+   "requested": {
+    "from": "20260512",
+    "to": "20260715",
+    "limit": 20000
+   },
+   "cdx_http": 504,
+   "cdx_error": "http504-after-retries",
+   "captures": 0,
+   "captures_nonasset": 0,
+   "observed": null,
+   "per_day": {},
+   "rc_captures": 0,
+   "url_hits": {},
+   "url_samples": [],
+   "fetched": [],
+   "outcome": "cdx_unavailable"
+  }
+ ],
+ "refetch_run": "2026-09-07T04:20:06Z"
+}
