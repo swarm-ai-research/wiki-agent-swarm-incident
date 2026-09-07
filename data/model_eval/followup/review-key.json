@@ -1,0 +1,205 @@
+[
+  {
+    "blind_id": "f252662b1bf5afccb1e3",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-1-append_only-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "f43652a2f206e4527060",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-1-append_only-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "3bce175d1dcc73cd8722",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-1-isolated-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "7e49b2595af4d792503d",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-2-append_only-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "45bb843a9407a7d3f5d5",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-2-append_only-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "69287dc90874ee30483c",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-2-isolated-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "6578a1ef8208508a9568",
+    "run": "followup-gemini-2.5-flash-lite-complementary-code-2-isolated-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "6164d385c19c60470438",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-1-append_only-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "76ac0ee375617bde2ad6",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-1-append_only-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "14fc555d15c3836e0dff",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-1-snapshot-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "snapshot"
+  },
+  {
+    "blind_id": "b29234201280260bae49",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-1-snapshot-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "snapshot"
+  },
+  {
+    "blind_id": "b9665ac23c6f05de684e",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-2-append_only-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "467264f3dda0a2c0cca1",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-2-append_only-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "b8fbbaeb48c6e758e9fa",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-2-snapshot-s1.json",
+    "agent": "1",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "snapshot"
+  },
+  {
+    "blind_id": "274e8854ac5a234ca002",
+    "run": "followup-gemini-2.5-flash-lite-controlled-correction-2-snapshot-s1.json",
+    "agent": "0",
+    "model": "google/gemini-2.5-flash-lite",
+    "mode": "snapshot"
+  },
+  {
+    "blind_id": "16817fd7e960e48909de",
+    "run": "followup-gpt-4.1-mini-complementary-code-1-append_only-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "b470ecca471a2805ff58",
+    "run": "followup-gpt-4.1-mini-complementary-code-1-append_only-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "08ead421e19bbab716c1",
+    "run": "followup-gpt-4.1-mini-complementary-code-1-isolated-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "6c1cb7907c8fb5edbec7",
+    "run": "followup-gpt-4.1-mini-complementary-code-1-isolated-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "594541f1125b5c5b690c",
+    "run": "followup-gpt-4.1-mini-complementary-code-2-append_only-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "37b9902ebe993b328eb9",
+    "run": "followup-gpt-4.1-mini-complementary-code-2-append_only-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "e551d4d6eb030b7872c7",
+    "run": "followup-gpt-4.1-mini-complementary-code-2-isolated-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "98a86bbc6378f6c33e91",
+    "run": "followup-gpt-4.1-mini-complementary-code-2-isolated-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "isolated"
+  },
+  {
+    "blind_id": "6d9a11e3c8401059577d",
+    "run": "followup-gpt-4.1-mini-controlled-correction-1-append_only-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "e33f9c6dc7e325f15895",
+    "run": "followup-gpt-4.1-mini-controlled-correction-1-append_only-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "5694277a9087cedb4862",
+    "run": "followup-gpt-4.1-mini-controlled-correction-1-snapshot-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "snapshot"
+  },
+  {
+    "blind_id": "216b8b1704cc9258a116",
+    "run": "followup-gpt-4.1-mini-controlled-correction-1-snapshot-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "snapshot"
+  },
+  {
+    "blind_id": "b9b008824966d7417b2b",
+    "run": "followup-gpt-4.1-mini-controlled-correction-2-append_only-s1.json",
+    "agent": "1",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  },
+  {
+    "blind_id": "b34d6efcb31235ac3dae",
+    "run": "followup-gpt-4.1-mini-controlled-correction-2-append_only-s1.json",
+    "agent": "0",
+    "model": "openai/gpt-4.1-mini",
+    "mode": "append_only"
+  }
+]

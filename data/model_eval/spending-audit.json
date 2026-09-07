@@ -1,0 +1,10 @@
+{
+  "user_limit_usd": 20.0,
+  "allocated_usd": 20.0,
+  "accounted_usd": 0.4679929999999998,
+  "observed_billed_usd": 0.08048969999999989,
+  "requests": 560,
+  "responses_with_cost": 545,
+  "requests_without_billing_response": 15,
+  "invoice_verified": false
+}

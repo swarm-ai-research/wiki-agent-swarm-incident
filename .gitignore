@@ -7,3 +7,6 @@ __pycache__/
 # sampled export bodies (unlicensed upstream data) and API job state
 data/llm_family_sample*.jsonl
 data/llm_family_jobs*.json
+
+# Local synchronization primitive; the durable budget journal remains tracked.
+data/model_eval/live/study.lock

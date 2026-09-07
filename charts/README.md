@@ -37,3 +37,18 @@ MPLCONFIGDIR=/tmp/wiki-chart-mpl python3 scripts/plot_retrieval_eval.py
 SVG text stays editable. PNG exports are 160 dpi. The plotting script does not
 rerun simulations or fetch sources. SD bars show variation across seeds, not
 confidence intervals or uncertainty about the historical incident.
+
+## Live model retrieval study
+
+[10-live-retrieval-outcomes.svg](10-live-retrieval-outcomes.svg)
+([PNG](10-live-retrieval-outcomes.png)) shows real OpenRouter runs on authored local
+tasks. It uses strict-format grading; three incorrect labels are literal
+`Abstain` responses. Neither model used the board. See the
+[study report](../analysis/model-retrieval-study.md) before interpreting conditions.
+Regenerate with `python3 scripts/plot_model_eval_study.py`.
+
+[11-board-adoption-and-storage.svg](11-board-adoption-and-storage.svg)
+([PNG](11-board-adoption-and-storage.png)) separates voluntary communication from
+required model reads after scripted publication. See the
+[follow-up report](../analysis/board-adoption-followup.md). Regenerate with
+`python3 scripts/plot_board_followup.py`.
