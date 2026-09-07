@@ -277,7 +277,9 @@ def run(task,mode,backend,limits,ledger,checkpoint,order_seed=0,environment=None
                 ledger.settle(a,reservation,reply['input_tokens'],reply['output_tokens'])
                 validate_action(reply['action'])
                 if time.monotonic()-start>=limits.wall_seconds:
-                    stopped[a]='response_after_wall_limit';save();continue
+                    stopped[a]='response_after_wall_limit'
+                    trace.append(dict(agent=a,event='response_after_wall_limit',request=copy.deepcopy(messages[a]),response=reply))
+                    save();continue
                 ledger.tool(a)
                 result=env.execute(a,reply['action'])
                 trace.append(dict(agent=a,event='action',request=copy.deepcopy(messages[a]),response=reply,result=result))
