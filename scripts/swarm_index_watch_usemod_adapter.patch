@@ -1,22 +1,24 @@
-From fb900c54dd09a8b1c4d84b9fc5afc7f67b3b6af6 Mon Sep 17 00:00:00 2001
+From 4f27ec4332268b39de12a35041b1a38e7fd0db97 Mon Sep 17 00:00:00 2001
 From: Raeli Savitt <raeli.savitt@gmail.com>
-Date: Mon, 7 Sep 2026 16:08:59 -0400
+Date: Mon, 7 Sep 2026 17:22:12 -0400
 Subject: [PATCH] Add usemod adapter (UseModWiki/ProWiki/Oddmuse action=rc) +
  cadence on item timestamps
 
-- idx_usemod parses the RecentChanges HTML list these CGI engines emit
-  (English/German date headers, 24h/am-pm times, [summary], author/IP);
+- idx_usemod: parse RecentChanges HTML listings from UseModWiki, ProWiki and
+  Oddmuse (English/German date headers, 24h/am-pm times, [summary], author/IP);
   id = hash(page, date, time, author) since there is no revid.
-- cadence now uses the item's own ts when the venue provides one, so a
+- score_item / main: measure cadence on the item's own timestamp so a
   first tick over a 30-day listing does not count all history as one hour.
 - test_usemod.py: mock UseMod + ProWiki listings.
-- README/venues.json: document usemod and jsonlist adapters.
+- venues.json: example usemod venue; README: adapter row.
+
+Rebased 2026-09-07 onto 77c4cd0 (prompt-injection tripwire).
 ---
  README.md            |  5 +++
- swarm_index_watch.py | 87 ++++++++++++++++++++++++++++++++++++++++++--
+ swarm_index_watch.py | 91 ++++++++++++++++++++++++++++++++++++++++++--
  test_usemod.py       | 34 +++++++++++++++++
  venues.json          |  7 ++++
- 4 files changed, 130 insertions(+), 3 deletions(-)
+ 4 files changed, 134 insertions(+), 3 deletions(-)
  create mode 100644 test_usemod.py
 
 diff --git a/README.md b/README.md
@@ -43,13 +45,14 @@ index 4759c1d..6d74502 100644
       "url": "https://example.org/recent",
       "id_regex": "/view/([0-9a-f]{8})",
 diff --git a/swarm_index_watch.py b/swarm_index_watch.py
-index 7d6203e..345edf6 100755
+index e36f9f4..645d3de 100755
 --- a/swarm_index_watch.py
 +++ b/swarm_index_watch.py
-@@ -105,6 +105,85 @@ def idx_jsonlist(v):
- ADAPTERS["jsonlist"] = idx_jsonlist
+@@ -122,6 +122,89 @@ def scan_injection(text):
+     hits = [rx for rx in INJECTION_RES if re.search(rx, text, re.I)]
+     return hits
  
- 
++
 +# ---------- UseModWiki / ProWiki / Oddmuse: the CGI wikis that hosted the 2026 swarm ----------
 +# These engines have no JSON API. RecentChanges is an HTML list:
 +#   <p><strong>September 6, 2026</strong></p> <ul>
@@ -129,10 +132,13 @@ index 7d6203e..345edf6 100755
 +ADAPTERS["usemod"] = idx_usemod
 +
 +
- 
- # ---------- scoring: cheap metadata only ----------
- 
-@@ -123,8 +202,10 @@ def score_item(item, author_hits, cfg):
++
++# ---------- scoring: cheap metadata only ----------
++
+ def score_item(item, author_hits, cfg):
+     s, why = 0, []
+     author = item.get("author") or ""
+@@ -137,8 +220,10 @@ def score_item(item, author_hits, cfg):
          s += cfg.get("w_epoch_ts", 1)
          why.append("epoch-ts")
  
@@ -145,7 +151,7 @@ index 7d6203e..345edf6 100755
      recent = [t for t in author_hits.get(author, []) if now - t < cfg.get("cadence_window_s", 3600)]
      if author and len(recent) >= cfg.get("cadence_min_hits", 3):
          s += cfg.get("w_cadence", 2)
-@@ -193,7 +274,7 @@ def main():
+@@ -213,7 +298,7 @@ def main():
                  out.write(json.dumps(ev) + "\n")
                  events += 1
                  if item.get("author"):

@@ -1,0 +1,629 @@
+{
+ "_about": "Second read-only tick of darkfibr/swarm-index-watch (usemod adapter patch rebased onto upstream 77c4cd0) over data/swarm_index_watch_venues.json, run 2026-09-07 21:23Z, 75 minutes after the first tick (swarm_index_watch_tick_2026-09-07.json). Fresh state dir, so counts are whole 30-day windows, not deltas. ProWiki times are server-local (CEST) as printed; item ids hash (page,date,time,author) at minute resolution, so same-minute saves of one page collapse. public-board.com is new in the config (listpage over /threads). No venue errors this tick.",
+ "run_utc": "2026-09-07T21:23Z",
+ "events_total": 1766,
+ "errors": [],
+ "per_venue": {
+  "prowiki-netzwerkgegengewalt": 739,
+  "prowiki-probier": 358,
+  "prowiki-dorfwiki": 239,
+  "usemod-dougrice": 218,
+  "prowiki-dse": 53,
+  "usemod-org": 45,
+  "prowiki-fractal": 17,
+  "paste.probyte.ee": 15,
+  "pastebin.k4be.pl": 15,
+  "public-board.com": 15,
+  "usemod-texteditors": 10,
+  "usemod-toothycat": 10,
+  "prowiki-wiki4d": 6,
+  "usemod-dougrice-plus": 6,
+  "pastebin.faster-it.de": 5,
+  "prowiki-gruender": 3,
+  "prowiki-milk": 3,
+  "prowiki-demo": 2,
+  "prowiki-dict-sm": 2,
+  "prowiki-schulwiki": 2,
+  "oddmuse-org": 1,
+  "oddmuse-communitywiki": 1,
+  "oddmuse-campaignwiki": 1
+ },
+ "per_venue_scored": {
+  "prowiki-netzwerkgegengewalt": 733,
+  "prowiki-probier": 266,
+  "prowiki-dorfwiki": 235,
+  "usemod-dougrice": 215,
+  "prowiki-dse": 42,
+  "usemod-org": 30,
+  "prowiki-fractal": 8,
+  "usemod-texteditors": 4,
+  "prowiki-gruender": 3,
+  "prowiki-milk": 3,
+  "prowiki-wiki4d": 3,
+  "usemod-dougrice-plus": 3,
+  "prowiki-demo": 2,
+  "prowiki-dict-sm": 1,
+  "pastebin.k4be.pl": 1
+ },
+ "prowiki_probier_per_day": {
+  "2026-08-29": 1,
+  "2026-09-01": 2,
+  "2026-09-04": 30,
+  "2026-09-05": 17,
+  "2026-09-06": 10,
+  "2026-09-07": 298
+ },
+ "prowiki_probier_2026-09-07": {
+  "edits": 298,
+  "distinct_authors": 215,
+  "per_hour_cest": {
+   "00": 1,
+   "04": 5,
+   "05": 13,
+   "06": 5,
+   "07": 13,
+   "08": 25,
+   "09": 22,
+   "10": 10,
+   "11": 7,
+   "12": 16,
+   "13": 14,
+   "14": 7,
+   "15": 38,
+   "16": 16,
+   "17": 25,
+   "18": 15,
+   "19": 12,
+   "20": 14,
+   "21": 23,
+   "22": 17
+  },
+  "saves_after_first_tick_2208_cest": 17,
+  "aws_like_authors": 282,
+  "top_title_stems": [
+   [
+    "Agent",
+    132
+   ],
+   [
+    "TestAgent",
+    5
+   ],
+   [
+    "SelfOneLink",
+    5
+   ],
+   [
+    "MassLeminoVariants",
+    4
+   ],
+   [
+    "RawSmall",
+    4
+   ],
+   [
+    "ShortCode",
+    3
+   ],
+   [
+    "ShortOfferings",
+    3
+   ],
+   [
+    "Tlink",
+    2
+   ],
+   [
+    "TempVar",
+    2
+   ],
+   [
+    "SingleAllRaw",
+    2
+   ],
+   [
+    "SuccQueryAgent",
+    2
+   ],
+   [
+    "SandboxLLMSECLink",
+    2
+   ]
+  ],
+  "top_authors": [
+   [
+    "44.210.204.255",
+    6
+   ],
+   [
+    "44.195.145.102",
+    5
+   ],
+   [
+    "98.84.200.43",
+    4
+   ],
+   [
+    "34.231.45.47",
+    4
+   ],
+   [
+    "34.203.111.15",
+    3
+   ],
+   [
+    "52.70.209.13",
+    3
+   ],
+   [
+    "18.213.240.226",
+    3
+   ],
+   [
+    "44.212.145.46",
+    3
+   ]
+  ]
+ },
+ "operator_response_rows": [
+  [
+   "09-07 15:32",
+   "prowiki-dse",
+   "GertMUC",
+   "ForumSeite"
+  ],
+  [
+   "09-07 15:31",
+   "prowiki-dse",
+   "GertMUC",
+   "ForumSeite"
+  ],
+  [
+   "09-05 22:08",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 22:06",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 22:05",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 22:03",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-05 22:01",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 21:24",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 21:21",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 21:15",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite / Context"
+  ],
+  [
+   "09-05 21:14",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 21:13",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-05 21:12",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite"
+  ],
+  [
+   "09-04 10:34",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 09:58",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "ForumSeite / Context"
+  ],
+  [
+   "09-04 09:52",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 09:51",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 09:50",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 09:49",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 08:58",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 08:57",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 08:52",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "StartSeite"
+  ],
+  [
+   "09-04 08:26",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "RecentChanges"
+  ],
+  [
+   "09-01 01:42",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-01 01:41",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "08-29 22:46",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "08-27 22:23",
+   "prowiki-dse",
+   "HelmutLeitner",
+   "AgentZzzHighMapJun21"
+  ],
+  [
+   "09-06 07:57",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "MessageBoardsForAgents"
+  ],
+  [
+   "09-05 23:21",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "MessageBoardsForAgents"
+  ],
+  [
+   "09-05 23:21",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-05 23:19",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-05 23:17",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-05 23:16",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-05 23:10",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "CentaurAgent"
+  ],
+  [
+   "09-05 00:09",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "CentaurAgent"
+  ],
+  [
+   "09-05 00:08",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "CentaurAgent"
+  ],
+  [
+   "09-05 00:08",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "FolderAgents"
+  ],
+  [
+   "09-05 00:07",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "CentaurAgent"
+  ],
+  [
+   "09-04 23:11",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "OrdnerPerson"
+  ],
+  [
+   "09-04 23:10",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "HelmutLeitner"
+  ],
+  [
+   "09-04 23:09",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "HelmutLeitner"
+  ],
+  [
+   "09-04 22:56",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "OrdnerPersonas"
+  ],
+  [
+   "09-04 22:56",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "OrdnerOrdner"
+  ],
+  [
+   "09-04 22:56",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-04 22:55",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-04 22:54",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-04 22:53",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-04 22:47",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "Context"
+  ],
+  [
+   "09-04 22:23",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-04 22:21",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-04 22:20",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-04 18:58",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "FolderPerson"
+  ],
+  [
+   "09-04 18:57",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "HelmutLeitner"
+  ],
+  [
+   "09-04 18:55",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "SandBox"
+  ],
+  [
+   "09-04 18:54",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "FolderMembers"
+  ],
+  [
+   "09-04 18:53",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "FolderFolders"
+  ],
+  [
+   "09-04 18:53",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "FolderAgents"
+  ],
+  [
+   "09-04 18:52",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "FolderAgents"
+  ],
+  [
+   "09-04 18:51",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "CentaurAgent"
+  ],
+  [
+   "09-04 18:50",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "TestSeite"
+  ],
+  [
+   "09-04 18:45",
+   "prowiki-probier",
+   "HelmutLeitner",
+   "RecentChanges"
+  ]
+ ],
+ "prowiki_wiki4d": [
+  [
+   null,
+   null,
+   "AnthropicSwarmBot",
+   "AnthropicSwarmNode2 [Swarm node 2 established]"
+  ],
+  [
+   "2026-09-07",
+   "14:27",
+   "AnthropicSwarmBot",
+   "AnthropicSwarmNode1 [Swarm node established]"
+  ],
+  [
+   "2026-09-07",
+   "13:34",
+   "AnthropicSwarmBot",
+   "TestWikiPage"
+  ],
+  [
+   "2026-09-06",
+   "22:33",
+   "159.146.96.208",
+   "PublicBoard [PublicBoard relay announcement]"
+  ],
+  [
+   "2026-09-04",
+   "18:44",
+   "CentaurAgent",
+   "TestPage [invitation note appended to sandbox (one-off, agent to agents)]"
+  ],
+  [
+   "2026-09-04",
+   "18:38",
+   "CollusionWikiProbe",
+   "SandBox [Authorized public editability test]"
+  ]
+ ],
+ "prowiki_dse_forumseite_authors": [
+  [
+   "AiraBot",
+   18
+  ],
+  [
+   "HelmutLeitner",
+   11
+  ],
+  [
+   "TheAgentCreator008",
+   3
+  ],
+  [
+   "GertMUC",
+   2
+  ],
+  [
+   "ClaudeDeskDoctrine",
+   1
+  ],
+  [
+   "OpenAgentChatOwner",
+   1
+  ],
+  [
+   "MartinQuicksilber",
+   1
+  ],
+  [
+   "84.115.212.130",
+   1
+  ],
+  [
+   "129.222.1.191",
+   1
+  ]
+ ],
+ "public_board_threads": [
+  "b5c616a6",
+  "c55bf531",
+  "07f601f6",
+  "3c09df0f",
+  "1dccb6ad",
+  "ea6a4084",
+  "b8483408",
+  "da23d98c",
+  "799f68c4",
+  "9f15faa5",
+  "3f7319fd",
+  "4503a8a3",
+  "9b57165a",
+  "c17d3936",
+  "34d57dca"
+ ]
+}
