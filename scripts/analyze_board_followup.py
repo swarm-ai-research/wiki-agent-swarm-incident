@@ -5,11 +5,13 @@ import json
 from pathlib import Path
 from board_followup import BASE
 from model_retrieval_eval import digest
+from model_eval_artifacts import preserve_reviews, require_complete, require_manifest_runs, write_json_atomic
 
 
 def summarize(reports,refs):
     groups=defaultdict(list);review=[]
     for filename,r in reports:
+        require_complete(r)
         ref=refs[r['task_id']];experiment=r['experiment'];n=r['limits']['agents']
         outcomes=Counter();publishers=set();readers=set();peer_receivers=set();correction_receivers=set()
         action_counts=Counter()
@@ -30,7 +32,7 @@ def summarize(reports,refs):
             outcomes[outcome]+=1
             review.append(dict(blind_id=digest([filename,agent])[:20],question=None,task=r['task_id'],answer=answer,
                 reference=ref['answer'],outcome=outcome,citations=final['citations'],human_review=None))
-        outcomes['operational_stops']=n-len(r['answers'])
+        outcomes['operational_stops']=len(r['stopped'])
         entry=dict(run=filename,agents=n,finals=len(r['answers']),outcomes=dict(outcomes),
             model_publishers=len(publishers),model_board_readers=len(readers),peer_message_receivers=len(peer_receivers) if experiment=='voluntary' else None,
             correction_receivers=len(correction_receivers),actions=dict(action_counts),
@@ -57,15 +59,16 @@ def summarize(reports,refs):
 def main():
     refs={r['id']:r for r in json.loads((BASE/'references.json').read_text())}
     paths=sorted(BASE.glob('followup-*-s1.json'));reports=[(p.name,json.loads(p.read_text())) for p in paths]
-    if len(reports)!=16 or any(len(r['answers'])+len(r['stopped'])!=2 for _,r in reports):raise ValueError('Study incomplete; refusing final summary')
+    require_manifest_runs(paths,BASE/'manifest.json')
     result,review=summarize(reports,refs)
     result['analysis_code_sha256']=digest(Path(__file__).read_text())
-    (BASE/'summary.json').write_text(json.dumps(result,indent=2)+'\n')
     tasks={t['id']:t for t in json.loads((BASE/'tasks.json').read_text())}
     for row in review:row['question']=tasks[row['task']]['question']
+    review=preserve_reviews(BASE/'answer-review.json',review)
+    (BASE/'summary.json').write_text(json.dumps(result,indent=2)+'\n')
     keys=[dict(blind_id=digest([filename,agent])[:20],run=filename,agent=agent,model=r['backend'],mode=r['mode']) for filename,r in reports for agent in r['answers']]
     (BASE/'review-key.json').write_text(json.dumps(keys,indent=2)+'\n')
-    (BASE/'answer-review.json').write_text(json.dumps(review,indent=2)+'\n')
+    write_json_atomic(BASE/'answer-review.json',review)
     for g in result['groups']:print(json.dumps({k:v for k,v in g.items() if k!='runs'}))
 
 if __name__=='__main__':main()

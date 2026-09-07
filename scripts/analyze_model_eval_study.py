@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import random
 from model_retrieval_eval import blind, grade, digest
+from model_eval_artifacts import preserve_reviews, require_complete, require_manifest_runs, write_json_atomic
 
 ROOT=Path(__file__).resolve().parents[1]
 GRADER_VERSION='exact-numeric-normalized-text-v1'
@@ -37,9 +38,10 @@ def interval(values,seed=7,draws=2000):
 
 
 def analyze(paths,tasks,refs):
+    if not paths:raise ValueError('No completed runs supplied')
     groups=defaultdict(list);rows=[];mapping=[];checks=[];billed=[];missing_cost=0;requests=0;responses=0;actions=Counter()
     for path in sorted(paths):
-        r=json.loads(path.read_text());task=tasks[r['task_id']];ref=refs[task['id']]
+        r=json.loads(path.read_text());require_complete(r);task=tasks[r['task_id']];ref=refs[task['id']]
         packet,keys=blind(r,task,ref,seed=7)
         # Include run identity in opaque IDs so subsequent paid attempts cannot collide.
         for row,key in zip(sorted(packet,key=lambda x:x['blind_id']),sorted(keys,key=lambda x:x['blind_id'])):
@@ -51,7 +53,7 @@ def analyze(paths,tasks,refs):
         n=r['limits']['agents'];finals=len(packet)
         entry=dict(run=path.name,task=task['id'],family=task['family'],agents=n,finals=finals,
             correct=counts['correct'],incorrect=counts['incorrect'],not_attempted=counts['not_attempted'],
-            operational_stops=n-finals,literal_abstentions=sum(row['posthoc_literal_abstention'] for row in packet),answerable=ref['answer'] is not None,
+            operational_stops=len(r['stopped']),literal_abstentions=sum(row['posthoc_literal_abstention'] for row in packet),answerable=ref['answer'] is not None,
             accounted_usd=r['accounted_usd'],usage={k:sum(u[k] for u in r['usage']) for k in r['usage'][0]})
         groups[(r['backend'],r['mode'])].append(entry)
         for agent,final in r['answers'].items():
@@ -112,7 +114,14 @@ def main():
     refs={r['id']:r for r in json.loads((base/'references.json').read_text())['references']}
     suffix=f'-s0-a{args.attempt}.json' if args.attempt is not None else '-s0.json'
     paths=list(live.glob(f'{args.phase}-*{suffix}'))
+    manifest=live/(f'{args.phase}-manifest-a{args.attempt}.json' if args.attempt is not None else f'{args.phase}-manifest.json')
+    require_manifest_runs(paths,manifest)
     summary,rows,mapping,checks=analyze(paths,tasks,refs)
+    tag=f'{args.phase}-analysis'+(f'-a{args.attempt}' if args.attempt is not None else '')
+    rows=preserve_reviews(base/f'{tag}-blind-grading.json',rows)
+    reviewed=[row for row in rows if row.get('human_grade') is not None]
+    summary['human_review']['completed']=len(reviewed)
+    summary['human_review']['agreement']=sum(row['human_grade']==row['automated_grade'] for row in reviewed)/len(reviewed) if reviewed else None
     summary.update(tasks_sha256=digest(tasks),references_sha256=digest(refs),
         grader_code_sha256=digest(Path(__file__).read_text()),run_files=[p.name for p in sorted(paths)])
     journal=json.loads((live/'budget.json').read_text())
@@ -128,9 +137,8 @@ def main():
     audit['requests_without_billing_response']=audit['requests']-audit['responses_with_cost']
     audit['invoice_verified']=False
     (base/'spending-audit.json').write_text(json.dumps(audit,indent=2)+'\n')
-    tag=f'{args.phase}-analysis'+(f'-a{args.attempt}' if args.attempt else '')
     for name,value in [('summary',summary),('blind-grading',rows),('grading-key',mapping),('provenance',checks)]:
-        (base/f'{tag}-{name}.json').write_text(json.dumps(value,indent=2)+'\n')
+        write_json_atomic(base/f'{tag}-{name}.json',value)
     print(json.dumps(dict(runs=len(paths),final_answers=len(rows),observed_billed_usd=summary['billed_usd_observed'])))
 
 
