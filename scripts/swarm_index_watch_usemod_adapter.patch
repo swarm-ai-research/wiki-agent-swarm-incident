@@ -1,0 +1,217 @@
+From fb900c54dd09a8b1c4d84b9fc5afc7f67b3b6af6 Mon Sep 17 00:00:00 2001
+From: Raeli Savitt <raeli.savitt@gmail.com>
+Date: Mon, 7 Sep 2026 16:08:59 -0400
+Subject: [PATCH] Add usemod adapter (UseModWiki/ProWiki/Oddmuse action=rc) +
+ cadence on item timestamps
+
+- idx_usemod parses the RecentChanges HTML list these CGI engines emit
+  (English/German date headers, 24h/am-pm times, [summary], author/IP);
+  id = hash(page, date, time, author) since there is no revid.
+- cadence now uses the item's own ts when the venue provides one, so a
+  first tick over a 30-day listing does not count all history as one hour.
+- test_usemod.py: mock UseMod + ProWiki listings.
+- README/venues.json: document usemod and jsonlist adapters.
+---
+ README.md            |  5 +++
+ swarm_index_watch.py | 87 ++++++++++++++++++++++++++++++++++++++++++--
+ test_usemod.py       | 34 +++++++++++++++++
+ venues.json          |  7 ++++
+ 4 files changed, 130 insertions(+), 3 deletions(-)
+ create mode 100644 test_usemod.py
+
+diff --git a/README.md b/README.md
+index 4759c1d..6d74502 100644
+--- a/README.md
++++ b/README.md
+@@ -35,6 +35,8 @@ shards/YYYY-MM-DD.jsonl  # append-only event log (auto-created)
+ 
+ - **mediawiki** — one `recentchanges` API call gets every recent edit (title/user/timestamp/sizes). Near-real-time firehose.
+ - **listpage** — generic pastebin-style recent/archive page: regex the ids, diff against cursor, keep the anchor text as scoreable metadata.
++- **jsonlist** — paginated JSON list API (fragbin-style `/api/pastes?page=N`); field names configurable.
++- **usemod** — UseModWiki / ProWiki / Oddmuse `action=rc` RecentChanges HTML (the CGI wikis that hosted the 2026 swarm boards). Parses date headers (English or German), times (24h or am/pm), page, `[summary]`, and author/IP; item id is a hash of (page, date, time, author) since these engines expose no revision id. Read-only GET, no body fetch needed: the page name and summary carry the handle grammar. Set `utc_offset_h` per venue (these engines print server-local wall time).
+ 
+ Add your own: one generator function yielding `{id, author, title, url, ts}` items, register it in `ADAPTERS`.
+ 
+@@ -50,6 +52,9 @@ Add your own: one generator function yielding `{id, author, title, url, ts}` ite
+     {"name": "some-wiki", "type": "mediawiki",
+      "api": "https://example.org/w/api.php",
+      "page_base": "https://example.org/wiki/"},
++    {"name": "some-usemod", "type": "usemod",
++     "url": "https://example.org/cgi-bin/wiki.pl?action=rc&days=30&all=1&showedit=1",
++     "page_base": "https://example.org/cgi-bin/wiki.pl?", "fetch_body": false},
+     {"name": "some-pastebin", "type": "listpage",
+      "url": "https://example.org/recent",
+      "id_regex": "/view/([0-9a-f]{8})",
+diff --git a/swarm_index_watch.py b/swarm_index_watch.py
+index 7d6203e..345edf6 100755
+--- a/swarm_index_watch.py
++++ b/swarm_index_watch.py
+@@ -105,6 +105,85 @@ def idx_jsonlist(v):
+ ADAPTERS["jsonlist"] = idx_jsonlist
+ 
+ 
++# ---------- UseModWiki / ProWiki / Oddmuse: the CGI wikis that hosted the 2026 swarm ----------
++# These engines have no JSON API. RecentChanges is an HTML list:
++#   <p><strong>September 6, 2026</strong></p> <ul>
++#   <li><a href="...diff...">(diff)</a> <a href="wiki.pl?PageName">PageName</a> 16:59
++#       <strong>[summary]</strong> . . . . . AuthorOrIp</li>
++# ProWiki emits German date headers ("7. September 2026") and 24h times; UseMod
++# emits English headers and either "7:44 pm" or "16:59". Oddmuse uses the same
++# shape with extra markup. There is no revision id, so the item id is a hash of
++# (page, date, time, author) — stable across ticks, distinct per edit.
++_MONTHS = {m: i + 1 for i, m in enumerate(
++    "january february march april may june july august september october november december".split())}
++_MONTHS.update({"märz": 3, "mai": 5, "juni": 6, "juli": 7, "oktober": 10, "dezember": 12})
++_RC_DATE_RE = re.compile(r"<strong>\s*(?:(\d{1,2})\.\s*)?([A-Za-zäÄ]+)\s+(\d{1,2})?,?\s*(\d{4})\s*</strong>", re.I)
++_RC_ROW_RE = re.compile(
++    r"<li>.*?\(diff\)</a>\s*<a href=['\"](?P<href>[^'\"]+)['\"][^>]*>(?P<page>[^<]+)</a>\s*"
++    r"(?P<time>\d{1,2}:\d{2}(?:\s*[ap]m)?)\s*(?P<rest>.*?)(?:</li>|(?=<li>)|(?=</ul>))", re.I | re.S)
++_RC_SUMMARY_RE = re.compile(r"<strong>\[(?P<s>.*?)\]</strong>", re.S)
++
++
++def _rc_date(m):
++    day = m.group(1) or m.group(3)
++    mon = _MONTHS.get(m.group(2).lower())
++    if not (day and mon):
++        return None
++    return int(m.group(4)), mon, int(day)
++
++
++def _rc_ts(date, t, utc_offset_h=0):
++    """These engines print server-local wall time (ProWiki: Vienna). Pass the
++    venue's utc_offset_h so ts is real UTC; default 0 keeps the naive reading."""
++    if not date:
++        return None
++    t = t.strip().lower()
++    hh, mm = t.replace("am", "").replace("pm", "").strip().split(":")
++    hh, mm = int(hh), int(mm)
++    if t.endswith("pm") and hh < 12:
++        hh += 12
++    if t.endswith("am") and hh == 12:
++        hh = 0
++    y, mo, d = date
++    return int(datetime(y, mo, d, hh, mm, tzinfo=timezone.utc).timestamp()) - int(utc_offset_h * 3600)
++
++
++def idx_usemod(v):
++    """UseModWiki / ProWiki / Oddmuse RecentChanges (action=rc). Read-only GET.
++    Config: url (the rc listing), optional page_base for item urls,
++    optional utc_offset_h (server-local clock offset, e.g. 2 for CEST)."""
++    data, _ = fetch(v["url"])
++    text = data.decode("utf-8", "replace") if b"utf-8" in data[:2000].lower() \
++        else data.decode("latin-1")
++    date = None
++    pos = 0
++    events = [(m.start(), "d", m) for m in _RC_DATE_RE.finditer(text)]
++    events += [(m.start(), "r", m) for m in _RC_ROW_RE.finditer(text)]
++    for _, kind, m in sorted(events, key=lambda e: e[0]):
++        if kind == "d":
++            date = _rc_date(m)
++            continue
++        page = m.group("page").strip()
++        rest = m.group("rest")
++        sm = _RC_SUMMARY_RE.search(rest)
++        summary = re.sub(r"<[^>]+>", "", sm.group("s")).strip() if sm else ""
++        tail = re.sub(r"<[^>]+>", " ", rest)
++        tail = tail.split(". . .")[-1] if ". . ." in tail else tail
++        author = tail.strip().split()[-1] if tail.strip() else None
++        ts = _rc_ts(date, m.group("time"), v.get("utc_offset_h", 0))
++        key = f"{page}|{date}|{m.group('time').strip()}|{author}"
++        yield {
++            "id": "rc" + hashlib.sha1(key.encode()).hexdigest()[:12],
++            "author": author,
++            "title": f"{page} [{summary}]" if summary else page,
++            "url": (v.get("page_base") or "") + urllib.parse.quote(page, safe="/") if v.get("page_base") else None,
++            "ts": ts,
++        }
++
++
++ADAPTERS["usemod"] = idx_usemod
++
++
+ 
+ # ---------- scoring: cheap metadata only ----------
+ 
+@@ -123,8 +202,10 @@ def score_item(item, author_hits, cfg):
+         s += cfg.get("w_epoch_ts", 1)
+         why.append("epoch-ts")
+ 
+-    # cadence: same author hitting repeatedly inside the window
+-    now = time.time()
++    # cadence: same author hitting repeatedly inside the window. Measured on the
++    # item's own timestamp when the venue gives one, so a first tick over a
++    # 30-day listing does not read all of history as "the last hour".
++    now = item.get("ts") or time.time()
+     recent = [t for t in author_hits.get(author, []) if now - t < cfg.get("cadence_window_s", 3600)]
+     if author and len(recent) >= cfg.get("cadence_min_hits", 3):
+         s += cfg.get("w_cadence", 2)
+@@ -193,7 +274,7 @@ def main():
+                 out.write(json.dumps(ev) + "\n")
+                 events += 1
+                 if item.get("author"):
+-                    state["authors"].setdefault(item["author"], []).append(time.time())
++                    state["authors"].setdefault(item["author"], []).append(item.get("ts") or time.time())
+ 
+             cursor["seen"] = list(seen)[-cfg.get("seen_keep", 5000):]
+ 
+diff --git a/test_usemod.py b/test_usemod.py
+new file mode 100644
+index 0000000..3b50730
+--- /dev/null
++++ b/test_usemod.py
+@@ -0,0 +1,34 @@
++#!/usr/bin/env python3
++"""Mock-venue test for the usemod adapter: UseMod (English, am/pm), ProWiki (German, 24h)."""
++import swarm_index_watch as W
++
++USEMOD = """<p><strong>September 6, 2026</strong></p> <ul>
++<li><a href="wiki.pl?action=browse&amp;diff=1&amp;id=PublicBoard">(diff)</a> <a href="wiki.pl?PublicBoard" class="wikipagelink">PublicBoard</a> 16:59 <strong>[Spam]</strong> . . . . . <a href="wiki.pl?Meow" title="ID 108833">Meow</a>
++<li><a href="wiki.pl?action=browse&amp;diff=1&amp;id=PublicBoard">(diff)</a> <a href="wiki.pl?PublicBoard" class="wikipagelink">PublicBoard</a> 08:14 <strong>[Public Board announcement]</strong> . . . . . 159.146.96.208
++<li><a href="wiki.pl?id=APoc&action=browse&diff=1">(diff)</a> <a href="wiki.pl?APoc">APoc</a> 7:44 pm <strong>[Comment]</strong> . . . . . 212.11.62.xxx </UL>"""
++PROWIKI = """<p><strong>7. September 2026</strong></p> <ul>
++<li><a href='wiki.cgi?action=browse&amp;diff=4&amp;id=Agent010LeminoDirect1781807025' class='body' rel='nofollow'>(diff)</a> <a href='wiki.cgi?Agent010LeminoDirect1781807025' class='body'>Agent010LeminoDirect1781807025</a> 21:52 <strong>[agent010]</strong> . . . . . 52.44.229.124</li>
++<li><a href='wiki.cgi?action=browse&amp;diff=4&amp;id=OrdnerOrdner' class='body' rel='nofollow'>(diff)</a> <a href='wiki.cgi?OrdnerOrdner' class='body'>OrdnerOrdner</a> 21:52 . . . . . 44.215.210.112</li></ul>"""
++
++def run(html, enc="utf-8"):
++    W.fetch = lambda url, timeout=20: (html.encode(enc), {})
++    return list(W.idx_usemod({"url": "x", "page_base": "https://ex/wiki.cgi?"}))
++
++u = run(USEMOD)
++assert [i["author"] for i in u] == ["Meow", "159.146.96.208", "212.11.62.xxx"], u
++assert u[0]["title"] == "PublicBoard [Spam]"
++assert u[0]["ts"] == 1788713940, u[0]["ts"]          # 2026-09-06 16:59Z
++assert u[2]["ts"] == 1788723840, u[2]["ts"]          # 19:44Z from "7:44 pm"
++assert len({i["id"] for i in u}) == 3
++p = run(PROWIKI, "latin-1")
++assert p[0]["author"] == "52.44.229.124" and p[0]["ts"] == 1788817920, p[0]
++assert p[0]["url"] == "https://ex/wiki.cgi?Agent010LeminoDirect1781807025"
++W.fetch = lambda url, timeout=20: (PROWIKI.encode("latin-1"), {})
++q = list(W.idx_usemod({"url": "x", "utc_offset_h": 2}))
++assert q[0]["ts"] == 1788817920 - 7200, q[0]["ts"]   # 21:52 CEST -> 19:52Z
++cfg = {"grammar_regexes": [r"\bagent[-_]?\d{3,}\b", r"(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*"]}
++s, why = W.score_item(p[0], {}, cfg)
++assert s == 2 and why == ["grammar"], (s, why)  # epoch int is glued to the handle, so EPOCH_RE (word-bounded) stays quiet
++s2, _ = W.score_item(p[1], {}, cfg)
++assert s2 == 0
++print("usemod adapter: ok", len(u), len(p))
+diff --git a/venues.json b/venues.json
+index 50a9f10..45d63e2 100644
+--- a/venues.json
++++ b/venues.json
+@@ -19,6 +19,13 @@
+       "limit": 100,
+       "fetch_body": false
+     },
++    {
++      "name": "example-usemod",
++      "type": "usemod",
++      "url": "https://example.org/cgi-bin/wiki.pl?action=rc&days=30&all=1&showedit=1",
++      "page_base": "https://example.org/cgi-bin/wiki.pl?",
++      "fetch_body": false
++    },
+     {
+       "name": "example-pastebin",
+       "type": "listpage",
+-- 
+2.39.5 (Apple Git-154)
+
