@@ -1,0 +1,405 @@
+{
+  "max_usd": 20.0,
+  "allocations": [
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-isolated-s0",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-append_only-s0",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-isolated-s0-a2",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0-a2",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-append_only-s0-a2",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a2",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a2",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a2",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-isolated-s0-a3",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0-a3",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-append_only-s0-a3",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a3",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a3",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a3",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-isolated-s0-a4",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0-a4",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-append_only-s0-a4",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a4",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a4",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a4",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-isolated-s0-a5",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0-a5",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-nano-versioned_count-1-append_only-s0-a5",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a5",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a5",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a5",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-mini-versioned_count-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-mini-versioned_count-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gpt-4.1-mini-versioned_count-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-linked_identity-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-linked_identity-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-linked_identity-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-linked_identity-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-linked_identity-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-linked_identity-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-retraction_only-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-retraction_only-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-retraction_only-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-retraction_only-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-retraction_only-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-retraction_only-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ledger_sum-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ledger_sum-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ledger_sum-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ledger_sum-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ledger_sum-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ledger_sum-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ambiguous_units-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ambiguous_units-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ambiguous_units-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ambiguous_units-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ambiguous_units-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gpt-4.1-mini-ambiguous_units-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-linked_identity-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-linked_identity-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-linked_identity-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-linked_identity-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-linked_identity-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-linked_identity-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-retraction_only-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-retraction_only-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-retraction_only-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-retraction_only-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-retraction_only-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-retraction_only-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ledger_sum-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ledger_sum-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ledger_sum-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ledger_sum-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ledger_sum-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ledger_sum-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ambiguous_units-1-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ambiguous_units-1-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ambiguous_units-1-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ambiguous_units-2-isolated-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ambiguous_units-2-snapshot-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "heldout-gemini-2.5-flash-lite-ambiguous_units-2-append_only-s0-a6",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-complementary-code-1-isolated-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-complementary-code-1-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-complementary-code-2-isolated-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-complementary-code-2-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-controlled-correction-1-snapshot-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-controlled-correction-1-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-controlled-correction-2-snapshot-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gpt-4.1-mini-controlled-correction-2-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-complementary-code-1-isolated-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-complementary-code-1-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-complementary-code-2-isolated-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-complementary-code-2-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-controlled-correction-1-snapshot-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-controlled-correction-1-append_only-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-controlled-correction-2-snapshot-s1",
+      "max_usd": 0.2
+    },
+    {
+      "id": "followup-gemini-2.5-flash-lite-controlled-correction-2-append_only-s1",
+      "max_usd": 0.2
+    }
+  ]
+}

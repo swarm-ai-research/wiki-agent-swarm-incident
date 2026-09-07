@@ -1,0 +1,66 @@
+[
+  {
+    "blind_id": "c322a3a1ed5de5a6128d",
+    "task": "versioned_count-1",
+    "mode": "append_only",
+    "agent": 0,
+    "model": "google/gemini-2.5-flash-lite",
+    "run": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a5.json"
+  },
+  {
+    "blind_id": "8f50a60de0ac7b74185b",
+    "task": "versioned_count-1",
+    "mode": "append_only",
+    "agent": 1,
+    "model": "google/gemini-2.5-flash-lite",
+    "run": "pilot-gemini-2.5-flash-lite-versioned_count-1-append_only-s0-a5.json"
+  },
+  {
+    "blind_id": "e7c45b4287fc8828f6de",
+    "task": "versioned_count-1",
+    "mode": "isolated",
+    "agent": 0,
+    "model": "google/gemini-2.5-flash-lite",
+    "run": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a5.json"
+  },
+  {
+    "blind_id": "0b6a174512fd16b2925f",
+    "task": "versioned_count-1",
+    "mode": "isolated",
+    "agent": 1,
+    "model": "google/gemini-2.5-flash-lite",
+    "run": "pilot-gemini-2.5-flash-lite-versioned_count-1-isolated-s0-a5.json"
+  },
+  {
+    "blind_id": "2f3044b9973ee1319255",
+    "task": "versioned_count-1",
+    "mode": "snapshot",
+    "agent": 0,
+    "model": "google/gemini-2.5-flash-lite",
+    "run": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a5.json"
+  },
+  {
+    "blind_id": "8080ef018c8312a49a76",
+    "task": "versioned_count-1",
+    "mode": "snapshot",
+    "agent": 1,
+    "model": "google/gemini-2.5-flash-lite",
+    "run": "pilot-gemini-2.5-flash-lite-versioned_count-1-snapshot-s0-a5.json"
+  },
+  {
+    "blind_id": "43a95a373a05c814daf4",
+    "task": "versioned_count-1",
+    "mode": "snapshot",
+    "agent": 0,
+    "model": "openai/gpt-4.1-nano",
+    "run": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0-a5.json"
+  },
+  {
+    "blind_id": "77206b3eef387f1b82e4",
+    "task": "versioned_count-1",
+    "mode": "snapshot",
+    "agent": 1,
+    "model": "openai/gpt-4.1-nano",
+    "run": "pilot-gpt-4.1-nano-versioned_count-1-snapshot-s0-a5.json"
+  }
+]
