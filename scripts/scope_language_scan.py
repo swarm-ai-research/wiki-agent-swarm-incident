@@ -40,11 +40,14 @@ PATTERNS = {
 def rows(path):
     f = open(path, encoding="utf-8") if path else urllib.request.urlopen(
         urllib.request.Request(RAW, headers={"User-Agent": "scope-language-scan"}), timeout=300)
-    for line in f:
-        if isinstance(line, bytes):
-            line = line.decode("utf-8")
-        if line.strip():
-            yield json.loads(line)
+    try:
+        for line in f:
+            if isinstance(line, bytes):
+                line = line.decode("utf-8")
+            if line.strip():
+                yield json.loads(line)
+    finally:
+        f.close()
 
 
 def scan(records, examples=2):
