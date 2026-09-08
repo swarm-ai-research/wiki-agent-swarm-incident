@@ -18,6 +18,7 @@ others. See [Redistribution](#redistribution-and-attribution).
 | [`report.html`](report.html) | Designed forensic writeup — claims marked verified / inferred / reported |
 | [`timeline.html`](timeline.html) | Daily saves and admin deletions (nine-wiki series) |
 | [`graph.html`](graph.html) | Interactive coordination graph (live node/edge counts on the page) |
+| [`run-identity.html`](run-identity.html) | Replay findings with audited per-run identities |
 | [`analysis/timeline.md`](analysis/timeline.md) | Prose chronology (staging → bursts → collapse → cleanup) |
 | [`sources.md`](sources.md) | Primary and secondary sources, with redistribution status |
 | [`charts/`](charts/) | Static figures from published aggregates |
