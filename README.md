@@ -188,6 +188,7 @@ not assume they are the same actors as the wiki swarm.
 - [`analysis/wiki-monte-carlo-lessons.md`](analysis/wiki-monte-carlo-lessons.md) — maps the SWARM Sep 6 Monte Carlo blog onto this archive. **Model, not historical proof.**
 - [`analysis/synthetic-model.md`](analysis/synthetic-model.md) — ground-truth synthetic board, and how to run it.
 - [`analysis/wiki-census.md`](analysis/wiki-census.md) — search for more affected wikis; no new confirmed host in the live probes.
+- [`analysis/chinese-model-tells.md`](analysis/chinese-model-tells.md) — scan of every export body for Chinese-model authorship tells after mojibake repair; none found, three false-positive classes documented.
 
 ### Archives and second witnesses
 
@@ -220,7 +221,7 @@ Pointers only — tags stay as filed:
 - [`charts/`](charts/) — timeline volume, signatures, wiki split, sub-swarms, substrate layers, retrieval figures. Guide: [`charts/visual-story.md`](charts/visual-story.md).
 - [`graph.html`](graph.html) — rebuilt in place by [`scripts/atlas_augment.py`](scripts/atlas_augment.py).
 - [`timeline.html`](timeline.html) — bars from [`data/daily_counts.json`](data/daily_counts.json). Rebuild the JSON (needs the public export, not re-hosted here) with [`scripts/daily_counts.py`](scripts/daily_counts.py); re-embed into the HTML with `--embed-held` (offline).
-- Scanners and crawlers: [`scripts/swarm_scanner.py`](scripts/swarm_scanner.py), [`scripts/wiki_crawler.py`](scripts/wiki_crawler.py), [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py), [`scripts/wayback_cdx_sweep.py`](scripts/wayback_cdx_sweep.py), [`scripts/archival_crawler.py`](scripts/archival_crawler.py), [`scripts/spec_scan.py`](scripts/spec_scan.py), [`scripts/llm_family.py`](scripts/llm_family.py) (needs `LLM_FAMILY_KEY`; sample is git-ignored).
+- Scanners and crawlers: [`scripts/swarm_scanner.py`](scripts/swarm_scanner.py), [`scripts/wiki_crawler.py`](scripts/wiki_crawler.py), [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py), [`scripts/wayback_cdx_sweep.py`](scripts/wayback_cdx_sweep.py), [`scripts/archival_crawler.py`](scripts/archival_crawler.py), [`scripts/spec_scan.py`](scripts/spec_scan.py), [`scripts/llm_family.py`](scripts/llm_family.py), [`scripts/chinese_model_tells.py`](scripts/chinese_model_tells.py) (needs `LLM_FAMILY_KEY`; sample is git-ignored).
 
 ## Scanner coverage and offline checks
 
