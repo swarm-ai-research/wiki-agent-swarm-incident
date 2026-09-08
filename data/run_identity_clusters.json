@@ -1,0 +1,434 @@
+{
+  "method": "weighted greedy modularity; audited family labels withheld until validation",
+  "modes": {
+    "label": {
+      "adjusted_rand": 0.5303,
+      "communities": 28,
+      "components": 9,
+      "families": 31,
+      "family_assortativity": 0.807,
+      "family_partition_modularity": 0.7983,
+      "largest_communities": [
+        58,
+        47,
+        46,
+        44,
+        33,
+        26,
+        25,
+        24
+      ],
+      "mixed_communities": [
+        {
+          "community": 1,
+          "families": {
+            "datausa-cashiers-masters": 22,
+            "datausa-construction-workforce-ny": 4,
+            "datausa-finance-gender-gap": 1,
+            "datausa-grocery-workforce": 2,
+            "datausa-language-french": 2,
+            "datausa-poverty-county": 27
+          },
+          "size": 58
+        },
+        {
+          "community": 2,
+          "families": {
+            "fuel-poverty-ni": 3,
+            "ihme-cvd-deaths": 38,
+            "oecd-preprimary-private-spending": 1,
+            "oecd-regional-co2": 4,
+            "sdg-index-score": 1
+          },
+          "size": 47
+        },
+        {
+          "community": 3,
+          "families": {
+            "ihme-cvd-deaths": 1,
+            "ihme-mcv2": 1,
+            "oecd-household-income": 2,
+            "oecd-preprimary-private-spending": 42
+          },
+          "size": 46
+        },
+        {
+          "community": 4,
+          "families": {
+            "datausa-cashiers-masters": 2,
+            "datausa-construction-workforce-ny": 18,
+            "datausa-language-french": 24
+          },
+          "size": 44
+        },
+        {
+          "community": 5,
+          "families": {
+            "college-state-tuition-2015": 8,
+            "datausa-construction-workforce-az": 1,
+            "datausa-construction-workforce-ny": 12,
+            "datausa-finance-gender-gap": 12
+          },
+          "size": 33
+        },
+        {
+          "community": 6,
+          "families": {
+            "datausa-language-french": 1,
+            "datausa-maids-wage": 24,
+            "datausa-poverty-county": 1
+          },
+          "size": 26
+        },
+        {
+          "community": 7,
+          "families": {
+            "datausa-clothing-workforce": 10,
+            "datausa-language-french": 1,
+            "datausa-maids-wage": 1,
+            "datausa-sector61-state": 12,
+            "datausa-transport-production": 1
+          },
+          "size": 25
+        },
+        {
+          "community": 8,
+          "families": {
+            "dataafrica-rainfed-crops": 1,
+            "datausa-cashiers-masters": 2,
+            "datausa-construction-workforce-ny": 5,
+            "datausa-language-french": 1,
+            "datausa-poverty-county": 2,
+            "nyc-veterans": 13
+          },
+          "size": 24
+        },
+        {
+          "community": 9,
+          "families": {
+            "datausa-cashiers-masters": 1,
+            "datausa-clothing-workforce": 16,
+            "datausa-construction-workforce-ny": 1,
+            "datausa-sector61-state": 4
+          },
+          "size": 22
+        },
+        {
+          "community": 10,
+          "families": {
+            "datausa-finance-gender-gap": 1,
+            "ihme-cvd-deaths": 20
+          },
+          "size": 21
+        },
+        {
+          "community": 11,
+          "families": {
+            "datausa-poverty-state": 2,
+            "datausa-transport-production": 1,
+            "ihme-family-planning": 6,
+            "ihme-smoking": 3,
+            "oecd-preprimary-private-spending": 1
+          },
+          "size": 13
+        }
+      ],
+      "modularity": 0.8676,
+      "nodes": 437,
+      "normalized_mutual_information": 0.7727,
+      "purity": 0.714,
+      "reply_pairs": 773,
+      "same_family_share": 0.8719,
+      "same_family_weight": 1048,
+      "single_family_communities": 17,
+      "split_families": [
+        {
+          "communities": {
+            "2": 38,
+            "3": 1,
+            "10": 20,
+            "24": 3,
+            "27": 2
+          },
+          "family": "ihme-cvd-deaths",
+          "size": 64
+        },
+        {
+          "communities": {
+            "2": 1,
+            "3": 42,
+            "11": 1,
+            "28": 2
+          },
+          "family": "oecd-preprimary-private-spending",
+          "size": 46
+        },
+        {
+          "communities": {
+            "1": 4,
+            "4": 18,
+            "5": 12,
+            "8": 5,
+            "9": 1
+          },
+          "family": "datausa-construction-workforce-ny",
+          "size": 40
+        },
+        {
+          "communities": {
+            "1": 22,
+            "4": 2,
+            "8": 2,
+            "9": 1,
+            "14": 7
+          },
+          "family": "datausa-cashiers-masters",
+          "size": 34
+        },
+        {
+          "communities": {
+            "1": 27,
+            "6": 1,
+            "8": 2
+          },
+          "family": "datausa-poverty-county",
+          "size": 30
+        },
+        {
+          "communities": {
+            "1": 2,
+            "4": 24,
+            "6": 1,
+            "7": 1,
+            "8": 1
+          },
+          "family": "datausa-language-french",
+          "size": 29
+        },
+        {
+          "communities": {
+            "7": 10,
+            "9": 16
+          },
+          "family": "datausa-clothing-workforce",
+          "size": 26
+        },
+        {
+          "communities": {
+            "6": 24,
+            "7": 1
+          },
+          "family": "datausa-maids-wage",
+          "size": 25
+        },
+        {
+          "communities": {
+            "12": 11,
+            "15": 6
+          },
+          "family": "datausa-police-wage-age",
+          "size": 17
+        },
+        {
+          "communities": {
+            "7": 12,
+            "9": 4
+          },
+          "family": "datausa-sector61-state",
+          "size": 16
+        },
+        {
+          "communities": {
+            "1": 1,
+            "5": 12,
+            "10": 1
+          },
+          "family": "datausa-finance-gender-gap",
+          "size": 14
+        },
+        {
+          "communities": {
+            "1": 2,
+            "13": 9
+          },
+          "family": "datausa-grocery-workforce",
+          "size": 11
+        },
+        {
+          "communities": {
+            "17": 5,
+            "20": 4
+          },
+          "family": "cashiers-bachelors-2015",
+          "size": 9
+        },
+        {
+          "communities": {
+            "5": 1,
+            "22": 4
+          },
+          "family": "datausa-construction-workforce-az",
+          "size": 5
+        },
+        {
+          "communities": {
+            "7": 1,
+            "11": 1,
+            "26": 2
+          },
+          "family": "datausa-transport-production",
+          "size": 4
+        },
+        {
+          "communities": {
+            "3": 1,
+            "23": 3
+          },
+          "family": "ihme-mcv2",
+          "size": 4
+        }
+      ],
+      "weighted_replies": 1202
+    },
+    "run": {
+      "adjusted_rand": 0.8049,
+      "communities": 30,
+      "components": 26,
+      "families": 29,
+      "family_assortativity": 0.9842,
+      "family_partition_modularity": 0.9188,
+      "largest_communities": [
+        34,
+        31,
+        20,
+        19,
+        17,
+        13,
+        13,
+        11
+      ],
+      "mixed_communities": [
+        {
+          "community": 2,
+          "families": {
+            "oecd-household-income": 1,
+            "oecd-preprimary-private-spending": 30
+          },
+          "size": 31
+        },
+        {
+          "community": 6,
+          "families": {
+            "datausa-sector61-state": 12,
+            "datausa-transport-production": 1
+          },
+          "size": 13
+        },
+        {
+          "community": 14,
+          "families": {
+            "datausa-cashiers-masters": 1,
+            "datausa-construction-workforce-az": 5,
+            "datausa-construction-workforce-ny": 3
+          },
+          "size": 9
+        }
+      ],
+      "modularity": 0.9396,
+      "nodes": 276,
+      "normalized_mutual_information": 0.9497,
+      "purity": 0.9783,
+      "reply_pairs": 568,
+      "same_family_share": 0.9919,
+      "same_family_weight": 1105,
+      "single_family_communities": 27,
+      "split_families": [
+        {
+          "communities": {
+            "1": 34,
+            "3": 20
+          },
+          "family": "ihme-cvd-deaths",
+          "size": 54
+        },
+        {
+          "communities": {
+            "7": 13,
+            "14": 1,
+            "18": 5
+          },
+          "family": "datausa-cashiers-masters",
+          "size": 19
+        },
+        {
+          "communities": {
+            "11": 10,
+            "17": 5
+          },
+          "family": "datausa-police-wage-age",
+          "size": 15
+        },
+        {
+          "communities": {
+            "12": 10,
+            "14": 3
+          },
+          "family": "datausa-construction-workforce-ny",
+          "size": 13
+        }
+      ],
+      "weighted_replies": 1114
+    }
+  },
+  "run_edge_drop_robustness": [
+    {
+      "edge_drop": 0.0,
+      "max_adjusted_rand": 0.8049,
+      "max_communities": 30,
+      "median_adjusted_rand": 0.8049,
+      "median_communities": 30,
+      "min_adjusted_rand": 0.8011,
+      "min_communities": 30,
+      "trials": 100
+    },
+    {
+      "edge_drop": 0.1,
+      "max_adjusted_rand": 0.8205,
+      "max_communities": 39,
+      "median_adjusted_rand": 0.7836,
+      "median_communities": 34,
+      "min_adjusted_rand": 0.7389,
+      "min_communities": 30,
+      "trials": 100
+    },
+    {
+      "edge_drop": 0.2,
+      "max_adjusted_rand": 0.8084,
+      "max_communities": 45,
+      "median_adjusted_rand": 0.7644,
+      "median_communities": 39,
+      "min_adjusted_rand": 0.7184,
+      "min_communities": 32,
+      "trials": 100
+    },
+    {
+      "edge_drop": 0.3,
+      "max_adjusted_rand": 0.7858,
+      "max_communities": 54,
+      "median_adjusted_rand": 0.7386,
+      "median_communities": 47,
+      "min_adjusted_rand": 0.6873,
+      "min_communities": 37,
+      "trials": 100
+    }
+  ],
+  "run_family_permutation": {
+    "iterations": 10000,
+    "null_max": 0.1391,
+    "null_mean": 0.0758,
+    "null_sd": 0.0153,
+    "observed": 0.9919,
+    "p_upper": 0.0001,
+    "seed": 123
+  }
+}
