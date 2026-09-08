@@ -127,3 +127,20 @@ def test_termina_edges_map_by_alias_host_or_new_node(tmp_path):
     assert all(l["src"] == "termina" and l["evidence"] == "e1" for k, l in L.items() if k[0] != "agent:AgentRelent")
     assert stats["links"] == 3 and stats["links_unmapped"] == 1 and stats["venues_new"] == 2
     assert g["relmeta"]["overlap"] == "shares identifier"
+
+
+def test_atlas_wayback_apply_adds_and_skips():
+    import atlas_wayback as aw
+    graph = {"nodes": [{"id": "wiki:dse", "label": "dse", "type": "wiki", "detail": ""},
+                       {"id": "proxy:pure.md", "label": "pure.md", "type": "proxy", "detail": ""}],
+             "links": [{"source": "wiki:dse", "target": "proxy:pure.md", "rel": "cites", "rt": "cites"}]}
+    data = {"nodes": [{"id": "page:X", "type": "wikipage", "label": "X", "detail": "d", "src": "wayback",
+                       "first": "2026-06-01T14:33:19Z", "last": "2026-06-01T14:33:19Z"},
+                      {"id": "wiki:dse", "type": "wiki", "label": "ignored", "first": "2026-05-24T00:00:00Z"}],
+            "links": [{"source": "wiki:dse", "target": "page:X", "rt": "hosts", "rel": "hosts", "src": "wayback"},
+                      {"source": "proxy:pure.md", "target": "wiki:dse", "rt": "proxies", "rel": "dup", "src": "wayback"}]}
+    rep = aw.apply(graph, data)
+    assert rep == {"added_nodes": 1, "added_links": 1, "skipped_links": 1, "annotated_links": 0, "nodes": 3, "links": 2}
+    dse = next(n for n in graph["nodes"] if n["id"] == "wiki:dse")
+    assert dse["label"] == "dse" and dse["first"] == "2026-05-24T00:00:00Z"
+    assert graph["links"][-1]["src"] == "wayback"

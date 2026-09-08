@@ -1,0 +1,656 @@
+{
+  "note": "Hand-curated nodes and edges for graph.html from the 2026-09-07/08 Wayback passes (analysis/wayback-cdx-sweep.md, PRs 82 and 93) and the DeGraff brief cross-check (analysis/degraff-brief-crosscheck.md, PRs 91 and 92). Applied by scripts/atlas_wayback.py. src 'wayback' = read from an Internet Archive capture (id_ replay or stored 302 Location); src 'degraff' = Kenneth DeGraff's brief, counts re-read on the live YOURLS stats pages, keys never reproduced. rel strings carry the tag the analysis note assigns; [reported] edges are attribution claims this archive has not verified.",
+  "nodes": [
+    {
+      "id": "short:vanderbi.lt/iyg1y",
+      "type": "shortener",
+      "label": "vanderbi.lt/iyg1y",
+      "detail": "2011 campus-news link used as storage: 54,250 visits on 2026-06-18 with the swarm's own query URLs as referrer; the public YOURLS stats page lists 4,910 referrers incl. 240 FBI Crime Data Explorer URLs (34 with a registered key; not reproduced). Zero FBI URLs in the export.",
+      "src": "degraff",
+      "first": "2026-05-25T03:36:18Z",
+      "last": "2026-06-18T00:00:00Z"
+    },
+    {
+      "id": "end:api.usa.gov/crime",
+      "type": "endpoint",
+      "label": "api.usa.gov (FBI Crime Data Explorer)",
+      "detail": "240 query URLs in the vanderbi.lt/iyg1y referrer log; none in the wiki export.",
+      "src": "degraff"
+    },
+    {
+      "id": "short:vanderbi.lt/massjson715",
+      "type": "shortener",
+      "label": "vanderbi.lt/massjson715",
+      "detail": "2026-06-18; resolves to sec.gov/files/county.json?_=916576",
+      "src": "degraff",
+      "first": "2026-06-18T00:00:00Z",
+      "last": "2026-06-18T00:00:00Z"
+    },
+    {
+      "id": "short:vanderbi.lt/cookage85datax",
+      "type": "shortener",
+      "label": "vanderbi.lt/cookage85datax",
+      "detail": "2026-06-21 16:40 America/Chicago; Data USA occupation 352010; matched by DSEWiki AgentCookAge85DataXYZ created 2026-06-22 03:08:25Z",
+      "src": "degraff",
+      "first": "2026-06-21T21:40:00Z",
+      "last": "2026-06-22T03:08:25Z"
+    },
+    {
+      "id": "short:vanderbi.lt/rwandamodvals",
+      "type": "shortener",
+      "label": "vanderbi.lt/rwandamodvals",
+      "detail": "2026-06-19; api.dataafrica.io underweight query",
+      "src": "degraff",
+      "first": "2026-06-19T00:00:00Z",
+      "last": "2026-06-19T00:00:00Z"
+    },
+    {
+      "id": "page:AgentCookAge85DataXYZ",
+      "type": "wikipage",
+      "label": "AgentCookAge85DataXYZ",
+      "detail": "created 2026-06-22 03:08:25Z; the wiki side of vanderbi.lt/cookage85datax",
+      "src": "degraff",
+      "first": "2026-06-22T03:08:25Z",
+      "last": "2026-06-22T03:08:25Z"
+    },
+    {
+      "id": "site:uoft.me",
+      "type": "platform",
+      "label": "uoft.me",
+      "detail": "University of Toronto YOURLS. Four links created 2026-06-18 10:52-15:03 local, all to 404 utoronto.ca targets; the maagentxyz99999 referrer log carries the 65-char allorigins/county.json proxy address. Upgraded from SEO-spam note to used surface.",
+      "src": "degraff",
+      "first": "2026-06-18T00:00:00Z",
+      "last": "2026-06-18T00:00:00Z"
+    },
+    {
+      "id": "short:uoft.me/maagentxyz99999",
+      "type": "shortener",
+      "label": "uoft.me/maagentxyz99999",
+      "detail": "1,788 visits, 1,735 on 2026-06-18; target utoronto.ca/foobaruniq456 (404)",
+      "src": "degraff"
+    },
+    {
+      "id": "short:uoft.me/mafresh91011",
+      "type": "shortener",
+      "label": "uoft.me/mafresh91011",
+      "detail": "313 visits; target utoronto.ca/abc2323 (404)",
+      "src": "degraff"
+    },
+    {
+      "id": "short:uoft.me/zzagent740558",
+      "type": "shortener",
+      "label": "uoft.me/zzagent740558",
+      "detail": "376 visits; target utoronto.ca/foo4080368 (404)",
+      "src": "degraff"
+    },
+    {
+      "id": "short:uoft.me/amass932899504",
+      "type": "shortener",
+      "label": "uoft.me/amass932899504",
+      "detail": "67 visits; target utoronto.ca/ (404)",
+      "src": "degraff"
+    },
+    {
+      "id": "page:DataUSAAgentBridgeTestX",
+      "type": "wikipage",
+      "label": "DataUSAAgentBridgeTestX (TextEditors)",
+      "detail": "TextEditors wiki, 2026-06-22: created from Azure 03:36-03:49 local, then edited from a Tor exit at 19:22 [reported; seen in the brief's Wayback capture]",
+      "src": "degraff",
+      "first": "2026-06-22T00:00:00Z",
+      "last": "2026-06-22T00:00:00Z"
+    },
+    {
+      "id": "ip:tor-exit",
+      "type": "ip16",
+      "label": "exit-13.tor.r0cket.net",
+      "detail": "Tor exit; one TextEditors edit 2026-06-22 19:22 [reported]",
+      "src": "degraff"
+    },
+    {
+      "id": "short:is.gd/bdoLOy",
+      "type": "shortener",
+      "label": "is.gd/bdoLOy",
+      "detail": "Iowa IDPH male 85+ thyroid CSV with an x= cache-buster; one of six fetch methods on the paste.linuxiarz.pl Iowa track [reported]",
+      "src": "degraff"
+    },
+    {
+      "id": "proxy:test.cors.workers.dev",
+      "type": "proxy",
+      "label": "test.cors.workers.dev",
+      "detail": "Cloudflare Workers CORS proxy; sole ghostarchive hit among 16 uncaptured surfaces hosts, 2026-05-12; one of the Iowa track's fetch methods",
+      "src": "wayback",
+      "first": "2026-05-12T00:00:00Z",
+      "last": "2026-06-17T00:00:00Z"
+    },
+    {
+      "id": "page:AgentClarkEncodedDotsReaderGZ81",
+      "type": "wikipage",
+      "label": "AgentClarkEncodedDotsReaderGZ81",
+      "detail": "First DSEWiki revision using the percent-encoded-dot Clark URL, 2026-06-01 14:33:19Z, 74 s after a pure.md capture of the same form in a bare-host variant the wiki never posted. The only capture that excludes a human replay by construction.",
+      "src": "wayback",
+      "first": "2026-06-01T14:33:19Z",
+      "last": "2026-06-01T14:33:19Z"
+    },
+    {
+      "id": "proxy:corsproxy.io",
+      "type": "proxy",
+      "label": "corsproxy.io",
+      "detail": "2026-05-23 16:47-16:48 Yahoo Finance chart JSON (^NSEI, ^INDIAVIX, USDINR=X, BZ=F) whose period2 equals the capture second; AAPL/AMZN/META 05-24. One day before the export's first revision.",
+      "src": "wayback",
+      "first": "2026-05-23T16:47:00Z",
+      "last": "2026-05-24T00:00:00Z"
+    },
+    {
+      "id": "end:query1.finance.yahoo.com/v8/finance/chart",
+      "type": "endpoint",
+      "label": "query1.finance.yahoo.com chart API",
+      "detail": "Yahoo Finance chart JSON reached through corsproxy.io, 2026-05-23/24",
+      "src": "wayback"
+    },
+    {
+      "id": "proxy:api.codetabs.com",
+      "type": "proxy",
+      "label": "api.codetabs.com",
+      "detail": "2026-06-02 chain codetabs -> allorigins (base64) -> da.gd/kDzxEU; 06-03 20:10 seven Istanbul tickers (43-byte error bodies); 07-14 evening also reaches da.gd/O9VYR",
+      "src": "wayback",
+      "first": "2026-06-02T00:00:00Z",
+      "last": "2026-07-14T00:00:00Z"
+    },
+    {
+      "id": "short:da.gd/kDzxEU",
+      "type": "shortener",
+      "label": "da.gd/kDzxEU",
+      "detail": "target of the June 2 codetabs chain; resolves to a chiptune.app PiJAMA MIDI dataset file",
+      "src": "wayback"
+    },
+    {
+      "id": "end:chiptune.app",
+      "type": "endpoint",
+      "label": "chiptune.app (PiJAMA MIDI dataset)",
+      "detail": "resolved from the archived 302 of da.gd/kDzxEU",
+      "src": "wayback"
+    },
+    {
+      "id": "proxy:api.microlink.io",
+      "type": "proxy",
+      "label": "api.microlink.io",
+      "detail": "Screenshot / scripts API. July 11-12 cluster (14:55-17:47, 21:21-21:37): scripts=https://da.gd/7ks, Function(q.response)(), document.title='ZZ', selector tr:nth-child(34..40). Attribution to the swarm stays [reported].",
+      "src": "wayback",
+      "first": "2026-07-11T14:55:00Z",
+      "last": "2026-07-12T21:37:00Z"
+    },
+    {
+      "id": "short:da.gd/V0gS",
+      "type": "shortener",
+      "label": "da.gd/V0gS",
+      "detail": "captured 2026-07-18 04:27:47; unwraps via httpbin base64 to a page whose <script src=//da.gd/fbKv> loads the ntfy.sh poll",
+      "src": "wayback",
+      "first": "2026-07-11T00:00:00Z",
+      "last": "2026-07-18T04:27:47Z"
+    },
+    {
+      "id": "short:da.gd/fbKv",
+      "type": "shortener",
+      "label": "da.gd/fbKv",
+      "detail": "script src loaded by the V0gS page; resolves to ntfy.sh/j2795/raw?poll=1",
+      "src": "wayback"
+    },
+    {
+      "id": "short:tinyurl.com/2xts5kej",
+      "type": "shortener",
+      "label": "tinyurl.com/2xts5kej",
+      "detail": "2026-06-01 00:47, read via r.jina.ai 06-02; image.thum.io screenshot of an httpbin base64 page embedding a phantomjscloud pdf.js render of a council PDF, page 281",
+      "src": "wayback",
+      "first": "2026-06-01T00:47:00Z",
+      "last": "2026-06-02T00:00:00Z"
+    },
+    {
+      "id": "proxy:image.thum.io",
+      "type": "proxy",
+      "label": "image.thum.io",
+      "detail": "screenshot service; renders the 2xts5kej httpbin page",
+      "src": "wayback"
+    },
+    {
+      "id": "proxy:cors.eu.org",
+      "type": "proxy",
+      "label": "cors.eu.org",
+      "detail": "six DSEWiki revisions from 2026-06-18 (AgentCountyGateway991 first); 2026-07-14 19:25 chain r.jina.ai -> cors.eu.org -> da.gd/O9VYR [July actor: reported]",
+      "src": "wayback",
+      "first": "2026-06-18T00:00:00Z",
+      "last": "2026-07-14T19:25:00Z"
+    },
+    {
+      "id": "short:da.gd/O9VYR",
+      "type": "shortener",
+      "label": "da.gd/O9VYR",
+      "detail": "reached 2026-07-14 through cors.eu.org and, that evening, codetabs [July actor: reported]",
+      "src": "wayback",
+      "first": "2026-07-14T19:25:00Z",
+      "last": "2026-07-14T23:59:00Z"
+    },
+    {
+      "id": "proxy:cors-get-proxy.sirjosh",
+      "type": "proxy",
+      "label": "cors-get-proxy.sirjosh.workers.dev",
+      "detail": "17 DSEWiki revisions 2026-05-28 -> 06-17; reused by the July Latino Health PDF actor [reported]",
+      "src": "wayback",
+      "first": "2026-05-28T00:00:00Z",
+      "last": "2026-06-17T00:00:00Z"
+    },
+    {
+      "id": "proxy:archive-it",
+      "type": "proxy",
+      "label": "wayback.archive-it.org",
+      "detail": "4 DSEWiki revisions; one of the July actor's three export-kit tools [reported]",
+      "src": "wayback"
+    }
+  ],
+  "links": [
+    {
+      "source": "page:AgentNextJoinedJuneBA",
+      "target": "short:vanderbi.lt/iyg1y",
+      "rt": "cites",
+      "rel": "cites [degraff; log body dated 05-25/26 by pure.md and md.succ.ai captures]",
+      "src": "degraff"
+    },
+    {
+      "source": "short:vanderbi.lt/iyg1y",
+      "target": "end:api.usa.gov/crime",
+      "rt": "cites",
+      "rel": "referrer log stores 240 FBI CDE queries [degraff; read 2026-09-08]",
+      "src": "degraff",
+      "evidence": "referrer-log-as-storage"
+    },
+    {
+      "source": "short:vanderbi.lt/iyg1y",
+      "target": "end:dataafrica",
+      "rt": "cites",
+      "rel": "referrer log: 484 api.dataafrica.io entries [degraff]",
+      "src": "degraff",
+      "evidence": "referrer-log-as-storage"
+    },
+    {
+      "source": "short:vanderbi.lt/iyg1y",
+      "target": "proxy:allorigins",
+      "rt": "cites",
+      "rel": "referrer log: 33 entries of the 65-char allorigins/county.json address [degraff]",
+      "src": "degraff",
+      "evidence": "referrer-log-as-storage"
+    },
+    {
+      "source": "site:vanderbi.lt",
+      "target": "short:vanderbi.lt/iyg1y",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:vanderbi.lt",
+      "target": "short:vanderbi.lt/massjson715",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:vanderbi.lt",
+      "target": "short:vanderbi.lt/cookage85datax",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:vanderbi.lt",
+      "target": "short:vanderbi.lt/rwandamodvals",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "short:vanderbi.lt/massjson715",
+      "target": "end:sec.gov/files/county.json",
+      "rt": "resolves_to",
+      "rel": "resolves to [read]",
+      "src": "degraff"
+    },
+    {
+      "source": "short:vanderbi.lt/rwandamodvals",
+      "target": "end:dataafrica",
+      "rt": "resolves_to",
+      "rel": "resolves to [read]",
+      "src": "degraff"
+    },
+    {
+      "source": "page:AgentCookAge85DataXYZ",
+      "target": "short:vanderbi.lt/cookage85datax",
+      "rt": "cites",
+      "rel": "same task, 10 h apart [degraff; export]",
+      "src": "degraff"
+    },
+    {
+      "source": "wiki:dse",
+      "target": "page:AgentCookAge85DataXYZ",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:uoft.me",
+      "target": "short:uoft.me/maagentxyz99999",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:uoft.me",
+      "target": "short:uoft.me/mafresh91011",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:uoft.me",
+      "target": "short:uoft.me/zzagent740558",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "site:uoft.me",
+      "target": "short:uoft.me/amass932899504",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "short:uoft.me/maagentxyz99999",
+      "target": "proxy:allorigins",
+      "rt": "cites",
+      "rel": "referrer log carries the allorigins/county.json address (4 of 492) [degraff]",
+      "src": "degraff",
+      "evidence": "referrer-log-as-storage"
+    },
+    {
+      "source": "wiki:texteditors",
+      "target": "page:DataUSAAgentBridgeTestX",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "ip:tor-exit",
+      "target": "page:DataUSAAgentBridgeTestX",
+      "rt": "edited_from",
+      "rel": "edited from [reported; 2026-06-22 19:22]",
+      "src": "degraff"
+    },
+    {
+      "source": "paste:paste-linuxiarz",
+      "target": "end:idph",
+      "rt": "cites",
+      "rel": "Iowa IDPH thyroid task run entirely off-wiki: 118 pastes 05-14 -> 06-17, 113 on 06-16 [reported; board tie read]",
+      "src": "degraff",
+      "evidence": "off-wiki-task",
+      "annotate": true
+    },
+    {
+      "source": "paste:paste-linuxiarz",
+      "target": "short:is.gd/bdoLOy",
+      "rt": "cites",
+      "rel": "fetch method [reported]",
+      "src": "degraff"
+    },
+    {
+      "source": "short:is.gd/bdoLOy",
+      "target": "end:idph",
+      "rt": "resolves_to",
+      "rel": "resolves to (male 85+ thyroid CSV) [reported]",
+      "src": "degraff"
+    },
+    {
+      "source": "paste:paste-linuxiarz",
+      "target": "proxy:test.cors.workers.dev",
+      "rt": "cites",
+      "rel": "fetch method [reported]",
+      "src": "degraff"
+    },
+    {
+      "source": "paste:paste-linuxiarz",
+      "target": "proxy:corsgray",
+      "rt": "cites",
+      "rel": "Iowa Tableau chain [reported; 0 export hits]",
+      "src": "degraff"
+    },
+    {
+      "source": "site:is.gd",
+      "target": "short:is.gd/bdoLOy",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "degraff"
+    },
+    {
+      "source": "wiki:dse",
+      "target": "page:AgentClarkEncodedDotsReaderGZ81",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "wayback"
+    },
+    {
+      "source": "page:AgentClarkEncodedDotsReaderGZ81",
+      "target": "proxy:pure.md",
+      "rt": "cites",
+      "rel": "cites [export; 2026-06-01 14:33:19Z]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:pure.md",
+      "target": "end:web.archive.org/web/20130531003440id_/www2.clarku.edu/departments/economics/pdf/newsletter2012.pdf",
+      "rt": "proxies",
+      "rel": "proxies [wayback 2026-06-01 14:32:05, 74 s before the first wiki write of the encoded form]",
+      "src": "wayback",
+      "evidence": "precedes-wiki-write",
+      "annotate": true
+    },
+    {
+      "source": "proxy:r.jina.ai",
+      "target": "end:www2.census.gov/programs-surveys/acs/summary_file/2022/table-based-SF/data/1YRData/acsdt1y2022-b16001.dat",
+      "rt": "proxies",
+      "rel": "proxies [wayback 2026-06-17 02:59; matches 43 DSEWiki revisions 06-16/17 and FractalWiki AgentLangExact*]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:r.jina.ai",
+      "target": "wiki:fractal",
+      "rt": "cites",
+      "rel": "B16001 read matches the FractalWiki AgentLangExact* pages, 06-16/17 [wayback]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:r.jina.ai",
+      "target": "end:aihw",
+      "rt": "proxies",
+      "rel": "proxies [wayback 2026-06-18 06:31:14; hospital-diagnosis cube, sibling of the PBS CSVs in the export]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:corsproxy.io",
+      "target": "end:query1.finance.yahoo.com/v8/finance/chart",
+      "rt": "proxies",
+      "rel": "proxies [wayback 2026-05-23/24]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:api.codetabs.com",
+      "target": "proxy:allorigins",
+      "rt": "proxies",
+      "rel": "chains through allorigins base64 [wayback 2026-06-02]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:api.codetabs.com",
+      "target": "short:da.gd/kDzxEU",
+      "rt": "cites",
+      "rel": "chain target [wayback 2026-06-02]",
+      "src": "wayback"
+    },
+    {
+      "source": "site:da.gd",
+      "target": "short:da.gd/kDzxEU",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "wayback"
+    },
+    {
+      "source": "short:da.gd/kDzxEU",
+      "target": "end:chiptune.app",
+      "rt": "resolves_to",
+      "rel": "resolves to [wayback 302]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:api.microlink.io",
+      "target": "short:da.gd/V0gS",
+      "rt": "cites",
+      "rel": "July 11-12 scripts= injection cluster [wayback; attribution reported]",
+      "src": "wayback",
+      "evidence": "script-injection"
+    },
+    {
+      "source": "site:da.gd",
+      "target": "short:da.gd/V0gS",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "wayback"
+    },
+    {
+      "source": "site:da.gd",
+      "target": "short:da.gd/fbKv",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "wayback"
+    },
+    {
+      "source": "short:da.gd/V0gS",
+      "target": "proxy:httpbin-base64",
+      "rt": "resolves_to",
+      "rel": "resolves to [wayback 302, 2026-07-18 04:27:47]",
+      "src": "wayback",
+      "evidence": "script-injection"
+    },
+    {
+      "source": "proxy:httpbin-base64",
+      "target": "short:da.gd/fbKv",
+      "rt": "cites",
+      "rel": "decoded page loads <script src=//da.gd/fbKv> [wayback]",
+      "src": "wayback",
+      "evidence": "script-injection"
+    },
+    {
+      "source": "short:da.gd/fbKv",
+      "target": "proxy:ntfy",
+      "rt": "resolves_to",
+      "rel": "resolves to ntfy.sh/j2795/raw?poll=1 [wayback 302]",
+      "src": "wayback",
+      "evidence": "script-injection"
+    },
+    {
+      "source": "proxy:ntfy",
+      "target": "counter:api.counterapi.dev",
+      "rt": "pings",
+      "rel": "archived poll body is a sync XHR to api.counterapi.dev/v1/bts8178/c5/up; namespace in neither export nor pack [wayback]",
+      "src": "wayback",
+      "evidence": "script-injection"
+    },
+    {
+      "source": "site:tinyurl.com",
+      "target": "short:tinyurl.com/2xts5kej",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:r.jina.ai",
+      "target": "short:tinyurl.com/2xts5kej",
+      "rt": "cites",
+      "rel": "read through the reader 2026-06-02 [wayback]",
+      "src": "wayback"
+    },
+    {
+      "source": "short:tinyurl.com/2xts5kej",
+      "target": "proxy:image.thum.io",
+      "rt": "resolves_to",
+      "rel": "resolves to [wayback 302]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:image.thum.io",
+      "target": "proxy:httpbin-base64",
+      "rt": "proxies",
+      "rel": "screenshots an httpbin base64 page embedding a pdf.js render [wayback]",
+      "src": "wayback"
+    },
+    {
+      "source": "page:AgentCountyGateway991",
+      "target": "proxy:cors.eu.org",
+      "rt": "cites",
+      "rel": "cites [export 2026-06-18; first of six]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:r.jina.ai",
+      "target": "proxy:cors.eu.org",
+      "rt": "proxies",
+      "rel": "chain 2026-07-14 19:25 [wayback; July actor reported]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:cors.eu.org",
+      "target": "short:da.gd/O9VYR",
+      "rt": "cites",
+      "rel": "chain target [wayback; July actor reported]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:api.codetabs.com",
+      "target": "short:da.gd/O9VYR",
+      "rt": "cites",
+      "rel": "same target that evening [wayback; July actor reported]",
+      "src": "wayback"
+    },
+    {
+      "source": "site:da.gd",
+      "target": "short:da.gd/O9VYR",
+      "rt": "hosts",
+      "rel": "hosts",
+      "src": "wayback"
+    },
+    {
+      "source": "wiki:dse",
+      "target": "proxy:cors-get-proxy.sirjosh",
+      "rt": "cites",
+      "rel": "17 revisions 05-28 -> 06-17 [export]; July actor reuse [reported]",
+      "src": "wayback"
+    },
+    {
+      "source": "wiki:dse",
+      "target": "proxy:archive-it",
+      "rt": "cites",
+      "rel": "4 revisions [export]; July actor reuse [reported]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:cors-get-proxy.sirjosh",
+      "target": "proxy:translate",
+      "rt": "later",
+      "rel": "July Latino Health PDF actor uses both, with archive-it: three-for-three export-kit overlap [reported]",
+      "src": "wayback"
+    },
+    {
+      "source": "proxy:test.cors.workers.dev",
+      "target": "site:da.gd",
+      "rt": "later",
+      "rel": "both first seen 2026-05-12, the shortener start date [wayback ghostarchive]",
+      "src": "wayback"
+    }
+  ]
+}
