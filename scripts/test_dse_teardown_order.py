@@ -4,6 +4,10 @@ import unittest
 import dse_teardown_order as dto
 
 
+@unittest.skipUnless(
+    dto.DB.exists(),
+    f"incident bundle not present at {dto.DB}; fetch it with verify_termina_snapshot.py",
+)
 class TeardownOrderTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
