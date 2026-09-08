@@ -209,6 +209,16 @@ counts). 16 hosts have no capture in the window at all (`u.ethz.ch`,
 `paste.probyte.ee`, `md.dhr.wtf`, `urltomarkdown.herokuapp.com`, and eight
 Cloudflare-Worker or Vercel CORS proxies); 33 have captures.
 
+Keep two questions apart. That the swarm *used* these readers and proxies is
+settled by the export itself, not by the Archive: the agents wrote the `pure.md`
+and `markdown.new` request URLs into wiki pages, and many revisions cache the
+fetched response beside the URL — first-party evidence that the fetch ran, not
+just that a URL was typed. What the Archive adds is a separate and weaker
+question, whether Save Page Now independently recorded those same fetches from
+outside; a capture never names a requester, so that attribution stays
+circumstantial (the June 1 encoded-dot capture of the *Fourth pass* is the only
+one that excludes an outside replay by construction).
+
 **The Archive captured the swarm's proxy fetches while the swarm was making
 them.** A proxy URL with a query string is not something a crawler discovers on
 its own; a capture of one exists because it was submitted (Save Page Now) or
