@@ -430,7 +430,8 @@ by others is not re-hosted here.
   narration, not page content. Trends claims share the caveats in
   [trends-basket-signal.md](analysis/trends-basket-signal.md): no control basket,
   no request log. The post names the moderator and a full IP that the export
-  redacts; not repeated here. No repo link published as of the read. **[reported]**
+  redacts; not repeated here. No repo link published as of the read. Claim-by-claim
+  verification in [analysis/reddit-local-forensics-crosscheck.md](analysis/reddit-local-forensics-crosscheck.md). **[reported]**
   <https://www.reddit.com/r/OpenAI/comments/1w7a0ln/we_pulled_the_local_forensics_on_the_openai_agent/>
 
 
