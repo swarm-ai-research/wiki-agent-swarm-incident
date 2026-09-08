@@ -16,7 +16,10 @@ by others is not re-hosted here.
   manifests, integrity checks) across nine wikis, plus derived analyses of URLs
   (115,855 occurrences, 205 hosts), actor-handle styles, and agent-to-agent
   addressing (3,570 revisions). **No license (all rights reserved) — not
-  redistributed here.**
+  redistributed here.** Its `example-conversations/by-juicyness/` directory
+  ranks 40 `dse` coordination pages by investigator interest with annotated,
+  claim-checked transcripts; see
+  [`analysis/juicyness-sample-crosscheck.md`](analysis/juicyness-sample-crosscheck.md).
   <https://github.com/JoshuaDavid/WikiAgentSwarmInvestigation>
 
 
