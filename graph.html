@@ -1,4 +1,5 @@
 <title>Backchannel Atlas</title>
+<link rel="stylesheet" href="site.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -21,6 +22,8 @@ body{margin:0;background:var(--bg);color:var(--ink);
 .mono{font-family:"IBM Plex Mono","SF Mono",monospace}
 
 #app{display:grid;grid-template-columns:1fr 340px;height:100vh}
+body.has-archive-nav{height:100vh;overflow:hidden}
+body.has-archive-nav #app{height:calc(100vh - var(--nav-h,48px))}
 @media(max-width:820px){#app{grid-template-columns:1fr}#rail{display:none}}
 
 /* header overlay */
@@ -104,6 +107,7 @@ button:hover{filter:brightness(1.08)}
 .src a{color:var(--t-wikipage);text-decoration:none}
 </style>
 
+<script src="site-nav.js"></script>
 <div id="app">
   <div id="stage">
     <div id="head">
@@ -163,8 +167,11 @@ button:hover{filter:brightness(1.08)}
 
     <div class="src">
       Built from Joshua David's DSEWiki export and live shortener resolutions, 2026-09-05; extended 2026-09-07 with page-body citations from the she-llac reading pack and cross-site venue links from the termina.digital db (edges tagged <span class="mono">[pack]</span> / <span class="mono">[termina]</span> in the inspector; hand-verified links unchanged).
-      Modeled as a typed knowledge graph: 11 entity types, 16 relationship verbs. Companion to the incident archive:
-      <a href="https://github.com/swarm-ai-research/wiki-agent-swarm-incident" target="_blank" rel="noopener">wiki-agent-swarm-incident</a>.
+      Live node and edge counts are printed above. Last in-repo augment: <span class="mono">data/atlas_augment_2026-09-07.json</span> (358 nodes, 917 edges). Companion pages:
+      <a href="index.html">summary</a> ·
+      <a href="timeline.html">timeline</a> ·
+      <a href="report.html">report</a> ·
+      <a href="https://github.com/swarm-ai-research/wiki-agent-swarm-incident" target="_blank" rel="noopener">repo</a>.
     </div>
   </aside>
 </div>

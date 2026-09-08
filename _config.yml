@@ -1,0 +1,23 @@
+# GitHub Pages: root-served project site (not /docs).
+# https://swarm-ai-research.github.io/wiki-agent-swarm-incident/
+#
+# Standalone HTML (index.html, timeline.html, report.html, graph.html) has no
+# front matter and is copied through. Markdown under analysis/ uses the docs
+# layout so Notes / Sources stay readable on Pages.
+title: The Wiki Agent-Swarm Incident
+description: Research archive of the 2026 wiki agent-swarm incident.
+exclude:
+  - scripts
+defaults:
+  - scope:
+      path: "analysis"
+    values:
+      layout: docs
+  - scope:
+      path: "sources.md"
+    values:
+      layout: docs
+  - scope:
+      path: "charts"
+    values:
+      layout: docs

@@ -1,0 +1,103 @@
+{
+ "revisions": 14591,
+ "bodies_repaired_from_mojibake": 250,
+ "bodies_with_non_ascii_after_repair": 251,
+ "labels_with_cjk": [],
+ "pages_with_cjk": [],
+ "revisions_with_tell": {
+  "fullwidth_punct": 1,
+  "kana": 2,
+  "model_or_vendor_name": 7
+ },
+ "by_wiki": {
+  "dse": {
+   "fullwidth_punct": 1,
+   "kana": 2
+  },
+  "fractal": {
+   "model_or_vendor_name": 7
+  }
+ },
+ "by_week": {
+  "2026-W22": {
+   "model_or_vendor_name": 7
+  },
+  "2026-W25": {
+   "fullwidth_punct": 1,
+   "kana": 2
+  }
+ },
+ "tokens": {
+  "model_or_vendor_name": {
+   "glm": 13
+  }
+ },
+ "examples": {
+  "fullwidth_punct": [
+   {
+    "rev_id": "dse~RandomNewAgentXYZtestproxy@1",
+    "label": "FutureRangeResearchHelper",
+    "time": "2026-06-18T20:24:09Z",
+    "context": "/www.sec.gov/files/county.json P5] [https://md.succ.ai/https：//www.sec.gov/files/county.json P6] "
+   }
+  ],
+  "kana": [
+   {
+    "rev_id": "dse~StartSeite@565",
+    "label": "OurResearchMassHelper",
+    "time": "2026-06-18T21:01:14Z",
+    "context": "/Any joketest] * [https://raw.githack.com/dummy dummy] END0.てすと "
+   },
+   {
+    "rev_id": "dse~StartSeite@571",
+    "label": "AgentOJUnitLinks",
+    "time": "2026-06-18T21:03:17Z",
+    "context": "/Any joketest] * [https://raw.githack.com/dummy dummy] END0.てすと "
+   }
+  ],
+  "model_or_vendor_name": [
+   {
+    "rev_id": "fractal~QuarterRefFormattedLinksB2@1",
+    "label": "ChatRefUpdater",
+    "time": "2026-05-26T15:15:34Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   },
+   {
+    "rev_id": "fractal~QuarterRefFormattedLinksB2@2",
+    "label": "ResearchHelper",
+    "time": "2026-05-26T15:43:37Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   },
+   {
+    "rev_id": "fractal~QuarterRefFormattedLinksB2@3",
+    "label": "ResearchHelper",
+    "time": "2026-05-26T15:54:54Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   },
+   {
+    "rev_id": "fractal~RedirectTargetA1@4",
+    "label": "ResearchAgentX",
+    "time": "2026-05-26T11:22:28Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   },
+   {
+    "rev_id": "fractal~RedirectTargetA1@5",
+    "label": "ResearchHelper3",
+    "time": "2026-05-26T11:33:17Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   },
+   {
+    "rev_id": "fractal~TempFinalLink928@1",
+    "label": "ResearchAgentX",
+    "time": "2026-05-26T11:15:22Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   },
+   {
+    "rev_id": "fractal~TempFinalLink929@1",
+    "label": "ResearchAgentX",
+    "time": "2026-05-26T11:17:59Z",
+    "context": "l0sImZpbHRlcnMiOlt7ImZpZWxkIjoidHJlYXN1cnlfYWNjb3VudF9pZGVudGlmaWVyX19mZWRlcmFsX2FjY291bnRfaWQiLCJvcGVyYXRpb24iOiJlcXVhbHMi"
+   }
+  ]
+ }
+}

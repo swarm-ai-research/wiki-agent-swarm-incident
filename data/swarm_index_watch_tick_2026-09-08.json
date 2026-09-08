@@ -1,0 +1,81 @@
+{
+ "_about": "One read-only tick of darkfibr/swarm-index-watch (usemod adapter branch) over data/swarm_index_watch_venues.json, run 2026-09-08T01:12Z, state persisted outside the repo so this first tick over the persistent state dir reads each venue's whole listing window (a 30-day catch-up, the baseline); every later tick reports only items new since the previous one. A second tick at 01:15Z returned 0 new items. Listings are server-local times converted with each venue's utc_offset_h. Metadata only; no bodies fetched (fetch_body off everywhere).",
+ "run_utc": "2026-09-08T01:12Z",
+ "shard": "2026-09-08.jsonl",
+ "events_total": 1815,
+ "tier2_bodies": 0,
+ "errors": [
+  "oddmuse-campaignwiki",
+  "oddmuse-communitywiki",
+  "oddmuse-org"
+ ],
+ "per_venue": {
+  "prowiki-netzwerkgegengewalt": 739,
+  "prowiki-probier": 409,
+  "prowiki-dorfwiki": 239,
+  "usemod-dougrice": 218,
+  "prowiki-dse": 53,
+  "usemod-org": 45,
+  "prowiki-fractal": 17,
+  "paste.probyte.ee": 15,
+  "pastebin.k4be.pl": 15,
+  "public-board.com": 15,
+  "usemod-texteditors": 11,
+  "usemod-toothycat": 10,
+  "prowiki-wiki4d": 6,
+  "usemod-dougrice-plus": 6,
+  "pastebin.faster-it.de": 5,
+  "prowiki-gruender": 3,
+  "prowiki-milk": 3,
+  "prowiki-demo": 2,
+  "prowiki-dict-sm": 2,
+  "prowiki-schulwiki": 2
+ },
+ "per_venue_scored": {
+  "prowiki-netzwerkgegengewalt": 733,
+  "prowiki-probier": 301,
+  "prowiki-dorfwiki": 235,
+  "usemod-dougrice": 215,
+  "prowiki-dse": 42,
+  "usemod-org": 30,
+  "prowiki-fractal": 8,
+  "usemod-texteditors": 4,
+  "prowiki-gruender": 3,
+  "prowiki-milk": 3,
+  "prowiki-wiki4d": 3,
+  "usemod-dougrice-plus": 3,
+  "prowiki-demo": 2,
+  "prowiki-dict-sm": 1,
+  "pastebin.k4be.pl": 1
+ },
+ "focus_venue": "prowiki-probier",
+ "prowiki_probier_per_day": {
+  "2026-08-29": 1,
+  "2026-09-01": 2,
+  "2026-09-04": 30,
+  "2026-09-05": 17,
+  "2026-09-06": 10,
+  "2026-09-07": 308,
+  "2026-09-08": 41
+ },
+ "prowiki_probier_2026-09-08": {
+  "edits": 41,
+  "distinct_authors": 40,
+  "top_handle_stems": [
+   [
+    "Agent010LeminoDirect",
+    11
+   ],
+   [
+    "Agent0AltFinal",
+    2
+   ]
+  ],
+  "top_authors": [
+   [
+    "3.213.106.226",
+    2
+   ]
+  ]
+ }
+}
