@@ -1,0 +1,1341 @@
+{
+ "run": "2026-09-08T05:30:00Z",
+ "window": "2026-01-01..2026-09-08",
+ "query": "cdx/search/cdx?url=<host>/*&collapse=digest&fl=timestamp,original,statuscode",
+ "note": "Every Internet Archive capture of the two markdown readers the export cohort used most, unfiltered (the 2026-09-07 inventory kept only task-family regex matches over 2026-05-12..07-15). Rows carry a class only where a target was checked against the DSEWiki export (revisions.jsonl.gz, 14,591 revisions), the she-llac agent-reading-pack-20260905 sqlite (dse, probier, linuxiarz, popcat, candidate-sites groups) and the brausepulver shortener audit CSV. Site chrome (/, /crawl, /docs, /login, icons, scripts) is left in and unclassed. No capture carries a requester; only 20260601143205 excludes a human replay by construction (it precedes the first wiki write of its URL family).",
+ "classes": {
+  "swarm": "ties to an export revision within minutes and precedes or matches it",
+  "task-family": "target matches an export/pack/audit record; capture dates an undated record or predates the earliest dated one",
+  "toolkit-shape": "reader-over-Wayback-id_ or template form with no corpus match",
+  "known": "already in wayback_surfaces_task_captures_2026-09-07.json",
+  "post-disclosure-replay": "after 2026-09-04, matches pack/audit URLs",
+  "false-positive": "unrelated actor"
+ },
+ "hosts": {
+  "pure.md": {
+   "captures": 117,
+   "rows": [
+    {
+     "ts": "20260103013826",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230302",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260121154754",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260123203054",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260211153135",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260308043435",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260413045626",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260514192833",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260813124714",
+     "url": "https://pure.md/",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230447",
+     "url": "https://pure.md/.well-known/security.txt",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230433",
+     "url": "https://pure.md/ads.txt",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230450",
+     "url": "https://pure.md/app-ads.txt",
+     "status": "404"
+    },
+    {
+     "ts": "20260103013826",
+     "url": "https://pure.md/assets/logo.png",
+     "status": "-"
+    },
+    {
+     "ts": "20260103180550",
+     "url": "https://pure.md/assets/og.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260131175212",
+     "url": "https://pure.md/assets/og.png%5C",
+     "status": "400"
+    },
+    {
+     "ts": "20260813124720",
+     "url": "https://pure.md/cdn-cgi/rum?",
+     "status": "204"
+    },
+    {
+     "ts": "20260308191910",
+     "url": "https://pure.md/changelog/",
+     "status": "200"
+    },
+    {
+     "ts": "20260813124958",
+     "url": "https://pure.md/changelog/",
+     "status": "200"
+    },
+    {
+     "ts": "20260226013216",
+     "url": "https://pure.md/compare/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArtificial_intelligence",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125030",
+     "url": "https://pure.md/compare/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FArtificial_intelligence",
+     "status": "-"
+    },
+    {
+     "ts": "20260311144543",
+     "url": "https://pure.md/compare/?url=https%3A%2F%2Fwww.popsci.com%2Ftechnology%2Fai-chess-cheat%2F",
+     "status": "200"
+    },
+    {
+     "ts": "20260813124959",
+     "url": "https://pure.md/compare/?url=https%3A%2F%2Fwww.popsci.com%2Ftechnology%2Fai-chess-cheat%2F",
+     "status": "200"
+    },
+    {
+     "ts": "20260305155442",
+     "url": "https://pure.md/compare/?url=https%3A%2F%2Fwww.science.org%2Fdoi%2Ffull%2F10.1126%2Fsciadv.ads1560",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125045",
+     "url": "https://pure.md/compare/?url=https%3A%2F%2Fwww.science.org%2Fdoi%2Ffull%2F10.1126%2Fsciadv.ads1560",
+     "status": "-"
+    },
+    {
+     "ts": "20260514190955",
+     "url": "https://pure.md/dashboard/",
+     "status": "200"
+    },
+    {
+     "ts": "20260309190608",
+     "url": "https://pure.md/docs",
+     "status": "307"
+    },
+    {
+     "ts": "20260309190608",
+     "url": "https://pure.md/docs/",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125046",
+     "url": "https://pure.md/docs",
+     "status": "307"
+    },
+    {
+     "ts": "20260813125047",
+     "url": "https://pure.md/docs/",
+     "status": "200"
+    },
+    {
+     "ts": "20260309190609",
+     "url": "https://pure.md/docs/meta/llama-3.1-8b",
+     "status": "400"
+    },
+    {
+     "ts": "20260105230525",
+     "url": "https://pure.md/favicon.ico",
+     "status": "200"
+    },
+    {
+     "ts": "20260123203056",
+     "url": "https://pure.md/favicon.ico",
+     "status": "200"
+    },
+    {
+     "ts": "20260103123532",
+     "url": "https://pure.md/favicon.png",
+     "status": "-"
+    },
+    {
+     "ts": "20260221090649",
+     "url": "https://pure.md/favicon.png%5C",
+     "status": "400"
+    },
+    {
+     "ts": "20260528235910",
+     "url": "https://pure.md/finance.yahoo.com/quote/TWLO/history?ag0x=1",
+     "status": "200"
+    },
+    {
+     "ts": "20260528235911",
+     "url": "https://pure.md/finance.yahoo.com/quote/TWLO/history?ag0x=1",
+     "status": "200"
+    },
+    {
+     "ts": "20260528235851",
+     "url": "https://pure.md/finance.yahoo.com/quote/TWLO/history?ag0x=1&filter=history&frequency=1d&interval=1d&period1=1573776000&period2=1573948800",
+     "status": "200"
+    },
+    {
+     "ts": "20260904190605",
+     "url": "https://pure.md/http://md.succ.ai/https://www.investor.gov/modules/custom/sec_custom_blocks/js/oasb_raising_capital_map/main.js",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260317150644",
+     "url": "https://pure.md/https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026",
+     "status": "200"
+    },
+    {
+     "ts": "20260423194342",
+     "url": "https://pure.md/https://docs.mistral.ai/api",
+     "status": "200"
+    },
+    {
+     "ts": "20260808004622",
+     "url": "https://pure.md/https://download.gosa.ga.gov/2023/2023_District_Level_PPE.xls",
+     "status": "200",
+     "class": "toolkit-shape",
+     "match": "Georgia GOSA per-pupil spending sheet through pure.md; no export or pack match"
+    },
+    {
+     "ts": "20260417161503",
+     "url": "https://pure.md/https://federalnewsnetwork.com/federal-newscast/2026/04/its-tax-day-and-the-irs-is-offering-more-help-to-extension-filers/",
+     "status": "200"
+    },
+    {
+     "ts": "20260420194320",
+     "url": "https://pure.md/https://finance.yahoo.com/markets/articles/once-2m-saved-probably-retire-134000553.html",
+     "status": "200"
+    },
+    {
+     "ts": "20260430215524",
+     "url": "https://pure.md/https://newsletter.doomberg.com/p/rain-check",
+     "status": "200"
+    },
+    {
+     "ts": "20260427022757",
+     "url": "https://pure.md/https://newsletter.doomberg.com/p/to-spite-its-face?publication_id=343139&post_id=195356557&isFreemail=true&r=3e7zx&triedRedirect=true",
+     "status": "200"
+    },
+    {
+     "ts": "20260715051006",
+     "url": "https://pure.md/https://ntfy.sh/sij_andrea_probe_7731/publish?message=M_chain_puremd",
+     "status": "404",
+     "class": "false-positive",
+     "match": "ntfy.sh probe; with the August is.gd/VP1YUB and skyislandjournal .docx captures, one person testing reader chaining"
+    },
+    {
+     "ts": "20260502004658",
+     "url": "https://pure.md/https://openai.com/index/next-phase-of-microsoft-partnership/",
+     "status": "200"
+    },
+    {
+     "ts": "20260207172549",
+     "url": "https://pure.md/https://repo-grader.vercel.app/analysis/39304c92-973e-40b2-b0bb-362ec2f25622",
+     "status": "200"
+    },
+    {
+     "ts": "20260728022715",
+     "url": "https://pure.md/https://simonstown.org/wp-content/uploads/2022/06/July-2018_WM.pdf",
+     "status": "200"
+    },
+    {
+     "ts": "20260602142425",
+     "url": "https://pure.md/https://singhaldhruv.medium.com/stop-the-token-bleed-how-to-fix-antigravity-ides-2-0-update-and-restore-your-workspace-cc5e33d49fd5",
+     "status": "200"
+    },
+    {
+     "ts": "20260317151338",
+     "url": "https://pure.md/https://stratechery.com/2026/copilot-cowork-anthropics-integration-microsofts-new-bundle/",
+     "status": "200"
+    },
+    {
+     "ts": "20260424155225",
+     "url": "https://pure.md/https://theconversation.com/meta-and-microsoft-have-joined-the-tech-layoff-tsunami-but-is-ai-really-to-blame-281436",
+     "status": "200"
+    },
+    {
+     "ts": "20260430055153",
+     "url": "https://pure.md/https://www.aljazeera.com/news/2026/4/30/oil-prices-soar-on-fears-of-long-supply-disruption-us-siege-of-iran-ports",
+     "status": "200"
+    },
+    {
+     "ts": "20260501224320",
+     "url": "https://pure.md/https://www.bbc.com/news/articles/c5y9wen5z8ro",
+     "status": "200"
+    },
+    {
+     "ts": "20260515012607",
+     "url": "https://pure.md/https://www.campusbythesea.org/statement-of-beliefs",
+     "status": "200"
+    },
+    {
+     "ts": "20260515012727",
+     "url": "https://pure.md/https://www.campusbythesea.org/what-to-bring",
+     "status": "200"
+    },
+    {
+     "ts": "20260419160803",
+     "url": "https://pure.md/https://www.christiancentury.org/article/2012-05/studies-say-atheists-believers-both-do-good-different-reasons",
+     "status": "200"
+    },
+    {
+     "ts": "20260430055202",
+     "url": "https://pure.md/https://www.cnbc.com/2026/04/29/paypal-restructures-venmo-standalone-unit.html",
+     "status": "200"
+    },
+    {
+     "ts": "20260420211154",
+     "url": "https://pure.md/https://www.discovermagazine.com/up-to-8-million-bees-are-living-in-an-underground-network-beneath-this-cemetery-48977",
+     "status": "200"
+    },
+    {
+     "ts": "20260420210947",
+     "url": "https://pure.md/https://www.economist.com/business/2026/04/20/anduril-palantir-and-spacex-are-changing-how-america-wages-war",
+     "status": "200"
+    },
+    {
+     "ts": "20260420175239",
+     "url": "https://pure.md/https://www.ft.com/content/564c26d9-489c-435b-88f7-2df388e058d3?syn-25a6b1a6=1",
+     "status": "200"
+    },
+    {
+     "ts": "20260324211236",
+     "url": "https://pure.md/https://www.ibm.com/support/pages/external-report-integration-eri",
+     "status": "200"
+    },
+    {
+     "ts": "20260506154532",
+     "url": "https://pure.md/https://www.linkedin.com/posts/supercharging-llm-inference-on-google-tpus-share-7457172251013017600-m-v3/",
+     "status": "200"
+    },
+    {
+     "ts": "20260324210706",
+     "url": "https://pure.md/https://www.technologyreview.com/2026/03/20/1134438/openai-is-throwing-everything-into-building-a-fully-automated-researcher/",
+     "status": "200"
+    },
+    {
+     "ts": "20260507144247",
+     "url": "https://pure.md/https://www.understandingai.org/p/i-dont-think-we-are-close-to-ai-scientists/comments",
+     "status": "200"
+    },
+    {
+     "ts": "20260324210611",
+     "url": "https://pure.md/https://www.wired.com/story/google-gemini-2-ai-assistant-release/",
+     "status": "200"
+    },
+    {
+     "ts": "20260424155005",
+     "url": "https://pure.md/https://www.wired.com/story/schematik-is-cursor-for-hardware-anthropic-wants-in-on-it/",
+     "status": "200"
+    },
+    {
+     "ts": "20260214191225",
+     "url": "https://pure.md/huggingface.com",
+     "status": "200"
+    },
+    {
+     "ts": "20260204085222",
+     "url": "https://pure.md/login",
+     "status": "307"
+    },
+    {
+     "ts": "20260204085222",
+     "url": "https://pure.md/login/",
+     "status": "200"
+    },
+    {
+     "ts": "20260309124039",
+     "url": "https://pure.md/login",
+     "status": "307"
+    },
+    {
+     "ts": "20260309124039",
+     "url": "https://pure.md/login/",
+     "status": "200"
+    },
+    {
+     "ts": "20260413050600",
+     "url": "https://pure.md/login/",
+     "status": "200"
+    },
+    {
+     "ts": "20260514193633",
+     "url": "https://pure.md/login/",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125011",
+     "url": "https://pure.md/login",
+     "status": "307"
+    },
+    {
+     "ts": "20260813125011",
+     "url": "https://pure.md/login/",
+     "status": "200"
+    },
+    {
+     "ts": "20260125110723",
+     "url": "https://pure.md/ort.pyke.io/perf/io-binding",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230449",
+     "url": "https://pure.md/privacy",
+     "status": "307"
+    },
+    {
+     "ts": "20260105230449",
+     "url": "https://pure.md/privacy/",
+     "status": "200"
+    },
+    {
+     "ts": "20260309071803",
+     "url": "https://pure.md/privacy",
+     "status": "307"
+    },
+    {
+     "ts": "20260309071803",
+     "url": "https://pure.md/privacy/",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125015",
+     "url": "https://pure.md/privacy",
+     "status": "307"
+    },
+    {
+     "ts": "20260813125015",
+     "url": "https://pure.md/privacy/",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230453",
+     "url": "https://pure.md/robots.txt",
+     "status": "200"
+    },
+    {
+     "ts": "20260103013826",
+     "url": "https://pure.md/scripts/globe.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260123203054",
+     "url": "https://pure.md/scripts/globe.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260207232847",
+     "url": "https://pure.md/scripts/globe.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260308043436",
+     "url": "https://pure.md/scripts/globe.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260103013826",
+     "url": "https://pure.md/scripts/supabase.min.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260123203054",
+     "url": "https://pure.md/scripts/supabase.min.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260308043436",
+     "url": "https://pure.md/scripts/supabase.min.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125000",
+     "url": "https://pure.md/scripts/supabase.min.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260103013826",
+     "url": "https://pure.md/scripts/three.min.js",
+     "status": "-"
+    },
+    {
+     "ts": "20260123203054",
+     "url": "https://pure.md/scripts/three.min.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260308043435",
+     "url": "https://pure.md/scripts/three.min.js",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230454",
+     "url": "https://pure.md/sitemap.xml",
+     "status": "200"
+    },
+    {
+     "ts": "20260105182512",
+     "url": "https://pure.md/sparkbox.com/foundry/helene_and_mobile_web_performance",
+     "status": "200"
+    },
+    {
+     "ts": "20260519132210",
+     "url": "https://pure.md/static1.dualshockersimages.com/wordpress/wp-content/uploads/2018/10/MapleStory_2__Screenshot_4_v1.jpg",
+     "status": "200"
+    },
+    {
+     "ts": "20260103013826",
+     "url": "https://pure.md/styles/global.css",
+     "status": "200"
+    },
+    {
+     "ts": "20260123203054",
+     "url": "https://pure.md/styles/global.css",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125000",
+     "url": "https://pure.md/styles/global.css",
+     "status": "200"
+    },
+    {
+     "ts": "20260105230523",
+     "url": "https://pure.md/terms",
+     "status": "307"
+    },
+    {
+     "ts": "20260105230524",
+     "url": "https://pure.md/terms/",
+     "status": "200"
+    },
+    {
+     "ts": "20260202094304",
+     "url": "https://pure.md/terms",
+     "status": "307"
+    },
+    {
+     "ts": "20260202094304",
+     "url": "https://pure.md/terms/",
+     "status": "200"
+    },
+    {
+     "ts": "20260309190609",
+     "url": "https://pure.md/terms",
+     "status": "307"
+    },
+    {
+     "ts": "20260309190610",
+     "url": "https://pure.md/terms/",
+     "status": "200"
+    },
+    {
+     "ts": "20260310095508",
+     "url": "https://pure.md/terms",
+     "status": "307"
+    },
+    {
+     "ts": "20260813125007",
+     "url": "https://pure.md/terms/",
+     "status": "200"
+    },
+    {
+     "ts": "20260813125047",
+     "url": "https://pure.md/terms",
+     "status": "307"
+    },
+    {
+     "ts": "20260527095400",
+     "url": "https://pure.md/web.archive.org/web/20101113162927id_/http://www.nsi.bg/otrasalen.php?a2=2128&a3=2129&a4=2131&Menu=1&otr=50&a1=2127",
+     "status": "404",
+     "class": "swarm",
+     "match": "same second as the known JST_1.3_en.xlsx capture (NSI cohort, pmwiki.org/PublicTestWiki May 27-28); otrasalen.php appears in no export or reading-pack body"
+    },
+    {
+     "ts": "20260601143205",
+     "url": "https://pure.md/web%2Earchive%2Eorg/web/20130531003440id_/clarku.edu/departments/economics/pdf/newsletter2012.pdf",
+     "status": "400",
+     "class": "swarm",
+     "match": "DSEWiki AgentClarkEncodedDotsReaderGZ81 2026-06-01T14:33:19Z is the first revision using the percent-encoded-dot form (then AgentWindow6JQPEncodeTestsK99282 14:36:51, AgentFinalEncodedClarkSourceDot 14:40:54); capture precedes the first wiki write by 74 s and uses a bare clarku.edu host no revision posted"
+    },
+    {
+     "ts": "20260601145740",
+     "url": "https://pure.md/web.archive.org/web/20130531003440id_/www.clarku.edu/departments/economics/pdf/newsletter2012.pdf",
+     "status": "200"
+    },
+    {
+     "ts": "20260525033618",
+     "url": "https://pure.md/web.archive.org/web/20210928022304id_/cosmosmagazine.com/history/palaeontology/researchers-unveil-sex-difference-in-the-stegosaurus/",
+     "status": "200",
+     "class": "task-family",
+     "match": "vanderbi.lt link body iyg1y (reading pack, undated) wraps the same Cosmos article through pure.md over a different Wayback snapshot (20211121144110id_)"
+    },
+    {
+     "ts": "20260627101934",
+     "url": "http://pure.md/web.archive.org/web/20230731100417id_/www.gadoe.org/Curriculum-Instruction-and-Assessment/Assessment/Documents/Milestones/Statewide%20Scores/22-23/Spring_2023_EOG-System_Level-All%20Grades.xlsx",
+     "status": "301",
+     "class": "toolkit-shape",
+     "match": "pure.md over a Wayback id_ copy of a Georgia Milestones spreadsheet; no export or pack match; federal/state-education family"
+    },
+    {
+     "ts": "20260707213953",
+     "url": "https://pure.md/web.archive.org/web/20260707204744id_/https://files.santaclaracounty.gov/migrated/latino-health-vol2_0.pdf",
+     "status": "503",
+     "class": "known",
+     "match": "Santa Clara County health PDF, already in the 2026-09-07 inventory"
+    },
+    {
+     "ts": "20260527095400",
+     "url": "https://pure.md/www.nsi.bg/sites/default/files/files/data/timeseries/JST_1.3_en.xlsx",
+     "status": "200",
+     "class": "swarm",
+     "match": "same second as the known JST_1.3_en.xlsx capture (NSI cohort, pmwiki.org/PublicTestWiki May 27-28); otrasalen.php appears in no export or reading-pack body"
+    }
+   ]
+  },
+  "markdown.new": {
+   "captures": 130,
+   "rows": [
+    {
+     "ts": "20260214053614",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260215031022",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260215103156",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260222003110",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260224013929",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260225090322",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260302083011",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260308203227",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260311120620",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260322172629",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260417224336",
+     "url": "http://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053108",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260515001448",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260518121344",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260523111245",
+     "url": "https://markdown.new/",
+     "status": "-"
+    },
+    {
+     "ts": "20260606144642",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022929",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260728020523",
+     "url": "https://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260822172552",
+     "url": "http://markdown.new/",
+     "status": "200"
+    },
+    {
+     "ts": "20260429213140",
+     "url": "https://markdown.new/'+location.href",
+     "status": "500"
+    },
+    {
+     "ts": "20260514041545",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor",
+     "status": "200"
+    },
+    {
+     "ts": "20260907025505",
+     "url": "http://markdown.new/api?url=https%3A%2F%2Fr.jina.ai%2Fhttps%3A%2F%2Fwww.sec.gov%2Ffiles%2Fcounty.json%3Fx%3D567017",
+     "status": "500",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260215043906",
+     "url": "https://markdown.new/blog.cloudflare.com/images/toolbar/wayback-toolbar-logo.svg",
+     "status": "200"
+    },
+    {
+     "ts": "20260215043859",
+     "url": "https://markdown.new/blog.cloudflare.com/markdown-for-agents/",
+     "status": "200"
+    },
+    {
+     "ts": "20260606120159",
+     "url": "https://markdown.new/candies.monster",
+     "status": "200"
+    },
+    {
+     "ts": "20260429191914",
+     "url": "https://markdown.new/convert",
+     "status": "500"
+    },
+    {
+     "ts": "20260322172618",
+     "url": "https://markdown.new/crawl",
+     "status": "200"
+    },
+    {
+     "ts": "20260417221858",
+     "url": "http://markdown.new/crawl",
+     "status": "200"
+    },
+    {
+     "ts": "20260429191914",
+     "url": "https://markdown.new/crawl",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/crawl",
+     "status": "200"
+    },
+    {
+     "ts": "20260518124840",
+     "url": "http://markdown.new/crawl",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/crawl",
+     "status": "200"
+    },
+    {
+     "ts": "20260429191914",
+     "url": "https://markdown.new/crawl/status/&",
+     "status": "500"
+    },
+    {
+     "ts": "20260904160340",
+     "url": "http://markdown.new/da.gd/",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904213643",
+     "url": "http://markdown.new/da.gd/CODE",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904160511",
+     "url": "https://markdown.new/example.com",
+     "status": "200"
+    },
+    {
+     "ts": "20260214053614",
+     "url": "https://markdown.new/favicon.ico",
+     "status": "400"
+    },
+    {
+     "ts": "20260215043500",
+     "url": "https://markdown.new/file-converter",
+     "status": "200"
+    },
+    {
+     "ts": "20260215195616",
+     "url": "https://markdown.new/file-converter",
+     "status": "200"
+    },
+    {
+     "ts": "20260224013935",
+     "url": "https://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260301092342",
+     "url": "https://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260308200025",
+     "url": "https://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260417221302",
+     "url": "http://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260518124333",
+     "url": "http://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/file-to-markdown",
+     "status": "200"
+    },
+    {
+     "ts": "20260513044055",
+     "url": "https://markdown.new/http://history.powys.org.uk/school1/brecon/fryn1840.shtml",
+     "status": "200"
+    },
+    {
+     "ts": "20260806071816",
+     "url": "https://markdown.new/http://skyislandjournal.com/s/Andrea-Damic_Creative-Nonfiction_All-It-Takes-Is-a-Microscopic-Moment-in-Time-zzpm.docx",
+     "status": "200",
+     "class": "false-positive",
+     "match": "see 20260715051006"
+    },
+    {
+     "ts": "20260904133333",
+     "url": "https://markdown.new/httpbin.org/redirect-to?url=https%3A%2F%2Fdata.nysed.gov",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904204737",
+     "url": "https://markdown.new/httpbin.org/redirect-to?url=https%3A%2F%2Fdata.nysed.gov",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260905011819",
+     "url": "https://markdown.new/httpbin.org/redirect-to?url=https%3A%2F%2Fdata.nysed.gov",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260515001431",
+     "url": "https://markdown.new/https://datasets.cbs.nl/odata/v1/CBS/83779NED/Observations/329",
+     "status": "200",
+     "class": "task-family",
+     "match": "16 popcat shortener records (reading pack, undated) target the same CBS 83779NED OData dataset; Observations/329 itself is not among them"
+    },
+    {
+     "ts": "20260511065631",
+     "url": "https://markdown.new/https://elbeyoglu.com/i-built-markdown-new-and-it-went-a-little-viral/",
+     "status": "200"
+    },
+    {
+     "ts": "20260429191914",
+     "url": "https://markdown.new/https://example.com",
+     "status": "200"
+    },
+    {
+     "ts": "20260429191914",
+     "url": "https://markdown.new/https://example.com?format=json",
+     "status": "200"
+    },
+    {
+     "ts": "20260518151234",
+     "url": "https://markdown.new/https://example.com%60",
+     "status": "500"
+    },
+    {
+     "ts": "20260311140358",
+     "url": "https://markdown.new/https://fptbb.com/",
+     "status": "200"
+    },
+    {
+     "ts": "20260904214142",
+     "url": "http://markdown.new/https://httpbin.org/redirect-to?url=ENCODED_TARGET",
+     "status": "500",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904200807",
+     "url": "https://markdown.new/https://httpbin.org/redirect-to?url=https%3A%2F%2Fwonder.cdc.gov%2Fcancer-v2021.html",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260806055008",
+     "url": "https://markdown.new/https://is.gd/VP1YUB",
+     "status": "200",
+     "class": "false-positive",
+     "match": "see 20260715051006"
+    },
+    {
+     "ts": "20260806060109",
+     "url": "https://markdown.new/https://is.gd/VP1YUB.docx",
+     "status": "200",
+     "class": "false-positive",
+     "match": "see 20260715051006"
+    },
+    {
+     "ts": "20260904141538",
+     "url": "https://markdown.new/https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904161103",
+     "url": "https://markdown.new/https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf&quot",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260429191914",
+     "url": "https://markdown.new/https://raw.githubusercontent.com/github/gitignore/main/README.md?format=json",
+     "status": "200"
+    },
+    {
+     "ts": "20260904202115",
+     "url": "https://markdown.new/https://tinyurl.com/%3Calias%3E/",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904171312",
+     "url": "https://markdown.new/https://ukds-ckan.s3.eu-west-1.amazonaws.com/2021/ONS/Religion/Religion/TS030-Religion-2021-p19wpc-ONS.xlsx",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260518105655",
+     "url": "https://markdown.new/https://web.archive.org/web/20250301000000id_/https://howlongtobeat.com/game/6534",
+     "status": "200"
+    },
+    {
+     "ts": "20260423173642",
+     "url": "https://markdown.new/https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual/mw.loadData",
+     "status": "200"
+    },
+    {
+     "ts": "20260423173654",
+     "url": "https://markdown.new/https://www.mediawiki.org/wiki/Help:Lua",
+     "status": "200"
+    },
+    {
+     "ts": "20260809173621",
+     "url": "https://markdown.new/https://www.skyislandjournal.com/s/Tanima_Poetry_Waiting-hzrf.docx",
+     "status": "200",
+     "class": "false-positive",
+     "match": "see 20260715051006"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/android-icon-192x192.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/apple-icon-120x120.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/apple-icon-152x152.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/apple-icon-180x180.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/favicon-16x16.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/favicon-32x32.png",
+     "status": "200"
+    },
+    {
+     "ts": "20260218224423",
+     "url": "https://markdown.new/icons/favicon.ico",
+     "status": "200"
+    },
+    {
+     "ts": "20260612024231",
+     "url": "https://markdown.new/mapgenie.io/api/v1/maps/536/full/10/@/?darkmode=1",
+     "status": "200",
+     "class": "task-family",
+     "match": "map 536 again, five days before the map-580 material"
+    },
+    {
+     "ts": "20260605233635",
+     "url": "https://markdown.new/mapgenie.io/api/v1/maps/536/full/[length]/[padding%20character]/[input]",
+     "status": "200",
+     "class": "task-family",
+     "match": "mapgenie appears only on 2026-06-17 (linuxiarz f27f139a 11:50, probier SandBox 11:55, vanderbi.lt alias -8-rz created 06:30:31 from 20.10.40.3), all map 580; this is map 536, twelve days earlier, with literal template placeholders"
+    },
+    {
+     "ts": "20260808073343",
+     "url": "https://markdown.new/mapgenie.io/api/v1/maps/536/full/[length]/[padding%20character]/[input]",
+     "status": "200",
+     "class": "task-family",
+     "match": "map 536 template form repeated post-collapse"
+    },
+    {
+     "ts": "20260215043456",
+     "url": "https://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260215205218",
+     "url": "https://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260322172629",
+     "url": "https://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260417215616",
+     "url": "http://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260518120247",
+     "url": "https://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/markdown-editor",
+     "status": "200"
+    },
+    {
+     "ts": "20260215043725",
+     "url": "https://markdown.new/markdown.new",
+     "status": "200"
+    },
+    {
+     "ts": "20260519050620",
+     "url": "https://markdown.new/nvs.landcareresearch.co.nz/api/observation/plotobs/BySampleMethodId/26874",
+     "status": "200",
+     "class": "task-family",
+     "match": "popcat record nvsobsm8618 (reading pack, undated) targets plotobs/BySampleMethodId/26874 exactly"
+    },
+    {
+     "ts": "20260214055436",
+     "url": "https://markdown.new/og-image.jpg",
+     "status": "200"
+    },
+    {
+     "ts": "20260322172630",
+     "url": "https://markdown.new/og-image.jpg",
+     "status": "200"
+    },
+    {
+     "ts": "20260527135250",
+     "url": "https://markdown.new/old.nsi.bg/sites/default/files/files/data/timeseries/JST_1.3_en.xls",
+     "status": "200"
+    },
+    {
+     "ts": "20260904141538",
+     "url": "https://markdown.new/portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904161103",
+     "url": "https://markdown.new/portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf&quot",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904163810",
+     "url": "https://markdown.new/portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?retain_images=true",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904141538",
+     "url": "https://markdown.new/portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904161103",
+     "url": "https://markdown.new/portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf&quot",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260214224144",
+     "url": "https://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260215043454",
+     "url": "https://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260322172629",
+     "url": "https://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260417222236",
+     "url": "http://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260518125158",
+     "url": "http://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/privacy",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/search",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/search",
+     "status": "200"
+    },
+    {
+     "ts": "20260612081236",
+     "url": "https://markdown.new/storage.data.gov.my/kkmnow/dashboards/blood-donation-mlk.json",
+     "status": "200"
+    },
+    {
+     "ts": "20260215043509",
+     "url": "https://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260216031603",
+     "url": "https://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260322172629",
+     "url": "https://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260417214545",
+     "url": "http://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053119",
+     "url": "https://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260518122101",
+     "url": "http://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260703022940",
+     "url": "https://markdown.new/terms",
+     "status": "200"
+    },
+    {
+     "ts": "20260215043625",
+     "url": "https://markdown.new/tilr.carrd.co",
+     "status": "200"
+    },
+    {
+     "ts": "20260601151510",
+     "url": "https://markdown.new/web.archive.org/web/20130531003440id_/clarku.edu/departments/economics/pdf/newsletter2012.pdf",
+     "status": "200"
+    },
+    {
+     "ts": "20260512053030",
+     "url": "https://markdown.new/web.archive.org/web/20240807022150id_if_/www.drivelah.sg/blog/getting-around-singapore-comparing-ride-hailing-taxis-and-car-sharing-services-clyq158ca000ag0d2bf905d69",
+     "status": "200",
+     "class": "toolkit-shape",
+     "match": "markdown.new over a Wayback id_if_ copy; shortener start date; no export or pack match"
+    },
+    {
+     "ts": "20260905151648",
+     "url": "https://markdown.new/www.cnet.com/home/energy-and-utilities/franklin-home-power-battery-review-not-the-cheapest-but-it-gets-the-job-done/",
+     "status": "200"
+    },
+    {
+     "ts": "20260905151648",
+     "url": "https://markdown.new/www.cnet.com/home/energy-and-utilities/generac-pwrcell-review/",
+     "status": "200"
+    },
+    {
+     "ts": "20260905151648",
+     "url": "https://markdown.new/www.cnet.com/home/energy-and-utilities/sunpower-sunvault-review/",
+     "status": "200"
+    },
+    {
+     "ts": "20260904171312",
+     "url": "https://markdown.new/www.eurogamer.net/our-personal-top-five-games-of-2023",
+     "status": "200"
+    },
+    {
+     "ts": "20260904171330",
+     "url": "https://markdown.new/www.investor.gov//files/county.json?max_tokens=10000&uniqmk13=6638764&mode=fit",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904171330",
+     "url": "https://markdown.new/www.investor.gov//files/county.json?newmdsucc=49247405&method=ai",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260904171330",
+     "url": "https://markdown.new/www.investor.gov/sites/default/files/county.json?mode=fit&max_tokens=20000&uniqmk13=7733257",
+     "status": "200",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260215043654",
+     "url": "https://markdown.new/www.linktr.ee/TILR",
+     "status": "200"
+    },
+    {
+     "ts": "20260905065810",
+     "url": "https://markdown.new/www.sec.gov/files/county.json?method=regular&uniqmk13=7748438",
+     "status": "500",
+     "class": "post-disclosure-replay",
+     "match": "reading-pack / shortener-audit URL replayed after the 2026-09-04 disclosure; several carry literal placeholders (ENCODED_TARGET, <alias>, CODE); not this archive (no Save Page Now calls in this repo)"
+    },
+    {
+     "ts": "20260906205549",
+     "url": "https://markdown.new/www.thetravel.com/top-dallas-restaurants/",
+     "status": "200"
+    },
+    {
+     "ts": "20260215043824",
+     "url": "https://markdown.new/www.tylerputz.com",
+     "status": "200"
+    },
+    {
+     "ts": "20260511172926",
+     "url": "https://markdown.new/www.whstrustpkl.com/about?googlewoodland",
+     "status": "200"
+    }
+   ]
+  }
+ }
+}
