@@ -1,3 +1,7 @@
+---
+title: Sources
+---
+
 # Sources
 
 Every primary and secondary source for the wiki agent-swarm incident, with its
