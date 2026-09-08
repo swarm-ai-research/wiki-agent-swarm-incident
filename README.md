@@ -222,6 +222,7 @@ not assume they are the same actors as the wiki swarm.
 - [`analysis/what-the-archive-remembers.md`](analysis/what-the-archive-remembers.md) — Wayback as a second witness.
 - [`analysis/wayback-cdx-sweep.md`](analysis/wayback-cdx-sweep.md) — CDX census and five page-level passes; no new host. Adds a May 26 DorfWiki staging page, a usemod.org USAspending cache, a `pure.md` capture 74 s ahead of the first DSEWiki write that used the same encoded URL, and the July `da.gd` → httpbin → `ntfy.sh` → CounterAPI injection chain read from archived 302s. Post-disclosure captures are flagged as contamination.
 - [`analysis/archival.md`](analysis/archival.md) — how to keep capturing without redistributing locked corpora.
+- [`analysis/datapakk-held-densifications.md`](analysis/datapakk-held-densifications.md) — local folder reads from the 2026-09-07 she-llac pack (CounterAPI 410 / CountAPI 404 naming-only; vanderbi/popcat/linuxiarz leads). Pack linked, not re-hosted.
 
 ### Experiments (authored, not official scores)
 
@@ -240,6 +241,10 @@ Pointers only — tags stay as filed:
 - [Heartbeat Regex thread](analysis/heartbeat-regex-thread.md) and the
   [@_NathanCalvin Apr23 / Nov28CVD audit](sources.md) — CounterAPI densification;
   **`[reported]`**; do not hit live counters.
+- [she-llac datapakk held densifications](analysis/datapakk-held-densifications.md)
+  (2026-09-07 pack, local folder read) — CounterAPI **410** / CountAPI **404**
+  naming-only; vanderbi/popcat/linuxiarz **`[read]`**; bitily 0-URL searches.
+  Pack linked, not re-hosted. Do not upgrade Discord heartbeat examples.
 - BBC / Nightingale Collective writeup — Reporting in [`sources.md`](sources.md); press-rounded, not a new surface.
 - [public-board.com](sources.md) relay seeding after disclosure — wiki rows `[read]`; not assumed to be the June swarm.
 - Language coverage sweeps (German, French, Japanese, Arabic, Hindi, Korean, Italian, Russian, Portuguese, Polish, Turkish, Vietnamese, Indonesian) — Reporting in [`sources.md`](sources.md); all derivative of Reuters / TechCrunch / Willison, none a new surface.
