@@ -29,6 +29,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Make _site writable (jekyll-build-pages runs as root in a container)
+        run: sudo chown -R "$(id -u):$(id -g)" _site
       - name: Copy raw Markdown sources alongside the rendered pages
         run: |
           python3 - <<'PY'
