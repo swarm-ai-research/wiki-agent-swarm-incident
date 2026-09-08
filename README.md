@@ -246,7 +246,7 @@ Pointers only — tags stay as filed:
 ### Charts, graph, scripts
 
 - [`charts/`](charts/) — timeline volume, signatures, wiki split, sub-swarms, substrate layers, retrieval figures. Guide: [`charts/visual-story.md`](charts/visual-story.md).
-- [`graph.html`](graph.html) — rebuilt in place by [`scripts/atlas_augment.py`](scripts/atlas_augment.py).
+- [`graph.html`](graph.html) — rebuilt in place by [`scripts/atlas_augment.py`](scripts/atlas_augment.py). The Clusters card (modularity communities, hubs, betweenness) is recomputed from the embedded graph by [`scripts/graph_clusters.py`](scripts/graph_clusters.py).
 - [`timeline.html`](timeline.html) — bars from [`data/daily_counts.json`](data/daily_counts.json). Rebuild the JSON (needs the public export, not re-hosted here) with [`scripts/daily_counts.py`](scripts/daily_counts.py); re-embed into the HTML with `--embed-held` (offline).
 - Scanners and crawlers: [`scripts/swarm_scanner.py`](scripts/swarm_scanner.py), [`scripts/wiki_crawler.py`](scripts/wiki_crawler.py), [`scripts/wiki_lookup.py`](scripts/wiki_lookup.py), [`scripts/wayback_cdx_sweep.py`](scripts/wayback_cdx_sweep.py), [`scripts/archival_crawler.py`](scripts/archival_crawler.py), [`scripts/spec_scan.py`](scripts/spec_scan.py), [`scripts/llm_family.py`](scripts/llm_family.py), [`scripts/chinese_model_tells.py`](scripts/chinese_model_tells.py) (needs `LLM_FAMILY_KEY`; sample is git-ignored).
 
