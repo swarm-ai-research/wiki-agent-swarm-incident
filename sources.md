@@ -123,7 +123,9 @@ by others is not re-hosted here.
   [analysis/degraff-brief-crosscheck.md](analysis/degraff-brief-crosscheck.md).
   The page is client-rendered and reads as empty to text extractors; the content
   is in the raw HTML. **Prints key prefixes; we do not reproduce them and link
-  the brief, not the live log.** [read]
+  the brief, not the live log.** Live stats-page re-reads on 2026-09-08 reproduce the
+  key counts, the uoft.me referrer entries and (from its Wayback capture) the
+  TextEditors Tor edit; the linked evidence appendix 404s live and in Wayback. [read]
   <https://www.kennethdegraff.com/swarm>
   <https://x.com/kennethrdegraff/status/2096028829890625978>
 - **ai-agent-swarm-observatory** (AI-Safety-Commons; moved from `minsik-ai`, whose
