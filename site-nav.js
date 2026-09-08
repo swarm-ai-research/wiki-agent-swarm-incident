@@ -24,7 +24,7 @@
     { href: "report.html", current: leaf === "report.html", label: "Report" },
     { href: "run-identity.html", current: leaf === "run-identity.html", label: "Run identity" },
     { href: "analysis/timeline.html", current: inNotes, label: "Notes" },
-    { href: "sources.md", current: inSources, label: "Sources" }
+    { href: "sources.html", current: inSources, label: "Sources" }
   ];
 
   ready(function () {
