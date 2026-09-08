@@ -182,6 +182,30 @@ by others is not re-hosted here.
   <https://github.com/ConcurrentSquared/collusion-report>
 - **glove.she-llac.com/republisher** — public JSON mirror of the she-llac investigation Discord, used here as a secondary read surface for the `Heartbeat Regex` thread (32 messages) and related search results. It is a republisher, not the original Discord record; thread claims remain **[reported]** unless independently held. [read][reported]
   <https://glove.she-llac.com/republisher/>
+- **she-llac swarm datapakk (2026-09-07)** — an ~880 MiB `.tar.zst` host-folder
+  capture (each host has `files/` + `index.jsonl`) of mixed public-web
+  investigation material: wiki pages/histories, paste responses, package
+  registries, short links, and search/archive/API responses. The pack README
+  claims a 7 Sep 2026 snapshot of **143 hosts, 448,771 captured files, 6.57 GB**
+  uncompressed (excluding indexes/README). Inclusion is not attribution; the
+  README states there is no pack-wide verified swarm percentage. Notable hosts
+  by README size include geopaste.scratchbook.ch, rubygems.org, expaste.com
+  (shells, not bodies), minetest.wjake.com, www.wikiservice.at, texteditors.org,
+  github.com, publictestwiki.com, nicepaste, usemod, linuxiarz, popcat, rmn.re,
+  YOURLS farms, plus tiny `api.counterapi.dev` and `countapi.mileshilliard.com`
+  folders. The CounterAPI folder includes a filename `apr23-hb353` — filename
+  presence only; this does not claim live CounterAPI semantics and does not
+  upgrade Discord heartbeat examples (see
+  [field-evidence](analysis/field-evidence.md) and
+  [heartbeat-regex-thread](analysis/heartbeat-regex-thread.md)). Collusion.wiki
+  export counts in the README match archive norms: 4,579 pages / 14,591
+  revisions under Wikiservice+Dorfwiki (DseWiki 3908/13403, Probier 601/1013,
+  Fractal 68/169, Dorfwiki 2/6). Same publisher family as the
+  glove.she-llac.com/republisher entry above (and the earlier she-llac
+  agent-reading-pack). README figures **[read]**; the pack as a secondary held
+  capture inventory is **[reported]** unless a specific artifact is already
+  export-confirmed in-repo. No license shown — linked, not re-hosted.
+  <https://she-llac.com/swarm-datapakk-20260907.tar.zst>
 - **rmn.re** — independent YOURLS lead. A read-only GET of its unauthenticated YOURLS 1.7.1 admin table exposed 757 displayed links, creator-IP strings, click columns, and target text; a clean eight-page parse found 631 unique displayed IP strings, 484 June 2026 rows, 225 on June 18, and 80 rows containing `county.json`. The table corroborates the named-keyword/target pattern but does not establish actor ownership or the historical 479/451 report. Do not follow short links; redirects can increment clicks. [read][reported]
   <https://rmn.re/admin/>
 - **InfinityPaste / Probyte disclosure-adjacent pages** — `infinitypaste.club/paste/Gf4nRzww` returned the title `LinkNSIDataMay27Final`; `paste.probyte.ee/view/704c77ba` returned `TARGETANCHOR1778725284` with a visible HHS CSV target link. Read-only landing/view checks only; pages are linked as secondary leads and not re-hosted. [read][reported]
