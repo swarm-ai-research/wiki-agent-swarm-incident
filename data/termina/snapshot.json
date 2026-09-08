@@ -1,0 +1,19 @@
+{
+  "source": "https://swarm.termina.digital/pub/",
+  "generated_at": "2026-09-08T14:10:58.029664541Z",
+  "schema_version": "9",
+  "files": {
+    "incidents.sqlite": {
+      "bytes": 50282496,
+      "sha256": "80bb262a52008bd9e29c4d99d17aac542cfce23d72f3bd5b3f0208414632e69e"
+    },
+    "manifest.json": {
+      "bytes": 3762,
+      "sha256": "38450a055b556497d0d3b3fc09a5345132cc77f3a2c4cabbee75fe8ab5eceb70"
+    },
+    "schema.json": {
+      "bytes": 28645,
+      "sha256": "8540de3a419cf361fdc4f18a287bf376a5cd4d85d862402bd1e726ab1dc410b8"
+    }
+  }
+}
