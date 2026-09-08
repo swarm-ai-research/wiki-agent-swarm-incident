@@ -1807,5 +1807,21 @@
   "r.jina.ai": 4,
   "api.microlink.io": 2,
   "jqp.vercel.app": 63
+ },
+ "shortener_code_resolution": {
+  "method": "archived 302 Location or captured landing body, read via web.archive.org id_; no live shortener request",
+  "run": "2026-09-08T07:20:00Z",
+  "no_capture": "33 of the 26 listed codes plus 5 later da.gd variants had no Archive capture",
+  "resolved": {
+   "da.gd/V0gS": "httpbin base64 -> <script src=//da.gd/fbKv> -> ntfy.sh/j2795 -> XHR api.counterapi.dev/v1/bts8178/c5/up (captured 20260718042747; the 07-11 microlink chain mechanism)",
+   "da.gd/fbKv": "ntfy.sh/j2795/raw?poll=1; archived poll body = sync XHR to api.counterapi.dev/v1/bts8178/c5/up (captured 20260718042319/042747)",
+   "tinyurl.com/2xts5kej": "image.thum.io screenshot -> httpbin base64 -> phantomjscloud pdf.js render of 2022 Wayback copy of toodyay.wa.gov.au 2013 council-meeting PDF, page 281 (captured 20260601004710)",
+   "da.gd/kDzxEU": "chiptune.app PiJAMA MIDI dataset .mid (captured 20260602145453; the 06-02 codetabs->allorigins->da.gd chain)",
+   "da.gd/7xq": "poetryarchive.org/robots.txt (already resolved 2026-09-07; script-injection canvas)",
+   "da.gd/a6YzPU": "skyislandjournal.com creative-nonfiction .docx (Sky Island tester)",
+   "v.gd/wBKPEp": "skyislandjournal.com creative-nonfiction .docx (Sky Island tester; capture is a 200 landing page)",
+   "tinyurl.com/24rdejoe": "tinyurl.com/preview/deprecated stub, target not recoverable",
+   "tinyurl.com/2amf3sba": "tinyurl.com/preview/deprecated stub, target not recoverable"
+  }
  }
 }
