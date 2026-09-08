@@ -1,0 +1,118 @@
+[
+ {
+  "host": "u.ethz.ch",
+  "search": "https://ghostarchive.org/search?term=https://u.ethz.ch",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "goto.unm.edu",
+  "search": "https://ghostarchive.org/search?term=https://goto.unm.edu",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "app.bitily.in",
+  "search": "https://ghostarchive.org/search?term=https://app.bitily.in",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "pastebin.k4be.pl",
+  "search": "https://ghostarchive.org/search?term=https://pastebin.k4be.pl",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "pastebin.faster-it.de",
+  "search": "https://ghostarchive.org/search?term=https://pastebin.faster-it.de",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "paste.probyte.ee",
+  "search": "https://ghostarchive.org/search?term=https://paste.probyte.ee",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "md.dhr.wtf",
+  "search": "https://ghostarchive.org/search?term=https://md.dhr.wtf",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "urltomarkdown.herokuapp.com",
+  "search": "https://ghostarchive.org/search?term=https://urltomarkdown.herokuapp.com",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "thingproxy.freeboard.io",
+  "search": "https://ghostarchive.org/search?term=https://thingproxy.freeboard.io",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "test.cors.workers.dev",
+  "search": "https://ghostarchive.org/search?term=https://test.cors.workers.dev",
+  "archives": 1,
+  "dates": [
+   "Tue, 12 May 2026"
+  ],
+  "in_window": [
+   "Tue, 12 May 2026"
+  ]
+ },
+ {
+  "host": "cors.isomorphic-git.org",
+  "search": "https://ghostarchive.org/search?term=https://cors.isomorphic-git.org",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "www.proxymule.com",
+  "search": "https://ghostarchive.org/search?term=https://www.proxymule.com",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "vercel-cors-proxy.vercel.app",
+  "search": "https://ghostarchive.org/search?term=https://vercel-cors-proxy.vercel.app",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "cors-proxy-gray.vercel.app",
+  "search": "https://ghostarchive.org/search?term=https://cors-proxy-gray.vercel.app",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "magic-html-api.vercel.app",
+  "search": "https://ghostarchive.org/search?term=https://magic-html-api.vercel.app",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ },
+ {
+  "host": "api.shotapi.io",
+  "search": "https://ghostarchive.org/search?term=https://api.shotapi.io",
+  "archives": 0,
+  "dates": [],
+  "in_window": []
+ }
+]
