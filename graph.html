@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Backchannel Atlas</title>
 <link rel="stylesheet" href="site.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -98,7 +99,8 @@ button:hover{filter:brightness(1.08)}
 .hop{display:flex;align-items:center;gap:8px;font-family:"IBM Plex Mono",monospace;font-size:11px;
   padding:5px 6px;border-radius:5px;cursor:pointer;color:var(--ink-dim);background:var(--panel2)}
 .hop:hover{color:var(--ink);background:#20293b}
-.hop .rel{color:var(--ink-faint);font-size:9px;margin-left:auto;flex:none;padding-left:8px}
+.hop{flex-wrap:wrap}
+.hop .rel{color:var(--ink-faint);font-size:9px;margin-left:auto;flex:0 1 auto;min-width:0;padding-left:8px;text-align:right;white-space:normal;overflow-wrap:anywhere}
 #pathout{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-dim);
   line-height:1.6;margin-top:9px;word-break:break-all}
 #pathout .hi{color:var(--hi)}
@@ -166,8 +168,8 @@ button:hover{filter:brightness(1.08)}
     </div>
 
     <div class="src">
-      Built from Joshua David's DSEWiki export and live shortener resolutions, 2026-09-05; extended 2026-09-07 with page-body citations from the she-llac reading pack and cross-site venue links from the termina.digital db (edges tagged <span class="mono">[pack]</span> / <span class="mono">[termina]</span> in the inspector; hand-verified links unchanged).
-      Live node and edge counts are printed above. Last in-repo augment: <span class="mono">data/atlas_augment_2026-09-07.json</span> (358 nodes, 917 edges). Companion pages:
+      Built from Joshua David's DSEWiki export and live shortener resolutions, 2026-09-05; extended 2026-09-07 with page-body citations from the she-llac reading pack and cross-site venue links from the termina.digital db (edges tagged <span class="mono">[pack]</span> / <span class="mono">[termina]</span> in the inspector; hand-verified links unchanged); extended 2026-09-08 with Internet Archive captures and re-read third-party logs (<span class="mono">[wayback]</span> / <span class="mono">[degraff]</span>).
+      Live node and edge counts are printed above. Last in-repo augment: <span class="mono">data/atlas_wayback_2026-09-08.json</span> (388 nodes, 971 edges). Companion pages:
       <a href="index.html">summary</a> ·
       <a href="timeline.html">timeline</a> ·
       <a href="report.html">report</a> ·
