@@ -1,0 +1,64 @@
+# GitHub Pages deploy. Same Jekyll build as the legacy Pages builder, plus the
+# raw Markdown sources copied into the site so that both
+#   /analysis/timeline.html   (rendered, for readers)
+#   /analysis/timeline.md     (source, for tools and copied links)
+# resolve. Jekyll alone can only emit one output per source file.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Copy raw Markdown sources alongside the rendered pages
+        run: |
+          python3 - <<'PY'
+          import pathlib, re, shutil
+          site = pathlib.Path("_site")
+          skip = ("scripts/", ".github/", "_site/")
+          n = 0
+          for src in sorted(pathlib.Path(".").rglob("*.md")):
+              rel = src.as_posix()
+              if rel.startswith(skip) or rel.startswith("."):
+                  continue
+              text = src.read_text(encoding="utf-8")
+              # drop Jekyll front matter so the served .md is plain Markdown
+              text = re.sub(r"\A---\n.*?\n---\n", "", text, count=1, flags=re.S)
+              out = site / rel
+              out.parent.mkdir(parents=True, exist_ok=True)
+              out.write_text(text, encoding="utf-8")
+              n += 1
+          print(f"copied {n} markdown sources into _site")
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
