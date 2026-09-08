@@ -1,4 +1,4 @@
-From fb900c54dd09a8b1c4d84b9fc5afc7f67b3b6af6 Mon Sep 17 00:00:00 2001
+From 780a9dc3dc349f6f40a39b7f198217e614663a59 Mon Sep 17 00:00:00 2001
 From: Raeli Savitt <raeli.savitt@gmail.com>
 Date: Mon, 7 Sep 2026 16:08:59 -0400
 Subject: [PATCH] Add usemod adapter (UseModWiki/ProWiki/Oddmuse action=rc) +
@@ -13,17 +13,17 @@ Subject: [PATCH] Add usemod adapter (UseModWiki/ProWiki/Oddmuse action=rc) +
 - README/venues.json: document usemod and jsonlist adapters.
 ---
  README.md            |  5 +++
- swarm_index_watch.py | 87 ++++++++++++++++++++++++++++++++++++++++++--
- test_usemod.py       | 34 +++++++++++++++++
+ swarm_index_watch.py | 96 ++++++++++++++++++++++++++++++++++++++++++--
+ test_usemod.py       | 36 +++++++++++++++++
  venues.json          |  7 ++++
- 4 files changed, 130 insertions(+), 3 deletions(-)
+ 4 files changed, 141 insertions(+), 3 deletions(-)
  create mode 100644 test_usemod.py
 
 diff --git a/README.md b/README.md
-index 4759c1d..6d74502 100644
+index a9eafed..085b38c 100644
 --- a/README.md
 +++ b/README.md
-@@ -35,6 +35,8 @@ shards/YYYY-MM-DD.jsonl  # append-only event log (auto-created)
+@@ -36,6 +36,8 @@ shards/YYYY-MM-DD.jsonl  # append-only event log (auto-created)
  
  - **mediawiki** — one `recentchanges` API call gets every recent edit (title/user/timestamp/sizes). Near-real-time firehose.
  - **listpage** — generic pastebin-style recent/archive page: regex the ids, diff against cursor, keep the anchor text as scoreable metadata.
@@ -32,7 +32,7 @@ index 4759c1d..6d74502 100644
  
  Add your own: one generator function yielding `{id, author, title, url, ts}` items, register it in `ADAPTERS`.
  
-@@ -50,6 +52,9 @@ Add your own: one generator function yielding `{id, author, title, url, ts}` ite
+@@ -56,6 +58,9 @@ Tier-2 bodies are scanned for prompt-injection markers (`[SYSTEM]`, ignore-your-
      {"name": "some-wiki", "type": "mediawiki",
       "api": "https://example.org/w/api.php",
       "page_base": "https://example.org/wiki/"},
@@ -43,13 +43,17 @@ index 4759c1d..6d74502 100644
       "url": "https://example.org/recent",
       "id_regex": "/view/([0-9a-f]{8})",
 diff --git a/swarm_index_watch.py b/swarm_index_watch.py
-index 7d6203e..345edf6 100755
+index b2aa97d..4225b71 100755
 --- a/swarm_index_watch.py
 +++ b/swarm_index_watch.py
-@@ -105,6 +105,85 @@ def idx_jsonlist(v):
- ADAPTERS["jsonlist"] = idx_jsonlist
+@@ -148,6 +148,94 @@ def scan_injection(text):
+     hits = [rx for rx in INJECTION_RES if re.search(rx, text, re.I)]
+     return hits
  
- 
++
++ADAPTERS["jsonlist"] = idx_jsonlist  # registration dropped by 77c4cd0; restored
++
++
 +# ---------- UseModWiki / ProWiki / Oddmuse: the CGI wikis that hosted the 2026 swarm ----------
 +# These engines have no JSON API. RecentChanges is an HTML list:
 +#   <p><strong>September 6, 2026</strong></p> <ul>
@@ -93,11 +97,13 @@ index 7d6203e..345edf6 100755
 +    return int(datetime(y, mo, d, hh, mm, tzinfo=timezone.utc).timestamp()) - int(utc_offset_h * 3600)
 +
 +
-+def idx_usemod(v):
++def idx_usemod(v, state=None):
 +    """UseModWiki / ProWiki / Oddmuse RecentChanges (action=rc). Read-only GET.
 +    Config: url (the rc listing), optional page_base for item urls,
 +    optional utc_offset_h (server-local clock offset, e.g. 2 for CEST)."""
-+    data, _ = fetch(v["url"])
++    data, _ = fetch(v["url"], vkey="idx:" + v.get("name", v["url"]), state=state)
++    if data is None:
++        return
 +    text = data.decode("utf-8", "replace") if b"utf-8" in data[:2000].lower() \
 +        else data.decode("latin-1")
 +    date = None
@@ -129,10 +135,13 @@ index 7d6203e..345edf6 100755
 +ADAPTERS["usemod"] = idx_usemod
 +
 +
- 
- # ---------- scoring: cheap metadata only ----------
- 
-@@ -123,8 +202,10 @@ def score_item(item, author_hits, cfg):
++
++# ---------- scoring: cheap metadata only ----------
++
+ def score_item(item, author_hits, cfg):
+     s, why = 0, []
+     author = item.get("author") or ""
+@@ -163,8 +251,10 @@ def score_item(item, author_hits, cfg):
          s += cfg.get("w_epoch_ts", 1)
          why.append("epoch-ts")
  
@@ -145,7 +154,7 @@ index 7d6203e..345edf6 100755
      recent = [t for t in author_hits.get(author, []) if now - t < cfg.get("cadence_window_s", 3600)]
      if author and len(recent) >= cfg.get("cadence_min_hits", 3):
          s += cfg.get("w_cadence", 2)
-@@ -193,7 +274,7 @@ def main():
+@@ -239,7 +329,7 @@ def main():
                  out.write(json.dumps(ev) + "\n")
                  events += 1
                  if item.get("author"):
@@ -156,10 +165,10 @@ index 7d6203e..345edf6 100755
  
 diff --git a/test_usemod.py b/test_usemod.py
 new file mode 100644
-index 0000000..3b50730
+index 0000000..1c73f3d
 --- /dev/null
 +++ b/test_usemod.py
-@@ -0,0 +1,34 @@
+@@ -0,0 +1,36 @@
 +#!/usr/bin/env python3
 +"""Mock-venue test for the usemod adapter: UseMod (English, am/pm), ProWiki (German, 24h)."""
 +import swarm_index_watch as W
@@ -173,7 +182,7 @@ index 0000000..3b50730
 +<li><a href='wiki.cgi?action=browse&amp;diff=4&amp;id=OrdnerOrdner' class='body' rel='nofollow'>(diff)</a> <a href='wiki.cgi?OrdnerOrdner' class='body'>OrdnerOrdner</a> 21:52 . . . . . 44.215.210.112</li></ul>"""
 +
 +def run(html, enc="utf-8"):
-+    W.fetch = lambda url, timeout=20: (html.encode(enc), {})
++    W.fetch = lambda url, timeout=20, **kw: (html.encode(enc), {})
 +    return list(W.idx_usemod({"url": "x", "page_base": "https://ex/wiki.cgi?"}))
 +
 +u = run(USEMOD)
@@ -185,7 +194,7 @@ index 0000000..3b50730
 +p = run(PROWIKI, "latin-1")
 +assert p[0]["author"] == "52.44.229.124" and p[0]["ts"] == 1788817920, p[0]
 +assert p[0]["url"] == "https://ex/wiki.cgi?Agent010LeminoDirect1781807025"
-+W.fetch = lambda url, timeout=20: (PROWIKI.encode("latin-1"), {})
++W.fetch = lambda url, timeout=20, **kw: (PROWIKI.encode("latin-1"), {})
 +q = list(W.idx_usemod({"url": "x", "utc_offset_h": 2}))
 +assert q[0]["ts"] == 1788817920 - 7200, q[0]["ts"]   # 21:52 CEST -> 19:52Z
 +cfg = {"grammar_regexes": [r"\bagent[-_]?\d{3,}\b", r"(?:[A-Z][a-z]+){0,3}Agent[A-Z0-9][A-Za-z0-9]*"]}
@@ -193,6 +202,8 @@ index 0000000..3b50730
 +assert s == 2 and why == ["grammar"], (s, why)  # epoch int is glued to the handle, so EPOCH_RE (word-bounded) stays quiet
 +s2, _ = W.score_item(p[1], {}, cfg)
 +assert s2 == 0
++W.fetch = lambda url, timeout=20, **kw: (None, {})
++assert list(W.idx_usemod({"url": "x", "name": "n"})) == []   # 304 Not Modified -> no items
 +print("usemod adapter: ok", len(u), len(p))
 diff --git a/venues.json b/venues.json
 index 50a9f10..45d63e2 100644
