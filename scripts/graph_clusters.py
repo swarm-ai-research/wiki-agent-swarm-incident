@@ -3,7 +3,9 @@
 Reads the embedded ``const GRAPH = {...};`` literal from graph.html, runs
 connected components, greedy-modularity communities, degree and betweenness
 on the undirected view, and rewrites the ``const CLUSTERS = {...};`` line
-that the "Clusters" card renders. Run after any atlas augment:
+that the "Clusters" card renders. Computed twice: ``atlas`` for the atlas
+alone and ``combined`` with the relay layer (``const RELAY``, written by
+scripts/atlas_relay.py) merged in. Run after any atlas augment:
 
     python3 scripts/graph_clusters.py
 """
@@ -20,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 PAGE = ROOT / "graph.html"
 GRAPH_RE = re.compile(r"^const GRAPH = (.*);\s*$", re.M)
 CLUSTERS_RE = re.compile(r"^const CLUSTERS = .*;\s*$", re.M)
+RELAY_RE = re.compile(r"^const RELAY = (.*);\s*$", re.M)
 TOP_HUBS = 4
 TOP_CENTRAL = 10
 MIN_NAMED = 8  # clusters smaller than this are folded into "smaller clusters"
@@ -32,11 +35,13 @@ def load_graph(text):
     return json.loads(m.group(1))
 
 
-def build(graph):
+def build(graph, relay=None):
     nodes = {n["id"]: n for n in graph["nodes"]}
+    if relay:
+        nodes.update({n["id"]: n for n in relay["nodes"]})
     g = nx.Graph()
     g.add_nodes_from(nodes)
-    for l in graph["links"]:
+    for l in graph["links"] + (relay["links"] if relay else []):
         if l["source"] in nodes and l["target"] in nodes:
             g.add_edge(l["source"], l["target"])
     return nodes, g
@@ -44,7 +49,7 @@ def build(graph):
 
 def name_cluster(nodes, members, degree):
     """Name a cluster after its two highest-degree non-agent members."""
-    hubs = [i for i in sorted(members, key=lambda i: -degree[i]) if nodes[i]["type"] != "agent"][:2]
+    hubs = [i for i in sorted(members, key=lambda i: -degree[i]) if nodes[i]["type"] not in ("agent", "run")][:2]
     return " + ".join(nodes[i]["label"] for i in hubs) or nodes[max(members, key=lambda i: degree[i])]["label"]
 
 
@@ -90,12 +95,18 @@ def rewrite(text, summary):
 
 def main(page=PAGE):
     text = page.read_text()
-    nodes, g = build(load_graph(text))
-    summary = summarize(nodes, g)
+    graph = load_graph(text)
+    rm = RELAY_RE.search(text)
+    relay = json.loads(rm.group(1)) if rm else None
+    summary = {"atlas": summarize(*build(graph))}
+    if relay:
+        summary["combined"] = summarize(*build(graph, relay))
     page.write_text(rewrite(text, summary))
-    for c in summary["clusters"]:
-        print(f"{c['size']:3d}  {c['name']}")
-    print(f"components {summary['components']}, communities {summary['communities']}, articulation points {summary['articulation']}")
+    for mode, s in summary.items():
+        print(f"== {mode}")
+        for c in s["clusters"]:
+            print(f"{c['size']:4d}  {c['name']}")
+        print(f"components {s['components']}, communities {s['communities']}, articulation points {s['articulation']}")
 
 
 if __name__ == "__main__":
