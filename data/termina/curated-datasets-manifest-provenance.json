@@ -1,0 +1,34 @@
+{
+  "artifact": "curated-datasets-manifest-2026-09-08.json",
+  "artifact_sha256": "a04225aef2e1c900dcf3b8940da2b135edd7c058b3d005c38ce6e5b94c57d52f",
+  "disposition": "historical-manifest-recovered-bundles-not-held",
+  "live_check": {
+    "checked_on": "2026-09-08",
+    "core_manifest": {
+      "status": 200,
+      "url": "https://swarm.termina.digital/pub/manifest.json"
+    },
+    "curated_manifest": {
+      "status": 404,
+      "url": "https://swarm.termina.digital/pub/datasets/manifest.json"
+    },
+    "former_mirror_route": {
+      "status": 404,
+      "url": "https://swarm.termina.digital/datasets.json"
+    }
+  },
+  "mirror": {
+    "blob_sha": "f541d2abdaa99721f0cc198da807fb00f9a0555d",
+    "commit": "375f16754086056df1d3d80ff03b7c9eb4ebe9c2",
+    "committed_at": "2026-09-08T05:50:00Z",
+    "downloaded_sha256": "a2d637451c97fc6c9c5b504326a9a594ca14a9d616db8f1fa42c8b485e65388f",
+    "local_normalization": "one final LF appended; parsed JSON content is unchanged",
+    "repository": "https://github.com/JoshuaDavid/WikiAgentSwarmInvestigation",
+    "repository_path": "scrape/outputs/swarm.termina.digital/datasets.json"
+  },
+  "scope": {
+    "bundle_count": 9,
+    "bundle_files_held_here": false,
+    "manifest_bytes_held_here": true
+  }
+}

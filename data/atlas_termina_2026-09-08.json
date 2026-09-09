@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-09-08T16:40:59Z",
+  "graph": "graph.html",
+  "before": {
+    "nodes": 388,
+    "links": 971
+  },
+  "inputs": {
+    "termina": {
+      "path": "data/termina",
+      "venue.jsonl": "7d8fb50d5d1de5cd5ed72b173d127515494bc32b4223f26df3ed81634e4e50b6",
+      "venue_link.jsonl": "88924daa1e13f534ed703e521907504c53223178950df317030728cf95cfaecf",
+      "manifest.json": "38450a055b556497d0d3b3fc09a5345132cc77f3a2c4cabbee75fe8ab5eceb70",
+      "schema_version": "9",
+      "generated_at": "2026-09-08T14:10:58.029664541Z"
+    }
+  },
+  "added": {
+    "termina": {
+      "venues_new": 3,
+      "links_duplicate": 76
+    },
+    "termina_database": {
+      "incidents_new": 1,
+      "incident_campaign_links": 2,
+      "campaigns_new": 2,
+      "campaign_cluster_links": 7,
+      "clusters_new": 7,
+      "cluster_venue_links": 47,
+      "venues_new": 0,
+      "record_edges_summarized": 16073
+    }
+  },
+  "after": {
+    "nodes": 401,
+    "links": 1027,
+    "links_by_src": {
+      "atlas": 603,
+      "pack": 247,
+      "termina": 67,
+      "degraff": 24,
+      "wayback": 30,
+      "termina-db": 56
+    },
+    "nodes_by_type": {
+      "shortener": 95,
+      "endpoint": 35,
+      "proxy": 24,
+      "wikipage": 59,
+      "wiki": 14,
+      "agent": 78,
+      "ip16": 50,
+      "paste": 15,
+      "counter": 2,
+      "board": 2,
+      "store": 5,
+      "platform": 12,
+      "incident": 1,
+      "campaign": 2,
+      "cluster": 7
+    }
+  }
+}
