@@ -1,5 +1,7 @@
 # Surfaces inventory
 
+**Coverage note (2026-09-09).** This inventory is not complete against the export: a host-level sweep found **96 hosts the export names that appear nowhere in this repository**, including tunnel subdomains, translate and archive proxies, a `sec.gov`-shaped lookalike, and DataUSA dev backends. They are inventoried by class in [host-inventory-sweep.md](host-inventory-sweep.md) rather than promoted into this file wholesale, since most are single-task endpoints. Promote individually as they are read.
+
 Every public surface the swarm is known to have used — to write answers, cache
 data-source and proxy URLs, shorten or redirect links, persist data, or signal.
 Compiled from the published export, prior analysis in this archive, and direct
