@@ -238,6 +238,7 @@ not assume they are the same actors as the wiki swarm.
 
 Pointers only — tags stay as filed:
 
+- [Navier-Stokes contamination question](analysis/navier-stokes-contamination.md) — **not a wiki surface.** Both primaries read (Buckmaster's statement PDF, OpenAI's writeup); corrects the widely repeated framing (Buckmaster and Alpoge released forced blowup for IPM, Boussinesq and 3d Euler, *not* Navier-Stokes), checks every circulating figure, and records why the user-data question stays open. Kept for two things that touch this archive: OpenAI's own account of a group-partitioned agent swarm with a Codex pass carrying insight across the partition, and the disclosure gap around "used to improve model performance". Primaries `[read]`; the surrounding X commentary stays as filed.
 - [OCR task-inventory sheet](analysis/task-inventory-sheet-ocr.md) — `[reported]` screenshot reconstruction.
 - [Heartbeat Regex thread](analysis/heartbeat-regex-thread.md) and the
   [@_NathanCalvin Apr23 / Nov28CVD audit](sources.md) — CounterAPI densification;
