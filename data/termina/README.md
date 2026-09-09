@@ -6,7 +6,9 @@ as a third structured source alongside the collusion.wiki export and Joshua
 David's reconstruction.
 
 Snapshot: schema **v9**, generated **2026-09-08T14:10:58.029664541Z**.
-The complete queryable copy is [`incidents.sqlite`](incidents.sqlite); the
+The complete queryable copy is
+[`incidents.sqlite`](https://github.com/swarm-ai-research/wiki-agent-swarm-incident/blob/main/data/termina/incidents.sqlite)
+(Git LFS, so it is served from the repository rather than the Pages site); the
 upstream JSON schema and manifest are kept beside it, and
 [`snapshot.json`](snapshot.json) pins their local sizes and hashes.
 `venue.jsonl` and
