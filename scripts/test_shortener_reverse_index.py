@@ -53,5 +53,73 @@ class ShortenerReverseIndexTests(unittest.TestCase):
         self.assertIn("end:x,x,endpoint,a/one,reachable,topology-candidate", text)
 
 
+class ShortenerCodeKeyTests(unittest.TestCase):
+    def test_host_is_case_insensitive_but_path_is_not(self):
+        self.assertEqual(reverse.normalize_code("IS.GD/AbC"), "is.gd/AbC")
+        self.assertNotEqual(
+            reverse.normalize_code("is.gd/AbC"), reverse.normalize_code("is.gd/abc")
+        )
+
+    def test_distinct_codes_differing_only_by_path_case_stay_separate(self):
+        ledger = {
+            "codes": [
+                {"code": "is.gd/AbC", "disposition": "archived-target-recovered"},
+                {"code": "is.gd/abc", "disposition": "no-archive-capture-found"},
+            ],
+            "discovered_hops": [],
+        }
+        indexed = reverse.index_ledger(ledger)
+        self.assertEqual(len(indexed), 2)
+        self.assertEqual(
+            indexed["is.gd/AbC"]["disposition"], "archived-target-recovered"
+        )
+        self.assertEqual(
+            indexed["is.gd/abc"]["disposition"], "no-archive-capture-found"
+        )
+
+    def test_host_case_variants_of_one_code_are_a_collision(self):
+        ledger = {
+            "codes": [
+                {"code": "IS.GD/abc", "disposition": "archived-target-recovered"},
+                {"code": "is.gd/abc", "disposition": "no-archive-capture-found"},
+            ],
+            "discovered_hops": [],
+        }
+        with self.assertRaises(ValueError) as caught:
+            reverse.index_ledger(ledger)
+        self.assertIn("collision", str(caught.exception))
+
+    def test_repeated_identical_code_is_not_a_collision(self):
+        ledger = {
+            "codes": [
+                {"code": "is.gd/abc", "disposition": "no-archive-capture-found"},
+                {"code": "is.gd/abc", "disposition": "archived-target-recovered"},
+            ],
+            "discovered_hops": [{"code": "is.gd/abc", "disposition": "ignored"}],
+        }
+        indexed = reverse.index_ledger(ledger)
+        self.assertEqual(len(indexed), 1)
+        # later rows in "codes" win; discovered_hops only fill gaps
+        self.assertEqual(
+            indexed["is.gd/abc"]["disposition"], "archived-target-recovered"
+        )
+
+
+class ShortenerCountsTests(unittest.TestCase):
+    def test_counts_expose_the_observed_versus_candidate_split(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = ShortenerReverseIndexTests()._fixtures(directory)
+            report = reverse.build(graph, ledger)
+        split = report["counts"]["relations_by_confidence"]
+        self.assertEqual(set(split), {"observed", "observed-chain", "topology-candidate"})
+        self.assertEqual(report["counts"]["relations_total"], sum(split.values()))
+        # fixture: a/one -> b/two and b/two -> proxy:p are the two observed
+        # edges; a/one -> proxy:p is the one observed chain; both codes reach
+        # end:x and end:y through the shared proxy, so four candidates.
+        self.assertEqual(split["observed"], 2)
+        self.assertEqual(split["observed-chain"], 1)
+        self.assertEqual(split["topology-candidate"], 4)
+
+
 if __name__ == "__main__":
     unittest.main()

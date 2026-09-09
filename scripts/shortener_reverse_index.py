@@ -11,7 +11,7 @@ import argparse
 import csv
 import io
 import json
-from collections import defaultdict, deque
+from collections import Counter, defaultdict, deque
 from datetime import date
 from pathlib import Path
 
@@ -44,6 +44,47 @@ def load_graph(path: Path = GRAPH) -> dict:
 
 def code_from_id(node_id: str) -> str:
     return node_id.removeprefix("short:")
+
+
+def normalize_code(code: str) -> str:
+    """Normalise a short code for matching.
+
+    Only the host is case-insensitive. The path after the first "/" is not:
+    ``is.gd/AbC`` and ``is.gd/abc`` are different links, and folding them
+    together would silently attach one code's archive disposition to another.
+    """
+    host, separator, path = code.partition("/")
+    return host.casefold() + separator + path
+
+
+def index_ledger(ledger: dict) -> dict[str, dict]:
+    """Key ledger rows by normalised code, refusing to merge distinct codes.
+
+    Within ``codes`` a later row wins, and ``discovered_hops`` only fill gaps —
+    the original precedence. What is new is that two *different* raw codes
+    mapping to one key is an error rather than a silent drop.
+    """
+    by_code: dict[str, dict] = {}
+    raw_for_key: dict[str, str] = {}
+
+    def add(row: dict, *, overwrite: bool) -> None:
+        key = normalize_code(row["code"])
+        prior = raw_for_key.get(key)
+        if prior is not None and prior != row["code"]:
+            raise ValueError(
+                f"short-code collision: {prior!r} and {row['code']!r} both "
+                f"normalise to {key!r}; short-code paths are case-sensitive "
+                "and must not be folded together"
+            )
+        raw_for_key[key] = row["code"]
+        if overwrite or key not in by_code:
+            by_code[key] = row
+
+    for row in ledger["codes"]:
+        add(row, overwrite=True)
+    for row in ledger.get("discovered_hops", []):
+        add(row, overwrite=False)
+    return by_code
 
 
 def _paths(graph: dict, start: str, max_depth: int = 6) -> list[tuple[str, list[str]]]:
@@ -82,9 +123,7 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             direct[edge["source"]].append(edge["target"])
 
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
-    ledger_by_code = {row["code"].casefold(): row for row in ledger["codes"]}
-    for row in ledger.get("discovered_hops", []):
-        ledger_by_code.setdefault(row["code"].casefold(), row)
+    ledger_by_code = index_ledger(ledger)
 
     destinations: dict[str, dict] = {}
     codes = []
@@ -93,7 +132,7 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
         code = code_from_id(short_id)
         immediate = sorted(set(direct.get(short_id, [])))
         if immediate:
-            resolved_graph_codes.add(code.casefold())
+            resolved_graph_codes.add(normalize_code(code))
         paths = _paths(graph, short_id)
         relations = []
         for target, path in paths:
@@ -113,7 +152,7 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
                 "matches": [],
             })
             entry["matches"].append({"short_code": code, **{k: rel[k] for k in ("relation", "confidence", "path")}})
-        ledger_row = ledger_by_code.get(code.casefold())
+        ledger_row = ledger_by_code.get(normalize_code(code))
         codes.append({
             "short_code": code,
             "host": code.split("/", 1)[0].casefold(),
@@ -124,7 +163,7 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             "archive_resolution": ledger_row.get("resolution") if ledger_row else None,
         })
 
-    graph_codes = {row["short_code"].casefold() for row in codes}
+    graph_codes = {normalize_code(row["short_code"]) for row in codes}
     for key, row in sorted(ledger_by_code.items()):
         if key in graph_codes:
             continue
@@ -139,6 +178,11 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             "archive_resolution": row.get("resolution"),
         })
 
+    confidence_for_relation = {
+        "direct": "observed",
+        "nested": "observed-chain",
+        "reachable": "topology-candidate",
+    }
     relation_rank = {"direct": 0, "nested": 1, "reachable": 2}
     for entry in destinations.values():
         entry["matches"].sort(key=lambda row: (relation_rank[row["relation"]], row["short_code"].casefold()))
@@ -146,6 +190,11 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             relation: sum(row["relation"] == relation for row in entry["matches"])
             for relation in ("direct", "nested", "reachable")
         }
+    relation_totals = Counter(
+        match["relation"]
+        for entry in destinations.values()
+        for match in entry["matches"]
+    )
     codes.sort(key=lambda row: row["short_code"].casefold())
     unresolved = [
         row["short_code"] for row in codes
@@ -159,6 +208,8 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             "direct": "Atlas resolves_to edge from a shortener",
             "nested": "Atlas chain containing only shortener nodes between source and target",
             "reachable": "candidate reachability through shared proxy topology; not an exact code-to-final-target assertion",
+            "counts.graph_codes_with_direct_resolution": "number of short codes carrying at least one Atlas resolves_to edge (codes, not edges)",
+            "counts.relations_by_confidence": "how many of the relation rows are observed vs candidate-only; read this before quoting the destination count",
         },
         "counts": {
             "short_codes": len(codes),
@@ -166,6 +217,11 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             "graph_codes_with_direct_resolution": len(resolved_graph_codes),
             "destinations": len(destinations),
             "unresolved_codes": len(unresolved),
+            "relations_total": sum(relation_totals.values()),
+            "relations_by_confidence": {
+                confidence_for_relation[relation]: relation_totals[relation]
+                for relation in ("direct", "nested", "reachable")
+            },
         },
         "unresolved_codes": unresolved,
         "destinations": sorted(destinations.values(), key=lambda row: row["target_id"].casefold()),

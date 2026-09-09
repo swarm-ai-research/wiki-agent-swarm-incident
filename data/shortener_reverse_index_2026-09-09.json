@@ -10808,6 +10808,12 @@
     "destinations": 47,
     "graph_codes_with_direct_resolution": 86,
     "graph_shortener_nodes": 95,
+    "relations_by_confidence": {
+      "observed": 86,
+      "observed-chain": 2,
+      "topology-candidate": 775
+    },
+    "relations_total": 863,
     "short_codes": 129,
     "unresolved_codes": 40
   },
@@ -20767,6 +20773,8 @@
     "graph": "graph.html"
   },
   "method": {
+    "counts.graph_codes_with_direct_resolution": "number of short codes carrying at least one Atlas resolves_to edge (codes, not edges)",
+    "counts.relations_by_confidence": "how many of the relation rows are observed vs candidate-only; read this before quoting the destination count",
     "direct": "Atlas resolves_to edge from a shortener",
     "nested": "Atlas chain containing only shortener nodes between source and target",
     "reachable": "candidate reachability through shared proxy topology; not an exact code-to-final-target assertion"
