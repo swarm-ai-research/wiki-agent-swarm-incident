@@ -15,6 +15,18 @@ class ShortenerReverseSweepTests(unittest.TestCase):
         self.assertTrue(sweep.safe_listing_url("https://sho.rt/admin/index.php?perpage=100", hosts))
         self.assertTrue(sweep.safe_listing_url("https://sho.rt/abc123+", hosts))
 
+    def test_refuses_up_invitation_and_lure_paths_even_when_public(self):
+        hosts = {"sho.rt"}
+        for path in ("/up", "/public/up", "/public/invite", "/join", "/lure/public"):
+            with self.subTest(path=path):
+                self.assertFalse(sweep.safe_listing_url(f"https://sho.rt{path}", hosts))
+
+    def test_refuses_listing_urls_that_carry_a_destination(self):
+        hosts = {"sho.rt"}
+        self.assertFalse(sweep.safe_listing_url(
+            "https://sho.rt/public?destination=https%3A%2F%2Fexample.org%2Flure", hosts
+        ))
+
     def test_query_code_reads_cdx_redirect_without_requesting_short_url(self):
         body = json.dumps([
             ["timestamp", "original", "statuscode", "mimetype", "digest", "redirect"],

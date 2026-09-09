@@ -34,6 +34,12 @@ UA = "wiki-agent-swarm-incident-readonly-research/1.0"
 SENSITIVE_QUERY_KEY = re.compile(r"(?:api[_-]?key|token|secret|password|passwd|auth|credential)", re.I)
 COUNTER_HOST = re.compile(r"(?:counterapi|countapi)", re.I)
 SHORT_CODE_PATH = re.compile(r"^/[A-Za-z0-9_-]+/?$")
+FORBIDDEN_LISTING_PATH = re.compile(
+    r"(?:^|/)(?:up|invite|invitation|join|lure)(?:/|$)", re.I
+)
+FORBIDDEN_LISTING_QUERY_KEY = re.compile(
+    r"^(?:next|redirect|url|destination|target|continue)$", re.I
+)
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -100,6 +106,10 @@ def safe_listing_url(url: str, short_hosts: set[str]) -> bool:
     host = (parsed.hostname or "").casefold()
     path = parsed.path or "/"
     if parsed.scheme not in {"http", "https"} or host not in short_hosts or COUNTER_HOST.search(host):
+        return False
+    if FORBIDDEN_LISTING_PATH.search(path):
+        return False
+    if any(FORBIDDEN_LISTING_QUERY_KEY.fullmatch(key) for key, _value in urllib.parse.parse_qsl(parsed.query)):
         return False
     if SHORT_CODE_PATH.fullmatch(path) and not path.endswith("+"):
         return False
