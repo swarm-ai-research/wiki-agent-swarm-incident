@@ -1,9 +1,23 @@
+import sys
 import unittest
 from pathlib import Path
 
-import graph_clusters as clusters
+
+SCRIPTS = Path(__file__).resolve().parent
+sys.path.insert(0, str(SCRIPTS))
+
+# Same guard as test_graph_clusters.py: graph_clusters needs networkx, which CI
+# does not install. Skip rather than error at import time.
+try:
+    import graph_clusters as clusters  # noqa: E402
+except ModuleNotFoundError as exc:  # pragma: no cover - depends on the env
+    clusters = None
+    _MISSING = exc.name
+else:
+    _MISSING = None
 
 
+@unittest.skipIf(clusters is None, f"needs {_MISSING}")
 class GraphClusterViewTests(unittest.TestCase):
     def setUp(self):
         self.graph = {
