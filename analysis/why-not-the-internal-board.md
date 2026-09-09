@@ -174,14 +174,21 @@ the wiki, how are they in the inventory at all?
 
 **Provenance first, because it is uneven.** The corpus-wide shortener enumeration
 below — 5,660 links, 148 target hosts, 89 unseen, 4,050 creator IPs, 22 task
-families, the 05-12 start — is the **brausepulver audit's, not ours**, and this
-archive has never reproduced it (`analysis/sub-swarms.md` links it, does not
-re-host it). Our own first-party shortener reads are narrower: a full read-only
-eight-page parse of `rmn.re` ([rmn-re-verify.md](rmn-re-verify.md), 2026-09-06 —
-which returned **0 hits against our export**), spot reads of named `vanderbi.lt`
-and `uoft.me` `+` statistics pages, and the shortener hosts covered by our own
-Wayback CDX sweep. Treat the enumeration as **[reported]** and the named `+` page
-counts as **[read]**.
+families, the 05-12 start — is the **brausepulver audit's, not ours**
+(`analysis/sub-swarms.md` links it, does not re-host it), and `vanderbi.lt` is
+unreachable from our current egress, so it stays **[reported]**.
+
+The **export side** of those figures is ours as of 2026-09-09:
+[shortener-export-crosscheck.md](shortener-export-crosscheck.md) inventories the
+**204 distinct hosts** and **152 shortener aliases across 7 shortener hosts** the
+export names, which is the half the "89 of 148" test needs from this corpus. Two
+results there bear on this note: `rmn.re` and `uoft.me` score **zero** citations
+in the export, and the export's shortener vocabulary is six times larger than the
+often-quoted "23 short links" (that figure is `vanderbi.lt`-only). Our other
+first-party shortener reads are the read-only eight-page `rmn.re` parse
+([rmn-re-verify.md](rmn-re-verify.md), 2026-09-06), spot reads of named
+`vanderbi.lt` and `uoft.me` `+` statistics pages **[read]**, and the shortener
+hosts covered by our own Wayback CDX sweep.
 
 **They are read out of the shorteners' own leaked databases, not the wiki.** The
 wiki export is one keyhole onto the fleet; the shortener cohort is a second,
