@@ -109,6 +109,9 @@ def scan(revisions):
     first_seen, last_seen = {}, {}
     pages = collections.defaultdict(set)
     page_counts = collections.defaultdict(collections.Counter)
+    page_index = collections.defaultdict(
+        lambda: {"revisions": 0, "hosts": collections.Counter(),
+                 "labels": collections.Counter(), "times": []})
     cooccurrence = collections.Counter()
     infrastructure_revs = collections.Counter()
     encoded = collections.Counter()
@@ -120,6 +123,8 @@ def scan(revisions):
         if "://" not in blob:
             continue
         when, name = rev.get("time") or "", rev.get("name") or ""
+        # One key for both indexes; a bare name collides across the farm's wikis.
+        page_key = rev.get("page_id") or name
         found = set()
         for host in HOST_RE.findall(blob):
             host = host.lower()
@@ -133,7 +138,14 @@ def scan(revisions):
                 last_seen[host] = when
             if len(pages[host]) < 12:
                 pages[host].add(name)
-            page_counts[host][name] += 1
+            page_counts[host][page_key] += 1
+        if found and name.lower() not in WIKI_INFRASTRUCTURE_PAGES:
+            entry = page_index[page_key]
+            entry["revisions"] += 1
+            entry["hosts"].update(found)
+            entry["labels"][rev.get("label") or "?"] += 1
+            if when:
+                entry["times"].append(when)
         if name.lower() in WIKI_INFRASTRUCTURE_PAGES:
             if found:
                 infrastructure_revs[name] += 1
@@ -149,6 +161,7 @@ def scan(revisions):
         "revisions": n, "hosts": hosts, "first_seen": first_seen,
         "last_seen": last_seen, "cooccurrence": cooccurrence,
         "page_counts": page_counts, "infrastructure_revisions": infrastructure_revs,
+        "page_index": page_index,
         "pages": {h: sorted(v) for h, v in pages.items()},
         "encoded_hosts": encoded,
         "credential_params": {k: {"occurrences": v["occurrences"],
@@ -205,10 +218,11 @@ def families(scanned, hosts_of_interest):
         seen_pages = collections.Counter()
         for host in members:
             for page, count in scanned["page_counts"].get(host, {}).items():
-                if page.lower() in WIKI_INFRASTRUCTURE_PAGES:
+                leaf = page.rsplit("/", 1)[-1]
+                if leaf.lower() in WIKI_INFRASTRUCTURE_PAGES:
                     continue
                 seen_pages[page] += count
-                for token in re.findall(r"[A-Z][a-z]+", page):
+                for token in re.findall(r"[A-Z][a-z]+", leaf):
                     if token.lower() not in LABEL_STOPWORDS:
                         tokens[token] += count
         firsts = [scanned["first_seen"][h] for h in members if h in scanned["first_seen"]]
@@ -235,6 +249,45 @@ def baseline_hosts(path):
     """
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     return {row["host"] for row in data.get("hosts", []) if row.get("catalogued") is False}
+
+
+def page_anchors(scanned, hosts, clustered):
+    """Reconstruct a task around each host that co-occurrence could not cluster.
+
+    families() clusters only hosts that are themselves uncatalogued, so a host
+    whose task-mates are already catalogued falls out as a singleton even when it
+    anchors a busy page. Anchoring on the page instead recovers those: report the
+    page a host appears on most, with the page's revision count, span, labels and
+    *all* co-hosts -- catalogued ones included, since those are exactly the
+    context the host-only view discards.
+
+    Hostnames, page names and labels only. Bodies are never carried out: the
+    export's page bodies hold credential-shaped values.
+    """
+    out = []
+    for host in sorted(hosts - clustered):
+        candidates = [(page, count) for page, count
+                      in scanned["page_counts"].get(host, {}).items()
+                      if page.rsplit("/", 1)[-1].lower() not in WIKI_INFRASTRUCTURE_PAGES]
+        if not candidates:
+            continue
+        # Prefer the busiest page this host appears on, then the most revisions.
+        best = max(candidates, key=lambda pc: (
+            scanned["page_index"].get(pc[0], {}).get("revisions", 0), pc[1]))[0]
+        entry = scanned["page_index"].get(best)
+        if not entry:
+            continue
+        times = sorted(entry["times"])
+        out.append({
+            "host": host,
+            "anchor_page": best,
+            "page_revisions": entry["revisions"],
+            "first_seen": times[0] if times else None,
+            "last_seen": times[-1] if times else None,
+            "labels": [l for l, _ in entry["labels"].most_common(4)],
+            "co_hosts": [h for h, _ in entry["hosts"].most_common(8) if h != host],
+        })
+    return sorted(out, key=lambda a: -a["page_revisions"])
 
 
 def build(scanned, catalogue=None, with_families=False, family_hosts=None):
@@ -270,6 +323,8 @@ def build(scanned, catalogue=None, with_families=False, family_hosts=None):
             result["infrastructure_revisions"] = dict(
                 scanned["infrastructure_revisions"].most_common())
             result["families"] = families(scanned, pinned)
+            clustered = {h for f in result["families"] for h in f["hosts"]}
+            result["page_anchors"] = page_anchors(scanned, pinned, clustered)
     return result
 
 
@@ -296,6 +351,16 @@ def report(data):
             print(f"  [{fam['occurrences']:>4}] {span}  {fam['label']}")
             for host in fam["hosts"]:
                 print(f"           {host}")
+    if data.get("page_anchors"):
+        print(f"\npage-anchored tasks for the {len(data['page_anchors'])} hosts "
+              f"co-occurrence could not cluster (top 12 by page size)")
+        for anchor in data["page_anchors"][:12]:
+            print(f"  {anchor['host']}")
+            print(f"     {anchor['anchor_page']}  "
+                  f"({anchor['page_revisions']} revs, "
+                  f"{(anchor['first_seen'] or '')[:10]}..{(anchor['last_seen'] or '')[:10]})")
+            if anchor["co_hosts"]:
+                print(f"     alongside {', '.join(anchor['co_hosts'][:5])}")
     if data.get("infrastructure_revisions"):
         total = sum(data["infrastructure_revisions"].values())
         print(f"\nrevisions naming an uncatalogued host on the farm's own pages "

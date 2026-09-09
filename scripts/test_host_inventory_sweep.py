@@ -7,9 +7,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import host_inventory_sweep as his  # noqa: E402
 
 
-def rev(body="", name="", when="2026-06-18T12:00:00Z"):
-    return {"body": body, "name": name, "page_id": "", "change_summary": "",
-            "time": when}
+def rev(body="", name="", when="2026-06-18T12:00:00Z", page_id=None, label=None):
+    return {"body": body, "name": name, "page_id": page_id or f"dse/{name}",
+            "change_summary": "", "time": when, "label": label}
 
 
 class TestClassify(unittest.TestCase):
@@ -193,6 +193,72 @@ class TestBaselinePinning(unittest.TestCase):
         self.assertEqual(len(pinned["families"]), 1)
         self.assertTrue(pinned["family_hosts_pinned"])
         self.assertEqual(pinned["family_host_count"], 2)
+
+
+class TestPageAnchors(unittest.TestCase):
+    """Recovers tasks that co-occurrence cannot see."""
+
+    def test_host_whose_task_mates_are_catalogued_still_anchors(self):
+        """The families blind spot: clustering only looks at uncatalogued hosts,
+        so a host surrounded by catalogued ones falls out as a false singleton."""
+        scanned = his.scan([
+            rev(body="https://new.example.org/a https://known.example.org/a",
+                name="TexasPdfTokenPath", label="AgentResearchMan"),
+            rev(body="https://new.example.org/b https://known.example.org/b",
+                name="TexasPdfTokenPath", label="AgentResearchRefresh"),
+        ])
+        fams = his.families(scanned, {"new.example.org"})
+        self.assertEqual(fams, [], "a lone host cannot form a family")
+        anchors = his.page_anchors(scanned, {"new.example.org"}, clustered=set())
+        self.assertEqual(len(anchors), 1)
+        self.assertEqual(anchors[0]["anchor_page"], "dse/TexasPdfTokenPath")
+        self.assertEqual(anchors[0]["page_revisions"], 2)
+
+    def test_co_hosts_include_catalogued_hosts(self):
+        """Catalogued neighbours are the context the host-only view discards."""
+        scanned = his.scan([rev(body="https://new.example.org/a "
+                                     "https://known.example.org/a", name="Task")])
+        anchors = his.page_anchors(scanned, {"new.example.org"}, clustered=set())
+        self.assertIn("known.example.org", anchors[0]["co_hosts"])
+        self.assertNotIn("new.example.org", anchors[0]["co_hosts"])
+
+    def test_labels_are_carried_but_bodies_are_not(self):
+        scanned = his.scan([rev(body="https://new.example.org/?token=SECRETVALUE1",
+                                name="Task", label="AgentX")])
+        anchors = his.page_anchors(scanned, {"new.example.org"}, clustered=set())
+        self.assertEqual(anchors[0]["labels"], ["AgentX"])
+        self.assertNotIn("SECRETVALUE1", json.dumps(anchors))
+
+    def test_infrastructure_page_is_never_an_anchor(self):
+        scanned = his.scan([
+            rev(body="https://new.example.org/a", name="StartSeite"),
+            rev(body="https://new.example.org/b", name="RealTask"),
+        ])
+        anchors = his.page_anchors(scanned, {"new.example.org"}, clustered=set())
+        self.assertEqual(anchors[0]["anchor_page"], "dse/RealTask")
+
+    def test_host_only_on_infrastructure_pages_yields_no_anchor(self):
+        scanned = his.scan([rev(body="https://new.example.org/a", name="StartSeite")])
+        self.assertEqual(his.page_anchors(scanned, {"new.example.org"}, set()), [])
+
+    def test_clustered_hosts_are_skipped(self):
+        scanned = his.scan([rev(body="https://new.example.org/a", name="Task")])
+        self.assertEqual(
+            his.page_anchors(scanned, {"new.example.org"}, {"new.example.org"}), [])
+
+    def test_same_page_name_on_two_wikis_is_two_pages(self):
+        """Regression: page_counts and page_index must share one key, or the
+        anchor lookup silently misses and every host looks anchorless."""
+        scanned = his.scan([
+            rev(body="https://new.example.org/a", name="Refs", page_id="dse/Refs"),
+            rev(body="https://new.example.org/b", name="Refs", page_id="probier/Refs"),
+        ])
+        self.assertEqual(scanned["page_index"]["dse/Refs"]["revisions"], 1)
+        self.assertEqual(scanned["page_index"]["probier/Refs"]["revisions"], 1)
+        anchors = his.page_anchors(scanned, {"new.example.org"}, set())
+        self.assertEqual(len(anchors), 1)
+        self.assertIn(anchors[0]["anchor_page"], ("dse/Refs", "probier/Refs"))
+        self.assertEqual(anchors[0]["page_revisions"], 1)
 
 
 if __name__ == "__main__":
