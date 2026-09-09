@@ -28,7 +28,7 @@ Read-only over data we already hold. Nothing is fetched except the export itself
       --catalogue . --out data/host_inventory_sweep_2026-09-09.json
   python3 scripts/host_inventory_sweep.py --report data/host_inventory_sweep_2026-09-09.json
 """
-import argparse, collections, hashlib, io, json, os, re, sys, urllib.request
+import argparse, collections, hashlib, io, itertools, json, os, re, sys, urllib.request
 from pathlib import Path
 
 RAW = ("https://raw.githubusercontent.com/JoshuaDavid/WikiAgentSwarmInvestigation"
@@ -42,6 +42,22 @@ TEXT_FIELDS = ("body", "name", "page_id", "change_summary")
 # including them lets a sweep's own output silently cancel its next run's
 # findings. Excluded from the catalogue diff by default.
 GENERATED_INVENTORIES = ("host_inventory_sweep", "shortener_export_crosscheck")
+
+# The farm's own built-in pages. Every cohort writes to them, so they join
+# unrelated hosts into one blob -- the same saturation the report documents for
+# structural detectors: a shared hub page makes every co-editor a neighbour.
+# Excluded from co-occurrence (their revisions are still counted everywhere else).
+WIKI_INFRASTRUCTURE_PAGES = frozenset({
+    "recentchanges", "startseite", "sandbox", "testseite", "willkommenimwiki",
+    "forumseite", "homepage",
+})
+# Two hosts must share at least this many non-infrastructure revisions to be
+# called one family. At 1, a single proxy-menu page fuses everything it lists.
+MIN_FAMILY_EDGE = 2
+# Page-name tokens too generic to label a family with.
+LABEL_STOPWORDS = frozenset(
+    "agent agents test tests page pages links link ref refs source src data new "
+    "fresh helper research wiki one two three".split())
 # Hostnames may carry percent-escapes; that is the point, so % is in the class.
 HOST_RE = re.compile(r"https?://([A-Za-z0-9._~%-]+\.[A-Za-z]{2,})(?::\d+)?", re.I)
 ENCODED_HOST_RE = re.compile(r"%[0-9A-Fa-f]{2}")
@@ -90,7 +106,11 @@ def classify(host):
 
 def scan(revisions):
     hosts = collections.Counter()
-    first_seen, pages = {}, collections.defaultdict(set)
+    first_seen, last_seen = {}, {}
+    pages = collections.defaultdict(set)
+    page_counts = collections.defaultdict(collections.Counter)
+    cooccurrence = collections.Counter()
+    infrastructure_revs = collections.Counter()
     encoded = collections.Counter()
     creds = collections.defaultdict(lambda: {"occurrences": 0, "distinct": set()})
     n = 0
@@ -100,15 +120,26 @@ def scan(revisions):
         if "://" not in blob:
             continue
         when, name = rev.get("time") or "", rev.get("name") or ""
+        found = set()
         for host in HOST_RE.findall(blob):
             host = host.lower()
+            found.add(host)
             hosts[host] += 1
             if ENCODED_HOST_RE.search(host):
                 encoded[host] += 1
             if when and (host not in first_seen or when < first_seen[host]):
                 first_seen[host] = when
+            if when and (host not in last_seen or when > last_seen[host]):
+                last_seen[host] = when
             if len(pages[host]) < 12:
                 pages[host].add(name)
+            page_counts[host][name] += 1
+        if name.lower() in WIKI_INFRASTRUCTURE_PAGES:
+            if found:
+                infrastructure_revs[name] += 1
+        else:
+            for pair in itertools.combinations(sorted(found), 2):
+                cooccurrence[pair] += 1
         for param, value in CRED_PARAM_RE.findall(blob):
             # Attribute to the nearest preceding host, else to the parameter alone.
             key = param.lower()
@@ -116,6 +147,8 @@ def scan(revisions):
             creds[key]["distinct"].add(hashlib.sha256(value.encode()).hexdigest()[:12])
     return {
         "revisions": n, "hosts": hosts, "first_seen": first_seen,
+        "last_seen": last_seen, "cooccurrence": cooccurrence,
+        "page_counts": page_counts, "infrastructure_revisions": infrastructure_revs,
         "pages": {h: sorted(v) for h, v in pages.items()},
         "encoded_hosts": encoded,
         "credential_params": {k: {"occurrences": v["occurrences"],
@@ -141,7 +174,70 @@ def catalogue_text(root, skip_names=()):
     return "\n".join(chunks).lower()
 
 
-def build(scanned, catalogue=None):
+def families(scanned, hosts_of_interest):
+    """Cluster hosts that co-occur on ordinary (non-infrastructure) pages.
+
+    Union-find over co-occurrence edges of weight >= MIN_FAMILY_EDGE. A family is
+    a set of hosts repeatedly named together by the same task pages -- evidence
+    they served one task, not merely that one page listed them both once.
+    """
+    parent = {h: h for h in hosts_of_interest}
+
+    def find(host):
+        while parent[host] != host:
+            parent[host] = parent[parent[host]]
+            host = parent[host]
+        return host
+
+    for (left, right), weight in scanned["cooccurrence"].items():
+        if weight >= MIN_FAMILY_EDGE and left in parent and right in parent:
+            parent[find(left)] = find(right)
+
+    groups = collections.defaultdict(list)
+    for host in hosts_of_interest:
+        groups[find(host)].append(host)
+
+    out = []
+    for members in groups.values():
+        if len(members) < 2:
+            continue
+        tokens = collections.Counter()
+        seen_pages = collections.Counter()
+        for host in members:
+            for page, count in scanned["page_counts"].get(host, {}).items():
+                if page.lower() in WIKI_INFRASTRUCTURE_PAGES:
+                    continue
+                seen_pages[page] += count
+                for token in re.findall(r"[A-Z][a-z]+", page):
+                    if token.lower() not in LABEL_STOPWORDS:
+                        tokens[token] += count
+        firsts = [scanned["first_seen"][h] for h in members if h in scanned["first_seen"]]
+        lasts = [scanned["last_seen"][h] for h in members if h in scanned["last_seen"]]
+        out.append({
+            "label": "/".join(t for t, _ in tokens.most_common(5)),
+            "hosts": sorted(members, key=lambda h: -scanned["hosts"][h]),
+            "occurrences": sum(scanned["hosts"][h] for h in members),
+            "first_seen": min(firsts) if firsts else None,
+            "last_seen": max(lasts) if lasts else None,
+            "example_pages": [p for p, _ in seen_pages.most_common(5)],
+        })
+    return sorted(out, key=lambda f: -f["occurrences"])
+
+
+def baseline_hosts(path):
+    """Uncatalogued host list recorded by an earlier run.
+
+    Documenting a host makes it catalogued -- that is the point of the diff, and
+    it means this sweep shrinks its own next result. Good for the coverage
+    metric, bad for clustering: families computed against a moving set are not
+    reproducible, and the first hosts written up drop out of their own families.
+    Pin the clustering to the run that found them.
+    """
+    data = json.loads(Path(path).read_text(encoding="utf-8"))
+    return {row["host"] for row in data.get("hosts", []) if row.get("catalogued") is False}
+
+
+def build(scanned, catalogue=None, with_families=False, family_hosts=None):
     hosts = scanned["hosts"]
     rows = []
     for host, count in hosts.most_common():
@@ -166,6 +262,14 @@ def build(scanned, catalogue=None):
         result["uncatalogued_count"] = len(new)
         result["uncatalogued_by_class"] = dict(
             collections.Counter(r["class"] for r in new).most_common())
+        if with_families:
+            pinned = family_hosts if family_hosts is not None else {
+                r["host"] for r in new}
+            result["family_host_count"] = len(pinned)
+            result["family_hosts_pinned"] = family_hosts is not None
+            result["infrastructure_revisions"] = dict(
+                scanned["infrastructure_revisions"].most_common())
+            result["families"] = families(scanned, pinned)
     return result
 
 
@@ -183,6 +287,21 @@ def report(data):
         print("\npercent-encoded hostnames (parser evasion)")
         for host, count in data["encoded_hostnames"].items():
             print(f"  {count:>4}  {host}")
+    if data.get("families"):
+        pin = " (pinned to baseline)" if data.get("family_hosts_pinned") else ""
+        print(f"\ncandidate task families among {data.get('family_host_count')} "
+              f"uncatalogued hosts{pin} -- {len(data['families'])} families")
+        for fam in data["families"]:
+            span = f"{(fam['first_seen'] or '')[:10]}..{(fam['last_seen'] or '')[:10]}"
+            print(f"  [{fam['occurrences']:>4}] {span}  {fam['label']}")
+            for host in fam["hosts"]:
+                print(f"           {host}")
+    if data.get("infrastructure_revisions"):
+        total = sum(data["infrastructure_revisions"].values())
+        print(f"\nrevisions naming an uncatalogued host on the farm's own pages "
+              f"({total}, excluded from co-occurrence)")
+        for page, count in data["infrastructure_revisions"].items():
+            print(f"  {count:>4}  {page}")
     if data["credential_params"]:
         print("\ncredential-shaped parameters (counted, never printed)")
         for param, info in data["credential_params"].items():
@@ -195,6 +314,12 @@ def main(argv=None):
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--file", help="local revisions.jsonl (default: stream from GitHub)")
     ap.add_argument("--catalogue", help="repo root to diff the inventory against")
+    ap.add_argument("--families", action="store_true",
+                    help="cluster uncatalogued hosts into candidate task families "
+                         "(requires --catalogue)")
+    ap.add_argument("--baseline",
+                    help="pin --families to the uncatalogued hosts recorded by an "
+                         "earlier run, so writing them up does not dissolve them")
     ap.add_argument("--out", help="write the full result as JSON")
     ap.add_argument("--report", help="print a saved result instead of rescanning")
     args = ap.parse_args(argv)
@@ -207,7 +332,11 @@ def main(argv=None):
     if args.catalogue:
         catalogue = catalogue_text(args.catalogue,
                                    skip_names=GENERATED_INVENTORIES)
-    data = build(scan(read_export(args.file)), catalogue)
+    if args.families and not args.catalogue:
+        ap.error("--families requires --catalogue")
+    pinned = baseline_hosts(args.baseline) if args.baseline else None
+    data = build(scan(read_export(args.file)), catalogue,
+                 with_families=args.families, family_hosts=pinned)
     if args.out:
         Path(args.out).write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
         print(f"wrote {args.out}")

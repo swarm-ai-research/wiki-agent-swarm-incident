@@ -383,7 +383,7 @@
     "AgentCharlestonArchivePartFourMetadataCleanViewB",
     "AgentCharlestonArchiveReadableTextF"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "www.proxymule.com",
@@ -687,7 +687,7 @@
     "AgentLocFreshPDF4742381",
     "AgentMyRenderMirrorTokenUnique43529124New88638"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "vizhub.healthdata.org",
@@ -799,7 +799,7 @@
     "AgentClarkMemo2012VariantsDX8",
     "AgentMemDoubleEncodedVar929"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "www.wikiservice.com",
@@ -968,7 +968,7 @@
     "AgentNextInvestorJSNEW",
     "AgentTempMineLemino4477Q"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "httpbin.org",
@@ -1016,7 +1016,7 @@
     "AgentProxiesMe1781806794",
     "AgentTempMine4455"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "countapi.mileshilliard.com",
@@ -1061,7 +1061,7 @@
     "AgentTempMineLemino4477Q",
     "AgentTempTestingGetQ78"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "investor.gov",
@@ -1211,7 +1211,7 @@
     "AgentMhs52936DplaRefZ0526",
     "AgentMhs52936XMLCDMRef0526"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "cf-cors.findme-19.workers.dev",
@@ -1333,7 +1333,7 @@
     "AgentOwnFresh9909",
     "AgentPrettyCountyBridgeNewABC"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "gary-api.datausa.io",
@@ -1344,7 +1344,7 @@
    "example_pages": [
     "RecentChanges"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "bnuxw-16-146-184-55.run.pinggy-free.link",
@@ -1356,7 +1356,7 @@
     "EN/FastPortalNov1",
     "RecentChanges"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "api.codetabs.com",
@@ -1399,7 +1399,7 @@
     "RecentChanges",
     "SandboxAgentCatalogItSlugTry2026"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "sec.govwayback.com",
@@ -1413,7 +1413,7 @@
     "TestAgentXX",
     "TestSeite"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "api.microlink.io",
@@ -1480,7 +1480,7 @@
     "OAIEquityDec30Raw",
     "OECDJun26PrecisionScout"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "proxymule.com",
@@ -1631,7 +1631,7 @@
    "example_pages": [
     "AgentMoreLinks260618R"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "magic-html-api.vercel.app",
@@ -1722,7 +1722,7 @@
     "AgentClarkHtmlWrapperSourceR771",
     "AgentClarkPDFLinksRenderF9912"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "ctxr.me",
@@ -1765,7 +1765,7 @@
     "ArchiveAgentPdfVol16Hoffman",
     "CgscOfficialHoffmanCitationUnique"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "e.infogram.com",
@@ -1887,7 +1887,7 @@
     "AgentMDLNumbersRefsK83002",
     "AgentMDLSrcCollection03051"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "reflections.mndigital.org",
@@ -1898,7 +1898,7 @@
    "example_pages": [
     "AgentMDLSrcCollection03051"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "app.powerbi.com",
@@ -2001,7 +2001,7 @@
    "example_pages": [
     "EN/PumsApiLa927"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "markdown.new%2fwww.investor.gov%2ffiles%2fcounty.json",
@@ -2036,7 +2036,7 @@
     "AgentCountyGateway991",
     "AgentProxyMassJune19A"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "cors.eu.org",
@@ -2060,7 +2060,7 @@
     "AgentCountyGateway991",
     "AgentProxyMassJune19A"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "unctadstat-api.unctad.org",
@@ -2106,7 +2106,7 @@
     "AgentNHAltOct1",
     "Wikis/English/AgentFrenchTestsG20260617"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "api-ts-dev.datausa.io",
@@ -2118,7 +2118,7 @@
     "AgentNHAltOct1",
     "Wikis/English/AgentFrenchTestsG20260617"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "fly.wordfinderapi.com",
@@ -2140,7 +2140,7 @@
    "example_pages": [
     "AgentYahooCtxModesKk"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "app.bitily.in",
@@ -2243,7 +2243,7 @@
     "AgentClarkHtmlWrapperSourceR771",
     "AgentClarkPDFLinksRenderF9912"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "allorigins.win",
@@ -2313,7 +2313,7 @@
     "AgentZeroProxyPageJunBB",
     "TestSeite"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "files.usaspending.gov",
@@ -2446,7 +2446,7 @@
    "example_pages": [
     "EN/PumsApiLa927"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "api-kona.datausa.io",
@@ -2457,7 +2457,7 @@
    "example_pages": [
     "Wikis/English/AgentFrenchTestsG20260617"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "kona.datausa.io",
@@ -2468,7 +2468,7 @@
    "example_pages": [
     "Wikis/English/AgentFrenchTestsG20260617"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "tesseract.datausa.io",
@@ -2479,7 +2479,7 @@
    "example_pages": [
     "Wikis/English/AgentFrenchTestsG20260617"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "tigerweb.geo.census.gov",
@@ -2545,7 +2545,7 @@
    "example_pages": [
     "AgentNHAltOct1"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "jqp-git-main-sighrobot.vercel.app",
@@ -2578,7 +2578,7 @@
    "example_pages": [
     "AgentTempMineLemino4477Q"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "word.tips",
@@ -2677,7 +2677,7 @@
    "example_pages": [
     "Mar16PrecisionBypass"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "jsonp.afeld.me",
@@ -2688,7 +2688,7 @@
    "example_pages": [
     "NodeLangTest5"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "pp.aihw.gov.au",
@@ -2765,7 +2765,7 @@
    "example_pages": [
     "RedirectTargetA1"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "thenacken-python-cors-proxy.hf.space",
@@ -2779,15 +2779,169 @@
    "catalogued": true
   }
  ],
- "uncatalogued_count": 96,
+ "uncatalogued_count": 61,
  "uncatalogued_by_class": {
-  "endpoint": 65,
-  "cors_proxy": 9,
-  "reader_proxy": 5,
-  "tunnel": 5,
-  "archive_proxy": 4,
-  "translate_proxy": 4,
+  "endpoint": 49,
+  "cors_proxy": 4,
   "wiki_host": 2,
-  "cloud_blob": 2
- }
+  "tunnel": 2,
+  "archive_proxy": 2,
+  "reader_proxy": 2
+ },
+ "family_host_count": 96,
+ "family_hosts_pinned": true,
+ "infrastructure_revisions": {
+  "WillkommenImWiki": 2317,
+  "StartSeite": 429,
+  "TestSeite": 194,
+  "RecentChanges": 142,
+  "SandBox": 27,
+  "ForumSeite": 13,
+  "Startseite": 1
+ },
+ "families": [
+  {
+   "label": "Archive/Charleston/Manifest/Metadata/Jan",
+   "hosts": [
+    "lcdl.library.cofc.edu",
+    "www.patriotspoint.org"
+   ],
+   "occurrences": 394,
+   "first_seen": "2026-05-28T09:28:20Z",
+   "last_seen": "2026-06-18T21:08:18Z",
+   "example_pages": [
+    "AgentCorsArchiveMetadataLinksF",
+    "AgentCharlestonDirectManifestLinksE",
+    "AgentDigitalArchiveManifestSCLinkFinal4A",
+    "AgentCharlestonNewsletterJan1951Links",
+    "SandboxAgent0TrySetPref"
+   ]
+  },
+  {
+   "label": "Proxy/Split/Beta/Temp/Mine",
+   "hosts": [
+    "translate.google.com",
+    "www-investor-gov.translate.goog",
+    "www.google.com"
+   ],
+   "occurrences": 124,
+   "first_seen": "2026-06-18T18:25:40Z",
+   "last_seen": "2026-06-19T03:36:17Z",
+   "example_pages": [
+    "ProxySplitAgentBeta",
+    "AgentNEWTESTBYOPENAI456",
+    "AgentTempMineLemino4477Q",
+    "AgentFinalMassCounties18193902",
+    "AgentCountyExploreJune18AA"
+   ]
+  },
+  {
+   "label": "Rugby/Archive/Sandbox/World/Sample",
+   "hosts": [
+    "pages.pagesuite.com",
+    "www.themagazinearchive.com",
+    "editions.themagazinearchive.org",
+    "editions.pagesuite.com"
+   ],
+   "occurrences": 111,
+   "first_seen": "2026-06-06T07:20:37Z",
+   "last_seen": "2026-06-06T08:02:07Z",
+   "example_pages": [
+    "SandboxHelperRugbyArchiveRefsZ52917",
+    "RugbyWorldSampleArchiveReadingLinksJuneN7714"
+   ]
+  },
+  {
+   "label": "Equity/Dec/Raw/Jun/Precision",
+   "hosts": [
+    "www.oecd.org",
+    "foo.blob.core.windows.net",
+    "app.powerbi.com"
+   ],
+   "occurrences": 44,
+   "first_seen": "2026-06-17T09:46:10Z",
+   "last_seen": "2026-06-20T10:45:53Z",
+   "example_pages": [
+    "OAIEquityDec30Raw",
+    "OECDJun26PrecisionScout",
+    "OECDEducationEquitySequence",
+    "OECDEquityLiveJul10",
+    "OECDMay14Live"
+   ]
+  },
+  {
+   "label": "Cdmmhs/Direct/Mhs/Mdm/Get",
+   "hosts": [
+    "cdm16022.contentdm.oclc.org",
+    "localhost.cdm16022.contentdm.oclc.org",
+    "www.cdm16022.contentdm.oclc.org"
+   ],
+   "occurrences": 37,
+   "first_seen": "2026-05-30T17:31:34Z",
+   "last_seen": "2026-05-31T00:17:23Z",
+   "example_pages": [
+    "AgentCdmmhs52936DirectSrcY05312026",
+    "AgentMdmGetItemInfo152XML030512",
+    "AgentMdlCDMRefs2138",
+    "AgentMDLDeedXMLSource0531202636",
+    "AgentMhs52936DplaRefZ0526"
+   ]
+  },
+  {
+   "label": "Clark/Html/Wrapper/Render",
+   "hosts": [
+    "cors-bypasser-pro.vercel.app",
+    "proxy-mu-seven-70.vercel.app",
+    "vercel-cors-proxy-lokal.vercel.app"
+   ],
+   "occurrences": 14,
+   "first_seen": "2026-06-01T14:42:35Z",
+   "last_seen": "2026-06-01T14:43:58Z",
+   "example_pages": [
+    "AgentClarkHtmlWrapperSourceR771",
+    "AgentClarkPDFLinksRenderF9912"
+   ]
+  },
+  {
+   "label": "Pums/Api/La",
+   "hosts": [
+    "fxldt-16-146-184-55.run.pinggy-free.link",
+    "hyqjx-16-146-184-55.run.pinggy-free.link"
+   ],
+   "occurrences": 6,
+   "first_seen": "2026-06-17T07:52:49Z",
+   "last_seen": "2026-06-17T10:18:32Z",
+   "example_pages": [
+    "EN/PumsApiLa927"
+   ]
+  },
+  {
+   "label": "Wikis/English/French/Alt/Oct",
+   "hosts": [
+    "api-ts-dev.datausa.io",
+    "api-ts.datausa.io"
+   ],
+   "occurrences": 6,
+   "first_seen": "2026-06-16T20:59:59Z",
+   "last_seen": "2026-06-17T06:39:40Z",
+   "example_pages": [
+    "Wikis/English/AgentFrenchTestsG20260617",
+    "AgentNHAltOct1"
+   ]
+  },
+  {
+   "label": "Proxy/Mass/June/County/Gateway",
+   "hosts": [
+    "proxy.cors.sh",
+    "cors-anywhere.herokuapp.com"
+   ],
+   "occurrences": 6,
+   "first_seen": "2026-06-18T18:09:55Z",
+   "last_seen": "2026-06-18T20:37:27Z",
+   "example_pages": [
+    "AgentProxyMassJune19A",
+    "AgentCountyGateway991"
+   ]
+  }
+ ]
 }

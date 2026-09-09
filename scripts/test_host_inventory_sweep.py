@@ -119,5 +119,81 @@ class TestCatalogueDiff(unittest.TestCase):
         self.assertNotIn("uncatalogued_count", data)
 
 
+class TestFamilies(unittest.TestCase):
+    """Two hosts named together by ordinary task pages are one family."""
+
+    def _scan(self, revisions):
+        return his.scan(revisions)
+
+    def test_repeated_co_occurrence_forms_a_family(self):
+        scanned = self._scan([
+            rev(body="https://a.example.org/1 https://b.example.org/1", name="RugbyRefsOne"),
+            rev(body="https://a.example.org/2 https://b.example.org/2", name="RugbyRefsTwo"),
+        ])
+        fams = his.families(scanned, {"a.example.org", "b.example.org"})
+        self.assertEqual(len(fams), 1)
+        self.assertEqual(sorted(fams[0]["hosts"]), ["a.example.org", "b.example.org"])
+        self.assertIn("Rugby", fams[0]["label"])
+
+    def test_a_single_shared_page_is_not_a_family(self):
+        """One proxy-menu page listing two hosts once is co-location, not a task."""
+        scanned = self._scan([
+            rev(body="https://a.example.org/1 https://b.example.org/1", name="ProxyMenu"),
+        ])
+        self.assertEqual(his.families(scanned, {"a.example.org", "b.example.org"}), [])
+
+    def test_infrastructure_pages_do_not_join_hosts(self):
+        """The farm's own pages list everything; they must not fuse families."""
+        rows = [rev(body="https://a.example.org/x https://b.example.org/x",
+                    name=page) for page in ("RecentChanges", "StartSeite", "SandBox")]
+        scanned = self._scan(rows)
+        self.assertEqual(his.families(scanned, {"a.example.org", "b.example.org"}), [])
+        self.assertEqual(sum(scanned["infrastructure_revisions"].values()), 3)
+
+    def test_family_spans_first_and_last_seen(self):
+        scanned = self._scan([
+            rev(body="https://a.example.org/1 https://b.example.org/1",
+                name="TaskOne", when="2026-05-28T10:00:00Z"),
+            rev(body="https://a.example.org/2 https://b.example.org/2",
+                name="TaskTwo", when="2026-06-06T10:00:00Z"),
+        ])
+        fam = his.families(scanned, {"a.example.org", "b.example.org"})[0]
+        self.assertEqual(fam["first_seen"], "2026-05-28T10:00:00Z")
+        self.assertEqual(fam["last_seen"], "2026-06-06T10:00:00Z")
+
+
+class TestBaselinePinning(unittest.TestCase):
+    """Writing a host up makes it catalogued, which would dissolve its family."""
+
+    def setUp(self):
+        self.root = Path(tempfile.mkdtemp())
+        self.path = self.root / "prior_run.json"
+        self.path.write_text(json.dumps({"hosts": [
+            {"host": "a.example.org", "catalogued": False},
+            {"host": "b.example.org", "catalogued": False},
+            {"host": "known.example.org", "catalogued": True},
+        ]}), encoding="utf-8")
+
+    def test_baseline_reads_only_the_uncatalogued_hosts(self):
+        self.assertEqual(his.baseline_hosts(self.path),
+                         {"a.example.org", "b.example.org"})
+
+    def test_pinned_family_survives_being_documented(self):
+        revisions = [
+            rev(body="https://a.example.org/1 https://b.example.org/1", name="TaskOne"),
+            rev(body="https://a.example.org/2 https://b.example.org/2", name="TaskTwo"),
+        ]
+        scanned = his.scan(revisions)
+        # A note now documents b.example.org, so it counts as catalogued.
+        catalogue = "we wrote up b.example.org in an analysis note"
+        unpinned = his.build(scanned, catalogue, with_families=True)
+        pinned = his.build(scanned, catalogue, with_families=True,
+                           family_hosts=his.baseline_hosts(self.path))
+        self.assertEqual(unpinned["families"], [])
+        self.assertEqual(len(pinned["families"]), 1)
+        self.assertTrue(pinned["family_hosts_pinned"])
+        self.assertEqual(pinned["family_host_count"], 2)
+
+
 if __name__ == "__main__":
     unittest.main()
