@@ -23,6 +23,15 @@ CLUSTERS_RE = re.compile(r"^const CLUSTERS = .*;\s*$", re.M)
 TOP_HUBS = 4
 TOP_CENTRAL = 10
 MIN_NAMED = 8  # clusters smaller than this are folded into "smaller clusters"
+PROVENANCE_TYPES = {"incident", "campaign", "cluster"}
+
+
+def is_provenance_node(node):
+    return node.get("type") in PROVENANCE_TYPES
+
+
+def is_provenance_link(link):
+    return link.get("src") == "termina-db"
 
 
 def load_graph(text):
@@ -32,12 +41,15 @@ def load_graph(text):
     return json.loads(m.group(1))
 
 
-def build(graph):
-    nodes = {n["id"]: n for n in graph["nodes"]}
+def build(graph, include_provenance=False):
+    nodes = {
+        n["id"]: n for n in graph["nodes"]
+        if include_provenance or not is_provenance_node(n)
+    }
     g = nx.Graph()
     g.add_nodes_from(nodes)
     for l in graph["links"]:
-        if l["source"] in nodes and l["target"] in nodes:
+        if (include_provenance or not is_provenance_link(l)) and l["source"] in nodes and l["target"] in nodes:
             g.add_edge(l["source"], l["target"])
     return nodes, g
 
@@ -88,14 +100,24 @@ def rewrite(text, summary):
     return GRAPH_RE.sub(lambda m: m.group(0) + "\n" + line, text, count=1)
 
 
+def summarize_views(graph):
+    operational_nodes, operational = build(graph)
+    all_nodes, provenance = build(graph, include_provenance=True)
+    return {
+        "operational": summarize(operational_nodes, operational),
+        "provenance": summarize(all_nodes, provenance),
+    }
+
+
 def main(page=PAGE):
     text = page.read_text()
-    nodes, g = build(load_graph(text))
-    summary = summarize(nodes, g)
+    graph = load_graph(text)
+    summary = summarize_views(graph)
     page.write_text(rewrite(text, summary))
-    for c in summary["clusters"]:
+    for c in summary["operational"]["clusters"]:
         print(f"{c['size']:3d}  {c['name']}")
-    print(f"components {summary['components']}, communities {summary['communities']}, articulation points {summary['articulation']}")
+    operational = summary["operational"]
+    print(f"components {operational['components']}, communities {operational['communities']}, articulation points {operational['articulation']}")
 
 
 if __name__ == "__main__":

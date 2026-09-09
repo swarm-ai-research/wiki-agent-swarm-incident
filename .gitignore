@@ -10,3 +10,9 @@ data/llm_family_jobs*.json
 
 # Local synchronization primitive; the durable budget journal remains tracked.
 data/model_eval/live/study.lock
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/

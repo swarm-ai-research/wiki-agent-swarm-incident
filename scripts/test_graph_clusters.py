@@ -158,8 +158,10 @@ class MainTests(unittest.TestCase):
             self.assertEqual(gc.load_graph(first), graph)
             line = next(l for l in first.splitlines() if l.startswith("const CLUSTERS = "))
             summary = json.loads(line[len("const CLUSTERS = "):-1])
-            self.assertEqual(summary["components"], [10])
-            self.assertTrue(summary["clusters"])
+            self.assertEqual(set(summary), {"operational", "provenance"})
+            self.assertEqual(summary["operational"]["components"], [10])
+            self.assertEqual(summary["provenance"]["components"], [10])
+            self.assertTrue(summary["operational"]["clusters"])
 
 
 if __name__ == "__main__":

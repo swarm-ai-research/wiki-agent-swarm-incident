@@ -18,6 +18,19 @@ primary revision bodies. Preserve its row-level status and evidence fields when
 using it: `verified`, `inferred`, `reported`, and `contradicted` are not
 interchangeable.
 
+## Curated-bundle manifest recovery
+
+The deployed about page advertises a separate curated-bundle manifest, but its
+`/pub/datasets/manifest.json` target is unavailable. The manifest content was
+recovered from Joshua David's public September 8 scrape and is pinned as
+[`curated-datasets-manifest-2026-09-08.json`](curated-datasets-manifest-2026-09-08.json),
+with source commit, blob, hash, and endpoint status in
+[`curated-datasets-manifest-provenance.json`](curated-datasets-manifest-provenance.json).
+The local copy adds one conventional final newline; provenance pins both the
+downloaded and normalized hashes. This recovers the inventory for nine tarballs,
+not the tarballs themselves; none of those bundle files is claimed as held by
+this repository.
+
 ## Integrity
 
 - `incidents.sqlite`: 50,282,496 bytes,
