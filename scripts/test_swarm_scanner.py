@@ -47,12 +47,60 @@ class DayCountsTests(unittest.TestCase):
                 "June 18, 2026 12:00 June 17, 2026 12:00")
         result = scanner.score_text(text)
         self.assertEqual(result["burst"], 4.0)
-        self.assertEqual(result["max_day"], ("2026-06-19", 4))
+        self.assertEqual(result["max_day"], ["2026-06-19", 4])
 
     def test_today_counts_and_out_of_window_does_not(self):
         self.assertEqual(scanner.day_counts("September 6, 2026 12:00 12:01"),
                          {"2026-09-06": 2})
         self.assertEqual(scanner.day_counts("2024-02-29 12:00 12:01"), {})
+
+
+class EditRowTests(unittest.TestCase):
+    def setUp(self):
+        today = patch.object(scanner, "date", wraps=date)
+        self.mock_date = today.start()
+        self.addCleanup(today.stop)
+        self.mock_date.today.return_value = date(2026, 9, 6)
+
+    def test_mediawiki_counts_revision_rows_not_other_timestamps(self):
+        body = '''<div class="mw-changeslist"><h4>6 September 2026</h4>
+          <time>12:01</time><li class="mw-changeslist-line" data-mw-revid="10" data-mw-ts="20260906120000">edit</li>
+          <tr class="mw-changeslist-line" data-mw-logid="11" data-mw-ts="20260906120100"><td>log</td></tr>
+          <footer>Last edited 2026-09-06 23:59</footer></div>'''
+        counts, coverage = scanner.edit_row_counts(body, "mediawiki")
+        self.assertEqual(counts, {"2026-09-06": 2})
+        self.assertEqual(coverage["row_parse_outcome"], "parsed")
+        self.assertEqual(coverage["edit_rows_seen"], 2)
+
+    def test_usemod_counts_list_items_once_despite_summary_timestamps(self):
+        body = '''<div class="wikirc"><p><strong>September 6, 2026</strong></p><ul>
+          <li>Page 12:00 summary mentions 09:11 and 2026-09-01</li>
+          <li>Page 12:01</li></ul><p><strong>September 5, 2026</strong></p>
+          <ul><li>Page 08:00</li></ul></div><footer>Last edited September 6, 2026 23:59</footer>'''
+        counts, coverage = scanner.edit_row_counts(body, "usemod")
+        self.assertEqual(counts, {"2026-09-06": 2, "2026-09-05": 1})
+        self.assertEqual(coverage["edit_rows_counted"], 3)
+
+    def test_oddmuse_uses_rc_container_and_ignores_navigation_lists(self):
+        body = '''<ul><li>navigation 12:00</li></ul><div class="rc">
+          <p><strong>September 6, 2026</strong></p><ul><li><span class="time">10:00</span> Page</li></ul>
+          </div>'''
+        counts, coverage = scanner.edit_row_counts(body, "oddmuse")
+        self.assertEqual(counts, {"2026-09-06": 1})
+        self.assertEqual(coverage["row_parser"], "oddmuse")
+
+    def test_empty_listing_and_unknown_layout_are_explicit(self):
+        counts, coverage = scanner.edit_row_counts('<div class="wikirc"><p>No changes.</p></div>', "usemod")
+        self.assertEqual(counts, {})
+        self.assertEqual(coverage["row_parse_outcome"], "empty")
+        counts, coverage = scanner.edit_row_counts("Recent Changes 2026-09-06 12:00", "usemod")
+        self.assertEqual(counts, {})
+        self.assertEqual(coverage["row_parse_outcome"], "unrecognized_layout")
+
+    def test_unsupported_engine_does_not_guess_from_arbitrary_timestamps(self):
+        counts, coverage = scanner.edit_row_counts("2026-09-06 12:00 12:01", "dokuwiki")
+        self.assertEqual(counts, {})
+        self.assertEqual(coverage["row_parse_outcome"], "unsupported_engine")
 
 
 class CoverageTests(unittest.TestCase):
@@ -98,6 +146,40 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(result["outcome"], "readable")
         self.assertGreater(result["score"], 0)
 
+    def test_scan_uses_structural_rows_for_burst_and_records_coverage(self):
+        body = '''<h1>Recent Changes</h1><div class="wikirc">
+          <p><strong>September 6, 2026</strong></p><ul>
+          <li>Page 12:00 summary repeats 11:11 10:10</li><li>Page 12:01</li></ul>
+          <p><strong>September 5, 2026</strong></p><ul><li>Page 09:00</li></ul></div>'''
+        result = self.scan(200, body)
+        self.assertEqual(result["max_day"], ["2026-09-06", 2])
+        self.assertEqual(result["edit_rows_seen"], 3)
+        self.assertEqual(result["row_parse_outcome"], "parsed")
+
+    def test_result_persists_hash_timestamps_windows_and_rescore_inputs(self):
+        body = '''<h1>Recent Changes</h1><div class="wikirc">
+          <p><strong>September 6, 2026</strong></p><ul><li>ResearchAgent 12:00</li></ul>
+          </div>'''
+        target = dict(self.target, url=self.target["url"] + "&days=200&all=1")
+        result = scanner.scan_response(target, 200, body, fetched_at="2026-09-08T12:00:00Z")
+        self.assertEqual(result["fetched_at"], "2026-09-08T12:00:00Z")
+        self.assertEqual(result["content_sha256"], scanner.sha256_text(body))
+        self.assertEqual(result["requested_window"]["parameters"]["days"], "200")
+        self.assertEqual(result["observed_window"]["from"], "2026-09-06")
+        self.assertEqual(result["day_counts"], {"2026-09-06": 1})
+        rescored = scanner.rescore_result(result)
+        for key in ("score", "burst", "days_2526", "max_day"):
+            self.assertEqual(rescored[key], result[key])
+
+    def test_page_excerpts_are_opt_in(self):
+        body = '<h1>Recent Changes</h1><div class="wikirc"><p><strong>September 6, 2026</strong></p><ul><li>ResearchAgent 12:00</li></ul></div>'
+        default = scanner.scan_response(self.target, 200, body, "2026-09-08T12:00:00Z")
+        included = scanner.scan_response(
+            self.target, 200, body, "2026-09-08T12:00:00Z", include_evidence=True
+        )
+        self.assertEqual(default["evidence"], [])
+        self.assertTrue(included["evidence"])
+
     def test_report_partitions_coverage_and_excludes_unreadable_scores(self):
         results = [self.scan(200, "Recent Changes"), self.scan(402, "deny"),
                    self.scan(0, "error"), self.scan(200, "wrong page"),
@@ -126,9 +208,36 @@ class CoverageTests(unittest.TestCase):
                     patch.object(scanner.W, "fetch", side_effect=[(402, "Denied"), (200, "Recent Changes")]), \
                     redirect_stdout(io.StringIO()), patch.object(scanner.sys, "stderr", io.StringIO()):
                 scanner.main()
-            rows = json.loads(output.read_text())
+            payload = json.loads(output.read_text())
+            self.assertEqual(payload["schema_version"], 2)
+            self.assertEqual(payload["run"]["state"], "complete")
+            self.assertEqual(payload["run"]["target_count"], 2)
+            self.assertEqual(len(payload["run"]["scanner"]["sha256"]), 64)
+            rows = payload["results"]
             self.assertEqual({r["outcome"] for r in rows}, {"blocked", "readable"})
             self.assertIsNone(next(r for r in rows if r["outcome"] == "blocked")["score"])
+
+    def test_v2_report_envelope_is_accepted(self):
+        payload = {"schema_version": 2, "run": {"state": "complete", "started_at": "now",
+                   "scanner": {"sha256": "a" * 64}},
+                   "results": [self.scan(200, "Recent Changes")]}
+        output = io.StringIO()
+        with redirect_stdout(output):
+            scanner.report(payload, 25)
+        self.assertIn("run schema v2", output.getvalue())
+        self.assertIn("offline rescore: 1/1 stored scores match", output.getvalue())
+
+
+class CalibrationTests(unittest.TestCase):
+    def test_authored_positive_negative_and_gate_fixtures_pass(self):
+        calibration = scanner.run_calibration()
+        self.assertTrue(calibration["authored_fixtures"])
+        rows = {row["fixture_id"]: row for row in calibration["results"]}
+        self.assertEqual(set(rows), {"synthetic-swarm", "busy-human", "bot-gate"})
+        self.assertTrue(all(row["calibration_passed"] for row in rows.values()))
+        self.assertGreater(rows["synthetic-swarm"]["score"], rows["busy-human"]["score"])
+        self.assertEqual(rows["bot-gate"]["outcome"], "blocked")
+        self.assertTrue(all(not row["evidence"] for row in rows.values()))
 
 
 class TargetTests(unittest.TestCase):
