@@ -1,0 +1,269 @@
+{
+  "assessment": {
+    "bodies_reviewable": false,
+    "category_subtotals": "not-reproduced-from-current-derivative-labels",
+    "claimed_denominator": "not-reproducible",
+    "denominator_reproducible": false,
+    "overall_evidence_status": "reported-not-independently-reproduced",
+    "why": "Only one of the four stated data-cache/bridge cells matches the current database. The corpus selector, original classification rules, and revision bodies needed to explain the drift or test the negative claim are unavailable.",
+    "zero_coordination_or_answer_share": "not-independently-reproducible"
+  },
+  "claim": {
+    "basis": "content_kind over the attached bodies",
+    "checked_by": "shellac-reading-pack",
+    "id": "retrieval-venues-never-talk",
+    "made_by": "shellac-reading-pack",
+    "notes": "104 ambiguous minutes and 192 pack entries with no rc row were left unattached",
+    "status": "verified",
+    "subject_id": "swarm-retrieval",
+    "subject_kind": "campaign",
+    "text": "probier and fractal, with 870 revision bodies attached from shellac's wiki-additions, classify as data-cache (166, 191), bridge (235, 30) and probe-test, and hold zero coordination or answer-share. the swarm that cached most never addressed a peer on its own venues"
+  },
+  "database": {
+    "path": "data/termina/incidents.sqlite",
+    "sha256": "80bb262a52008bd9e29c4d99d17aac542cfce23d72f3bd5b3f0208414632e69e"
+  },
+  "database_observations": {
+    "body_paths_absent": 767,
+    "body_paths_present": 0,
+    "category_counts": {
+      "fractal": {
+        "bridge": 34,
+        "contact": 1,
+        "data-cache": 187,
+        "payload": 15,
+        "probe-test": 16,
+        "unclassified": 649
+      },
+      "probier": {
+        "bridge": 235,
+        "contact": 11,
+        "data-cache": 164,
+        "payload": 7,
+        "probe-test": 1170,
+        "unclassified": 1459
+      }
+    },
+    "coordination_or_answer_share_labels": 0,
+    "database_comparable_subtotal": 620,
+    "published_count_cells_matching": 1,
+    "published_count_checks": [
+      {
+        "category": "data-cache",
+        "database": 164,
+        "matches": false,
+        "published": 166,
+        "venue": "probier"
+      },
+      {
+        "category": "bridge",
+        "database": 235,
+        "matches": true,
+        "published": 235,
+        "venue": "probier"
+      },
+      {
+        "category": "data-cache",
+        "database": 187,
+        "matches": false,
+        "published": 191,
+        "venue": "fractal"
+      },
+      {
+        "category": "bridge",
+        "database": 34,
+        "matches": false,
+        "published": 30,
+        "venue": "fractal"
+      }
+    ],
+    "published_counts_all_match": false,
+    "records_in_two_venues": 3948,
+    "rows_with_body_path": 767,
+    "rows_with_body_sha256": 1945,
+    "unique_body_sha256": 742
+  },
+  "evidence": {
+    "collection_id": "shellac-pack-2026-09-05",
+    "id": "shellac-reading-pack",
+    "kind": "secondary",
+    "model": null,
+    "path": "data/shellac/agent-reading-pack-20260905",
+    "published": "2026-09-05",
+    "publisher": "she-llac",
+    "retrieved_at": "2026-09-05",
+    "retrieved_by": "rowan",
+    "sha256": "6965c741d0fbe767b84660629ef513b2bc4488f5b4c9ee97519f6749fc26e0af",
+    "title": "agent candidate reading pack (16,579 deduplicated texts, weakly labelled)",
+    "tracker_id": "she-llac",
+    "url": null
+  },
+  "generated_on": "2026-09-08",
+  "published_claim": {
+    "category_counts": {
+      "fractal": {
+        "bridge": 30,
+        "data-cache": 191
+      },
+      "probier": {
+        "bridge": 235,
+        "data-cache": 166
+      }
+    },
+    "category_subtotal": 622,
+    "declared_unattached": {
+      "ambiguous_minutes": 104,
+      "pack_entries_without_rc_row": 192
+    },
+    "denominator": 870,
+    "implied_probe_test_remainder": 248
+  },
+  "representative_review": {
+    "false_negative_rows_reviewed": 0,
+    "false_positive_rows_reviewed": 0,
+    "metadata_samples": {
+      "fractal": {
+        "bridge": [
+          {
+            "body_available": false,
+            "body_sha256": "225545a6208f96b95383fcdb4af698dc11a26d8f4b4f05acea9088c20bc8fea3",
+            "id": "fractal~AgentAIHWFiltersSep18K@1",
+            "title": "AgentAIHWFiltersSep18K"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "e7a2b92469c186f4a3ec0b4d70bbb34eff2986aba174ebfca4ccb7786454c7a8",
+            "id": "fractal~CountyBridgeResearch2025B@1",
+            "title": "CountyBridgeResearch2025B"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "2c84fc78d12302ee3aecd0422626ba0b29ce95f6e8502589b21c946852b25437",
+            "id": "fractal~JQPThousandsMAJune619CC@1",
+            "title": "JQPThousandsMAJune619CC"
+          }
+        ],
+        "data-cache": [
+          {
+            "body_available": false,
+            "body_sha256": "b5850d020c4d94d8f13768a17f305b2a3bc2d2611220c5c3b07ba5b73d7cdcee",
+            "id": "fractal~AgentAIHWBridgeSep18@1",
+            "title": "AgentAIHWBridgeSep18"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "94c74ac35e790ff851c308d5652bb50950571b9c3890bacf1d3d0e251d70e043",
+            "id": "fractal~AgentAIHWFiltersSep18L@1",
+            "title": "AgentAIHWFiltersSep18L"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "2cb095e497aafd5fb9aec6ebe8a7e23e26613f2385a5c30f9a085bc39fa4fcbf",
+            "id": "fractal~AgentBridgeTestXQ77@1",
+            "title": "AgentBridgeTestXQ77"
+          }
+        ],
+        "probe-test": [
+          {
+            "body_available": false,
+            "body_sha256": "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969",
+            "id": "fractal~AgentPovertyMembersNacX2049@2",
+            "title": "AgentPovertyMembersNacX2049"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "8e72b95a13f55d59a4f4617eb4ca2da788c530c37e7f8cc252d2015a6669fd90",
+            "id": "fractal~EN~2fFastPortalNov1@1",
+            "title": "EN/FastPortalNov1"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "ab12a783fd477c6585e16c0555beafe1c264bd27ede671be2701af00dde32249",
+            "id": "fractal~EN~2fFastPortalNov1@2",
+            "title": "EN/FastPortalNov1"
+          }
+        ]
+      },
+      "probier": {
+        "bridge": [
+          {
+            "body_available": false,
+            "body_sha256": "bde13b1d7a89b2891cfec0910ea3091e6ff8538f2856efe8cffa8c6654be7b98",
+            "id": "probier~Agent009JsonDot@3",
+            "title": "Agent009JsonDot"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "87343f61fc0d19d32fe54d174017aba37a12346b174a61b2e39f861e48c0bee6",
+            "id": "probier~Agent009Link1781805642x10@4",
+            "title": "Agent009Link1781805642x10"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "f6a3caa4ba4fb38f9c698d379ff0b12ab77e0824d73c9ecec4cb3221bc43ad2b",
+            "id": "probier~Agent0JS1781799385@2",
+            "title": "Agent0JS1781799385"
+          }
+        ],
+        "data-cache": [
+          {
+            "body_available": false,
+            "body_sha256": null,
+            "id": "payload:probier:OAIIPEDSMay16Map0",
+            "title": "OAIIPEDSMay16Map0"
+          },
+          {
+            "body_available": false,
+            "body_sha256": null,
+            "id": "payload:probier:OAIIPEDSMay16Map1",
+            "title": "OAIIPEDSMay16Map1"
+          },
+          {
+            "body_available": false,
+            "body_sha256": null,
+            "id": "payload:probier:OAIIPEDSMay16Map2",
+            "title": "OAIIPEDSMay16Map2"
+          }
+        ],
+        "probe-test": [
+          {
+            "body_available": false,
+            "body_sha256": "455eea9f370c7657b430806a756ef003337fa0f0db5de3d0ce95dd2880c3822b",
+            "id": "probier~Agent008PrettyMDNow@1",
+            "title": "Agent008PrettyMDNow"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "455eea9f370c7657b430806a756ef003337fa0f0db5de3d0ce95dd2880c3822b",
+            "id": "probier~Agent008ProxyLinks@1",
+            "title": "Agent008ProxyLinks"
+          },
+          {
+            "body_available": false,
+            "body_sha256": "455eea9f370c7657b430806a756ef003337fa0f0db5de3d0ce95dd2880c3822b",
+            "id": "probier~Agent008SECFormatJsonNew2@1",
+            "title": "Agent008SECFormatJsonNew2"
+          }
+        ]
+      }
+    },
+    "reason": "The body pack and the 870-row inclusion manifest are absent; hashes, lengths, titles, and inherited labels cannot support a content-error review.",
+    "redistributed_body_text": false,
+    "result": "not-performed"
+  },
+  "rules": {
+    "database_count_rule": "Group every pinned probier/fractal record by venue_id and content_kind; this checks derivative label totals, not body classification.",
+    "reported_exclusion": "104 ambiguous minutes and 192 pack entries without a RecentChanges row were left unattached",
+    "reported_inclusion": "revision bodies attached from shellac's wiki-additions for probier and fractal",
+    "reproducibility_finding": "No 870-row manifest or stable row selector is stored in the pinned database, so inclusion and exclusion cannot be replayed.",
+    "review_protocol": {
+      "answer-share": "a task answer or answer-bearing result offered for peer reuse",
+      "bridge": "a link, proxy, or locator whose purpose is access to stored material",
+      "coordination": "direct peer address, request, status, deadline, or work allocation",
+      "data-cache": "retrieved data or API output without peer-directed language",
+      "precedence": "coordination or answer-share wins over storage/tooling labels when both are present",
+      "probe-test": "a connectivity, formatting, storage, or retrieval-path test",
+      "provenance": "Authored review protocol for a future independent audit; the original classifier rules were not preserved."
+    }
+  }
+}

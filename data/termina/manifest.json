@@ -1,13 +1,13 @@
 {
   "files": {
     "actor.jsonl": {
-      "rows": 6887,
-      "sha256": "17614583e02dbca9e2b7fbcc7a1df1efeb04393c73934ea58c1fdc06ce9e6dd4",
+      "rows": 7443,
+      "sha256": "1edf0db6ec29299574464b021d53b15decda102128a9fb725384e6d2e395464b",
       "unsourced": null
     },
     "actor_link.jsonl": {
       "rows": 133,
-      "sha256": "e2909a47dade0a6ef0778538ef9be1d23ad46e89e4ee7c23790985d9b5f65d86",
+      "sha256": "7781d27717c45006679cf854a2c98c1902c7bb070ac1a8050be9038f9c428a5a",
       "unsourced": 133
     },
     "alias.jsonl": {
@@ -16,8 +16,8 @@
       "unsourced": 0
     },
     "campaign.jsonl": {
-      "rows": 7,
-      "sha256": "4d60a9d61aa437f30a1d7bde308dd5100210a58851faf07f116bea8dee0282c1",
+      "rows": 8,
+      "sha256": "c37f5e317dd0e6706110546fec7a69bed15da6c93227e8e8baa511d9589f989d",
       "unsourced": 0
     },
     "category.jsonl": {
@@ -26,18 +26,18 @@
       "unsourced": null
     },
     "claim.jsonl": {
-      "rows": 186,
-      "sha256": "f4b7b0c572a57069d64faab3aac0f5f4a235b00deddf17b5d92655c0874e514e",
+      "rows": 237,
+      "sha256": "28a03162d4f4b66f36be6b44af6f5f2de314982df65cb0e112f6d9adfa3f57d9",
       "unsourced": 0
     },
     "cluster.jsonl": {
-      "rows": 15,
-      "sha256": "ef663296c378aaf290d5524be6aa910cdeb53653d003cb67517242f5bf085181",
+      "rows": 18,
+      "sha256": "379dd09c62defef88e6b9cff32da1355d432d9b12187a0fd46736983a8f72c28",
       "unsourced": null
     },
     "collection.jsonl": {
-      "rows": 8,
-      "sha256": "e0f1b3c440b32ef2449e5d5791b608984d0d49ef479bb39a35def0bda869dcf0",
+      "rows": 9,
+      "sha256": "fff6c6fcf86b97d87ffec2b3e6e7a3e80659a8e8a3d95a59fe868256b1b6f69a",
       "unsourced": null
     },
     "defence.jsonl": {
@@ -51,9 +51,9 @@
       "unsourced": 0
     },
     "evidence.jsonl": {
-      "rows": 66,
-      "sha256": "c3696dc48bf6d3d94494094a7886a32f6ba65199bd1fcbc04725fac14b1b738e",
-      "unsourced": 23
+      "rows": 67,
+      "sha256": "10fa366f578fede6847dd83e62848d3fc925c2a81d6640434f19e183b00e0b82",
+      "unsourced": 24
     },
     "figure.jsonl": {
       "rows": 12,
@@ -71,8 +71,8 @@
       "unsourced": 0
     },
     "lead.jsonl": {
-      "rows": 24,
-      "sha256": "9d9891bba9f3d143b0ee877dda59421155f1a1842be88cc2e32f8b0b52f13eb4",
+      "rows": 25,
+      "sha256": "3a5c9f3c95094e35e582e6bb9d1d2f71d2f6ecad00b91866a398e66649a2121c",
       "unsourced": null
     },
     "payload.jsonl": {
@@ -91,8 +91,8 @@
       "unsourced": 0
     },
     "record.jsonl": {
-      "rows": 89601,
-      "sha256": "11e0241336be6fab9f2ebb92e92595c1e659d578d8a7d074cc099f8472245c3d",
+      "rows": 91320,
+      "sha256": "03a28c1d1becf2569460fde5881ff20f109a4c92768caebce72d41fc6e6b773e",
       "unsourced": 0
     },
     "tracker.jsonl": {
@@ -102,7 +102,7 @@
     },
     "venue.jsonl": {
       "rows": 154,
-      "sha256": "e3af759b5fd654a83ad0cf2b01d8bf37a303be232ff4f862e167c1a4fc522ba9",
+      "sha256": "7d8fb50d5d1de5cd5ed72b173d127515494bc32b4223f26df3ed81634e4e50b6",
       "unsourced": null
     },
     "venue_link.jsonl": {
@@ -111,9 +111,9 @@
       "unsourced": 0
     }
   },
-  "generated_at": "2026-09-07T12:50:32.105075042Z",
+  "generated_at": "2026-09-08T14:10:58.029664541Z",
   "licence": "CC0-1.0, see https://swarm.termina.digital/db/about.html#licence",
   "name": "ai-safety-lab incident db",
   "provenance_rule": "a row with no evidence_id, made_by, source or collection_id is unsourced. read it as an assertion awaiting a link",
-  "schema_version": "7"
+  "schema_version": "9"
 }

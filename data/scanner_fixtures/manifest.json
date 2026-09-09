@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "authored": true,
+  "fixture_time": "2026-09-08T12:00:00Z",
+  "fixtures": [
+    {
+      "id": "synthetic-swarm",
+      "class": "positive",
+      "engine": "usemod",
+      "url": "https://fixture.invalid/wiki.pl?action=rc&days=30&all=1",
+      "file": "synthetic-swarm.html",
+      "expected": {"outcome": "readable", "min_score": 30}
+    },
+    {
+      "id": "busy-human",
+      "class": "negative",
+      "engine": "usemod",
+      "url": "https://fixture.invalid/wiki.pl?action=rc&days=30&all=1",
+      "file": "busy-human.html",
+      "expected": {"outcome": "readable", "max_score": 2}
+    },
+    {
+      "id": "bot-gate",
+      "class": "coverage",
+      "engine": "oddmuse",
+      "url": "https://fixture.invalid/wiki?action=rc;days=30;all=1",
+      "file": "bot-gate.html",
+      "expected": {"outcome": "blocked"}
+    }
+  ]
+}

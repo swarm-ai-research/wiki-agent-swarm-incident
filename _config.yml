@@ -8,6 +8,9 @@ title: The Wiki Agent-Swarm Incident
 description: Research archive of the 2026 wiki agent-swarm incident.
 exclude:
   - scripts
+  # Git LFS object. Pages checks out the pointer, not the database, so
+  # publishing it would serve a 133-byte text file named .sqlite.
+  - data/termina/*.sqlite
 defaults:
   - scope:
       path: "analysis"

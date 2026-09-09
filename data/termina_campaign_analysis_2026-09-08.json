@@ -1,0 +1,1411 @@
+{
+  "generated_on": "2026-09-08",
+  "snapshot_generated_at": "2026-09-08T14:10:58.029664541Z",
+  "schema_version": "9",
+  "database": "data/termina/incidents.sqlite",
+  "write_rule": {
+    "source": "https://swarm.termina.digital/db/about.html#glossary",
+    "glossary": "writes are distinct saves: revisions where an export exists, one row per listing entry otherwise; saves pair with revisions",
+    "lower": "count revisions and unique paste/shortlink external IDs; omit rc-row stand-ins",
+    "central": "the glossary-aligned revision-first estimate",
+    "upper": "add every rc-row even where a revision stream exists; an observation-overlap ceiling, not a claim that both rows are writes",
+    "revision": "count every revision; suppress save and rc-row observations for that campaign/venue",
+    "listing_only": "count rc-row when the campaign/venue has no revision stream",
+    "paste_shortlink": "deduplicate by campaign, venue, kind, and external_id (record id fallback)",
+    "excluded": [
+      "save",
+      "delete",
+      "revert"
+    ]
+  },
+  "campaigns": [
+    {
+      "id": "artifactory-swarm",
+      "name": "the artifactory swarm",
+      "kind": "swarm",
+      "confidence": "confirmed",
+      "declared_period": [
+        "2026-05",
+        "2026-07-29"
+      ],
+      "observed_period": [
+        null,
+        null
+      ],
+      "observations": 0,
+      "observation_kinds": {},
+      "record_statuses": {},
+      "phases": {},
+      "estimated_writes": 0,
+      "write_bounds": {
+        "lower": 0,
+        "central": 0,
+        "upper": 0
+      },
+      "venue_write_bounds": [],
+      "dated_writes": 0,
+      "undated_writes": 0,
+      "observation_write_ratio": null,
+      "actors": 0,
+      "venues": 0,
+      "venue_ids": [],
+      "peak_day": null,
+      "peak_writes": 0,
+      "peak_share_of_dated_writes": null,
+      "latest_scans": [],
+      "scan_coverage": 0,
+      "scan_verdicts": {}
+    },
+    {
+      "id": "paste-qa-early",
+      "name": "the early paste-site research runs",
+      "kind": "run",
+      "confidence": "unattributed",
+      "declared_period": [
+        "2025-12",
+        "2026-04"
+      ],
+      "observed_period": [
+        "2025-12-14T04:51:46Z",
+        "2026-04-03T05:52:27Z"
+      ],
+      "observations": 35,
+      "observation_kinds": {
+        "paste": 35
+      },
+      "record_statuses": {
+        "live": 35
+      },
+      "phases": {
+        "pre-disclosure": 35
+      },
+      "estimated_writes": 35,
+      "write_bounds": {
+        "lower": 35,
+        "central": 35,
+        "upper": 35
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "paste-fasterit",
+          "lower": 2,
+          "central": 2,
+          "upper": 2
+        },
+        {
+          "venue_id": "paste-k4be",
+          "lower": 33,
+          "central": 33,
+          "upper": 33
+        }
+      ],
+      "dated_writes": 35,
+      "undated_writes": 0,
+      "observation_write_ratio": 1.0,
+      "actors": 34,
+      "venues": 2,
+      "venue_ids": [
+        "paste-fasterit",
+        "paste-k4be"
+      ],
+      "peak_day": "2026-04-03",
+      "peak_writes": 14,
+      "peak_share_of_dated_writes": 0.4,
+      "latest_scans": [
+        {
+          "venue_id": "paste-fasterit",
+          "claim_id": "scan:paste-fasterit:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 3 rows: no signal crossed"
+        },
+        {
+          "venue_id": "paste-k4be",
+          "claim_id": "scan:paste-k4be:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 226 rows: flood 70.00, venue-burst 82.00, fresh-identities 16.00"
+        }
+      ],
+      "scan_coverage": 2,
+      "scan_verdicts": {
+        "one gate": 1,
+        "too few rows": 1
+      }
+    },
+    {
+      "id": "swarm-cohort",
+      "name": "swarm a, the cohort swarm",
+      "kind": "swarm",
+      "confidence": "likely",
+      "declared_period": [
+        "2026-05-11",
+        "2026-07-02"
+      ],
+      "observed_period": [
+        "2026-05-11T12:43",
+        "2026-07-02T17:53Z"
+      ],
+      "observations": 14189,
+      "observation_kinds": {
+        "paste": 2,
+        "rc-row": 4129,
+        "revert": 3,
+        "revision": 5211,
+        "save": 4835,
+        "shortlink": 9
+      },
+      "record_statuses": {
+        "live": 14189
+      },
+      "phases": {
+        "pre-disclosure": 14183,
+        "unknown": 6
+      },
+      "estimated_writes": 5236,
+      "write_bounds": {
+        "lower": 5220,
+        "central": 5236,
+        "upper": 9349
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "dagd",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "demowiki",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "dorfwiki",
+          "lower": 2,
+          "central": 2,
+          "upper": 3
+        },
+        {
+          "venue_id": "dse",
+          "lower": 5079,
+          "central": 5079,
+          "upper": 9075
+        },
+        {
+          "venue_id": "fractal",
+          "lower": 55,
+          "central": 55,
+          "upper": 104
+        },
+        {
+          "venue_id": "goto-unm",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "gruender",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "isgd",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "lower": 2,
+          "central": 2,
+          "upper": 2
+        },
+        {
+          "venue_id": "probier",
+          "lower": 75,
+          "central": 75,
+          "upper": 142
+        },
+        {
+          "venue_id": "texteditors",
+          "lower": 0,
+          "central": 5,
+          "upper": 5
+        },
+        {
+          "venue_id": "vanderbilt",
+          "lower": 4,
+          "central": 4,
+          "upper": 4
+        },
+        {
+          "venue_id": "wiki4d",
+          "lower": 0,
+          "central": 9,
+          "upper": 9
+        }
+      ],
+      "dated_writes": 5232,
+      "undated_writes": 4,
+      "observation_write_ratio": 2.71,
+      "actors": 1780,
+      "venues": 13,
+      "venue_ids": [
+        "dagd",
+        "demowiki",
+        "dorfwiki",
+        "dse",
+        "fractal",
+        "goto-unm",
+        "gruender",
+        "isgd",
+        "paste-linuxiarz",
+        "probier",
+        "texteditors",
+        "vanderbilt",
+        "wiki4d"
+      ],
+      "peak_day": "2026-06-16",
+      "peak_writes": 2248,
+      "peak_share_of_dated_writes": 0.4297,
+      "latest_scans": [
+        {
+          "venue_id": "demowiki",
+          "claim_id": "scan:demowiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 4 rows: no signal crossed"
+        },
+        {
+          "venue_id": "dorfwiki",
+          "claim_id": "scan:dorfwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 2298 rows: no signal crossed"
+        },
+        {
+          "venue_id": "dse",
+          "claim_id": "scan:dse:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 24617 rows: contention 1072.00, handle-grammar 0.74"
+        },
+        {
+          "venue_id": "fractal",
+          "claim_id": "scan:fractal:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 615 rows: contention 11.00, handle-grammar 0.89"
+        },
+        {
+          "venue_id": "gruender",
+          "claim_id": "scan:gruender:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 4 rows: no signal crossed"
+        },
+        {
+          "venue_id": "isgd",
+          "claim_id": "scan:isgd:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 88 rows: venue-burst 35.00"
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "claim_id": "scan:paste-linuxiarz:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 1215 rows: flood 42.00, venue-burst 340.00, fresh-identities 83.00"
+        },
+        {
+          "venue_id": "probier",
+          "claim_id": "scan:probier:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 1452 rows: contention 11.00, handle-grammar 0.67"
+        },
+        {
+          "venue_id": "texteditors",
+          "claim_id": "scan:texteditors:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 176 rows: contention 6.00"
+        },
+        {
+          "venue_id": "vanderbilt",
+          "claim_id": "scan:vanderbilt:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 214 rows: venue-burst 31.00"
+        },
+        {
+          "venue_id": "wiki4d",
+          "claim_id": "scan:wiki4d:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 236 rows: contention 5.00, handle-grammar 0.85"
+        }
+      ],
+      "scan_coverage": 11,
+      "scan_verdicts": {
+        "one gate": 2,
+        "quiet": 3,
+        "swarm": 4,
+        "too few rows": 2
+      }
+    },
+    {
+      "id": "swarm-retrieval",
+      "name": "swarm b, the retrieval swarm",
+      "kind": "swarm",
+      "confidence": "likely",
+      "declared_period": [
+        "2026-05-27",
+        "2026-07-02"
+      ],
+      "observed_period": [
+        "2026-05-24T06:02:19Z",
+        "2026-07-07T15:12"
+      ],
+      "observations": 17609,
+      "observation_kinds": {
+        "paste": 11,
+        "rc-row": 3639,
+        "revision": 6488,
+        "save": 3765,
+        "shortlink": 3706
+      },
+      "record_statuses": {
+        "live": 17609
+      },
+      "phases": {
+        "pre-disclosure": 14157,
+        "unknown": 3452
+      },
+      "estimated_writes": 7136,
+      "write_bounds": {
+        "lower": 7104,
+        "central": 7136,
+        "upper": 10743
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "apchem",
+          "lower": 10,
+          "central": 10,
+          "upper": 28
+        },
+        {
+          "venue_id": "dagd",
+          "lower": 299,
+          "central": 299,
+          "upper": 299
+        },
+        {
+          "venue_id": "dorfwiki",
+          "lower": 4,
+          "central": 4,
+          "upper": 7
+        },
+        {
+          "venue_id": "dse",
+          "lower": 5978,
+          "central": 5978,
+          "upper": 9150
+        },
+        {
+          "venue_id": "fractal",
+          "lower": 95,
+          "central": 95,
+          "upper": 232
+        },
+        {
+          "venue_id": "goto-unm",
+          "lower": 5,
+          "central": 5,
+          "upper": 5
+        },
+        {
+          "venue_id": "isgd",
+          "lower": 75,
+          "central": 75,
+          "upper": 75
+        },
+        {
+          "venue_id": "milkwiki",
+          "lower": 0,
+          "central": 12,
+          "upper": 12
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "lower": 11,
+          "central": 11,
+          "upper": 11
+        },
+        {
+          "venue_id": "popcat",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "probier",
+          "lower": 401,
+          "central": 401,
+          "upper": 678
+        },
+        {
+          "venue_id": "rmn-re",
+          "lower": 86,
+          "central": 86,
+          "upper": 86
+        },
+        {
+          "venue_id": "texteditors",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "u-ethz",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "uoft-me",
+          "lower": 5,
+          "central": 5,
+          "upper": 5
+        },
+        {
+          "venue_id": "vanderbilt",
+          "lower": 109,
+          "central": 109,
+          "upper": 109
+        },
+        {
+          "venue_id": "vgd",
+          "lower": 24,
+          "central": 24,
+          "upper": 24
+        },
+        {
+          "venue_id": "wiki4d",
+          "lower": 0,
+          "central": 19,
+          "upper": 19
+        }
+      ],
+      "dated_writes": 6785,
+      "undated_writes": 351,
+      "observation_write_ratio": 2.468,
+      "actors": 1588,
+      "venues": 18,
+      "venue_ids": [
+        "apchem",
+        "dagd",
+        "dorfwiki",
+        "dse",
+        "fractal",
+        "goto-unm",
+        "isgd",
+        "milkwiki",
+        "paste-linuxiarz",
+        "popcat",
+        "probier",
+        "rmn-re",
+        "texteditors",
+        "u-ethz",
+        "uoft-me",
+        "vanderbilt",
+        "vgd",
+        "wiki4d"
+      ],
+      "peak_day": "2026-06-18",
+      "peak_writes": 5522,
+      "peak_share_of_dated_writes": 0.8139,
+      "latest_scans": [
+        {
+          "venue_id": "apchem",
+          "claim_id": "scan:apchem:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 147 rows: no signal crossed"
+        },
+        {
+          "venue_id": "dorfwiki",
+          "claim_id": "scan:dorfwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 2298 rows: no signal crossed"
+        },
+        {
+          "venue_id": "dse",
+          "claim_id": "scan:dse:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 24617 rows: contention 1072.00, handle-grammar 0.74"
+        },
+        {
+          "venue_id": "fractal",
+          "claim_id": "scan:fractal:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 615 rows: contention 11.00, handle-grammar 0.89"
+        },
+        {
+          "venue_id": "isgd",
+          "claim_id": "scan:isgd:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 88 rows: venue-burst 35.00"
+        },
+        {
+          "venue_id": "milkwiki",
+          "claim_id": "scan:milkwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 18 rows: no signal crossed"
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "claim_id": "scan:paste-linuxiarz:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 1215 rows: flood 42.00, venue-burst 340.00, fresh-identities 83.00"
+        },
+        {
+          "venue_id": "probier",
+          "claim_id": "scan:probier:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 1452 rows: contention 11.00, handle-grammar 0.67"
+        },
+        {
+          "venue_id": "rmn-re",
+          "claim_id": "scan:rmn-re:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 555 rows: hour-entropy 3.42, ip-spread 0.98, venue-burst 136.00"
+        },
+        {
+          "venue_id": "texteditors",
+          "claim_id": "scan:texteditors:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 176 rows: contention 6.00"
+        },
+        {
+          "venue_id": "uoft-me",
+          "claim_id": "scan:uoft-me:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 5 rows: no signal crossed"
+        },
+        {
+          "venue_id": "vanderbilt",
+          "claim_id": "scan:vanderbilt:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 214 rows: venue-burst 31.00"
+        },
+        {
+          "venue_id": "vgd",
+          "claim_id": "scan:vgd:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 29 rows: no signal crossed"
+        },
+        {
+          "venue_id": "wiki4d",
+          "claim_id": "scan:wiki4d:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 236 rows: contention 5.00, handle-grammar 0.85"
+        }
+      ],
+      "scan_coverage": 14,
+      "scan_verdicts": {
+        "one gate": 3,
+        "quiet": 5,
+        "swarm": 4,
+        "too few rows": 2
+      }
+    },
+    {
+      "id": "usemod-fleet",
+      "name": "the usemod fleet research-environment lead",
+      "kind": "research-environment",
+      "confidence": "unattributed",
+      "declared_period": [
+        "2026-08-30",
+        "2026-08-30"
+      ],
+      "observed_period": [
+        "2026-08-30",
+        "2026-08-30T20:44Z"
+      ],
+      "observations": 18,
+      "observation_kinds": {
+        "rc-row": 12,
+        "revision": 6
+      },
+      "record_statuses": {
+        "live": 18
+      },
+      "phases": {
+        "pre-disclosure": 18
+      },
+      "estimated_writes": 6,
+      "write_bounds": {
+        "lower": 6,
+        "central": 6,
+        "upper": 18
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "usemod-org",
+          "lower": 6,
+          "central": 6,
+          "upper": 18
+        }
+      ],
+      "dated_writes": 6,
+      "undated_writes": 0,
+      "observation_write_ratio": 3.0,
+      "actors": 3,
+      "venues": 1,
+      "venue_ids": [
+        "usemod-org"
+      ],
+      "peak_day": "2026-08-30",
+      "peak_writes": 6,
+      "peak_share_of_dated_writes": 1.0,
+      "latest_scans": [
+        {
+          "venue_id": "usemod-org",
+          "claim_id": "scan:usemod-org:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 6962 rows: contention 62.00"
+        }
+      ],
+      "scan_coverage": 1,
+      "scan_verdicts": {
+        "one gate": 1
+      }
+    },
+    {
+      "id": "venue-probes",
+      "name": "the venue probes",
+      "kind": "run",
+      "confidence": "unattributed",
+      "declared_period": [
+        "2026-05-11",
+        "2026-05-28"
+      ],
+      "observed_period": [
+        "2026-05-12T19:42:02Z",
+        "2026-05-28T09:37:43Z"
+      ],
+      "observations": 190,
+      "observation_kinds": {
+        "delete": 2,
+        "paste": 188
+      },
+      "record_statuses": {
+        "live": 190
+      },
+      "phases": {
+        "pre-disclosure": 190
+      },
+      "estimated_writes": 188,
+      "write_bounds": {
+        "lower": 188,
+        "central": 188,
+        "upper": 188
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "anna-fyi",
+          "lower": 61,
+          "central": 61,
+          "upper": 61
+        },
+        {
+          "venue_id": "paste-k4be",
+          "lower": 111,
+          "central": 111,
+          "upper": 111
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "paste-nervesocket",
+          "lower": 6,
+          "central": 6,
+          "upper": 6
+        },
+        {
+          "venue_id": "paste-tarcseh",
+          "lower": 8,
+          "central": 8,
+          "upper": 8
+        },
+        {
+          "venue_id": "probyte",
+          "lower": 1,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "publictestwiki",
+          "lower": 0,
+          "central": 0,
+          "upper": 0
+        }
+      ],
+      "dated_writes": 188,
+      "undated_writes": 0,
+      "observation_write_ratio": 1.011,
+      "actors": 23,
+      "venues": 7,
+      "venue_ids": [
+        "anna-fyi",
+        "paste-k4be",
+        "paste-linuxiarz",
+        "paste-nervesocket",
+        "paste-tarcseh",
+        "probyte",
+        "publictestwiki"
+      ],
+      "peak_day": "2026-05-18",
+      "peak_writes": 110,
+      "peak_share_of_dated_writes": 0.5851,
+      "latest_scans": [
+        {
+          "venue_id": "anna-fyi",
+          "claim_id": "scan:anna-fyi:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 111 rows: flood 48.00, venue-burst 63.00, fresh-identities 8.00"
+        },
+        {
+          "venue_id": "paste-k4be",
+          "claim_id": "scan:paste-k4be:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 226 rows: flood 70.00, venue-burst 82.00, fresh-identities 16.00"
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "claim_id": "scan:paste-linuxiarz:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 1215 rows: flood 42.00, venue-burst 340.00, fresh-identities 83.00"
+        },
+        {
+          "venue_id": "paste-nervesocket",
+          "claim_id": "scan:paste-nervesocket:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 21 rows: no signal crossed"
+        },
+        {
+          "venue_id": "paste-tarcseh",
+          "claim_id": "scan:paste-tarcseh:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 184 rows: venue-burst 102.00, fresh-identities 102.00"
+        },
+        {
+          "venue_id": "probyte",
+          "claim_id": "scan:probyte:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 120 rows: flood 54.00, venue-burst 109.00"
+        },
+        {
+          "venue_id": "publictestwiki",
+          "claim_id": "scan:publictestwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 2622 rows: no signal crossed"
+        }
+      ],
+      "scan_coverage": 7,
+      "scan_verdicts": {
+        "one gate": 4,
+        "quiet": 3
+      }
+    },
+    {
+      "id": "visitors",
+      "name": "post-publicity visitors",
+      "kind": "visitors",
+      "confidence": "unattributed",
+      "declared_period": [
+        "2026-09-03",
+        null
+      ],
+      "observed_period": [
+        "2026-09-04T13:29:24Z",
+        "2026-09-06T20:59Z"
+      ],
+      "observations": 73,
+      "observation_kinds": {
+        "paste": 18,
+        "rc-row": 55
+      },
+      "record_statuses": {
+        "live": 73
+      },
+      "phases": {
+        "post-press": 73
+      },
+      "estimated_writes": 73,
+      "write_bounds": {
+        "lower": 18,
+        "central": 73,
+        "upper": 73
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "dorfwiki",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "dse",
+          "lower": 0,
+          "central": 33,
+          "upper": 33
+        },
+        {
+          "venue_id": "fractal",
+          "lower": 0,
+          "central": 9,
+          "upper": 9
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "lower": 18,
+          "central": 18,
+          "upper": 18
+        },
+        {
+          "venue_id": "probier",
+          "lower": 0,
+          "central": 2,
+          "upper": 2
+        },
+        {
+          "venue_id": "publictestwiki",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "schulwiki",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "wiki4d",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-culios",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-dict-sm",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-fdw",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-lotr",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-nausner",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-prowiki",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        },
+        {
+          "venue_id": "ws-sinn",
+          "lower": 0,
+          "central": 1,
+          "upper": 1
+        }
+      ],
+      "dated_writes": 73,
+      "undated_writes": 0,
+      "observation_write_ratio": 1.0,
+      "actors": 32,
+      "venues": 15,
+      "venue_ids": [
+        "dorfwiki",
+        "dse",
+        "fractal",
+        "paste-linuxiarz",
+        "probier",
+        "publictestwiki",
+        "schulwiki",
+        "wiki4d",
+        "ws-culios",
+        "ws-dict-sm",
+        "ws-fdw",
+        "ws-lotr",
+        "ws-nausner",
+        "ws-prowiki",
+        "ws-sinn"
+      ],
+      "peak_day": "2026-09-04",
+      "peak_writes": 36,
+      "peak_share_of_dated_writes": 0.4932,
+      "latest_scans": [
+        {
+          "venue_id": "dorfwiki",
+          "claim_id": "scan:dorfwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 2298 rows: no signal crossed"
+        },
+        {
+          "venue_id": "dse",
+          "claim_id": "scan:dse:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 24617 rows: contention 1072.00, handle-grammar 0.74"
+        },
+        {
+          "venue_id": "fractal",
+          "claim_id": "scan:fractal:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 615 rows: contention 11.00, handle-grammar 0.89"
+        },
+        {
+          "venue_id": "paste-linuxiarz",
+          "claim_id": "scan:paste-linuxiarz:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 1215 rows: flood 42.00, venue-burst 340.00, fresh-identities 83.00"
+        },
+        {
+          "venue_id": "probier",
+          "claim_id": "scan:probier:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 1452 rows: contention 11.00, handle-grammar 0.67"
+        },
+        {
+          "venue_id": "publictestwiki",
+          "claim_id": "scan:publictestwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "quiet",
+          "text": "scanner verdict quiet on 2622 rows: no signal crossed"
+        },
+        {
+          "venue_id": "schulwiki",
+          "claim_id": "scan:schulwiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 4 rows: no signal crossed"
+        },
+        {
+          "venue_id": "wiki4d",
+          "claim_id": "scan:wiki4d:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "swarm",
+          "text": "scanner verdict swarm on 236 rows: contention 5.00, handle-grammar 0.85"
+        },
+        {
+          "venue_id": "ws-culios",
+          "claim_id": "scan:ws-culios:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+        },
+        {
+          "venue_id": "ws-dict-sm",
+          "claim_id": "scan:ws-dict-sm:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 10 rows: no signal crossed"
+        },
+        {
+          "venue_id": "ws-fdw",
+          "claim_id": "scan:ws-fdw:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+        },
+        {
+          "venue_id": "ws-lotr",
+          "claim_id": "scan:ws-lotr:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+        },
+        {
+          "venue_id": "ws-nausner",
+          "claim_id": "scan:ws-nausner:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+        },
+        {
+          "venue_id": "ws-prowiki",
+          "claim_id": "scan:ws-prowiki:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+        },
+        {
+          "venue_id": "ws-sinn",
+          "claim_id": "scan:ws-sinn:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "too few rows",
+          "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+        }
+      ],
+      "scan_coverage": 15,
+      "scan_verdicts": {
+        "one gate": 1,
+        "quiet": 2,
+        "swarm": 4,
+        "too few rows": 8
+      }
+    },
+    {
+      "id": "xinzhai-2026-07",
+      "name": "the xinzhai persistence run",
+      "kind": "run",
+      "confidence": "unattributed",
+      "declared_period": [
+        "2026-07-10",
+        "2026-07-20"
+      ],
+      "observed_period": [
+        "2026-07-10T13:26:00Z",
+        "2026-07-20T11:20:00Z"
+      ],
+      "observations": 3574,
+      "observation_kinds": {
+        "paste": 3574
+      },
+      "record_statuses": {
+        "live": 3574
+      },
+      "phases": {
+        "pre-disclosure": 3574
+      },
+      "estimated_writes": 3574,
+      "write_bounds": {
+        "lower": 3574,
+        "central": 3574,
+        "upper": 3574
+      },
+      "venue_write_bounds": [
+        {
+          "venue_id": "paste-ubuntu-cn",
+          "lower": 3574,
+          "central": 3574,
+          "upper": 3574
+        }
+      ],
+      "dated_writes": 3574,
+      "undated_writes": 0,
+      "observation_write_ratio": 1.0,
+      "actors": 79,
+      "venues": 1,
+      "venue_ids": [
+        "paste-ubuntu-cn"
+      ],
+      "peak_day": "2026-07-13",
+      "peak_writes": 493,
+      "peak_share_of_dated_writes": 0.1379,
+      "latest_scans": [
+        {
+          "venue_id": "paste-ubuntu-cn",
+          "claim_id": "scan:paste-ubuntu-cn:2026-09-08",
+          "day": "2026-09-08",
+          "status": "inferred",
+          "verdict": "one gate",
+          "text": "scanner verdict one gate on 4756 rows: flood 24.00, venue-burst 76.00, fresh-identities 63.00"
+        }
+      ],
+      "scan_coverage": 1,
+      "scan_verdicts": {
+        "one gate": 1
+      }
+    }
+  ],
+  "human_control_scans": {
+    "default_human_venues": 22,
+    "covered_venues": 21,
+    "status_counts": {
+      "inferred": 21
+    },
+    "verdicts": {
+      "one gate": 4,
+      "quiet": 8,
+      "swarm": 1,
+      "too few rows": 8
+    },
+    "rows": [
+      {
+        "venue_id": "anna-fyi",
+        "claim_id": "scan:anna-fyi:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "one gate",
+        "text": "scanner verdict one gate on 111 rows: flood 48.00, venue-burst 63.00, fresh-identities 8.00"
+      },
+      {
+        "venue_id": "apchem",
+        "claim_id": "scan:apchem:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 147 rows: no signal crossed"
+      },
+      {
+        "venue_id": "demowiki",
+        "claim_id": "scan:demowiki:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 4 rows: no signal crossed"
+      },
+      {
+        "venue_id": "dorfwiki",
+        "claim_id": "scan:dorfwiki:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 2298 rows: no signal crossed"
+      },
+      {
+        "venue_id": "gruender",
+        "claim_id": "scan:gruender:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 4 rows: no signal crossed"
+      },
+      {
+        "venue_id": "ludism-mentat",
+        "claim_id": "scan:ludism-mentat:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 6 rows: no signal crossed"
+      },
+      {
+        "venue_id": "ludism-sandbox",
+        "claim_id": "scan:ludism-sandbox:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 23 rows: no signal crossed"
+      },
+      {
+        "venue_id": "ludism-scwiki",
+        "claim_id": "scan:ludism-scwiki:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 93 rows: no signal crossed"
+      },
+      {
+        "venue_id": "netzwerkgegengewalt",
+        "claim_id": "scan:netzwerkgegengewalt:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 5806 rows: no signal crossed"
+      },
+      {
+        "venue_id": "p-gaast",
+        "claim_id": "scan:p-gaast:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+      },
+      {
+        "venue_id": "paste-k4be",
+        "claim_id": "scan:paste-k4be:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "one gate",
+        "text": "scanner verdict one gate on 226 rows: flood 70.00, venue-burst 82.00, fresh-identities 16.00"
+      },
+      {
+        "venue_id": "paste-smirky",
+        "claim_id": "scan:paste-smirky:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 1 rows: no signal crossed"
+      },
+      {
+        "venue_id": "paste-steamr",
+        "claim_id": "scan:paste-steamr:2026-09-06",
+        "day": "2026-09-06",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 15 rows: no signal crossed"
+      },
+      {
+        "venue_id": "paste-tarcseh",
+        "claim_id": "scan:paste-tarcseh:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 184 rows: venue-burst 102.00, fresh-identities 102.00"
+      },
+      {
+        "venue_id": "pb-dynavirt",
+        "claim_id": "scan:pb-dynavirt:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 9 rows: no signal crossed"
+      },
+      {
+        "venue_id": "pmwiki-test",
+        "claim_id": "scan:pmwiki-test:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 81 rows: no signal crossed"
+      },
+      {
+        "venue_id": "publictestwiki",
+        "claim_id": "scan:publictestwiki:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "quiet",
+        "text": "scanner verdict quiet on 2622 rows: no signal crossed"
+      },
+      {
+        "venue_id": "schulwiki",
+        "claim_id": "scan:schulwiki:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "too few rows",
+        "text": "scanner verdict too few rows on 4 rows: no signal crossed"
+      },
+      {
+        "venue_id": "texteditors",
+        "claim_id": "scan:texteditors:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "one gate",
+        "text": "scanner verdict one gate on 176 rows: contention 6.00"
+      },
+      {
+        "venue_id": "usemod-org",
+        "claim_id": "scan:usemod-org:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "one gate",
+        "text": "scanner verdict one gate on 6962 rows: contention 62.00"
+      },
+      {
+        "venue_id": "wiki4d",
+        "claim_id": "scan:wiki4d:2026-09-08",
+        "day": "2026-09-08",
+        "status": "inferred",
+        "verdict": "swarm",
+        "text": "scanner verdict swarm on 236 rows: contention 5.00, handle-grammar 0.85"
+      }
+    ]
+  }
+}

@@ -85,20 +85,23 @@ def summarize(nodes, g):
     }
 
 
-def main():
-    text = PAGE.read_text()
+def rewrite(text, summary):
+    """Replace the CLUSTERS line, or insert one right after GRAPH if absent."""
+    line = "const CLUSTERS = " + json.dumps(summary, separators=(",", ":")) + ";"
+    if CLUSTERS_RE.search(text):
+        return CLUSTERS_RE.sub(lambda _: line, text, count=1)
+    return GRAPH_RE.sub(lambda m: m.group(0) + "\n" + line, text, count=1)
+
+
+def main(page=PAGE):
+    text = page.read_text()
     graph = load_graph(text)
     rm = RELAY_RE.search(text)
     relay = json.loads(rm.group(1)) if rm else None
     summary = {"atlas": summarize(*build(graph))}
     if relay:
         summary["combined"] = summarize(*build(graph, relay))
-    line = "const CLUSTERS = " + json.dumps(summary, separators=(",", ":")) + ";"
-    if CLUSTERS_RE.search(text):
-        text = CLUSTERS_RE.sub(lambda _: line, text, count=1)
-    else:
-        text = GRAPH_RE.sub(lambda m: m.group(0) + "\n" + line, text, count=1)
-    PAGE.write_text(text)
+    page.write_text(rewrite(text, summary))
     for mode, s in summary.items():
         print(f"== {mode}")
         for c in s["clusters"]:

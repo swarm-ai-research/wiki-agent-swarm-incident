@@ -1,0 +1,593 @@
+{
+  "codes": [
+    {
+      "code": "da.gd/0IPqV6",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711064015",
+          "url": "https://r.jina.ai/https://da.gd/0IPqV6"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/1LEMm",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "301",
+          "timestamp": "20260603132928",
+          "url": "http://r.jina.ai/https://da.gd/1LEMm"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260603132928",
+          "url": "https://r.jina.ai/https://da.gd/1LEMm"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/7xq",
+      "disposition": "archived-target-recovered",
+      "observations": [
+        {
+          "reader_host": "api.microlink.io",
+          "status": "200",
+          "timestamp": "20260711173532",
+          "url": "https://api.microlink.io/?url=https://da.gd/7xq&prerender=true&scripts=document.title=%27ZZ%27"
+        }
+      ],
+      "resolution": "poetryarchive.org/robots.txt (already resolved 2026-09-07; script-injection canvas)",
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/A6I6W",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711081626",
+          "url": "https://r.jina.ai/https://da.gd/A6I6W"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/Aosq0j",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711071257",
+          "url": "https://r.jina.ai/https://da.gd/Aosq0j"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/EbUsZF",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711072153",
+          "url": "https://r.jina.ai/https://da.gd/EbUsZF"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/JrYFX",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711134124",
+          "url": "https://r.jina.ai/https://da.gd/JrYFX"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/O9VYR",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "403",
+          "timestamp": "20260714192504",
+          "url": "https://r.jina.ai/https://cors.eu.org/https://da.gd/O9VYR"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260714184055",
+          "url": "https://r.jina.ai/https://da.gd/O9VYR"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/R1uzz1",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711090810",
+          "url": "https://r.jina.ai/https://da.gd/R1uzz1"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/V0gS",
+      "disposition": "archived-target-recovered",
+      "observations": [],
+      "resolution": "httpbin base64 -> <script src=//da.gd/fbKv> -> ntfy.sh/j2795 -> XHR api.counterapi.dev/v1/bts8178/c5/up (captured 20260718042747; the 07-11 microlink chain mechanism)",
+      "source_presence": "resolution-record-only"
+    },
+    {
+      "code": "da.gd/a6YzPU",
+      "disposition": "archived-target-recovered",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260531151539",
+          "url": "https://r.jina.ai/https://da.gd/a6YzPU"
+        }
+      ],
+      "resolution": "skyislandjournal.com creative-nonfiction .docx (Sky Island tester)",
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/bBoBY",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "api.codetabs.com",
+          "status": "522",
+          "timestamp": "20260606055742",
+          "url": "https://api.codetabs.com/v1/proxy?quest=https://da.gd/bBoBY"
+        },
+        {
+          "reader_host": "api.codetabs.com",
+          "status": "522",
+          "timestamp": "20260606060331",
+          "url": "https://api.codetabs.com/v1/proxy?quest=https://da.gd/bBoBY"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/hjQNNH",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711082730",
+          "url": "https://r.jina.ai/https://da.gd/hjQNNH"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/jXulw",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711063207",
+          "url": "https://r.jina.ai/https://da.gd/jXulw"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/jfrJV9",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711065104",
+          "url": "https://r.jina.ai/https://da.gd/jfrJV9"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/kDzxEU",
+      "disposition": "archived-target-recovered",
+      "observations": [],
+      "resolution": "chiptune.app PiJAMA MIDI dataset .mid (captured 20260602145453; the 06-02 codetabs->allorigins->da.gd chain)",
+      "source_presence": "resolution-record-only"
+    },
+    {
+      "code": "da.gd/mbkEWp",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260712071200",
+          "url": "https://r.jina.ai/https://da.gd/mbkEWp"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/pYuz3Y",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711091212",
+          "url": "https://r.jina.ai/https://da.gd/pYuz3Y"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/rzWCf4",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "401",
+          "timestamp": "20260602025801",
+          "url": "https://r.jina.ai/https://da.gd/rzWCf4"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/xGRGTw",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711082547",
+          "url": "https://r.jina.ai/https://da.gd/xGRGTw"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/yOBOs0",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260602025100",
+          "url": "https://r.jina.ai/https://da.gd/yOBOs0"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "da.gd/zz2",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "301",
+          "timestamp": "20260630225334",
+          "url": "http://r.jina.ai/da.gd/zz2/Spring_2023_EOG-State_Level-All%20Grades.xlsx"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260630225334",
+          "url": "https://r.jina.ai/da.gd/zz2/Spring_2023_EOG-State_Level-All%20Grades.xlsx"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "301",
+          "timestamp": "20260630224926",
+          "url": "http://r.jina.ai/da.gd/zz2/Spring_2023_EOG-System_Level-All%20Grades.xlsx"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "is.gd/NeQnU5",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "403",
+          "timestamp": "20260706053655",
+          "url": "https://r.jina.ai/https://is.gd/NeQnU5"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "is.gd/ZHHVrO",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "451",
+          "timestamp": "20260625112040",
+          "url": "https://r.jina.ai/https://is.gd/ZHHVrO"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "is.gd/ZOsvgs",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "451",
+          "timestamp": "20260626124216",
+          "url": "https://r.jina.ai/http://is.gd/ZOsvgs"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "is.gd/amf16w",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "451",
+          "timestamp": "20260625112413",
+          "url": "https://r.jina.ai/https://is.gd/amf16w"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/23pkckfk",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260709045003",
+          "url": "https://r.jina.ai/https://tinyurl.com/23pkckfk"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/24frjnrg",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711083011",
+          "url": "https://r.jina.ai/https://tinyurl.com/24frjnrg"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145502",
+          "url": "https://r.jina.ai/https://tinyurl.com/24frjnrg"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/24rdejoe",
+      "disposition": "archived-stub-target-unrecoverable",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711083148",
+          "url": "https://r.jina.ai/https://tinyurl.com/24rdejoe"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145325",
+          "url": "https://r.jina.ai/https://tinyurl.com/24rdejoe"
+        }
+      ],
+      "resolution": "tinyurl.com/preview/deprecated stub, target not recoverable",
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/25mmh7mc",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711085142",
+          "url": "https://r.jina.ai/https://tinyurl.com/25mmh7mc"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/28nuk47n",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260602025419",
+          "url": "https://r.jina.ai/https://tinyurl.com/28nuk47n"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/2amf3sba",
+      "disposition": "archived-stub-target-unrecoverable",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260626011444",
+          "url": "https://r.jina.ai/https://tinyurl.com/2amf3sba"
+        },
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145405",
+          "url": "https://r.jina.ai/https://tinyurl.com/2amf3sba"
+        }
+      ],
+      "resolution": "tinyurl.com/preview/deprecated stub, target not recoverable",
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/2xts5kej",
+      "disposition": "archived-target-recovered",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260602055621",
+          "url": "https://r.jina.ai/tinyurl.com/2xts5kej"
+        }
+      ],
+      "resolution": "image.thum.io screenshot -> httpbin base64 -> phantomjscloud pdf.js render of 2022 Wayback copy of toodyay.wa.gov.au 2013 council-meeting PDF, page 281 (captured 20260601004710)",
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "tinyurl.com/stl-celf",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "451",
+          "timestamp": "20260317063139",
+          "url": "https://r.jina.ai/https://tinyurl.com/stl-celf"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "v.gd/XNW3Pa",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145856",
+          "url": "https://r.jina.ai/https://v.gd/XNW3Pa"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "v.gd/psTfZX",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145744",
+          "url": "https://r.jina.ai/https://v.gd/psTfZX"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "v.gd/t1D9LQ",
+      "disposition": "no-archive-capture-found-in-2026-09-08-pass",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145938",
+          "url": "https://r.jina.ai/https://v.gd/t1D9LQ"
+        }
+      ],
+      "resolution": null,
+      "source_presence": "saved-capture-row"
+    },
+    {
+      "code": "v.gd/wBKPEp",
+      "disposition": "archived-target-recovered",
+      "observations": [
+        {
+          "reader_host": "r.jina.ai",
+          "status": "200",
+          "timestamp": "20260711145847",
+          "url": "https://r.jina.ai/https://v.gd/wBKPEp"
+        }
+      ],
+      "resolution": "skyislandjournal.com creative-nonfiction .docx (Sky Island tester; capture is a 200 landing page)",
+      "source_presence": "saved-capture-row"
+    }
+  ],
+  "counts": {
+    "archived-stub-target-unrecoverable": 2,
+    "archived-target-recovered": 6,
+    "no-archive-capture-found-in-2026-09-08-pass": 30
+  },
+  "discovered_hops": [
+    {
+      "code": "da.gd/fbKv",
+      "disposition": "archived-target-recovered",
+      "resolution": "ntfy.sh/j2795/raw?poll=1; archived poll body = sync XHR to api.counterapi.dev/v1/bts8178/c5/up (captured 20260718042319/042747)"
+    }
+  ],
+  "generated_on": "2026-09-08",
+  "network_policy": "offline-only; no live shortener or Archive request",
+  "scope": {
+    "discovered_intermediate_hops": 1,
+    "narrative_count_previously_reported": 26,
+    "resolution_only_source_codes": 2,
+    "saved_row_codes": 36,
+    "scope_discrepancy": "The prose count of 26 is not reproducible from the saved rows; this ledger uses the explicit union instead.",
+    "unique_source_codes": 38
+  },
+  "source": "data/wayback_proxy_captures_2026-09-08.json"
+}

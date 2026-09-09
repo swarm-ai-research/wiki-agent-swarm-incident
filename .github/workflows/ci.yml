@@ -15,7 +15,11 @@ jobs:
       matrix:
         python-version: ['3.11', '3.12']
     steps:
+      # data/termina/incidents.sqlite is an LFS object; without this the runner
+      # checks out the ~133-byte pointer and the snapshot tests fail on it.
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
