@@ -4,6 +4,10 @@ __pycache__/
 
 # OS cruft
 .DS_Store
+
+# Scratch working directory; PDFs and screenshots have been committed from here
+# by accident (see tmp/pdfs/ on wip/provenance-view).
+tmp/
 # sampled export bodies (unlicensed upstream data) and API job state
 data/llm_family_sample*.jsonl
 data/llm_family_jobs*.json
