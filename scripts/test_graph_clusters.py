@@ -173,11 +173,13 @@ class MainTests(unittest.TestCase):
             self.assertEqual(gc.load_graph(first), graph)
             line = next(l for l in first.splitlines() if l.startswith("const CLUSTERS = "))
             summary = json.loads(line[len("const CLUSTERS = "):-1])
-            # main() writes one summary per mode; a page with no RELAY line
-            # carries "atlas" alone.
-            self.assertEqual(list(summary), ["atlas"])
-            self.assertEqual(summary["atlas"]["components"], [10])
-            self.assertTrue(summary["atlas"]["clusters"])
+            # main() writes one summary per view. A page with no RELAY line
+            # carries the provenance axis alone; this ring has no termina-db
+            # layer, so both views see the same graph.
+            self.assertEqual(list(summary), ["atlas", "operational"])
+            for mode in ("atlas", "operational"):
+                self.assertEqual(summary[mode]["components"], [10])
+                self.assertTrue(summary[mode]["clusters"])
 
 
 if __name__ == "__main__":
