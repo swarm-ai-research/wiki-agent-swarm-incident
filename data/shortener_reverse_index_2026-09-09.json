@@ -10808,6 +10808,7 @@
     "destinations": 47,
     "graph_codes_with_direct_resolution": 86,
     "graph_shortener_nodes": 95,
+    "paths_truncated_at_max_depth": 0,
     "relations_by_confidence": {
       "observed": 86,
       "observed-chain": 2,
@@ -20767,15 +20768,21 @@
       "type": "shortener"
     }
   ],
-  "generated_on": "2026-09-09",
+  "generated_on": "2026-09-08",
+  "input_sha256": {
+    "archive_ledger": "d1cd188967588e1934a4748c6b8be76e067920b3afc26f62136095834060ec45",
+    "graph": "dcc8224eb7305534053f13b39f8afdb01987fe1ba2f2a3d066dab25c70509f67"
+  },
   "inputs": {
     "archive_ledger": "data/shortener_code_resolution_ledger_2026-09-08.json",
     "graph": "graph.html"
   },
   "method": {
     "counts.graph_codes_with_direct_resolution": "number of short codes carrying at least one Atlas resolves_to edge (codes, not edges)",
+    "counts.paths_truncated_at_max_depth": "destinations dropped because a flow path exceeded max_depth=6; non-zero means this index is truncated, not exhaustive",
     "counts.relations_by_confidence": "how many of the relation rows are observed vs candidate-only; read this before quoting the destination count",
     "direct": "Atlas resolves_to edge from a shortener",
+    "generated_on": "the inputs' vintage (inherited from the ledger, or --generated-on), never the wall clock; regeneration from the same inputs is byte-identical on any date",
     "nested": "Atlas chain containing only shortener nodes between source and target",
     "reachable": "candidate reachability through shared proxy topology; not an exact code-to-final-target assertion"
   },

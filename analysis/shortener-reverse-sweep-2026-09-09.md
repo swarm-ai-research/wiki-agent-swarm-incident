@@ -39,7 +39,17 @@ unreadable: `app.bitily.in` presented an untrusted certificate, `ctxr.me` return
   destination-keyed index with confidence labels and paths. Its `counts` block
   carries `relations_by_confidence`, so the observed/candidate split is visible
   without reading every row: 86 `observed`, 2 `observed-chain`, 775
-  `topology-candidate`.
+  `topology-candidate`. The same block carries
+  `paths_truncated_at_max_depth`, which is `0` here: path search stops at six
+  edges and the deepest path present is five, so nothing was dropped. If the
+  Atlas grows past that limit the counter goes non-zero, marking the index
+  truncated rather than exhaustive — absence of a destination is then a search
+  boundary, not evidence that no such destination exists.
+- The index inherits its `generated_on` from the ledger's own stamp
+  (`2026-09-08`) rather than the wall clock, and records `input_sha256` for both
+  inputs. Regenerating it on any later date reproduces the committed JSON and
+  CSV byte-for-byte; the `2026-09-09` in the filename is the pass date, not the
+  input vintage.
 - `data/shortener_reverse_index_2026-09-09.csv` — flat destination-to-code rows
 - `data/shortener_reverse_sweep_2026-09-09.json` — CDX and listing outcomes;
   bodies are represented only by byte counts and SHA-256 digests
