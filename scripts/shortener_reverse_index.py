@@ -9,10 +9,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import io
 import json
 from collections import Counter, defaultdict, deque
-from datetime import date
 from pathlib import Path
 
 
@@ -23,6 +23,7 @@ JSON_OUTPUT = ROOT / "data" / "shortener_reverse_index_2026-09-09.json"
 CSV_OUTPUT = ROOT / "data" / "shortener_reverse_index_2026-09-09.csv"
 GRAPH_MARKER = "const GRAPH = "
 FLOW_RELATIONS = {"resolves_to", "proxies", "pings"}
+MAX_DEPTH = 6
 
 
 def display_path(path: Path) -> str:
@@ -87,21 +88,34 @@ def index_ledger(ledger: dict) -> dict[str, dict]:
     return by_code
 
 
-def _paths(graph: dict, start: str, max_depth: int = 6) -> list[tuple[str, list[str]]]:
+def _paths(
+    graph: dict, start: str, max_depth: int = MAX_DEPTH
+) -> tuple[list[tuple[str, list[str]]], int]:
     """Return flow-reachable nodes and paths, avoiding cycles.
 
     All proxy-derived results remain candidates: shared proxy nodes intentionally
     collapse several concrete target URLs in the Atlas.
+
+    Also returns how many destinations the depth limit dropped. Without it a
+    truncated index is indistinguishable from an exhausted one -- the same
+    absence-versus-nonexistence discipline the analysis applies to archive
+    absence ("archive absence, not proof that the links never resolved").
     """
     adjacency: dict[str, list[str]] = defaultdict(list)
     for edge in graph["links"]:
         if edge.get("rt") in FLOW_RELATIONS:
             adjacency[edge["source"]].append(edge["target"])
     found: dict[str, list[str]] = {}
+    suppressed: set[str] = set()
     queue = deque([(start, [start])])
     while queue:
         node, path = queue.popleft()
         if len(path) - 1 >= max_depth:
+            suppressed.update(
+                target
+                for target in adjacency.get(node, [])
+                if target not in path and target != start
+            )
             continue
         for target in sorted(set(adjacency.get(node, []))):
             if target in path:
@@ -110,14 +124,41 @@ def _paths(graph: dict, start: str, max_depth: int = 6) -> list[tuple[str, list[
             if target != start and target not in found:
                 found[target] = new_path
             queue.append((target, new_path))
-    return sorted(found.items())
+    # BFS is level-order and the limit bites only at the deepest level, so
+    # anything already in `found` was reached by a shorter path and lost nothing.
+    return sorted(found.items()), len(suppressed - set(found))
 
 
-def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
+def sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def derive_generated_on(ledger: dict, ledger_path: Path = LEDGER) -> str:
+    """Stamp the report with its input vintage rather than the wall clock.
+
+    date.today() made the artifact unverifiable from any later date: a fresh run
+    always differed in that one field, so byte-identical regeneration -- the
+    check worth having -- stopped being available the day after generation.
+    """
+    stamp = ledger.get("generated_on")
+    if not stamp:
+        raise ValueError(
+            f"{display_path(ledger_path)} has no generated_on to inherit; "
+            "pass --generated-on to stamp the report explicitly"
+        )
+    return stamp
+
+
+def build(
+    graph_path: Path = GRAPH,
+    ledger_path: Path = LEDGER,
+    generated_on: str | None = None,
+) -> dict:
     graph = load_graph(graph_path)
     nodes = {node["id"]: node for node in graph["nodes"]}
     short_ids = sorted(node_id for node_id, node in nodes.items() if node.get("type") == "shortener")
     direct = defaultdict(list)
+    truncated_total = 0
     for edge in graph["links"]:
         if edge.get("rt") == "resolves_to" and edge["source"] in short_ids:
             direct[edge["source"]].append(edge["target"])
@@ -133,7 +174,8 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
         immediate = sorted(set(direct.get(short_id, [])))
         if immediate:
             resolved_graph_codes.add(normalize_code(code))
-        paths = _paths(graph, short_id)
+        paths, truncated = _paths(graph, short_id)
+        truncated_total += truncated
         relations = []
         for target, path in paths:
             if len(path) == 2:
@@ -201,15 +243,18 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
         if not row["immediate_targets"] and row["archive_disposition"] != "archived-target-recovered"
     ]
     return {
-        "generated_on": date.today().isoformat(),
+        "generated_on": generated_on or derive_generated_on(ledger, ledger_path),
         "network_policy": "offline-only; no live shortener or Archive request",
         "inputs": {"graph": display_path(graph_path), "archive_ledger": display_path(ledger_path)},
+        "input_sha256": {"graph": sha256(graph_path), "archive_ledger": sha256(ledger_path)},
         "method": {
+            "generated_on": "the inputs' vintage (inherited from the ledger, or --generated-on), never the wall clock; regeneration from the same inputs is byte-identical on any date",
             "direct": "Atlas resolves_to edge from a shortener",
             "nested": "Atlas chain containing only shortener nodes between source and target",
             "reachable": "candidate reachability through shared proxy topology; not an exact code-to-final-target assertion",
             "counts.graph_codes_with_direct_resolution": "number of short codes carrying at least one Atlas resolves_to edge (codes, not edges)",
             "counts.relations_by_confidence": "how many of the relation rows are observed vs candidate-only; read this before quoting the destination count",
+            "counts.paths_truncated_at_max_depth": f"destinations dropped because a flow path exceeded max_depth={MAX_DEPTH}; non-zero means this index is truncated, not exhaustive",
         },
         "counts": {
             "short_codes": len(codes),
@@ -218,6 +263,7 @@ def build(graph_path: Path = GRAPH, ledger_path: Path = LEDGER) -> dict:
             "destinations": len(destinations),
             "unresolved_codes": len(unresolved),
             "relations_total": sum(relation_totals.values()),
+            "paths_truncated_at_max_depth": truncated_total,
             "relations_by_confidence": {
                 confidence_for_relation[relation]: relation_totals[relation]
                 for relation in ("direct", "nested", "reachable")
@@ -257,8 +303,13 @@ def main() -> int:
     parser.add_argument("--ledger", type=Path, default=LEDGER)
     parser.add_argument("--json", type=Path, default=JSON_OUTPUT)
     parser.add_argument("--csv", type=Path, default=CSV_OUTPUT)
+    parser.add_argument(
+        "--generated-on",
+        default=None,
+        help="ISO date to stamp the report with; defaults to the ledger's own generated_on",
+    )
     args = parser.parse_args()
-    report = build(args.graph, args.ledger)
+    report = build(args.graph, args.ledger, args.generated_on)
     args.json.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     args.csv.write_text(csv_text(report), encoding="utf-8")
     print(json.dumps(report["counts"], sort_keys=True))

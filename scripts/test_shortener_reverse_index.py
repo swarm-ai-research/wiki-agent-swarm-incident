@@ -1,6 +1,8 @@
+import hashlib
 import json
 import tempfile
 import unittest
+from datetime import date
 from pathlib import Path
 
 import shortener_reverse_index as reverse
@@ -27,6 +29,7 @@ class ShortenerReverseIndexTests(unittest.TestCase):
         graph_path.write_text(f"<script>\nconst GRAPH = {json.dumps(graph)};\n</script>\n")
         ledger_path = Path(directory) / "ledger.json"
         ledger_path.write_text(json.dumps({
+            "generated_on": "2026-09-08",
             "codes": [{"code": "c/three", "disposition": "no-archive-capture-found", "resolution": None}],
             "discovered_hops": [],
         }))
@@ -119,6 +122,102 @@ class ShortenerCountsTests(unittest.TestCase):
         self.assertEqual(split["observed"], 2)
         self.assertEqual(split["observed-chain"], 1)
         self.assertEqual(split["topology-candidate"], 4)
+
+
+class ShortenerTruncationTests(unittest.TestCase):
+    def _chain_fixture(self, directory, length):
+        """A single flow chain of `length` edges off one shortener."""
+        nodes = [{"id": "short:a/one", "label": "a/one", "type": "shortener"}]
+        links = []
+        previous = "short:a/one"
+        for step in range(length):
+            node_id = f"hop:{step}"
+            nodes.append({"id": node_id, "label": str(step), "type": "proxy"})
+            links.append({"source": previous, "target": node_id, "rt": "proxies"})
+            previous = node_id
+        graph_path = Path(directory) / "graph.html"
+        graph_path.write_text(
+            f"<script>\nconst GRAPH = {json.dumps({'nodes': nodes, 'links': links})};\n</script>\n"
+        )
+        ledger_path = Path(directory) / "ledger.json"
+        ledger_path.write_text(json.dumps({
+            "generated_on": "2026-09-08", "codes": [], "discovered_hops": [],
+        }))
+        return graph_path, ledger_path
+
+    def test_chain_within_max_depth_reports_no_truncation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._chain_fixture(directory, reverse.MAX_DEPTH)
+            report = reverse.build(graph, ledger)
+        self.assertEqual(report["counts"]["paths_truncated_at_max_depth"], 0)
+        self.assertEqual(report["counts"]["destinations"], reverse.MAX_DEPTH)
+
+    def test_chain_deeper_than_max_depth_counts_the_dropped_destinations(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._chain_fixture(directory, reverse.MAX_DEPTH + 3)
+            report = reverse.build(graph, ledger)
+        # The three hops past the limit are dropped, and the count says so
+        # rather than letting truncation read as non-existence.
+        self.assertEqual(report["counts"]["destinations"], reverse.MAX_DEPTH)
+        self.assertEqual(report["counts"]["paths_truncated_at_max_depth"], 1)
+
+    def test_truncation_counter_ignores_nodes_already_reached(self):
+        """A suppressed edge back to an already-found node loses nothing."""
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._chain_fixture(directory, reverse.MAX_DEPTH + 1)
+            text = graph.read_text()
+            # point the over-depth hop back at a node found at depth 1
+            graph.write_text(text.replace(
+                f'"source": "hop:{reverse.MAX_DEPTH - 1}", "target": "hop:{reverse.MAX_DEPTH}"',
+                f'"source": "hop:{reverse.MAX_DEPTH - 1}", "target": "hop:0"',
+            ))
+            report = reverse.build(graph, ledger)
+        self.assertEqual(report["counts"]["paths_truncated_at_max_depth"], 0)
+
+
+class ShortenerDeterminismTests(unittest.TestCase):
+    def _fixtures(self, directory):
+        return ShortenerReverseIndexTests()._fixtures(directory)
+
+    def test_stamp_is_inherited_from_the_inputs_not_the_clock(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._fixtures(directory)
+            report = reverse.build(graph, ledger)
+        self.assertEqual(report["generated_on"], "2026-09-08")
+        self.assertNotEqual(report["generated_on"], date.today().isoformat())
+
+    def test_rebuild_is_byte_identical(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._fixtures(directory)
+            first = reverse.build(graph, ledger)
+            second = reverse.build(graph, ledger)
+        self.assertEqual(
+            json.dumps(first, indent=2, sort_keys=True),
+            json.dumps(second, indent=2, sort_keys=True),
+        )
+
+    def test_explicit_stamp_overrides_the_inherited_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._fixtures(directory)
+            report = reverse.build(graph, ledger, "2026-01-01")
+        self.assertEqual(report["generated_on"], "2026-01-01")
+
+    def test_ledger_without_a_stamp_refuses_to_guess(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._fixtures(directory)
+            payload = json.loads(ledger.read_text())
+            del payload["generated_on"]
+            ledger.write_text(json.dumps(payload))
+            with self.assertRaises(ValueError) as caught:
+                reverse.build(graph, ledger)
+        self.assertIn("--generated-on", str(caught.exception))
+
+    def test_input_hashes_pin_what_was_read(self):
+        with tempfile.TemporaryDirectory() as directory:
+            graph, ledger = self._fixtures(directory)
+            report = reverse.build(graph, ledger)
+            expected = hashlib.sha256(graph.read_bytes()).hexdigest()
+        self.assertEqual(report["input_sha256"]["graph"], expected)
 
 
 if __name__ == "__main__":
