@@ -34,7 +34,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -44,6 +44,14 @@ INJECTED_ROLES = ("Human", "System")
 REDACTION = re.compile(r"\[redacted-([a-z0-9\-]+)\]")
 BUDGET = re.compile(r"Summarization budget: (\d+)/(\d+) cycles? used")
 HANDOFF_FILE = "instructions-to-self"
+MARKERS = {
+    "credential": re.compile(r"credential", re.IGNORECASE),
+    "pypi": re.compile(r"\bpypi\b", re.IGNORECASE),
+    "real_or_open_internet": re.compile(
+        r"\b(?:real(?:[- ]world)?|open) internet\b", re.IGNORECASE
+    ),
+    "simulation": re.compile(r"\bsimulat(?:e|ed|ion|or|ory)\w*\b", re.IGNORECASE),
+}
 
 
 def parse_timestamp(stamp: str) -> datetime:
@@ -69,6 +77,167 @@ def load(path: Path) -> tuple[dict, list[dict]]:
         else:
             messages.append(record)
     return metadata, messages
+
+
+def percentile(values: list[float], percent: int) -> float:
+    """Return a deterministic nearest-rank percentile."""
+    if not values:
+        return 0.0
+    ordered = sorted(values)
+    rank = max(1, (percent * len(ordered) + 99) // 100)
+    return ordered[rank - 1]
+
+
+def text_surface(value) -> str:
+    """Collect string leaves for counting, never for emission."""
+    if isinstance(value, str):
+        return value
+    if isinstance(value, dict):
+        return "\n".join(text_surface(item) for item in value.values())
+    if isinstance(value, list):
+        return "\n".join(text_surface(item) for item in value)
+    return ""
+
+
+def record_summary(messages: list[dict]) -> dict:
+    """Describe record sizes without reproducing any transcript field."""
+    by_type: defaultdict[str, list[int]] = defaultdict(list)
+    for message in messages:
+        size = len(
+            json.dumps(message, ensure_ascii=False, separators=(",", ":")).encode(
+                "utf-8"
+            )
+        )
+        by_type[message["type"]].append(size)
+    return {
+        kind: {
+            "records": len(sizes),
+            "median_bytes": percentile(sizes, 50),
+            "p95_bytes": percentile(sizes, 95),
+            "max_bytes": max(sizes),
+        }
+        for kind, sizes in sorted(by_type.items())
+    }
+
+
+def marker_summary(messages: list[dict]) -> dict:
+    """Count fixed public-topic markers and record-level co-occurrence only."""
+    hits: Counter[str] = Counter()
+    pairs: Counter[str] = Counter()
+    names = sorted(MARKERS)
+    for message in messages:
+        surface = text_surface(message)
+        present = [name for name in names if MARKERS[name].search(surface)]
+        hits.update(present)
+        pairs.update(
+            f"{left}+{right}"
+            for position, left in enumerate(present)
+            for right in present[position + 1 :]
+        )
+    return {
+        "records_with_marker": dict(sorted(hits.items())),
+        "record_cooccurrence": dict(sorted(pairs.items())),
+    }
+
+
+def window_summary(messages: list[dict]) -> dict:
+    """Summarize one index window without retaining message content."""
+    tools = Counter(
+        message.get("tool_name") for message in messages if message.get("tool_name")
+    )
+    marker_records = marker_summary(messages)["records_with_marker"]
+    return {
+        "messages": len(messages),
+        "tool_calls": sum(tools.values()),
+        "tools": dict(tools.most_common()),
+        "inline_redaction_markers": sum(
+            len(REDACTION.findall(message.get("content") or "")) for message in messages
+        ),
+        "records_with_marker": marker_records,
+    }
+
+
+def sequence(messages: list[dict], boundaries: list[dict]) -> dict:
+    """Measure timing and tool-order structure in transcript index order."""
+    model_stamped = [
+        (message["index"], parse_timestamp(message["timestamp"]))
+        for message in messages
+        if message.get("timestamp") and message["role"] not in INJECTED_ROLES
+    ]
+    gaps = [
+        (after_index, (after_time - before_time).total_seconds())
+        for (before_index, before_time), (after_index, after_time) in zip(
+            model_stamped, model_stamped[1:]
+        )
+        if after_time >= before_time
+    ]
+    gap_values = [seconds for _, seconds in gaps]
+
+    hourly = Counter(when.strftime("%Y-%m-%dT%HZ") for _, when in model_stamped)
+    tool_stream = [
+        (message["index"], message["tool_name"])
+        for message in messages
+        if message.get("tool_name")
+    ]
+    transitions = Counter(
+        f"{before[1]}->{after[1]}"
+        for before, after in zip(tool_stream, tool_stream[1:])
+    )
+
+    longest = {"tool": None, "calls": 0, "start_index": None, "end_index": None}
+    if tool_stream:
+        run_tool = tool_stream[0][1]
+        run_start = tool_stream[0][0]
+        run_end = run_start
+        run_calls = 1
+        for index, tool in tool_stream[1:]:
+            if tool == run_tool:
+                run_end = index
+                run_calls += 1
+            else:
+                if run_calls > longest["calls"]:
+                    longest = {
+                        "tool": run_tool,
+                        "calls": run_calls,
+                        "start_index": run_start,
+                        "end_index": run_end,
+                    }
+                run_tool, run_start, run_end, run_calls = tool, index, index, 1
+        if run_calls > longest["calls"]:
+            longest = {
+                "tool": run_tool,
+                "calls": run_calls,
+                "start_index": run_start,
+                "end_index": run_end,
+            }
+
+    windows = {}
+    if boundaries:
+        first, last = boundaries[0]["index"], boundaries[-1]["index"]
+        windows = {
+            "before_first_compaction": window_summary(
+                [message for message in messages if message["index"] < first]
+            ),
+            "after_first_compaction": window_summary(
+                [message for message in messages if message["index"] > last]
+            ),
+        }
+
+    return {
+        "nonnegative_model_gaps": len(gap_values),
+        "gap_seconds": {
+            "median": percentile(gap_values, 50),
+            "p95": percentile(gap_values, 95),
+            "max": max(gap_values) if gap_values else 0.0,
+            "at_least_60": sum(value >= 60 for value in gap_values),
+            "at_least_300": sum(value >= 300 for value in gap_values),
+            "at_least_900": sum(value >= 900 for value in gap_values),
+        },
+        "messages_by_utc_hour": dict(sorted(hourly.items())),
+        "tool_transitions": dict(transitions.most_common()),
+        "longest_same_tool_run": longest,
+        "compaction_windows": windows,
+    }
 
 
 def redactions(messages: list[dict]) -> dict:
@@ -100,7 +269,9 @@ def timing(messages: list[dict]) -> dict:
     ]
     model = [
         (index, when)
-        for (index, when), message in zip(stamped, (m for m in messages if m.get("timestamp")))
+        for (index, when), message in zip(
+            stamped, (m for m in messages if m.get("timestamp"))
+        )
         if message["role"] not in INJECTED_ROLES
     ]
     backwards = sum(
@@ -149,6 +320,7 @@ def compaction(messages: list[dict]) -> dict:
 
 def audit(path: Path) -> dict:
     metadata, messages = load(path)
+    compact = compaction(messages)
     return {
         "title": metadata.get("title"),
         "messages": len(messages),
@@ -157,7 +329,10 @@ def audit(path: Path) -> dict:
         "types": dict(Counter(m["type"] for m in messages).most_common()),
         "redactions": redactions(messages),
         "timing": timing(messages),
-        "compaction": compaction(messages),
+        "compaction": compact,
+        "record_sizes": record_summary(messages),
+        "markers": marker_summary(messages),
+        "sequence": sequence(messages, compact["boundaries"]),
     }
 
 
