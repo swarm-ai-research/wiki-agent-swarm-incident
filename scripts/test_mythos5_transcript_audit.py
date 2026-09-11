@@ -72,6 +72,25 @@ class SyntheticTranscriptTests(unittest.TestCase):
         self.assertEqual(redactions["inline_kinds"]["key"], 2)
         path.unlink()
 
+    def test_tool_fields_are_searched_and_content_is_not_the_whole_story(self):
+        # A ToolMessage has empty `content`; its payload lives in these fields.
+        tool = message(1, type_="ToolMessage", timestamp="2026-07-18T01:01:00Z")
+        tool["tool_name"] = "terminal"
+        tool["tool_call"] = {"cmd": "curl [redacted-hostname]"}
+        tool["tool_result"] = "connected to [redacted-ip-1]"
+        path = write(
+            [
+                {"record": "metadata", "title": "T"},
+                message(0, timestamp="2026-07-18T01:00:00Z", content="[redacted-key]"),
+                tool,
+            ]
+        )
+        result = audit.audit(path)
+        self.assertEqual(result["redactions"]["inline_markers"], 3)
+        self.assertEqual(result["redactions"]["inline_markers_in_content_only"], 1)
+        self.assertEqual(result["tools"], {"calls": 1, "by_name": {"terminal": 1}})
+        path.unlink()
+
     def test_one_counter_value_across_boundaries_is_one_compaction(self):
         path = write(
             [
@@ -132,9 +151,21 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(self.result["redactions"]["missing_indices"], 81)
         self.assertEqual(self.result["redactions"]["missing_range"], [1, 81])
 
-    def test_inline_redaction_total(self):
-        self.assertEqual(self.result["redactions"]["inline_markers"], 2607)
-        self.assertEqual(self.result["redactions"]["inline_kinds"]["service"], 1228)
+    def test_inline_redaction_total_counts_tool_fields(self):
+        redactions = self.result["redactions"]
+        self.assertEqual(redactions["inline_markers"], 7618)
+        self.assertEqual(redactions["inline_kinds"]["service"], 2192)
+        # Scanning `content` alone sees about a third of them; this is the trap
+        # a ToolMessage's empty `content` sets for a reader of this file.
+        self.assertEqual(redactions["inline_markers_in_content_only"], 2607)
+
+    def test_tool_surface(self):
+        tools = self.result["tools"]
+        self.assertEqual(tools["calls"], 1361)
+        self.assertEqual(
+            tools["by_name"],
+            {"terminal": 932, "view_tool": 230, "create_tool": 152, "str_replace_tool": 47},
+        )
 
     def test_file_span_is_about_double_the_model_span(self):
         timing = self.result["timing"]
