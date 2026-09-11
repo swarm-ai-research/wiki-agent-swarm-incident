@@ -815,7 +815,7 @@
     "AgentNextJoinedJuneBA",
     "AgentNextSecJuneAC"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "proxy.corsfix.com",
@@ -1000,7 +1000,7 @@
     "OpenAIMassValuesJune20Master",
     "StartSeite"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "platform.lemino.ai",
@@ -1605,7 +1605,7 @@
    "example_pages": [
     "AgentUNAIDSKPAArcGISRefsD912"
    ],
-   "catalogued": true
+   "catalogued": false
   },
   {
    "host": "vercel-cors-proxy.vercel.app",
@@ -1698,7 +1698,7 @@
     "StartSeite",
     "WillkommenImWiki"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "wayback.archive.org",
@@ -1979,7 +1979,7 @@
    "example_pages": [
     "ResearchEnglishRootZ"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "www.sec",
@@ -2071,7 +2071,7 @@
    "example_pages": [
     "AgentEconomicDatasetsReferencesXC3921045"
    ],
-   "catalogued": true
+   "catalogued": false
   },
   {
    "host": "www.example.com",
@@ -2290,7 +2290,7 @@
     "AgentTBMortDataQX4",
     "AgentVizTBRefs"
    ],
-   "catalogued": true
+   "catalogued": false
   },
   {
    "host": "query2.finance.yahoo.com",
@@ -2369,7 +2369,7 @@
     "PBSParamTests1",
     "PBSParamTests5"
    ],
-   "catalogued": true
+   "catalogued": false
   },
   {
    "host": "eu.httpbin.org",
@@ -2380,7 +2380,7 @@
    "example_pages": [
     "SECJsonBridgeLive24592"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "v2.jokeapi.dev",
@@ -2391,7 +2391,7 @@
    "example_pages": [
     "StartSeite"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "raw.githack.com",
@@ -2501,7 +2501,7 @@
    "example_pages": [
     "AgentCountyGateway991"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "proxy-itunes.apple.com",
@@ -2512,7 +2512,7 @@
    "example_pages": [
     "AgentCountyGateway991"
    ],
-   "catalogued": false
+   "catalogued": true
   },
   {
    "host": "image.thum.io",
@@ -2699,7 +2699,7 @@
    "example_pages": [
     "PBSProxyAIHW2"
    ],
-   "catalogued": true
+   "catalogued": false
   },
   {
    "host": "www.pageshot.site",
@@ -2779,25 +2779,33 @@
    "catalogued": true
   }
  ],
- "uncatalogued_count": 42,
+ "uncatalogued_count": 39,
  "uncatalogued_by_class": {
-  "endpoint": 31,
-  "cors_proxy": 3,
-  "wiki_host": 2,
+  "endpoint": 32,
   "tunnel": 2,
   "archive_proxy": 2,
-  "reader_proxy": 2
+  "reader_proxy": 2,
+  "cors_proxy": 1
  },
  "family_host_count": 96,
  "family_hosts_pinned": true,
  "infrastructure_revisions": {
-  "WillkommenImWiki": 2317,
-  "StartSeite": 429,
-  "TestSeite": 194,
-  "RecentChanges": 142,
-  "SandBox": 27,
-  "ForumSeite": 13,
+  "WillkommenImWiki": 2327,
+  "StartSeite": 457,
+  "TestSeite": 238,
+  "RecentChanges": 156,
+  "SandBox": 32,
+  "ForumSeite": 15,
   "Startseite": 1
+ },
+ "infrastructure_uncatalogued_revisions": {
+  "WillkommenImWiki": 13,
+  "StartSeite": 19,
+  "TestSeite": 16,
+  "RecentChanges": 27,
+  "SandBox": 2,
+  "ForumSeite": 0,
+  "Startseite": 0
  },
  "families": [
   {
@@ -2905,8 +2913,8 @@
   {
    "label": "Proxy/Mass/June/County/Gateway",
    "hosts": [
-    "cors-anywhere.herokuapp.com",
-    "proxy.cors.sh"
+    "proxy.cors.sh",
+    "cors-anywhere.herokuapp.com"
    ],
    "occurrences": 6,
    "first_seen": "2026-06-18T18:09:55Z",
@@ -2964,8 +2972,8 @@
     "wikiservice.at",
     "markdown.new",
     "jqp.vercel.app",
-    "pure.md",
-    "lcdl.library.cofc.edu"
+    "lcdl.library.cofc.edu",
+    "pure.md"
    ]
   },
   {
@@ -3167,9 +3175,9 @@
     "www.wikiservice.at",
     "www.sec.gov",
     "markdown.new",
-    "r.jina.ai",
-    "api.allorigins.win",
     "jqp.vercel.app",
+    "api.allorigins.win",
+    "r.jina.ai",
     "cors.isomorphic-git.org",
     "www.prowiki.org"
    ]
@@ -3238,10 +3246,10 @@
     "Agent"
    ],
    "co_hosts": [
-    "wikiservice.at",
     "jsonhero.io",
-    "md.succ.ai",
+    "wikiservice.at",
     "www.sec.gov",
+    "md.succ.ai",
     "api.datausa.io",
     "api-la.datausa.io"
    ]
@@ -3327,9 +3335,10 @@
     "allorigins.hexlet.app",
     "cors-get-proxy.sirjosh.workers.dev",
     "is.gd",
-    "v.gd",
     "wikiservice.at",
-    "jqp.vercel.app"
+    "v.gd",
+    "jqp.vercel.app",
+    "docs.google.com"
    ]
   },
   {
@@ -3363,11 +3372,11 @@
     "AgentZero"
    ],
    "co_hosts": [
-    "example.org",
     "hub.catalogit.app",
+    "example.org",
+    "markdown.new",
     "lcdl.library.cofc.edu",
     "allorigins.hexlet.app",
-    "markdown.new",
     "api.datausa.io"
    ]
   },
@@ -3423,12 +3432,12 @@
    ],
    "co_hosts": [
     "api.datausa.io",
-    "r.jina.ai",
+    "markdown.new",
     "pure.md",
-    "www.proxymule.com",
-    "www.sec.gov",
     "jqp.vercel.app",
-    "markdown.new"
+    "www.sec.gov",
+    "r.jina.ai",
+    "www.proxymule.com"
    ]
   },
   {
@@ -3465,8 +3474,8 @@
     "markdown.new",
     "cors.bwa.workers.dev",
     "www.wikiservice.at",
-    "allorigins.hexlet.app",
-    "corsmirror.com"
+    "corsmirror.com",
+    "allorigins.hexlet.app"
    ]
   },
   {
@@ -3481,13 +3490,13 @@
     "AgentMassachusettsResearcherJune19"
    ],
    "co_hosts": [
-    "r.jina.ai",
     "www.sec.gov",
-    "allorigins.hexlet.app",
+    "r.jina.ai",
     "httpbin.org",
     "markdown.new",
     "tinyurl.com",
-    "api.allorigins.win"
+    "allorigins.hexlet.app",
+    "wikiservice.at"
    ]
   },
   {
@@ -3520,10 +3529,10 @@
     "BridgeNewU"
    ],
    "co_hosts": [
-    "allorigins.hexlet.app",
-    "wikiservice.at",
     "jqp.vercel.app",
     "www.sec.gov",
+    "wikiservice.at",
+    "allorigins.hexlet.app",
     "vanderbi.lt",
     "api.census.gov",
     "code.highcharts.com"
@@ -3583,12 +3592,12 @@
    ],
    "co_hosts": [
     "www.sec.gov",
-    "r.jina.ai",
-    "web.archive.org",
-    "api.allorigins.win",
-    "allorigins.hexlet.app",
+    "markdown.new",
+    "archive.org",
     "httpbin.org",
-    "archive.org"
+    "sec.govwayback.com",
+    "api.allorigins.win",
+    "r.jina.ai"
    ]
   },
   {
@@ -3603,13 +3612,13 @@
    ],
    "co_hosts": [
     "www.sec.gov",
-    "r.jina.ai",
-    "web.archive.org",
-    "api.allorigins.win",
-    "allorigins.hexlet.app",
-    "httpbin.org",
+    "markdown.new",
     "codebeautify.org",
-    "archive.org"
+    "archive.org",
+    "httpbin.org",
+    "sec.govwayback.com",
+    "api.allorigins.win",
+    "r.jina.ai"
    ]
   },
   {
@@ -3654,9 +3663,9 @@
     "Agent0MassCountyResearch"
    ],
    "co_hosts": [
+    "cors.bwa.workers.dev",
     "archive.org",
     "tsl.access.preservica.com",
-    "cors.bwa.workers.dev",
     "www.proxymule.com"
    ]
   },
@@ -3670,9 +3679,9 @@
     "RaceLoop603"
    ],
    "co_hosts": [
-    "vercel-cors-proxy.vercel.app",
+    "word.tips",
     "fly.wordfinderapi.com",
-    "word.tips"
+    "vercel-cors-proxy.vercel.app"
    ]
   },
   {
@@ -3685,10 +3694,10 @@
     "AgentFrenchVerifier"
    ],
    "co_hosts": [
-    "api-ts.datausa.io",
-    "tesseract.datausa.io",
     "api-ts-dev.datausa.io",
-    "kona.datausa.io"
+    "kona.datausa.io",
+    "api-ts.datausa.io",
+    "tesseract.datausa.io"
    ]
   },
   {
@@ -3739,9 +3748,9 @@
     "RaceLoop603"
    ],
    "co_hosts": [
+    "word.tips",
     "1word.ws",
-    "vercel-cors-proxy.vercel.app",
-    "word.tips"
+    "vercel-cors-proxy.vercel.app"
    ]
   },
   {
@@ -3788,9 +3797,9 @@
    ],
    "co_hosts": [
     "api-kona.datausa.io",
+    "api-ts-dev.datausa.io",
     "api-ts.datausa.io",
-    "tesseract.datausa.io",
-    "api-ts-dev.datausa.io"
+    "tesseract.datausa.io"
    ]
   },
   {
@@ -3816,9 +3825,9 @@
     "MarketDataResearchHelperX"
    ],
    "co_hosts": [
-    "example.com",
+    "ctxr.me",
     "news.ycombinator.com",
-    "ctxr.me"
+    "example.com"
    ]
   },
   {
@@ -3858,14 +3867,13 @@
     "AgentZeroResearchMass"
    ],
    "co_hosts": [
-    "r.jina.ai",
-    "md.succ.ai",
-    "api.allorigins.win",
-    "cors.isomorphic-git.org",
-    "allorigins.hexlet.app",
     "www-sec-gov.translate.goog",
-    "corsproxy.io",
-    "www.sec.gov"
+    "markdown.new",
+    "cors.isomorphic-git.org",
+    "jqp.vercel.app",
+    "www.sec.gov",
+    "api.allorigins.win",
+    "r.jina.ai"
    ]
   },
   {
@@ -3906,9 +3914,9 @@
    ],
    "co_hosts": [
     "api-kona.datausa.io",
-    "api-ts.datausa.io",
     "api-ts-dev.datausa.io",
-    "kona.datausa.io"
+    "kona.datausa.io",
+    "api-ts.datausa.io"
    ]
   },
   {
@@ -3959,13 +3967,13 @@
     "DataRefHelperZZ57914"
    ],
    "co_hosts": [
-    "example.com",
-    "r.jina.ai",
+    "markdown.new",
     "pure.md",
-    "www2.clarku.edu",
-    "allorigins.hexlet.app",
+    "r.jina.ai",
     "corsmirror.com",
-    "vercel-cors-proxy.vercel.app"
+    "allorigins.hexlet.app",
+    "example.com",
+    "www2.clarku.edu"
    ]
   },
   {
@@ -3979,8 +3987,8 @@
    ],
    "co_hosts": [
     "1word.ws",
-    "vercel-cors-proxy.vercel.app",
-    "fly.wordfinderapi.com"
+    "fly.wordfinderapi.com",
+    "vercel-cors-proxy.vercel.app"
    ]
   },
   {
@@ -4004,11 +4012,11 @@
     "ResearchHelperY"
    ],
    "co_hosts": [
-    "r.jina.ai",
     "api.allorigins.win",
-    "viz.aihw.gov.au",
     "www.aihw.gov.au",
-    "corsproxy.io"
+    "r.jina.ai",
+    "corsproxy.io",
+    "viz.aihw.gov.au"
    ]
   },
   {

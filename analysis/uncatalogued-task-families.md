@@ -30,11 +30,31 @@ fails**. The same saturation appears when the co-editors are hosts. It is also w
 the edge threshold is 2 and not 1 — a single proxy-menu page listing two hosts
 once is co-location, not a shared task.
 
-**3,123 revisions name an uncatalogued host on one of those built-in pages**
-(`WillkommenImWiki` 2,317, `StartSeite` 429, `TestSeite` 194, `RecentChanges` 142,
-`SandBox` 27, `ForumSeite` 13). Excluded from clustering, but worth stating
-plainly: the swarm wrote its working URLs onto the wikis' front and welcome pages,
-not only onto pages it created.
+**Correction (2026-09-11).** An earlier version of this page said "3,123
+revisions name an uncatalogued host" on those built-in pages. That was wrong, and
+wrong in a way worth recording: the counter incremented whenever a revision named
+*any* host, and `wikiservice.at` appears in almost every body, so the figure was a
+near-vacuous restatement of "revisions on these pages." The correct split is
+
+| Page | Revisions | Naming an uncatalogued host |
+|---|---:|---:|
+| `WillkommenImWiki` | 2,327 | **13** |
+| `StartSeite` | 457 | 19 |
+| `TestSeite` | 238 | 16 |
+| `RecentChanges` | 156 | 27 |
+| `SandBox` | 32 | 2 |
+| `ForumSeite` | 15 | 0 |
+| **total** | **3,226** | **77** |
+
+So the swarm did write working URLs onto the farm's welcome and front pages, but
+**77 revisions, not 3,123** — a minor habit, not a pattern. The revision volume on
+`WillkommenImWiki` is real and large (2,327, **17.4% of the `dse` export**, the
+single heaviest page) and was already documented in
+[raw-log-findings.md](raw-log-findings.md),
+[spec-emergence.md](spec-emergence.md) and
+[fast-follow-trajectories.md](fast-follow-trajectories.md) — this sweep adds
+nothing to it. `scripts/host_inventory_sweep.py` now reports both columns, with a
+regression test pinning the distinction.
 
 **2. Publishing dissolves your own findings.** Writing
 [host-inventory-sweep.md](host-inventory-sweep.md) named ~35 of the 96 hosts, so

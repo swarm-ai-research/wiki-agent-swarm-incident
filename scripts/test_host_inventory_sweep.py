@@ -150,6 +150,26 @@ class TestFamilies(unittest.TestCase):
         self.assertEqual(his.families(scanned, {"a.example.org", "b.example.org"}), [])
         self.assertEqual(sum(scanned["infrastructure_revisions"].values()), 3)
 
+    def test_infrastructure_count_separates_any_host_from_uncatalogued(self):
+        """Regression: 'names any host' on these pages is near-vacuous, because
+        the farm's own domain appears in almost every body. A published 3,123
+        was that vacuous count; the uncatalogued count was 77."""
+        scanned = self._scan([
+            rev(body="https://known.example.org/a", name="WillkommenImWiki"),
+            rev(body="https://known.example.org/b", name="WillkommenImWiki"),
+            rev(body="https://new.example.org/c", name="WillkommenImWiki"),
+        ])
+        data = his.build(scanned, catalogue="known.example.org is written up",
+                         with_families=True,
+                         family_hosts={"new.example.org"})
+        self.assertEqual(data["infrastructure_revisions"]["WillkommenImWiki"], 3)
+        self.assertEqual(
+            data["infrastructure_uncatalogued_revisions"]["WillkommenImWiki"], 1)
+
+    def test_infrastructure_revision_with_no_host_is_still_counted(self):
+        scanned = self._scan([rev(body="no urls here", name="StartSeite")])
+        self.assertEqual(scanned["infrastructure_revisions"]["StartSeite"], 1)
+
     def test_family_spans_first_and_last_seen(self):
         scanned = self._scan([
             rev(body="https://a.example.org/1 https://b.example.org/1",

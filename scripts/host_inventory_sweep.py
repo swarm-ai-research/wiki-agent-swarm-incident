@@ -114,17 +114,26 @@ def scan(revisions):
                  "labels": collections.Counter(), "times": []})
     cooccurrence = collections.Counter()
     infrastructure_revs = collections.Counter()
+    # Per-revision host sets, so "names an uncatalogued host" can be counted once
+    # the catalogue is known. Counting "names any host" instead is near-vacuous:
+    # wikiservice.at appears in almost every body.
+    infrastructure_host_sets = collections.defaultdict(list)
     encoded = collections.Counter()
     creds = collections.defaultdict(lambda: {"occurrences": 0, "distinct": set()})
     n = 0
     for rev in revisions:
         n += 1
         blob = " ".join(str(rev.get(f) or "") for f in TEXT_FIELDS)
-        if "://" not in blob:
-            continue
         when, name = rev.get("time") or "", rev.get("name") or ""
         # One key for both indexes; a bare name collides across the farm's wikis.
         page_key = rev.get("page_id") or name
+        is_infrastructure = name.lower() in WIKI_INFRASTRUCTURE_PAGES
+        if "://" not in blob:
+            # Still a revision on that page, just one naming no host.
+            if is_infrastructure:
+                infrastructure_revs[name] += 1
+                infrastructure_host_sets[name].append(frozenset())
+            continue
         found = set()
         for host in HOST_RE.findall(blob):
             host = host.lower()
@@ -139,16 +148,16 @@ def scan(revisions):
             if len(pages[host]) < 12:
                 pages[host].add(name)
             page_counts[host][page_key] += 1
-        if found and name.lower() not in WIKI_INFRASTRUCTURE_PAGES:
+        if found and not is_infrastructure:
             entry = page_index[page_key]
             entry["revisions"] += 1
             entry["hosts"].update(found)
             entry["labels"][rev.get("label") or "?"] += 1
             if when:
                 entry["times"].append(when)
-        if name.lower() in WIKI_INFRASTRUCTURE_PAGES:
-            if found:
-                infrastructure_revs[name] += 1
+        if is_infrastructure:
+            infrastructure_revs[name] += 1
+            infrastructure_host_sets[name].append(frozenset(found))
         else:
             for pair in itertools.combinations(sorted(found), 2):
                 cooccurrence[pair] += 1
@@ -162,6 +171,7 @@ def scan(revisions):
         "last_seen": last_seen, "cooccurrence": cooccurrence,
         "page_counts": page_counts, "infrastructure_revisions": infrastructure_revs,
         "page_index": page_index,
+        "infrastructure_host_sets": dict(infrastructure_host_sets),
         "pages": {h: sorted(v) for h, v in pages.items()},
         "encoded_hosts": encoded,
         "credential_params": {k: {"occurrences": v["occurrences"],
@@ -322,6 +332,11 @@ def build(scanned, catalogue=None, with_families=False, family_hosts=None):
             result["family_hosts_pinned"] = family_hosts is not None
             result["infrastructure_revisions"] = dict(
                 scanned["infrastructure_revisions"].most_common())
+            result["infrastructure_uncatalogued_revisions"] = {
+                page: sum(1 for hosts in sets if hosts & pinned)
+                for page, sets in sorted(
+                    scanned["infrastructure_host_sets"].items(),
+                    key=lambda kv: -len(kv[1]))}
             result["families"] = families(scanned, pinned)
             clustered = {h for f in result["families"] for h in f["hosts"]}
             result["page_anchors"] = page_anchors(scanned, pinned, clustered)
@@ -362,11 +377,12 @@ def report(data):
             if anchor["co_hosts"]:
                 print(f"     alongside {', '.join(anchor['co_hosts'][:5])}")
     if data.get("infrastructure_revisions"):
-        total = sum(data["infrastructure_revisions"].values())
-        print(f"\nrevisions naming an uncatalogued host on the farm's own pages "
-              f"({total}, excluded from co-occurrence)")
+        unc = data.get("infrastructure_uncatalogued_revisions", {})
+        print(f"\nthe farm's own pages (excluded from co-occurrence): "
+              f"{sum(data['infrastructure_revisions'].values())} revisions, "
+              f"{sum(unc.values())} naming an uncatalogued host")
         for page, count in data["infrastructure_revisions"].items():
-            print(f"  {count:>4}  {page}")
+            print(f"  {count:>5} revs  {unc.get(page, 0):>4} uncat.  {page}")
     if data["credential_params"]:
         print("\ncredential-shaped parameters (counted, never printed)")
         for param, info in data["credential_params"].items():
