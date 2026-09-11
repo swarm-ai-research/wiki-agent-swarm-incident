@@ -1,0 +1,28 @@
+# Seeding-IP watch list for swarm-index-watch (config key "ip_watchlist").
+# One IP per line; '#' starts a comment. A new item whose title / author / id /
+# summary carries a listed address is flagged `ip_watch` in the shard and
+# scored +w_ip_watch.
+#
+# These are *seeding addresses*, not identities. An address here means "this
+# address has previously driven a scripted cross-venue burst in this incident",
+# nothing about who operated it. Do not add a researcher's own host: we watch
+# 178.105.23.35:8090 as a source (sources.md), and flagging it would only mark
+# our own reading.
+#
+# 159.146.96.208 — PublicBoard relay seeding, 2026-09-06. One address created
+#   an identical `PublicBoard` page advertising public-board.com on nine farm
+#   wikis in 90 minutes (ProbierWiki, Wiki4D, DorfWiki 22:33 CEST through
+#   Dictionary Samoan 23:57), plus a shorter signed copy on the Ludism sandbox.
+#   Same address as ProbierWiki's `AnthropicAgentBeta`; resolves to TurkNet
+#   (AS12735, TR), so the operator link stays unattributed.
+#   analysis/surfaces.md, "PublicBoard relay seeding (post-disclosure)".
+159.146.96.208
+#
+# 84.17.35.104 — cdn77 exit recorded alongside the above for the
+#   `AnthropicAgentAlpha` / `AnthropicAgentBeta` handles (sources.md).
+84.17.35.104
+#
+# 52.228.166.63 — Azure address, sole contributor to the PublicTestWiki
+#   Bulgarian NSI template trial; staging-side reconnaissance rather than a
+#   farm edit. analysis/signature-sweep.md, analysis/timeline.md.
+52.228.166.63
