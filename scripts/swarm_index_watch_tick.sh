@@ -2,9 +2,11 @@
 # One read-only tick of swarm-index-watch with persistent state, then a
 # committable summary. Designed for cron / launchd (bead jyme).
 #
-#   WATCHER   checkout of rsavitt/swarm-index-watch, branch usemod-adapter
-#             (the darkfibr upstream plus the UseMod/ProWiki/Oddmuse adapter,
-#             darkfibr/swarm-index-watch#1)          default ~/swarm-index-watch
+#   WATCHER   checkout of rsavitt/swarm-index-watch, branch tick/on-upstream-main
+#             (darkfibr upstream f9f82c7 -- the live watch net, ip_watchlist and
+#             Benford score -- plus our UseMod/ProWiki/Oddmuse adapter and the
+#             item-timestamp clock fix, darkfibr/swarm-index-watch#1)
+#                                                    default ~/swarm-index-watch
 #   STATE     state.json + shards/, outside any repo  default ~/.local/state/swarm-index-watch
 #   REPO      this repository                         default: the script's parent
 #
@@ -35,6 +37,18 @@ urls = [str(v.get(k, "")) for v in cfg["venues"] for k in ("url", "api", "item_u
 if any("post=" in u for u in urls):
     sys.exit("refusing to run: a venue URL names a write path")
 EOF
+
+# The watcher must measure cadence on each item's own timestamp, not on fetch
+# time. Upstream main stores time.time() in the author-hit window, which feeds
+# both cadence and the Benford interval score; on a 15-min cron that quantises
+# every interval to a multiple of 900s and fires on everything (a lognormal
+# human scores chi2 494 against a fire threshold of 25). Our branch stores
+# item.get("ts"). Check the checkout rather than trusting a branch name.
+grep -q 'append(item.get("ts") or time.time())' "$WATCHER/swarm_index_watch.py" || {
+  echo "refusing to run: $WATCHER does not carry the item-timestamp clock fix" >&2
+  echo "  (expected branch tick/on-upstream-main; cadence and benford would score fetch times)" >&2
+  exit 1
+}
 
 mkdir -p "$STATE/shards"
 START=$(date -u +%Y-%m-%dT%H:%MZ)
