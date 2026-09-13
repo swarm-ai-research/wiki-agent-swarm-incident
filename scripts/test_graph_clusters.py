@@ -6,6 +6,8 @@ untouched, a re-run is idempotent, and cluster names carrying backslashes do
 not get interpreted as regex replacement templates.
 """
 import json
+import os
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -178,6 +180,34 @@ class MainTests(unittest.TestCase):
             self.assertEqual(list(summary), ["atlas"])
             self.assertEqual(summary["atlas"]["components"], [10])
             self.assertTrue(summary["atlas"]["clusters"])
+
+    def test_output_is_identical_across_hash_seeds(self):
+        # networkx returns sets of string ids, and set order follows
+        # PYTHONHASHSEED. Two in-process runs share one seed, so only separate
+        # processes with different seeds catch an unkeyed sort. The fixture is
+        # all ties: equal-size cliques, equal degrees, equal type counts.
+        graph = {"nodes": [], "links": []}
+        for prefix in "abcd":
+            block = clique(8, prefix=prefix)
+            for k, node in enumerate(block["nodes"]):
+                node["type"] = ("wikipage", "shortener", "paste", "endpoint")[k % 4]
+            graph["nodes"] += block["nodes"]
+            graph["links"] += block["links"]
+        graph["links"] += [{"source": "a0", "target": p + "0"} for p in "bcd"]
+        with tempfile.TemporaryDirectory() as tmp:
+            outputs = set()
+            for seed in ("1", "2", "3", "4", "5", "6"):
+                target = Path(tmp) / f"graph{seed}.html"
+                target.write_text(page(graph))
+                subprocess.run(
+                    [sys.executable, "-c",
+                     "import sys; from pathlib import Path; sys.path.insert(0, sys.argv[1]);"
+                     "import graph_clusters; graph_clusters.main(Path(sys.argv[2]))",
+                     str(SCRIPTS), str(target)],
+                    check=True, capture_output=True, env=dict(os.environ, PYTHONHASHSEED=seed),
+                )
+                outputs.add(target.read_text())
+            self.assertEqual(len(outputs), 1)
 
 
 if __name__ == "__main__":
