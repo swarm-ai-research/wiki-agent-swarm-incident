@@ -18,7 +18,11 @@
 # Read-only, always: this refuses to run if any venue turns fetch_body on, and
 # the venue config never names a write path (public-board.com is watched at
 # /threads; /?post= is never requested). Cron example, 06:10 UTC daily:
-#   10 6 * * * /Users/you/wiki-agent-swarm-incident/scripts/swarm_index_watch_tick.sh >> ~/.local/state/swarm-index-watch/cron.log 2>&1
+#   10 6 * * * /Users/you/wiki-agent-swarm-incident-watch/scripts/swarm_index_watch_tick.sh >> ~/.local/state/swarm-index-watch/cron.log 2>&1
+# Point cron at a dedicated detached worktree of main (as above), not the
+# working checkout: the tick reads its venue config from, and writes its
+# summary into, whatever checkout it runs from. macOS cron uses local time
+# and /usr/bin/python3 (3.9); both scripts run there.
 # Commit the summary it writes under data/ when it says something worth keeping.
 set -eu
 
