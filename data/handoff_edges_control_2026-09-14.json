@@ -1,0 +1,112 @@
+{
+ "inputs": {
+  "refdesk": {
+   "pages": [
+    "Wikipedia:Reference desk/Computing",
+    "Wikipedia:Reference desk/Science",
+    "Wikipedia:Reference desk/Mathematics",
+    "Wikipedia:Reference desk/Humanities",
+    "Wikipedia:Reference desk/Language",
+    "Wikipedia:Reference desk/Entertainment",
+    "Wikipedia:Reference desk/Miscellaneous"
+   ],
+   "revision_list_sha256": "51e3c2dbb76d83101bb528a2e6a6b43e5e1eed4005c92550b1bb807f49fa4bf5",
+   "revisions": 5155,
+   "skipped": {
+    "anonymous_or_temporary": 693,
+    "bot": 931
+   },
+   "source": "https://en.wikipedia.org/w/api.php (read-only)",
+   "window": [
+    "2026-06-01T00:00:00Z",
+    "2026-08-31T23:59:59Z"
+   ],
+   "writer": "named non-bot account"
+  },
+  "swarm": {
+   "export_revisions_sha256": "de241d012cc620bfaa0f44f3f0205d7c778f16d7ed816edbf2230bc6fd93b2e2",
+   "source": "https://github.com/intentionallydense/fast-follow-question-trajectories",
+   "writer": "supported reconstruction run"
+  }
+ },
+ "results": {
+  "generic": {
+   "refdesk": {
+    "distinct_tokens": 999,
+    "edges": 7,
+    "edges_per_1000_messages": 1.98,
+    "exposed_share_of_recurrences": 0.5,
+    "messages": 3531,
+    "messages_with_tokens": 545,
+    "recurrences": 14,
+    "target_writer_share": 0.017,
+    "token_kinds": {
+     "long_number": 4,
+     "url": 3
+    },
+    "unexposed_recurrences": 7,
+    "writer_pairs": 6,
+    "writers": 239
+   },
+   "swarm": {
+    "distinct_tokens": 248,
+    "edges": 64,
+    "edges_per_1000_messages": 32.41,
+    "exposed_share_of_recurrences": 0.512,
+    "messages": 1975,
+    "messages_with_tokens": 454,
+    "recurrences": 125,
+    "target_writer_share": 0.117,
+    "token_kinds": {
+     "long_number": 63,
+     "url": 1
+    },
+    "unexposed_recurrences": 61,
+    "writer_pairs": 39,
+    "writers": 298
+   }
+  },
+  "v1": {
+   "refdesk": {
+    "distinct_tokens": 1,
+    "edges": 0,
+    "edges_per_1000_messages": 0.0,
+    "exposed_share_of_recurrences": null,
+    "messages": 3531,
+    "messages_with_tokens": 1,
+    "recurrences": 0,
+    "target_writer_share": 0.0,
+    "token_kinds": {},
+    "unexposed_recurrences": 0,
+    "writer_pairs": 0,
+    "writers": 239
+   },
+   "swarm": {
+    "distinct_tokens": 2540,
+    "edges": 115,
+    "edges_per_1000_messages": 58.23,
+    "exposed_share_of_recurrences": 0.513,
+    "messages": 1975,
+    "messages_with_tokens": 1717,
+    "recurrences": 224,
+    "target_writer_share": 0.242,
+    "token_kinds": {
+     "clock": 111,
+     "counter_ns": 4
+    },
+    "unexposed_recurrences": 109,
+    "writer_pairs": 92,
+    "writers": 298
+   }
+  }
+ },
+ "rules": {
+  "edge_rules": "scripts/handoff_edges.py find_edges, unchanged",
+  "max_writers_per_token": 5,
+  "token_sets": {
+   "generic": "URL, number with five or more digits",
+   "v1": "clock H:MM:SS, counterapi namespace"
+  }
+ },
+ "schema": "handoff_edges_control_v1"
+}
