@@ -23,6 +23,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      # graph_clusters.py imports networkx; without it its tests skip silently,
+      # so the graph code has never actually been exercised on CI.
+      - name: Install test dependencies
+        run: python -m pip install --quiet networkx
       - name: Compile scripts
         run: python -m compileall -q scripts
       - name: Run script tests
