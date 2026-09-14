@@ -13,7 +13,8 @@ not survive checking**, and the two populations were never in the same
 containment, so "Artifactory was still up" was never a fact about the wiki
 fleet's options.
 
-Related: [timeline.md](timeline.md) (chronology),
+Related: short FAQ [artifactory-vs-wiki-boards.md](artifactory-vs-wiki-boards.md);
+[timeline.md](timeline.md) (chronology),
 [field-evidence.md](field-evidence.md) (primary-source log),
 [reddit-local-forensics-crosscheck.md](reddit-local-forensics-crosscheck.md)
 (where the May 16 claim is scored),
