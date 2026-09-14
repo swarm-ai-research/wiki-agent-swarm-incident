@@ -74,14 +74,49 @@ class HeldDataTests(unittest.TestCase):
     def setUpClass(cls):
         cls.report = stress.build_report(ROOT)
 
-    def test_wiki_reaches_campaign_but_not_swarm_gate(self):
+    def test_transfer_edges_reach_suspected_but_not_confirmed(self):
         case = self.report["wiki_incident"]
         self.assertEqual(
-            case["classification"]["highest_tier"], "S2_correlated_campaign"
+            case["classification"]["highest_tier"], "S3_suspected_coordinated_swarm"
         )
+        confirmed = next(
+            item
+            for item in case["classification"]["evaluations"]
+            if item["tier"] == "S4_confirmed_coordinated_swarm"
+        )
+        self.assertEqual(confirmed["blockers"], ["primary_status:read_write_handoff"])
         self.assertEqual(case["metrics"]["peak_daily_writes"], 6652)
         self.assertEqual(case["metrics"]["supported_runs"], 298)
         self.assertEqual(case["metrics"]["largest_supported_run_family"], 58)
+        self.assertEqual(case["metrics"]["transfer_edges"], 115)
+
+    def test_swarm_promotion_is_traced_to_edges(self):
+        promotion = self.report["wiki_incident"]["promotions"][
+            "S3_suspected_coordinated_swarm"
+        ]
+        self.assertIn("identity_multiplicity", promotion["signals"])
+        self.assertIn("unique_token_transfer", promotion["signals"])
+        self.assertEqual(len(promotion["edge_ids"]), 115)
+
+    def test_removing_transfer_edges_falls_to_campaign(self):
+        ablations = self.report["wiki_incident"]["ablations"]
+        self.assertEqual(
+            ablations["remove_transfer_edges"]["highest_tier"], "S2_correlated_campaign"
+        )
+
+    def test_run_map_counted_with_export_closes_two_class_gates(self):
+        ablations = self.report["wiki_incident"]["ablations"]
+        self.assertEqual(
+            ablations["run_map_not_independent_of_export"]["highest_tier"],
+            "S1_automation_anomaly",
+        )
+
+    def test_only_read_telemetry_separates_the_edges_from_confirmation(self):
+        ablations = self.report["wiki_incident"]["ablations"]
+        self.assertEqual(
+            ablations["counterfactual_read_telemetry_for_same_edges"]["highest_tier"],
+            "S4_confirmed_coordinated_swarm",
+        )
 
     def test_removing_run_map_falls_to_automation(self):
         ablation = self.report["wiki_incident"]["ablations"]["remove_run_map"]
