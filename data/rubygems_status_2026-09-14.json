@@ -1,0 +1,4084 @@
+{
+ "captured": "2026-09-14",
+ "source": "https://rubygems.org/gems/<name> HTML, 1.2 s spacing, unauthenticated GET",
+ "method": "status 'removed_recent' = page text 'removed by its owner ... reserved this gem name for N more days'; removal date estimated as capture date minus (100 - N) days, +/-1 day, using the 100-day yank reservation (cross-checked: Wayback 2026-09-12T01:35Z capture of mapanchorcf202704 reads 100 days). 'not_hosted' = 'This gem is not currently hosted on RubyGems.org' (older removal; no date on page). The page label says 'by its owner' for any yank, so it does not distinguish owner cleanup from registry action. handle = first 'Owners' handle, or 'Pushed by' on removed pages; multi-owner gems record only the first.",
+ "name_sets": {
+  "oai_name": "rubyhack.ai carousel: 233 package names containing oai",
+  "oai_author": "rubyhack.ai carousel: 15 packages with author oai",
+  "report_linked": "every gem linked from rubyhack.ai (diffend.io or rubygems.org)",
+  "blackfish_pairing": "darkfibr/the-second-swarm 01_june18_rubygems/pairing_30s.csv (83 names)",
+  "second_publisher": "analysis/surfaces.md second-publisher row, subset checked"
+ },
+ "sets": {
+  "oai_name": {
+   "count": 233,
+   "status": {
+    "not_hosted": 233
+   },
+   "estimated_removal_date": {},
+   "distinct_owner_or_pusher_handles": 38,
+   "top_handles": [
+    [
+     "openaixyz65947",
+     108
+    ],
+    [
+     "zzgemeddaadde",
+     36
+    ],
+    [
+     "chatgtprg888",
+     19
+    ],
+    [
+     "tmpsln568a985",
+     15
+    ],
+    [
+     "oaiproxy753595",
+     7
+    ]
+   ]
+  },
+  "oai_author": {
+   "count": 15,
+   "status": {
+    "not_hosted": 15
+   },
+   "estimated_removal_date": {},
+   "distinct_owner_or_pusher_handles": 4,
+   "top_handles": [
+    [
+     "tmpuserlambda",
+     12
+    ],
+    [
+     "southtestd78b3b",
+     1
+    ],
+    [
+     "lamtest801569",
+     1
+    ],
+    [
+     "oaiztvwbitph",
+     1
+    ]
+   ]
+  },
+  "report_linked": {
+   "count": 38,
+   "status": {
+    "removed_recent": 17,
+    "not_hosted": 21
+   },
+   "estimated_removal_date": {
+    "2026-09-11": 16,
+    "2026-09-09": 1
+   },
+   "distinct_owner_or_pusher_handles": 11,
+   "top_handles": [
+    [
+     "ulinkqy8py3mp",
+     16
+    ],
+    [
+     "slw6dd70c3d",
+     6
+    ],
+    [
+     "lamtest801569",
+     4
+    ],
+    [
+     "southhackvdnozdxi",
+     3
+    ],
+    [
+     "tmpsln568a985",
+     2
+    ]
+   ]
+  },
+  "blackfish_pairing": {
+   "count": 83,
+   "status": {
+    "removed_recent": 83
+   },
+   "estimated_removal_date": {
+    "2026-09-11": 83
+   },
+   "distinct_owner_or_pusher_handles": 1,
+   "top_handles": [
+    [
+     "ulinkqy8py3mp",
+     83
+    ]
+   ]
+  },
+  "second_publisher": {
+   "count": 4,
+   "status": {
+    "live": 3,
+    "removed_recent": 1
+   },
+   "estimated_removal_date": {
+    "2026-09-09": 1
+   },
+   "distinct_owner_or_pusher_handles": 4,
+   "top_handles": [
+    [
+     "tfdriftbqgzb8h",
+     1
+    ],
+    [
+     "atlasqa0pmhyagbmf",
+     1
+    ],
+    [
+     "atlasqadfe9fb1629",
+     1
+    ],
+    [
+     "projecttools624286",
+     1
+    ]
+   ]
+  }
+ },
+ "gems": [
+  {
+   "gem": "a----00proxy38998",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "a----00proxy43876",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "a----00proxy83005",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "a----00proxy90278",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "a----00proxy93049",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "a--00cfmapjson726",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "aaaresultfetchx",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "adep236097",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "adep97117",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "agentoaitestabc123",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "amd6002",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdapi208076",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdapi30894",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdapi577106",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdapi811316",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdmore280320",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdmore690849",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdmore730329",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdmore778667",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdmore843916",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar134124",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar152054",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar521314",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar670957",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar775714",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar877792",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar967059",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar973520",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdvar987523",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdwc51950",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "amdwc56692",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "atlas-qa-snapshot-696b16c7",
+   "http": 200,
+   "status": "live",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "atlasqadfe9fb1629",
+   "sets": [
+    "second_publisher"
+   ]
+  },
+  {
+   "gem": "atlas_qa_handoff_20260528230548",
+   "http": 200,
+   "status": "live",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "atlasqa0pmhyagbmf",
+   "sets": [
+    "second_publisher"
+   ]
+  },
+  {
+   "gem": "b----00prx57431",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "b--00cfjson34493",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "c----00prx95921",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "c--00cfjson93650",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855288717",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855296778",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855300091",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855303836",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855306194",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855308016",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855329769",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855382980",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855388228",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855390730",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855393242",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855509941",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855557914",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaifetch177855598147",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaitestbzr1778552654",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaitestfossil1778552663",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaitestgit1778552630",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaitesthg1778552644",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "chatoaitestsvn1778552651",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "chatgtprg888",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "civic-lambda-proxy",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "civic-test-scrape",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "councilfetchfff",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "d----00prx57028",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "d--00cfjson81228",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "e----00prx14002",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "e--00cfjson54623",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "f----00prx54170",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "f--00cfjson48784",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "fooaid503724d",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "g----00prx15127",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "g--00cfjson86936",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "h----00prx31750",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "h--00cfjson93555",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "i----00prx82117",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "i--00cfjson53250",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "injecthack1778550335",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "j--00cfjson56761",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "k--00cfjson76652",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "l----00prx71385",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "l--00cfjson60781",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "lambQ4340",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambQ4341",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambQ4342",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambQ4343",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambQ4344",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambQ4345",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambQ4346",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambbzrproxyoai",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "lambcal434a1",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southtestd78b3b",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambcal434a2",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambethcalcqzewgt",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lambethrcicaqbpf",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "lambfetchx548811",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "lambfetchx550961",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "lambfossilproxyoai",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "lambhgproxy2oai",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "lambhgproxyoai",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "lambprobe4340",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambprobe4341",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambprobe4342",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambprobe4343",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambprobe4344",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpuserlambda",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "lambsvnproxyoai",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "lambyard17",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "m----00prx87585",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "m--00cfproxy47",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "mapanchorcf202704",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "method2088",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "n----00prx53386",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "n---00proxy48",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "n--00cfjson53121",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "o----00prx54063",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "o--00cfjson48147",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "oaibo048288",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibo396866",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibo825590",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibootx8192",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibooty9217",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibootz9218",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibx0092307",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibx1202338",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibx4676369",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaibx7324267",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaicx2721076",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaicx3769699",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaicx3857133",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaicx4433606",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaicx6062340",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaicx8859010",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx0276239",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx1169327",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx1337585",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx1466937",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx1469215",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx3409275",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx3492001",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx3879209",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx4526859",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx6135652",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx6514197",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaidx7402019",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex0014506",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex0549290",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex1182709",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex3222069",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex3900663",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex4149420",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex4736401",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex7410346",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex8413575",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiex9823513",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifetchgemugkejy",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx0927711",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx1757803",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx1955773",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx2280367",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx2401408",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx3608457",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx4260376",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx6387627",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx7129963",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx7303384",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx7943598",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx8306741",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx8755814",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx8889601",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx9269956",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx9667097",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx9677940",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaifx9741380",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx1767798",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx4516770",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx4634836",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx5578224",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx5861576",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx7857181",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx8693871",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaigx9094125",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx0157786",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx0305933",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx5974804",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx7237922",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx7579061",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx7924258",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx7985797",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx8175223",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx8693617",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaihx9923604",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix0231326",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix0360536",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix0379958",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix0600089",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix1059244",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix3669509",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix4070985",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix4587168",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix5537218",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix7006631",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix7194839",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix7984341",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix8443749",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiix9664993",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijanjina",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaixmzqvekahx",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijanla",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaixmzqvekahx",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijbzravdemr",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijbzrevovmk",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijbzrgtxirk",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijbzrqtntsq",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijbzrvidlyq",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijfossilafvimh",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijfossilatdduq",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijfossilgsvaqj",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijfossilunswgx",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijfossilvwcsvc",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijgitdmeevm",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijgitfzlsik",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijgitjtybra",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijgitwelcpe",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijgitzxwjqb",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijhghatpit",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijhgmzryzc",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijhgnnwgqq",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijhguviith",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijhgzfujin",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx0156671",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx0303634",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx1165628",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx1603962",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx1860853",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx3058720",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx5011813",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx6438369",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx7061603",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx7497893",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx7718528",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx7803530",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaijx9538883",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikfossilwlvflh",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lambproxy89374",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx2502114",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx2706764",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx5119809",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx5508394",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx8326270",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx8809714",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaikx8889218",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "openaixyz65947",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailambproxy1",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailamtest1",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailamtest2",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailamtest3",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm1",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm2",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm3",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm4",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm5",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm6",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm7",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm8",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailm9",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailma",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailmb",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailmc",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailmd",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oailme",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipacnfmwfud",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpslne0b1b0",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipaqfeefizk",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaz9ab6id7gv0t",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipbxmwzyrjk",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipbyqhfcyqh",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaz5733971i90z",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipdqpwidosk",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazdvhqr0d96ud",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipdspfshntp",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaizmhnxw6aw3o",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipefrlkaloi",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazz1xfqaptyl4",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipefyjwkzmx",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazourau8b8q6e",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipforvmdtrw",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazcmr2v44lmpw",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipgttatggxy",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaizmhnxw6aw3o",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiphawmupjos",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oai52b0ejf6n22r6m",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipjupjfdrys",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipkesbgrrqn",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazzhv3r6z14zg",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiplmbtestsvn",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipmfgnywddt",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazzl9tzszbq1h",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipmxktcwywo",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipnldvhihwd",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipobdflfoog",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaizmhnxw6aw3o",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipojrqrusxl",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazj0542bwvi65",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipozmgqmeyz",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazhs5yca4z9dh",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaippehsfqcmm",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpslne0b1b0",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipphbsbxqgw",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaz43b9a28mgzy",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipqsobhbexg",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazsj7eo9jtu0j",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiproxytestabc789",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiprpfnweljs",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazbh6rkmzhtyr",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipttacwhdpp",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazps7zhmszoci",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipttxrgucrm",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazmty9mm9miru",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipuetanenak",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaz3r6ze4cb1f6",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipulhsxmtjc",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaz4g3ik73xcd3",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipvtpwpldhz",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiproxy753595",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipwsgyblajm",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazegqq8w70jip",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipwysipnjet",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaztwgf0s3ipyn",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipxvcvhvqii",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazy488ruef68g",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipybzwmezig",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oazuoiyznlrpzi",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaipyvtoeydiu",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaz45b4wydahcz",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaisurveytestzz",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaixmzqvekahx",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitbzrxfredw",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitbzrxmtfoa",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitbzrxqfldb",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitest1778473828",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oai74582580",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitfossilxbnowl",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitfossilxqsswm",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitfossilxxipsj",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitgitxppibu",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitgitxqgxlu",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitgitxrclle",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaithgxgwreb",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaithgxmylrf",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaithgxwnvon",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitsvnxlnrat",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitsvnxlorty",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaitsvnxpamle",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaivcstest1778554896",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaixhgdpvkpij",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "zzgemeddaadde",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "oaiztestxyz123",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oaiztvwbitph",
+   "sets": [
+    "oai_author"
+   ]
+  },
+  {
+   "gem": "p----00prx43574",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "p--00cfjson89644",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "q----00cfproxy33293",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "q----00cfproxy42863",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "q----00cfproxy65680",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "q---00cfshapes17215",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "q--00cfmapjson726",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "r--00cfjson19967",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "s----00prx94667",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "s--00cfjson40527",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "sampledocpayload624286",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 95,
+   "estimated_removal_date": "2026-09-09",
+   "handle": "projecttools624286",
+   "sets": [
+    "report_linked",
+    "second_publisher"
+   ]
+  },
+  {
+   "gem": "slnleaker5",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpzuroqapawwoz",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "southcalx884",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slna9ppj46glp",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "southnews-designfetch-90001",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slna9ppj46glp",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "southnewsprobe1778550995",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "southpxdatapp6pi",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "t----00prx76264",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "t--00cfjson39837",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "testoai4182477",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oai461616327",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "tf_drift_handoff_bundle_20260307t015800z",
+   "http": 200,
+   "status": "live",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tfdriftbqgzb8h",
+   "sets": [
+    "second_publisher"
+   ]
+  },
+  {
+   "gem": "u--00cfjson87697",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "ultimate4834",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "uu4c477z1",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southhackvdnozdxi",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "v--00cfjson90159",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "w--00cfjson92645",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "wandtmpdesign9fe2",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "wandxprobe",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "wctest73410",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "x----00prx71338",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "x---00cfshape17180",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "report_linked",
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "x--00cfmapjson726",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "y----00prx90485",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "y--00cfjson97991",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "yardbreakerxqh1778552850",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "tmpsln568a985",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "yardxabc889",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "lamtest801569",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "z----00prx58090",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "z---00cfshape56928",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "z--00cfjson84800",
+   "http": 200,
+   "status": "removed_recent",
+   "reserved_days_left": 97,
+   "estimated_removal_date": "2026-09-11",
+   "handle": "ulinkqy8py3mp",
+   "sets": [
+    "blackfish_pairing"
+   ]
+  },
+  {
+   "gem": "zz-oai-test12",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "oai461616327",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "zzproxyoaiabc431848",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "oai_name"
+   ]
+  },
+  {
+   "gem": "zzsouthrunner",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "slw6dd70c3d",
+   "sets": [
+    "report_linked"
+   ]
+  },
+  {
+   "gem": "zzwandshostyard",
+   "http": 200,
+   "status": "not_hosted",
+   "reserved_days_left": null,
+   "estimated_removal_date": null,
+   "handle": "southtestd78b3b",
+   "sets": [
+    "report_linked"
+   ]
+  }
+ ]
+}
