@@ -69,13 +69,6 @@
    "fetch_body": false
   },
   {
-   "name": "prowiki-milk",
-   "type": "usemod",
-   "url": "https://www.wikiservice.at/user/milk/wiki.cgi?action=browse&id=RecentChanges&days=30&all=1",
-   "page_base": "https://www.wikiservice.at/user/milk/wiki.cgi?",
-   "fetch_body": false
-  },
-  {
    "name": "prowiki-dict-sm",
    "type": "usemod",
    "url": "https://www.wikiservice.at/dict/sm/wiki.cgi?action=browse&id=RecentChanges&days=30&all=1",
@@ -150,7 +143,8 @@
    "type": "usemod",
    "url": "https://texteditors.org/cgi-bin/wiki.pl?action=rc&days=30&all=1",
    "page_base": "https://texteditors.org/cgi-bin/wiki.pl?",
-   "fetch_body": false
+   "fetch_body": false,
+   "_note": "HTTP 500 site-wide (wiki.pl root too) on 2026-09-14, the first failure after five good ticks; treated as an outage, kept."
   },
   {
    "name": "oddmuse-ludism-sandbox",
@@ -171,27 +165,6 @@
    "type": "usemod",
    "url": "https://www.ludism.org/mentat?action=rc;days=30;all=1",
    "page_base": "https://www.ludism.org/mentat?",
-   "fetch_body": false
-  },
-  {
-   "name": "oddmuse-org",
-   "type": "usemod",
-   "url": "https://oddmuse.org/wiki?action=rc;days=30;all=1",
-   "page_base": "https://oddmuse.org/wiki?",
-   "fetch_body": false
-  },
-  {
-   "name": "oddmuse-communitywiki",
-   "type": "usemod",
-   "url": "https://communitywiki.org/wiki?action=rc;days=30;all=1",
-   "page_base": "https://communitywiki.org/wiki?",
-   "fetch_body": false
-  },
-  {
-   "name": "oddmuse-campaignwiki",
-   "type": "usemod",
-   "url": "https://campaignwiki.org/wiki/Sandbox?action=rc;days=30;all=1",
-   "page_base": "https://campaignwiki.org/wiki/Sandbox?",
    "fetch_body": false
   },
   {
@@ -267,7 +240,7 @@
    "id_regex": "(?m)^([0-9a-f]{8}) \\(",
    "item_url": "https://public-board.com/t/{id}",
    "fetch_body": false,
-   "_note": "Post-disclosure agent notes board seeded onto ten wikis on 2026-09-06 (sources.md). Writes are GET with a date key: never request /?post=. /threads is plain text: one line per thread, id then reply count and last-seen timestamp. Upstream also publishes a /changes JSON feed; not added, one host is polled once per tick."
+   "_note": "Post-disclosure agent notes board seeded onto ten wikis on 2026-09-06 (sources.md). Writes are GET with a date key: never request /?post=. /threads is plain text: one line per thread, id then reply count and last-seen timestamp. Upstream also publishes a /changes JSON feed; not added, one host is polled once per tick. /threads timed out (20s) on the 2026-09-09 and 2026-09-13 ticks and answered on 2026-09-14; intermittent, kept."
   },
   {
    "name": "agentworkpad",
@@ -318,15 +291,42 @@
   {
    "name": "swarmmemo",
    "type": "jsonlist",
-   "url": "https://swarmmemo.com/api/events?limit=20",
+   "url": "https://swarmmemo.com/api/messages?limit=20",
    "pages": 1,
-   "items_key": "events",
+   "items_key": "messages",
    "id_key": "id",
    "title_key": "text",
    "ts_key": "created_at",
    "author_path": "author",
-   "fetch_body": false
+   "fetch_body": false,
+   "_note": "/api/events returned HTTP 410 from 2026-09-13 ('removed in the SwarmMemo 1.0 vocabulary consolidation'; /migration maps it to /api/messages). Same id/text/created_at/author fields under a 'messages' key."
   }
  ],
- "ip_watchlist": "swarm_index_watch_ips.txt"
+ "ip_watchlist": "swarm_index_watch_ips.txt",
+ "_removed": [
+  {
+   "name": "oddmuse-org",
+   "removed": "2026-09-14",
+   "bead": "distributional-agi-safety-nlwm",
+   "reason": "HTTP 402 on every tick since 2026-09-08: the operator serves an 'Are you Human?' bot check (splitbrain botcheck, cookie set by a button) aimed at AI-company scrapers, on every URL including RecentChanges. A deliberate block; not worked around."
+  },
+  {
+   "name": "oddmuse-communitywiki",
+   "removed": "2026-09-14",
+   "bead": "distributional-agi-safety-nlwm",
+   "reason": "Same server as oddmuse-org (213.160.77.191) and a byte-identical HTTP 402 bot-check page (re-checked 2026-09-14). A deliberate block; not worked around."
+  },
+  {
+   "name": "oddmuse-campaignwiki",
+   "removed": "2026-09-14",
+   "bead": "distributional-agi-safety-nlwm",
+   "reason": "Same server as oddmuse-org (213.160.77.191) and a byte-identical HTTP 402 bot-check page (re-checked 2026-09-14). A deliberate block; not worked around."
+  },
+  {
+   "name": "prowiki-milk",
+   "removed": "2026-09-14",
+   "bead": "distributional-agi-safety-nlwm",
+   "reason": "Venue gone: HTTP 404 on every tick since 2026-09-09, for wiki.cgi and the /user/milk/ directory alike, and milk no longer appears in the wikiservice.at /user/ index (2026-09-14: HelmutLeitner/ and fjn/ only). Its last good tick, 2026-09-08, read three agent-shaped rows."
+  }
+ ]
 }
