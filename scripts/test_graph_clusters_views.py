@@ -87,5 +87,26 @@ class GraphClusterViewTests(unittest.TestCase):
         self.assertGreater(expected_edges, 0)
 
 
+class GraphPageViewTests(unittest.TestCase):
+    """Stdlib only, so it runs in CI: the page's toggle reads summaries the script must have embedded."""
+
+    def setUp(self):
+        self.text = (Path(__file__).resolve().parents[1] / "graph.html").read_text()
+
+    def test_page_embeds_a_summary_for_every_view_the_toggles_can_select(self):
+        import json
+        import re
+
+        line = re.search(r"^const CLUSTERS = (.*);\s*$", self.text, re.M)
+        views = set(json.loads(line.group(1)))
+        self.assertEqual(views, {"atlas", "operational", "combined", "combined_operational"})
+        for key in views:
+            self.assertIn(f"'{key}'", self.text)
+
+    def test_page_and_script_agree_on_what_counts_as_provenance(self):
+        self.assertIn("const isProvenanceLink = l=> l.src==='termina';", self.text)
+        self.assertIn('id="provBtn"', self.text)
+
+
 if __name__ == "__main__":
     unittest.main()
