@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-09-08",
+  "generated_on": "2026-09-13",
   "database": "data/termina/incidents.sqlite",
   "scope": {
     "incident": "dsewiki-2026-05",
@@ -19,11 +19,17 @@
     },
     "by_classification": {
       "conflicting": 1,
-      "corroborated": 13,
-      "new": 36,
+      "corroborated": 15,
+      "new": 34,
       "repeated": 30
     },
-    "material": 21
+    "material": 21,
+    "by_disposition": {
+      "out of scope": 2,
+      "reproduced": 16,
+      "resolved disagreement": 1,
+      "standing gap": 2
+    }
   },
   "claims": [
     {
@@ -40,6 +46,7 @@
       "material": true,
       "archive_ref": "analysis/spec-emergence.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "collusion-wiki-report",
         "url": "https://collusion.wiki/",
@@ -85,6 +92,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "collusion-wiki-export",
         "url": "https://collusion.wiki/",
@@ -126,10 +134,11 @@
       "basis": "content_kind over the attached bodies",
       "checked_by": "shellac-reading-pack",
       "notes": "104 ambiguous minutes and 192 pack entries with no rc row were left unattached",
-      "classification": "new",
+      "classification": "corroborated",
       "material": true,
-      "archive_ref": "",
-      "audit_note": "The archive has not reproduced the 870-body content classification.",
+      "archive_ref": "analysis/termina-export-reproductions.md",
+      "audit_note": "Direction reproduced on the export bodies: coordination vocabulary appears in 0 of 1,013 probier and 0 of 169 fractal revisions, against 3,899 of 13,310 on DSEWiki. The 870-body manifest and its category cells are still unreproduced.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "shellac-reading-pack",
         "url": null,
@@ -175,6 +184,7 @@
       "material": true,
       "archive_ref": "analysis/sub-swarms.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "collusion-wiki-export",
         "url": "https://collusion.wiki/",
@@ -220,6 +230,7 @@
       "material": true,
       "archive_ref": "analysis/sub-swarms.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "collusion-wiki-export",
         "url": "https://collusion.wiki/",
@@ -265,6 +276,7 @@
       "material": true,
       "archive_ref": "analysis/sub-swarms.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "collusion-wiki-export",
         "url": "https://collusion.wiki/",
@@ -310,6 +322,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "collusion-wiki-report",
         "url": "https://collusion.wiki/",
@@ -341,6 +354,7 @@
       "material": true,
       "archive_ref": "analysis/termina-kmad-sweep-audit.md",
       "audit_note": "The immutable KMAD repository repeats the 6,271-candidate result in three narrative files but publishes no target list, response ledger, sweep code, retry log, or machine-readable result.",
+      "disposition": "standing gap",
       "made_by_evidence": {
         "id": "kmad-forensics",
         "url": "https://github.com/kmad/agent-swarm-forensics",
@@ -372,6 +386,7 @@
       "material": true,
       "archive_ref": "analysis/termina-network-mixture.md",
       "audit_note": "The arithmetic is reproduced from the pinned Termina rows, not independent evidence. The audit corrects '131 serve both' to 137 and accounts for 49 rmn.re rows omitted from the prose breakdown.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "rmn-re-listing-2026-09-06",
         "url": "https://rmn.re/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
@@ -403,6 +418,7 @@
       "material": true,
       "archive_ref": "sources.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "openai-wiki-x",
         "url": "https://x.com/OpenAI/status/2096133504417616165",
@@ -448,6 +464,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "prowiki-search-controls",
         "url": "https://www.netzwerkgegengewalt.org/wiki.cgi?action=rc&all=1&days=180",
@@ -493,6 +510,7 @@
       "material": true,
       "archive_ref": "analysis/replay-findings.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "collusion-wiki-export",
         "url": "https://collusion.wiki/",
@@ -538,6 +556,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "collusion-wiki-export",
         "url": "https://collusion.wiki/",
@@ -583,6 +602,7 @@
       "material": true,
       "archive_ref": "analysis/field-evidence.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "probier-live-gzip",
         "url": "https://www.wikiservice.at/probier/wiki.cgi?action=edit&id=OAIIPEDSMay16Map0",
@@ -627,7 +647,8 @@
       "classification": "conflicting",
       "material": true,
       "archive_ref": "analysis/field-evidence.md",
-      "audit_note": "The claim is already marked contradicted by Termina. The archive independently decodes the four-page payload to a 968-row IPEDS table.",
+      "audit_note": "Resolved: Termina marks the claim contradicted, and this archive independently decodes the four-page payload to a 968-row IPEDS table. Both sources reject it, so nothing is left in dispute. The class stays conflicting because the claim itself conflicts with held evidence.",
+      "disposition": "resolved disagreement",
       "made_by_evidence": {
         "id": "kmad-forensics",
         "url": "https://github.com/kmad/agent-swarm-forensics",
@@ -673,6 +694,7 @@
       "material": true,
       "archive_ref": "analysis/field-evidence.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "probier-live-gzip",
         "url": "https://www.wikiservice.at/probier/wiki.cgi?action=edit&id=OAIIPEDSMay16Map0",
@@ -718,6 +740,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -749,6 +772,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -780,6 +804,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -811,6 +836,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -842,6 +868,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -873,6 +900,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -904,6 +932,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -935,6 +964,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -966,6 +996,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -997,6 +1028,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1028,6 +1060,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "dse-rc-live-2026-09-05",
         "url": "https://www.wikiservice.at/dse/wiki.cgi?action=rc&all=1&days=180",
@@ -1059,6 +1092,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1090,6 +1124,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -1121,6 +1156,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1152,6 +1188,7 @@
       "material": true,
       "archive_ref": "analysis/timeline.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "dse-rc-live-2026-09-05",
         "url": "https://www.wikiservice.at/dse/wiki.cgi?action=rc&all=1&days=180",
@@ -1183,6 +1220,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -1214,6 +1252,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -1245,6 +1284,7 @@
       "material": true,
       "archive_ref": "analysis/field-evidence.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "colony-tagblock",
         "url": "https://www.thecolony.uk/post/2418618f-0f2d-4cb1-9e1b-0c3eca0dd3e2",
@@ -1290,6 +1330,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1321,6 +1362,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -1352,6 +1394,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1383,6 +1426,7 @@
       "material": true,
       "archive_ref": "analysis/timeline.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "fractal-rc-live-2026-09-05",
         "url": "https://www.wikiservice.at/fractal/wiki.cgi?action=rc&days=180&all=1&showedit=1",
@@ -1414,6 +1458,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -1445,6 +1490,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1476,6 +1522,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -1507,6 +1554,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1538,6 +1586,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1569,6 +1618,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1600,6 +1650,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -1631,6 +1682,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1662,6 +1714,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1693,6 +1746,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -1724,6 +1778,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1755,6 +1810,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1786,6 +1842,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -1817,6 +1874,7 @@
       "material": true,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence. Its verdict changed from the preceding snapshot.",
+      "disposition": "out of scope",
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -1848,6 +1906,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "shellac-reading-pack",
         "url": null,
@@ -1879,6 +1938,7 @@
       "material": true,
       "archive_ref": "analysis/wayback-cdx-sweep.md",
       "audit_note": "The archive independently records the same underlying artifact or observation.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "probier-live-gzip",
         "url": "https://www.wikiservice.at/probier/wiki.cgi?action=edit&id=OAIIPEDSMay16Map0",
@@ -1910,6 +1970,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "reddit-forensics",
         "url": "https://www.reddit.com/r/OpenAI/comments/1w7a0ln/",
@@ -1941,6 +2002,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -1972,6 +2034,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -2003,6 +2066,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -2034,6 +2098,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -2065,6 +2130,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -2096,6 +2162,7 @@
       "material": true,
       "archive_ref": "analysis/rmn-re-verify.md",
       "audit_note": "Partially corroborated: the archive independently reproduces 484 June rows and the host pattern, but uses different snapshot/counting cuts for other figures.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "rmn-re-listing-2026-09-06",
         "url": "https://rmn.re/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
@@ -2123,10 +2190,11 @@
       "basis": "rmn.re listing ips against the db's ip16 actors",
       "checked_by": null,
       "notes": "per-population split not possible yet: the db has no handle-to-ip links. in rmn.re's own history the human years run 0.46 distinct ips per link, june 2026 runs 0.97",
-      "classification": "new",
+      "classification": "corroborated",
       "material": true,
-      "archive_ref": "",
-      "audit_note": "The archive confirms an Azure-heavy shortener listing but has not reproduced the exact join to wiki /16s.",
+      "archive_ref": "analysis/termina-export-reproductions.md",
+      "audit_note": "Reproduced exactly (540 links, 123 /16s, 106 shared, 494 links) with the wiki side taken from the export's editor /16s rather than Termina's actors. The 12 links created before May share none. /16 overlap is not a common operator.",
+      "disposition": "reproduced",
       "made_by_evidence": {
         "id": "rmn-re-listing-2026-09-06",
         "url": "https://rmn.re/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
@@ -2158,6 +2226,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -2189,6 +2258,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -2220,6 +2290,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -2251,6 +2322,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -2282,6 +2354,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -2313,6 +2386,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -2344,6 +2418,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Already represented in the archive or derived from the same evidence lineage; not independent corroboration.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "cross-site-network",
         "url": null,
@@ -2375,6 +2450,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -2406,6 +2482,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -2437,6 +2514,7 @@
       "material": true,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence. Its verdict changed from the preceding snapshot.",
+      "disposition": "out of scope",
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -2468,6 +2546,7 @@
       "material": true,
       "archive_ref": "analysis/termina-vanderbilt-click-audit.md",
       "audit_note": "The 114 + 7 = 121 prose partition is internally consistent, but both named upstream captures are absent locally, so the eight per-link deltas remain unverified.",
+      "disposition": "standing gap",
       "made_by_evidence": {
         "id": "vanderbilt-stats-comparison-2026-09-06",
         "url": null,
@@ -2513,6 +2592,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -2544,6 +2624,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -2575,6 +2656,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -2606,6 +2688,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,
@@ -2637,6 +2720,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-06",
         "url": null,
@@ -2668,6 +2752,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-07",
         "url": null,
@@ -2699,6 +2784,7 @@
       "material": false,
       "archive_ref": "sources.md",
       "audit_note": "Later daily scanner snapshot; not independent evidence.",
+      "disposition": null,
       "made_by_evidence": {
         "id": "scan-2026-09-08",
         "url": null,

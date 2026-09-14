@@ -1,0 +1,162 @@
+{
+  "database": "data/termina/incidents.sqlite",
+  "export_revisions": 14591,
+  "export_editor_prefixes": 190,
+  "rmn_re_shares_wiki_networks": {
+    "window": {
+      "links": 540,
+      "links_without_ipv4": 1,
+      "prefixes": 123,
+      "ipv4_prefixes": 122,
+      "shared_prefixes": 106,
+      "links_on_shared_prefixes": 494,
+      "top_prefixes": [
+        {
+          "prefix": "20.69",
+          "links": 23,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "57.154",
+          "links": 18,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "20.12",
+          "links": 18,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "34.92",
+          "links": 17,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "20.171",
+          "links": 16,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "20.29",
+          "links": 15,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "20.9",
+          "links": 14,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "20.225",
+          "links": 13,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "20.165",
+          "links": 13,
+          "edits_wikis": true
+        },
+        {
+          "prefix": "20.230",
+          "links": 12,
+          "edits_wikis": true
+        }
+      ]
+    },
+    "before": {
+      "links": 12,
+      "links_without_ipv4": 0,
+      "prefixes": 7,
+      "ipv4_prefixes": 7,
+      "shared_prefixes": 0,
+      "links_on_shared_prefixes": 0,
+      "top_prefixes": [
+        {
+          "prefix": "2.39",
+          "links": 6,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "103.38",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "193.29",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "125.164",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "93.66",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "196.119",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "31.171",
+          "links": 1,
+          "edits_wikis": false
+        }
+      ]
+    },
+    "after": {
+      "links": 3,
+      "links_without_ipv4": 0,
+      "prefixes": 3,
+      "ipv4_prefixes": 3,
+      "shared_prefixes": 0,
+      "links_on_shared_prefixes": 0,
+      "top_prefixes": [
+        {
+          "prefix": "187.13",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "159.146",
+          "links": 1,
+          "edits_wikis": false
+        },
+        {
+          "prefix": "52.119",
+          "links": 1,
+          "edits_wikis": false
+        }
+      ]
+    }
+  },
+  "retrieval_venues_never_talk": {
+    "pattern": "(?i)task.?clock|deadline|countdown|timer|clock\\.wait|\\bdue\\b|answer(ed)?\\s*[:=]|final answer|claim(ed)?\\b|taking\\b|I will\\b|we will\\b|who is\\b|anyone\\b|other agents|fellow",
+    "per_wiki": {
+      "dorfwiki": {
+        "revisions": 6,
+        "revisions_with_vocabulary": 0,
+        "pages_with_vocabulary": 0
+      },
+      "dse": {
+        "revisions": 13310,
+        "revisions_with_vocabulary": 3899,
+        "pages_with_vocabulary": 720
+      },
+      "fractal": {
+        "revisions": 169,
+        "revisions_with_vocabulary": 0,
+        "pages_with_vocabulary": 0
+      },
+      "probier": {
+        "revisions": 1013,
+        "revisions_with_vocabulary": 0,
+        "pages_with_vocabulary": 0
+      }
+    }
+  }
+}
