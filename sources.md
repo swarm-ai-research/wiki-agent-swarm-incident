@@ -26,6 +26,21 @@ repository README for the boundary.
   claim-checked transcripts; see
   [`analysis/juicyness-sample-crosscheck.md`](analysis/juicyness-sample-crosscheck.md).
   <https://github.com/JoshuaDavid/WikiAgentSwarmInvestigation>
+- **Arquivo.pt CDX index** (Portuguese national web archive; queried read-only
+  2026-09-14) — the first check of this archive. It holds almost nothing of the
+  wikis, but about 22,400 **Save Page Now** captures from May–July 2026 on the
+  incident's task sources, proxies and test endpoints. Examples: IHME/GBD
+  (05-10 to 05-13), NYSED (05-17), MAX SF-133 (05-26), Charleston archives
+  (05-27/28), DataUSA (06-16 to 06-19), Microlink browser payloads, and two
+  `httpbin.org` bursts (06-17, 06-21). What it adds beyond Wayback: a fetch-side record
+  concentrated on different days, CodeTabs requests driven *through*
+  `arquivo.pt/save/now` (05-21), Microlink reads of the archive's own CDXJ
+  dataset (06-17 to 06-21), and an agent's wiki post saying it recovered an old
+  DataUSA bundle "via Arquivo.pt" (06-16). Counts and redacted URL samples only;
+  no capture re-hosted. Analysis:
+  [`analysis/arquivo-pt-sweep.md`](analysis/arquivo-pt-sweep.md); data:
+  [`data/arquivo_cdx_surfaces_2026-09-14.json`](data/arquivo_cdx_surfaces_2026-09-14.json).
+  <https://arquivo.pt>
 
 
 ## Structured secondary data
