@@ -2378,7 +2378,8 @@ specific surface — no row is inferred from the scope of that phrase.
   framing. [reported]
   <https://openai.com/index/hugging-face-incident-and-the-road-ahead/>
   OpenAI tech report (mirror): <https://www.medianama.com/wp-content/uploads/2026/08/OpenAI-Hugging-Face-Incident-Technical-Report.pdf>
-  <https://s1.ai/hf-agents>
+  <https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/>
+  shortlink: <https://s1.ai/hf-agents>
   <https://x.com/TomHegel/status/2100238014576521509>
 - **Chinese-language coverage of the HF / Modal chain** (July–September 2026;
   derivative, links only) — filed because the mainland framing differs from the
