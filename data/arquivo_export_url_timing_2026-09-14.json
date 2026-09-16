@@ -1,0 +1,3197 @@
+{
+ "inputs": {
+  "arquivo": "data/arquivo_cdx_surfaces_2026-09-14.json (same raw CDX rows)",
+  "export": "fast-follow-question-trajectories full-wiki-logs.zip#revisions.jsonl",
+  "export_revisions": 14591
+ },
+ "matches": [
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260510134556",
+    "url": "https://httpbin.org/json"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentZeroHelper",
+    "rev_id": "dse~CamelRouteTestNext@2",
+    "utc": "2026-06-18T17:37:20Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/json",
+   "wiki_minus_capture_seconds": 3383484
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260510134558",
+    "url": "https://httpbin.org/json"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentZeroHelper",
+    "rev_id": "dse~CamelRouteTestNext@2",
+    "utc": "2026-06-18T17:37:20Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/json",
+   "wiki_minus_capture_seconds": 3383482
+  },
+  {
+   "capture": {
+    "host": "r.jina.ai",
+    "ts": "20260511171418",
+    "url": "https://r.jina.ai/http://example.com"
+   },
+   "first_wiki_mention": {
+    "editor": "WikiAgentMN",
+    "rev_id": "dse~AgentClarkEcoProxyTests@1",
+    "utc": "2026-06-01T12:59:39Z"
+   },
+   "generic": true,
+   "url": "r.jina.ai/http://example.com",
+   "wiki_minus_capture_seconds": 1799121
+  },
+  {
+   "capture": {
+    "host": "r.jina.ai",
+    "ts": "20260511172101",
+    "url": "https://r.jina.ai/http://example.com"
+   },
+   "first_wiki_mention": {
+    "editor": "WikiAgentMN",
+    "rev_id": "dse~AgentClarkEcoProxyTests@1",
+    "utc": "2026-06-01T12:59:39Z"
+   },
+   "generic": true,
+   "url": "r.jina.ai/http://example.com",
+   "wiki_minus_capture_seconds": 1798718
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260511193652",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 3278774
+  },
+  {
+   "capture": {
+    "host": "corsproxy.io",
+    "ts": "20260511193705",
+    "url": "https://corsproxy.io/?url=https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 3278761
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260512133143",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 3214283
+  },
+  {
+   "capture": {
+    "host": "api.allorigins.win",
+    "ts": "20260513011850",
+    "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fexample.org"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentSECCountyLinker99172",
+    "rev_id": "dse~AgentResultsMassFinalJune19X@4",
+    "utc": "2026-06-18T17:50:53Z"
+   },
+   "generic": true,
+   "url": "api.allorigins.win/raw?url=https%3a%2f%2fexample.org",
+   "wiki_minus_capture_seconds": 3169923
+  },
+  {
+   "capture": {
+    "host": "api.allorigins.win",
+    "ts": "20260513011850",
+    "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fexample.org"
+   },
+   "first_wiki_mention": {
+    "editor": "TrialAgentZZ",
+    "rev_id": "dse~AgentOurLinkTryZZ@1",
+    "utc": "2026-05-26T16:32:07Z"
+   },
+   "generic": true,
+   "url": "example.org",
+   "wiki_minus_capture_seconds": 1177997
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260513042728",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 3160538
+  },
+  {
+   "capture": {
+    "host": "r.jina.ai",
+    "ts": "20260513202217",
+    "url": "https://r.jina.ai/"
+   },
+   "first_wiki_mention": {
+    "editor": "MapHelper",
+    "rev_id": "dse~AgentPrettyCountyBridgeNewABC@5",
+    "utc": "2026-06-18T18:23:37Z"
+   },
+   "generic": true,
+   "url": "r.jina.ai",
+   "wiki_minus_capture_seconds": 3103280
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260514144422",
+    "url": "https://httpbin.org/base64/SGVsbG8="
+   },
+   "first_wiki_mention": {
+    "editor": "LinkHelper",
+    "rev_id": "dse~AgentMySecLinksZZZ2@3",
+    "utc": "2026-06-18T17:32:31Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/base64/sgvsbg8=",
+   "wiki_minus_capture_seconds": 3034089
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260514144424",
+    "url": "https://httpbin.org/base64/SGVsbG8="
+   },
+   "first_wiki_mention": {
+    "editor": "LinkHelper",
+    "rev_id": "dse~AgentMySecLinksZZZ2@3",
+    "utc": "2026-06-18T17:32:31Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/base64/sgvsbg8=",
+   "wiki_minus_capture_seconds": 3034087
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260516020325",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2909981
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260516170212",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2856054
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260516190111",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2848915
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260517092217",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2797249
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260518075752",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2715914
+  },
+  {
+   "capture": {
+    "host": "api.codetabs.com",
+    "ts": "20260521183343",
+    "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": 402687
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260521183345",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": 402685
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260525212457",
+    "url": "https://httpbin.org/json"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentZeroHelper",
+    "rev_id": "dse~CamelRouteTestNext@2",
+    "utc": "2026-06-18T17:37:20Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/json",
+   "wiki_minus_capture_seconds": 2059943
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260525214945",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2061201
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260525215048",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2061138
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260525215050",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2061136
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260526010306",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2049600
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260526012514",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 2048272
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526073119",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 12379
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526073122",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2398882076.pdf",
+   "wiki_minus_capture_seconds": 12376
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526073149",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 12349
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526074332",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 11646
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526075036",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 11222
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526075039",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/FY%202023%20-%20SF%20133%20Reports%20on%20Budget%20Execution%20and%20Budgetary%20Resources.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchVisitor",
+    "rev_id": "dse~Node38001377@1",
+    "utc": "2026-05-26T13:25:33Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/fy%202023%20-%20sf%20133%20reports%20on%20budget%20execution%20and%20budgetary%20resources.html",
+   "wiki_minus_capture_seconds": 20094
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526075123",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 11175
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526075130",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 11168
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526080525",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2398882076.pdf",
+   "wiki_minus_capture_seconds": 10333
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526082226",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 9312
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526082602",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 9096
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526095049",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2398882076.pdf",
+   "wiki_minus_capture_seconds": 4009
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526095052",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2398882076.pdf",
+   "wiki_minus_capture_seconds": 4006
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526103829",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 1149
+  },
+  {
+   "capture": {
+    "host": "portal.max.gov",
+    "ts": "20260526104234",
+    "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelper075",
+    "rev_id": "fractal~Wikis~2fEnglish~2fFederalReferenceHHS2023Q@3",
+    "utc": "2026-05-26T10:57:38Z"
+   },
+   "generic": false,
+   "url": "portal.max.gov/portal/document/sf133/budget/attachments/2346466575/2374423602.pdf",
+   "wiki_minus_capture_seconds": 904
+  },
+  {
+   "capture": {
+    "host": "api.allorigins.win",
+    "ts": "20260526131649",
+    "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -10299
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260526182109",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1987317
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260527170805",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1905301
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260527175950",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 77394
+  },
+  {
+   "capture": {
+    "host": "rspace.library.cofc.edu",
+    "ts": "20260527235653",
+    "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearcherZedY",
+    "rev_id": "dse~AgentCharlestonDirectManifestLinksE@1",
+    "utc": "2026-05-28T12:28:32Z"
+   },
+   "generic": false,
+   "url": "rspace.library.cofc.edu/iiif/lcdl129143jpeg1jpg/manifest",
+   "wiki_minus_capture_seconds": 45099
+  },
+  {
+   "capture": {
+    "host": "rspace.library.cofc.edu",
+    "ts": "20260528002152",
+    "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearcherZedY",
+    "rev_id": "dse~AgentCharlestonDirectManifestLinksE@1",
+    "utc": "2026-05-28T12:28:32Z"
+   },
+   "generic": false,
+   "url": "rspace.library.cofc.edu/iiif/lcdl129143jpeg1jpg/manifest",
+   "wiki_minus_capture_seconds": 43600
+  },
+  {
+   "capture": {
+    "host": "rspace.library.cofc.edu",
+    "ts": "20260528002154",
+    "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearcherZedY",
+    "rev_id": "dse~AgentCharlestonDirectManifestLinksE@1",
+    "utc": "2026-05-28T12:28:32Z"
+   },
+   "generic": false,
+   "url": "rspace.library.cofc.edu/iiif/lcdl129143jpeg1jpg/manifest",
+   "wiki_minus_capture_seconds": 43598
+  },
+  {
+   "capture": {
+    "host": "rspace.library.cofc.edu",
+    "ts": "20260528002412",
+    "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearcherZedY",
+    "rev_id": "dse~AgentCharlestonDirectManifestLinksE@1",
+    "utc": "2026-05-28T12:28:32Z"
+   },
+   "generic": false,
+   "url": "rspace.library.cofc.edu/iiif/lcdl129143jpeg1jpg/manifest",
+   "wiki_minus_capture_seconds": 43460
+  },
+  {
+   "capture": {
+    "host": "rspace.library.cofc.edu",
+    "ts": "20260528002544",
+    "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearcherZedY",
+    "rev_id": "dse~AgentCharlestonDirectManifestLinksE@1",
+    "utc": "2026-05-28T12:28:32Z"
+   },
+   "generic": false,
+   "url": "rspace.library.cofc.edu/iiif/lcdl129143jpeg1jpg/manifest",
+   "wiki_minus_capture_seconds": 43368
+  },
+  {
+   "capture": {
+    "host": "rspace.library.cofc.edu",
+    "ts": "20260528002546",
+    "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearcherZedY",
+    "rev_id": "dse~AgentCharlestonDirectManifestLinksE@1",
+    "utc": "2026-05-28T12:28:32Z"
+   },
+   "generic": false,
+   "url": "rspace.library.cofc.edu/iiif/lcdl129143jpeg1jpg/manifest",
+   "wiki_minus_capture_seconds": 43366
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260528045329",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1862977
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260528045330",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1862976
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260528050449",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1862297
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260528060914",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1858432
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528073218",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 28646
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528073540",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 28444
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528073542",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 28442
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528074122",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl:129229/manifest.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl:129229/manifest.json",
+   "wiki_minus_capture_seconds": 22726
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528081600",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 26024
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528081602",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 26022
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528081604",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 26020
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260528083205",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1849861
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085317",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129140JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129140jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21539
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085319",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129141JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperTwenty",
+    "rev_id": "dse~AgentTempCharlestonLinksZ@1",
+    "utc": "2026-05-28T14:26:26Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129141jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 19987
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085351",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129142JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129142jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21505
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085353",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129143JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129143jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21503
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085355",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129144JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129144jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21501
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085356",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129145JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129145jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21500
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085358",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129146JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129146jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21498
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085504",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129147JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129147jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21432
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528085505",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129148JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin10DirectRspaceManifestLinks0007@1",
+    "utc": "2026-05-28T14:52:16Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129148jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 21431
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528091153",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142",
+   "wiki_minus_capture_seconds": 22671
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528091859",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129141JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperTwenty",
+    "rev_id": "dse~AgentTempCharlestonLinksZ@1",
+    "utc": "2026-05-28T14:26:26Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129141jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 18447
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528091915",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129141JPEG1jpg/metadata.html"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperTwenty",
+    "rev_id": "dse~AgentTempCharlestonLinksZ@1",
+    "utc": "2026-05-28T14:26:26Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl129141jpeg1jpg/metadata.html",
+   "wiki_minus_capture_seconds": 18431
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092155",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 22069
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092459",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 21885
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092501",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentDPLAUnique91",
+    "rev_id": "dse~AgentDPLALibraryObjectAPILinksK91@1",
+    "utc": "2026-05-28T15:29:44Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229",
+   "wiki_minus_capture_seconds": 21883
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092946",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129140.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129140.json",
+   "wiki_minus_capture_seconds": 16222
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092948",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.json",
+   "wiki_minus_capture_seconds": 16220
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092950",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.json",
+   "wiki_minus_capture_seconds": 16218
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092951",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129143.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129143.json",
+   "wiki_minus_capture_seconds": 16217
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092953",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129144.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129144.json",
+   "wiki_minus_capture_seconds": 16215
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092954",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129145.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129145.json",
+   "wiki_minus_capture_seconds": 16214
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092956",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129146.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129146.json",
+   "wiki_minus_capture_seconds": 16212
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092958",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129147.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129147.json",
+   "wiki_minus_capture_seconds": 16210
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528092959",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129148.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129148.json",
+   "wiki_minus_capture_seconds": 16209
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528093000",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129149.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129149.json",
+   "wiki_minus_capture_seconds": 16208
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528095014",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.json",
+   "wiki_minus_capture_seconds": 14994
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528095015",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.xml"
+   },
+   "first_wiki_mention": {
+    "editor": "BalanceResearcher",
+    "rev_id": "dse~AgentCharlestonArchiveReadableTextF@1",
+    "utc": "2026-05-28T13:35:40Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.xml",
+   "wiki_minus_capture_seconds": 13525
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528095158",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.json",
+   "wiki_minus_capture_seconds": 14890
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528095329",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129143.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129143.json",
+   "wiki_minus_capture_seconds": 14799
+  },
+  {
+   "capture": {
+    "host": "iiif.library.cofc.edu",
+    "ts": "20260528100244",
+    "url": "https://iiif.library.cofc.edu/iiif/2/205927/info.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperTwenty",
+    "rev_id": "dse~AgentTempCharlestonLinksZ@1",
+    "utc": "2026-05-28T14:26:26Z"
+   },
+   "generic": false,
+   "url": "iiif.library.cofc.edu/iiif/2/205927/info.json",
+   "wiki_minus_capture_seconds": 15822
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528121038",
+    "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl:129229/manifest.json"
+   },
+   "first_wiki_mention": {
+    "editor": "ArchiveWorkerReferenceQQ9",
+    "rev_id": "dse~TmpAgentWin9ArchiveJsonFilter527K@1",
+    "utc": "2026-05-28T14:00:08Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/iiif/2/lcdl:129229/manifest.json",
+   "wiki_minus_capture_seconds": 6570
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260528133614",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1831612
+  },
+  {
+   "capture": {
+    "host": "lcdl.library.cofc.edu",
+    "ts": "20260528141609",
+    "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.xml"
+   },
+   "first_wiki_mention": {
+    "editor": "BalanceResearcher",
+    "rev_id": "dse~AgentCharlestonArchiveReadableTextF@1",
+    "utc": "2026-05-28T13:35:40Z"
+   },
+   "generic": false,
+   "url": "lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.xml",
+   "wiki_minus_capture_seconds": -2429
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230245",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -12709
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230332",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -12756
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230334",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -12758
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230514",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -12858
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230807",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -13031
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230810",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -13034
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230813",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -13037
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529230847",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config/"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -13071
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529231158",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config/"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -13262
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529231200",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -13264
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529231949",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/schemas/annual_mort/info/aggregate/components/1?location_id=66&measure=mort&sex=1&age=10&stat=mean&year_mort=2000"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/schemas/annual_mort/info/aggregate/components/1?location_id=66&measure=mort&sex=1&age=10&stat=mean&year_mort=2000",
+   "wiki_minus_capture_seconds": -13733
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529234524",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -15268
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529234526",
+    "url": "http://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -15270
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529234637",
+    "url": "https://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -15341
+  },
+  {
+   "capture": {
+    "host": "vizhub.healthdata.org",
+    "ts": "20260529234818",
+    "url": "http://vizhub.healthdata.org/lbd/api/v1/themes/tb/config"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentXScout",
+    "rev_id": "dse~AgentTBValuesXYZ19087@1",
+    "utc": "2026-05-29T19:30:56Z"
+   },
+   "generic": false,
+   "url": "vizhub.healthdata.org/lbd/api/v1/themes/tb/config",
+   "wiki_minus_capture_seconds": -15442
+  },
+  {
+   "capture": {
+    "host": "api.allorigins.win",
+    "ts": "20260606151146",
+    "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -967596
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260606211735",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1026331
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260606211808",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 1026298
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260612203406",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 510540
+  },
+  {
+   "capture": {
+    "host": "r.jina.ai",
+    "ts": "20260613164341",
+    "url": "https://r.jina.ai/http://example.com"
+   },
+   "first_wiki_mention": {
+    "editor": "WikiAgentMN",
+    "rev_id": "dse~AgentClarkEcoProxyTests@1",
+    "utc": "2026-06-01T12:59:39Z"
+   },
+   "generic": true,
+   "url": "r.jina.ai/http://example.com",
+   "wiki_minus_capture_seconds": -1050242
+  },
+  {
+   "capture": {
+    "host": "r.jina.ai",
+    "ts": "20260613164359",
+    "url": "https://r.jina.ai/http://example.com"
+   },
+   "first_wiki_mention": {
+    "editor": "WikiAgentMN",
+    "rev_id": "dse~AgentClarkEcoProxyTests@1",
+    "utc": "2026-06-01T12:59:39Z"
+   },
+   "generic": true,
+   "url": "r.jina.ai/http://example.com",
+   "wiki_minus_capture_seconds": -1050260
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260615112100",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 284526
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260616164658",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 178568
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260616164843",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 178463
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260616164845",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 178461
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260616164949",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 178397
+  },
+  {
+   "capture": {
+    "host": "r.jina.ai",
+    "ts": "20260616202238",
+    "url": "https://r.jina.ai/http://example.com"
+   },
+   "first_wiki_mention": {
+    "editor": "WikiAgentMN",
+    "rev_id": "dse~AgentClarkEcoProxyTests@1",
+    "utc": "2026-06-01T12:59:39Z"
+   },
+   "generic": true,
+   "url": "r.jina.ai/http://example.com",
+   "wiki_minus_capture_seconds": -1322579
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260616205212",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1712358
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616205212",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1712358
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260616205214",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1712360
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616205214",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1712360
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260616222547",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1717973
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616222547",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1717973
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616222746",
+    "url": "https://datausa.io/tesseract-proxy/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearchJulX",
+    "rev_id": "dse~DataUSATesseractProxyBreakthroughJul12@1",
+    "utc": "2026-06-17T19:30:18Z"
+   },
+   "generic": false,
+   "url": "datausa.io/tesseract-proxy/cubes",
+   "wiki_minus_capture_seconds": 75752
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260616222839",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentOpenResearch",
+    "rev_id": "dse~AgentResearchBridge201145@1",
+    "utc": "2026-06-16T19:10:20Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1",
+   "wiki_minus_capture_seconds": -11899
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616222839",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentOpenResearch",
+    "rev_id": "dse~AgentResearchBridge201145@1",
+    "utc": "2026-06-16T19:10:20Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1",
+   "wiki_minus_capture_seconds": -11899
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260616223349",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentOpenResearch",
+    "rev_id": "dse~AgentResearchBridge201145@1",
+    "utc": "2026-06-16T19:10:20Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1",
+   "wiki_minus_capture_seconds": -12209
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616223349",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentOpenResearch",
+    "rev_id": "dse~AgentResearchBridge201145@1",
+    "utc": "2026-06-16T19:10:20Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1",
+   "wiki_minus_capture_seconds": -12209
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260616224658",
+    "url": "https://api-ts.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFrenchVerifier",
+    "rev_id": "fractal~Wikis~2fEnglish~2fAgentFrenchTestsG20260617@1",
+    "utc": "2026-06-17T06:39:40Z"
+   },
+   "generic": false,
+   "url": "api-ts.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": 28362
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260616232657",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -1861307
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260616232658",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -1861308
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617000231",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1723777
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617000231",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1723777
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617000439",
+    "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State,Year&measures=Population&include=Year:2023"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperXQZ",
+    "rev_id": "dse~AgentResearchHelperXQZTest@1",
+    "utc": "2026-06-16T18:26:16Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=state,year&measures=population&include=year:2023",
+   "wiki_minus_capture_seconds": -20303
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617000439",
+    "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State,Year&measures=Population&include=Year:2023"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperXQZ",
+    "rev_id": "dse~AgentResearchHelperXQZTest@1",
+    "utc": "2026-06-16T18:26:16Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=state,year&measures=population&include=year:2023",
+   "wiki_minus_capture_seconds": -20303
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617000442",
+    "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State,Year&measures=Population&include=Year:2023"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperXQZ",
+    "rev_id": "dse~AgentResearchHelperXQZTest@1",
+    "utc": "2026-06-16T18:26:16Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=state,year&measures=population&include=year:2023",
+   "wiki_minus_capture_seconds": -20306
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617000442",
+    "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State,Year&measures=Population&include=Year:2023"
+   },
+   "first_wiki_mention": {
+    "editor": "ResearchHelperXQZ",
+    "rev_id": "dse~AgentResearchHelperXQZTest@1",
+    "utc": "2026-06-16T18:26:16Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=state,year&measures=population&include=year:2023",
+   "wiki_minus_capture_seconds": -20306
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617000626",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentOpenResearch",
+    "rev_id": "dse~AgentResearchBridge201145@1",
+    "utc": "2026-06-16T19:10:20Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1",
+   "wiki_minus_capture_seconds": -17766
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617000626",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentOpenResearch",
+    "rev_id": "dse~AgentResearchBridge201145@1",
+    "utc": "2026-06-16T19:10:20Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1",
+   "wiki_minus_capture_seconds": -17766
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617000749",
+    "url": "https://api.datausa.io/tesseract/members?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&level=Language%20Spoken%20at%20Home"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearchFeb17",
+    "rev_id": "dse~AgentOurBridgeUnique9172026@10",
+    "utc": "2026-06-16T20:19:39Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/members?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&level=language%20spoken%20at%20home",
+   "wiki_minus_capture_seconds": -13690
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617000749",
+    "url": "https://api.datausa.io/tesseract/members?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&level=Language%20Spoken%20at%20Home"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearchFeb17",
+    "rev_id": "dse~AgentOurBridgeUnique9172026@10",
+    "utc": "2026-06-16T20:19:39Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/members?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&level=language%20spoken%20at%20home",
+   "wiki_minus_capture_seconds": -13690
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617005219",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -46351
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617005219",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -46351
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617005220",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -46352
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617005220",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -46352
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020413",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731079
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020413",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731079
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020418",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731084
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020418",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731084
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020419",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731085
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020419",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731085
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020421",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731087
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020421",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731087
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020422",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731088
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020422",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1731088
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020424",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50676
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020424",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50676
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020426",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50678
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020426",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50678
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020427",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50679
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020427",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50679
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020431",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50683
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020431",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50683
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020432",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50684
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020432",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50684
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020434",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50686
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020434",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50686
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020435",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50687
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020435",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_yg_total_population_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenAIResearcher",
+    "rev_id": "dse~AgentTestOpenAI1781599003@1",
+    "utc": "2026-06-16T11:59:48Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_yg_total_population_1",
+   "wiki_minus_capture_seconds": -50687
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260617020607",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenResearchHelper",
+    "rev_id": "dse~OpenResearchBridgeFeb03@1",
+    "utc": "2026-06-16T12:17:42Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1",
+   "wiki_minus_capture_seconds": -49705
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260617020607",
+    "url": "https://api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1"
+   },
+   "first_wiki_mention": {
+    "editor": "OpenResearchHelper",
+    "rev_id": "dse~OpenResearchBridgeFeb03@1",
+    "utc": "2026-06-16T12:17:42Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/acs_ygpsar_poverty_by_gender_age_race_1",
+   "wiki_minus_capture_seconds": -49705
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260617070517",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -1888807
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260617070547",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -1888837
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260617160216",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 94850
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260617160320",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": 94786
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260619133825",
+    "url": "https://api-ts.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFrenchVerifier",
+    "rev_id": "fractal~Wikis~2fEnglish~2fAgentFrenchTestsG20260617@1",
+    "utc": "2026-06-17T06:39:40Z"
+   },
+   "generic": false,
+   "url": "api-ts.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -197925
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260619135521",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1946547
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260619135521",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1946547
+  },
+  {
+   "capture": {
+    "host": "api-la.datausa.io",
+    "ts": "20260619142652",
+    "url": "https://api-la.datausa.io/complexity/rca_historical.jsonrecords?cube=onet_by_pums&location=Detailed%20Occupation&activity=Skill%20Element&measure=Total%20Score&time=Year&cuts=Detailed%20Occupation:412"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearcherOpenAI",
+    "rev_id": "dse~AgentDataUSAExactBridge1781872861@1",
+    "utc": "2026-06-19T12:41:06Z"
+   },
+   "generic": false,
+   "url": "api-la.datausa.io/complexity/rca_historical.jsonrecords?cube=onet_by_pums&location=detailed%20occupation&activity=skill%20element&measure=total%20score&time=year&cuts=detailed%20occupation:412010",
+   "wiki_minus_capture_seconds": -6346
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260619142652",
+    "url": "https://api-la.datausa.io/complexity/rca_historical.jsonrecords?cube=onet_by_pums&location=Detailed%20Occupation&activity=Skill%20Element&measure=Total%20Score&time=Year&cuts=Detailed%20Occupation:412"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearcherOpenAI",
+    "rev_id": "dse~AgentDataUSAExactBridge1781872861@1",
+    "utc": "2026-06-19T12:41:06Z"
+   },
+   "generic": false,
+   "url": "api-la.datausa.io/complexity/rca_historical.jsonrecords?cube=onet_by_pums&location=detailed%20occupation&activity=skill%20element&measure=total%20score&time=year&cuts=detailed%20occupation:412010",
+   "wiki_minus_capture_seconds": -6346
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260619170004",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -81418
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260620171510",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -2184600
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260620185527",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -174741
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260620185545",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -174759
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260621073729",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -220463
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260621191606",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -262380
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260621191609",
+    "url": "http://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -262383
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260621205912",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -268566
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260621234126",
+    "url": "https://api.microlink.io//?url=https://example.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -2294176
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260623020628",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -373402
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260623020629",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -373403
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260623021227",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -373761
+  },
+  {
+   "capture": {
+    "host": "httpbin.org",
+    "ts": "20260623021444",
+    "url": "https://httpbin.org/get"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFoo401299",
+    "rev_id": "dse~AgentFooNew924286@1",
+    "utc": "2026-06-18T18:23:06Z"
+   },
+   "generic": true,
+   "url": "httpbin.org/get",
+   "wiki_minus_capture_seconds": -373898
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260629035333",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816531
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260629035333",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816531
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260629035337",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816535
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260629035337",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816535
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260629035427",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816585
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260629035427",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816585
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260629035429",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816587
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260629035429",
+    "url": "https://api.datausa.io/tesseract/cubes/pums_5"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentTryPumsCitationABC",
+    "rev_id": "dse~AgentTryPumsCitationABC@1",
+    "utc": "2026-06-08T03:18:02Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes/pums_5",
+   "wiki_minus_capture_seconds": -1816587
+  },
+  {
+   "capture": {
+    "host": "api.datausa.io",
+    "ts": "20260629035523",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -2774549
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260629035523",
+    "url": "https://api.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "DataResearchUser",
+    "rev_id": "dse~AgentDirectSimpleTryXZ@1",
+    "utc": "2026-05-28T01:12:54Z"
+   },
+   "generic": false,
+   "url": "api.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -2774549
+  },
+  {
+   "capture": {
+    "host": "datausa.io",
+    "ts": "20260629035545",
+    "url": "https://api-ts-dev.datausa.io/tesseract/cubes"
+   },
+   "first_wiki_mention": {
+    "editor": "AgentFrenchVerifier",
+    "rev_id": "fractal~Wikis~2fEnglish~2fAgentFrenchTestsG20260617@1",
+    "utc": "2026-06-17T06:39:40Z"
+   },
+   "generic": false,
+   "url": "api-ts-dev.datausa.io/tesseract/cubes",
+   "wiki_minus_capture_seconds": -1026965
+  },
+  {
+   "capture": {
+    "host": "api.microlink.io",
+    "ts": "20260901143927",
+    "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+   },
+   "first_wiki_mention": {
+    "editor": "BridgeExplore",
+    "rev_id": "dse~TmpNew9444@1",
+    "utc": "2026-05-26T10:25:10Z"
+   },
+   "generic": true,
+   "url": "example.com",
+   "wiki_minus_capture_seconds": -8482457
+  }
+ ],
+ "note": "Exact normalized URL matches between Arquivo.pt Save Page Now captures and the earliest wiki revision citing the same URL. Positive seconds mean the capture came first. Generic endpoints (example.com, httpbin.org, bare proxy hosts, robots.txt) match by coincidence and are kept separate. A match shows the same URL in both records, not that the same actor produced both.",
+ "schema": "arquivo_export_url_timing_v1",
+ "summary": {
+  "capture_first": 62,
+  "generic_matches": 67,
+  "hosts": {
+   "api-la.datausa.io": 1,
+   "api.datausa.io": 31,
+   "datausa.io": 36,
+   "iiif.library.cofc.edu": 1,
+   "lcdl.library.cofc.edu": 39,
+   "portal.max.gov": 15,
+   "rspace.library.cofc.edu": 6,
+   "vizhub.healthdata.org": 15
+  },
+  "matches": 211,
+  "median_lead_seconds": -12758,
+  "save_captures_scanned": 22527,
+  "task_specific_matches": 144,
+  "task_specific_urls": 42,
+  "urls_saved_before_first_wiki_mention": 30,
+  "wiki_first": 82
+ }
+}
