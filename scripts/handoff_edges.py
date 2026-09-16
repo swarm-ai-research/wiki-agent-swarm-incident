@@ -44,9 +44,22 @@ SENSITIVITY_CUTOFFS = (2, 3, 5, 10)
 SOURCE = "https://github.com/intentionallydense/fast-follow-question-trajectories"
 
 
+URL = re.compile(r"https?://[^\s<>\[\]|{}\"']+", re.I)
+LONG_NUMBER = re.compile(r"(?<![\d.,])(\d{1,3}(?:,\d{3})+|\d{5,})(?![\d,]*\d)")
+
+
 def tokens(text):
+    """The v1 token set: seconds-precision clocks and CounterAPI namespaces."""
     found = {("clock", value) for value in CLOCK.findall(text)}
     found |= {("counter_ns", value.lower()) for value in COUNTER_NS.findall(text)}
+    return found
+
+
+def generic_tokens(text):
+    """A corpus-neutral set for controls whose writers never use task clocks:
+    URLs (trailing punctuation dropped) and numbers of five or more digits."""
+    found = {("url", value.rstrip(".,;:)!?").lower()) for value in URL.findall(text)}
+    found |= {("long_number", value.replace(",", "")) for value in LONG_NUMBER.findall(text)}
     return found
 
 
@@ -102,10 +115,10 @@ def load_revisions(repo, wanted):
     return revisions, digest
 
 
-def find_edges(messages, bodies, max_runs):
+def find_edges(messages, bodies, max_runs, tokenize=tokens):
     occurrences = defaultdict(list)
     for message in messages:
-        for token in tokens(message["text"]):
+        for token in tokenize(message["text"]):
             occurrences[token].append(message)
     edges, unexposed = [], 0
     for token, seen in occurrences.items():
@@ -121,7 +134,9 @@ def find_edges(messages, bodies, max_runs):
             if message["utc"] <= source["utc"]:
                 continue
             base = bodies.get(message["base"] or "")
-            body = base.lower() if token[0] == "counter_ns" and base else base
+            body = base.lower() if token[0] in ("counter_ns", "url") and base else base
+            if token[0] == "long_number" and body:
+                body = body.replace(",", "")
             if not body or token[1] not in body:
                 unexposed += 1
                 continue
