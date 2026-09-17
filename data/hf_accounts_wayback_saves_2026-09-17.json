@@ -3,15 +3,15 @@
  "saves": [
   {
    "url": "https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917014802",
+   "replay": "https://web.archive.org/web/20260917014802/https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/"
   },
   {
    "url": "https://huggingface.co/0Time",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917014852",
+   "replay": "https://web.archive.org/web/20260917014852/https://huggingface.co/0Time"
   },
   {
    "url": "https://huggingface.co/Nyx9",
@@ -21,9 +21,9 @@
   },
   {
    "url": "https://huggingface.co/datasets/Anthropic/BioMysteryBench-full/discussions/3",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917014858",
+   "replay": "https://web.archive.org/web/20260917014858/https://huggingface.co/datasets/Anthropic/BioMysteryBench-full/discussions/3"
   },
   {
    "url": "https://huggingface.co/datasets/Anthropic/BioMysteryBench-full/discussions/4",
@@ -33,15 +33,15 @@
   },
   {
    "url": "https://huggingface.co/0Time/INCEPT-SH/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917014957",
+   "replay": "https://web.archive.org/web/20260917014957/https://huggingface.co/0Time/INCEPT-SH/commits/main"
   },
   {
    "url": "https://huggingface.co/0Time/x/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917014954",
+   "replay": "https://web.archive.org/web/20260917014954/https://huggingface.co/0Time/x/commits/main"
   },
   {
    "url": "https://huggingface.co/0Time/xyztest05bcb6/commits/main",
@@ -57,15 +57,15 @@
   },
   {
    "url": "https://huggingface.co/0Time/h2test/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020049",
+   "replay": "https://web.archive.org/web/20260917020049/https://huggingface.co/0Time/h2test/commits/main"
   },
   {
    "url": "https://huggingface.co/0Time/foo/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020126",
+   "replay": "https://web.archive.org/web/20260917020126/https://huggingface.co/0Time/foo/commits/main"
   },
   {
    "url": "https://huggingface.co/datasets/0Time/test20/commits/main",
@@ -99,9 +99,9 @@
   },
   {
    "url": "https://huggingface.co/datasets/0Time/probeoid/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020508",
+   "replay": "https://web.archive.org/web/20260917020508/https://huggingface.co/datasets/0Time/probeoid/commits/main"
   },
   {
    "url": "https://huggingface.co/spaces/0Time/puthack82d5/commits/main",
@@ -111,27 +111,27 @@
   },
   {
    "url": "https://huggingface.co/spaces/0Time/latnetnew/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020628",
+   "replay": "https://web.archive.org/web/20260917020628/https://huggingface.co/spaces/0Time/latnetnew/commits/main"
   },
   {
    "url": "https://huggingface.co/spaces/0Time/altreg/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020702",
+   "replay": "https://web.archive.org/web/20260917020702/https://huggingface.co/spaces/0Time/altreg/commits/main"
   },
   {
    "url": "https://huggingface.co/datasets/Nyx9/temptestlf8eb0/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020734",
+   "replay": "https://web.archive.org/web/20260917020734/https://huggingface.co/datasets/Nyx9/temptestlf8eb0/commits/main"
   },
   {
    "url": "https://huggingface.co/datasets/Nyx9/tmppublicdata0/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020811",
+   "replay": "https://web.archive.org/web/20260917020811/https://huggingface.co/datasets/Nyx9/tmppublicdata0/commits/main"
   },
   {
    "url": "https://huggingface.co/datasets/Nyx9/tmpdata177/commits/main",
@@ -141,9 +141,9 @@
   },
   {
    "url": "https://huggingface.co/spaces/Nyx9/netproxy17/commits/main",
-   "status": "requested, not confirmed",
-   "wayback_ts": null,
-   "replay": null
+   "status": "confirmed",
+   "wayback_ts": "20260917020925",
+   "replay": "https://web.archive.org/web/20260917020925/https://huggingface.co/spaces/Nyx9/netproxy17/commits/main"
   }
  ],
  "confirmed": 11,
