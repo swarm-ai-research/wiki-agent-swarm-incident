@@ -547,11 +547,168 @@ def cmd_sample(args):
     print("wrote %s" % args.out)
 
 
+def _simulate(torch, N, mu, phi, w, alpha, gamma, rho, gamma_hub, b, n_audit, seed):
+    """Simulate export + audited subset from known parameters.
+
+    Returns (y, aud, n_handles, n_revisions) matching the load() signature.
+    """
+    rng = np.random.default_rng(seed)
+
+    # run sizes: NegBinomial(mu, phi) truncated at >= 1
+    p = phi / (phi + mu)
+    sizes = []
+    while len(sizes) < N:
+        lam = rng.gamma(phi, (1 - p) / p, size=N)
+        draw = rng.poisson(lam)
+        sizes.extend([int(x) for x in draw if 1 <= x <= NI])
+    sizes = np.array(sizes[:N])
+
+    # within-run split into instances
+    inst_sizes, inst_run = [], []
+    for i, n in enumerate(sizes):
+        if rng.random() > w:
+            inst_sizes.append(n)
+            inst_run.append(i)
+            continue
+        tables = []
+        for _ in range(n):
+            pr = np.array(tables + [alpha], dtype=float)
+            pr /= pr.sum()
+            j = rng.choice(len(pr), p=pr)
+            if j == len(tables):
+                tables.append(1)
+            else:
+                tables[j] += 1
+        inst_sizes.extend(tables)
+        inst_run.extend([i] * len(tables))
+    inst_sizes = np.array(inst_sizes)
+
+    # across-run sharing: two-component hub model
+    inst_hub = rng.random(len(inst_sizes)) < rho
+    handle_of = np.empty(len(inst_sizes), dtype=int)
+    counts_thin, counts_hub = [], []
+    for t in range(len(inst_sizes)):
+        is_hub = inst_hub[t]
+        counts = counts_hub if is_hub else counts_thin
+        pr = np.array(counts + [gamma_hub if is_hub else gamma], dtype=float)
+        pr /= pr.sum()
+        h = rng.choice(len(pr), p=pr)
+        if h == len(counts):
+            counts.append(1)
+        else:
+            counts[h] += 1
+        handle_of[t] = h
+
+    n_handles = len(counts_thin) + len(counts_hub)
+    handle_size = np.zeros(n_handles, dtype=int)
+    ht_off = len(counts_thin)
+    for t in range(len(inst_sizes)):
+        h = handle_of[t]
+        if inst_hub[t]:
+            h = h + ht_off
+        np.add.at(handle_size, h, inst_sizes[t])
+
+    y = torch.zeros(NL + 1, dtype=torch.float64)
+    for s in handle_size:
+        if 1 <= s <= NL:
+            y[s] += 1
+
+    # audited subset: select runs with probability proportional to n^b
+    wsel = sizes.astype(float) ** b
+    wsel /= wsel.sum()
+    pick = rng.choice(N, size=min(n_audit, N), replace=False, p=wsel)
+
+    by_run = {}
+    for s, r in zip(inst_sizes, inst_run):
+        by_run.setdefault(r, []).append(int(s))
+
+    ns, Ks, consts = [], [], []
+    for r in pick:
+        v = by_run.get(int(r))
+        if not v:
+            continue
+        n = sum(v)
+        if n > NI:
+            continue
+        tk = {}
+        for x in v:
+            tk[x] = tk.get(x, 0) + 1
+        ns.append(n)
+        Ks.append(len(v))
+        consts.append(sum(t * math.log(k) + math.lgamma(t + 1) for k, t in tk.items()))
+
+    aud = {"n": ns, "K": Ks, "const": consts}
+    return y, aud, int(n_handles), int(sizes.sum())
+
+
+def cmd_recover(args):
+    """Parameter recovery: simulate from known parameters, refit, and compare.
+
+    This validates whether the model can recover its own parameters. Tests on
+    data generated from the hub model (two-component sharing).
+    """
+    import torch
+    make, unpack, _ = build(torch)
+
+    # Recovery settings: (N, b, description)
+    recoveries = [
+        (3000, 0.10, "high_N_weak_bias"),
+        (1200, 0.50, "low_N_strong_bias"),
+        (2500, 0.30, "mid_N_mid_bias"),
+    ]
+
+    print("PARAMETER RECOVERY: simulating data, refitting by MAP, computing error")
+    print("-" * 80)
+    print("%-10s %8s %8s %7s %7s %8s" % ("case", "N_true", "N_hat", "b_true", "b_hat", "N_err%"))
+    print("-" * 80)
+
+    for case_idx, (N_true, b_true, desc) in enumerate(recoveries):
+        # Fixed "true" parameters for this simulation
+        mu_true, phi_true = 3.5, 1.8
+        w_true, alpha_true = 0.36, 3.34
+        gamma_true, rho_true, gamma_hub_true = 3000.0, 0.47, 163.0
+        n_audit = 322
+
+        # Simulate data
+        y, aud, nh, nrev = _simulate(
+            torch, N_true, mu_true, phi_true, w_true, alpha_true,
+            gamma_true, rho_true, gamma_hub_true, b_true, n_audit,
+            seed=1000 + case_idx
+        )
+
+        y_t, aud_t = to_tensors(torch, y, aud)
+        log_post, _ = make(y_t, aud_t)
+
+        # MAP fit with random restarts
+        best, best_lp = None, -1e30
+        for seed in range(3):
+            g = torch.Generator().manual_seed(seed)
+            th = (torch.tensor([p[0] for p in PRIOR])
+                  + torch.randn(len(PRIOR), generator=g) * 0.2).clone().requires_grad_(True)
+            opt = torch.optim.Adam([th], lr=0.03)
+            for _ in range(args.iters):
+                opt.zero_grad()
+                (-log_post(th)).backward()
+                opt.step()
+            lp = float(log_post(th).detach())
+            if lp > best_lp:
+                best, best_lp = th.detach(), lp
+
+        N_hat, mu_hat, phi_hat, w_hat, alpha_hat, gamma_hat, b_hat, rho_hat, gamma_hub_hat = unpack(best)
+        N_hat, b_hat = float(N_hat), float(b_hat)
+        err_pct = 100 * (N_hat - N_true) / N_true
+
+        print("%-10s %8d %8.0f %7.2f %7.2f %8.1f" %
+              (desc, N_true, N_hat, b_true, b_hat, err_pct))
+
+    print("-" * 80)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
-    ap.add_argument("command", choices=["map", "sample"])
-    ap.add_argument("--export", required=True,
-                    help="collusion.wiki export dir with revisions.jsonl[.gz]")
+    ap.add_argument("command", choices=["map", "sample", "recover"])
+    ap.add_argument("--export", required=False,
+                    help="collusion.wiki export dir with revisions.jsonl[.gz] (required for map/sample)")
     ap.add_argument("--map", default=None, help="run_identity_map.json override")
     ap.add_argument("--chains", type=int, default=4)
     ap.add_argument("--warmup", type=int, default=450)
@@ -560,7 +717,16 @@ def main():
     ap.add_argument("--out", default=os.path.join(ROOT, "data",
                                                   "agent_population_posterior.json"))
     args = ap.parse_args()
-    (cmd_map if args.command == "map" else cmd_sample)(args)
+
+    if args.command in ("map", "sample") and not args.export:
+        ap.error("--export is required for map and sample commands")
+
+    if args.command == "map":
+        cmd_map(args)
+    elif args.command == "sample":
+        cmd_sample(args)
+    else:  # recover
+        cmd_recover(args)
 
 
 if __name__ == "__main__":

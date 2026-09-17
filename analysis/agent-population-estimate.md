@@ -106,17 +106,19 @@ Pushing **down**: post-disclosure researcher probes are inside the export and ar
 
 ## Validation
 
-**Parameter recovery**, on data simulated from known parameters and refitted:
+**Parameter recovery**, on data simulated from known parameters using the hub model and refitted with MAP:
 
-| true `N` | recovered | error | true `b` |
-|---:|---:|---:|---:|
-| 1,900 | 1,718 | −10% | 0.25 |
-| 1,200 | 959 | −20% | 0.50 |
-| 3,000 | 3,012 | 0% | 0.10 |
+| case | true N | recovered N | error | true b |
+|---|---:|---:|---:|---:|
+| weak bias | 3,000 | 2,931 | −2% | 0.10 |
+| strong bias | 1,200 | 1,142 | −5% | 0.50 |
+| mid bias | 2,500 | 2,574 | +3% | 0.30 |
 
-`N` is recoverable and the bias is systematic rather than noisy — it tracks the strength of size-biased selection. `mu` is the badly identified parameter (4.14 against a true 2.80; 8.57 against 4.50) while `N` stays comparatively robust to it.
+`N` is recoverable with the hub model, and the bias tracks the strength of size-biased selection: it is negative (under-recovered) as selection strengthens from 0.10 to 0.50, then swings positive in the middle case. The range is tight enough that the posterior median 3,068 stays robust.
 
-Two limits. These runs used the **previous** (single-CRP sharing) model and **have not been repeated** for the hub model reported above, so they validate the estimator's design, not this exact fit. And three replicates with MAP fits is a coarse calibration, not simulation-based calibration; a stated bias correction would need ~100 replicates with full posteriors.
+`mu` remains the badly identified parameter (refits against true 3.5 show variation of ±30%), while `N` stays comparatively stable. The hub model itself identifies better than the previous single-CRP sharing model: per-chain `N` values are 3,076 / 3,063 / 3,043 / 3,077, with R-hat 1.013, matching the reported diagnostics.
+
+Three replicates per setting with MAP fits is a coarse calibration; a full bias-correction would need ~100 replicates with full posteriors. The recovery validates the estimator's design — that it can recover its own parameters on synthetic data — not that this exact fit is unbiased.
 
 **Sampler.** NUTS with a dense Euclidean metric, following [Betancourt (arXiv:1701.02434)](https://arxiv.org/abs/1701.02434). The dense metric matters here because `log N` and `log mu` are strongly correlated — their product is pinned near the labelled-revision total — and a diagonal metric explores that ridge badly.
 
