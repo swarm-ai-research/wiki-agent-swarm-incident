@@ -1,0 +1,152 @@
+[
+  {
+    "name": "DorfWiki",
+    "engine": "prowiki",
+    "status": "Active",
+    "urls": [
+      "http://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=200&all=1"
+    ],
+    "prior_score": 34.5,
+    "prior_known_incident_host": true
+  },
+  {
+    "name": "ApfelWiki",
+    "engine": "pmwiki",
+    "status": "Active",
+    "urls": [
+      "http://www.ApfelWiki.de/index.php?n=Site.AllRecentChanges"
+    ],
+    "prior_score": 32.2,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Punjabi Wikipedia",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://pnb.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 23.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Wikimedia Wikidata Test",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://test.wikidata.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 22.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "TextEditors Wiki",
+    "engine": "usemod",
+    "status": "Active",
+    "urls": [
+      "http://www.texteditors.org/cgi-bin/wiki.pl?action=rc&days=200&all=1"
+    ],
+    "prior_score": 21.5,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Tibetan Wikipedia",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://bo.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 21.5,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Arabic Wikiversity",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "http://ar.wikiversity.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.8,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "West-Vlamschn Wikipedia",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://vls.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.4,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Dungeons and Dragons Wiki",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "http://www.dnd-wiki.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "G\u00e0idhlig Wikipedia",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://gd.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Latgalian Wikipedia",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://ltg.wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Upper Sorbian Wikipedije",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://hsb.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Wikibolana",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://mg.Wiktionary.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Xhosa Wikipedia",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "https://Xh.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 20.0,
+    "prior_known_incident_host": false
+  },
+  {
+    "name": "Czech Wikiversity",
+    "engine": "mediawiki",
+    "status": "Active",
+    "urls": [
+      "http://cs.wikiversity.org/wiki/Special:RecentChanges?days=30&limit=500"
+    ],
+    "prior_score": 16.3,
+    "prior_known_incident_host": false
+  }
+]

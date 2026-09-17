@@ -1,0 +1,44 @@
+{
+ "_about": "One read-only tick of darkfibr/swarm-index-watch (usemod adapter branch) over data/swarm_index_watch_venues.json, run 2026-09-09T03:05Z, state persisted outside the repo so counts are new items since the previous tick, not 30-day windows. Listings are server-local times converted with each venue's utc_offset_h. Metadata only; no bodies fetched (fetch_body off everywhere).",
+ "run_utc": "2026-09-09T03:05Z",
+ "shard": "2026-09-09.jsonl",
+ "events_total": 83,
+ "tier2_bodies": 0,
+ "errors": [
+  "oddmuse-campaignwiki",
+  "oddmuse-communitywiki",
+  "oddmuse-org",
+  "prowiki-milk",
+  "public-board.com"
+ ],
+ "per_venue": {
+  "prowiki-netzwerkgegengewalt": 58,
+  "prowiki-dse": 5,
+  "prowiki-probier": 5,
+  "usemod-texteditors": 4,
+  "prowiki-gruender": 3,
+  "prowiki-wiki4d": 3,
+  "usemod-dougrice": 2,
+  "usemod-toothycat": 1,
+  "paste.probyte.ee": 1,
+  "pastebin.faster-it.de": 1
+ },
+ "per_venue_scored": {
+  "prowiki-netzwerkgegengewalt": 54,
+  "prowiki-probier": 3,
+  "prowiki-dse": 2,
+  "prowiki-gruender": 2,
+  "prowiki-wiki4d": 1,
+  "usemod-texteditors": 1
+ },
+ "focus_venue": "prowiki-probier",
+ "prowiki_probier_per_day": {
+  "2026-09-09": 5
+ },
+ "prowiki_probier_2026-09-09": {
+  "edits": 5,
+  "distinct_authors": 5,
+  "top_handle_stems": [],
+  "top_authors": []
+ }
+}

@@ -1,0 +1,117 @@
+{
+  "artifacts": {
+    "first_pass": "data/swarm_scan_2026-09-08.json",
+    "first_pass_sha256": "2bebe383dda698824cdeaadadc5c0818b353b0ef3999a17f42008e4b2a2284c0",
+    "first_targets_sha256": "b2a5186618c480efa66b390dc36de22220c0e8d19e7a748ffc29a53eb6cfa11f",
+    "retry_pass": "data/kmad_sweep_retry_2026-09-08.json",
+    "retry_pass_sha256": "74972733be6ed897a90c420a7b9d214fcc72d300902f79dc2a91bf5e3a2cc9af",
+    "retry_targets_sha256": "17351a12e860d1e57afbdc5b06bed3297bc930dbed8862449803c1a7e1edbb85"
+  },
+  "bounded_conclusion": "The independent 1,355-endpoint reconstruction cannot reproduce KMAD's unpublished 6,271 denominator. It provides a complete request/retry ledger for 21.6074% of that claimed count, verifies its positive controls, and does not establish a web-wide negative result.",
+  "comparison_claim": {
+    "candidate_denominator": 6271,
+    "engine_categories_reported": 19,
+    "explicit_categories": [
+      "UseMod",
+      "Oddmuse",
+      "PmWiki",
+      "MoinMoin",
+      "DokuWiki",
+      "MediaWiki",
+      "TiddlyWiki",
+      "TWiki",
+      "JSPWiki",
+      "PhpWiki",
+      "Instiki",
+      "Wikka",
+      "wiki farms"
+    ],
+    "headline_interpretation": "not a genuinely new host because it was already named in the writeup, tweet, or corpus",
+    "reported_match": "texteditors.org",
+    "reported_matches": 1,
+    "source": "WikiIndex API",
+    "subagent_limit": "wiki-hunt ended before an Oddmuse browser pass and before corroborating a publictestwiki JSON artifact"
+  },
+  "coverage": {
+    "final": {
+      "blocked": 453,
+      "parsing_failed": 90,
+      "readable": 323,
+      "unavailable": 489
+    },
+    "final_total": 1355,
+    "first_pass": {
+      "blocked": 540,
+      "parsing_failed": 89,
+      "readable": 238,
+      "unavailable": 488
+    },
+    "retry_eligible": 1117,
+    "retry_transitions": {
+      "blocked->blocked": 450,
+      "blocked->parsing_failed": 2,
+      "blocked->readable": 81,
+      "blocked->unavailable": 7,
+      "parsing_failed->parsing_failed": 87,
+      "parsing_failed->readable": 2,
+      "unavailable->blocked": 3,
+      "unavailable->parsing_failed": 1,
+      "unavailable->readable": 2,
+      "unavailable->unavailable": 482
+    }
+  },
+  "disposition": "partial-independent-reproduction",
+  "generated_on": "2026-09-08",
+  "policy": {
+    "body_retention": "none",
+    "evidence_excerpt_retention": false,
+    "first_pass_requests_per_endpoint": 1,
+    "first_pass_workers": 24,
+    "retry_outcomes": [
+      "blocked",
+      "parsing_failed",
+      "unavailable"
+    ],
+    "retry_requests_per_eligible_endpoint": 1,
+    "retry_workers": 24,
+    "scanner_timeout_seconds": 20
+  },
+  "positive_controls": [
+    {
+      "name": "DorfWiki",
+      "outcome": "readable",
+      "passed": true,
+      "score": 34.5,
+      "signals": {
+        "bots": 0,
+        "cloud": 0,
+        "handles": 22,
+        "infra": 0,
+        "payload": 0,
+        "words": 3
+      }
+    },
+    {
+      "name": "TextEditors Wiki",
+      "outcome": "readable",
+      "passed": true,
+      "score": 21.5,
+      "signals": {
+        "bots": 0,
+        "cloud": 18,
+        "handles": 0,
+        "infra": 0,
+        "payload": 0,
+        "words": 1
+      }
+    }
+  ],
+  "scope": {
+    "coverage_of_kmad_claimed_denominator": 0.216074,
+    "equivalence_to_kmad_population": "not established",
+    "kmad_manifest_available": false,
+    "kmad_reported_candidates": 6271,
+    "normalized_distinct_endpoints": 1355,
+    "reconstructed_source_rows": 1356
+  }
+}

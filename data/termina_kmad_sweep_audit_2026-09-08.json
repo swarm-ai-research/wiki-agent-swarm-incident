@@ -1,0 +1,70 @@
+{
+  "bounded_conclusion": "The repository supports attribution of the 6,271-candidate statement to KMAD, but not reproduction of its denominator, coverage, or null. The negative applies only to the undocumented candidate set at an undocumented scan time and cannot establish that no other wiki host existed.",
+  "claim_id": "kmad-wiki-sweep",
+  "claim_text": "a sweep of 6,271 wiki installs found no host not already named",
+  "evidence": {
+    "id": "kmad-forensics",
+    "kind": "secondary",
+    "path": "data/external/agent-swarm-forensics",
+    "publisher": "kmad",
+    "url": "https://github.com/kmad/agent-swarm-forensics"
+  },
+  "generated_on": "2026-09-08",
+  "local_disposition": "reported-not-reproducible",
+  "published_narrative": {
+    "candidate_denominator": 6271,
+    "engine_categories_reported": 19,
+    "explicit_categories": [
+      "UseMod",
+      "Oddmuse",
+      "PmWiki",
+      "MoinMoin",
+      "DokuWiki",
+      "MediaWiki",
+      "TiddlyWiki",
+      "TWiki",
+      "JSPWiki",
+      "PhpWiki",
+      "Instiki",
+      "Wikka",
+      "wiki farms"
+    ],
+    "headline_interpretation": "not a genuinely new host because it was already named in the writeup, tweet, or corpus",
+    "reported_match": "texteditors.org",
+    "reported_matches": 1,
+    "source": "WikiIndex API",
+    "subagent_limit": "wiki-hunt ended before an Oddmuse browser pass and before corroborating a publictestwiki JSON artifact"
+  },
+  "repository_inventory": {
+    "commit": "2ee3df2fc9a8e7e338be359af7b933de1776f9bc",
+    "implementation_or_result_files": [],
+    "narrative_or_code_mentions": [
+      {
+        "matches": 1,
+        "path": "README.md"
+      },
+      {
+        "matches": 1,
+        "path": "docs/ETHICS.md"
+      },
+      {
+        "matches": 6,
+        "path": "docs/FINDINGS.md"
+      }
+    ],
+    "repository": "/tmp/kmad-agent-swarm-forensics",
+    "reproducible_from_repository": false,
+    "tracked_files": 190
+  },
+  "termina_status": "reported",
+  "unavailable_inputs": {
+    "fingerprint_or_match_rule": true,
+    "per_target_results": true,
+    "positive_control_log": true,
+    "reachable_unreachable_partition": true,
+    "response_statuses": true,
+    "retry_and_timeout_policy": true,
+    "scan_timestamps": true,
+    "target_list": true
+  }
+}

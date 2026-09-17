@@ -19,7 +19,12 @@ Sources
 ``--termina DIR``  ``venue.jsonl`` + ``venue_link.jsonl`` from
                    https://swarm.termina.digital/pub/ (CC0). Adds the 76 cross-
                    site venue links as edges between venue nodes, mapped to
-                   existing Atlas nodes by host where one exists. ``actor_link``
+                   existing Atlas nodes by host where one exists. When
+                   ``incidents.sqlite`` is present, also adds the DSEWiki incident,
+                   its two campaigns, seven task clusters, and aggregate
+                   cluster-to-venue assignments. Claim status/evidence counts are
+                   kept in node details; raw record edges are summarized, not
+                   expanded into thousands of record nodes. ``actor_link``
                    is deliberately not used: its handle rows are ludism.org spam
                    accounts, not swarm handles, and its human rows are masked.
 
@@ -310,6 +315,28 @@ def _termina_rt(kind: str, label: str) -> str:
     return "links"
 
 
+def _termina_node_for(vid, venues, graph, nodes, host_idx, stats) -> Optional[str]:
+    if vid in TERMINA_ALIASES and TERMINA_ALIASES[vid] in nodes:
+        return TERMINA_ALIASES[vid]
+    v = venues.get(vid)
+    if v is None:
+        stats["venue_unknown"] += 1
+        return None
+    host = (v.get("host") or "").lstrip(".")
+    for nid in host_idx.get(host, []):
+        return nid
+    ntype, prefix = TERMINA_KIND_TYPE.get(v.get("kind") or "", ("endpoint", "end:"))
+    label = (host + (v.get("path") or "")).rstrip("/") or vid
+    node_id = prefix + vid
+    existed = node_id in nodes
+    n = add_node(graph, nodes, node_id, ntype, label,
+                 f"{v.get('kind')} venue from the termina.digital db ({v.get('status')})", "termina")
+    host_idx.setdefault(host, []).append(n["id"])
+    if not existed:
+        stats["venues_new"] += 1
+    return n["id"]
+
+
 def termina_edges(graph: Dict[str, Any], tdir: Path) -> Dict[str, int]:
     venues = {json.loads(l)["id"]: json.loads(l) for l in (tdir / "venue.jsonl").open() if l.strip()}
     links = [json.loads(l) for l in (tdir / "venue_link.jsonl").open() if l.strip()]
@@ -318,26 +345,9 @@ def termina_edges(graph: Dict[str, Any], tdir: Path) -> Dict[str, int]:
     stats = Counter()
     graph.setdefault("relmeta", {}).update(NEW_RELMETA)
 
-    def node_for(vid: str) -> Optional[str]:
-        if vid in TERMINA_ALIASES and TERMINA_ALIASES[vid] in nodes:
-            return TERMINA_ALIASES[vid]
-        v = venues.get(vid)
-        if v is None:
-            stats["venue_unknown"] += 1
-            return None
-        host = (v.get("host") or "").lstrip(".")
-        for nid in host_idx.get(host, []):
-            return nid
-        ntype, prefix = TERMINA_KIND_TYPE.get(v.get("kind") or "", ("endpoint", "end:"))
-        label = (host + (v.get("path") or "")).rstrip("/") or vid
-        n = add_node(graph, nodes, prefix + vid, ntype, label,
-                     f"{v.get('kind')} venue from the termina.digital db ({v.get('status')})", "termina")
-        host_idx.setdefault(host, []).append(n["id"])
-        stats["venues_new"] += 1
-        return n["id"]
-
     for l in links:
-        a, b = node_for(l["from_venue"]), node_for(l["to_venue"])
+        a = _termina_node_for(l["from_venue"], venues, graph, nodes, host_idx, stats)
+        b = _termina_node_for(l["to_venue"], venues, graph, nodes, host_idx, stats)
         if a is None or b is None:
             stats["links_unmapped"] += 1
             continue
@@ -347,6 +357,106 @@ def termina_edges(graph: Dict[str, Any], tdir: Path) -> Dict[str, int]:
             stats["rt:" + rt] += 1
         else:
             stats["links_duplicate"] += 1
+    return dict(stats)
+
+
+def termina_database_edges(graph: Dict[str, Any], database: Path) -> Dict[str, int]:
+    """Add a compact incident/campaign/cluster layer from the full database."""
+    con = sqlite3.connect(f"file:{database}?mode=ro", uri=True)
+    con.row_factory = sqlite3.Row
+    nodes, pairs = _index(graph)
+    host_idx = _host_index(nodes)
+    stats = Counter()
+    graph.setdefault("relmeta", {}).update({"assigned_to": "assigned to", "observed_at": "observed at"})
+    try:
+        venues = {row["id"]: dict(row) for row in con.execute("SELECT * FROM venue")}
+        incident = dict(con.execute("SELECT * FROM incident WHERE id='dsewiki-2026-05'").fetchone())
+        campaign_items = json.loads(incident["campaigns"])
+        campaign_ids = [item["id"] if isinstance(item, dict) else item for item in campaign_items]
+
+        def claim_summary(kind: str, subject_id: str) -> str:
+            counts = Counter(row[0] for row in con.execute(
+                "SELECT status FROM claim WHERE subject_kind=? AND subject_id=?", (kind, subject_id)))
+            total = sum(counts.values())
+            detail = ", ".join(f"{n} {status}" for status, n in sorted(counts.items()))
+            evidence = con.execute(
+                "SELECT count(DISTINCT made_by) FROM claim WHERE subject_kind=? AND subject_id=? AND made_by IS NOT NULL",
+                (kind, subject_id),
+            ).fetchone()[0]
+            return f"{total} claims ({detail}); {evidence} named evidence sources" if total else "no direct claims"
+
+        incident_id = "incident:" + incident["id"]
+        incident_existed = incident_id in nodes
+        add_node(
+            graph, nodes, incident_id, "incident", incident["name"],
+            f"{incident['status']} · {incident['severity']} · {claim_summary('incident', incident['id'])}",
+            "termina-db",
+        )
+        if not incident_existed:
+            stats["incidents_new"] += 1
+
+        placeholders = ",".join("?" for _ in campaign_ids)
+        campaigns = [dict(row) for row in con.execute(
+            f"SELECT * FROM campaign WHERE id IN ({placeholders}) ORDER BY id", campaign_ids)]
+        clusters = [dict(row) for row in con.execute(
+            f"SELECT * FROM cluster WHERE campaign_id IN ({placeholders}) ORDER BY campaign_id,id", campaign_ids)]
+
+        for campaign in campaigns:
+            cid = "campaign:" + campaign["id"]
+            campaign_existed = cid in nodes
+            count, actors, first, last = con.execute(
+                "SELECT count(*),count(DISTINCT actor_id),min(observed_time),max(observed_time) FROM record WHERE campaign_id=?",
+                (campaign["id"],),
+            ).fetchone()
+            add_node(
+                graph, nodes, cid, "campaign", campaign["name"],
+                f"{campaign['kind']} · {campaign['confidence']} · {count:,} records · {actors:,} handles · "
+                f"{claim_summary('campaign', campaign['id'])}", "termina-db",
+            )
+            nodes[cid]["first"], nodes[cid]["last"] = first, last
+            if add_link(graph, pairs, incident_id, cid, "contains", "contains", "termina-db"):
+                stats["incident_campaign_links"] += 1
+            if not campaign_existed:
+                stats["campaigns_new"] += 1
+
+        for cluster in clusters:
+            cluster_id = "cluster:" + cluster["id"]
+            cluster_existed = cluster_id in nodes
+            count, actors, first, last = con.execute(
+                "SELECT count(*),count(DISTINCT actor_id),min(observed_time),max(observed_time) FROM record WHERE cluster_id=?",
+                (cluster["id"],),
+            ).fetchone()
+            add_node(
+                graph, nodes, cluster_id, "cluster", cluster["name"],
+                f"{count:,} records · {actors:,} handles · {claim_summary('cluster', cluster['id'])}",
+                "termina-db",
+            )
+            nodes[cluster_id]["first"], nodes[cluster_id]["last"] = first, last
+            if add_link(graph, pairs, "campaign:" + cluster["campaign_id"], cluster_id,
+                        "contains", "contains", "termina-db"):
+                stats["campaign_cluster_links"] += 1
+            if not cluster_existed:
+                stats["clusters_new"] += 1
+
+            rows = con.execute(
+                "SELECT venue_id,count(*) records,count(DISTINCT actor_id) actors "
+                "FROM record WHERE cluster_id=? GROUP BY venue_id ORDER BY records DESC",
+                (cluster["id"],),
+            )
+            for row in rows:
+                venue_node = _termina_node_for(row["venue_id"], venues, graph, nodes, host_idx, stats)
+                if venue_node and add_link(
+                    graph, pairs, cluster_id, venue_node, "observed_at",
+                    f"{row['records']:,} records · {row['actors']:,} handles", "termina-db"
+                ):
+                    stats["cluster_venue_links"] += 1
+
+        stats["record_edges_summarized"] = con.execute(
+            "SELECT count(*) FROM edge e JOIN record r ON r.id=e.from_record "
+            "WHERE r.incident_id='dsewiki-2026-05'"
+        ).fetchone()[0]
+    finally:
+        con.close()
     return dict(stats)
 
 
@@ -387,6 +497,9 @@ def main(argv: Optional[List[str]] = None) -> int:
         report["inputs"]["pack"] = {"path": str(a.pack), "sha256": _sha(sq)}
     if a.termina:
         report["added"]["termina"] = termina_edges(graph, a.termina)
+        database = a.termina / "incidents.sqlite"
+        if database.exists():
+            report["added"]["termina_database"] = termina_database_edges(graph, database)
         inp = {"path": str(a.termina)}
         for name in TERMINA_FILES:
             f = a.termina / name

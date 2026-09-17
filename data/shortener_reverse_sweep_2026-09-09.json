@@ -1,0 +1,817 @@
+{
+  "archive_results": [
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2F0IPqV6&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/0IPqV6"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2F1LEMm&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/1LEMm"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FA6I6W&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/A6I6W"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FAosq0j&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/Aosq0j"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FbBoBY&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/bBoBY"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FEbUsZF&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/EbUsZF"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FhjQNNH&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/hjQNNH"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FjfrJV9&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/jfrJV9"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FJrYFX&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/JrYFX"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FjXulw&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/jXulw"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FmbkEWp&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/mbkEWp"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FO9VYR&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/O9VYR"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FpYuz3Y&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/pYuz3Y"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FR1uzz1&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/R1uzz1"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FrzWCf4&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/rzWCf4"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FxGRGTw&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/xGRGTw"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2FyOBOs0&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/yOBOs0"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=da.gd%2Fzz2&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "da.gd/zz2"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=is.gd%2Famf16w&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "is.gd/amf16w"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=is.gd%2FNeQnU5&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "is.gd/NeQnU5"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=is.gd%2FZHHVrO&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "is.gd/ZHHVrO"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=is.gd%2FZOsvgs&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "is.gd/ZOsvgs"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2F23pkckfk&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/23pkckfk"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2F24frjnrg&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/24frjnrg"
+    },
+    {
+      "capture_count": 1,
+      "captures": [
+        {
+          "digest": "IXN2H34TW55OC7NT72VNBVQM3H325VFJ",
+          "mimetype": "text/html",
+          "original": "https://tinyurl.com/24rdejoe",
+          "redirect": null,
+          "statuscode": "302",
+          "timestamp": "20260617064741"
+        }
+      ],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2F24rdejoe&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/24rdejoe"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2F25mmh7mc&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/25mmh7mc"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2F28nuk47n&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/28nuk47n"
+    },
+    {
+      "capture_count": 1,
+      "captures": [
+        {
+          "digest": "2NQ2GGVGZUOWWLGLKCHHPOEZ7S2OJXFX",
+          "mimetype": "text/html",
+          "original": "https://tinyurl.com/2amf3sba",
+          "redirect": null,
+          "statuscode": "302",
+          "timestamp": "20260618030138"
+        }
+      ],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2F2amf3sba&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/2amf3sba"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=tinyurl.com%2Fstl-celf&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "tinyurl.com/stl-celf"
+    },
+    {
+      "capture_count": 1,
+      "captures": [
+        {
+          "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+          "mimetype": "text/html",
+          "original": "https://uoft.me/amass932899504",
+          "redirect": null,
+          "statuscode": "301",
+          "timestamp": "20260904190317"
+        }
+      ],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=uoft.me%2Famass932899504&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "uoft.me/amass932899504"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=uoft.me%2Fmaagentxyz99999&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "uoft.me/maagentxyz99999"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=uoft.me%2Fmafresh91011&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "uoft.me/mafresh91011"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=uoft.me%2Fzzagent740558&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "uoft.me/zzagent740558"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=v.gd%2FpsTfZX&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "v.gd/psTfZX"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=v.gd%2Ft1D9LQ&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "v.gd/t1D9LQ"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=v.gd%2FXNW3Pa&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "v.gd/XNW3Pa"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=vanderbi.lt%2Fcookage85datax&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "vanderbi.lt/cookage85datax"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=vanderbi.lt%2Ferierrmag70&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "vanderbi.lt/erierrmag70"
+    },
+    {
+      "capture_count": 3,
+      "captures": [
+        {
+          "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+          "mimetype": "text/html",
+          "original": "http://vanderbi.lt/iyg1y",
+          "redirect": null,
+          "statuscode": "301",
+          "timestamp": "20150907192158"
+        },
+        {
+          "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+          "mimetype": "warc/revisit",
+          "original": "http://vanderbi.lt/iyg1y/",
+          "redirect": null,
+          "statuscode": "-",
+          "timestamp": "20150923175252"
+        },
+        {
+          "digest": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+          "mimetype": "text/html",
+          "original": "http://vanderbi.lt/iyg1y",
+          "redirect": null,
+          "statuscode": "301",
+          "timestamp": "20240728144714"
+        }
+      ],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=vanderbi.lt%2Fiyg1y&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "vanderbi.lt/iyg1y"
+    },
+    {
+      "capture_count": 0,
+      "captures": [],
+      "error": null,
+      "http": 200,
+      "location": null,
+      "query": "https://web.archive.org/cdx/search/cdx?url=vanderbi.lt%2Fjsallwrap260618&matchType=exact&output=json&fl=timestamp%2Coriginal%2Cstatuscode%2Cmimetype%2Cdigest%2Credirect&limit=1000",
+      "redirect_targets": [],
+      "short_code": "vanderbi.lt/jsallwrap260618"
+    }
+  ],
+  "counts": {
+    "archive_codes_with_redirect_target": 0,
+    "archive_queries": 40,
+    "archive_queries_this_run": 1,
+    "public_listing_requests": 24,
+    "public_listing_requests_this_run": 3,
+    "public_listing_row_pairs": 0,
+    "unresolved_codes": 40
+  },
+  "inputs": {
+    "reverse_index": "/Users/raelisavitt/wiki-agent-swarm-incident/data/shortener_reverse_index_2026-09-09.json",
+    "termina_db": "/Users/raelisavitt/wiki-agent-swarm-incident/data/termina/incidents.sqlite"
+  },
+  "listing_results": [
+    {
+      "bytes": 10754,
+      "destination_hits": [],
+      "error": null,
+      "host": "ativar.abre.bio",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "25639509a70aac01188a036096ba9c89593759f0cb52345bcb2f92a23be67cf5",
+      "short_code_hits": [],
+      "url": "https://ativar.abre.bio/",
+      "venue_id": "abre-bio"
+    },
+    {
+      "bytes": 0,
+      "destination_hits": [],
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>",
+      "host": "app.bitily.in",
+      "http": 0,
+      "location_not_followed": null,
+      "outcome": "http-or-transport-error",
+      "row_pairs": [],
+      "sha256": null,
+      "short_code_hits": [],
+      "url": "https://app.bitily.in/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "bitily"
+    },
+    {
+      "bytes": 2312,
+      "destination_hits": [],
+      "error": null,
+      "host": "app.bitily.in",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "42367bf8831041aded82527f98bd9c2730cf843862bce850816b4e362c59df0f",
+      "short_code_hits": [],
+      "url": "https://bitily.in/MYLABI/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "bitily"
+    },
+    {
+      "bytes": 26,
+      "destination_hits": [],
+      "error": null,
+      "host": "ctxr.me",
+      "http": 502,
+      "location_not_followed": null,
+      "outcome": "http-or-transport-error",
+      "row_pairs": [],
+      "sha256": "e85d287cf46887a4b4bbe4c10acfce9794afe4756d2d0ead2e8dadd23426d316",
+      "short_code_hits": [],
+      "url": "https://ctxr.me/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "ctxr-me"
+    },
+    {
+      "bytes": 11943,
+      "destination_hits": [],
+      "error": null,
+      "host": "easylinkref.com",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "fb4eaf650df9077c5464888203c2397e5693a3c3fb8ef66b3c3bc9ae5e805903",
+      "short_code_hits": [],
+      "url": "https://easylinkref.com/",
+      "venue_id": "easylinkref"
+    },
+    {
+      "bytes": 11643,
+      "destination_hits": [],
+      "error": null,
+      "host": "www.klickhier.at",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "94573de08973e8e0bfe261f556e6a62f6db0e0a79000d19d535f60ed02c53885",
+      "short_code_hits": [],
+      "url": "https://www.klickhier.at/",
+      "venue_id": "klickhier"
+    },
+    {
+      "bytes": 10837,
+      "destination_hits": [],
+      "error": null,
+      "host": "kodak.love",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "489b2aaae69bbefa168bbf7ab2d88b3482493218d06be94e0650057a09b6e7bf",
+      "short_code_hits": [],
+      "url": "https://kodak.love/",
+      "venue_id": "kodak-love"
+    },
+    {
+      "bytes": 28922,
+      "destination_hits": [],
+      "error": null,
+      "host": "linkrutgon.net",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "0ae580fc48c51995ee0f3317a31bcde38a66e618f28b944fdee4c773b7db7694",
+      "short_code_hits": [],
+      "url": "https://linkrutgon.net/url/public",
+      "venue_id": "linkrutgon"
+    },
+    {
+      "bytes": 36380,
+      "destination_hits": [
+        "end:example.org/test"
+      ],
+      "error": null,
+      "host": "lnkr.click",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "2ec4ad778f4696122d22b40ca54e91f3a9c860215a19b010ace99506568ddb30",
+      "short_code_hits": [],
+      "url": "https://lnkr.click/",
+      "venue_id": "lnkr-click"
+    },
+    {
+      "bytes": 118361,
+      "destination_hits": [
+        "end:dataafrica",
+        "end:example.org/test",
+        "end:sec.gov/files/county.json",
+        "proxy:markdown.new"
+      ],
+      "error": null,
+      "host": "rmn.re",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "4859a25d7ec9361e8ba272c273aa5c52259b55070ceeb5bb1e047924b49c714c",
+      "short_code_hits": [],
+      "url": "https://rmn.re/admin/index.php?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "rmn-re"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/g3-jc+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/massjson715+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/jqinv11method+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/jqinv11raw+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/bwkug+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/mdgood778+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/openaipovertycompacttest+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/ourjsget26abc+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/macountyjson+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 2373,
+      "destination_hits": [],
+      "error": null,
+      "host": "vanderbi.lt",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "e6cab8db1a2ec31c54668a24ff4f037d62e553b779d7a3fa43f025610336ef9e",
+      "short_code_hits": [],
+      "url": "https://vanderbi.lt/agentcounty+",
+      "venue_id": "vanderbilt"
+    },
+    {
+      "bytes": 0,
+      "destination_hits": [],
+      "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "host": "yourls.biz",
+      "http": 0,
+      "location_not_followed": null,
+      "outcome": "http-or-transport-error",
+      "row_pairs": [],
+      "sha256": null,
+      "short_code_hits": [],
+      "url": "https://yourls.biz/steg17796785680+",
+      "venue_id": "yourls-biz"
+    },
+    {
+      "bytes": 19894,
+      "destination_hits": [],
+      "error": null,
+      "host": "yourls.pl",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "54170b08c6f5609053b94e18109ca514fc7a30ee66653735654357594febc24f",
+      "short_code_hits": [],
+      "url": "https://yourls.pl/?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "yourls-pl"
+    },
+    {
+      "bytes": 146529,
+      "destination_hits": [],
+      "error": null,
+      "host": "yourls.space",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "7d032435ae32170e666aad80681957d87db560123f5c4f0e2f74bc466d634ff7",
+      "short_code_hits": [],
+      "url": "https://yourls.space/?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "yourls-space"
+    },
+    {
+      "bytes": 2653,
+      "destination_hits": [],
+      "error": null,
+      "host": "zapro.si",
+      "http": 200,
+      "location_not_followed": null,
+      "outcome": "read",
+      "row_pairs": [],
+      "sha256": "d7da1361420a179b65f75c972a10d70062584aac38c4cdb8bb6ba7a638635ec2",
+      "short_code_hits": [],
+      "url": "https://zapro.si/?sort_by=timestamp&sort_order=desc&perpage=100",
+      "venue_id": "zapro-si"
+    }
+  ],
+  "network_policy": "No bare short URLs; no redirects followed; CDX index plus explicit public listing/statistics URLs only.",
+  "recovered_archive_targets": {},
+  "run": "2026-09-09T18:19:28.743010+00:00"
+}
