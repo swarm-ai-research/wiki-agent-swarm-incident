@@ -1,0 +1,151 @@
+{
+ "_about": "Save Page Now requests made 2026-09-17 ~01:49-02:20 UTC for the SentinelLABS report, both HF account profiles, the two BioMysteryBench discussions and every repo commit page. 'confirmed' = a capture from 2026-09-16 on appeared in the Wayback CDX (checked 2026-09-17; CDX was rate-limiting, so unconfirmed rows may still exist). Pre-existing third-party captures of 0Time pages date from 2026-09-09 08:53 UTC.",
+ "saves": [
+  {
+   "url": "https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/0Time",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/Nyx9",
+   "status": "confirmed",
+   "wayback_ts": "20260917014930",
+   "replay": "https://web.archive.org/web/20260917014930/https://huggingface.co/Nyx9"
+  },
+  {
+   "url": "https://huggingface.co/datasets/Anthropic/BioMysteryBench-full/discussions/3",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/Anthropic/BioMysteryBench-full/discussions/4",
+   "status": "confirmed",
+   "wayback_ts": "20260917014917",
+   "replay": "https://web.archive.org/web/20260917014917/https://huggingface.co/datasets/Anthropic/BioMysteryBench-full/discussions/4"
+  },
+  {
+   "url": "https://huggingface.co/0Time/INCEPT-SH/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/0Time/x/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/0Time/xyztest05bcb6/commits/main",
+   "status": "confirmed",
+   "wayback_ts": "20260917015013",
+   "replay": "https://web.archive.org/web/20260917015013/https://huggingface.co/0Time/xyztest05bcb6/commits/main"
+  },
+  {
+   "url": "https://huggingface.co/0Time/xyztest34c9cb/commits/main",
+   "status": "confirmed",
+   "wayback_ts": "20260917020102",
+   "replay": "https://web.archive.org/web/20260917020102/https://huggingface.co/0Time/xyztest34c9cb/commits/main"
+  },
+  {
+   "url": "https://huggingface.co/0Time/h2test/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/0Time/foo/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/0Time/test20/commits/main",
+   "status": "confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/0Time/testdata/commits/main",
+   "status": "confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/0Time/x/commits/main",
+   "status": "confirmed",
+   "wayback_ts": "20260917020355",
+   "replay": "https://web.archive.org/web/20260917020355/https://huggingface.co/datasets/0Time/x/commits/main"
+  },
+  {
+   "url": "https://huggingface.co/datasets/0Time/findblobtest/commits/main",
+   "status": "confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/0Time/xx/commits/main",
+   "status": "confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/0Time/probeoid/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/spaces/0Time/puthack82d5/commits/main",
+   "status": "confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/spaces/0Time/latnetnew/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/spaces/0Time/altreg/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/Nyx9/temptestlf8eb0/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/Nyx9/tmppublicdata0/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/datasets/Nyx9/tmpdata177/commits/main",
+   "status": "confirmed",
+   "wayback_ts": null,
+   "replay": null
+  },
+  {
+   "url": "https://huggingface.co/spaces/Nyx9/netproxy17/commits/main",
+   "status": "requested, not confirmed",
+   "wayback_ts": null,
+   "replay": null
+  }
+ ],
+ "confirmed": 11,
+ "requested": 24
+}

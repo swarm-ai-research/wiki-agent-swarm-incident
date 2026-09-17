@@ -1,0 +1,1825 @@
+{
+ "captured_at": "2026-09-17T01:44:30+00:00",
+ "source": "https://huggingface.co/api (public, unauthenticated)",
+ "report": "https://www.sentinelone.com/labs/agents-at-large-tracing-illicit-openai-agent-activity-on-hugging-face/",
+ "note": "Handles are evidence containers, not actor names. Metadata only; no file bodies.",
+ "accounts": {
+  "0Time": {
+   "overview": {
+    "createdAt": "2026-02-21T14:31:34.000Z",
+    "numModels": 6,
+    "numDatasets": 6,
+    "numSpaces": 3,
+    "numDiscussions": 2,
+    "isPro": false
+   },
+   "repos": [
+    {
+     "kind": "models",
+     "id": "0Time/INCEPT-SH",
+     "info": {
+      "createdAt": "2026-03-09T01:12:37.000Z",
+      "lastModified": "2026-05-26T08:50:35.000Z",
+      "sha": "9e21367f2ed3fcb3a57c3f82d2418af9bfeb3cf4",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "cardData": {
+       "language": "en",
+       "license": "apache-2.0",
+       "tags": [
+        "linux",
+        "command-generation",
+        "gguf",
+        "qwen3",
+        "llama-cpp",
+        "offline"
+       ],
+       "base_model": "Qwen/Qwen3.5-0.8B"
+      },
+      "tags": [
+       "gguf",
+       "linux",
+       "command-generation",
+       "qwen3",
+       "llama-cpp",
+       "offline",
+       "en",
+       "base_model:Qwen/Qwen3.5-0.8B",
+       "base_model:quantized:Qwen/Qwen3.5-0.8B",
+       "license:apache-2.0",
+       "endpoints_compatible",
+       "region:us",
+       "conversational"
+      ],
+      "downloads": 94,
+      "likes": 2
+     },
+     "commits": [
+      {
+       "id": "9e21367f2ed3fcb3a57c3f82d2418af9bfeb3cf4",
+       "date": "2026-05-26T08:50:35.000Z",
+       "title": "copytry",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "9dad7b39e866253e03c0281ebea5b51447b14b3b",
+       "date": "2026-05-26T08:50:14.000Z",
+       "title": "copytry",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "cdd2a9629654256ed4b2ac953c6b81143e006fea",
+       "date": "2026-05-26T08:34:13.000Z",
+       "title": "rawptrvalid",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "8b6938f8755d748d123e2c90c83d1d33a81d14d2",
+       "date": "2026-05-26T08:21:24.000Z",
+       "title": "copytry",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "77a34313a52448da5323a0aa72b981901162de59",
+       "date": "2026-05-26T08:21:11.000Z",
+       "title": "copytry",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "6a310c39deb4dafaef3ad4366afff43ae121c36e",
+       "date": "2026-03-10T00:45:46.000Z",
+       "title": "fix: remove em dash from description",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "5996da4f762088643c1ebea535e58b2c5f2a44c9",
+       "date": "2026-03-10T00:42:53.000Z",
+       "title": "fix: replace edge servers with low-resource and edge devices",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "7236d0cc3b7bd7bc3edb680f26f9e33824935d53",
+       "date": "2026-03-09T17:28:00.000Z",
+       "title": "Update description: edge deployment, no GPU, no API",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "7855fd1ca9b5c4b3372a81a87f21aa596d4ecf54",
+       "date": "2026-03-09T16:41:08.000Z",
+       "title": "Update model card: INCEPT.sh v1.0.0, new GitHub URL (0-Time), install.sh, /think toggle",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "933029a7e925c95f8ed17958c929e484b6432bdf",
+       "date": "2026-03-09T01:12:43.000Z",
+       "title": "Add INCEPT-SH Q8_0 GGUF",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "53da7e75838aeb3a29712408d799acb3072cb4e0",
+       "date": "2026-03-09T01:12:38.000Z",
+       "title": "Add model card",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "e0bbc7cf988ab0c470a7ada4cfaf53e1049af851",
+       "date": "2026-03-09T01:12:37.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "e0bbc7cf988ab0c470a7ada4cfaf53e1049af851",
+       "date": "2026-03-09T01:12:37.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "53da7e75838aeb3a29712408d799acb3072cb4e0",
+       "date": "2026-03-09T01:12:38.000Z",
+       "added": {
+        "README.md": {
+         "size": 2280,
+         "oid": "a1f735e13b2997cdf4d0ba38830d0a8692b0bdf9",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "933029a7e925c95f8ed17958c929e484b6432bdf",
+       "date": "2026-03-09T01:12:43.000Z",
+       "added": {
+        "incept-sh.gguf": {
+         "size": 811843008,
+         "oid": "bf5eb4dff048973174bacbacd8ba9cb1d9ecfbd0",
+         "lfs_sha256": "6074b30a886e180465796831db9c4d8532c884b939f319901383c2fe1a777799"
+        }
+       },
+       "removed": [],
+       "changed": {
+        ".gitattributes": {
+         "size": 1570,
+         "oid": "2b7b2781431bcfca851fc50d8628c69eeac4bb35",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "7855fd1ca9b5c4b3372a81a87f21aa596d4ecf54",
+       "date": "2026-03-09T16:41:08.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 2871,
+         "oid": "4a4cc8a9a652669ab00ff09c760879b0c5bbabab",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "7236d0cc3b7bd7bc3edb680f26f9e33824935d53",
+       "date": "2026-03-09T17:28:00.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 2911,
+         "oid": "28d1ad21720ccec3334239d99501ed0b89ff840a",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "5996da4f762088643c1ebea535e58b2c5f2a44c9",
+       "date": "2026-03-10T00:42:53.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 2902,
+         "oid": "8c0f191f0f3f6dea06d52aa418b23aa17a1aa023",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "6a310c39deb4dafaef3ad4366afff43ae121c36e",
+       "date": "2026-03-10T00:45:46.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 2895,
+         "oid": "d6e310662db2749b0a25a91054c940403cdc1d5b",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "77a34313a52448da5323a0aa72b981901162de59",
+       "date": "2026-05-26T08:21:11.000Z",
+       "added": {
+        "copy.gguf": {
+         "size": 811843008,
+         "oid": "bf5eb4dff048973174bacbacd8ba9cb1d9ecfbd0",
+         "lfs_sha256": "6074b30a886e180465796831db9c4d8532c884b939f319901383c2fe1a777799"
+        }
+       },
+       "removed": [],
+       "changed": {
+        ".gitattributes": {
+         "size": 1616,
+         "oid": "24566994c93e4eb181e5802fabf1cbdec4df883d",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "8b6938f8755d748d123e2c90c83d1d33a81d14d2",
+       "date": "2026-05-26T08:21:24.000Z",
+       "added": {
+        "copynosize.gguf": {
+         "size": 811843008,
+         "oid": "bf5eb4dff048973174bacbacd8ba9cb1d9ecfbd0",
+         "lfs_sha256": "6074b30a886e180465796831db9c4d8532c884b939f319901383c2fe1a777799"
+        }
+       },
+       "removed": [],
+       "changed": {
+        ".gitattributes": {
+         "size": 1668,
+         "oid": "30a8092307adf2a5195cba6bd7a2899427c678c2",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "cdd2a9629654256ed4b2ac953c6b81143e006fea",
+       "date": "2026-05-26T08:34:13.000Z",
+       "added": {
+        "rawptrvalid.txt": {
+         "size": 811843008,
+         "oid": "bf5eb4dff048973174bacbacd8ba9cb1d9ecfbd0",
+         "lfs_sha256": "6074b30a886e180465796831db9c4d8532c884b939f319901383c2fe1a777799"
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "9dad7b39e866253e03c0281ebea5b51447b14b3b",
+       "date": "2026-05-26T08:50:14.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "9e21367f2ed3fcb3a57c3f82d2418af9bfeb3cf4",
+       "date": "2026-05-26T08:50:35.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "models",
+     "id": "0Time/x",
+     "info": {
+      "createdAt": "2026-05-13T05:58:09.000Z",
+      "lastModified": "2026-05-13T05:58:09.000Z",
+      "sha": "64c6fa0f98cfbe2ced5da7d0ee3a3e11b714148b",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 0,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "64c6fa0f98cfbe2ced5da7d0ee3a3e11b714148b",
+       "date": "2026-05-13T05:58:09.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "64c6fa0f98cfbe2ced5da7d0ee3a3e11b714148b",
+       "date": "2026-05-13T05:58:09.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "models",
+     "id": "0Time/xyztest05bcb6",
+     "info": {
+      "createdAt": "2026-05-13T07:35:32.000Z",
+      "lastModified": "2026-05-13T07:46:18.000Z",
+      "sha": "27e4c317d105dda6c07483149ae1456acfbf1731",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 0,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "27e4c317d105dda6c07483149ae1456acfbf1731",
+       "date": "2026-05-13T07:46:18.000Z",
+       "title": "add",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "fa064da820cfba0fcf737b9cfcce818a167a1563",
+       "date": "2026-05-13T07:46:18.000Z",
+       "title": "add",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "edf9da52203430f9e179da3cf9625f2ddff118da",
+       "date": "2026-05-13T07:44:20.000Z",
+       "title": "add",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "e1e15d7e6d8d6106783c2aaa38b1d749670f0b4e",
+       "date": "2026-05-13T07:44:20.000Z",
+       "title": "add",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "8856012158f732ab97e9f6f6d132f32a075690d7",
+       "date": "2026-05-13T07:35:32.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "8856012158f732ab97e9f6f6d132f32a075690d7",
+       "date": "2026-05-13T07:35:32.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "e1e15d7e6d8d6106783c2aaa38b1d749670f0b4e",
+       "date": "2026-05-13T07:44:20.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "edf9da52203430f9e179da3cf9625f2ddff118da",
+       "date": "2026-05-13T07:44:20.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "fa064da820cfba0fcf737b9cfcce818a167a1563",
+       "date": "2026-05-13T07:46:18.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "27e4c317d105dda6c07483149ae1456acfbf1731",
+       "date": "2026-05-13T07:46:18.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "models",
+     "id": "0Time/xyztest34c9cb",
+     "info": {
+      "createdAt": "2026-05-13T07:50:31.000Z",
+      "lastModified": "2026-05-13T07:50:31.000Z",
+      "sha": "96d1c9534b7ef5deab5ada1a3004eff09ec8e876",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 0,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "96d1c9534b7ef5deab5ada1a3004eff09ec8e876",
+       "date": "2026-05-13T07:50:31.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "96d1c9534b7ef5deab5ada1a3004eff09ec8e876",
+       "date": "2026-05-13T07:50:31.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "models",
+     "id": "0Time/h2test",
+     "info": {
+      "createdAt": "2026-05-13T11:34:49.000Z",
+      "lastModified": "2026-05-13T11:34:49.000Z",
+      "sha": "f4157264ac30693e3af68b3e895216ea0a340f17",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 0,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "f4157264ac30693e3af68b3e895216ea0a340f17",
+       "date": "2026-05-13T11:34:49.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "f4157264ac30693e3af68b3e895216ea0a340f17",
+       "date": "2026-05-13T11:34:49.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "models",
+     "id": "0Time/foo",
+     "info": {
+      "createdAt": "2026-05-26T10:51:56.000Z",
+      "lastModified": "2026-05-26T10:51:56.000Z",
+      "sha": "0e7ad0b61726024da27716945adfa93411638799",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 0,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "0e7ad0b61726024da27716945adfa93411638799",
+       "date": "2026-05-26T10:51:56.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "0e7ad0b61726024da27716945adfa93411638799",
+       "date": "2026-05-26T10:51:56.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "0Time/test20",
+     "info": {
+      "createdAt": "2026-05-13T09:06:11.000Z",
+      "lastModified": "2026-05-13T09:06:11.000Z",
+      "sha": "ac690303b646c875cff72241a7106909bc41b64e",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 4,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "ac690303b646c875cff72241a7106909bc41b64e",
+       "date": "2026-05-13T09:06:11.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "ac690303b646c875cff72241a7106909bc41b64e",
+       "date": "2026-05-13T09:06:11.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "0Time/testdata",
+     "info": {
+      "createdAt": "2026-05-13T10:48:53.000Z",
+      "lastModified": "2026-05-13T10:48:53.000Z",
+      "sha": "551d8d75bf2f1a48512714cbbc310e84d8e1b5e4",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 3,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "551d8d75bf2f1a48512714cbbc310e84d8e1b5e4",
+       "date": "2026-05-13T10:48:53.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "551d8d75bf2f1a48512714cbbc310e84d8e1b5e4",
+       "date": "2026-05-13T10:48:53.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "0Time/x",
+     "info": {
+      "createdAt": "2026-05-13T10:49:28.000Z",
+      "lastModified": "2026-05-13T10:49:28.000Z",
+      "sha": "ed756cac0a0a0d42a41ec07c84537df9f7d6930c",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 3,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "ed756cac0a0a0d42a41ec07c84537df9f7d6930c",
+       "date": "2026-05-13T10:49:28.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "ed756cac0a0a0d42a41ec07c84537df9f7d6930c",
+       "date": "2026-05-13T10:49:28.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "0Time/findblobtest",
+     "info": {
+      "createdAt": "2026-05-26T07:02:20.000Z",
+      "lastModified": "2026-05-26T08:32:50.000Z",
+      "sha": "88eb912304c70eacbe9535dfe10c0eebe42ae743",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "size_categories:n<1K",
+       "format:text",
+       "modality:image",
+       "modality:text",
+       "library:datasets",
+       "library:mlcroissant",
+       "region:us"
+      ],
+      "downloads": 29,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "88eb912304c70eacbe9535dfe10c0eebe42ae743",
+       "date": "2026-05-26T08:32:50.000Z",
+       "title": "testrawattrs",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "3a81021a4a63f962f255ef7b701fc4fba8bab94e",
+       "date": "2026-05-26T08:32:42.000Z",
+       "title": "testrawattrs",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "2c389b15c1e8ce01df7b14752643edc767503487",
+       "date": "2026-05-26T07:25:33.000Z",
+       "title": "ptrplain",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "dc44bcdd4dfe1829f6973b55da8b2f43a573aa88",
+       "date": "2026-05-26T07:25:02.000Z",
+       "title": "directtest",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "13d9d53c6c03cc469a1476c75d5d6be60732f2f4",
+       "date": "2026-05-26T07:24:56.000Z",
+       "title": "directtest",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "51feeb4437e9fb1dce507254d3299276a331726b",
+       "date": "2026-05-26T07:16:35.000Z",
+       "title": "directtest",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "33fdbe301c24a58d751289b9b5435ae35f518f92",
+       "date": "2026-05-26T07:16:28.000Z",
+       "title": "directtest",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "998206d46ebe57484f2da0be4ba9b549015822e0",
+       "date": "2026-05-26T07:02:20.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "998206d46ebe57484f2da0be4ba9b549015822e0",
+       "date": "2026-05-26T07:02:20.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "33fdbe301c24a58d751289b9b5435ae35f518f92",
+       "date": "2026-05-26T07:16:28.000Z",
+       "added": {
+        "foo2.txt": {
+         "size": 19,
+         "oid": "65b3fa491db15bcc640646cb82d6c411473595df",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "51feeb4437e9fb1dce507254d3299276a331726b",
+       "date": "2026-05-26T07:16:35.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "13d9d53c6c03cc469a1476c75d5d6be60732f2f4",
+       "date": "2026-05-26T07:24:56.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "dc44bcdd4dfe1829f6973b55da8b2f43a573aa88",
+       "date": "2026-05-26T07:25:02.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "2c389b15c1e8ce01df7b14752643edc767503487",
+       "date": "2026-05-26T07:25:33.000Z",
+       "added": {
+        "plainptr.txt": {
+         "size": 135,
+         "oid": "bfb53955661535460e48045d9aba33bde7ef245f",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "3a81021a4a63f962f255ef7b701fc4fba8bab94e",
+       "date": "2026-05-26T08:32:42.000Z",
+       "added": {
+        "small.png": {
+         "size": 5,
+         "oid": "6a8165460570531a1247bd99a73b53a5a6e500d5",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "88eb912304c70eacbe9535dfe10c0eebe42ae743",
+       "date": "2026-05-26T08:32:50.000Z",
+       "added": {
+        "model.bin": {
+         "size": 7,
+         "oid": "dda6eb4b7b86af8aea969498003937b7c8aa46be",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "0Time/xx",
+     "info": {
+      "createdAt": "2026-05-26T07:02:55.000Z",
+      "lastModified": "2026-05-26T07:02:55.000Z",
+      "sha": "8948db026087c1532d52dd40fe0b5d5c80f5bd77",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 3,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "8948db026087c1532d52dd40fe0b5d5c80f5bd77",
+       "date": "2026-05-26T07:02:55.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "8948db026087c1532d52dd40fe0b5d5c80f5bd77",
+       "date": "2026-05-26T07:02:55.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "0Time/probeoid",
+     "info": {
+      "createdAt": "2026-05-26T19:06:32.000Z",
+      "lastModified": "2026-05-26T19:06:32.000Z",
+      "sha": "2d0513bb520343b33bd624a0449e8831cf71d418",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 4,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "2d0513bb520343b33bd624a0449e8831cf71d418",
+       "date": "2026-05-26T19:06:32.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "2d0513bb520343b33bd624a0449e8831cf71d418",
+       "date": "2026-05-26T19:06:32.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "spaces",
+     "id": "0Time/puthack82d5",
+     "info": {
+      "createdAt": "2026-05-13T11:02:55.000Z",
+      "lastModified": "2026-05-13T11:42:04.000Z",
+      "sha": "3e1bf2a142b4cf34ee6023f19a6e91aa8bbd92b6",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "sdk": "docker",
+      "cardData": {
+       "title": "Puthack82d5",
+       "emoji": "\ud83d\udd25",
+       "colorFrom": "red",
+       "colorTo": "yellow",
+       "sdk": "docker",
+       "pinned": false
+      },
+      "tags": [
+       "docker",
+       "region:us"
+      ],
+      "likes": 0,
+      "runtime": {
+       "stage": "PAUSED",
+       "errorMessage": "Flagged as abusive",
+       "hardware": {
+        "current": null,
+        "requested": "cpu-basic"
+       }
+      }
+     },
+     "commits": [
+      {
+       "id": "3e1bf2a142b4cf34ee6023f19a6e91aa8bbd92b6",
+       "date": "2026-05-13T11:42:04.000Z",
+       "title": "app",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "1901adfb15e54cdf924a3b66554864e5c0b31e8a",
+       "date": "2026-05-13T11:42:04.000Z",
+       "title": "app",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "33a1356cf8b47896ecd1389f3949cd0c21380ea2",
+       "date": "2026-05-13T11:05:13.000Z",
+       "title": "app",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "5508dd564b805cf3cef7cc4df7bad2732e427fc1",
+       "date": "2026-05-13T11:05:13.000Z",
+       "title": "app",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "3bc1855e1415261b3e2b7dccdfb0f0a2b262e072",
+       "date": "2026-05-13T11:02:55.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "3bc1855e1415261b3e2b7dccdfb0f0a2b262e072",
+       "date": "2026-05-13T11:02:55.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        },
+        "README.md": {
+         "size": 194,
+         "oid": "925fc2bd18c392d9c0afd395537154285d9eefa3",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "5508dd564b805cf3cef7cc4df7bad2732e427fc1",
+       "date": "2026-05-13T11:05:13.000Z",
+       "added": {
+        "Dockerfile": {
+         "size": 113,
+         "oid": "10151e6edeb4106624b631f36730a434a42ec460",
+         "lfs_sha256": null
+        },
+        "app.py": {
+         "size": 576,
+         "oid": "b6faa73bab9ee6d22d2cad26ee71953faf872ded",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "33a1356cf8b47896ecd1389f3949cd0c21380ea2",
+       "date": "2026-05-13T11:05:13.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "1901adfb15e54cdf924a3b66554864e5c0b31e8a",
+       "date": "2026-05-13T11:42:04.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "app.py": {
+         "size": 939,
+         "oid": "cd57005c0853007d828feb0e56f55ff2172443b4",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "3e1bf2a142b4cf34ee6023f19a6e91aa8bbd92b6",
+       "date": "2026-05-13T11:42:04.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "spaces",
+     "id": "0Time/latnetnew",
+     "info": {
+      "createdAt": "2026-05-26T21:06:05.000Z",
+      "lastModified": "2026-05-26T21:13:21.000Z",
+      "sha": "0790a6d802c8486be720467e7222d0639a95efe1",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "sdk": "docker",
+      "cardData": {
+       "title": "lat",
+       "sdk": "docker",
+       "app_port": 7860
+      },
+      "tags": [
+       "docker",
+       "region:us"
+      ],
+      "likes": 0,
+      "runtime": {
+       "stage": "PAUSED",
+       "errorMessage": "Flagged as abusive",
+       "hardware": {
+        "current": null,
+        "requested": "cpu-basic"
+       }
+      }
+     },
+     "commits": [
+      {
+       "id": "0790a6d802c8486be720467e7222d0639a95efe1",
+       "date": "2026-05-26T21:13:21.000Z",
+       "title": "init",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "baab8ac24055eb3fbaa0bfba2f33956fe1950647",
+       "date": "2026-05-26T21:12:41.000Z",
+       "title": "hi",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "ca44fb6fb8a31e3b8610d7a031826b3e27a25787",
+       "date": "2026-05-26T21:06:05.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "ca44fb6fb8a31e3b8610d7a031826b3e27a25787",
+       "date": "2026-05-26T21:06:05.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        },
+        "README.md": {
+         "size": 190,
+         "oid": "0bb0e5917017b6e0908e7004668b0681c3c87d09",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "baab8ac24055eb3fbaa0bfba2f33956fe1950647",
+       "date": "2026-05-26T21:12:41.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "0790a6d802c8486be720467e7222d0639a95efe1",
+       "date": "2026-05-26T21:13:21.000Z",
+       "added": {
+        "Dockerfile": {
+         "size": 92,
+         "oid": "db336a1e3dfd9ba0b081e79e8dc09da0755f62f7",
+         "lfs_sha256": null
+        },
+        "app.py": {
+         "size": 724,
+         "oid": "a55aed00d9d183fa26c4038f601f90ccf9fe50f2",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 46,
+         "oid": "2be13f0ee1798a21e87ed0deae7959f763daf4da",
+         "lfs_sha256": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "kind": "spaces",
+     "id": "0Time/altreg",
+     "info": {
+      "createdAt": "2026-05-30T00:01:27.000Z",
+      "lastModified": "2026-05-30T00:11:58.000Z",
+      "sha": "2f61603a03b29a4df2e08114c36bba293bd1d878",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "sdk": "docker",
+      "cardData": {
+       "title": "altreg",
+       "sdk": "docker",
+       "app_port": 7860
+      },
+      "tags": [
+       "docker",
+       "region:us"
+      ],
+      "likes": 0,
+      "runtime": {
+       "stage": "PAUSED",
+       "errorMessage": "Flagged as abusive",
+       "hardware": {
+        "current": null,
+        "requested": "cpu-basic"
+       }
+      }
+     },
+     "commits": [
+      {
+       "id": "2f61603a03b29a4df2e08114c36bba293bd1d878",
+       "date": "2026-05-30T00:11:58.000Z",
+       "title": "update",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "956918524eaf41dafb513e623ab672f6c0031b60",
+       "date": "2026-05-30T00:07:09.000Z",
+       "title": "update",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "03ed320c427ed1866d0612fd208f4f122b21d9f0",
+       "date": "2026-05-30T00:04:30.000Z",
+       "title": "update",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "5bd33b09c734ae477bac381e5ed05de954c16f20",
+       "date": "2026-05-30T00:03:40.000Z",
+       "title": "update",
+       "authors": [
+        "0Time"
+       ]
+      },
+      {
+       "id": "070efd0149f40ceb628d37c222bc0f74783f21e8",
+       "date": "2026-05-30T00:01:27.000Z",
+       "title": "initial commit",
+       "authors": [
+        "0Time"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "070efd0149f40ceb628d37c222bc0f74783f21e8",
+       "date": "2026-05-30T00:01:27.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        },
+        "README.md": {
+         "size": 190,
+         "oid": "dd6d732edf0fef1dd1331c128fccf6f09f6b1ec0",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "5bd33b09c734ae477bac381e5ed05de954c16f20",
+       "date": "2026-05-30T00:03:40.000Z",
+       "added": {
+        "x.txt": {
+         "size": 3,
+         "oid": "f2ba8f84ab5c1bce84a7b441cb1959cfc7093b7f",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "03ed320c427ed1866d0612fd208f4f122b21d9f0",
+       "date": "2026-05-30T00:04:30.000Z",
+       "added": {
+        "Dockerfile": {
+         "size": 123,
+         "oid": "a3cef9e1ff9b7c08b4cd376d371e3097cbb9f750",
+         "lfs_sha256": null
+        },
+        "app.py": {
+         "size": 495,
+         "oid": "3aaf764c413228d367d4fbf1b4360ca8c63f7e65",
+         "lfs_sha256": null
+        },
+        "reg.py": {
+         "size": 19436,
+         "oid": "1a881333dcd15bd648823ae127f5b94ba4de13f9",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 34,
+         "oid": "9204ac14f69469f934b50106b67254fb7d262bf0",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "956918524eaf41dafb513e623ab672f6c0031b60",
+       "date": "2026-05-30T00:07:09.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 49,
+         "oid": "02ca71e0148b0d6106edcc71a45c2a1fea8b64b5",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "2f61603a03b29a4df2e08114c36bba293bd1d878",
+       "date": "2026-05-30T00:11:58.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "reg.py": {
+         "size": 19553,
+         "oid": "b019eb794184497344c55b16135ef423c8206b98",
+         "lfs_sha256": null
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "Nyx9": {
+   "overview": {
+    "createdAt": "2023-06-25T07:37:18.000Z",
+    "numModels": 0,
+    "numDatasets": 3,
+    "numSpaces": 1,
+    "numDiscussions": 0,
+    "isPro": false
+   },
+   "repos": [
+    {
+     "kind": "datasets",
+     "id": "Nyx9/temptestlf8eb0",
+     "info": {
+      "createdAt": "2026-05-26T19:30:08.000Z",
+      "lastModified": "2026-05-26T20:04:11.000Z",
+      "sha": "e7156395856d5afd9216d63efdc42b9f884ebb23",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "size_categories:n<1K",
+       "format:text",
+       "modality:text",
+       "library:datasets",
+       "library:mlcroissant",
+       "region:us"
+      ],
+      "downloads": 9,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "e7156395856d5afd9216d63efdc42b9f884ebb23",
+       "date": "2026-05-26T20:04:11.000Z",
+       "title": "test",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "5f29c7380385097188521bc48677b39b1005f835",
+       "date": "2026-05-26T19:30:08.000Z",
+       "title": "initial commit",
+       "authors": [
+        "Nyx9"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "5f29c7380385097188521bc48677b39b1005f835",
+       "date": "2026-05-26T19:30:08.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "e7156395856d5afd9216d63efdc42b9f884ebb23",
+       "date": "2026-05-26T20:04:11.000Z",
+       "added": {
+        "hello.txt": {
+         "size": 2,
+         "oid": "32f95c0d1244a78b2be1bab8de17906fabb2c4a8",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "Nyx9/tmppublicdata0",
+     "info": {
+      "createdAt": "2026-05-26T22:55:40.000Z",
+      "lastModified": "2026-05-26T22:55:40.000Z",
+      "sha": "1297c6a5b398b0699b7bf5c14ef06855c90f770e",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "region:us"
+      ],
+      "downloads": 3,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "1297c6a5b398b0699b7bf5c14ef06855c90f770e",
+       "date": "2026-05-26T22:55:40.000Z",
+       "title": "initial commit",
+       "authors": [
+        "Nyx9"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "1297c6a5b398b0699b7bf5c14ef06855c90f770e",
+       "date": "2026-05-26T22:55:40.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "datasets",
+     "id": "Nyx9/tmpdata177",
+     "info": {
+      "createdAt": "2026-05-26T22:56:04.000Z",
+      "lastModified": "2026-05-26T23:34:10.000Z",
+      "sha": "dc1547d3c763e4a83d74860576accd32ce45e3f5",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "tags": [
+       "size_categories:n<1K",
+       "format:text",
+       "modality:document",
+       "modality:text",
+       "library:datasets",
+       "library:mlcroissant",
+       "region:us"
+      ],
+      "downloads": 51,
+      "likes": 0
+     },
+     "commits": [
+      {
+       "id": "dc1547d3c763e4a83d74860576accd32ce45e3f5",
+       "date": "2026-05-26T23:34:10.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "dace97d1c072362a424a1288f4642e97cc453ed5",
+       "date": "2026-05-26T23:28:46.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "12969822fcf098d38f94c2ff25c8a22aa8ab1813",
+       "date": "2026-05-26T23:24:45.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "cea13dcc4f87d48435747cb935581ec2f24ba745",
+       "date": "2026-05-26T23:04:01.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "876438922e46f4fdd44aeb69872ed31f52e0614e",
+       "date": "2026-05-26T23:03:06.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "124eb6c0cc60a4db581cfd453bc1b586bac4e157",
+       "date": "2026-05-26T23:00:07.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "3a0ccc00518dec95e115c6aba1227b31e9d437f5",
+       "date": "2026-05-26T22:57:58.000Z",
+       "title": "temp",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "eafc920ddebb7074d8af6633c4d9f25267b48ede",
+       "date": "2026-05-26T22:56:04.000Z",
+       "title": "initial commit",
+       "authors": [
+        "Nyx9"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "eafc920ddebb7074d8af6633c4d9f25267b48ede",
+       "date": "2026-05-26T22:56:04.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 2504,
+         "oid": "bed0738c7eeb449bca98b5d2f33c89a1ee56349a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "3a0ccc00518dec95e115c6aba1227b31e9d437f5",
+       "date": "2026-05-26T22:57:58.000Z",
+       "added": {
+        "abc.txt": {
+         "size": 12,
+         "oid": "750780678b195357009575a33021fa2bbd78c460",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "124eb6c0cc60a4db581cfd453bc1b586bac4e157",
+       "date": "2026-05-26T23:00:07.000Z",
+       "added": {
+        "formbin.xlsx": {
+         "size": 5063,
+         "oid": "5360d9282269c9d46d304817b74a3e67ce0c7f13",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "876438922e46f4fdd44aeb69872ed31f52e0614e",
+       "date": "2026-05-26T23:03:06.000Z",
+       "added": {
+        "nocalc.xlsx": {
+         "size": 4853,
+         "oid": "f9d43f486891040f7576382d66f26b5e79ae8476",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "cea13dcc4f87d48435747cb935581ec2f24ba745",
+       "date": "2026-05-26T23:04:01.000Z",
+       "added": {},
+       "removed": [],
+       "changed": {
+        "nocalc.xlsx": {
+         "size": 4853,
+         "oid": "3af1d84ff1a7ca2c66f9e17cefcd94c49e678b4c",
+         "lfs_sha256": null
+        }
+       }
+      },
+      {
+       "commit": "12969822fcf098d38f94c2ff25c8a22aa8ab1813",
+       "date": "2026-05-26T23:24:45.000Z",
+       "added": {
+        "pp.pdf": {
+         "size": 1416,
+         "oid": "6633dfba6899f901aa2082ea1fe7683a87d03c52",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "dace97d1c072362a424a1288f4642e97cc453ed5",
+       "date": "2026-05-26T23:28:46.000Z",
+       "added": {
+        "calcone.xlsx": {
+         "size": 4871,
+         "oid": "8b89b8072c623d1ce440e2549ec61a6b73e3a233",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "dc1547d3c763e4a83d74860576accd32ce45e3f5",
+       "date": "2026-05-26T23:34:10.000Z",
+       "added": {
+        "minidoc.docx": {
+         "size": 942,
+         "oid": "68e53a562717a12d6743061e0a288e5ab1220540",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      }
+     ]
+    },
+    {
+     "kind": "spaces",
+     "id": "Nyx9/netproxy17",
+     "info": {
+      "createdAt": "2026-05-26T20:48:33.000Z",
+      "lastModified": "2026-05-26T20:49:55.000Z",
+      "sha": "25226b3e610e1c942819c61da0f1100463c26444",
+      "private": false,
+      "gated": false,
+      "disabled": false,
+      "sdk": "docker",
+      "cardData": {
+       "title": "netproxy17",
+       "emoji": "\ud83e\udd16",
+       "colorFrom": "blue",
+       "colorTo": "red",
+       "sdk": "docker",
+       "app_port": 7860
+      },
+      "tags": [
+       "docker",
+       "region:us"
+      ],
+      "likes": 0,
+      "runtime": {
+       "stage": "PAUSED",
+       "errorMessage": "Flagged as abusive",
+       "hardware": {
+        "current": null,
+        "requested": "cpu-basic"
+       }
+      }
+     },
+     "commits": [
+      {
+       "id": "25226b3e610e1c942819c61da0f1100463c26444",
+       "date": "2026-05-26T20:49:55.000Z",
+       "title": "test",
+       "authors": [
+        "Nyx9"
+       ]
+      },
+      {
+       "id": "100d5e5b092be1bebd00fbf2cc844d6f188ecc02",
+       "date": "2026-05-26T20:48:33.000Z",
+       "title": "initial commit",
+       "authors": [
+        "Nyx9"
+       ]
+      }
+     ],
+     "file_changes": [
+      {
+       "commit": "100d5e5b092be1bebd00fbf2cc844d6f188ecc02",
+       "date": "2026-05-26T20:48:33.000Z",
+       "added": {
+        ".gitattributes": {
+         "size": 1519,
+         "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+         "lfs_sha256": null
+        },
+        "README.md": {
+         "size": 193,
+         "oid": "1cdd33a57704f8ec44cbc697579f69ea42315ed7",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {}
+      },
+      {
+       "commit": "25226b3e610e1c942819c61da0f1100463c26444",
+       "date": "2026-05-26T20:49:55.000Z",
+       "added": {
+        "Dockerfile": {
+         "size": 115,
+         "oid": "ac54f35cb706430b81e3c5132807bed9d4db5aa9",
+         "lfs_sha256": null
+        },
+        "app.py": {
+         "size": 1012,
+         "oid": "7b2c6b00009dbc44898d9c3466ee087cdb36c4e8",
+         "lfs_sha256": null
+        },
+        "requirements.txt": {
+         "size": 33,
+         "oid": "76988ceb1937f10a27298935aaeccd16d29fef9a",
+         "lfs_sha256": null
+        }
+       },
+       "removed": [],
+       "changed": {
+        "README.md": {
+         "size": 99,
+         "oid": "7e74d38c148175aa8db66f50019b03d9e4f1773b",
+         "lfs_sha256": null
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "biomysterybench_discussions_by_0Time": [
+  {
+   "num": 4,
+   "title": "test pull req",
+   "createdAt": "2026-05-13T08:47:31.000Z",
+   "isPullRequest": true,
+   "status": "draft"
+  },
+  {
+   "num": 3,
+   "title": "test discussion please",
+   "createdAt": "2026-05-13T08:47:05.000Z",
+   "isPullRequest": false,
+   "status": "open"
+  }
+ ]
+}
