@@ -644,64 +644,46 @@ def _simulate(torch, N, mu, phi, w, alpha, gamma, rho, gamma_hub, b, n_audit, se
 def cmd_recover(args):
     """Parameter recovery: simulate from known parameters, refit, and compare.
 
-    This validates whether the model can recover its own parameters. Tests on
-    data generated from the hub model (two-component sharing).
+    Nuisance parameters are held at the posterior medians in
+    data/agent_population_posterior.json; N and the selection exponent b vary,
+    including the fitted values. Each setting gets --reps independent simulated
+    datasets, each refitted by MAP with three restarts.
     """
     import torch
     make, unpack, _ = build(torch)
 
-    # Recovery settings: (N, b, description)
-    recoveries = [
-        (3000, 0.10, "high_N_weak_bias"),
-        (1200, 0.50, "low_N_strong_bias"),
-        (2500, 0.30, "mid_N_mid_bias"),
-    ]
+    mu_true, phi_true = 3.96, 2.01
+    w_true, alpha_true = 0.36, 3.34
+    gamma_true, rho_true, gamma_hub_true = 1.1e5, 0.47, 163.0
+    n_audit = 322
+    settings = [(3068, 0.58), (3068, 0.10), (1500, 0.85), (2000, 0.30)]
 
-    print("PARAMETER RECOVERY: simulating data, refitting by MAP, computing error")
-    print("-" * 80)
-    print("%-10s %8s %8s %7s %7s %8s" % ("case", "N_true", "N_hat", "b_true", "b_hat", "N_err%"))
-    print("-" * 80)
-
-    for case_idx, (N_true, b_true, desc) in enumerate(recoveries):
-        # Fixed "true" parameters for this simulation
-        mu_true, phi_true = 3.5, 1.8
-        w_true, alpha_true = 0.36, 3.34
-        gamma_true, rho_true, gamma_hub_true = 3000.0, 0.47, 163.0
-        n_audit = 322
-
-        # Simulate data
-        y, aud, nh, nrev = _simulate(
-            torch, N_true, mu_true, phi_true, w_true, alpha_true,
-            gamma_true, rho_true, gamma_hub_true, b_true, n_audit,
-            seed=1000 + case_idx
-        )
-
-        y_t, aud_t = to_tensors(torch, y, aud)
-        log_post, _ = make(y_t, aud_t)
-
-        # MAP fit with random restarts
-        best, best_lp = None, -1e30
-        for seed in range(3):
-            g = torch.Generator().manual_seed(seed)
-            th = (torch.tensor([p[0] for p in PRIOR])
-                  + torch.randn(len(PRIOR), generator=g) * 0.2).clone().requires_grad_(True)
-            opt = torch.optim.Adam([th], lr=0.03)
-            for _ in range(args.iters):
-                opt.zero_grad()
-                (-log_post(th)).backward()
-                opt.step()
-            lp = float(log_post(th).detach())
-            if lp > best_lp:
-                best, best_lp = th.detach(), lp
-
-        N_hat, mu_hat, phi_hat, w_hat, alpha_hat, gamma_hat, b_hat, rho_hat, gamma_hub_hat = unpack(best)
-        N_hat, b_hat = float(N_hat), float(b_hat)
-        err_pct = 100 * (N_hat - N_true) / N_true
-
-        print("%-10s %8d %8.0f %7.2f %7.2f %8.1f" %
-              (desc, N_true, N_hat, b_true, b_hat, err_pct))
-
-    print("-" * 80)
+    print("%6s %5s %4s %8s %7s %7s %8s" %
+          ("N_true", "b", "rep", "N_hat", "N_err%", "b_hat", "mu_hat"))
+    for si, (N_true, b_true) in enumerate(settings):
+        for rep in range(args.reps):
+            y, aud, _, _ = _simulate(
+                torch, N_true, mu_true, phi_true, w_true, alpha_true,
+                gamma_true, rho_true, gamma_hub_true, b_true, n_audit,
+                seed=1000 + 100 * si + rep)
+            log_post, _ = make(*to_tensors(torch, y, aud))
+            best, best_lp = None, -1e30
+            for seed in range(3):
+                g = torch.Generator().manual_seed(seed)
+                th = (torch.tensor([p[0] for p in PRIOR])
+                      + torch.randn(len(PRIOR), generator=g) * 0.2).requires_grad_(True)
+                opt = torch.optim.Adam([th], lr=0.03)
+                for _ in range(args.iters):
+                    opt.zero_grad()
+                    (-log_post(th)).backward()
+                    opt.step()
+                lp = float(log_post(th).detach())
+                if lp > best_lp:
+                    best, best_lp = th.detach(), lp
+            N_hat, mu_hat, _, _, _, _, b_hat, _, _ = (float(v) for v in unpack(best))
+            print("%6d %5.2f %4d %8.0f %+7.1f %7.2f %8.2f" %
+                  (N_true, b_true, rep, N_hat, 100 * (N_hat - N_true) / N_true,
+                   b_hat, mu_hat), flush=True)
 
 
 def main():
@@ -714,6 +696,7 @@ def main():
     ap.add_argument("--warmup", type=int, default=450)
     ap.add_argument("--draws", type=int, default=650)
     ap.add_argument("--iters", type=int, default=5000)
+    ap.add_argument("--reps", type=int, default=5)
     ap.add_argument("--out", default=os.path.join(ROOT, "data",
                                                   "agent_population_posterior.json"))
     args = ap.parse_args()
