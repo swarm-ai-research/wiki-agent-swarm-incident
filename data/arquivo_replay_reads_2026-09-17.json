@@ -1,0 +1,383 @@
+{
+ "schema": "arquivo_replay_reads_v1",
+ "run": "2026-09-17",
+ "method": "GET arquivo.pt/wayback/<ts>id_/<url>, one per distinct digest; redirects recorded, not followed; no save/now, no POST.",
+ "scopes": [
+  {
+   "name": "sf133",
+   "url": "portal.max.gov",
+   "from": "20260526000000",
+   "to": "20260526235959",
+   "captures": [
+    {
+     "ts": "20260526073119",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526073122",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+    },
+    {
+     "ts": "20260526073149",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526074332",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075036",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075038",
+     "index_status": "301",
+     "digest": "HBEGNUAACARWIYAO73DL3Q7BI7MXANB2",
+     "url": "http://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075039",
+     "index_status": "200",
+     "digest": "BIZBIS6QI7GJQR27M7N5ZINWD6DJKKAB",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/FY%202023%20-%20SF%20133%20Reports%20on%20Budget%20Execution%20and%20Budgetary%20Resources.html"
+    },
+    {
+     "ts": "20260526075123",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075130",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526080525",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+    },
+    {
+     "ts": "20260526082226",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526082602",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526092535",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?0.5722951149632984"
+    },
+    {
+     "ts": "20260526092538",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?0.05170511826196966"
+    },
+    {
+     "ts": "20260526095000",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?cb=65554"
+    },
+    {
+     "ts": "20260526095002",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?cb=84392"
+    },
+    {
+     "ts": "20260526095006",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?cb=72862"
+    },
+    {
+     "ts": "20260526095008",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?cb=56887"
+    },
+    {
+     "ts": "20260526095012",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf?cb=83447"
+    },
+    {
+     "ts": "20260526095013",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf?cb=2696"
+    },
+    {
+     "ts": "20260526095017",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf?cb=18949"
+    },
+    {
+     "ts": "20260526095019",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf?cb=75401"
+    },
+    {
+     "ts": "20260526095049",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+    },
+    {
+     "ts": "20260526095052",
+     "index_status": "200",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+    },
+    {
+     "ts": "20260526103829",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526104234",
+     "index_status": "200",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    }
+   ],
+   "reads": [
+    {
+     "replayed_ts": "20260526073119",
+     "index_status": "200",
+     "index_mime": "application/pdf",
+     "digest": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "replay_http": 200,
+     "replay_content_type": "application/pdf",
+     "bytes": 1438734,
+     "body_sha1_b32": "W2TPXOCLHOAXU2I7LGHOLMQCBVCVNCWV",
+     "digest_match": true
+    },
+    {
+     "replayed_ts": "20260526073122",
+     "index_status": "200",
+     "index_mime": "application/pdf",
+     "digest": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "replay_http": 200,
+     "replay_content_type": "application/pdf",
+     "bytes": 1441986,
+     "body_sha1_b32": "NWX62NYLRFHNOBSF3MRHZ7BN4NLR6SKD",
+     "digest_match": true
+    },
+    {
+     "replayed_ts": "20260526075038",
+     "index_status": "301",
+     "index_mime": "text/html",
+     "digest": "HBEGNUAACARWIYAO73DL3Q7BI7MXANB2",
+     "replay_http": 307,
+     "replay_content_type": "application/pdf",
+     "bytes": 0,
+     "body_sha1_b32": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+     "digest_match": false,
+     "redirect_not_followed": "https://arquivo.pt/wayback/20260526075036id_/https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "replayed_ts": "20260526075039",
+     "index_status": "200",
+     "index_mime": "text/html",
+     "digest": "BIZBIS6QI7GJQR27M7N5ZINWD6DJKKAB",
+     "replay_http": 200,
+     "replay_content_type": "text/html; charset=UTF-8",
+     "bytes": 254493,
+     "body_sha1_b32": "BIZBIS6QI7GJQR27M7N5ZINWD6DJKKAB",
+     "digest_match": true
+    }
+   ]
+  },
+  {
+   "name": "unctad_relay",
+   "url": "api.codetabs.com",
+   "from": "20260521000000",
+   "to": "20260521235959",
+   "captures": [
+    {
+     "ts": "20260521180744",
+     "index_status": "301",
+     "digest": "B6ZNGVXKXLCVWRKOWKGI4SO2L44F6SAU",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521174239id_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3Dpost%26compute%3Dround%28m0100%2Fvalue%2Bdiv%2B1000%2C%2B0%29%2Bas%2Bus_at_current_prices_in_thousands_value%26f"
+    },
+    {
+     "ts": "20260521183631",
+     "index_status": "301",
+     "digest": "2W2RV553MOG4GK3QT5VAANWPHDJI333J",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3FReport%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_current_prices_in_thous"
+    },
+    {
+     "ts": "20260521183632",
+     "index_status": "200",
+     "digest": "M22VPOWMT4JCK2G7OLXMZDJFOFLBFHBN",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3FReport%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_current_prices_in_thou"
+    },
+    {
+     "ts": "20260521183727",
+     "index_status": "200",
+     "digest": "M22VPOWMT4JCK2G7OLXMZDJFOFLBFHBN",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3FReport%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_current_prices_in_thou"
+    },
+    {
+     "ts": "20260521183944",
+     "index_status": "301",
+     "digest": "63FF554N7HGIXYT5SJX7IPDUAFBVFEPD",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_cu"
+    },
+    {
+     "ts": "20260521183945",
+     "index_status": "200",
+     "digest": "M22VPOWMT4JCK2G7OLXMZDJFOFLBFHBN",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_c"
+    },
+    {
+     "ts": "20260521184202",
+     "index_status": "200",
+     "digest": "7RWINA2LEMDYQU7BAEA3XRW7YUZV3DCA",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://arquivo.pt/save/now/20260521181216mp_/https://unctadstat-api.unctad.org/api/download/downloaddata?__wb_method=POST&Report=US.TradeServCatTotal&VersionId=1863&Select=Year%2C+Economy%2FLabel%2C+US_at_current_prices_in_thousands_Value&Filter=Year+in+%282"
+    },
+    {
+     "ts": "20260521184202",
+     "index_status": "301",
+     "digest": "DTMQ5B75PAMLYZS37FIX3SHRYOUCFULK",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https://arquivo.pt/save/now/20260521181216mp_/https://unctadstat-api.unctad.org/api/download/downloaddata?__wb_method=POST&Report=US.TradeServCatTotal&VersionId=1863&Select=Year%2C+Economy%2FLabel%2C+US_at_current_prices_in_thousands_Value&Filter=Year+in+%2820"
+    },
+    {
+     "ts": "20260521184216",
+     "index_status": "200",
+     "digest": "M22VPOWMT4JCK2G7OLXMZDJFOFLBFHBN",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%2C%2BUS_at_cur"
+    },
+    {
+     "ts": "20260521190549",
+     "index_status": "301",
+     "digest": "FNOMRFUYV27U26VFVN7FLD3N7OHBHBLI",
+     "url": "https://api.codetabs.com/v1/proxy?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521185943mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FCode%252C%2BEconomy%2"
+    },
+    {
+     "ts": "20260521190550",
+     "index_status": "200",
+     "digest": "7RWINA2LEMDYQU7BAEA3XRW7YUZV3DCA",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521185943mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FCode%252C%2BEconomy%"
+    },
+    {
+     "ts": "20260521190608",
+     "index_status": "200",
+     "digest": "7RWINA2LEMDYQU7BAEA3XRW7YUZV3DCA",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521185943mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FCode%252C%2BEconomy%"
+    }
+   ],
+   "reads": [
+    {
+     "replayed_ts": "20260521180744",
+     "index_status": "301",
+     "index_mime": "text/html",
+     "digest": "B6ZNGVXKXLCVWRKOWKGI4SO2L44F6SAU",
+     "replay_http": 400,
+     "replay_content_type": "text/html; charset=utf-8",
+     "bytes": 1606,
+     "body_sha1_b32": "VQHNCXP2D6M6C74K5AO5TL4PVR65IFM7",
+     "digest_match": false
+    },
+    {
+     "replayed_ts": "20260521183631",
+     "index_status": "301",
+     "index_mime": "text/html",
+     "digest": "2W2RV553MOG4GK3QT5VAANWPHDJI333J",
+     "replay_http": 307,
+     "replay_content_type": null,
+     "bytes": 0,
+     "body_sha1_b32": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+     "digest_match": false,
+     "redirect_not_followed": "https://arquivo.pt/wayback/20260521183631id_/https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3FReport%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%"
+    },
+    {
+     "replayed_ts": "20260521183632",
+     "index_status": "200",
+     "index_mime": "text/plain",
+     "digest": "M22VPOWMT4JCK2G7OLXMZDJFOFLBFHBN",
+     "replay_http": 200,
+     "replay_content_type": "text/plain",
+     "bytes": 478,
+     "body_sha1_b32": "M22VPOWMT4JCK2G7OLXMZDJFOFLBFHBN",
+     "digest_match": true,
+     "body_text": "Year,Economy_Label,US_at_current_prices_in_thousands_Value\n2005,\"Solomon Islands\",1681\n2005,\"Vanuatu\",2694\n2005,\"Tonga\",981\n2005,\"Tuvalu\",127\n2006,\"Solomon Islands\",1017\n2006,\"Vanuatu\",2505\n2006,\"Tonga\",1373\n2006,\"Tuvalu\",272\n2007,\"Solomon Islands\",1086\n2007,\"Vanuatu\",3002\n2007,\"Tonga\",1181\n2007,\"Tuvalu\",142\n2008,\"Solomon Islands\",1230\n2008,\"Vanuatu\",588\n2008,\"Tonga\",1386\n2008,\"Tuvalu\",205\n2010,\"Solomon Islands\",19617\n2010,\"Vanuatu\",1720\n2010,\"Tonga\",2501\n2010,\"Tuvalu\",206\n"
+    },
+    {
+     "replayed_ts": "20260521183944",
+     "index_status": "301",
+     "index_mime": "text/html",
+     "digest": "63FF554N7HGIXYT5SJX7IPDUAFBVFEPD",
+     "replay_http": 307,
+     "replay_content_type": null,
+     "bytes": 0,
+     "body_sha1_b32": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+     "digest_match": false,
+     "redirect_not_followed": "https://arquivo.pt/wayback/20260521183944id_/https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3"
+    },
+    {
+     "replayed_ts": "20260521184202",
+     "index_status": "200",
+     "index_mime": "text/plain",
+     "digest": "7RWINA2LEMDYQU7BAEA3XRW7YUZV3DCA",
+     "replay_http": 200,
+     "replay_content_type": "text/plain",
+     "bytes": 571,
+     "body_sha1_b32": "7RWINA2LEMDYQU7BAEA3XRW7YUZV3DCA",
+     "digest_match": true,
+     "body_text": "Year,Economy_Code,Economy_Label,US_at_current_prices_in_thousands_Value\n2005,090,\"Solomon Islands\",1681\n2005,548,\"Vanuatu\",2694\n2005,776,\"Tonga\",981\n2005,798,\"Tuvalu\",127\n2006,090,\"Solomon Islands\",1017\n2006,548,\"Vanuatu\",2505\n2006,776,\"Tonga\",1373\n2006,798,\"Tuvalu\",272\n2007,090,\"Solomon Islands\",1086\n2007,548,\"Vanuatu\",3002\n2007,776,\"Tonga\",1181\n2007,798,\"Tuvalu\",142\n2008,090,\"Solomon Islands\",1230\n2008,548,\"Vanuatu\",588\n2008,776,\"Tonga\",1386\n2008,798,\"Tuvalu\",205\n2010,090,\"Solomon Islands\",19617\n2010,548,\"Vanuatu\",1720\n2010,776,\"Tonga\",2501\n2010,798,\"Tuvalu\",206\n"
+    },
+    {
+     "replayed_ts": "20260521184202",
+     "index_status": "301",
+     "index_mime": "text/html",
+     "digest": "DTMQ5B75PAMLYZS37FIX3SHRYOUCFULK",
+     "replay_http": 307,
+     "replay_content_type": null,
+     "bytes": 0,
+     "body_sha1_b32": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+     "digest_match": false,
+     "redirect_not_followed": "https://arquivo.pt/wayback/20260521184202id_/https://api.codetabs.com/v1/proxy/?quest=https://arquivo.pt/save/now/20260521181216mp_/https://unctadstat-api.unctad.org/api/download/downloaddata?__wb_method=POST&Report=US.TradeServCatTotal&VersionId=1863&Select=Year%2C+Economy%2FLabel%2C+US_at_current_"
+    },
+    {
+     "replayed_ts": "20260521190549",
+     "index_status": "301",
+     "index_mime": "text/html",
+     "digest": "FNOMRFUYV27U26VFVN7FLD3N7OHBHBLI",
+     "replay_http": 307,
+     "replay_content_type": null,
+     "bytes": 0,
+     "body_sha1_b32": "3I42H3S6NNFQ2MSVX7XZKYAYSCX5QBYJ",
+     "digest_match": false,
+     "redirect_not_followed": "https://arquivo.pt/wayback/20260521190549id_/https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521185943mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3"
+    }
+   ]
+  }
+ ]
+}
