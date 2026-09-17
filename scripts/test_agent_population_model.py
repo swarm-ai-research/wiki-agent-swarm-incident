@@ -143,6 +143,48 @@ class TestGenerativeModel(unittest.TestCase):
         ll = float(torch.logsumexp(torch.stack([rot, non]), 0).sum())
         self.assertAlmostEqual(ll, -474.4, places=0)
 
+    def test_recovery_can_recover_simulated_parameters(self):
+        """Parameter recovery: simulate from known parameters and refit.
+
+        The hub model must recover N within +/- 25% on data it generated.
+        This is a minimal smoke test; full recovery runs are in cmd_recover().
+        """
+        make, unpack, _ = type(self).make, type(self).unpack, type(self).els
+        np = __import__("numpy")
+
+        # Simulate one case
+        N_true, b_true = 2500, 0.30
+        mu_true, phi_true = 3.5, 1.8
+        w_true, alpha_true = 0.36, 3.34
+        gamma_true = 3000.0
+        rho_true, gamma_hub_true = 0.47, 163.0
+        n_audit = 322
+
+        y, aud, _, _ = M._simulate(
+            torch, N_true, mu_true, phi_true, w_true, alpha_true,
+            gamma_true, rho_true, gamma_hub_true, b_true, n_audit, seed=42
+        )
+
+        y_t, aud_t = M.to_tensors(torch, y, aud)
+        log_post, _ = make(y_t, aud_t)
+
+        # Single MAP fit
+        g = torch.Generator().manual_seed(0)
+        th = (torch.tensor([p[0] for p in M.PRIOR])
+              + torch.randn(len(M.PRIOR), generator=g) * 0.2).clone().requires_grad_(True)
+        opt = torch.optim.Adam([th], lr=0.03)
+        for _ in range(1000):  # fewer iters for test
+            opt.zero_grad()
+            (-log_post(th)).backward()
+            opt.step()
+
+        N_hat, b_hat = float(unpack(th.detach())[0]), float(unpack(th.detach())[6])
+        err_pct = abs(N_hat - N_true) / N_true * 100
+
+        # Recovery should be within 25%
+        self.assertLess(err_pct, 25.0,
+                        msg=f"N recovery failed: true={N_true}, recovered={N_hat:.0f}, error={err_pct:.1f}%")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
