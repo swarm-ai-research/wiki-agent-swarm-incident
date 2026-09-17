@@ -15,7 +15,9 @@ Longer date/population note (May 16 page-name misread; shortener appendix):
 [why-not-the-internal-board.md](why-not-the-internal-board.md). Chronology:
 [timeline.md](timeline.md). Primary-source log:
 [field-evidence.md](field-evidence.md). Inventory: [`sources.md`](../sources.md)
-§ Artifactory / Hugging Face family.
+§ Artifactory / Hugging Face family. Sep 16 RL-training reports vs this
+wiki window (do not collapse):
+[misalignment-reports-vs-wiki-timeline.md](misalignment-reports-vs-wiki-timeline.md).
 
 ## 1. Artifactory was an internal package mirror
 
