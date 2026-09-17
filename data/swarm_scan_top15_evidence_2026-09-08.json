@@ -1,0 +1,1093 @@
+{
+  "schema_version": 2,
+  "run": {
+    "state": "complete",
+    "started_at": "2026-09-09T02:43:03Z",
+    "completed_at": "2026-09-09T02:43:09Z",
+    "scanner": {
+      "path": "scripts/swarm_scanner.py",
+      "sha256": "f20d9e3049d631bda46f46ab17e7eacc7bd67c259c14dad323b9821e322b1e8c",
+      "git_commit": "bcd749e17e1502ebc494ded78bb46b5d3db9cad2",
+      "git_dirty": true
+    },
+    "configuration": {
+      "workers": 8,
+      "limit": 0,
+      "skip_engines": "",
+      "statuses": "Active",
+      "fetch_timeout_seconds": 20,
+      "include_evidence": true,
+      "scoring": {
+        "weights": {
+          "cloud": 2,
+          "handles": 3,
+          "bots": 0.2,
+          "words": 1.5,
+          "payload": 4,
+          "infra": 2
+        },
+        "caps": {
+          "cloud": 10,
+          "handles": 10,
+          "bots": 10,
+          "words": 10,
+          "payload": 5,
+          "infra": 10
+        },
+        "signals": {
+          "cloud": {
+            "pattern": "azure|amazonaws|ec2-\\d|compute\\.internal|googleusercontent|\\.ovh\\.|ip-\\d+-\\d+-\\d+|hetzner|digitalocean|linode|vultr|contabo|scaleway|\\b(?:20|40|52|104|172\\.1[6-9]|172\\.2\\d|172\\.3[01])\\.\\d+\\.\\d+\\.\\d+\\b",
+            "flags": 34
+          },
+          "handles": {
+            "pattern": "\\b(?:[A-Z][a-z]+){1,3}(?:Agent|Helper|Researcher|Worker|Fleet|Swarm|Relay|Probe|Bridge|Scout|Runner|Tester)[A-Za-z0-9]*\\b",
+            "flags": 32
+          },
+          "bots": {
+            "pattern": "\\b(?:[A-Z][a-z]+){1,3}Bot[A-Za-z0-9]*\\b",
+            "flags": 32
+          },
+          "words": {
+            "pattern": "\\b(?:automated|autonomous|agents?|fleet|swarm|relay|envelope|payload|checkpoint|round \\d+|deadline|task \\d+|sandbox test|editability test|LLM|GPT-?\\d|Claude|OpenAI|Anthropic|Gemini)\\b",
+            "flags": 34
+          },
+          "payload": {
+            "pattern": "[A-Za-z0-9+/]{120,}={0,2}|\\{\\s*\\\"v\\\"\\s*:\\s*\\d|\\\"payload\\\"\\s*:",
+            "flags": 32
+          },
+          "infra": {
+            "pattern": "counterapi|countapi|ntfy\\.sh|webhook\\.site|r\\.jina\\.ai|markdown\\.new|allorigins|corsproxy|cors\\.[a-z]+\\.workers|jqp\\.vercel|pastebin|paste\\.|is\\.gd|tinyurl|v\\.gd|da\\.gd|md\\.succ",
+            "flags": 34
+          }
+        },
+        "recent_years": [
+          2025,
+          2026
+        ],
+        "burst_cap": 20
+      }
+    },
+    "source": {
+      "kind": "wikiindex-json",
+      "path": "data/swarm_scan_top15_manifest_2026-09-08.json",
+      "count": 15,
+      "sha256": "5095f5fcf75c0ebeb8853b0de6f1d8597596f3805221b24d74c1fb59f4ed4f43"
+    },
+    "targets_sha256": "7c825fe6a3f539439a560915d44088a579dddfc35b9234f890c4997372f794ff",
+    "target_count": 15
+  },
+  "results": [
+    {
+      "name": "DorfWiki",
+      "engine": "prowiki",
+      "url": "http://www.dorfwiki.org/wiki.cgi?action=browse&id=RecentChanges&days=200&all=1",
+      "http": 200,
+      "bytes": 910801,
+      "fetched_at": "2026-09-09T02:43:05Z",
+      "content_sha256": "8d5ad9f7c50f224c260cbc1ae45c4fbc860ec02a28fb0d7d2280c69485489e2b",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "200",
+          "all": "1"
+        },
+        "from": "2026-02-21",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": null,
+        "to": null,
+        "active_days": 0,
+        "counted_rows": 0,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 34.5,
+      "signals": {
+        "cloud": 0,
+        "handles": 22,
+        "bots": 0,
+        "words": 3,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[handles] \u2026hmer Projekte GartenPlan DorfWiki OrdnerProjekte_alt Drfer NeueArbeit VideoBridge VillageInnovationTalk AlleOrdner AlleSeiten Hilfe Einstellungen Seite\u2026",
+        "[handles] \u2026nzNahrada (diff) AgentsImDorfWiki 17:20 . . . . . FranzNahrada (diff) CentaurAgent 17:18 . . . . . FranzNahrada (diff) CentaurAgent 17:18 . . . . . Fran\u2026",
+        "[words] \u2026FranzNahrada 6. September 2026 (diff) PublicBoard 22:33 [PublicBoard relay] . . . . . 159.146.96.208 (diff) Triesterviertel / BezirkspolitikerBe\u2026",
+        "[words] \u2026. FritzEndl 5. September 2026 (diff) TestSeite 17:51 [invitation for agent readers (one-off)] . . . . . CentaurAgent 4. September 2026 (diff) Te\u2026"
+      ],
+      "row_parser": null,
+      "row_parse_outcome": "unsupported_engine",
+      "edit_rows_seen": 0,
+      "edit_rows_counted": 0,
+      "burst": 0.0,
+      "days_2526": 0,
+      "max_day": null,
+      "day_counts": {}
+    },
+    {
+      "name": "ApfelWiki",
+      "engine": "pmwiki",
+      "url": "http://www.ApfelWiki.de/index.php?n=Site.AllRecentChanges",
+      "http": 200,
+      "bytes": 876456,
+      "fetched_at": "2026-09-09T02:43:05Z",
+      "content_sha256": "bd6b82b400654ac7b599d8c5bf7f1caca888593fa8e5acadc19a9feb75cda2ee",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {},
+        "from": null,
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": null,
+        "to": null,
+        "active_days": 0,
+        "counted_rows": 0,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 32.2,
+      "signals": {
+        "cloud": 1,
+        "handles": 10,
+        "bots": 1,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[cloud] \u2026ium ( Verlauf ) . . . 08.03.2009 23:14 Uhr von kt007 : Rezension.Main-Azureus ( Verlauf ) . . . 07.03.2009 05:43 Uhr von Macist : Spammer-Dreck g\u2026",
+        "[handles] \u2026nes Volumes \u2013 Main ( Verlauf ) . . . 12.08.2024 06:30 Uhr von ?: Main.PrimeHiveAgentursoftware PrimeHiveAgentursoftware \u2013 Main ( Verlauf ) . . . 19.03.2024 17:28 Uh\u2026",
+        "[handles] \u2026auf ) . . . 12.08.2024 06:30 Uhr von ?: Main.PrimeHiveAgentursoftware PrimeHiveAgentursoftware \u2013 Main ( Verlauf ) . . . 19.03.2024 17:28 Uhr von ?: Main.Appmeistere\u2026",
+        "[bots] \u20262010 11:29 Uhr von quadworks : Erg\u00e4nzende Links, toten Link entfernt, WineBottler erg\u00e4nz Main.MonkeyOffice ( Verlauf ) . . . 23.03.2010 10:42 Uhr von ?\u2026"
+      ],
+      "row_parser": null,
+      "row_parse_outcome": "unsupported_engine",
+      "edit_rows_seen": 0,
+      "edit_rows_counted": 0,
+      "burst": 0.0,
+      "days_2526": 0,
+      "max_day": null,
+      "day_counts": {}
+    },
+    {
+      "name": "Punjabi Wikipedia",
+      "engine": "mediawiki",
+      "url": "https://pnb.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 1817031,
+      "fetched_at": "2026-09-09T02:43:05Z",
+      "content_sha256": "953f8e478afd11afd4980a58fad5d13d44b6933a503ca1cb2be1c3c36865c59c",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-21",
+        "to": "2026-09-08",
+        "active_days": 19,
+        "counted_rows": 500,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 23.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 1,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[handles] \u2026\u06f0\u06f2:\u06f5\u06f5 +\u06f6,\u06f2\u06f8\u06f0 Fahads1982 \u06af\u0644 \u0628\u0627\u062a \u062d\u0635\u06d2 \u062f\u0627\u0631\u06cc (\"local front = \"%1 station (FrontRunner)\" local uta = \"%1 station (Utah Transit Authority)\" local p = { [\"lan\u2026"
+      ],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 500,
+      "edit_rows_counted": 500,
+      "burst": 28.9,
+      "days_2526": 19,
+      "max_day": [
+        "2026-08-21",
+        289
+      ],
+      "day_counts": {
+        "2026-08-21": 289,
+        "2026-08-22": 14,
+        "2026-08-23": 22,
+        "2026-08-24": 3,
+        "2026-08-25": 22,
+        "2026-08-26": 4,
+        "2026-08-27": 5,
+        "2026-08-28": 23,
+        "2026-08-29": 28,
+        "2026-08-30": 23,
+        "2026-08-31": 10,
+        "2026-09-01": 10,
+        "2026-09-02": 15,
+        "2026-09-03": 2,
+        "2026-09-04": 2,
+        "2026-09-05": 7,
+        "2026-09-06": 1,
+        "2026-09-07": 5,
+        "2026-09-08": 15
+      }
+    },
+    {
+      "name": "Wikimedia Wikidata Test",
+      "engine": "mediawiki",
+      "url": "https://test.wikidata.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 1501907,
+      "fetched_at": "2026-09-09T02:43:05Z",
+      "content_sha256": "d473c03f37b4c1aa1c7e47e10baa1a213eb9bcc5873e69fca5844fcf615d7893",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-21",
+        "to": "2026-09-08",
+        "active_days": 18,
+        "counted_rows": 500,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 22.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 25,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[bots] \u2026est for finding aids linking workflow) diff hist (Q249430) 09:30 +177 DanjanBot talk contribs (\u200e Added [hu] description: magyar k\u00f6lt\u0151, forradalm\u00e1r, n\u2026",
+        "[bots] \u2026] description: magyar ember (1910\u20131931)) diff hist (Q249430) 09:29 +2 DanjanBot talk contribs (\u200e Changed [hu] description: magyar ember (1910\u20131931),\u2026"
+      ],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 500,
+      "edit_rows_counted": 500,
+      "burst": 23.8,
+      "days_2526": 18,
+      "max_day": [
+        "2026-08-21",
+        250
+      ],
+      "day_counts": {
+        "2026-08-21": 250,
+        "2026-08-22": 10,
+        "2026-08-23": 66,
+        "2026-08-24": 7,
+        "2026-08-25": 18,
+        "2026-08-26": 2,
+        "2026-08-28": 5,
+        "2026-08-29": 3,
+        "2026-08-30": 4,
+        "2026-08-31": 11,
+        "2026-09-01": 12,
+        "2026-09-02": 31,
+        "2026-09-03": 7,
+        "2026-09-04": 12,
+        "2026-09-05": 6,
+        "2026-09-06": 6,
+        "2026-09-07": 24,
+        "2026-09-08": 26
+      }
+    },
+    {
+      "name": "TextEditors Wiki",
+      "engine": "usemod",
+      "url": "http://www.texteditors.org/cgi-bin/wiki.pl?action=rc&days=200&all=1",
+      "http": 200,
+      "bytes": 23855,
+      "fetched_at": "2026-09-09T02:43:03Z",
+      "content_sha256": "9cef6b644a8a9751d06c7d75cfcee17cf3eb43af8fc618e2996237c587c4b570",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "200",
+          "all": "1"
+        },
+        "from": "2026-02-21",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": null,
+        "to": null,
+        "active_days": 0,
+        "counted_rows": 0,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 21.5,
+      "signals": {
+        "cloud": 18,
+        "handles": 0,
+        "bots": 0,
+        "words": 1,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[cloud] \u2026. 4.255.231.204 (diff) Manuskript 3:49 am [research bridge] . . . . . 20.110.50.33 (diff) MODIFY 3:47 am [research bridge] . . . . . 20.168.34.226 (diff\u2026",
+        "[cloud] \u2026. . . 20.110.50.33 (diff) MODIFY 3:47 am [research bridge] . . . . . 20.168.34.226 (diff) MODIFY 3:46 am [research bridge] . . . . . 20.245.175.80 (diff\u2026",
+        "[words] \u2026dbox cleanup] . . . . . 20.25.208.249 (diff) WikiWikiSandbox 5:55 am [sandbox test] . . . . . 52.251.36.14 May 18, 2026 (diff) Sandbox 11:21 am . . . .\u2026"
+      ],
+      "row_parser": "usemod",
+      "row_parse_outcome": "unrecognized_layout",
+      "edit_rows_seen": 0,
+      "edit_rows_counted": 0,
+      "burst": 0.0,
+      "days_2526": 0,
+      "max_day": null,
+      "day_counts": {}
+    },
+    {
+      "name": "Tibetan Wikipedia",
+      "engine": "mediawiki",
+      "url": "https://bo.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 670684,
+      "fetched_at": "2026-09-09T02:43:04Z",
+      "content_sha256": "00c27f9adce5a7327f6d042ae170afd77d889fdc96734b03a5e423a493a1581c",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-10",
+        "to": "2026-09-07",
+        "active_days": 27,
+        "counted_rows": 153,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 21.5,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 1,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[words] \u2026[e.g., Pywikibot, Node.js, Python custom script] * '''Edit type:''' [Automated or Assisted] I am requesting a bot flag for this account to perform t\u2026"
+      ],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 153,
+      "edit_rows_counted": 153,
+      "burst": 20.0,
+      "days_2526": 27,
+      "max_day": [
+        "2026-08-23",
+        40
+      ],
+      "day_counts": {
+        "2026-08-10": 1,
+        "2026-08-11": 3,
+        "2026-08-12": 5,
+        "2026-08-13": 4,
+        "2026-08-14": 6,
+        "2026-08-15": 1,
+        "2026-08-16": 12,
+        "2026-08-17": 6,
+        "2026-08-18": 1,
+        "2026-08-19": 12,
+        "2026-08-21": 20,
+        "2026-08-22": 6,
+        "2026-08-23": 40,
+        "2026-08-24": 5,
+        "2026-08-25": 1,
+        "2026-08-26": 1,
+        "2026-08-27": 10,
+        "2026-08-28": 2,
+        "2026-08-29": 2,
+        "2026-08-30": 1,
+        "2026-09-01": 1,
+        "2026-09-02": 1,
+        "2026-09-03": 2,
+        "2026-09-04": 1,
+        "2026-09-05": 6,
+        "2026-09-06": 1,
+        "2026-09-07": 2
+      }
+    },
+    {
+      "name": "Arabic Wikiversity",
+      "engine": "mediawiki",
+      "url": "http://ar.wikiversity.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 887370,
+      "fetched_at": "2026-09-09T02:43:04Z",
+      "content_sha256": "247d009a8a6b985fadbf932c7b5d526f9ba7280dc7e323ed259c15c9f5d97c01",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-11",
+        "to": "2026-09-07",
+        "active_days": 16,
+        "counted_rows": 277,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.8,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 4,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[bots] \u2026tistics from Special:GadgetUsage ( phab:T121049 )) \u0641\u0631\u0642 \u062a\u0627\u0631\u064a\u062e \u0637 \u0645\u0633\u062a\u062e\u062f\u0645:MenoBot/category redirect log 00:28 \u22121\u066c316 Meno25 \u0646\u0642\u0627\u0634 \u0645\u0633\u0627\u0647\u0645\u0627\u062a (\u0627\u0633\u062a\u0631\u062c\u0639 \u062a\u0639\u062f\u064a\u0644\u0627\u2026",
+        "[bots] \u2026ategory redirect log 00:28 \u22121\u066c316 Meno25 \u0646\u0642\u0627\u0634 \u0645\u0633\u0627\u0647\u0645\u0627\u062a (\u0627\u0633\u062a\u0631\u062c\u0639 \u062a\u0639\u062f\u064a\u0644\u0627\u062a MenoBot ( \u0646\u0642\u0627\u0634 ) \u062d\u062a\u0649 \u0622\u062e\u0631 \u0645\u0631\u0627\u062c\u0639\u0629 \u0644 Meno25 ) \u0648\u0633\u0645 : \u0627\u0633\u062a\u0631\u062c\u0627\u0639 2 \u0633\u0628\u062a\u0645\u0628\u0631 2026 \u0641\u0631\u0642 \u062a\u0627\u2026"
+      ],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 277,
+      "edit_rows_counted": 277,
+      "burst": 107.0,
+      "days_2526": 16,
+      "max_day": [
+        "2026-08-24",
+        214
+      ],
+      "day_counts": {
+        "2026-08-11": 1,
+        "2026-08-13": 2,
+        "2026-08-14": 3,
+        "2026-08-17": 1,
+        "2026-08-18": 1,
+        "2026-08-19": 2,
+        "2026-08-22": 1,
+        "2026-08-24": 214,
+        "2026-08-25": 8,
+        "2026-08-26": 11,
+        "2026-08-27": 3,
+        "2026-08-31": 2,
+        "2026-09-02": 24,
+        "2026-09-03": 2,
+        "2026-09-04": 1,
+        "2026-09-07": 1
+      }
+    },
+    {
+      "name": "West-Vlamschn Wikipedia",
+      "engine": "mediawiki",
+      "url": "https://vls.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 399748,
+      "fetched_at": "2026-09-09T02:43:04Z",
+      "content_sha256": "4d3b4970ddf15930262632b373479a4bba101f36b7772744ba5591a220aff0c4",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-10",
+        "to": "2026-09-07",
+        "active_days": 22,
+        "counted_rows": 113,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.4,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 2,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [
+        "[bots] \u2026Visuele tekstverwerker vera gesch k Edmond Van der Haeghen 09:35 +44 GeertivpBot discuusjeblad bydroagn (#pwb Copy label Infobox persoon Wikidata Comm\u2026",
+        "[bots] \u2026roagn (Reverted 1 edit by ~2026-45136-91 ( talk ) to last revision by InternetArchiveBot (TwinkleGlobal)) Label : Ongedaan maken vera gesch k Outulst 07:38 0\u2026"
+      ],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 113,
+      "edit_rows_counted": 113,
+      "burst": 32.0,
+      "days_2526": 22,
+      "max_day": [
+        "2026-08-17",
+        64
+      ],
+      "day_counts": {
+        "2026-08-10": 2,
+        "2026-08-11": 2,
+        "2026-08-13": 3,
+        "2026-08-14": 1,
+        "2026-08-15": 1,
+        "2026-08-16": 4,
+        "2026-08-17": 64,
+        "2026-08-18": 2,
+        "2026-08-19": 3,
+        "2026-08-21": 1,
+        "2026-08-22": 1,
+        "2026-08-23": 1,
+        "2026-08-24": 3,
+        "2026-08-27": 5,
+        "2026-08-28": 6,
+        "2026-08-29": 2,
+        "2026-08-31": 2,
+        "2026-09-01": 1,
+        "2026-09-03": 2,
+        "2026-09-04": 1,
+        "2026-09-05": 4,
+        "2026-09-07": 2
+      }
+    },
+    {
+      "name": "Dungeons and Dragons Wiki",
+      "engine": "mediawiki",
+      "url": "http://www.dnd-wiki.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 881498,
+      "fetched_at": "2026-09-09T02:43:09Z",
+      "content_sha256": "25e7e2fc3eff73873552ae610dd1d3764083884700cab756aa2b578c7e1a866d",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-09-04",
+        "to": "2026-09-08",
+        "active_days": 5,
+        "counted_rows": 499,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 500,
+      "edit_rows_counted": 499,
+      "burst": 50.7,
+      "days_2526": 5,
+      "max_day": [
+        "2026-09-04",
+        456
+      ],
+      "day_counts": {
+        "2026-09-04": 456,
+        "2026-09-05": 9,
+        "2026-09-06": 2,
+        "2026-09-07": 7,
+        "2026-09-08": 25
+      }
+    },
+    {
+      "name": "G\u00e0idhlig Wikipedia",
+      "engine": "mediawiki",
+      "url": "https://gd.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 504512,
+      "fetched_at": "2026-09-09T02:43:04Z",
+      "content_sha256": "7ee86e648bf116bef74b67fa2637c212d1bd5a9b6effb2b1f99092a1e1809a78",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-10",
+        "to": "2026-09-08",
+        "active_days": 22,
+        "counted_rows": 165,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 165,
+      "edit_rows_counted": 165,
+      "burst": 24.5,
+      "days_2526": 22,
+      "max_day": [
+        "2026-08-12",
+        49
+      ],
+      "day_counts": {
+        "2026-08-10": 1,
+        "2026-08-12": 49,
+        "2026-08-13": 46,
+        "2026-08-14": 17,
+        "2026-08-15": 2,
+        "2026-08-16": 2,
+        "2026-08-18": 11,
+        "2026-08-19": 7,
+        "2026-08-20": 2,
+        "2026-08-22": 6,
+        "2026-08-23": 2,
+        "2026-08-26": 2,
+        "2026-08-27": 1,
+        "2026-08-28": 1,
+        "2026-08-30": 1,
+        "2026-08-31": 1,
+        "2026-09-01": 1,
+        "2026-09-03": 1,
+        "2026-09-04": 2,
+        "2026-09-05": 7,
+        "2026-09-06": 1,
+        "2026-09-08": 2
+      }
+    },
+    {
+      "name": "Latgalian Wikipedia",
+      "engine": "mediawiki",
+      "url": "https://ltg.wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 222355,
+      "fetched_at": "2026-09-09T02:43:05Z",
+      "content_sha256": "68c7ab4f03018910aec7add8393a86fef762b4d541c48ded5763300d88a8852e",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-10",
+        "to": "2026-09-07",
+        "active_days": 14,
+        "counted_rows": 59,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 59,
+      "edit_rows_counted": 59,
+      "burst": 35.0,
+      "days_2526": 14,
+      "max_day": [
+        "2026-08-24",
+        35
+      ],
+      "day_counts": {
+        "2026-08-10": 1,
+        "2026-08-11": 2,
+        "2026-08-13": 1,
+        "2026-08-14": 1,
+        "2026-08-18": 1,
+        "2026-08-19": 1,
+        "2026-08-21": 1,
+        "2026-08-22": 5,
+        "2026-08-24": 35,
+        "2026-08-26": 1,
+        "2026-08-29": 1,
+        "2026-08-30": 4,
+        "2026-09-03": 3,
+        "2026-09-07": 2
+      }
+    },
+    {
+      "name": "Upper Sorbian Wikipedije",
+      "engine": "mediawiki",
+      "url": "https://hsb.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 1278165,
+      "fetched_at": "2026-09-09T02:43:06Z",
+      "content_sha256": "6ec5780ee42ca3a3857a91503738e48292837aca64cb136b821996c49b7381a5",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-16",
+        "to": "2026-09-07",
+        "active_days": 21,
+        "counted_rows": 500,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 500,
+      "edit_rows_counted": 500,
+      "burst": 78.0,
+      "days_2526": 21,
+      "max_day": [
+        "2026-08-23",
+        156
+      ],
+      "day_counts": {
+        "2026-08-16": 116,
+        "2026-08-17": 2,
+        "2026-08-18": 7,
+        "2026-08-19": 2,
+        "2026-08-20": 2,
+        "2026-08-21": 4,
+        "2026-08-22": 68,
+        "2026-08-23": 156,
+        "2026-08-24": 35,
+        "2026-08-25": 2,
+        "2026-08-26": 6,
+        "2026-08-27": 1,
+        "2026-08-28": 2,
+        "2026-08-30": 81,
+        "2026-08-31": 1,
+        "2026-09-01": 1,
+        "2026-09-02": 1,
+        "2026-09-03": 2,
+        "2026-09-04": 4,
+        "2026-09-05": 1,
+        "2026-09-07": 6
+      }
+    },
+    {
+      "name": "Wikibolana",
+      "engine": "mediawiki",
+      "url": "https://mg.Wiktionary.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 506755,
+      "fetched_at": "2026-09-09T02:43:07Z",
+      "content_sha256": "58f3a25d6a48c545f094937449b66254f035e363358ddc2e100e0285b2853f5d",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-11",
+        "to": "2026-09-08",
+        "active_days": 25,
+        "counted_rows": 174,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 174,
+      "edit_rows_counted": 174,
+      "burst": 21.7,
+      "days_2526": 25,
+      "max_day": [
+        "2026-08-16",
+        65
+      ],
+      "day_counts": {
+        "2026-08-11": 1,
+        "2026-08-13": 2,
+        "2026-08-15": 5,
+        "2026-08-16": 65,
+        "2026-08-17": 6,
+        "2026-08-18": 13,
+        "2026-08-19": 5,
+        "2026-08-20": 31,
+        "2026-08-21": 12,
+        "2026-08-22": 1,
+        "2026-08-23": 4,
+        "2026-08-24": 1,
+        "2026-08-25": 1,
+        "2026-08-26": 3,
+        "2026-08-27": 1,
+        "2026-08-29": 5,
+        "2026-08-30": 1,
+        "2026-08-31": 3,
+        "2026-09-01": 2,
+        "2026-09-02": 1,
+        "2026-09-03": 3,
+        "2026-09-04": 4,
+        "2026-09-05": 2,
+        "2026-09-06": 1,
+        "2026-09-08": 1
+      }
+    },
+    {
+      "name": "Xhosa Wikipedia",
+      "engine": "mediawiki",
+      "url": "https://Xh.Wikipedia.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 737156,
+      "fetched_at": "2026-09-09T02:43:05Z",
+      "content_sha256": "c71489b8c7abe4c737ce531f2d561542c6bb826710499460153d9615e64a77d2",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-11",
+        "to": "2026-09-08",
+        "active_days": 24,
+        "counted_rows": 240,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 20.0,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 240,
+      "edit_rows_counted": 240,
+      "burst": 69.0,
+      "days_2526": 24,
+      "max_day": [
+        "2026-09-08",
+        138
+      ],
+      "day_counts": {
+        "2026-08-11": 1,
+        "2026-08-13": 2,
+        "2026-08-14": 1,
+        "2026-08-15": 3,
+        "2026-08-16": 2,
+        "2026-08-17": 8,
+        "2026-08-18": 3,
+        "2026-08-19": 7,
+        "2026-08-20": 1,
+        "2026-08-22": 2,
+        "2026-08-23": 3,
+        "2026-08-24": 4,
+        "2026-08-25": 1,
+        "2026-08-26": 1,
+        "2026-08-27": 4,
+        "2026-08-28": 6,
+        "2026-08-30": 1,
+        "2026-09-01": 1,
+        "2026-09-02": 2,
+        "2026-09-03": 4,
+        "2026-09-05": 1,
+        "2026-09-06": 1,
+        "2026-09-07": 43,
+        "2026-09-08": 138
+      }
+    },
+    {
+      "name": "Czech Wikiversity",
+      "engine": "mediawiki",
+      "url": "http://cs.wikiversity.org/wiki/Special:RecentChanges?days=30&limit=500",
+      "http": 200,
+      "bytes": 387023,
+      "fetched_at": "2026-09-09T02:43:06Z",
+      "content_sha256": "8159439e8f746504090de6b0f7ea48dec558bbd551611adb516794e675ef0077",
+      "content_hash_basis": "utf-8 after fetch decode(errors=ignore)",
+      "requested_window": {
+        "parameters": {
+          "days": "30",
+          "limit": "500"
+        },
+        "from": "2026-08-10",
+        "to": "2026-09-09"
+      },
+      "observed_window": {
+        "from": "2026-08-10",
+        "to": "2026-09-08",
+        "active_days": 22,
+        "counted_rows": 126,
+        "basis": "counted_structural_rows"
+      },
+      "outcome": "readable",
+      "reason": null,
+      "blocked": null,
+      "bot_check": false,
+      "score": 16.3,
+      "signals": {
+        "cloud": 0,
+        "handles": 0,
+        "bots": 0,
+        "words": 0,
+        "payload": 0,
+        "infra": 0
+      },
+      "evidence": [],
+      "row_parser": "mediawiki",
+      "row_parse_outcome": "parsed",
+      "edit_rows_seen": 126,
+      "edit_rows_counted": 126,
+      "burst": 16.3,
+      "days_2526": 22,
+      "max_day": [
+        "2026-09-01",
+        49
+      ],
+      "day_counts": {
+        "2026-08-10": 3,
+        "2026-08-11": 4,
+        "2026-08-12": 8,
+        "2026-08-13": 1,
+        "2026-08-15": 3,
+        "2026-08-16": 1,
+        "2026-08-17": 12,
+        "2026-08-18": 2,
+        "2026-08-19": 1,
+        "2026-08-20": 3,
+        "2026-08-21": 1,
+        "2026-08-22": 2,
+        "2026-08-24": 3,
+        "2026-08-27": 8,
+        "2026-08-31": 5,
+        "2026-09-01": 49,
+        "2026-09-02": 2,
+        "2026-09-03": 2,
+        "2026-09-04": 7,
+        "2026-09-05": 4,
+        "2026-09-06": 1,
+        "2026-09-08": 4
+      }
+    }
+  ]
+}

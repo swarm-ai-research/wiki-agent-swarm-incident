@@ -42,8 +42,10 @@ prevent ruling out such a move (see
 the windows listed in pass 4, several of which exclude May–June entirely.
 Requested 120–200-day windows do not prove that servers returned that history.
 The September 5 scanner undercounted day-grouped RecentChanges, including
-MediaWiki; September 6's timestamp heuristic improved grouping but still does
-not extract engine-specific edit rows. Summary timestamps can distort bursts.
+MediaWiki; September 6's timestamp heuristic improved grouping but summary
+timestamps could still distort bursts. The current scanner replaces that
+heuristic with structural row extraction for MediaWiki, UseMod, and Oddmuse;
+the saved September runs predate it and are not retroactively corrected.
 WikiIndex and the linked directories are a sampling frame, not the population of
 all public wikis. These observations cannot establish either the absence of a
 post-June-22 migration or its cause.
@@ -202,6 +204,8 @@ heuristically counted timestamps), before the incident window. Raw run:
 | `78a4de1` (September 5) | Initial generic scanner; date-token burst counting | Historical September 5 run; grouped-day bursts undercounted |
 | `202302d`, `eecf851` (September 6) | Tarpit detection, timestamp grouping, old/future-date guards | September 6 run notes describe this heuristic; the JSON does not record the exact scanner revision |
 | `ec4839e` (September 6, later) | Explicit outcomes, null scores for unreadable responses, installation-URL deduplication, legacy report handling | Neither saved scan contains the new `outcome` field; no rerun with this revision is claimed here |
+| current scanner | Engine-aware structural edit rows and explicit row-parser coverage | The September 8 population run uses these fields; offline fixtures cover MediaWiki, UseMod, Oddmuse, empty and unknown layouts |
+| schema-v2 output | Per-fetch hashes/timestamps, code and configuration identity, requested/observed windows, persisted score inputs | The September 8 run covers 1,355 normalized endpoints and reproduces 238/238 readable scores without retaining fetched bodies |
 
 An offline audit using `coverage_outcome()` at `ec4839e` classifies the saved
 metadata as follows. These counts describe recorded fetch metadata, not fresh
@@ -211,6 +215,7 @@ requests or re-scored page bodies:
 |---|---:|---:|---:|---:|---:|---:|
 | September 5 | 1,356 | 664 | 498 | 0 | 194 | 0 |
 | September 6 | 1,356 | 493 | 497 | 10 | 356 | 0 |
+| September 8, schema v2 | 1,355 | 540 | 488 | 89 | 0 | 238 |
 
 `legacy_unverified` means the stored metadata cannot establish readability; it
 does not mean all those responses were unreadable. The historical 346-response
@@ -221,9 +226,9 @@ does not rerun fetching or parsing. Neither saved file contains complete
 observed date windows, scanner configuration, or code provenance sufficient to
 reproduce its scores from the stored metadata alone.
 
-Engine-aware row extraction remains open in Beads (`distributional-agi-safety-10ta`);
-run provenance and offline calibration remain open in
-`distributional-agi-safety-3vrx`. The later coverage fix distinguishes missing
+Engine-aware row extraction is implemented under Beads
+(`distributional-agi-safety-10ta`); run provenance and offline calibration are
+implemented under `distributional-agi-safety-3vrx`. The later coverage fix distinguishes missing
 observations from zero scores; it does not recover blocked history or guarantee
 detection of a volume-only swarm.
 

@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "wiki_agent_swarm_incident",
+  "project_id": "4cb3298c-2077-4804-b0e0-09754cc4765a"
+}

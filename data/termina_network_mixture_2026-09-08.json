@@ -1,0 +1,1397 @@
+{
+  "claim_id": "networks-do-not-separate-populations",
+  "database": "data/termina/incidents.sqlite",
+  "evidence_status": "inferred",
+  "generated_on": "2026-09-08",
+  "method": {
+    "important_limit": "The pinned database and its declared rmn.re evidence are one synthesis lineage; this is arithmetic reproduction, not independent collection.",
+    "leaning_rule": "record count for one population is at least threshold times the other; zero counts are included",
+    "population_input": "all records with population_id a-talk or b-tools and an ip16 actor",
+    "prefix_normalization": "first two validated IPv4 octets; masked trailing octets are ignored",
+    "rmn_window": "observed_time >= incident.first_action (2026-05-11)"
+  },
+  "prefixes": [
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "103.75"
+    },
+    {
+      "a_talk_records": 11,
+      "b_tools_records": 17,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "104.209"
+    },
+    {
+      "a_talk_records": 40,
+      "b_tools_records": 36,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "104.210"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 1,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "104.22"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "104.40"
+    },
+    {
+      "a_talk_records": 38,
+      "b_tools_records": 55,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "104.42"
+    },
+    {
+      "a_talk_records": 24,
+      "b_tools_records": 25,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "104.43"
+    },
+    {
+      "a_talk_records": 7,
+      "b_tools_records": 6,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "104.45"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "107.189"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "109.70"
+    },
+    {
+      "a_talk_records": 15,
+      "b_tools_records": 12,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "128.203"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 2,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "13.66"
+    },
+    {
+      "a_talk_records": 12,
+      "b_tools_records": 11,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "13.78"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 3,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "13.83"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 3,
+      "both_populations": true,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "13.86"
+    },
+    {
+      "a_talk_records": 43,
+      "b_tools_records": 65,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "130.131"
+    },
+    {
+      "a_talk_records": 16,
+      "b_tools_records": 10,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "130.213"
+    },
+    {
+      "a_talk_records": 19,
+      "b_tools_records": 25,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "132.196"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "134.122"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 5,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "134.33"
+    },
+    {
+      "a_talk_records": 22,
+      "b_tools_records": 35,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "135.119"
+    },
+    {
+      "a_talk_records": 59,
+      "b_tools_records": 88,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "135.232"
+    },
+    {
+      "a_talk_records": 15,
+      "b_tools_records": 14,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "135.234"
+    },
+    {
+      "a_talk_records": 13,
+      "b_tools_records": 5,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "137.116"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "141.148"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "142.4"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "147.182"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "149.22"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "153.127"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "156.146"
+    },
+    {
+      "a_talk_records": 20,
+      "b_tools_records": 18,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "157.55"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 8,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "157.56"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "162.159"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "162.243"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "165.140"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "167.172"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "167.71"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 10,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "168.62"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 2,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.170"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.171"
+    },
+    {
+      "a_talk_records": 40,
+      "b_tools_records": 40,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.173"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 2,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.177"
+    },
+    {
+      "a_talk_records": 46,
+      "b_tools_records": 56,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.184"
+    },
+    {
+      "a_talk_records": 17,
+      "b_tools_records": 19,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.185"
+    },
+    {
+      "a_talk_records": 34,
+      "b_tools_records": 35,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.202"
+    },
+    {
+      "a_talk_records": 10,
+      "b_tools_records": 13,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.208"
+    },
+    {
+      "a_talk_records": 34,
+      "b_tools_records": 55,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.212"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 12,
+      "both_populations": true,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "172.214"
+    },
+    {
+      "a_talk_records": 14,
+      "b_tools_records": 13,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "172.215"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "172.69"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "172.70"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "18.139"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "18.220"
+    },
+    {
+      "a_talk_records": 7,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "184.178"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "184.185"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "185.220"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "188.129"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "192.111"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "192.252"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "192.42"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "193.221"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 2,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "20.1"
+    },
+    {
+      "a_talk_records": 7,
+      "b_tools_records": 11,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.10"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 1,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.102"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 5,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "20.106"
+    },
+    {
+      "a_talk_records": 19,
+      "b_tools_records": 23,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.109"
+    },
+    {
+      "a_talk_records": 53,
+      "b_tools_records": 68,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.110"
+    },
+    {
+      "a_talk_records": 16,
+      "b_tools_records": 26,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.112"
+    },
+    {
+      "a_talk_records": 95,
+      "b_tools_records": 110,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.114"
+    },
+    {
+      "a_talk_records": 13,
+      "b_tools_records": 18,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.115"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "20.119"
+    },
+    {
+      "a_talk_records": 73,
+      "b_tools_records": 67,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.12"
+    },
+    {
+      "a_talk_records": 32,
+      "b_tools_records": 30,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.122"
+    },
+    {
+      "a_talk_records": 17,
+      "b_tools_records": 12,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.125"
+    },
+    {
+      "a_talk_records": 7,
+      "b_tools_records": 5,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.14"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.15"
+    },
+    {
+      "a_talk_records": 35,
+      "b_tools_records": 51,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.163"
+    },
+    {
+      "a_talk_records": 152,
+      "b_tools_records": 195,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.165"
+    },
+    {
+      "a_talk_records": 102,
+      "b_tools_records": 137,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.168"
+    },
+    {
+      "a_talk_records": 19,
+      "b_tools_records": 26,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.169"
+    },
+    {
+      "a_talk_records": 119,
+      "b_tools_records": 156,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.171"
+    },
+    {
+      "a_talk_records": 59,
+      "b_tools_records": 85,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.172"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 1,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "20.186"
+    },
+    {
+      "a_talk_records": 12,
+      "b_tools_records": 5,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.188"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 1,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.189"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "20.22"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.221"
+    },
+    {
+      "a_talk_records": 101,
+      "b_tools_records": 140,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.225"
+    },
+    {
+      "a_talk_records": 21,
+      "b_tools_records": 30,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.228"
+    },
+    {
+      "a_talk_records": 69,
+      "b_tools_records": 77,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.230"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 5,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.236"
+    },
+    {
+      "a_talk_records": 51,
+      "b_tools_records": 49,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.237"
+    },
+    {
+      "a_talk_records": 10,
+      "b_tools_records": 14,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.242"
+    },
+    {
+      "a_talk_records": 82,
+      "b_tools_records": 92,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.245"
+    },
+    {
+      "a_talk_records": 9,
+      "b_tools_records": 8,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.246"
+    },
+    {
+      "a_talk_records": 30,
+      "b_tools_records": 30,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.25"
+    },
+    {
+      "a_talk_records": 10,
+      "b_tools_records": 9,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.253"
+    },
+    {
+      "a_talk_records": 63,
+      "b_tools_records": 99,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.29"
+    },
+    {
+      "a_talk_records": 21,
+      "b_tools_records": 31,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.3"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 6,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.43"
+    },
+    {
+      "a_talk_records": 62,
+      "b_tools_records": 63,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.45"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 9,
+      "both_populations": true,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "20.46"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 7,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.55"
+    },
+    {
+      "a_talk_records": 11,
+      "b_tools_records": 20,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.57"
+    },
+    {
+      "a_talk_records": 40,
+      "b_tools_records": 42,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.59"
+    },
+    {
+      "a_talk_records": 36,
+      "b_tools_records": 29,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.62"
+    },
+    {
+      "a_talk_records": 18,
+      "b_tools_records": 23,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.64"
+    },
+    {
+      "a_talk_records": 60,
+      "b_tools_records": 85,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.65"
+    },
+    {
+      "a_talk_records": 41,
+      "b_tools_records": 44,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.66"
+    },
+    {
+      "a_talk_records": 159,
+      "b_tools_records": 192,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.69"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 3,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.7"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "20.75"
+    },
+    {
+      "a_talk_records": 81,
+      "b_tools_records": 93,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.80"
+    },
+    {
+      "a_talk_records": 34,
+      "b_tools_records": 52,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.83"
+    },
+    {
+      "a_talk_records": 35,
+      "b_tools_records": 42,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.88"
+    },
+    {
+      "a_talk_records": 127,
+      "b_tools_records": 134,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.9"
+    },
+    {
+      "a_talk_records": 52,
+      "b_tools_records": 57,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.94"
+    },
+    {
+      "a_talk_records": 26,
+      "b_tools_records": 28,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.96"
+    },
+    {
+      "a_talk_records": 107,
+      "b_tools_records": 153,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.97"
+    },
+    {
+      "a_talk_records": 72,
+      "b_tools_records": 69,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "20.98"
+    },
+    {
+      "a_talk_records": 26,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "208.102"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "209.46"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "212.58"
+    },
+    {
+      "a_talk_records": 47,
+      "b_tools_records": 42,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "23.100"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "23.101"
+    },
+    {
+      "a_talk_records": 16,
+      "b_tools_records": 11,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "23.102"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "23.191"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "3.12"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "3.129"
+    },
+    {
+      "a_talk_records": 9,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "3.131"
+    },
+    {
+      "a_talk_records": 11,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "3.23"
+    },
+    {
+      "a_talk_records": 7,
+      "b_tools_records": 6,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.149"
+    },
+    {
+      "a_talk_records": 14,
+      "b_tools_records": 16,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.150"
+    },
+    {
+      "a_talk_records": 41,
+      "b_tools_records": 50,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.151"
+    },
+    {
+      "a_talk_records": 35,
+      "b_tools_records": 55,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.154"
+    },
+    {
+      "a_talk_records": 15,
+      "b_tools_records": 12,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.155"
+    },
+    {
+      "a_talk_records": 46,
+      "b_tools_records": 73,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.227"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 5,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.236"
+    },
+    {
+      "a_talk_records": 11,
+      "b_tools_records": 18,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.242"
+    },
+    {
+      "a_talk_records": 11,
+      "b_tools_records": 6,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.246"
+    },
+    {
+      "a_talk_records": 92,
+      "b_tools_records": 124,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "4.255"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.112"
+    },
+    {
+      "a_talk_records": 9,
+      "b_tools_records": 11,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.116"
+    },
+    {
+      "a_talk_records": 9,
+      "b_tools_records": 16,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.124"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 1,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "40.125"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 13,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.64"
+    },
+    {
+      "a_talk_records": 13,
+      "b_tools_records": 19,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.65"
+    },
+    {
+      "a_talk_records": 15,
+      "b_tools_records": 13,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.70"
+    },
+    {
+      "a_talk_records": 20,
+      "b_tools_records": 40,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.75"
+    },
+    {
+      "a_talk_records": 7,
+      "b_tools_records": 13,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "40.78"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "45.84"
+    },
+    {
+      "a_talk_records": 4,
+      "b_tools_records": 1,
+      "both_populations": true,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "51.57"
+    },
+    {
+      "a_talk_records": 18,
+      "b_tools_records": 14,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.141"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.155"
+    },
+    {
+      "a_talk_records": 53,
+      "b_tools_records": 77,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.159"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 7,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.160"
+    },
+    {
+      "a_talk_records": 23,
+      "b_tools_records": 29,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.161"
+    },
+    {
+      "a_talk_records": 49,
+      "b_tools_records": 61,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.162"
+    },
+    {
+      "a_talk_records": 27,
+      "b_tools_records": 31,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.165"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 1,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.167"
+    },
+    {
+      "a_talk_records": 9,
+      "b_tools_records": 13,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.173"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 12,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.176"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 4,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.177"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "52.179"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 6,
+      "both_populations": true,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "52.180"
+    },
+    {
+      "a_talk_records": 5,
+      "b_tools_records": 10,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.190"
+    },
+    {
+      "a_talk_records": 24,
+      "b_tools_records": 23,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.225"
+    },
+    {
+      "a_talk_records": 13,
+      "b_tools_records": 15,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.230"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 15,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.234"
+    },
+    {
+      "a_talk_records": 8,
+      "b_tools_records": 12,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.237"
+    },
+    {
+      "a_talk_records": 6,
+      "b_tools_records": 16,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.238"
+    },
+    {
+      "a_talk_records": 11,
+      "b_tools_records": 6,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.241"
+    },
+    {
+      "a_talk_records": 23,
+      "b_tools_records": 41,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.242"
+    },
+    {
+      "a_talk_records": 3,
+      "b_tools_records": 2,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.246"
+    },
+    {
+      "a_talk_records": 9,
+      "b_tools_records": 17,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.247"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 3,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "52.250"
+    },
+    {
+      "a_talk_records": 17,
+      "b_tools_records": 23,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.251"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 1,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "52.255"
+    },
+    {
+      "a_talk_records": 0,
+      "b_tools_records": 11,
+      "both_populations": false,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "52.87"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 7,
+      "both_populations": true,
+      "category_3_to_1": "b-tools-leaning",
+      "prefix": "57.151"
+    },
+    {
+      "a_talk_records": 129,
+      "b_tools_records": 164,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "57.154"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "64.225"
+    },
+    {
+      "a_talk_records": 74,
+      "b_tools_records": 76,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "64.236"
+    },
+    {
+      "a_talk_records": 32,
+      "b_tools_records": 25,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "65.52"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "74.125"
+    },
+    {
+      "a_talk_records": 44,
+      "b_tools_records": 53,
+      "both_populations": true,
+      "category_3_to_1": "balanced-mixed",
+      "prefix": "74.249"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "77.110"
+    },
+    {
+      "a_talk_records": 2,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "80.67"
+    },
+    {
+      "a_talk_records": 1,
+      "b_tools_records": 0,
+      "both_populations": false,
+      "category_3_to_1": "a-talk-leaning",
+      "prefix": "94.16"
+    }
+  ],
+  "rmn_re": {
+    "by_prefix_category": {
+      "a-talk-leaning": 4,
+      "b-tools-leaning": 5,
+      "balanced-mixed": 485,
+      "invalid-or-redacted": 1,
+      "unmatched": 48
+    },
+    "records_in_window": 543,
+    "unique_masked_ips_by_category": {
+      "a-talk-leaning": 3,
+      "b-tools-leaning": 5,
+      "balanced-mixed": 474,
+      "invalid-or-redacted": 1,
+      "unmatched": 19
+    }
+  },
+  "terminology_correction": {
+    "actual_prefixes_with_both": 137,
+    "balanced_mixed_at_3_to_1": 131,
+    "claim_says_both": 131,
+    "explanation": "131 is the balanced remainder after the two leaning categories; 137 prefixes actually contain records from both populations."
+  },
+  "wiki_prefixes": {
+    "a_talk": 182,
+    "b_tools": 144,
+    "both_any_ratio": 137,
+    "categories_3_to_1": {
+      "a-talk-leaning": 46,
+      "b-tools-leaning": 12,
+      "balanced-mixed": 131
+    },
+    "jaccard": 0.7249,
+    "labeled_records": 8912,
+    "records_on_shared_prefixes": 8726,
+    "sensitivity": {
+      "10": {
+        "a-talk-leaning": 45,
+        "b-tools-leaning": 7,
+        "balanced-mixed": 137
+      },
+      "2": {
+        "a-talk-leaning": 53,
+        "b-tools-leaning": 20,
+        "balanced-mixed": 116
+      },
+      "3": {
+        "a-talk-leaning": 46,
+        "b-tools-leaning": 12,
+        "balanced-mixed": 131
+      },
+      "5": {
+        "a-talk-leaning": 45,
+        "b-tools-leaning": 7,
+        "balanced-mixed": 137
+      }
+    },
+    "union": 189
+  }
+}
