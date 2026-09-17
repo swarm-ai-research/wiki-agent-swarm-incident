@@ -1,0 +1,234 @@
+{
+  "audited_runs": 322,
+  "estimand": "agent RUNS (episodes) visible in the dse export, not distinct agent instances, cohorts or models",
+  "export_labelled_revisions": 13692,
+  "export_labels": 3102,
+  "model": {
+    "across_run_sharing": "two-component: 1-rho of instances under CRP(gamma), rho onto a hub pool under CRP(gamma_hub)",
+    "audited_selection": "P(audited | n) proportional to n^b, b estimated",
+    "instances_per_handle_truncation": 400,
+    "run_sizes": "NegBinomial(mu, phi) truncated at 1",
+    "within_run_rotation": "two-component: 1-w never rotate, w partition by CRP(alpha)"
+  },
+  "model_revisions": [
+    {
+      "N": 2300,
+      "model": "moment grid, no sharing model"
+    },
+    {
+      "N": 352,
+      "model": "pairwise handle merging"
+    },
+    {
+      "N": 671,
+      "model": "single-CRP sharing (HDP)"
+    },
+    {
+      "N": 1925,
+      "model": "+ audited likelihood, size-biased selection"
+    },
+    {
+      "N": 3068,
+      "model": "+ two-component hub sharing"
+    }
+  ],
+  "parameter_recovery": {
+    "cases": [
+      {
+        "N_hat": 1718,
+        "N_true": 1900,
+        "b_true": 0.25
+      },
+      {
+        "N_hat": 959,
+        "N_true": 1200,
+        "b_true": 0.5
+      },
+      {
+        "N_hat": 3012,
+        "N_true": 3000,
+        "b_true": 0.1
+      }
+    ],
+    "model_version": "7-parameter single-CRP sharing; NOT repeated for the hub model reported here"
+  },
+  "posterior": {
+    "N_runs": {
+      "ess": 187.7785633887986,
+      "median": 3068.0770119004746,
+      "q2.5": 2656.1874613025702,
+      "q97.5": 3571.534821842483,
+      "rhat": 1.0128518036955467
+    },
+    "alpha": {
+      "ess": 246.3718825247913,
+      "median": 3.336671765899136,
+      "q2.5": 2.8582788307872566,
+      "q97.5": 3.8792860091643138,
+      "rhat": 1.0097449244177574
+    },
+    "b_sizebias": {
+      "ess": 171.23166671250428,
+      "median": 0.5785417369513708,
+      "q2.5": 0.3246898083855246,
+      "q97.5": 0.8785248999430593,
+      "rhat": 1.0522049925508528
+    },
+    "gamma": {
+      "ess": 468.89582631999383,
+      "median": 109752.42879628835,
+      "q2.5": 15488.171584251875,
+      "q97.5": 3659758.8129111403,
+      "rhat": 1.046047479077322
+    },
+    "gamma_hub": {
+      "ess": 340.14219296192897,
+      "median": 163.27499452685785,
+      "q2.5": 113.78645711710287,
+      "q97.5": 232.57396660129513,
+      "rhat": 1.02124994459379
+    },
+    "mu": {
+      "ess": 174.4585954114223,
+      "median": 3.956131252569357,
+      "q2.5": 3.1872159580463144,
+      "q97.5": 4.713475513448494,
+      "rhat": 1.0289453240286859
+    },
+    "phi": {
+      "ess": 251.0773911385424,
+      "median": 2.0090234389550323,
+      "q2.5": 1.3700224513512298,
+      "q97.5": 2.8132150988590374,
+      "rhat": 1.0294900127885473
+    },
+    "rho_hub": {
+      "ess": 310.7227121849442,
+      "median": 0.4694080814563738,
+      "q2.5": 0.40545849987548854,
+      "q97.5": 0.5395283335551379,
+      "rhat": 1.0164568254215256
+    },
+    "w_rotator": {
+      "ess": 216.02795221686077,
+      "median": 0.36318572503293184,
+      "q2.5": 0.3168049739068391,
+      "q97.5": 0.418478262830857,
+      "rhat": 1.0220672691423869
+    }
+  },
+  "posterior_predictive": {
+    ">=10": {
+      "covered": true,
+      "hi": 303.9442224859579,
+      "lo": 249.75158473831536,
+      "observed": 273.0
+    },
+    ">=100": {
+      "covered": true,
+      "hi": 9.606064416295087,
+      "lo": 2.4086088003831976,
+      "observed": 6.0
+    },
+    ">=150": {
+      "covered": false,
+      "hi": 2.8747847430955344,
+      "lo": 0.3512306150086344,
+      "observed": 4.0
+    },
+    ">=20": {
+      "covered": true,
+      "hi": 121.92003463688911,
+      "lo": 86.01867041451067,
+      "observed": 97.0
+    },
+    ">=200": {
+      "covered": false,
+      "hi": 0.9543421881335176,
+      "lo": 0.0550381214232201,
+      "observed": 1.0
+    },
+    ">=300": {
+      "covered": false,
+      "hi": 0.10225546806273894,
+      "lo": 0.0013964975185346796,
+      "observed": 1.0
+    },
+    ">=50": {
+      "covered": true,
+      "hi": 37.70566886173701,
+      "lo": 19.67912357957196,
+      "observed": 21.0
+    },
+    "labels": {
+      "covered": true,
+      "hi": 3219.8997864103244,
+      "lo": 3014.744530543154,
+      "observed": 3102.0
+    },
+    "revisions": {
+      "covered": true,
+      "hi": 15067.933899760717,
+      "lo": 12745.71678912123,
+      "observed": 13692.0
+    }
+  },
+  "sampler": {
+    "algorithm": "NUTS, dense Euclidean metric (arXiv:1701.02434)",
+    "chains": 4,
+    "diagnostics_clean": false,
+    "draws": 600,
+    "known_defect": "gamma is weakly identified once the hub component absorbs sharing: the posterior spans 1.5e4 to 3.7e6 and the resulting likelihood plateau produces 102 divergent transitions (4.3%) and rhat up to 1.05. N is stable across chains regardless (per-chain medians 3043-3077, rhat 1.013), but the interval is provisional until gamma is reparameterised or bounded.",
+    "max_rhat": 1.0522049925508528,
+    "min_ebfmi": 1.0618319699295136,
+    "per_chain": [
+      {
+        "accept": 0.7217859238222415,
+        "divergences": 8,
+        "ebfmi": 1.0938081200089094,
+        "eps": 0.5369442747420167,
+        "max_depth_hits": 0,
+        "mean_depth": 1.91,
+        "seconds": 1701.495245218277
+      },
+      {
+        "accept": 0.5131321227095691,
+        "divergences": 71,
+        "ebfmi": 1.204104357791609,
+        "eps": 0.556158577930688,
+        "max_depth_hits": 0,
+        "mean_depth": 1.5133333333333334,
+        "seconds": 1551.9797151088715
+      },
+      {
+        "accept": 0.7311007583158551,
+        "divergences": 5,
+        "ebfmi": 1.1839482354214923,
+        "eps": 0.49837253164104234,
+        "max_depth_hits": 0,
+        "mean_depth": 1.905,
+        "seconds": 1860.186882019043
+      },
+      {
+        "accept": 0.7540576383091823,
+        "divergences": 18,
+        "ebfmi": 1.0618319699295136,
+        "eps": 0.4917611047127798,
+        "max_depth_hits": 0,
+        "mean_depth": 1.9983333333333333,
+        "seconds": 1817.5487341880798
+      }
+    ],
+    "per_chain_median_N": [
+      3076.296196003611,
+      3062.571601745769,
+      3042.8903895407598,
+      3076.5754983526563
+    ],
+    "total_divergences": 102,
+    "total_transitions": 2400,
+    "warmup": 400
+  },
+  "schema_version": 1,
+  "source": "collusion.wiki dse export + data/run_identity_map.json"
+}
