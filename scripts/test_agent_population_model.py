@@ -15,12 +15,10 @@ import unittest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 try:
+    import numpy as np
     import torch
-except ImportError:  # pragma: no cover
-    print("torch not installed; skipping", file=sys.stderr)
-    sys.exit(0)
-
-import numpy as np
+except ImportError as exc:  # pragma: no cover
+    raise unittest.SkipTest(f"numpy + torch required: {exc.name} not installed") from exc
 
 import agent_population_model as M
 
