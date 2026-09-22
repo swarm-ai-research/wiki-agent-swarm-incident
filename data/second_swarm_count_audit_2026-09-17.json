@@ -1,0 +1,97 @@
+{
+  "second_swarm_commit": "b867474d0aca4a170268f3e26487dc36971bf764",
+  "fleet_commit": "d9590cbc6c1891c7f0c54e48a59888bbbd61c629",
+  "second_swarm_manifest": {
+    "entries": 29,
+    "mismatches": [],
+    "unlisted": [
+      "paper/What_Happened_and_What_Breaks_Next_Haddock_Blackfish.pdf"
+    ]
+  },
+  "tables": {
+    "FARM_FULL_INVENTORY.csv": {
+      "sha256": "e3c48a7fcd2f9b5e541c2bc920297ef089d028f8f3608d06442b71d1a9b751dd",
+      "rows": 645,
+      "unique_ids": 645,
+      "accounts": {
+        "newpc360": 315,
+        "newpc360aaa": 2,
+        "newpcQQ": 301,
+        "newpcedge": 7,
+        "newpcfirefox": 1,
+        "newpcgoogle": 8,
+        "newpckuake": 2,
+        "newpcopera": 1,
+        "newpcqqaaa": 2,
+        "newpcthorium": 1,
+        "newpczen": 2,
+        "user-lzathslk": 1,
+        "user-qaiocbhg": 1,
+        "user-unhrdtnl": 1
+      },
+      "snapshots": {
+        "20260711": 344,
+        "20260712": 625,
+        "20260713": 2,
+        "20260722": 24,
+        "20260725": 23,
+        "20260728": 23
+      },
+      "true_flags": {
+        "reference_config": 206,
+        "inline_b64": 25,
+        "h5_probe": 153
+      }
+    },
+    "ACCOUNTS.csv": {
+      "sha256": "6cb43b4a16fb28078163d8fb859bb6d55523adc6c8c9f43431420d765ff9e1e6",
+      "rows": 12,
+      "unique_ids": 12,
+      "accounts": {
+        "newpc360": 1,
+        "newpcQQ": 1,
+        "newpcedge": 1,
+        "newpcfirefox": 1,
+        "newpcgoogle": 1,
+        "newpckuake": 1,
+        "newpcopera": 1,
+        "newpcthorium": 1,
+        "newpczen": 1,
+        "user-lzathslk": 1,
+        "user-qaiocbhg": 1,
+        "user-unhrdtnl": 1
+      }
+    },
+    "ATTACK_DATASETS.csv": {
+      "sha256": "4416df69209a1f166be77b11188ef6e6350d7bc7e73f1809559b54bd7a240ce6",
+      "rows": 49,
+      "unique_ids": 49,
+      "accounts": {
+        "newpc360": 31,
+        "newpcQQ": 15,
+        "user-lzathslk": 1,
+        "user-qaiocbhg": 1,
+        "user-unhrdtnl": 1
+      }
+    },
+    "removed_attack_datasets.csv": {
+      "sha256": "9ff2f12fe24cb5639478bb34f470446219eababfe33bccec6c360d7e7bdca4b6",
+      "rows": 604,
+      "unique_ids": 604,
+      "accounts": {
+        "newpc360": 301,
+        "newpcQQ": 300,
+        "newpcfirefox": 1,
+        "newpcqqaaa": 2
+      }
+    }
+  },
+  "final_sweep_table": {
+    "sha256": "873f10e6b396f0decd812b1659481104a752faf489be92a3a752769970894f7f",
+    "account_rows": 19,
+    "profile_200": 15,
+    "profile_404": 4,
+    "numeric_repo_total": 37,
+    "numeric_repo_total_profile_200": 33
+  }
+}
