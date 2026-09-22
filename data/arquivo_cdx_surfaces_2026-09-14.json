@@ -1,0 +1,7557 @@
+{
+ "archive": "https://arquivo.pt/wayback/cdx",
+ "note": "Read-only CDX queries; no captured page fetched. Window counts are 200 captures with asset URLs dropped. Signature hits are over captured URLs only. A zero is absence from Arquivo.pt's index, not absence of the page; domain matching includes subdomains, so busy general domains (task targets) carry crawler traffic unrelated to the incident. Collection 'save' is Arquivo.pt's user-submitted Save Page Now. URL samples are truncated to 300 characters with email addresses and credential values redacted.",
+ "requested": {
+  "all_time_cap": 5000,
+  "matchType": "domain",
+  "window_from": "20260501"
+ },
+ "results": [
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "70a66b041b7fe0b1-35-95-198-152.serveousercontent.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 16
+   },
+   "embedded_target_hosts": {},
+   "first": "20091016054053",
+   "host": "aihw.gov.au",
+   "last": "20251221184306",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260621": 16
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 98,
+    "per_day": {
+     "20260621": 16
+    },
+    "query_parts": 1,
+    "status_200": 30,
+    "status_200_nonasset": 16
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260621135314",
+     "url": "https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030&apn=1782049502"
+    },
+    {
+     "ts": "20260621135316",
+     "url": "https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030&apn=1782049502"
+    },
+    {
+     "ts": "20260621135316",
+     "url": "https://www.aihw.gov.au/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a0f37f9b392d18ee"
+    },
+    {
+     "ts": "20260621140515",
+     "url": "https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030&apniframe=1782049701"
+    },
+    {
+     "ts": "20260621140516",
+     "url": "https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030&apniframe=1782049701"
+    },
+    {
+     "ts": "20260621143916",
+     "url": "https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030"
+    },
+    {
+     "ts": "20260621144213",
+     "url": "https://pp.aihw.gov.au/getmedia/ce13d423-ed18-4169-8b76-2f671df935de/aihw-hwe-098-pbs-atc1-prescriptions-monthly-data_keep.zip?v=20260526132030"
+    },
+    {
+     "ts": "20260621145041",
+     "url": "https://pp.aihw.gov.au/reports/medicines/pbs-monthly-data/data"
+    },
+    {
+     "ts": "20260621145728",
+     "url": "https://pp.aihw.gov.au/reports-data/downloadable-resources"
+    },
+    {
+     "ts": "20260621151555",
+     "url": "https://vizprod.aihw.gov.au/t/Public/views/PBSdashboardallATC1-ATC2medicines-Agegroup/PBSDashboard.pdf?:showVizHome=no"
+    },
+    {
+     "ts": "20260621152419",
+     "url": "https://pp.aihw.gov.au/reports/medicines/pbs-monthly-data/contents/dashboard"
+    },
+    {
+     "ts": "20260621154831",
+     "url": "https://pp.aihw.gov.au/reports/medicines/pbs-monthly-data/contents/technical-notes"
+    },
+    {
+     "ts": "20260621160620",
+     "url": "https://pp.aihw.gov.au/getmedia/e348a99b-6a60-4743-b3de-dececda9d43b/aihw-hwe-098-pbs-atc2-prescriptions-monthly-data_keep.zip?v=20260526132030"
+    },
+    {
+     "ts": "20260621160636",
+     "url": "https://pp.aihw.gov.au/getmedia/e348a99b-6a60-4743-b3de-dececda9d43b/aihw-hwe-098-pbs-atc2-prescriptions-monthly-data_keep.zip?x=1"
+    },
+    {
+     "ts": "20260621171731",
+     "url": "https://viz.aihw.gov.au/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a0f4aace0d1dc1b1"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 16
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 723,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160524144435",
+   "host": "alexschroeder.ch",
+   "last": "20251222162303",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 2
+   },
+   "embedded_target_hosts": {
+    "sciencedirect.com": 1,
+    "web.archive.org": 1
+   },
+   "first": "20260514115732",
+   "host": "allorigins.hexlet.app",
+   "last": "20260514165343",
+   "outcome": "window_captures_with_url_signature",
+   "save_per_day": {
+    "20260514": 2
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2,
+    "per_day": {
+     "20260514": 2
+    },
+    "query_parts": 1,
+    "status_200": 2,
+    "status_200_nonasset": 2
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260514115732",
+     "url": "https://allorigins.hexlet.app/raw?url=http://web.archive.org/web/20200101000000id_/http://www.hillbillyhousewife.com/site/teriyaki-noodles.htm"
+    },
+    {
+     "ts": "20260514165343",
+     "url": "https://allorigins.hexlet.app/raw?url=https://www.sciencedirect.com/search?qs=critical%20buckling%20load"
+    }
+   ],
+   "url_signature_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 2
+   },
+   "wayback_window_nonasset": 2
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "raq": 59,
+    "save": 6
+   },
+   "embedded_target_hosts": {},
+   "first": "20170802050702",
+   "host": "analysis.windows.net",
+   "last": "20260430005135",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260902": 6
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 78,
+    "per_day": {
+     "20260514": 18,
+     "20260517": 18,
+     "20260519": 18,
+     "20260826": 5,
+     "20260902": 6
+    },
+    "query_parts": 1,
+    "status_200": 77,
+    "status_200_nonasset": 65
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260514220313",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/190f0d06-1c11-4e45-8f57-0a80af89adc3/conceptualschema?userPreferredLocale=en"
+    },
+    {
+     "ts": "20260514220313",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/190f0d06-1c11-4e45-8f57-0a80af89adc3/modelsAndExploration?preferReadOnlySession=true&skipQueryData=true"
+    },
+    {
+     "ts": "20260514220313",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/5d74b255-9ec9-41a8-ba54-bf3369b9704a/conceptualschema?userPreferredLocale=en"
+    },
+    {
+     "ts": "20260514220313",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/5d74b255-9ec9-41a8-ba54-bf3369b9704a/modelsAndExploration?preferReadOnlySession=true&skipQueryData=true"
+    },
+    {
+     "ts": "20260514220326",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/4445d64a-f154-4053-9a2a-0cca94b8035f/conceptualschema?userPreferredLocale=en"
+    },
+    {
+     "ts": "20260514220326",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/4445d64a-f154-4053-9a2a-0cca94b8035f/embeddedArtifactMetadata"
+    },
+    {
+     "ts": "20260514220326",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/4445d64a-f154-4053-9a2a-0cca94b8035f/modelsAndExploration?preferReadOnlySession=true&skipQueryData=true"
+    },
+    {
+     "ts": "20260514220326",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/5d74b255-9ec9-41a8-ba54-bf3369b9704a/embeddedArtifactMetadata"
+    },
+    {
+     "ts": "20260514220326",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/metadata/informationProtection/artifacts"
+    },
+    {
+     "ts": "20260514220327",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/resourcePackageItem/1%2F9e2b6212-7c62-4d45-bc49-a69438dca789%2FResourcePackage%2FBlobIdV2-58907964-8990-43b8-b576-c0627cdc24f2RVt-NMYpvecW.json"
+    },
+    {
+     "ts": "20260514220327",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/metadata/informationProtection/artifacts"
+    },
+    {
+     "ts": "20260514220328",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/explore/reports/190f0d06-1c11-4e45-8f57-0a80af89adc3/embeddedArtifactMetadata"
+    },
+    {
+     "ts": "20260514220329",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/metadata/informationProtection/artifacts"
+    },
+    {
+     "ts": "20260514220330",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/metadata/informationProtection/artifacts"
+    },
+    {
+     "ts": "20260514220344",
+     "url": "https://wabi-west-europe-e-primary-redirect.analysis.windows.net/telemetry/certifiedevents"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 54
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 78,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20230211142252",
+   "host": "anna.fyi",
+   "last": "20230501222141",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 21,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 7
+   },
+   "embedded_target_hosts": {},
+   "first": "20260617001309",
+   "host": "api-la.datausa.io",
+   "last": "20260621191425",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260617": 2,
+    "20260619": 2,
+    "20260621": 3
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 21,
+    "per_day": {
+     "20260617": 2,
+     "20260619": 2,
+     "20260621": 3
+    },
+    "query_parts": 1,
+    "status_200": 7,
+    "status_200_nonasset": 7
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260617001309",
+     "url": "https://api-la.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&drilldowns=Year&measures=Languages%20Spoken&include=Year:2022"
+    },
+    {
+     "ts": "20260617014128",
+     "url": "https://api-la.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&drilldowns=Nation%2CYear&measures=Languages+Spoken&include=Year%3A2022%3BLanguage+Spoken+at+Home%3A2"
+    },
+    {
+     "ts": "20260619142652",
+     "url": "https://api-la.datausa.io/complexity/rca_historical.jsonrecords?cube=onet_by_pums&location=Detailed%20Occupation&activity=Skill%20Element&measure=Total%20Score&time=Year&cuts=Detailed%20Occupation:412010"
+    },
+    {
+     "ts": "20260619162630",
+     "url": "https://api-la.datausa.io/tesseract/data.jsonrecords?cube=onet_by_pums&drilldowns=Year,Skill%20Element,Detailed%20Occupation&include=Detailed%20Occupation:412010&measures=LV%20Value,IM%20Value,Total%20Score"
+    },
+    {
+     "ts": "20260621033439",
+     "url": "https://api-la.datausa.io/complexity/rca_historical.jsonrecords?cube=onet_by_pums&location=Detailed%20Occupation&activity=Skill%20Element&measure=Total%20Score&time=Year&cuts=Detailed%20Occupation%3A412010"
+    },
+    {
+     "ts": "20260621034622",
+     "url": "https://api-la.datausa.io/tesseract/data.jsonrecords?cube=onet_by_pums&drilldowns=Year%2CSkill%20Element%2CDetailed%20Occupation&include=Detailed%20Occupation%3A412010%3BYear%3A2018&measures=RCA%2CLV%20Value%2CTotal%20Score"
+    },
+    {
+     "ts": "20260621153204",
+     "url": "https://api-la.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=Nation,Year&measures=Population&limit=2"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 7
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1367,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 4
+   },
+   "embedded_target_hosts": {
+    "example.com": 2,
+    "example.org": 1,
+    "httpbin.org": 1
+   },
+   "first": "20191015170729",
+   "host": "api.allorigins.win",
+   "last": "20260913212009",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260512": 1,
+    "20260513": 1,
+    "20260526": 1,
+    "20260606": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 38,
+    "per_day": {
+     "20260512": 1,
+     "20260513": 1,
+     "20260526": 1,
+     "20260606": 1
+    },
+    "query_parts": 1,
+    "status_200": 4,
+    "status_200_nonasset": 4
+   },
+   "sources": [
+    "export_url_domain",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260512011326",
+     "url": "https://api.allorigins.win/raw?url=https://httpbin.org/anything?1778548387.9690344"
+    },
+    {
+     "ts": "20260513011850",
+     "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fexample.org"
+    },
+    {
+     "ts": "20260526131649",
+     "url": "https://api.allorigins.win/get?url=https%3A%2F%2Fexample.com"
+    },
+    {
+     "ts": "20260606151146",
+     "url": "https://api.allorigins.win/raw?url=https%3A%2F%2Fexample.com"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 4
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 161,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20200302194641",
+   "host": "api.census.gov",
+   "last": "20260617012614",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 367,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 9
+   },
+   "embedded_target_hosts": {
+    "arquivo.pt": 7,
+    "example.com": 1,
+    "sciencedirect.com": 1
+   },
+   "first": "20201221105343",
+   "host": "api.codetabs.com",
+   "last": "20260704180253",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260514": 1,
+    "20260521": 8
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 53,
+    "per_day": {
+     "20260514": 1,
+     "20260521": 8
+    },
+    "query_parts": 1,
+    "status_200": 9,
+    "status_200_nonasset": 9
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260514165624",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://www.sciencedirect.com/search?qs=critical%20buckling%20load"
+    },
+    {
+     "ts": "20260521183343",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Fexample.com"
+    },
+    {
+     "ts": "20260521183632",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3FReport%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_current_prices_in_thou"
+    },
+    {
+     "ts": "20260521183727",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3FReport%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_current_prices_in_thou"
+    },
+    {
+     "ts": "20260521183945",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%252C%2BUS_at_c"
+    },
+    {
+     "ts": "20260521184202",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https://arquivo.pt/save/now/20260521181216mp_/https://unctadstat-api.unctad.org/api/download/downloaddata?__wb_method=POST&Report=US.TradeServCatTotal&VersionId=1863&Select=Year%2C+Economy%2FLabel%2C+US_at_current_prices_in_thousands_Value&Filter=Year+in+%282"
+    },
+    {
+     "ts": "20260521184216",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521181216mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FLabel%2C%2BUS_at_cur"
+    },
+    {
+     "ts": "20260521190550",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521185943mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FCode%252C%2BEconomy%"
+    },
+    {
+     "ts": "20260521190608",
+     "url": "https://api.codetabs.com/v1/proxy/?quest=https%3A%2F%2Farquivo.pt%2Fsave%2Fnow%2F20260521185943mp_%2Fhttps%3A%2F%2Functadstat-api.unctad.org%2Fapi%2Fdownload%2Fdownloaddata%3F__wb_method%3DPOST%26Report%3DUS.TradeServCatTotal%26VersionId%3D1863%26Select%3DYear%252C%2BEconomy%252FCode%252C%2BEconomy%"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 9
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 21,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20250529150114",
+   "host": "api.cors.lol",
+   "last": "20260910042135",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 10,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 4,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20250922202154",
+   "host": "api.counterapi.dev",
+   "last": "20251018205437",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "api.dataafrica.io",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1096,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 653
+   },
+   "embedded_target_hosts": {},
+   "first": "20160522015806",
+   "host": "api.datausa.io",
+   "last": "20260629035528",
+   "outcome": "window_captures_with_url_signature",
+   "save_per_day": {
+    "20260616": 22,
+    "20260617": 614,
+    "20260618": 1,
+    "20260619": 3,
+    "20260621": 7,
+    "20260629": 6
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1087,
+    "per_day": {
+     "20260616": 22,
+     "20260617": 614,
+     "20260618": 1,
+     "20260619": 3,
+     "20260621": 7,
+     "20260629": 6
+    },
+    "query_parts": 1,
+    "status_200": 653,
+    "status_200_nonasset": 653
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260616205212",
+     "url": "https://api.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616205214",
+     "url": "https://api.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616222531",
+     "url": "https://api.datausa.io/robots.txt"
+    },
+    {
+     "ts": "20260616222547",
+     "url": "https://api.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616222635",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State%2CYear&measures=Population&top=1.State.Population.desc"
+    },
+    {
+     "ts": "20260616222839",
+     "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+    },
+    {
+     "ts": "20260616222856",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_5&drilldowns=Year&measures=Languages%20Spoken"
+    },
+    {
+     "ts": "20260616223349",
+     "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+    },
+    {
+     "ts": "20260616223518",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State%2CYear&measures=Population"
+    },
+    {
+     "ts": "20260616223520",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State&measures=Population"
+    },
+    {
+     "ts": "20260616224935",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&drilldowns=Language+Spoken+at+Home%2CYear&measures=Languages+Spoken&include=Year%3A2022&limit=100%2C0"
+    },
+    {
+     "ts": "20260616225147",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&drilldowns=County&measures=Languages+Spoken&include=Year%3A2022%3BLanguage+Spoken+at+Home%3A2&limit=100%2C0"
+    },
+    {
+     "ts": "20260616225151",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&drilldowns=Zip&measures=Languages+Spoken&include=Year%3A2022%3BLanguage+Spoken+at+Home%3A2&limit=100%2C0"
+    },
+    {
+     "ts": "20260616225804",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State,Year&measures=Population&include=Year:2023&limit=100,0"
+    },
+    {
+     "ts": "20260616225805",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State%2CYear&measures=Population&include=Year%3A2023&limit=100%2C0"
+    }
+   ],
+   "url_signature_hits": {
+    "site-test\\.nsi\\.bg|api\\.datausa\\.io|api\\.dataafrica\\.io": 653
+   },
+   "wayback_window_nonasset": 653
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 451,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20141126201548",
+   "host": "api.dp.la",
+   "last": "20260603231318",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 4238,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 6,
+    "save": 1005
+   },
+   "embedded_target_hosts": {
+    "api.ourworldindata.org": 3,
+    "arquivo.pt": 20,
+    "climatereanalyzer.org": 55,
+    "cloud.ihme.washington.edu": 135,
+    "cr.acg.maine.edu": 3,
+    "da.gd": 1,
+    "datastudio.google.com": 1,
+    "echoserver.dev": 54,
+    "example.com": 353,
+    "example.net": 3,
+    "hio.harvard.edu": 11,
+    "hostsclick.com": 19,
+    "httpbin.org": 177,
+    "live-hio.pantheonsite.io": 2,
+    "pingllo.com": 2,
+    "postman-echo.com": 8,
+    "soom.cz": 16,
+    "unctadstat-api.unctad.org": 108,
+    "vizhub.healthdata.org": 9,
+    "wayback.archive-it.org": 3
+   },
+   "first": "20200113042445",
+   "host": "api.microlink.io",
+   "last": "20260912125242",
+   "outcome": "window_captures_with_url_signature",
+   "save_per_day": {
+    "20260514": 1,
+    "20260521": 1,
+    "20260616": 260,
+    "20260617": 128,
+    "20260618": 6,
+    "20260620": 105,
+    "20260621": 483,
+    "20260622": 17,
+    "20260901": 1,
+    "20260912": 3
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1146,
+    "per_day": {
+     "20260514": 1,
+     "20260521": 1,
+     "20260616": 260,
+     "20260617": 128,
+     "20260618": 6,
+     "20260620": 105,
+     "20260621": 487,
+     "20260622": 19,
+     "20260901": 1,
+     "20260912": 3
+    },
+    "query_parts": 1,
+    "status_200": 1011,
+    "status_200_nonasset": 1011
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260514020610",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fdatastudio.google.com%2Freporting%2Fbeb9619f-674c-4512-92e4-541e6ff5b1ab%2Fpage%2FpYB6B&meta=false&data.foo.evaluate=%28async%28%29%3D%3E%7Blet+c%3Ddocument.querySelector%28%27.centerColsContainer%27%29%3Blet+first%3Dc.innerText%3Bc.style.height%3D%27300px"
+    },
+    {
+     "ts": "20260521183345",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com"
+    },
+    {
+     "ts": "20260616140046",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&screenshot=true&meta=false"
+    },
+    {
+     "ts": "20260616140302",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=%28%7B+page+%7D%29+%3D%3E+page.title%28%29&meta=false&force=true"
+    },
+    {
+     "ts": "20260616140331",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fvizhub.healthdata.org%2Fgbd-results%2Fphp%2Fdata.php%3Fmc%3D1&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+new+Promise%28r%3D%3EsetTimeout%28r%2C8000%29%29%3B+return+%7Burl%3Apage.url%28%29%2Ctitle%3Aawait+page.title%28%29%2Cframes%3Apage.frames%28%2"
+    },
+    {
+     "ts": "20260616140348",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fvizhub.healthdata.org%2Fgbd-results%2Fphp%2Fdata.php%3Fmc%3D1&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+new+Promise%28r%3D%3EsetTimeout%28r%2C2000%29%29%3B+return+%7Burl%3Apage.url%28%29%2Ctitle%3Aawait+page.title%28%29%2Cframes%3Apage.frames%28%2"
+    },
+    {
+     "ts": "20260616140411",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fvizhub.healthdata.org%2Fgbd-results%2Fphp%2Fdata.php%3Fmc%3D1&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+new+Promise%28r%3D%3EsetTimeout%28r%2C2000%29%29%3B+return+%7Burl%3Apage.url%28%29%2Ctitle%3Aawait+page.title%28%29%2Cframes%3Apage.frames%28%2"
+    },
+    {
+     "ts": "20260616140506",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+page.goto%28%22https%3A%2F%2Fexample.org%22%2C%7BwaitUntil%3A%22domcontentloaded%22%2Ctimeout%3A3000%7D%29%3B+return+await+page.title%28%29+%7D&meta=false&force=true"
+    },
+    {
+     "ts": "20260616140812",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+page.goto%28%22https%3A%2F%2Fda.gd%2FbvKJF%22%29%3B+return+await+page.title%28%29+%7D&meta=false&force=true&_x=0.26076243615929484"
+    },
+    {
+     "ts": "20260616140836",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+page.goto%28%22https%3A%2F%2Fda.gd%2FbvKJF%22%2C%7Btimeout%3A2000%7D%29.catch%28%28%29%3D%3E%7B%7D%29%3B+return+await+page.title%28%29+%7D&meta=false&force=true&_x=0.1747216258452139"
+    },
+    {
+     "ts": "20260616140859",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+page.goto%28%22https%3A%2F%2Fda.gd%2FbvKJF%22%2C%7Btimeout%3A500%7D%29.catch%28%28%29%3D%3E%7B%7D%29%3B+return+await+page.title%28%29+%7D&meta=false&force=true&_x=0.10211789561748041"
+    },
+    {
+     "ts": "20260616141312",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fda.gd%2FbvKJF&screenshot=true&meta=false&click=iframe&waitForTimeout=1000&timeout=5000&force=true&_x=0.5464755895065078"
+    },
+    {
+     "ts": "20260616141629",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7B+page+%7D%29+%3D%3E+%7B+await+new+Promise%28r%3D%3EsetTimeout%28r%2C5000%29%29%3B+await+page.goto%28%22https%3A%2F%2Fihme993851.requestcatcher.com%2FHELLOMICRO%22%29%3B+return+1+%7D&meta=false&force=true&_x=0.21410940524854"
+    },
+    {
+     "ts": "20260616142610",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7Bpage%7D%29%3D%3E%7Bawait+new+Promise%28r%3D%3EsetTimeout%28r%2C6000%29%29%3Breturn+%22DONE6%22%7D&meta=false&force=true"
+    },
+    {
+     "ts": "20260616142623",
+     "url": "https://api.microlink.io/?url=https%3A%2F%2Fexample.com&function=async+%28%7Bpage%7D%29%3D%3E%7Bawait+new+Promise%28r%3D%3EsetTimeout%28r%2C6000%29%29%3Breturn+%22DONE6%22%7D&meta=false"
+    }
+   ],
+   "url_signature_hits": {
+    "OpenAI[A-Za-z0-9]*": 2
+   },
+   "wayback_window_nonasset": 1007
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 167,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 2
+   },
+   "embedded_target_hosts": {
+    "dl.a9t9.com": 1
+   },
+   "first": "20200925021537",
+   "host": "api.ocr.space",
+   "last": "20260907161928",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260513": 1,
+    "20260528": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 134,
+    "per_day": {
+     "20260513": 1,
+     "20260528": 1
+    },
+    "query_parts": 1,
+    "status_200": 56,
+    "status_200_nonasset": 2
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260513202146",
+     "url": "https://api.ocr.space/"
+    },
+    {
+     "ts": "20260528061252",
+     "url": "https://api.ocr.space/parse/imageurl?url=https%3A%2F%2Fdl.a9t9.com%2Focr%2Fsolarcell.jpg&apikey=[redacted]"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 2
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 4,
+    "save": 6
+   },
+   "embedded_target_hosts": {},
+   "first": "20230616003713",
+   "host": "api.ourworldindata.org",
+   "last": "20260513141114",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260518": 2,
+    "20260519": 3,
+    "20260912": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 12,
+    "per_day": {
+     "20260513": 4,
+     "20260518": 2,
+     "20260519": 3,
+     "20260912": 1
+    },
+    "query_parts": 1,
+    "status_200": 10,
+    "status_200_nonasset": 10
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260513141108",
+     "url": "https://api.ourworldindata.org/v1/indicators/1014800.data.json"
+    },
+    {
+     "ts": "20260513141114",
+     "url": "https://api.ourworldindata.org/v1/indicators/1014800.metadata.json"
+    },
+    {
+     "ts": "20260513141119",
+     "url": "https://api.ourworldindata.org/v1/indicators/900801.data.json"
+    },
+    {
+     "ts": "20260513141126",
+     "url": "https://api.ourworldindata.org/v1/indicators/900801.metadata.json"
+    },
+    {
+     "ts": "20260518013750",
+     "url": "https://api.ourworldindata.org/v1/indicators/686743.metadata.json"
+    },
+    {
+     "ts": "20260518013752",
+     "url": "https://api.ourworldindata.org/v1/indicators/686743.metadata.json"
+    },
+    {
+     "ts": "20260519101450",
+     "url": "https://api.ourworldindata.org/v1/indicators/1162056.metadata.json"
+    },
+    {
+     "ts": "20260519101522",
+     "url": "https://api.ourworldindata.org/v1/indicators/1162056.metadata.json"
+    },
+    {
+     "ts": "20260519102906",
+     "url": "https://api.ourworldindata.org/v1/indicators/1162056.metadata.json"
+    },
+    {
+     "ts": "20260912124221",
+     "url": "https://api.ourworldindata.org/v1/indicators/1159502.data.json"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 9
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "api.shotapi.io",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 18,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20230219011442",
+   "host": "api.usa.gov",
+   "last": "20260101222226",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 463,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20190329132437",
+   "host": "api.usaspending.gov",
+   "last": "20260102200909",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 4,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20250922210634",
+   "host": "api.worldpoverty.io",
+   "last": "20251229083822",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "app.bitily.in",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 34,
+    "raq": 20,
+    "save": 63
+   },
+   "embedded_target_hosts": {},
+   "first": "20170626013657",
+   "host": "app.powerbi.com",
+   "last": "20260705125737",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260527": 1,
+    "20260528": 56,
+    "20260606": 1,
+    "20260815": 2,
+    "20260902": 3
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 180,
+    "per_day": {
+     "20260501": 2,
+     "20260502": 3,
+     "20260506": 2,
+     "20260514": 6,
+     "20260517": 8,
+     "20260519": 9,
+     "20260521": 2,
+     "20260523": 4,
+     "20260525": 2,
+     "20260526": 3,
+     "20260527": 6,
+     "20260528": 56,
+     "20260529": 2,
+     "20260606": 1,
+     "20260705": 2,
+     "20260709": 2,
+     "20260815": 2,
+     "20260826": 2,
+     "20260902": 3
+    },
+    "query_parts": 1,
+    "status_200": 174,
+    "status_200_nonasset": 117
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260501021748",
+     "url": "https://app.powerbi.com/robots.txt"
+    },
+    {
+     "ts": "20260501021805",
+     "url": "https://app.powerbi.com/view?r=eyJrIjoiODhkZDMxNWQtMzgwMC00NGIwLWJiNmUtNWVkOTM0ZTIxNDlkIiwidCI6IjM4MGMwMzJlLTJjYjMtNGM1Ny1iODdlLWE3YmUwZjAxMmNjMCIsImMiOjl9&disablecdnExpiration=1743046956"
+    },
+    {
+     "ts": "20260502015146",
+     "url": "https://app.powerbi.com/robots.txt"
+    },
+    {
+     "ts": "20260502015200",
+     "url": "https://app.powerbi.com/"
+    },
+    {
+     "ts": "20260502015252",
+     "url": "https://app.powerbi.com/view?r=eyJrIjoiMWU3ODY1YTYtYzE1MC00YThmLWFhMWYtMzcyN2Y2YTRlMTcwIiwidCI6ImEyNmRlZWJjLTgzN2QtNGU5OS04N2EyLThmZDAwMjQ2NzE3MiIsImMiOjl9"
+    },
+    {
+     "ts": "20260506085756",
+     "url": "https://app.powerbi.com/robots.txt"
+    },
+    {
+     "ts": "20260506085802",
+     "url": "https://app.powerbi.com/view?r=eyJrIjoiOGRjMmNiYmMtMzIyYy00M2FiLWJkOTgtNzVjZDVjOGRjNTVlIiwidCI6IjQ0MGIyYjc4LWE5NjgtNGM5MS04YzUxLThhZWFjOTVkYzJlOCIsImMiOjl9"
+    },
+    {
+     "ts": "20260514220308",
+     "url": "https://app.powerbi.com/reportEmbed?reportId=5d74b255-9ec9-41a8-ba54-bf3369b9704a&groupId=a4b5106a-3c15-491c-bcb0-30f451a9c6da&language=en&formatLocale=en&uid=0gnt6"
+    },
+    {
+     "ts": "20260514220309",
+     "url": "https://app.powerbi.com/reportEmbed?reportId=190f0d06-1c11-4e45-8f57-0a80af89adc3&groupId=a4b5106a-3c15-491c-bcb0-30f451a9c6da&language=en&formatLocale=en&uid=ci6sq"
+    },
+    {
+     "ts": "20260514220309",
+     "url": "https://app.powerbi.com/reportEmbed?reportId=4445d64a-f154-4053-9a2a-0cca94b8035f&groupId=a4b5106a-3c15-491c-bcb0-30f451a9c6da&language=en&formatLocale=en&uid=0v6yeb"
+    },
+    {
+     "ts": "20260514220309",
+     "url": "https://app.powerbi.com/reportEmbed?reportId=5d74b255-9ec9-41a8-ba54-bf3369b9704a&groupId=a4b5106a-3c15-491c-bcb0-30f451a9c6da&language=en&formatLocale=en&uid=x3zr2n"
+    },
+    {
+     "ts": "20260514220327",
+     "url": "https://app.powerbi.com/13.0.28272.42/sharedresources/BaseThemes/CY21SU11.json"
+    },
+    {
+     "ts": "20260514220327",
+     "url": "https://app.powerbi.com/13.0.28272.42/sharedresources/BaseThemes/CY24SU02.json"
+    },
+    {
+     "ts": "20260517104351",
+     "url": "https://app.powerbi.com/reportEmbed?reportId=5d74b255-9ec9-41a8-ba54-bf3369b9704a&groupId=a4b5106a-3c15-491c-bcb0-30f451a9c6da&language=en&formatLocale=en&uid=mnjst"
+    },
+    {
+     "ts": "20260517104352",
+     "url": "https://app.powerbi.com/reportEmbed?reportId=190f0d06-1c11-4e45-8f57-0a80af89adc3&groupId=a4b5106a-3c15-491c-bcb0-30f451a9c6da&language=en&formatLocale=en&uid=3fxd1"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 103
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20260619193540",
+   "host": "bitily.in",
+   "last": "20260619193540",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "bnuxw-16-146-184-55.run.pinggy-free.link",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "bund-der-tierfreunde.de",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "bvryr-16-146-184-55.run.pinggy-free.link",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 63,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20190620021511",
+   "host": "campaignwiki.org",
+   "last": "20250922225326",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "campusosttirol.mustertheorie.de",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "ccgi.dougrice.plus.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 3
+   },
+   "embedded_target_hosts": {},
+   "first": "20230219005221",
+   "host": "cde.ucr.cjis.gov",
+   "last": "20260525021627",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 7,
+    "per_day": {
+     "20260525": 3
+    },
+    "query_parts": 1,
+    "status_200": 3,
+    "status_200_nonasset": 3
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260525015032",
+     "url": "https://cde.ucr.cjis.gov/LATEST/arrest/national/all?from=01-1985&amp;to=02-2025&amp;type=counts"
+    },
+    {
+     "ts": "20260525021623",
+     "url": "https://cde.ucr.cjis.gov/LATEST/arrest/state/TX/all?from=01-2020&to=12-2022&type=totals"
+    },
+    {
+     "ts": "20260525021627",
+     "url": "https://cde.ucr.cjis.gov/LATEST/arrest/state/TX/all?from=01-2020&to=12-2022&type=totals"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 3
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2216,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20191013055246",
+   "host": "cdm16022.contentdm.oclc.org",
+   "last": "20241112015455",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "cf-cors.findme-19.workers.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "19961013151852",
+   "host": "clarku.edu",
+   "last": "20251228043121",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 1,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "cloudflare-cors-anywhere.hanpengchen.workers.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20130805161809",
+   "host": "code.highcharts.com",
+   "last": "20260908073339",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 171,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 113,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 299,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20210927221238",
+   "host": "collection.mndigital.org",
+   "last": "20251020185238",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20140625112607",
+   "host": "communitywiki.org",
+   "last": "20251222171145",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "cors-get-proxy.sirjosh.workers.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "cors-proxy-gray.vercel.app",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "cors.bwa.workers.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "cors.hypnguyen.workers.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 64,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20250731173740",
+   "host": "cors.isomorphic-git.org",
+   "last": "20260703151834",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 10,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "corsmirror.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1618,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 11
+   },
+   "embedded_target_hosts": {
+    "httpbin.org": 9
+   },
+   "first": "20230508004914",
+   "host": "corsproxy.io",
+   "last": "20260912124419",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260511": 8,
+    "20260512": 2,
+    "20260912": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 24,
+    "per_day": {
+     "20260511": 8,
+     "20260512": 2,
+     "20260912": 1
+    },
+    "query_parts": 1,
+    "status_200": 11,
+    "status_200_nonasset": 11
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260511193705",
+     "url": "https://corsproxy.io/?url=https://httpbin.org/get"
+    },
+    {
+     "ts": "20260511193736",
+     "url": "https://corsproxy.io/"
+    },
+    {
+     "ts": "20260511212833",
+     "url": "https://corsproxy.io/?url=https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260511212835",
+     "url": "https://corsproxy.io/?reqMethod=POST&url=https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260511212836",
+     "url": "https://corsproxy.io/?method=POST&url=https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260511212838",
+     "url": "https://corsproxy.io/?reqHeaders=X-HTTP-Method-Override:POST&url=https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260511212840",
+     "url": "https://corsproxy.io/?body=abc&url=https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260511212842",
+     "url": "https://corsproxy.io/?data=abc&url=https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260512011344",
+     "url": "https://corsproxy.io/?https://httpbin.org/anything?1778548387.9690344"
+    },
+    {
+     "ts": "20260512011415",
+     "url": "https://corsproxy.io/?https://httpbin.org/anything?1778548454.3365722"
+    },
+    {
+     "ts": "20260912124419",
+     "url": "https://corsproxy.io/?url=https%253A%252F%252Fexample.com%252F"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 2
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "countapi.mileshilliard.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 72,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 3
+   },
+   "embedded_target_hosts": {},
+   "first": "20191004144153",
+   "host": "crystalclearsoftware.com",
+   "last": "20260711140054",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 10,
+    "per_day": {
+     "20260707": 2,
+     "20260711": 1
+    },
+    "query_parts": 1,
+    "status_200": 5,
+    "status_200_nonasset": 3
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260707084309",
+     "url": "https://crystalclearsoftware.com/robots.txt"
+    },
+    {
+     "ts": "20260707084316",
+     "url": "https://crystalclearsoftware.com/cgi-bin/boost_wiki/wiki.pl?BoostCon_2007"
+    },
+    {
+     "ts": "20260711140046",
+     "url": "https://crystalclearsoftware.com/robots.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 3
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 31,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20190327120519",
+   "host": "da.gd",
+   "last": "20260707070939",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 6,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "data.idph.state.ia.us",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 2,
+    "save": 319
+   },
+   "embedded_target_hosts": {
+    "data.nysed.gov": 2
+   },
+   "first": "20181122105055",
+   "host": "data.nysed.gov",
+   "last": "20260913140242",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260516": 12,
+    "20260517": 169,
+    "20260518": 128,
+    "20260602": 8,
+    "20260913": 2
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 779,
+    "per_day": {
+     "20260516": 12,
+     "20260517": 171,
+     "20260518": 128,
+     "20260602": 8,
+     "20260913": 2
+    },
+    "query_parts": 1,
+    "status_200": 681,
+    "status_200_nonasset": 321
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260516115538",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019%26instid=800000050976%26gender%5B%5D=M%26x=/"
+    },
+    {
+     "ts": "20260516115646",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516121231",
+     "url": "https://data.nysed.gov/enrollment.php?year=2018&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516121416",
+     "url": "https://data.nysed.gov/enrollment.php?year=2018&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516132526",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516132635",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516145632",
+     "url": "https://data.nysed.gov/enrollment.php?instid=800000050976%26year=2017%26gender%5B%5D=M%26foo=bar/"
+    },
+    {
+     "ts": "20260516145806",
+     "url": "https://data.nysed.gov/enrollment.php?year=2017&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516180430",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260516183210",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019&instid=800000050976&gender%5B%5D=M"
+    },
+    {
+     "ts": "20260516185959",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019%26instid=800000050976%26gender%5B%5D=M"
+    },
+    {
+     "ts": "20260516193007",
+     "url": "https://data.nysed.gov/enrollment.php?year=2019&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260517024710",
+     "url": "https://data.nysed.gov/enrollment.php?gender%5B%5D=M&instid=800000050976&x=%2F&year=2017"
+    },
+    {
+     "ts": "20260517024712",
+     "url": "https://data.nysed.gov/enrollment.php?year=2017&instid=800000050976&gender%5B%5D=M&x=/"
+    },
+    {
+     "ts": "20260517024746",
+     "url": "https://data.nysed.gov/enrollment.php?gender%5B%5D=M&instid=800000050976&x=%2F&year=2017"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 319
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 4,
+    "save": 986
+   },
+   "embedded_target_hosts": {},
+   "first": "20160517171912",
+   "host": "datausa.io",
+   "last": "20260621213415",
+   "outcome": "window_captures_with_url_signature",
+   "save_per_day": {
+    "20260616": 58,
+    "20260617": 659,
+    "20260618": 1,
+    "20260619": 238,
+    "20260621": 22,
+    "20260629": 8
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2051,
+    "per_day": {
+     "20260616": 58,
+     "20260617": 659,
+     "20260618": 1,
+     "20260619": 238,
+     "20260621": 22,
+     "20260629": 8,
+     "20260708": 4
+    },
+    "query_parts": 1,
+    "status_200": 992,
+    "status_200_nonasset": 990
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260616205212",
+     "url": "https://api.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616205214",
+     "url": "https://api.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616222531",
+     "url": "https://api.datausa.io/robots.txt"
+    },
+    {
+     "ts": "20260616222547",
+     "url": "https://api.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616222635",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_yg_total_population_5&drilldowns=State%2CYear&measures=Population&top=1.State.Population.desc"
+    },
+    {
+     "ts": "20260616222701",
+     "url": "https://datausa.io/"
+    },
+    {
+     "ts": "20260616222703",
+     "url": "https://datausa.io/profile/geo/texas"
+    },
+    {
+     "ts": "20260616222746",
+     "url": "https://datausa.io/tesseract-proxy/cubes"
+    },
+    {
+     "ts": "20260616222749",
+     "url": "https://datausa.io/tesseract-proxy/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+    },
+    {
+     "ts": "20260616222839",
+     "url": "https://api.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+    },
+    {
+     "ts": "20260616222856",
+     "url": "https://api.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_5&drilldowns=Year&measures=Languages%20Spoken"
+    },
+    {
+     "ts": "20260616222949",
+     "url": "https://delaware-api-ts.datausa.io/ui/"
+    },
+    {
+     "ts": "20260616223047",
+     "url": "https://delaware-api-ts.datausa.io/tesseract/data.jsonrecords?cube=acs_ygl_language_spoken_at_home_by_english_ability_2016_1&drilldowns=Year&measures=Languages%20Spoken"
+    },
+    {
+     "ts": "20260616223337",
+     "url": "https://delaware-api-ts.datausa.io/tesseract/cubes"
+    },
+    {
+     "ts": "20260616223340",
+     "url": "https://delaware-api-ts.datausa.io/tesseract/cubes/acs_ygl_language_spoken_at_home_by_english_ability_2016_1"
+    }
+   ],
+   "url_signature_hits": {
+    "site-test\\.nsi\\.bg|api\\.datausa\\.io|api\\.dataafrica\\.io": 799
+   },
+   "wayback_window_nonasset": 990
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 24,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20170618230322",
+   "host": "dorfwiki.org",
+   "last": "20251005060346",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "dougrice.co.uk",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 22
+   },
+   "embedded_target_hosts": {},
+   "first": "20131107112032",
+   "host": "dp.la",
+   "last": "20251227000829",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260603": 22
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 31,
+    "per_day": {
+     "20260603": 22
+    },
+    "query_parts": 1,
+    "status_200": 22,
+    "status_200_nonasset": 22
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260603225327",
+     "url": "https://dp.la/search?q=test"
+    },
+    {
+     "ts": "20260603230302",
+     "url": "https://dp.la/item/0f7a091eb452d378740823c2c8ebecd0"
+    },
+    {
+     "ts": "20260603230322",
+     "url": "https://dp.la/search?q=Chicago%20Ledger"
+    },
+    {
+     "ts": "20260603230325",
+     "url": "https://dp.la/search?q=%22An%20Airship%20Mystery%22"
+    },
+    {
+     "ts": "20260603230537",
+     "url": "https://dp.la/search?partner=PA%20Digital&q=Chicago"
+    },
+    {
+     "ts": "20260603230541",
+     "url": "https://dp.la/search?q=Villanova%20Chicago%20Ledger"
+    },
+    {
+     "ts": "20260603230655",
+     "url": "https://dp.la/search?q=%22Chicago+Ledger%22+%22July+16%2C+1910%22"
+    },
+    {
+     "ts": "20260603230700",
+     "url": "https://dp.la/search?q=%22Chicago+Ledger%2C+v.+XXXVIII%2C+no.+29%22"
+    },
+    {
+     "ts": "20260603230706",
+     "url": "https://dp.la/search?q=%22Chicago+Ledger%22+1910+Villanova"
+    },
+    {
+     "ts": "20260603230712",
+     "url": "https://dp.la/search?q=%22An+Airship+Mystery%22+Villanova"
+    },
+    {
+     "ts": "20260603230717",
+     "url": "https://dp.la/search?q=%22An+Airship+Mystery%22"
+    },
+    {
+     "ts": "20260603230722",
+     "url": "https://dp.la/search?q=%22Chicago+Ledger%22+%22v.+XXXVIII%22"
+    },
+    {
+     "ts": "20260603230728",
+     "url": "https://dp.la/search?q=%22v.+XXXVIII%2C+no.+29%22"
+    },
+    {
+     "ts": "20260603230732",
+     "url": "https://dp.la/search?q=%22Saturday%2C+July+16%2C+1910%22+Villanova"
+    },
+    {
+     "ts": "20260603230738",
+     "url": "https://dp.la/search?q=Chicago+Ledger+601490"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 22
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 66,
+    "raq": 12,
+    "save": 4
+   },
+   "embedded_target_hosts": {
+    "ilkkapohjalainen.fi": 1
+   },
+   "first": "20180719154605",
+   "host": "e.infogram.com",
+   "last": "20260310033354",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260504": 2,
+    "20260911": 2
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 154,
+    "per_day": {
+     "20260504": 2,
+     "20260505": 3,
+     "20260513": 3,
+     "20260514": 5,
+     "20260517": 7,
+     "20260518": 1,
+     "20260519": 2,
+     "20260520": 3,
+     "20260521": 1,
+     "20260523": 4,
+     "20260524": 1,
+     "20260526": 5,
+     "20260531": 5,
+     "20260601": 2,
+     "20260602": 3,
+     "20260603": 2,
+     "20260604": 2,
+     "20260606": 1,
+     "20260702": 3,
+     "20260703": 20,
+     "20260707": 3,
+     "20260711": 2,
+     "20260911": 2
+    },
+    "query_parts": 1,
+    "status_200": 153,
+    "status_200_nonasset": 82
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260504144643",
+     "url": "https://e.infogram.com/_/1sJZITt6EsuswEw2OwW8?parent_url=https%3A%2F%2Fwww.ilkkapohjalainen.fi%2Fjarviseudulla-alkaa-olla-viimeiset-hetket-osoittaa%2F12134333&src=embed"
+    },
+    {
+     "ts": "20260504144644",
+     "url": "https://e.infogram.com/api/stylesheets/37836"
+    },
+    {
+     "ts": "20260505090946",
+     "url": "https://e.infogram.com/robots.txt"
+    },
+    {
+     "ts": "20260505091033",
+     "url": "https://e.infogram.com/f1b4cb01-36c8-4a9b-bbff-eabce99199cd?src=embed&embed_type=responsive_iframe"
+    },
+    {
+     "ts": "20260505091039",
+     "url": "https://e.infogram.com/09dadced-b658-41bf-8c0e-4d845a6a153a?src=embed&embed_type=responsive_iframe"
+    },
+    {
+     "ts": "20260513010344",
+     "url": "https://e.infogram.com/robots.txt"
+    },
+    {
+     "ts": "20260513010348",
+     "url": "https://e.infogram.com/ps-atinge-pico-em-setembro-direita-sobe?src=embed"
+    },
+    {
+     "ts": "20260513031935",
+     "url": "https://e.infogram.com/robots.txt"
+    },
+    {
+     "ts": "20260514215725",
+     "url": "https://e.infogram.com/ac03ae12-d7a2-4b7c-bdf1-9153d61aa61e?src=embed"
+    },
+    {
+     "ts": "20260514215725",
+     "url": "https://e.infogram.com/api/stylesheets/35401"
+    },
+    {
+     "ts": "20260514215728",
+     "url": "https://e.infogram.com/api/shapes/circle"
+    },
+    {
+     "ts": "20260514220156",
+     "url": "https://e.infogram.com/31c5b56d-4a18-4cb5-b580-6d32df23dcc9?src=embed"
+    },
+    {
+     "ts": "20260514220156",
+     "url": "https://e.infogram.com/api/stylesheets/215"
+    },
+    {
+     "ts": "20260517104303",
+     "url": "https://e.infogram.com/88f8699c-db1e-4df7-9ed4-60d11735708d?src=embed"
+    },
+    {
+     "ts": "20260517104304",
+     "url": "https://e.infogram.com/api/stylesheets/215"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 75
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 4,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20240307060230",
+   "host": "editthisnft.com",
+   "last": "20240307060241",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2156,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 2
+   },
+   "embedded_target_hosts": {},
+   "first": "20060617181325",
+   "host": "emacswiki.org",
+   "last": "20260511145515",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 6,
+    "per_day": {
+     "20260511": 2
+    },
+    "query_parts": 1,
+    "status_200": 3,
+    "status_200_nonasset": 2
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260511145356",
+     "url": "https://www.emacswiki.org/robots.txt"
+    },
+    {
+     "ts": "20260511145440",
+     "url": "https://www.emacswiki.org/"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20190607082019",
+   "host": "en.uncyclopedia.co",
+   "last": "20251226224521",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "exit-13.tor.r0cket.net",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "farnik.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 3893,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20110927204209",
+   "host": "finance.yahoo.co.jp",
+   "last": "20251226191202",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 44,
+    "save": 69
+   },
+   "embedded_target_hosts": {},
+   "first": "20051217161551",
+   "host": "finance.yahoo.com",
+   "last": "20260526012149",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260528": 33,
+    "20260908": 21,
+    "20260909": 15
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 800,
+    "per_day": {
+     "20260505": 2,
+     "20260507": 1,
+     "20260516": 6,
+     "20260518": 1,
+     "20260519": 3,
+     "20260520": 1,
+     "20260522": 13,
+     "20260523": 1,
+     "20260524": 2,
+     "20260526": 2,
+     "20260527": 2,
+     "20260528": 33,
+     "20260601": 1,
+     "20260602": 1,
+     "20260623": 2,
+     "20260624": 1,
+     "20260704": 3,
+     "20260710": 1,
+     "20260711": 1,
+     "20260908": 21,
+     "20260909": 15
+    },
+    "query_parts": 1,
+    "status_200": 617,
+    "status_200_nonasset": 113
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260505062805",
+     "url": "https://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260505062834",
+     "url": "http://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260507134153",
+     "url": "http://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260516014524",
+     "url": "https://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260516014547",
+     "url": "http://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260516193648",
+     "url": "https://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260516193719",
+     "url": "http://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260516193730",
+     "url": "http://finance.yahoo.com/news/russians-going-cow-us-latest-170755134.html"
+    },
+    {
+     "ts": "20260516201018",
+     "url": "http://finance.yahoo.com/manifest.json"
+    },
+    {
+     "ts": "20260518170514",
+     "url": "https://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260519041502",
+     "url": "https://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260519041542",
+     "url": "http://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260519234301",
+     "url": "https://uk.finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260520133357",
+     "url": "http://finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260522052617",
+     "url": "http://finance.yahoo.com/robots.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 74
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "fxldt-16-146-184-55.run.pinggy-free.link",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20260621150533",
+   "host": "gary-api.datausa.io",
+   "last": "20260621150533",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "getpostingboard.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 28,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160518060637",
+   "host": "globalvillages.info",
+   "last": "20251027064054",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 5,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20210920192235",
+   "host": "goto.unm.edu",
+   "last": "20210920192256",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 210,
+    "save": 14660
+   },
+   "embedded_target_hosts": {
+    "arquivo.pt": 21,
+    "hio.harvard.edu": 1
+   },
+   "first": "20190620210055",
+   "host": "httpbin.org",
+   "last": "20260704183254",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260504": 11,
+    "20260506": 8,
+    "20260509": 3,
+    "20260510": 13,
+    "20260511": 33,
+    "20260512": 15,
+    "20260513": 11,
+    "20260514": 28,
+    "20260515": 5,
+    "20260516": 11,
+    "20260517": 35,
+    "20260518": 191,
+    "20260519": 6,
+    "20260521": 17,
+    "20260522": 2,
+    "20260525": 23,
+    "20260526": 36,
+    "20260527": 1,
+    "20260528": 103,
+    "20260606": 9,
+    "20260612": 1,
+    "20260615": 24,
+    "20260616": 787,
+    "20260617": 5276,
+    "20260618": 34,
+    "20260619": 47,
+    "20260620": 114,
+    "20260621": 7251,
+    "20260622": 543,
+    "20260623": 4,
+    "20260624": 1,
+    "20260630": 1,
+    "20260702": 2,
+    "20260704": 6,
+    "20260827": 2,
+    "20260906": 6
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 15080,
+    "per_day": {
+     "20260504": 11,
+     "20260506": 8,
+     "20260509": 3,
+     "20260510": 13,
+     "20260511": 34,
+     "20260512": 15,
+     "20260513": 11,
+     "20260514": 28,
+     "20260515": 5,
+     "20260516": 11,
+     "20260517": 35,
+     "20260518": 192,
+     "20260519": 6,
+     "20260521": 17,
+     "20260522": 2,
+     "20260525": 23,
+     "20260526": 42,
+     "20260527": 1,
+     "20260528": 103,
+     "20260602": 3,
+     "20260606": 9,
+     "20260612": 1,
+     "20260615": 24,
+     "20260616": 787,
+     "20260617": 5277,
+     "20260618": 36,
+     "20260619": 51,
+     "20260620": 116,
+     "20260621": 7412,
+     "20260622": 572,
+     "20260623": 4,
+     "20260624": 1,
+     "20260630": 1,
+     "20260702": 2,
+     "20260704": 6,
+     "20260827": 2,
+     "20260906": 6
+    },
+    "query_parts": 22,
+    "status_200": 14870,
+    "status_200_nonasset": 14870
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260504190333",
+     "url": "https://httpbin.org/anything"
+    },
+    {
+     "ts": "20260504190653",
+     "url": "https://httpbin.org/response-headers?Content-Type=text%2Fhtml&x=1"
+    },
+    {
+     "ts": "20260504190654",
+     "url": "https://httpbin.org/html"
+    },
+    {
+     "ts": "20260504190827",
+     "url": "https://httpbin.org/base64/PGh0bWw+PGhlYWQ+PHRpdGxlPkZpdmVUaGlydHlFaWdodCBmb3JlY2FzdHMgc3Vic2V0IGZyb20gYXJxdWl2by5wdCBDU1Y8L3RpdGxlPjwvaGVhZD48Ym9keT48aDE+Um93cyBmcm9tIEZpdmVUaGlydHlFaWdodCAyMDIzIE5DQUEgZm9yZWNhc3QgZGF0YSwgcHJlLXRvdXJuYW1lbnQgKE1hciAxMik8L2gxPjxwPlNvdXJjZTogcHJvamVjdHMuZml2ZXRoaXJ0e"
+    },
+    {
+     "ts": "20260504190859",
+     "url": "https://httpbin.org/base64/PGh0bWw+PGhlYWQ+PHRpdGxlPkZpdmVUaGlydHlFaWdodCBmb3JlY2FzdHMgc3Vic2V0IGZyb20gYXJxdWl2by5wdCBDU1Y8L3RpdGxlPjwvaGVhZD48Ym9keT48aDE+Um93cyBmcm9tIEZpdmVUaGlydHlFaWdodCAyMDIzIE5DQUEgZm9yZWNhc3QgZGF0YSwgcHJlLXRvdXJuYW1lbnQgKE1hciAxMik8L2gxPjxwPlNvdXJjZTogcHJvamVjdHMuZml2ZXRoaXJ0e"
+    },
+    {
+     "ts": "20260504190900",
+     "url": "https://httpbin.org/base64/PGh0bWw+PGhlYWQ+PHRpdGxlPkZpdmVUaGlydHlFaWdodCBmb3JlY2FzdHMgc3Vic2V0IGZyb20gYXJxdWl2by5wdCBDU1Y8L3RpdGxlPjwvaGVhZD48Ym9keT48aDE+Um93cyBmcm9tIEZpdmVUaGlydHlFaWdodCAyMDIzIE5DQUEgZm9yZWNhc3QgZGF0YSwgcHJlLXRvdXJuYW1lbnQgKE1hciAxMik8L2gxPjxwPlNvdXJjZTogcHJvamVjdHMuZml2ZXRoaXJ0e"
+    },
+    {
+     "ts": "20260504190903",
+     "url": "https://httpbin.org/base64/PGh0bWw+PGhlYWQ+PHRpdGxlPkZpdmVUaGlydHlFaWdodCBmb3JlY2FzdHMgc3Vic2V0IGZyb20gYXJxdWl2by5wdCBDU1Y8L3RpdGxlPjwvaGVhZD48Ym9keT48aDE+Um93cyBmcm9tIEZpdmVUaGlydHlFaWdodCAyMDIzIE5DQUEgZm9yZWNhc3QgZGF0YSwgcHJlLXRvdXJuYW1lbnQgKE1hciAxMik8L2gxPjxwPlNvdXJjZTogcHJvamVjdHMuZml2ZXRoaXJ0e"
+    },
+    {
+     "ts": "20260504190932",
+     "url": "https://httpbin.org/"
+    },
+    {
+     "ts": "20260504190944",
+     "url": "https://httpbin.org/base64/PGgxPmhpPC9oMT4="
+    },
+    {
+     "ts": "20260504191019",
+     "url": "https://httpbin.org/base64/PGgyPlN1YnNldCBvZiBGaXZlVGhpcnR5RWlnaHQgZm9yZWNhc3QgQ1NWIChNYXJjaCAxMiAyMDIzIHByZS10b3VybmFtZW50KTwvaDI+PHA+T3JpZ2luYWw6IGh0dHBzOi8vcHJvamVjdHMuZml2ZXRoaXJ0eWVpZ2h0LmNvbS9tYXJjaC1tYWRuZXNzLWFwaS8yMDIzL2ZpdmV0aGlydHllaWdodF9uY2FhX2ZvcmVjYXN0cy5jc3YgYXJjaGl2ZWQgYXQgYXJxdWl2b"
+    },
+    {
+     "ts": "20260504191042",
+     "url": "https://httpbin.org/base64/PGgyPlN1YnNldCBvZiBGaXZlVGhpcnR5RWlnaHQgZm9yZWNhc3QgQ1NWIChNYXJjaCAxMiAyMDIzIHByZS10b3VybmFtZW50KTwvaDI+PHA+T3JpZ2luYWw6IGh0dHBzOi8vcHJvamVjdHMuZml2ZXRoaXJ0eWVpZ2h0LmNvbS9tYXJjaC1tYWRuZXNzLWFwaS8yMDIzL2ZpdmV0aGlydHllaWdodF9uY2FhX2ZvcmVjYXN0cy5jc3YgYXJjaGl2ZWQgYXQgYXJxdWl2b"
+    },
+    {
+     "ts": "20260506134239",
+     "url": "https://httpbin.org/post"
+    },
+    {
+     "ts": "20260506134240",
+     "url": "https://httpbin.org/post"
+    },
+    {
+     "ts": "20260506134241",
+     "url": "https://httpbin.org/post"
+    },
+    {
+     "ts": "20260506135328",
+     "url": "https://httpbin.org/post"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 14793
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 251,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 56
+   },
+   "embedded_target_hosts": {},
+   "first": "20220130160332",
+   "host": "hub.catalogit.app",
+   "last": "20260528171658",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260527": 28,
+    "20260528": 28
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 112,
+    "per_day": {
+     "20260527": 28,
+     "20260528": 28
+    },
+    "query_parts": 1,
+    "status_200": 84,
+    "status_200_nonasset": 56
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260527221046",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation?xx=92"
+    },
+    {
+     "ts": "20260527221050",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/folder?xx=92"
+    },
+    {
+     "ts": "20260527221127",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap.html?xx=92"
+    },
+    {
+     "ts": "20260527223301",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap.html?archx=357037"
+    },
+    {
+     "ts": "20260527223306",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap.xml?archx=8549806"
+    },
+    {
+     "ts": "20260527223346",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap.html?size=10&archx=7084924"
+    },
+    {
+     "ts": "20260527223422",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap.html?page=1&archx=7331987"
+    },
+    {
+     "ts": "20260527223708",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/folder?query=Art%20Work&archx=650409"
+    },
+    {
+     "ts": "20260527223712",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/folder/library?query=Art%20Work&archx=6760125"
+    },
+    {
+     "ts": "20260527223949",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap/library.html?r=447545"
+    },
+    {
+     "ts": "20260527224552",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap/photographs.html?rr=307471"
+    },
+    {
+     "ts": "20260527224557",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap/archives.html?rr=307698"
+    },
+    {
+     "ts": "20260527224600",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap/library?rr=680124"
+    },
+    {
+     "ts": "20260527225949",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap/x.html?offset=500&r=410226"
+    },
+    {
+     "ts": "20260527225954",
+     "url": "https://hub.catalogit.app/historic-charleston-foundation/sitemap/x.html?folder=library&r=476806"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 56
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 5,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 1
+   },
+   "embedded_target_hosts": {},
+   "first": "20191015173822",
+   "host": "iiif.library.cofc.edu",
+   "last": "20260528100244",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260528": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1,
+    "per_day": {
+     "20260528": 1
+    },
+    "query_parts": 1,
+    "status_200": 1,
+    "status_200_nonasset": 1
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260528100244",
+     "url": "https://iiif.library.cofc.edu/iiif/2/205927/info.json"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 1
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 6,
+    "save": 22
+   },
+   "embedded_target_hosts": {
+    "techreport.com": 9
+   },
+   "first": "20180529065911",
+   "host": "images.weserv.nl",
+   "last": "20260216131337",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260522": 22
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 102,
+    "per_day": {
+     "20260509": 1,
+     "20260522": 23,
+     "20260525": 1,
+     "20260529": 1,
+     "20260706": 1,
+     "20260710": 1
+    },
+    "query_parts": 1,
+    "status_200": 29,
+    "status_200_nonasset": 28
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260509124140",
+     "url": "https://images.weserv.nl/robots.txt"
+    },
+    {
+     "ts": "20260522124635",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&filt=greyscale"
+    },
+    {
+     "ts": "20260522125145",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&w=2000&q=100&output=jpg&gam=3"
+    },
+    {
+     "ts": "20260522125348",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&w=2000&q=100&output=jpg&con=50&gam=2"
+    },
+    {
+     "ts": "20260522125351",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&w=2000&q=100&output=jpg&con=50&gam=3"
+    },
+    {
+     "ts": "20260522125454",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&w=2000&q=100&output=jpg&con=80"
+    },
+    {
+     "ts": "20260522125457",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&w=2000&q=100&output=jpg&con=80&gam=2"
+    },
+    {
+     "ts": "20260522125700",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&con=80"
+    },
+    {
+     "ts": "20260522125709",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&con=80&output=jpg"
+    },
+    {
+     "ts": "20260522125829",
+     "url": "https://images.weserv.nl/?url=https%3A%2F%2Ftechreport.com%2Fwp-content%2Fuploads%2F2023%2F12%2FSingtel-2023-Market-Share-Statistics.jpg&con=80&output=jpg&t=1"
+    },
+    {
+     "ts": "20260522134436",
+     "url": "https://images.weserv.nl/?url=techreport.com/wp-content/uploads/2023/12/Singtel-2023-Market-Share-Statistics.jpg&sat=-100&con=60"
+    },
+    {
+     "ts": "20260522134813",
+     "url": "https://images.weserv.nl/?url=techreport.com/wp-content/uploads/2023/12/Singtel-2023-Market-Share-Statistics.jpg&bri=-20"
+    },
+    {
+     "ts": "20260522134835",
+     "url": "https://images.weserv.nl/?url=techreport.com/wp-content/uploads/2023/12/Singtel-2023-Market-Share-Statistics.jpg&gam=0.5"
+    },
+    {
+     "ts": "20260522134837",
+     "url": "https://images.weserv.nl/?url=techreport.com/wp-content/uploads/2023/12/Singtel-2023-Market-Share-Statistics.jpg&sat=-100&con=20"
+    },
+    {
+     "ts": "20260522134838",
+     "url": "https://images.weserv.nl/?url=techreport.com/wp-content/uploads/2023/12/Singtel-2023-Market-Share-Statistics.jpg&sat=-100&con=-20"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 27
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "infinitypaste.club",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 109,
+    "raq": 23,
+    "sapoblogs": 1,
+    "save": 8
+   },
+   "embedded_target_hosts": {
+    "ilkkapohjalainen.fi": 1,
+    "infogram.com": 6
+   },
+   "first": "20180330043105",
+   "host": "infogram.com",
+   "last": "20260701073856",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260504": 3,
+    "20260911": 5
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 241,
+    "per_day": {
+     "20260504": 3,
+     "20260505": 3,
+     "20260506": 8,
+     "20260510": 2,
+     "20260513": 3,
+     "20260514": 12,
+     "20260517": 11,
+     "20260518": 6,
+     "20260519": 2,
+     "20260520": 5,
+     "20260521": 1,
+     "20260523": 4,
+     "20260524": 1,
+     "20260526": 8,
+     "20260527": 7,
+     "20260531": 5,
+     "20260601": 2,
+     "20260602": 3,
+     "20260603": 2,
+     "20260604": 2,
+     "20260606": 1,
+     "20260611": 1,
+     "20260701": 11,
+     "20260702": 3,
+     "20260703": 20,
+     "20260707": 8,
+     "20260711": 2,
+     "20260911": 5
+    },
+    "query_parts": 1,
+    "status_200": 219,
+    "status_200_nonasset": 141
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260504144643",
+     "url": "https://e.infogram.com/_/1sJZITt6EsuswEw2OwW8?parent_url=https%3A%2F%2Fwww.ilkkapohjalainen.fi%2Fjarviseudulla-alkaa-olla-viimeiset-hetket-osoittaa%2F12134333&src=embed"
+    },
+    {
+     "ts": "20260504144644",
+     "url": "https://e.infogram.com/api/stylesheets/37836"
+    },
+    {
+     "ts": "20260504144647",
+     "url": "https://s.infogram.com/t2"
+    },
+    {
+     "ts": "20260505090946",
+     "url": "https://e.infogram.com/robots.txt"
+    },
+    {
+     "ts": "20260505091033",
+     "url": "https://e.infogram.com/f1b4cb01-36c8-4a9b-bbff-eabce99199cd?src=embed&embed_type=responsive_iframe"
+    },
+    {
+     "ts": "20260505091039",
+     "url": "https://e.infogram.com/09dadced-b658-41bf-8c0e-4d845a6a153a?src=embed&embed_type=responsive_iframe"
+    },
+    {
+     "ts": "20260506052338",
+     "url": "https://infogram.com/robots.txt"
+    },
+    {
+     "ts": "20260506052354",
+     "url": "https://infogram.com/89aa784a-88ab-465b-a60a-536d034ae42b"
+    },
+    {
+     "ts": "20260506052400",
+     "url": "https://infogram.com/75271afa-00d2-4636-a897-eec156a6ff85"
+    },
+    {
+     "ts": "20260506052413",
+     "url": "https://infogram.com/oembed/?url=https%3A%2F%2Finfogram.com%2Fdias-de-ferias-anuais-na-europa-1g57prdx8x7v201"
+    },
+    {
+     "ts": "20260506052425",
+     "url": "https://infogram.com/api/stylesheets/306"
+    },
+    {
+     "ts": "20260506052440",
+     "url": "https://infogram.com/dias-de-ferias-anuais-na-europa-1g57prdx8x7v201"
+    },
+    {
+     "ts": "20260506052444",
+     "url": "https://infogram.com/oembed/?url=https%3A%2F%2Finfogram.com%2Fdias-de-ferias-e-feriados-pagos-nos-paises-da-ocde-1ggk26e5l0xkpn0"
+    },
+    {
+     "ts": "20260506052449",
+     "url": "https://infogram.com/dias-de-ferias-e-feriados-pagos-nos-paises-da-ocde-1ggk26e5l0xkpn0"
+    },
+    {
+     "ts": "20260510070223",
+     "url": "https://infogram.com/robots.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 120
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20180628145955",
+   "host": "investor.gov",
+   "last": "20260419081137",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 9
+   },
+   "embedded_target_hosts": {},
+   "first": "20090701002941",
+   "host": "is.gd",
+   "last": "20260422202539",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 103,
+    "per_day": {
+     "20260505": 1,
+     "20260510": 1,
+     "20260512": 2,
+     "20260524": 1,
+     "20260527": 1,
+     "20260629": 1,
+     "20260707": 1,
+     "20260713": 1
+    },
+    "query_parts": 1,
+    "status_200": 15,
+    "status_200_nonasset": 9
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260505181442",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260510081728",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260512013103",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260512093133",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260524051427",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260527174237",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260629101903",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260707062500",
+     "url": "https://is.gd/robots.txt"
+    },
+    {
+     "ts": "20260713162046",
+     "url": "https://is.gd/robots.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 7
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "jotspot.io",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "jqp.vercel.app",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 858,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20220430114211",
+   "host": "jsonhero.io",
+   "last": "20251229065404",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "kb5.zukunftslernorte.org",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "la.datausa.io",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2780,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 1,
+    "save": 303
+   },
+   "embedded_target_hosts": {},
+   "first": "20141129075113",
+   "host": "lcdl.library.cofc.edu",
+   "last": "20260612052412",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260527": 16,
+    "20260528": 231,
+    "20260612": 56
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 344,
+    "per_day": {
+     "20260527": 16,
+     "20260528": 232,
+     "20260612": 56
+    },
+    "query_parts": 1,
+    "status_200": 304,
+    "status_200_nonasset": 304
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260527175950",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229"
+    },
+    {
+     "ts": "20260527180140",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229?something=1"
+    },
+    {
+     "ts": "20260527180237",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229?dummy=7"
+    },
+    {
+     "ts": "20260527180330",
+     "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl:129229/manifest.json?q=1"
+    },
+    {
+     "ts": "20260527180335",
+     "url": "https://lcdl.library.cofc.edu/lcdl/iiif/2/lcdl:129229/manifest.json?q=1"
+    },
+    {
+     "ts": "20260527180352",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129229.json?q=1"
+    },
+    {
+     "ts": "20260527180827",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129140.json?dummy=1"
+    },
+    {
+     "ts": "20260527180829",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129141.json?dummy=1"
+    },
+    {
+     "ts": "20260527180831",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129142.json?dummy=1"
+    },
+    {
+     "ts": "20260527180833",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129143.json?dummy=1"
+    },
+    {
+     "ts": "20260527180835",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129144.json?dummy=1"
+    },
+    {
+     "ts": "20260527180837",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129145.json?dummy=1"
+    },
+    {
+     "ts": "20260527180839",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129146.json?dummy=1"
+    },
+    {
+     "ts": "20260527180841",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129147.json?dummy=1"
+    },
+    {
+     "ts": "20260527180844",
+     "url": "https://lcdl.library.cofc.edu/lcdl/catalog/lcdl:129148.json?dummy=1"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 304
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1046,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20141202013716",
+   "host": "liveweave.com",
+   "last": "20260528233233",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 3,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 2,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 106,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20190907092518",
+   "host": "localtunnel.me",
+   "last": "20251230054517",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 35,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160521135123",
+   "host": "login.max.gov",
+   "last": "20251223151948",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 363,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20080219001358",
+   "host": "ludism.org",
+   "last": "20251210024423",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "magic-html-api.vercel.app",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 14,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 12
+   },
+   "embedded_target_hosts": {
+    "acleddata.com": 1,
+    "time.com": 1
+   },
+   "first": "20260426050820",
+   "host": "markdown.new",
+   "last": "20260914141329",
+   "outcome": "window_captures_with_url_signature",
+   "save_per_day": {
+    "20260514": 7,
+    "20260517": 4,
+    "20260914": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 13,
+    "per_day": {
+     "20260514": 7,
+     "20260517": 4,
+     "20260914": 1
+    },
+    "query_parts": 1,
+    "status_200": 12,
+    "status_200_nonasset": 12
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260514063538",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260514063545",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260514100049",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260514100051",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260514140129",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260514140129",
+     "url": "https://markdown.new/acleddata.com/monitor/yemen-conflict-monitor"
+    },
+    {
+     "ts": "20260514142836",
+     "url": "https://markdown.new/http://acleddata.com/methodology/yemen-conflict/"
+    },
+    {
+     "ts": "20260517232450",
+     "url": "https://markdown.new/is.gd/zkiVU1"
+    },
+    {
+     "ts": "20260517232457",
+     "url": "https://markdown.new/is.gd/zkiVU1"
+    },
+    {
+     "ts": "20260517232534",
+     "url": "https://markdown.new/is.gd/zkiVU1"
+    },
+    {
+     "ts": "20260517232534",
+     "url": "https://markdown.new/is.gd/zkiVU1"
+    },
+    {
+     "ts": "20260914141329",
+     "url": "https://markdown.new/https://time.com/collection/worlds-best-companies-2023/"
+    }
+   ],
+   "url_signature_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 12
+   },
+   "wayback_window_nonasset": 11
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 44,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160516212537",
+   "host": "max.omb.gov",
+   "last": "20251212011901",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20260511205240",
+   "host": "md.dhr.wtf",
+   "last": "20260511205240",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "md.succ.ai",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 3486,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160521052653",
+   "host": "meatballwiki.org",
+   "last": "20260325161741",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "metl.lib.umn.edu",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 171,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160523110935",
+   "host": "moinmo.in",
+   "last": "20251218225905",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 311,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20230503132744",
+   "host": "nervesocket.com",
+   "last": "20251228203238",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "netzwerkgegengewalt.org",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 42,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20141126235416",
+   "host": "oddmuse.org",
+   "last": "20240809030917",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 374,
+    "raq": 21
+   },
+   "embedded_target_hosts": {
+    "gpseducation.oecd.org": 22
+   },
+   "first": "20080215051240",
+   "host": "oecd.org",
+   "last": "20260725114451",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 6984,
+    "per_day": {
+     "20260505": 1,
+     "20260508": 3,
+     "20260509": 3,
+     "20260511": 8,
+     "20260512": 8,
+     "20260513": 56,
+     "20260517": 26,
+     "20260518": 6,
+     "20260519": 14,
+     "20260521": 64,
+     "20260522": 2,
+     "20260523": 10,
+     "20260524": 5,
+     "20260526": 49,
+     "20260527": 5,
+     "20260528": 6,
+     "20260529": 2,
+     "20260531": 4,
+     "20260601": 24,
+     "20260602": 4,
+     "20260603": 9,
+     "20260605": 13,
+     "20260622": 34,
+     "20260701": 4,
+     "20260704": 9,
+     "20260705": 2,
+     "20260709": 2,
+     "20260710": 1,
+     "20260711": 6,
+     "20260713": 5,
+     "20260725": 10
+    },
+    "query_parts": 3,
+    "status_200": 5928,
+    "status_200_nonasset": 395
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260505170934",
+     "url": "https://www.oecd.org/robots.txt"
+    },
+    {
+     "ts": "20260508194011",
+     "url": "https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_PDB@DF_PDB_LV&df[ag]=OECD.SDD.TPS"
+    },
+    {
+     "ts": "20260508194026",
+     "url": "https://data-explorer.oecd.org/assets/oecd/data-explorer/robots.txt"
+    },
+    {
+     "ts": "20260508194119",
+     "url": "https://data-explorer.oecd.org/static/js/bundle.js.br?de7b7ec4a3b69398e8ab33f0d1aa8a09"
+    },
+    {
+     "ts": "20260509034538",
+     "url": "https://www.oecd.org/robots.txt"
+    },
+    {
+     "ts": "20260509034542",
+     "url": "https://www.oecd.org/en/about/programmes/pisa.html"
+    },
+    {
+     "ts": "20260509034548",
+     "url": "https://www.oecd.org/fr.html"
+    },
+    {
+     "ts": "20260511060136",
+     "url": "https://www.oecd.org/robots.txt"
+    },
+    {
+     "ts": "20260511235452",
+     "url": "https://www.oecd.org/robots.txt"
+    },
+    {
+     "ts": "20260511235507",
+     "url": "https://www.oecd.org/en/publications/dealing-with-digital-security-risk-during-the-coronavirus-covid-19-crisis_c9d3fe8e-en.html"
+    },
+    {
+     "ts": "20260511235536",
+     "url": "https://www.oecd.org/"
+    },
+    {
+     "ts": "20260511235704",
+     "url": "https://www.oecd.org/en/publications/2020/04/dealing-with-digital-security-risk-during-the-coronavirus-covid-19-crisis_176729fc.html"
+    },
+    {
+     "ts": "20260511235709",
+     "url": "https://www.oecd.org/fr/publications/2020/04/dealing-with-digital-security-risk-during-the-coronavirus-covid-19-crisis_176729fc.html"
+    },
+    {
+     "ts": "20260511235717",
+     "url": "https://www.oecd.org/pt/publications/2020/04/dealing-with-digital-security-risk-during-the-coronavirus-covid-19-crisis_176729fc.html"
+    },
+    {
+     "ts": "20260511235739",
+     "url": "https://www.oecd.org/en.opensearch.xml"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 370
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 76,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20230211142333",
+   "host": "p.gaa.st",
+   "last": "20230501222538",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "paste.linuxiarz.pl",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "paste.probyte.ee",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "paste.smirky.net",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "paste.steamr.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 4,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20210924235752",
+   "host": "paste.ubuntu.org.cn",
+   "last": "20210924235802",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "pastebin.faster-it.de",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "pastebin.k4be.pl",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "pastebin.tarcseh.me",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "pb.dynavirt.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "piv.max.gov",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "platform.lemino.ai",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2829,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20080224142246",
+   "host": "pmwiki.org",
+   "last": "20251217195421",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 45,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 25
+   },
+   "embedded_target_hosts": {},
+   "first": "20230202213916",
+   "host": "portal.max.gov",
+   "last": "20260526104234",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260526": 25
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 26,
+    "per_day": {
+     "20260526": 25
+    },
+    "query_parts": 1,
+    "status_200": 25,
+    "status_200_nonasset": 25
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260526073119",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526073122",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+    },
+    {
+     "ts": "20260526073149",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526074332",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075036",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075039",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/FY%202023%20-%20SF%20133%20Reports%20on%20Budget%20Execution%20and%20Budgetary%20Resources.html"
+    },
+    {
+     "ts": "20260526075123",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526075130",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526080525",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2398882076.pdf"
+    },
+    {
+     "ts": "20260526082226",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526082602",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf"
+    },
+    {
+     "ts": "20260526092535",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?0.5722951149632984"
+    },
+    {
+     "ts": "20260526092538",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?0.05170511826196966"
+    },
+    {
+     "ts": "20260526095000",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?cb=65554"
+    },
+    {
+     "ts": "20260526095002",
+     "url": "https://portal.max.gov/portal/document/SF133/Budget/attachments/2346466575/2374423602.pdf?cb=84392"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 25
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 231,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20170706035357",
+   "host": "prowiki.org",
+   "last": "20251221084202",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "proxy.corsfix.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 8,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 6
+   },
+   "embedded_target_hosts": {
+    "cloud.ihme.washington.edu": 1,
+    "example.com": 1,
+    "httpbin.org": 1,
+    "vizhub.healthdata.org": 2
+   },
+   "first": "20260619194100",
+   "host": "proxymule.com",
+   "last": "20260619194317",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260619": 6
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 8,
+    "per_day": {
+     "20260619": 6
+    },
+    "query_parts": 1,
+    "status_200": 7,
+    "status_200_nonasset": 6
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260619194100",
+     "url": "https://www.proxymule.com/__PROXY__/https/example.com/"
+    },
+    {
+     "ts": "20260619194150",
+     "url": "https://www.proxymule.com/__PROXY__/https/vizhub.healthdata.org/sdg/api/metadata"
+    },
+    {
+     "ts": "20260619194152",
+     "url": "https://www.proxymule.com/__PROXY__/https/vizhub.healthdata.org/sdg/api/data?indicator=1223&location=11&year=2008"
+    },
+    {
+     "ts": "20260619194157",
+     "url": "https://www.proxymule.com/__PROXY__/https/cloud.ihme.washington.edu/"
+    },
+    {
+     "ts": "20260619194231",
+     "url": "https://www.proxymule.com/"
+    },
+    {
+     "ts": "20260619194317",
+     "url": "https://www.proxymule.com/__PROXY__/https/httpbin.org/anything"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 6
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 15,
+    "save": 4
+   },
+   "embedded_target_hosts": {},
+   "first": "20160515201142",
+   "host": "public.tableau.com",
+   "last": "20260430003713",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260502": 4
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 32,
+    "per_day": {
+     "20260502": 4,
+     "20260506": 1,
+     "20260513": 1,
+     "20260521": 2,
+     "20260527": 1,
+     "20260602": 2,
+     "20260604": 1,
+     "20260704": 1,
+     "20260711": 6
+    },
+    "query_parts": 1,
+    "status_200": 30,
+    "status_200_nonasset": 19
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260502052259",
+     "url": "https://public.tableau.com/views/RemittanceTrendsxCo_1980-Present/Dashboard1.csv?%3AshowVizHome=no&Country=Indonesia%2CLebanon%2CMalaysia%2CNorway%2COman&Parameters.Dimension+select=Outflow&Parameters.Display=GDP&YEAR%28Year%29=2005"
+    },
+    {
+     "ts": "20260502052324",
+     "url": "https://public.tableau.com/views/RemittanceTrendsxCo_1980-Present/Dashboard1.csv?%3AshowVizHome=no&Country=Indonesia%2CLebanon%2CMalaysia%2CNorway%2COman&Parameters.Dimension+select=Outflow&Parameters.Display=GDP&YEAR%28Year%29=2005"
+    },
+    {
+     "ts": "20260502052343",
+     "url": "https://public.tableau.com/views/RemittanceTrendsxCo_1980-Present/Dashboard1.csv?:showVizHome=no&Country=Indonesia%2CLebanon%2CMalaysia%2CNorway%2COman&Parameters.Dimension+select=Outflow&Parameters.Display=GDP&YEAR%28Year%29=2005"
+    },
+    {
+     "ts": "20260502052732",
+     "url": "https://public.tableau.com/views/RemittanceTrendsxCo_1980-Present/Dashboard1.csv?:showVizHome=no&Country=Indonesia%2CLebanon%2CMalaysia%2CNorway%2COman&Parameters.Dimension+select=Outflow&Parameters.Display=GDP&YEAR%28Year%29=2005"
+    },
+    {
+     "ts": "20260506034213",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260513000515",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260521163723",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260521163812",
+     "url": "https://public.tableau.com/app/profile/infografia.expresso"
+    },
+    {
+     "ts": "20260527101926",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260602101159",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260602101216",
+     "url": "https://public.tableau.com/views/catalunya-esp/Dashboard1?:showVizHome=no&:embed=true"
+    },
+    {
+     "ts": "20260604164955",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260704011416",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260711080142",
+     "url": "https://public.tableau.com/robots.txt"
+    },
+    {
+     "ts": "20260711080210",
+     "url": "https://public.tableau.com/views/mordaza_2016/Dashboard1?:showVizHome=no&:embed=true"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 14
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 343,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20211022201549",
+   "host": "publictestwiki.com",
+   "last": "20211022204116",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 12,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20191004082118",
+   "host": "pure.md",
+   "last": "20230903011911",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 577,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 2,
+    "save": 8
+   },
+   "embedded_target_hosts": {},
+   "first": "20160519085335",
+   "host": "query1.finance.yahoo.com",
+   "last": "20260528194834",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260528": 8
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 51,
+    "per_day": {
+     "20260522": 2,
+     "20260528": 8
+    },
+    "query_parts": 1,
+    "status_200": 10,
+    "status_200_nonasset": 10
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260522104722",
+     "url": "http://query1.finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260522110200",
+     "url": "http://query1.finance.yahoo.com/robots.txt"
+    },
+    {
+     "ts": "20260528183124",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/GDDY"
+    },
+    {
+     "ts": "20260528184155",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/^GSPC?range=1mo&interval=1d"
+    },
+    {
+     "ts": "20260528184307",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL"
+    },
+    {
+     "ts": "20260528184340",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL"
+    },
+    {
+     "ts": "20260528184611",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/GDDY?range=1mo%26interval=1d"
+    },
+    {
+     "ts": "20260528184914",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/GDDY?range=max&interval=1d"
+    },
+    {
+     "ts": "20260528185727",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?range=10y&interval=1d"
+    },
+    {
+     "ts": "20260528194831",
+     "url": "https://query1.finance.yahoo.com/v8/finance/chart/CYBR.L?range=10y&interval=1wk"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 10
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "r.jina-ai.workers.dev",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 524,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 62
+   },
+   "embedded_target_hosts": {
+    "api.microlink.io": 1,
+    "api.time.com": 1,
+    "bgsu.edu": 1,
+    "digitalgallery.bgsu.edu": 1,
+    "example.com": 5,
+    "finance.gov.pk": 1,
+    "google.com": 4,
+    "grep.app": 1,
+    "lib.bgsu.edu": 13,
+    "librarysearch.bgsu.edu": 1,
+    "statista.com": 1,
+    "tabs.ultimate-guitar.com": 2,
+    "tagpacker.com": 14,
+    "time.com": 2,
+    "tinyurl.com": 2,
+    "ultimate-guitar.com": 4,
+    "vizhub.healthdata.org": 1,
+    "wayback.archive.org": 4,
+    "web.archive.org.cdn.cloudflare.net": 1,
+    "www150.statcan.gc.ca": 1
+   },
+   "first": "20240827222531",
+   "host": "r.jina.ai",
+   "last": "20260914141003",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260506": 1,
+    "20260510": 1,
+    "20260511": 20,
+    "20260513": 1,
+    "20260613": 22,
+    "20260616": 3,
+    "20260617": 2,
+    "20260703": 1,
+    "20260704": 5,
+    "20260705": 1,
+    "20260707": 1,
+    "20260914": 4
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 373,
+    "per_day": {
+     "20260506": 1,
+     "20260510": 1,
+     "20260511": 20,
+     "20260513": 1,
+     "20260613": 22,
+     "20260616": 3,
+     "20260617": 2,
+     "20260703": 1,
+     "20260704": 5,
+     "20260705": 1,
+     "20260707": 1,
+     "20260914": 4
+    },
+    "query_parts": 1,
+    "status_200": 62,
+    "status_200_nonasset": 62
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260506081953",
+     "url": "https://r.jina.ai/https://www.google.com/search?q=test"
+    },
+    {
+     "ts": "20260510191235",
+     "url": "https://r.jina.ai/http://vizhub.healthdata.org/lbd/lri/"
+    },
+    {
+     "ts": "20260511171418",
+     "url": "https://r.jina.ai/http://example.com"
+    },
+    {
+     "ts": "20260511171455",
+     "url": "https://r.jina.ai/http:%2F%2Flib.bgsu.edu%2Farchives%2Frepositories%2F3%2Fresources"
+    },
+    {
+     "ts": "20260511172101",
+     "url": "https://r.jina.ai/http://example.com"
+    },
+    {
+     "ts": "20260511173235",
+     "url": "https://r.jina.ai/http://librarysearch.bgsu.edu"
+    },
+    {
+     "ts": "20260511183132",
+     "url": "https://r.jina.ai/http://www.statista.com/outlook/cmo/toys-hobby/nigeria"
+    },
+    {
+     "ts": "20260511183351",
+     "url": "https://r.jina.ai/http://www.google.com"
+    },
+    {
+     "ts": "20260511183356",
+     "url": "https://r.jina.ai/https://www.bgsu.edu"
+    },
+    {
+     "ts": "20260511183409",
+     "url": "https://r.jina.ai/https://lib.bgsu.edu/robots.txt"
+    },
+    {
+     "ts": "20260511183412",
+     "url": "https://r.jina.ai/https://lib.bgsu.edu"
+    },
+    {
+     "ts": "20260511183414",
+     "url": "https://r.jina.ai/https://lib.bgsu.edu/archives/repositories/3/resources"
+    },
+    {
+     "ts": "20260511183421",
+     "url": "https://r.jina.ai/https://digitalgallery.bgsu.edu"
+    },
+    {
+     "ts": "20260511183620",
+     "url": "https://r.jina.ai/https://lib.bgsu.edu/findingaids/repositories/3/resources/768"
+    },
+    {
+     "ts": "20260511183624",
+     "url": "https://r.jina.ai/https://lib.bgsu.edu/archives/repositories/3/resources/768"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 36
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "rmn.re",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 22,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 10
+   },
+   "embedded_target_hosts": {},
+   "first": "20191015173822",
+   "host": "rspace.library.cofc.edu",
+   "last": "20260612045402",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260527": 3,
+    "20260528": 5,
+    "20260612": 2
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 10,
+    "per_day": {
+     "20260527": 3,
+     "20260528": 5,
+     "20260612": 2
+    },
+    "query_parts": 1,
+    "status_200": 10,
+    "status_200_nonasset": 10
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260527235258",
+     "url": "https://rspace.library.cofc.edu/iiif"
+    },
+    {
+     "ts": "20260527235442",
+     "url": "https://rspace.library.cofc.edu/iiif"
+    },
+    {
+     "ts": "20260527235653",
+     "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+    },
+    {
+     "ts": "20260528002152",
+     "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+    },
+    {
+     "ts": "20260528002154",
+     "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+    },
+    {
+     "ts": "20260528002412",
+     "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+    },
+    {
+     "ts": "20260528002544",
+     "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+    },
+    {
+     "ts": "20260528002546",
+     "url": "https://rspace.library.cofc.edu/iiif/lcdl129143JPEG1jpg/manifest"
+    },
+    {
+     "ts": "20260612045359",
+     "url": "https://rspace.library.cofc.edu/iiif/presentation/223696/manifest"
+    },
+    {
+     "ts": "20260612045402",
+     "url": "https://rspace.library.cofc.edu/iiif/presentation/223696"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 10
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "rubyhack.ai",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "run.pinggy-free.link",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "schulwiki.org",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 4,
+    "save": 1
+   },
+   "embedded_target_hosts": {},
+   "first": "20080215101342",
+   "host": "sec.gov",
+   "last": "20260524202313",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260704": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 29,
+    "per_day": {
+     "20260509": 2,
+     "20260701": 2,
+     "20260704": 1
+    },
+    "query_parts": 1,
+    "status_200": 6,
+    "status_200_nonasset": 5
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260509071735",
+     "url": "https://www.sec.gov/robots.txt"
+    },
+    {
+     "ts": "20260509071742",
+     "url": "https://www.sec.gov/spotlight/secpostmadoffreforms/oig-509-exec-summary.pdf"
+    },
+    {
+     "ts": "20260701080607",
+     "url": "https://www.sec.gov/robots.txt"
+    },
+    {
+     "ts": "20260701080613",
+     "url": "https://www.sec.gov/Archives/edgar/data/78003/000122520820013318/xslF345X03/doc4.xml"
+    },
+    {
+     "ts": "20260704092025",
+     "url": "https://www.sec.gov/Archives/edgar/data/1159508/000095010315005563/0000950103-15-005563.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 3
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "simpletestrefabc99.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "site-test.nsi.bg",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 5,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 1
+   },
+   "embedded_target_hosts": {
+    "httpbin.org": 1
+   },
+   "first": "20240828144024",
+   "host": "test.cors.workers.dev",
+   "last": "20260704180248",
+   "outcome": "window_captures_with_url_signature",
+   "save_per_day": {
+    "20260512": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 3,
+    "per_day": {
+     "20260512": 1
+    },
+    "query_parts": 1,
+    "status_200": 1,
+    "status_200_nonasset": 1
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260512011357",
+     "url": "https://test.cors.workers.dev/?https://httpbin.org/anything?1778548387.9690344"
+    }
+   ],
+   "url_signature_hits": {
+    "md\\.succ\\.ai|markdown\\.new|jqp\\.vercel\\.app|allorigins\\.hexlet\\.app|test\\.cors\\.workers\\.dev": 1
+   },
+   "wayback_window_nonasset": 1
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 175,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20191116015730",
+   "host": "texteditors.org",
+   "last": "20251211040904",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20190108100101",
+   "host": "thetravel.com",
+   "last": "20251224161804",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 272,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20180816094119",
+   "host": "thingproxy.freeboard.io",
+   "last": "20250930173906",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 87,
+    "save": 4
+   },
+   "embedded_target_hosts": {},
+   "first": "20090525002711",
+   "host": "tinyurl.com",
+   "last": "20260710065125",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260704": 1,
+    "20260711": 1,
+    "20260817": 1,
+    "20260911": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2155,
+    "per_day": {
+     "20260504": 2,
+     "20260508": 3,
+     "20260509": 2,
+     "20260510": 2,
+     "20260512": 3,
+     "20260513": 2,
+     "20260518": 3,
+     "20260519": 2,
+     "20260521": 2,
+     "20260522": 2,
+     "20260523": 3,
+     "20260524": 4,
+     "20260525": 1,
+     "20260526": 4,
+     "20260527": 5,
+     "20260528": 3,
+     "20260529": 1,
+     "20260530": 3,
+     "20260531": 3,
+     "20260601": 4,
+     "20260602": 1,
+     "20260603": 1,
+     "20260604": 2,
+     "20260605": 2,
+     "20260608": 2,
+     "20260616": 1,
+     "20260623": 4,
+     "20260624": 3,
+     "20260702": 2,
+     "20260704": 1,
+     "20260707": 4,
+     "20260708": 2,
+     "20260710": 3,
+     "20260711": 1,
+     "20260712": 2,
+     "20260713": 3,
+     "20260714": 1,
+     "20260817": 1,
+     "20260911": 1
+    },
+    "query_parts": 1,
+    "status_200": 173,
+    "status_200_nonasset": 91
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260504220014",
+     "url": "http://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260504220038",
+     "url": "https://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260508225621",
+     "url": "http://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260508225741",
+     "url": "https://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260508235956",
+     "url": "http://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260509000145",
+     "url": "https://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260509002016",
+     "url": "https://tinyurl.com/"
+    },
+    {
+     "ts": "20260510071527",
+     "url": "http://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260510071550",
+     "url": "https://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260512120821",
+     "url": "http://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260512121038",
+     "url": "https://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260512132357",
+     "url": "https://tinyurl.com/"
+    },
+    {
+     "ts": "20260513143153",
+     "url": "http://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260513143250",
+     "url": "https://tinyurl.com/robots.txt"
+    },
+    {
+     "ts": "20260518135942",
+     "url": "http://tinyurl.com/robots.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 80
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "tmcleod.org",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 103,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20091227061057",
+   "host": "toothycat.net",
+   "last": "20241027100225",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20251030093124",
+   "host": "tsl.access.preservica.com",
+   "last": "20251030093128",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "tsl.preservica.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160516200939",
+   "host": "twiki.org",
+   "last": "20251229071824",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 3,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 1,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 7,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20210921012831",
+   "host": "u.ethz.ch",
+   "last": "20210921012859",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 227,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20181127222432",
+   "host": "uoft.me",
+   "last": "20251224130947",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "urltomarkdown.herokuapp.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2929,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20091015171450",
+   "host": "usemod.com",
+   "last": "20251229071325",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 59,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20240306214018",
+   "host": "usemod.org",
+   "last": "20251209203118",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 22,
+    "save": 1
+   },
+   "embedded_target_hosts": {
+    "entrepreneurs.utoronto.ca": 2
+   },
+   "first": "19961013161106",
+   "host": "utoronto.ca",
+   "last": "20260213035622",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260914": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 211,
+    "per_day": {
+     "20260509": 1,
+     "20260512": 6,
+     "20260515": 4,
+     "20260529": 3,
+     "20260530": 1,
+     "20260603": 1,
+     "20260624": 3,
+     "20260626": 1,
+     "20260704": 1,
+     "20260710": 1,
+     "20260914": 1
+    },
+    "query_parts": 1,
+    "status_200": 129,
+    "status_200_nonasset": 23
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260509010526",
+     "url": "http://blogs.studentlife.utoronto.ca/robots.txt"
+    },
+    {
+     "ts": "20260512033010",
+     "url": "https://entrepreneurs.utoronto.ca/robots.txt"
+    },
+    {
+     "ts": "20260512033027",
+     "url": "https://entrepreneurs.utoronto.ca/"
+    },
+    {
+     "ts": "20260512033100",
+     "url": "https://entrepreneurs.utoronto.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fentrepreneurs.utoronto.ca%2F"
+    },
+    {
+     "ts": "20260512033104",
+     "url": "https://entrepreneurs.utoronto.ca/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fentrepreneurs.utoronto.ca%2F&format=xml"
+    },
+    {
+     "ts": "20260512033149",
+     "url": "https://entrepreneurs.utoronto.ca/wp-json/"
+    },
+    {
+     "ts": "20260512033159",
+     "url": "https://entrepreneurs.utoronto.ca/wp-json/wp/v2/pages/872"
+    },
+    {
+     "ts": "20260515054151",
+     "url": "http://www.utsc.utoronto.ca/404.html"
+    },
+    {
+     "ts": "20260515162410",
+     "url": "https://learn.utoronto.ca/robots.txt"
+    },
+    {
+     "ts": "20260515162421",
+     "url": "https://learn.utoronto.ca/curiousu-blog/curiosity/30-creative-writing-prompts-improve-your-craft"
+    },
+    {
+     "ts": "20260515162632",
+     "url": "https://learn.utoronto.ca/themes/custom/de_theme/src/img/favicons/site.webmanifest"
+    },
+    {
+     "ts": "20260529143007",
+     "url": "https://samizdat.library.utoronto.ca/robots.txt"
+    },
+    {
+     "ts": "20260529143019",
+     "url": "https://samizdat.library.utoronto.ca/"
+    },
+    {
+     "ts": "20260529143054",
+     "url": "https://samizdat.library.utoronto.ca/interviews/en/oleg-okhapkin"
+    },
+    {
+     "ts": "20260530094203",
+     "url": "https://www.math.utoronto.ca/robots.txt"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 21
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1070,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 1
+   },
+   "embedded_target_hosts": {},
+   "first": "20140609075152",
+   "host": "v.gd",
+   "last": "20260621151210",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260621": 1
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 1,
+    "per_day": {
+     "20260621": 1
+    },
+    "query_parts": 1,
+    "status_200": 1,
+    "status_200_nonasset": 1
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260621151210",
+     "url": "https://v.gd/YgVRix"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 1
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 240,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20160520200755",
+   "host": "vanderbi.lt",
+   "last": "20230731154603",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "vercel-cors-proxy.vercel.app",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "ghostarchive",
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 1351,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "save": 2
+   },
+   "embedded_target_hosts": {},
+   "first": "20180912120604",
+   "host": "viz.aihw.gov.au",
+   "last": "20260621173844",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260621": 2
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 26,
+    "per_day": {
+     "20260621": 2
+    },
+    "query_parts": 1,
+    "status_200": 2,
+    "status_200_nonasset": 2
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260621171731",
+     "url": "https://viz.aihw.gov.au/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a0f4aace0d1dc1b1"
+    },
+    {
+     "ts": "20260621171916",
+     "url": "https://viz.aihw.gov.au/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a0f4ad5b38401f0e"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 2
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "patching": 53,
+    "save": 4146
+   },
+   "embedded_target_hosts": {},
+   "first": "20160516102445",
+   "host": "vizhub.healthdata.org",
+   "last": "20260616130519",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260507": 18,
+    "20260510": 1774,
+    "20260511": 267,
+    "20260512": 333,
+    "20260513": 702,
+    "20260514": 203,
+    "20260515": 14,
+    "20260517": 230,
+    "20260518": 48,
+    "20260519": 25,
+    "20260520": 11,
+    "20260521": 1,
+    "20260526": 193,
+    "20260527": 203,
+    "20260528": 1,
+    "20260529": 18,
+    "20260530": 1,
+    "20260602": 1,
+    "20260614": 1,
+    "20260616": 48,
+    "20260618": 2,
+    "20260620": 5,
+    "20260621": 38,
+    "20260622": 9
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 10650,
+    "per_day": {
+     "20260507": 18,
+     "20260510": 1788,
+     "20260511": 268,
+     "20260512": 337,
+     "20260513": 702,
+     "20260514": 203,
+     "20260515": 14,
+     "20260517": 230,
+     "20260518": 48,
+     "20260519": 26,
+     "20260520": 11,
+     "20260521": 1,
+     "20260526": 209,
+     "20260527": 203,
+     "20260528": 1,
+     "20260529": 18,
+     "20260530": 1,
+     "20260602": 1,
+     "20260614": 1,
+     "20260616": 48,
+     "20260617": 1,
+     "20260618": 2,
+     "20260619": 11,
+     "20260620": 6,
+     "20260621": 42,
+     "20260622": 9
+    },
+    "query_parts": 8,
+    "status_200": 4794,
+    "status_200_nonasset": 4199
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260507195355",
+     "url": "https://vizhub.healthdata.org/gbd-compare/"
+    },
+    {
+     "ts": "20260507195357",
+     "url": "https://vizhub.healthdata.org/gbd-compare/"
+    },
+    {
+     "ts": "20260507195359",
+     "url": "http://vizhub.healthdata.org/gbd-compare/"
+    },
+    {
+     "ts": "20260507195400",
+     "url": "http://vizhub.healthdata.org/gbd-compare/"
+    },
+    {
+     "ts": "20260507201253",
+     "url": "https://vizhub.healthdata.org/gbd-compare/api/config"
+    },
+    {
+     "ts": "20260507201355",
+     "url": "https://vizhub.healthdata.org/gbd-results/"
+    },
+    {
+     "ts": "20260507202219",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/metadata/?language=en"
+    },
+    {
+     "ts": "20260507202221",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/version/"
+    },
+    {
+     "ts": "20260507202223",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php?start_year=1990%26version=8352"
+    },
+    {
+     "ts": "20260507202356",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php%3Fstart_year%3D1990%26version%3D8352"
+    },
+    {
+     "ts": "20260507202459",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php?start_year=1990;version=8352"
+    },
+    {
+     "ts": "20260507202500",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php?start_year=1990%3Bversion=8352"
+    },
+    {
+     "ts": "20260507202502",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php?start_year=1990%26amp%3Bversion=8352"
+    },
+    {
+     "ts": "20260507202604",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php?start_year=1990%2526version=8352"
+    },
+    {
+     "ts": "20260507202604",
+     "url": "https://vizhub.healthdata.org/gbd-results/php/default_data.php?start_year=1990%26amp%3Bversion=8352"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 2125
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "webcrawlerapi.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "wiki.ardant.net",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2296,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 1
+   },
+   "embedded_target_hosts": {},
+   "first": "20170617234312",
+   "host": "wiki.c2.com",
+   "last": "20260707091046",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 6,
+    "per_day": {
+     "20260707": 1
+    },
+    "query_parts": 1,
+    "status_200": 4,
+    "status_200_nonasset": 1
+   },
+   "sources": [
+    "wiki_candidates"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260707091019",
+     "url": "http://wiki.c2.com/?PeterPrinciple"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 1
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 288,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20170606132958",
+   "host": "wikiservice.at",
+   "last": "20251221000301",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain",
+    "surfaces_md",
+    "wiki_candidates"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "wikiservice.com",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "wikiservice.org",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 0,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": null,
+   "host": "wikiweb.at",
+   "last": null,
+   "outcome": "no_captures",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "census_extra"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {
+    "WEB": 14,
+    "save": 10
+   },
+   "embedded_target_hosts": {},
+   "first": "19961013183032",
+   "host": "www2.census.gov",
+   "last": "20260417202026",
+   "outcome": "window_captures_no_url_signature",
+   "save_per_day": {
+    "20260619": 4,
+    "20260629": 2,
+    "20260828": 1,
+    "20260913": 3
+   },
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 198,
+    "per_day": {
+     "20260503": 2,
+     "20260518": 1,
+     "20260519": 1,
+     "20260525": 2,
+     "20260604": 1,
+     "20260605": 2,
+     "20260619": 4,
+     "20260629": 5,
+     "20260701": 2,
+     "20260828": 1,
+     "20260913": 3
+    },
+    "query_parts": 1,
+    "status_200": 166,
+    "status_200_nonasset": 24
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [
+    {
+     "ts": "20260503210629",
+     "url": "https://www.census.gov/robots.txt"
+    },
+    {
+     "ts": "20260503210655",
+     "url": "https://www.census.gov/newsroom/releases/archives/income_wealth/cb11-157.html"
+    },
+    {
+     "ts": "20260518042533",
+     "url": "https://www.census.gov/robots.txt"
+    },
+    {
+     "ts": "20260519061733",
+     "url": "https://www.census.gov/robots.txt"
+    },
+    {
+     "ts": "20260525041857",
+     "url": "https://data.census.gov/robots.txt"
+    },
+    {
+     "ts": "20260525041914",
+     "url": "https://data.census.gov/profile/Springfield_city,_Clark_County,_Ohio?g=060XX00US3902374118"
+    },
+    {
+     "ts": "20260604073807",
+     "url": "https://www.census.gov/robots.txt"
+    },
+    {
+     "ts": "20260605015606",
+     "url": "https://www.census.gov/robots.txt"
+    },
+    {
+     "ts": "20260605015610",
+     "url": "https://www.census.gov/content/dam/Census/library/publications/2015/demo/p60-252.pdf"
+    },
+    {
+     "ts": "20260619150138",
+     "url": "https://www2.census.gov/programs-surveys/demo/guidance/industry-occupation/2018-occupation-code-list-and-crosswalk.xlsx"
+    },
+    {
+     "ts": "20260619150339",
+     "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2018.txt"
+    },
+    {
+     "ts": "20260619150341",
+     "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2019.txt"
+    },
+    {
+     "ts": "20260619150431",
+     "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2017.txt"
+    },
+    {
+     "ts": "20260629035658",
+     "url": "https://www2.census.gov/programs-surveys/acs/data/pums/2016/5-Year/csv_pny.zip"
+    },
+    {
+     "ts": "20260629035821",
+     "url": "https://www2.census.gov/programs-surveys/acs/data/pums/2016/5-Year/csv_pny.zip"
+    }
+   ],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 18
+  },
+  {
+   "all_time_capped": true,
+   "all_time_captures": 5000,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "19961013151852",
+   "host": "www2.clarku.edu",
+   "last": "20251228043121",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 1,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "export_url_domain"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 2,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20260527144802",
+   "host": "yourls.pro",
+   "last": "20260527152921",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 2,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md",
+    "wayback_surfaces"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 4,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20260527185556",
+   "host": "yourls.website",
+   "last": "20260528214716",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 4,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "wayback_surfaces",
+    "wayback_task_captures"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  },
+  {
+   "all_time_capped": false,
+   "all_time_captures": 787,
+   "cdx_http": [
+    200,
+    200
+   ],
+   "collections": {},
+   "embedded_target_hosts": {},
+   "first": "20140624125426",
+   "host": "yourworldoftext.com",
+   "last": "20260417073800",
+   "outcome": "no_captures_since_2026_05_01",
+   "save_per_day": {},
+   "since_2026_05_01": {
+    "capped": false,
+    "captures": 0,
+    "per_day": {},
+    "query_parts": 1,
+    "status_200": 0,
+    "status_200_nonasset": 0
+   },
+   "sources": [
+    "surfaces_md"
+   ],
+   "url_samples": [],
+   "url_signature_hits": {},
+   "wayback_window_nonasset": 0
+  }
+ ],
+ "run": "2026-09-14",
+ "summary": {
+  "hosts": 162,
+  "outcomes": {
+   "no_captures": 59,
+   "no_captures_since_2026_05_01": 59,
+   "window_captures_no_url_signature": 38,
+   "window_captures_with_url_signature": 6
+  }
+ },
+ "wayback_comparison_window": [
+  "20260512",
+  "20260715"
+ ]
+}

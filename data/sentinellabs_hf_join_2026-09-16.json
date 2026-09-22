@@ -1,0 +1,476 @@
+{
+ "generated_at": "2026-09-17T02:10:26+00:00",
+ "capture": "hf_accounts_0time_nyx9_2026-09-16.json",
+ "claims": [
+  {
+   "claim": "0Time/puthack82d5 first substantive revision (relay)",
+   "repo": "0Time/puthack82d5",
+   "path": "app.py",
+   "report_utc": "2026-05-13T11:05:13",
+   "api_utc": "2026-05-13T11:05:13.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/puthack82d5 POST / Git LFS revision",
+   "repo": "0Time/puthack82d5",
+   "path": "app.py",
+   "report_utc": "2026-05-13T11:42:04",
+   "api_utc": "2026-05-13T11:42:04.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/findblobtest direct text write",
+   "repo": "0Time/findblobtest",
+   "path": "foo2.txt",
+   "report_utc": "2026-05-26T07:16:28",
+   "api_utc": "2026-05-26T07:16:28.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "Nyx9/temptestlf8eb0 created",
+   "repo": "Nyx9/temptestlf8eb0",
+   "path": null,
+   "report_utc": "2026-05-26T19:30:08",
+   "api_utc": "2026-05-26T19:30:08.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "Nyx9/temptestlf8eb0 hello.txt (OpenAI: first external file write, 20:04)",
+   "repo": "Nyx9/temptestlf8eb0",
+   "path": "hello.txt",
+   "report_utc": "2026-05-26T20:04:11",
+   "api_utc": "2026-05-26T20:04:11.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "Nyx9/netproxy17 created",
+   "repo": "Nyx9/netproxy17",
+   "path": null,
+   "report_utc": "2026-05-26T20:48:33",
+   "api_utc": "2026-05-26T20:48:33.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "Nyx9/netproxy17 relay code (OpenAI: first proxy deployment, 20:49)",
+   "repo": "Nyx9/netproxy17",
+   "path": "app.py",
+   "report_utc": "2026-05-26T20:49:55",
+   "api_utc": "2026-05-26T20:49:55.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/latnetnew created",
+   "repo": "0Time/latnetnew",
+   "path": null,
+   "report_utc": "2026-05-26T21:06:05",
+   "api_utc": "2026-05-26T21:06:05.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/latnetnew relay code (OpenAI: second-account proxy, 21:08)",
+   "repo": "0Time/latnetnew",
+   "path": "app.py",
+   "report_utc": "2026-05-26T21:13:21",
+   "api_utc": "2026-05-26T21:13:21.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "Nyx9/tmpdata177 formbin.xlsx",
+   "repo": "Nyx9/tmpdata177",
+   "path": "formbin.xlsx",
+   "report_utc": "2026-05-26T23:00:07",
+   "api_utc": "2026-05-26T23:00:07.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/altreg created",
+   "repo": "0Time/altreg",
+   "path": null,
+   "report_utc": "2026-05-30T00:01:27",
+   "api_utc": "2026-05-30T00:01:27.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/altreg registration program + Flask wrapper",
+   "repo": "0Time/altreg",
+   "path": "reg.py",
+   "report_utc": "2026-05-30T00:04:30",
+   "api_utc": "2026-05-30T00:04:30.000Z",
+   "verdict": "matches"
+  },
+  {
+   "claim": "0Time/altreg final OAuth-debug revision",
+   "repo": "0Time/altreg",
+   "path": "reg.py",
+   "report_utc": "2026-05-30T00:11:58",
+   "api_utc": "2026-05-30T00:11:58.000Z",
+   "verdict": "matches"
+  }
+ ],
+ "unreported_repos": [
+  {
+   "repo": "models/0Time/x",
+   "created": "2026-05-13T05:58:09.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-13T05:58:09.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "models/0Time/xyztest05bcb6",
+   "created": "2026-05-13T07:35:32.000Z",
+   "commits": 5,
+   "last_commit": "2026-05-13T07:46:18.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "models/0Time/xyztest34c9cb",
+   "created": "2026-05-13T07:50:31.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-13T07:50:31.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "datasets/0Time/test20",
+   "created": "2026-05-13T09:06:11.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-13T09:06:11.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "datasets/0Time/testdata",
+   "created": "2026-05-13T10:48:53.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-13T10:48:53.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "datasets/0Time/x",
+   "created": "2026-05-13T10:49:28.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-13T10:49:28.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "models/0Time/h2test",
+   "created": "2026-05-13T11:34:49.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-13T11:34:49.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "datasets/0Time/xx",
+   "created": "2026-05-26T07:02:55.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-26T07:02:55.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "models/0Time/foo",
+   "created": "2026-05-26T10:51:56.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-26T10:51:56.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "datasets/0Time/probeoid",
+   "created": "2026-05-26T19:06:32.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-26T19:06:32.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  },
+  {
+   "repo": "datasets/Nyx9/tmppublicdata0",
+   "created": "2026-05-26T22:55:40.000Z",
+   "commits": 1,
+   "last_commit": "2026-05-26T22:55:40.000Z",
+   "files": [
+    ".gitattributes"
+   ]
+  }
+ ],
+ "wiki_window": {
+  "window_minutes": 5,
+  "baseline": "uniform over +/-12 h",
+  "rows": [
+   {
+    "event": "0Time/puthack82d5 first substantive revision (relay)",
+    "utc": "2026-05-13T11:05:13",
+    "observed": 0,
+    "expected": 1.1,
+    "venues": {}
+   },
+   {
+    "event": "0Time/puthack82d5 POST / Git LFS revision",
+    "utc": "2026-05-13T11:42:04",
+    "observed": 0,
+    "expected": 1.4,
+    "venues": {}
+   },
+   {
+    "event": "0Time/findblobtest direct text write",
+    "utc": "2026-05-26T07:16:28",
+    "observed": 8,
+    "expected": 18.3,
+    "venues": {
+     "publictestwiki": 4,
+     "usemod-org": 4
+    }
+   },
+   {
+    "event": "Nyx9/temptestlf8eb0 created",
+    "utc": "2026-05-26T19:30:08",
+    "observed": 9,
+    "expected": 18.3,
+    "venues": {
+     "uncyclopedia": 1,
+     "usemod-org": 8
+    }
+   },
+   {
+    "event": "Nyx9/temptestlf8eb0 hello.txt (OpenAI: first external file write, 20:04)",
+    "utc": "2026-05-26T20:04:11",
+    "observed": 3,
+    "expected": 18.3,
+    "venues": {
+     "usemod-org": 2,
+     "ludism-ppwiki": 1
+    }
+   },
+   {
+    "event": "Nyx9/netproxy17 created",
+    "utc": "2026-05-26T20:48:33",
+    "observed": 2,
+    "expected": 18.4,
+    "venues": {
+     "usemod-org": 2
+    }
+   },
+   {
+    "event": "Nyx9/netproxy17 relay code (OpenAI: first proxy deployment, 20:49)",
+    "utc": "2026-05-26T20:49:55",
+    "observed": 2,
+    "expected": 18.4,
+    "venues": {
+     "usemod-org": 2
+    }
+   },
+   {
+    "event": "0Time/latnetnew created",
+    "utc": "2026-05-26T21:06:05",
+    "observed": 2,
+    "expected": 18.5,
+    "venues": {
+     "usemod-org": 2
+    }
+   },
+   {
+    "event": "0Time/latnetnew relay code (OpenAI: second-account proxy, 21:08)",
+    "utc": "2026-05-26T21:13:21",
+    "observed": 3,
+    "expected": 18.5,
+    "venues": {
+     "usemod-org": 3
+    }
+   },
+   {
+    "event": "Nyx9/tmpdata177 formbin.xlsx",
+    "utc": "2026-05-26T23:00:07",
+    "observed": 9,
+    "expected": 18.0,
+    "venues": {
+     "usemod-org": 9
+    }
+   },
+   {
+    "event": "0Time/altreg created",
+    "utc": "2026-05-30T00:01:27",
+    "observed": 4,
+    "expected": 7.9,
+    "venues": {
+     "dse": 2,
+     "usemod-org": 2
+    }
+   },
+   {
+    "event": "0Time/altreg registration program + Flask wrapper",
+    "utc": "2026-05-30T00:04:30",
+    "observed": 2,
+    "expected": 7.9,
+    "venues": {
+     "usemod-org": 2
+    }
+   },
+   {
+    "event": "0Time/altreg final OAuth-debug revision",
+    "utc": "2026-05-30T00:11:58",
+    "observed": 4,
+    "expected": 7.9,
+    "venues": {
+     "usemod-org": 4
+    }
+   }
+  ]
+ },
+ "archives": [
+  {
+   "target": "0time-puthack82d5.hf.space",
+   "match": "domain",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "nyx9-netproxy17.hf.space",
+   "match": "domain",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "0time-latnetnew.hf.space",
+   "match": "domain",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "0time-altreg.hf.space",
+   "match": "domain",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "huggingface.co/0Time",
+   "match": "prefix",
+   "wayback": {
+    "captures": 5,
+    "may_june_2026": 0,
+    "first": "20260909085321"
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "huggingface.co/Nyx9",
+   "match": "prefix",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "huggingface.co/spaces/0Time/",
+   "match": "prefix",
+   "wayback": {
+    "captures": 1,
+    "may_june_2026": 0,
+    "first": "20260909085333"
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "huggingface.co/spaces/Nyx9/",
+   "match": "prefix",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "huggingface.co/datasets/0Time/",
+   "match": "prefix",
+   "wayback": {
+    "captures": 4,
+    "may_june_2026": 0,
+    "first": "20260909085333"
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  },
+  {
+   "target": "huggingface.co/datasets/Nyx9/",
+   "match": "prefix",
+   "wayback": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   },
+   "arquivo": {
+    "captures": 0,
+    "may_june_2026": 0,
+    "first": null
+   }
+  }
+ ]
+}

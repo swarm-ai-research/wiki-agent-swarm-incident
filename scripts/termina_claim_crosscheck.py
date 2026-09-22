@@ -29,16 +29,15 @@ CORROBORATED = {
     "visitors-fractal": "analysis/timeline.md",
     "visitors-linuxiarz": "analysis/wayback-cdx-sweep.md",
     "rmn-re-june-burst": "analysis/rmn-re-verify.md",
+    "rmn-re-shares-wiki-networks": "analysis/termina-export-reproductions.md",
+    "retrieval-venues-never-talk": "analysis/termina-export-reproductions.md",
 }
 
 CONFLICTING = {
     "kmad-probier-negative": "analysis/field-evidence.md",
 }
 
-NEW_SUBSTANTIVE = {
-    "retrieval-venues-never-talk": "The archive has not reproduced the 870-body content classification.",
-    "rmn-re-shares-wiki-networks": "The archive confirms an Azure-heavy shortener listing but has not reproduced the exact join to wiki /16s.",
-}
+NEW_SUBSTANTIVE: dict[str, str] = {}
 
 SAME_LINEAGE_REPRODUCED = {
     "networks-do-not-separate-populations": (
@@ -61,7 +60,19 @@ BOUNDED_UNVERIFIED = {
 
 LOCAL_NOTES = {
     "rmn-re-june-burst": "Partially corroborated: the archive independently reproduces 484 June rows and the host pattern, but uses different snapshot/counting cuts for other figures.",
-    "kmad-probier-negative": "The claim is already marked contradicted by Termina. The archive independently decodes the four-page payload to a 968-row IPEDS table.",
+    "kmad-probier-negative": "Resolved: Termina marks the claim contradicted, and this archive independently decodes the four-page payload to a 968-row IPEDS table. Both sources reject it, so nothing is left in dispute. The class stays conflicting because the claim itself conflicts with held evidence.",
+    "rmn-re-shares-wiki-networks": "Reproduced exactly (540 links, 123 /16s, 106 shared, 494 links) with the wiki side taken from the export's editor /16s rather than Termina's actors. The 12 links created before May share none. /16 overlap is not a common operator.",
+    "retrieval-venues-never-talk": "Direction reproduced on the export bodies: coordination vocabulary appears in 0 of 1,013 probier and 0 of 169 fractal revisions, against 3,899 of 13,310 on DSEWiki. The 870-body manifest and its category cells are still unreproduced.",
+}
+
+#: What happens to each row that needs attention. Every material row gets exactly one.
+REPRODUCED, RESOLVED, STANDING_GAP, OUT_OF_SCOPE = (
+    "reproduced", "resolved disagreement", "standing gap", "out of scope",
+)
+DISPOSITION_OVERRIDES = {
+    "kmad-probier-negative": RESOLVED,
+    "kmad-wiki-sweep": STANDING_GAP,
+    "vanderbilt-post-publication-clicks": STANDING_GAP,
 }
 
 SCAN_RE = re.compile(r"^scan:(?P<venue>[^:]+):(?P<day>\d{4}-\d{2}-\d{2})$")
@@ -148,6 +159,16 @@ def classify(claim: dict, changed_scans: set[str]) -> tuple[str, bool, str, str]
     )
 
 
+def disposition(claim_id: str, classification: str) -> str:
+    if claim_id in DISPOSITION_OVERRIDES:
+        return DISPOSITION_OVERRIDES[claim_id]
+    if SCAN_RE.match(claim_id):
+        return OUT_OF_SCOPE
+    if classification in ("corroborated", "repeated"):
+        return REPRODUCED
+    return STANDING_GAP
+
+
 def build(database: Path) -> dict:
     connection = sqlite3.connect(f"file:{database}?mode=ro", uri=True)
     try:
@@ -163,6 +184,7 @@ def build(database: Path) -> dict:
                 material=material,
                 archive_ref=archive_ref,
                 audit_note=note,
+                disposition=disposition(claim["id"], classification) if material else None,
                 made_by_evidence=evidence.get(claim.get("made_by")),
                 checked_by_evidence=evidence.get(claim.get("checked_by")),
             )
@@ -183,6 +205,9 @@ def build(database: Path) -> dict:
             "by_termina_status": dict(sorted(Counter(c["status"] for c in audited).items())),
             "by_classification": dict(sorted(Counter(c["classification"] for c in audited).items())),
             "material": sum(c["material"] for c in audited),
+            "by_disposition": dict(
+                sorted(Counter(c["disposition"] for c in audited if c["material"]).items())
+            ),
         },
         "claims": audited,
     }
@@ -211,15 +236,22 @@ def markdown(report: dict) -> str:
         + ", ".join(f"{value} {key}" for key, value in counts["by_classification"].items())
         + f". **{counts['material']} rows require attention**; the rest are lineage repeats or unchanged scanner snapshots.",
         "",
+        "Each of those rows now has a disposition: "
+        + ", ".join(f"{value} {key}" for key, value in counts["by_disposition"].items())
+        + ". *Reproduced* means this archive re-derived the claim, independently where the class says "
+        "corroborated and from Termina's own rows where it says repeated. *Resolved disagreement* is a "
+        "conflict both sources now settle the same way. *Standing gap* is a claim whose inputs are not "
+        "published. *Out of scope* is a scanner snapshot, which measures rather than witnesses.",
+        "",
         "## Material deltas",
         "",
-        "| Claim | Termina status | Cross-check | Archive reference | Disposition |",
-        "|---|---|---|---|---|",
+        "| Claim | Termina status | Cross-check | Disposition | Archive reference | Note |",
+        "|---|---|---|---|---|---|",
     ]
     for claim in material:
         ref = f"[`{claim['archive_ref']}`](../{claim['archive_ref']})" if claim["archive_ref"] else "—"
         lines.append(
-            f"| `{claim['id']}` | {claim['status']} | {claim['classification']} | {ref} | {claim['audit_note']} |"
+            f"| `{claim['id']}` | {claim['status']} | {claim['classification']} | **{claim['disposition']}** | {ref} | {claim['audit_note']} |"
         )
     lines += [
         "",

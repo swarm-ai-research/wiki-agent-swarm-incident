@@ -27,8 +27,9 @@ class TerminaClaimCrosscheckTests(unittest.TestCase):
             "corroborated",
         )
         self.assertEqual(
-            self.claims["rmn-re-shares-wiki-networks"]["classification"], "new"
+            self.claims["rmn-re-shares-wiki-networks"]["classification"], "corroborated"
         )
+        self.assertEqual(negative["disposition"], tc.RESOLVED)
 
     def test_only_scan_verdict_transitions_are_material(self):
         scans = [
@@ -49,6 +50,17 @@ class TerminaClaimCrosscheckTests(unittest.TestCase):
                 if claim["id"].endswith("2026-09-08")
             )
         )
+
+    def test_every_attention_row_has_one_disposition(self):
+        allowed = {tc.REPRODUCED, tc.RESOLVED, tc.STANDING_GAP, tc.OUT_OF_SCOPE}
+        for claim in self.report["claims"]:
+            if claim["material"]:
+                self.assertIn(claim["disposition"], allowed, claim["id"])
+            else:
+                self.assertIsNone(claim["disposition"], claim["id"])
+        self.assertEqual(sum(self.report["counts"]["by_disposition"].values()), 21)
+        self.assertEqual(self.claims["kmad-wiki-sweep"]["disposition"], tc.STANDING_GAP)
+        self.assertEqual(self.claims["scan:vanderbilt:2026-09-08"]["disposition"], tc.OUT_OF_SCOPE)
 
     def test_evidence_ids_are_resolved_when_present(self):
         for claim in self.report["claims"]:

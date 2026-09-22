@@ -3,9 +3,10 @@
 ## Result
 
 The destination-keyed offline index contains 129 unique short codes from the
-Atlas graph and archived resolution ledger. It records 86 observed direct
-resolution edges to 30 immediate destinations and two observed nested-shortener
-relationships. A further 775 proxy-topology relationships are retained only as
+Atlas graph and archived resolution ledger. It records 86 codes carrying an
+observed direct resolution — one edge each, so 86 edges — reaching 30 distinct
+immediate destinations, and two observed nested-shortener relationships. A
+further 775 proxy-topology relationships are retained only as
 `topology-candidate`: shared proxy nodes collapse multiple concrete URLs, so
 reachability through one is not proof that a particular short code reached every
 downstream endpoint.
@@ -35,7 +36,20 @@ unreadable: `app.bitily.in` presented an untrusted certificate, `ctxr.me` return
 ## Artifacts
 
 - `data/shortener_reverse_index_2026-09-09.json` — full code- and
-  destination-keyed index with confidence labels and paths
+  destination-keyed index with confidence labels and paths. Its `counts` block
+  carries `relations_by_confidence`, so the observed/candidate split is visible
+  without reading every row: 86 `observed`, 2 `observed-chain`, 775
+  `topology-candidate`. The same block carries
+  `paths_truncated_at_max_depth`, which is `0` here: path search stops at six
+  edges and the deepest path present is five, so nothing was dropped. If the
+  Atlas grows past that limit the counter goes non-zero, marking the index
+  truncated rather than exhaustive — absence of a destination is then a search
+  boundary, not evidence that no such destination exists.
+- The index inherits its `generated_on` from the ledger's own stamp
+  (`2026-09-08`) rather than the wall clock, and records `input_sha256` for both
+  inputs. Regenerating it on any later date reproduces the committed JSON and
+  CSV byte-for-byte; the `2026-09-09` in the filename is the pass date, not the
+  input vintage.
 - `data/shortener_reverse_index_2026-09-09.csv` — flat destination-to-code rows
 - `data/shortener_reverse_sweep_2026-09-09.json` — CDX and listing outcomes;
   bodies are represented only by byte counts and SHA-256 digests

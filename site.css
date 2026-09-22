@@ -64,6 +64,8 @@ body.docs table{border-collapse:collapse;width:100%;font-size:14.5px;margin:16px
 body.docs th,body.docs td{border:1px solid #d8d5cc;padding:6px 8px;vertical-align:top}
 body.docs th{background:#efece4;text-align:left}
 body.docs code{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.88em}
+.canary{font:12px/1.4 "IBM Plex Mono",ui-monospace,monospace;color:#6b6a64;margin:16px auto;padding:0 16px;max-width:1040px;overflow-wrap:anywhere}
+
 body.docs .docs-foot{
   margin-top:48px;padding-top:16px;border-top:1px solid #d8d5cc;
   font-size:13px;color:#5c5b56;

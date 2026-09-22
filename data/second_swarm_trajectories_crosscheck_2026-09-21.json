@@ -1,0 +1,801 @@
+{
+ "trajectories_commit": "952d0d94e72af69c42d3792198954d8cc64a32cb",
+ "second_swarm_commit": "b867474d0aca4a170268f3e26487dc36971bf764",
+ "bundle": {
+  "archive_sha256": "7531b0bf40af3f77ea73518f76cf77fe831f6c15f6643e0226506b8cd0878bfd",
+  "file_sha256": {
+   "pages.jsonl": "92b296170b496b836cdf5ef783bed9465d2d75db7e1a0becec1c36c8b7c42cfd",
+   "revisions.jsonl": "de241d012cc620bfaa0f44f3f0205d7c778f16d7ed816edbf2230bc6fd93b2e2",
+   "events.jsonl": "0c3ee2564d3386e9d7af201dd2fbda5685dc3f7f0ee506e978105a3ca0da1417",
+   "labels.jsonl": "d94aecd84baecda46344f5b8726a95a9c81e7e41a1c0969fc89a90c8906f0388"
+  },
+  "counts": {
+   "pages": 4579,
+   "revisions": 14591,
+   "events": 19913,
+   "labels": 3103
+  },
+  "reported_counts": {
+   "revisions": 14585,
+   "pages": 4577,
+   "events": 19907,
+   "labels": 3102
+  },
+  "offsets": {
+   "revisions": 6,
+   "pages": 2,
+   "events": 6,
+   "labels": 1
+  }
+ },
+ "daily": {
+  "recomputed": {
+   "2026-06-16": 2603,
+   "2026-06-17": 1297,
+   "2026-06-18": 6543,
+   "2026-06-19": 509,
+   "2026-06-20": 657
+  },
+  "reported": {
+   "2026-06-16": 2603,
+   "2026-06-17": 1297,
+   "2026-06-18": 6543,
+   "2026-06-19": 509,
+   "2026-06-20": 657
+  },
+  "matches": true,
+  "full_range": {
+   "2026-05-24": 35,
+   "2026-05-26": 436,
+   "2026-05-27": 48,
+   "2026-05-28": 210,
+   "2026-05-29": 77,
+   "2026-05-30": 44,
+   "2026-05-31": 16,
+   "2026-06-01": 140,
+   "2026-06-02": 4,
+   "2026-06-04": 5,
+   "2026-06-05": 2,
+   "2026-06-06": 12,
+   "2026-06-07": 13,
+   "2026-06-08": 14,
+   "2026-06-09": 6,
+   "2026-06-10": 6,
+   "2026-06-11": 161,
+   "2026-06-16": 2603,
+   "2026-06-17": 1297,
+   "2026-06-18": 6543,
+   "2026-06-19": 509,
+   "2026-06-20": 657,
+   "2026-06-21": 659,
+   "2026-06-22": 1071,
+   "2026-06-23": 1,
+   "2026-06-24": 1,
+   "2026-07-01": 7,
+   "2026-07-02": 14
+  }
+ },
+ "june18_wikis": {
+  "recomputed": {
+   "dse": 5884,
+   "probier": 651,
+   "fractal": 8
+  },
+  "reported": {
+   "dse": 5884,
+   "probier": 651,
+   "fractal": 8
+  },
+  "matches": true
+ },
+ "june18_top_pages": {
+  "dse/WillkommenImWiki": 2299,
+  "dse/StartSeite": 262,
+  "dse/TestSeite": 125,
+  "dse/AgentLinkma20JuneAA": 60,
+  "dse/AgentMyBridgeZZ": 55
+ },
+ "june18_url_load": {
+  "recomputed": {
+   "revisions_with_url": 5887,
+   "occurrences": 95387,
+   "outer_hosts": 125
+  },
+  "reported": {
+   "revisions_with_url": 5887,
+   "occurrences": 95375,
+   "outer_hosts": 117
+  }
+ },
+ "june18_host_census": {
+  "hosts": {
+   "www.sec.gov": {
+    "reported": [
+     5121,
+     29258
+    ],
+    "outer": [
+     2810,
+     17873
+    ],
+    "effective": [
+     4330,
+     38148
+    ],
+    "reproduced_by": []
+   },
+   "www.investor.gov": {
+    "reported": [
+     2849,
+     12319
+    ],
+    "outer": [
+     775,
+     1953
+    ],
+    "effective": [
+     2350,
+     13043
+    ],
+    "reproduced_by": []
+   },
+   "jqp.vercel.app": {
+    "reported": [
+     1737,
+     8757
+    ],
+    "outer": [
+     3098,
+     18531
+    ],
+    "effective": [
+     3101,
+     18643
+    ],
+    "reproduced_by": []
+   },
+   "code.highcharts.com": {
+    "reported": [
+     755,
+     877
+    ],
+    "outer": [
+     148,
+     199
+    ],
+    "effective": [
+     666,
+     907
+    ],
+    "reproduced_by": []
+   },
+   "pure.md": {
+    "reported": [
+     215,
+     597
+    ],
+    "outer": [
+     242,
+     689
+    ],
+    "effective": [
+     290,
+     920
+    ],
+    "reproduced_by": []
+   },
+   "md.succ.ai": {
+    "reported": [
+     158,
+     246
+    ],
+    "outer": [
+     1674,
+     7732
+    ],
+    "effective": [
+     2282,
+     12606
+    ],
+    "reproduced_by": []
+   },
+   "api.datausa.io": {
+    "reported": [
+     137,
+     718
+    ],
+    "outer": [
+     114,
+     694
+    ],
+    "effective": [
+     114,
+     718
+    ],
+    "reproduced_by": []
+   },
+   "md.dhr.wtf": {
+    "reported": [
+     132,
+     132
+    ],
+    "outer": [
+     243,
+     736
+    ],
+    "effective": [
+     243,
+     736
+    ],
+    "reproduced_by": []
+   },
+   "vanderbi.lt": {
+    "reported": [
+     125,
+     247
+    ],
+    "outer": [
+     126,
+     253
+    ],
+    "effective": [
+     336,
+     1347
+    ],
+    "reproduced_by": []
+   },
+   "jsonhero.io": {
+    "reported": [
+     108,
+     2107
+    ],
+    "outer": [
+     108,
+     2107
+    ],
+    "effective": [
+     108,
+     2109
+    ],
+    "reproduced_by": [
+     "outer"
+    ]
+   },
+   "r.jina.ai": {
+    "reported": [
+     150,
+     408
+    ],
+    "outer": [
+     572,
+     1858
+    ],
+    "effective": [
+     800,
+     2589
+    ],
+    "reproduced_by": []
+   },
+   "markdown.new": {
+    "reported": [
+     115,
+     301
+    ],
+    "outer": [
+     814,
+     1888
+    ],
+    "effective": [
+     842,
+     2129
+    ],
+    "reproduced_by": []
+   },
+   "webcrawlerapi.com": {
+    "reported": [
+     149,
+     584
+    ],
+    "outer": [
+     301,
+     998
+    ],
+    "effective": [
+     301,
+     998
+    ],
+    "reproduced_by": []
+   },
+   "www-sec-gov.translate.goog": {
+    "reported": [
+     44,
+     53
+    ],
+    "outer": [
+     44,
+     53
+    ],
+    "effective": [
+     47,
+     67
+    ],
+    "reproduced_by": [
+     "outer"
+    ]
+   },
+   "corsproxy.io": {
+    "reported": [
+     15,
+     15
+    ],
+    "outer": [
+     18,
+     19
+    ],
+    "effective": [
+     19,
+     23
+    ],
+    "reproduced_by": []
+   },
+   "api.allorigins.win": {
+    "reported": [
+     14,
+     34
+    ],
+    "outer": [
+     102,
+     189
+    ],
+    "effective": [
+     107,
+     244
+    ],
+    "reproduced_by": []
+   },
+   "thingproxy.freeboard.io": {
+    "reported": [
+     12,
+     12
+    ],
+    "outer": [
+     12,
+     12
+    ],
+    "effective": [
+     12,
+     13
+    ],
+    "reproduced_by": [
+     "outer"
+    ]
+   },
+   "test.cors.workers.dev": {
+    "reported": [
+     4,
+     6
+    ],
+    "outer": [
+     3,
+     4
+    ],
+    "effective": [
+     3,
+     6
+    ],
+    "reproduced_by": []
+   },
+   "cors.isomorphic-git.org": {
+    "reported": [
+     1,
+     1
+    ],
+    "outer": [
+     33,
+     33
+    ],
+    "effective": [
+     34,
+     35
+    ],
+    "reproduced_by": []
+   },
+   "translate.google.com": {
+    "reported": [
+     15,
+     15
+    ],
+    "outer": [
+     24,
+     51
+    ],
+    "effective": [
+     24,
+     53
+    ],
+    "reproduced_by": []
+   },
+   "www.google.com": {
+    "reported": [
+     18,
+     29
+    ],
+    "outer": [
+     18,
+     29
+    ],
+    "effective": [
+     18,
+     29
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   },
+   "api.census.gov": {
+    "reported": [
+     79,
+     83
+    ],
+    "outer": [
+     79,
+     83
+    ],
+    "effective": [
+     79,
+     83
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   },
+   "investor.gov": {
+    "reported": [
+     84,
+     156
+    ],
+    "outer": [
+     20,
+     21
+    ],
+    "effective": [
+     70,
+     155
+    ],
+    "reproduced_by": []
+   },
+   "prowiki.org": {
+    "reported": [
+     81,
+     229
+    ],
+    "outer": [
+     81,
+     229
+    ],
+    "effective": [
+     81,
+     229
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   },
+   "allorigins.hexlet.app": {
+    "reported": [
+     74,
+     269
+    ],
+    "outer": [
+     961,
+     2215
+    ],
+    "effective": [
+     1185,
+     5369
+    ],
+    "reproduced_by": []
+   },
+   "www.prowiki.org": {
+    "reported": [
+     56,
+     160
+    ],
+    "outer": [
+     56,
+     160
+    ],
+    "effective": [
+     56,
+     160
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   },
+   "api.usaspending.gov": {
+    "reported": [
+     31,
+     61
+    ],
+    "outer": [
+     31,
+     61
+    ],
+    "effective": [
+     31,
+     61
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   },
+   "datausa.io": {
+    "reported": [
+     24,
+     33
+    ],
+    "outer": [
+     24,
+     33
+    ],
+    "effective": [
+     24,
+     33
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   },
+   "www.hockey-reference.com": {
+    "reported": [
+     21,
+     63
+    ],
+    "outer": [
+     0,
+     0
+    ],
+    "effective": [
+     21,
+     63
+    ],
+    "reproduced_by": [
+     "effective"
+    ]
+   },
+   "da.gd": {
+    "reported": [
+     18,
+     63
+    ],
+    "outer": [
+     18,
+     63
+    ],
+    "effective": [
+     20,
+     69
+    ],
+    "reproduced_by": [
+     "outer"
+    ]
+   },
+   "api.counterapi.dev": {
+    "reported": [
+     18,
+     28
+    ],
+    "outer": [
+     18,
+     28
+    ],
+    "effective": [
+     18,
+     28
+    ],
+    "reproduced_by": [
+     "outer",
+     "effective"
+    ]
+   }
+  },
+  "exact_matches": {
+   "outer": 11,
+   "effective": 8
+  },
+  "checked": 31,
+  "reproduced_by_either": 12
+ },
+ "registry_only_doors": {
+  "validator.w3.org": {
+   "outer": [
+    0,
+    0
+   ],
+   "effective": [
+    0,
+    0
+   ]
+  },
+  "cors.lol": {
+   "outer": [
+    0,
+    0
+   ],
+   "effective": [
+    0,
+    0
+   ]
+  },
+  "cors-proxy.htmldriven.com": {
+   "outer": [
+    0,
+    0
+   ],
+   "effective": [
+    0,
+    0
+   ]
+  },
+  "search.google.com": {
+   "outer": [
+    0,
+    0
+   ],
+   "effective": [
+    0,
+    0
+   ]
+  },
+  "r-jina-ai.translate.goog": {
+   "outer": [
+    0,
+    0
+   ],
+   "effective": [
+    0,
+    0
+   ]
+  },
+  "markdown-new.translate.goog": {
+   "outer": [
+    0,
+    0
+   ],
+   "effective": [
+    0,
+    0
+   ]
+  }
+ },
+ "cross_channel_controls": {
+  "pairing_csv_sha256": "c026d7679741d3825383535b6fe37c7595fbbdeb824ca757905ccf3c8679de4b",
+  "distinct_gem_names": 83,
+  "gem_names_in_june18_bodies": [],
+  "gem_names_in_whole_export": [],
+  "registry_tokens": {
+   "rubygems": [
+    0,
+    0
+   ],
+   "web_hooks": [
+    0,
+    0
+   ],
+   "go-import": [
+    0,
+    0
+   ],
+   "W17162": [
+    0,
+    0
+   ],
+   "Q61361": [
+    0,
+    0
+   ],
+   "gemspec": [
+    0,
+    0
+   ],
+   ".gem": [
+    0,
+    0
+   ]
+  }
+ },
+ "cadence": {
+  "band_seconds": [
+   3455,
+   3460
+  ],
+  "schedule_literals": 2186,
+  "literals_in_band": [],
+  "literals_in_wide_band": [
+   3480
+  ],
+  "observed_gaps": 1685,
+  "gaps_in_band": [],
+  "gaps_in_wide_band": [
+   3403,
+   3416,
+   3416,
+   3418,
+   3436,
+   3437,
+   3450,
+   3453,
+   3462,
+   3481,
+   3492,
+   3503,
+   3503
+  ],
+  "median_gap_seconds": 727,
+  "common_cooldowns": [
+   [
+    4691,
+    11
+   ],
+   [
+    4718,
+    8
+   ],
+   [
+    1118,
+    8
+   ],
+   [
+    1119,
+    8
+   ],
+   [
+    359,
+    7
+   ],
+   [
+    4287,
+    7
+   ],
+   [
+    687,
+    7
+   ],
+   [
+    1091,
+    6
+   ],
+   [
+    6400,
+    6
+   ],
+   [
+    5058,
+    5
+   ],
+   [
+    5243,
+    5
+   ],
+   [
+    300,
+    5
+   ]
+  ]
+ },
+ "actor_a_vocabulary": {
+  "huggingface": 0,
+  "hf_accounts": 0,
+  "rubygems": 0,
+  "attribution_names": 0,
+  "parquet": 0,
+  "hdf5": 0
+ }
+}
