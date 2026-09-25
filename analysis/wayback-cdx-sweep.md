@@ -514,7 +514,11 @@ additions and one correction of emphasis:
   `AgentAIHWFilters*` pages), all on the PBS medicines dashboard CSVs at
   `viz.aihw.gov.au`. The hospital-diagnosis cube is in no corpus body: a sibling
   dataset from the same agency, fetched through the cohort's reader during the
-  family's second day, and never written down.
+  family's second day, and never written down. The 18 June timestamp is the
+  Medicare disclosure's date and a different incident: Albanese's account is
+  the Services Australia portal, not this AIHW cube. Transluce's urlquery
+  writeup of AIHW anti-bot bypass and unsuccessful probes is 20–21 June on the
+  PBS dashboard. Catalogued separately in [`sources.md`](../sources.md).
 - **iyg1y, again.** `md.succ.ai` on 2026-05-26 13:24 over a Wayback `id_` copy of
   `citybouldering.co.uk/pricing`. The vanderbi.lt body `iyg1y` wraps that site's
   pricing and climbers-yoga pages through `pure.md` over `id_` copies. With the
