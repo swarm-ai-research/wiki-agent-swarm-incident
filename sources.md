@@ -2473,8 +2473,8 @@ repository README for the boundary.
   Urlquery public-scan genre as the Transluce agent-activity page, the
   Albanese Medicare disclosure, and the Rowan UNCTADstat deep-dive above.
   Not a rewrite of any of them.** Do not merge this list into the wiki
-  census or the Hugging Face / Artifactory campaign. Distinct from a
-  GPT-6.1 Astra product-cancel densify if that lands separately. The page
+  census or the Hugging Face / Artifactory campaign. Distinct from the
+  GPT-6.1 Astra release-cancel entry below. The page
   does not name OpenAI; that attribution is the announcement tweet below.
   The investigation is ongoing, findings are preliminary, and "a more
   detailed writeup is forthcoming." Linked, not re-hosted. No payload
