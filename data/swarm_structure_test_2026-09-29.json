@@ -1,0 +1,158 @@
+{
+ "edges_file": "data/handoff_edges_v1.json",
+ "question": "which structure in Chai, Predictable Swarm Scaling (2026-09-27), does the wiki board resemble",
+ "results": {
+  "adaptive_reallocation": {
+   "reason": "the reconstruction counts single-task runs, so reallocation across tasks cannot appear in it",
+   "status": "not_testable"
+  },
+  "communication_scaling": [
+   {
+    "coactive_pairs": 0,
+    "density": null,
+    "density_coactive": null,
+    "families": 5,
+    "family_size": "1",
+    "pairs_per_run": 0.0,
+    "possible_pairs": 0,
+    "runs": 5,
+    "runs_in_any_edge": 0,
+    "within_family_pairs": 0
+   },
+   {
+    "coactive_pairs": 37,
+    "density": 0.1228,
+    "density_coactive": 0.1892,
+    "families": 15,
+    "family_size": "2-5",
+    "pairs_per_run": 0.152,
+    "possible_pairs": 57,
+    "runs": 46,
+    "runs_in_any_edge": 12,
+    "within_family_pairs": 7
+   },
+   {
+    "coactive_pairs": 257,
+    "density": 0.06,
+    "density_coactive": 0.1128,
+    "families": 9,
+    "family_size": "6-15",
+    "pairs_per_run": 0.305,
+    "possible_pairs": 483,
+    "runs": 95,
+    "runs_in_any_edge": 37,
+    "within_family_pairs": 29
+   },
+   {
+    "coactive_pairs": 1168,
+    "density": 0.0159,
+    "density_coactive": 0.0377,
+    "families": 5,
+    "family_size": "16-60",
+    "pairs_per_run": 0.289,
+    "possible_pairs": 2773,
+    "runs": 152,
+    "runs_in_any_edge": 61,
+    "within_family_pairs": 44
+   }
+  ],
+  "coordinator": {
+   "component_sizes": [
+    8,
+    8,
+    7,
+    6,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+   ],
+   "components": 37,
+   "cross_family_edges": 2,
+   "edges": 115,
+   "in_degree_distribution": {
+    "1": 56,
+    "2": 12,
+    "3": 4
+   },
+   "largest_component_runs": 8,
+   "max_pair_in_degree": 3,
+   "max_pair_out_degree": 3,
+   "reciprocated_directed_pairs": 20,
+   "run_pairs": 92,
+   "top_source_share_of_pairs": 0.033,
+   "uncapped_rebuild": {
+    "edges": 119,
+    "max_pair_out_degree": 5,
+    "max_runs_writing_one_token": 7,
+    "run_pairs": 96
+   }
+  },
+  "handoff_overhead": {
+   "chai_assumed_overhead_share_of_step": 0.05,
+   "handoff_lag_seconds": {
+    "median": 905,
+    "n": 115,
+    "q1": 320,
+    "q3": 2894
+   },
+   "lag_over_step_median": 1.04,
+   "within_run_gap_seconds": {
+    "median": 866.5,
+    "n": 1542,
+    "q1": 241.0,
+    "q3": 2623.0
+   }
+  },
+  "pass_at_k": {
+   "runs_in_any_edge": 110,
+   "runs_with_no_edge": 188,
+   "share_with_no_edge": 0.631,
+   "supported_runs": 298,
+   "task_families": 34
+  },
+  "recursive_forking": {
+   "edges_target_active_before_source_token": 94,
+   "edges_total": 115,
+   "p_two_sided_vs_half": 0.755,
+   "pairs": 92,
+   "pairs_target_started_first": 44,
+   "prediction_forking": 0.0,
+   "prediction_symmetric_peers": 0.5,
+   "share": 0.478
+  }
+ },
+ "schema": "swarm_structure_test_v1",
+ "source": "https://github.com/intentionallydense/fast-follow-question-trajectories",
+ "source_commit": "952d0d94e72af69c42d3792198954d8cc64a32cb",
+ "status": "run-level shape tests on inferred transfer edges; not read telemetry, not a fit of Chai's simulator"
+}
