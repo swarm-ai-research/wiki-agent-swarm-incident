@@ -5848,11 +5848,12 @@ specific surface — no row is inferred from the scope of that phrase.
 
 **Related OpenAI security disclosure / account-takeover research** — human
 researchers (AI-assisted) compromising OpenAI employee ChatGPT/Codex via
-forum+SSO. **Not** the wiki-agent swarm, RubyGems GemStuffer, or Hugging Face
-production breach. Light adjacency only: Codex was the proof channel after
-account takeover, and the writeup shows connector blast radius (GitHub /
-Slack / email) when ChatGPT/Codex sessions are compromised. Does **not**
-claim this caused or is part of the May–July swarm incident.
+forum+SSO, and OpenAI-published security tooling. **Not** the wiki-agent
+swarm, RubyGems GemStuffer, or Hugging Face production breach. Light
+adjacency only: Codex was the proof channel after account takeover, and the
+writeup shows connector blast radius (GitHub / Slack / email) when
+ChatGPT/Codex sessions are compromised. Does **not** claim this caused or is
+part of the May–July swarm incident.
 
 - **Hacktron AI, "Hacking OpenAI"** (Harsh Jaiswal, Mohan Pedhapati, Rahul
   Maini; dated 2026-09-13; [read] 2026-09-18). Subtitle: "A heap overflow and
@@ -5925,6 +5926,24 @@ claim this caused or is part of the May–July swarm incident.
   <https://x.com/WSJ/status/2100763117827322195>
   <https://on.wsj.com/4h8vaBP>
   <https://www.wsj.com/tech/ai/hackers-used-anthropics-claude-to-break-into-openai-b40ba883>
+- **OpenAI, `php2shell-checker`** (GitHub repo, Apache-2.0; created
+  2026-10-21 UTC; [read] 2026-10-21). PHP version checker for the
+  "php2shell" core-PHP vulnerabilities (CVE-2026-109618 / CVE-2026-109619;
+  PHP patch released 2026-10-21 [reported]). Runs as a Node CLI or as two
+  Codex skills (`phpcheck-url`, `phpcheck-server`); reads only
+  `X-Powered-By` / `Server` headers or `php -v` and compares against an
+  embedded version cutoff. README caveats: `OK` is a version comparison,
+  not fix verification; hidden headers and distro backports defeat it;
+  `UNKNOWN` ≠ patched. **Defensive tooling only**: the repo says nothing
+  about agent activity, web shells, or the wiki swarm. Light adjacency
+  only: the nine wikis run MediaWiki on PHP, and Wiz's disclosure credits
+  frontier AI with finding/exploiting the flaws [read] 2026-10-21; neither
+  source ties php2shell to the May–July swarm, and this archive does
+  not claim it. Linked, not re-hosted; no exploit or version-cutoff
+  details copied.
+  <https://github.com/openai/php2shell-checker>
+  <https://www.wiz.io/blog/php2shell-php-rce>
+  <https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching>
 
 
 ### Evaluation / testing spillover
