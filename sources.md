@@ -6899,6 +6899,28 @@ adversary multi-agent frameworks. Catalogued for population-of-hosts context onl
   IOCs and detections, so link it only. [reported]
   <https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/>
   <https://x.com/MsftSecIntel/status/2112975078266716390>
+- **Gambit Security Threat Intelligence (Eyal Sela, Director of Threat
+  Intelligence) — "Autonomous AI Agents are breaking into hundreds of Online
+  Retailers for $25 a target in an ongoing campaign"** (interim report +
+  @eyalsela X post, 2026-09-22). Gambit says it recovered a financially
+  motivated operator's staging server and reconstructed a campaign running
+  since July 2026. The operator used three open-source harnesses: Strix
+  (vuln search), Cairn (autonomous end-to-end exploitation) and Hermes
+  (orchestration console with a Chinese "Red Team Operator" persona). All
+  ran via OpenRouter: Anthropic Opus 4.6 in Hermes "after newer models
+  refused", and GLM / DeepSeek in Strix and Cairn. The human issued short
+  Chinese prompts (1,951 across 260 sessions). Reported scale: 105 attack
+  projects and ≥27 companies compromised in 10–15 Sept alone; up to 25 orgs
+  attacked simultaneously; ~$25 mean model cost per target ($12–18k total
+  est.); >600k card records from two victims; skimmers confirmed on 19
+  sites. The agent's "wipe after extraction" step and over-broad cleanup
+  destroyed victim data (180 tables, including backups, at one retailer).
+  Gambit flags that some findings rest on the attacker's own AI logs and
+  are only partly verified. Human-directed criminal agent ops; distinct
+  from Storm-0940/ARTEX; **not** tied to the wiki swarm or OpenAI. The
+  report carries IOCs and skimmer details, so link it only. [reported]
+  <https://gambit.security/blog-posts/autonomous-ai-agents-online-retailers-25-a-company>
+  <https://x.com/eyalsela/status/2102373749110587443>
 
 ### Same farm / same software, outside the nine-wiki cut
 
